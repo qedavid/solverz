@@ -23,7 +23,7 @@ with Lean-checked proofs: a summary}
 \author{David Schneider}
 \address{Independent researcher, Austria}
 \email{david.schneider1920@gmail.com}
-\renewcommand{\urladdrname}{\itshape ORCID}
+\renewcommand{\urladdrname}{{\itshape ORCID}}
 \urladdr{\href{https://orcid.org/0009-0009-4935-8285}{0009-0009-4935-8285}}
 \date{\todo{date}}
 
@@ -46,8 +46,8 @@ how to check them.
 
 A signed difference set (SDS) with parameters $(v,k,\lambda)$ in an abelian group $G$ of
 order $v$ is a map $D \colon G \to \{0, \pm 1\}$ with $k$ nonzero values such that
-$\sum_x D(x) D(x+g) = \lambda$ for every $g \neq 0$~\cite{gordon}. We write $n = k - \lambda$
-and $s^2 = k + \lambda(v-1)$ for its squared sign sum, a square by~\cite[Lemma~1.1]{gordon}.
+$\sum_x D(x) D(x+g) = \lambda$ for every $g \neq 0$~\cite{gordon}. We write $n = k - \lambda$,
+and $s = \pm\sum_x D(x)$ for its sign sum, whose square is $k + \lambda(v-1)$~\cite[Lemma~1.1]{gordon}.
 Most rules work with the \emph{coset sums} $a_h = \sum_{\phi(x) = h} D(x)$ of $D$ on a
 quotient $\phi \colon G \to H$, with $c = v/|H|$ (the intersection numbers
 of~\cite[Lemma~5.2]{gordon}); they satisfy $|a_h| \le c$ and $\sum_h a_h a_{h+g} = \lambda c$
@@ -60,7 +60,7 @@ the first rule in the order the rules were found (their numbers). ``Ours'' means
 earlier statement for signed difference sets; it does not mean the idea is new.
 
 Most rules share one shape. If an SDS existed, its coset sums on a suitable quotient $H$ would be
-integers with $|a_h| \le c$, the sum and autocorrelation above, and often further conditions:
+integers with $|a_h| \le c$, the sum $\pm s$ and the autocorrelation above, and often further conditions:
 congruences from self-conjugate primes, values of characters, or invariance under multipliers.
 Each rule shows that for its cases no integer vector meets them all. The exceptions work on $G$
 itself: support parity (Z11) and the exhaustive searches of Z1, Z15 and Z27 (the latter two
@@ -130,9 +130,10 @@ Z33 & Contraction to a quotient, then a lift coset by coset & \zrows{33} & as in
 \endgroup
 
 The \ourExists{} cases with a set are listed in Appendix~\ref{app:sets}; Lean checks each set.
-Its last column is the Solution's ID in the repository's \texttt{solutions.md}; each set is there
-as data, in \path{lean/SignedDifferenceSets/Answer/N<case>.lean} and as a text file in
-\path{objects/}.
+The appendix's last column is the Solution's ID in \texttt{solutions.md}; each set is there as
+data, in \path{lean/SignedDifferenceSets/Answer/N<case>.lean} and as a text file listed in
+\path{objects/_objects.md} (paths relative to the problem's folder
+\path{problems/signed-difference-sets/}).
 They come from exhaustive and orbit searches, from cyclotomic classes, from partial difference
 sets ($P - \{0\}$ is an SDS when $\lambda' - \mu = 2$, the step in the proof
 of~\cite[Thm.~5.3]{he-wu}), and from signed combinations of relative difference sets (Bose's
@@ -236,7 +237,7 @@ axioms beyond the three standard ones (the cyclic family above and the remark
 on~\cite[Thm.~4.1]{he-chen-ge} are on paper), and before I accepted a result a separate AI agent tried to break it:
 its proof, its Lean statement, the cases it settles and its credit to earlier work; these
 reports are public too, in the problem's folder \texttt{reviews/}. The Lean statements are the
-authoritative form of every settled case; all code, proofs and data are public (\repo).
+authoritative form of every case we settle or correct; all code, proofs and data are public (\repo).
 
 \appendix
 \section{The cases settled with a set}\label{app:sets}
