@@ -1,46 +1,125 @@
 # State
 
-**Focus.** New rules for the rows no method reaches, most rows per effort first (find, Settling rows): each rule is one generic theorem plus one kernel check over the rows it settles. Table 91.03% settled (none 63,986, exists 226, open 6,331); Solutions Z1–Z33 (`solutions.md`), corrections in `corrections.md`.
+**Focus.** The user's plan of 2026-11-09 (`scratch/inventory/final-plan.md`, items cited by the IDs of `scratch/inventory/inventory.md`, both copied from the main folder). Research mode: Groups 1–3 below, in that order; now Group 1. Search mode only when the user says so. Table 91.03% settled (none 63,986, exists 226, open 6,331); Solutions Z1–Z33 (`solutions.md`), corrections in `corrections.md`.
 
-**Done in Lean (built, `--wfail`, in the library root).** Verified claims: C1–C3, C5, C7–C11, C13–C17, C19–C23, C25–C28 (`claims/_claims.md`); C18 proved (n ≥ 2). Searches checked by the kernel: I5's orbit search (`OrbitSearch.lean`, `OrbitSearchWitt.lean`, in slices `OrbitSearchSplit.lean`), A7's coset search (`CosetSearch.lean`, `CosetSearchSelfConj.lean`, `CosetSearchCongr.lean`), C28's vector search (`EvenContraction.lean`), I16's lift search (`LiftSearch.lean`); each has a refuter report (`solutions.md`).
+**Rules.**
+- **NO NEW IDEATORS.** A request for one goes with its reason under "Needs the user"; the user decides.
+- Ideas that come up as a by-product of the work go into `ideas/` with a kill test; work them only if they fit the plan's work, otherwise list them for the user.
+- Two modes. Research mode (default): the research plan below. Search mode: only when the user says so; then stop research and Lean work, run the search list below in its order with the PC's full power, wait, record each result (experiment, objects, statuses), and go on down the list until the user switches back.
+- Compute: at most 14 threads, keep 4 GB RAM free, one Lean process at a time, at most 3 agents; agents' briefs carry these limits.
+- Not ours (the user and the main session do these): the paper P2, anything for D. M. Gordon (data export, write-ups, letters), the credit and literature checks E2, E3, E16, and anything shared outside the repo.
 
-**Plan.** The open rows grouped by the tool they need, each tool built once. Counts are against the 6,331 open rows of 2026-11-07 and overlap; [brackets] give a realistic yield, judged from how similar steps went. All groups together could settle 6,238 rows at most (99.87% of the table); realistically about 500–1,200 (91.7–92.7%). Sources: the ideator reports and their row lists in `scratch/ideator/` (copied from the main folder): `2026-11-06-0110.md` (A1–A7), `2026-11-06-1837.md` (B1–B5), `2026-11-06-2034-none.md` (N1, N2), `2026-11-06-2036-exists.md` (X1–X3), `2026-11-06-core-none.md`, `2026-11-06-core-exists.md`; classes per row in `none/core_class.tsv`, `exists/core_assign.tsv`, margins in `none/core_rows.tsv`.
-- **G0 Pipeline: build what is proved** (154 rows; [~110 certain]): items 1–5 below. Only build time.
-- **G1 A stronger exact search with a certificate the kernel checks** (1,901 cut-off rows: core-none B1, B2 and core-exists A1, A2, 0b; 138 small rows with v ≤ 100: core-exists B0, I16's 18 rows below 50; the heavy rows of item 6) [150–400]. A search settles a row either way, by a set or by none; of the rows E10 decided, 7,762 had none and 14 a set. Two routes:
-  - our own search with better pruning: I17's mod-q split (C24), character bounds, ℕ-coded kernel checks as in `OrbitSearchSplit.lean`;
-  - SAT: CaDiCaL ships with the toolchain (`cadical.exe`), but `bv_decide` proves with a native axiom (`#print axioms` shows `…_native.bv_decide.ax_…`, `scratch/sat/BvAxioms.lean`), which CLAUDE.md's Trust forbids; an UNSAT certificate counts only if the kernel checks the LRAT proof itself (`decide +kernel` on Std's LRAT checker or our own).
-  - Kill test first: encode 2–3 small decided rows (N70, N76, N134: known `none`) and one known set; does the LRAT proof pass the kernel within the RAM and time? If yes, ~2,000 rows open up.
-- **G2 Rules at their edge (number theory, Lean)**: 1,658 near-misses (core-none class A, and the rows with a self-conjugacy or Ma margin in [½, 1)) [100–400]; 392 rows with a prime q ∣ n, q ∤ v (core-none D3): I17's split on the quotients prime to q, the one constraint no tool uses yet [20–80]; 126 open rows where Schmidt's field-descent bound fires in its ramified case (I10; prime-ideal decomposition in ℚ(ζ_m) in Lean, a large project) [0 or 126]. One theorem per class, the largest class first.
-- **G3 Global certificates for the core, `none` side** (core-exists Core 1, 3,608 rows; core-none's K) [about 0–20 until one works]: (i) all quotients at once as one integer program with a Farkas/LP certificate (as C7's marked counts, larger; reuses G1's certificate checking); (ii) congruences in several fields at once, C23 extended to ramified primes and mixed quotients; (iii) higher moments of the coset sums (Σ a³, the 4-point counts from |χ(D)|⁴ = n²). (ii) and (iii) reuse G2's number theory.
-- **G4 Constructions, `exists`** (core-exists Core 2, 562 p-group rows; item 7) [a few sets]: Galois-ring and lifting constructions starting from the ten twins of X1's sets (a set exists in the elementary group of the same order); I21's doubling. A found set costs one cheap Lean check.
-- Lanes, in parallel within the machine's limits (Building): build lane: G0 and every row file, one build at a time; compute lane: G1's solver on the free cores; thinking lane (agents): a Lean helper per G2 class, the ideator on G3 and G4 (core-exists asks for two rounds: Core 1 alone, "a rule that combines many small congruences, with a checkable certificate", B2's 707 near-misses as its first test layer; Core 2 from the p-group difference-set literature, starting with the ten twins), the refuter before anything counts.
-- Order, by rows per effort: G0; G1's kill test; G2 by class size; G4; G3. A GPU helps little (certificates and pruned searches run on the CPU); at most a massive local search for sets in G4.
+**Done in Lean (built, `--wfail`, in the library root).** Verified claims: C1–C3, C5, C7–C11, C13–C17, C19–C23, C25–C28 (`claims/_claims.md`); C18 proved (n ≥ 2). Searches checked by the kernel: I5's orbit search (`OrbitSearch.lean`, `OrbitSearchWitt.lean`, in slices `OrbitSearchSplit.lean`), A7's coset search (`CosetSearch.lean`, `CosetSearchSelfConj.lean`, `CosetSearchCongr.lean`), C28's vector search (`EvenContraction.lean`), I16's lift search (`LiftSearch.lean`); each has a Review (`solutions.md`).
 
-**Next step.** The concrete items, by group:
-1. G0, A7 (refuter SURVIVES): CosetRows Part22–35 are built, not imported (8 open rows): import in the root, root build, `#print axioms`, settle from `scratch/settle-a7.tsv`. Then build Part36–39, 50, 52–94, 44, 15, 17 (`sh scratch/agentV/build_parts.sh <first> <last>`); 68 open rows left after those 8. Rows a Solution's rule settles later are proposed under "Needs the user" as additions to that Z.
-2. G0, I5 in slices (refuter SURVIVES, [R31](reviews/R31.md)): OrbitRows Part78–85 are built, not imported: import. Then `sh scratch/agentX/build_parts.sh $(seq 86 137)` (log `scratch/agentX/parts.log`): the halved rows N3958 (Part104), N13285 (Part127); Part128–137 hold 24 open rows (N31876, N15437, N32197, N31825, N45850 there are already `none` by C27: keep that evidence).
-3. G0, six more C26 rows through X's halved rows (N1512, N7332, N9513, N13357, N3958, N13285, all `none`): teach `solver/halfrows.py`'s `reduced_proof` to cite `OrbitRows.n…_not_hasSDS` (stated with `inst`).
-4. G0, a refuter on the 16 Lean-checked objects not yet proposed (statement, object, credit): I19's O61–O67, O103 (N236, N1008, N11602, N14597, N14828, N31880, N31994, N14472) and I21's O79–O84, O101, O104 (N448, N463, N3539, N931, N933, N934, N939, N449); then propose them under "Needs the user" as Solutions.
-5. G0, Lean sets for the database lags N14604, N31832 (Gordon Prop 2.3 on GF(3⁵)⁺, GF(7³)⁺) and N63319 (Gordon Thm 4.1), whose constructions the refuter db-lags ([R7](reviews/R7.md)) rebuilt: objects, `Answer/N<id>.lean`, settle, then propose them as corrections.
-6. G1, heavy rows, each over 13 GB in one Lean process: HalfRows N58699, N58708, N5887, N6055, N60667, N58828 (`DEFER_ROWS` in `solver/halfrows.py`: their halved row's orbit check needs OrbitSearchSplit's slices, for halved rows off the table); C28's N20961 (`scratch/c26/N20961.lean.keep`: one module per search batch). C28's 24 heavy kills (`scratch/c26/even_cut2.out`: 15 distinct searches, ~128M nodes, 36–140 h of kernel at today's speed) need an ℕ-coded `below`, as OrbitSearchSplit did for the orbit search.
-7. G4, I21: N9540, N9542 halve to the twin-prime-power (99, 49, 24) set and its complement; doubling needs T with T T* = 25 inside its zeros (a plain search times out: needs a structured T).
-8. G1, I16 beyond v = 36: the other open rows with v < 50 time out in `liftrows.py stats` (`scratch/agentL/stats_all.out`, partial); I17's prototype (`scratch/n2/`, see Running) decided 7 of 136 B1 rows and found "too big" on 119.
-9. Open question, not a correction: Gordon's 64 "No" rows resting on "Orbit Exhaust" with gcd(v, n) > 1 ([R5](reviews/R5.md)). His Thm 5.1 needs gcd(v, n) = 1; 34 of them have a prime of n coprime to v, where other multiplier theorems may apply, 30 have none; his code does not show what he used. 6 with v ≤ 15 (N5, N10–N14) are confirmed by exhaustive search, 58 unchecked. Recheck them (G1's solver, or a multiplier argument) before proposing anything.
+**Next step.** Research plan, in this order.
 
-**Running.** Nothing of this plan. Two old processes of ours wait for a decision:
-- PID 23752: I17's prototype (`scratch/n2/modq_batch.py b1_cyc_a.txt b1_cyc_a.out 13`, since 2026-11-06 23:05). Batch a stopped making progress after 11 of 136 rows, on N3067 (121, 76, 1); batch b finished: 119 too big, 7 NONE (N15689, N17962, N26085, N49278, N60164 still open), 3 FOUND (the known Paley-and-zero sets N10864, N19488, N49190), 7 skipped. Kill it and rerun with pruning (G1).
-- E7, process 33500 (`target/release/r4_first_set.exe problems/signed-difference-sets/instances.csv 40 10000000000 10 N70,…,N224`, from the worktree root, commit 95d6f8c), suspended since 2026-11-06, partial output `scratch/e7.out` (11 of 22 rows, E7.md): of its 22 rows only N204, N205, N207, N212 are still open (G1's small rows): resume it for those or kill it.
+Group 1, settle what is already proved:
+| ID | What | Rows |
+|---|---|---|
+| P1 | A7: import and build the remaining CosetRows parts | 76 none |
+| P2 | I5: import and build OrbitRows Part78–137 (incl. halved rows) | ~27 none |
+| P3 | Six halved C26 rows (N1512, N7332, N9513, N13357, N3958, N13285) | 6 none |
+| P4 | Refuter on the 16 Lean-checked objects not yet proposed (statement, object, credit), then propose them | 16 exists |
+| P5 | Lean sets for the database lags N14604, N31832, N63319 | 3 exists |
+| C10x | E8's 4 kills (N2847, N2863, N6970, N26266): rerun on committed code, sliced `noVector` | 4 none |
+| C20x | N1's kills N44059, N44123 | 2 none |
+| D1x | Ma × an extra self-conjugate modulus (p^b·Q > 2c), extending C21 | 11 none |
+| C6x | N27692: integer certificate for C7 | 1 none |
+| C17x(c) | N464: T-side of C26 and a kernel search over the 648 halved sets | 1 none |
+| C1x, C2x, C5x, E11, E12 | C4's status (R28), C6 marked superseded by C13/C14, ModQ (C24) imported, full `#print axioms` and unreachable modules, code defects before reuse | — |
+
+Group 1 pointers:
+- P1: CosetRows Part22–35 are built, not imported (8 open rows): import, root build, `#print axioms`, settle from `scratch/settle-a7.tsv`. Then `sh scratch/agentV/build_parts.sh <first> <last>` for Part36–39, 50, 52–94, 44, 15, 17. Rows a Solution's rule settles later are proposed under "Needs the user" as additions to that Z (here Z28).
+- P2: OrbitRows Part78–85 are built, not imported; then `sh scratch/agentX/build_parts.sh $(seq 86 137)` (log `scratch/agentX/parts.log`): halved rows N3958 (Part104), N13285 (Part127); Part128–137 hold 24 open rows (N31876, N15437, N32197, N31825, N45850 there are `none` by C27 already: keep that evidence). Review [R31](reviews/R31.md).
+- P3: teach `solver/halfrows.py`'s `reduced_proof` to cite `OrbitRows.n…_not_hasSDS` (stated with `inst`).
+- P4: I19's O61–O67, O103 (N236, N1008, N11602, N14597, N14828, N31880, N31994, N14472) and I21's O79–O84, O101, O104 (N448, N463, N3539, N931, N933, N934, N939, N449).
+- P5: the constructions the refuter db-lags rebuilt ([R7](reviews/R7.md)): objects, `Answer/N<id>.lean`, settle, then propose them as corrections.
+
+Group 2, known work (port known proofs, extend rules):
+| ID | What | Rows |
+|---|---|---|
+| P18 | Schmidt's field descent in general (I10): a Lean spike first (what Mathlib's prime decomposition in cyclotomic fields provides), then the proof | 126 none |
+| P16 + C16x/D2x | Rules at their edge: Ma at equality for c ≥ 2, two-valued cosets for margins in [½, 1) | up to 1,658 (258 class A) |
+| P17 (Lean part) | C24 on quotients, ContractionCheck-style certificates | up to 392 |
+| C15x | I17's checker: per-branch echelon form over a certified field, `decide +kernel` slices | 11 none |
+| C4x | C18's family in Lean | family |
+| E14 | P2's statements that are only on paper, as claims with Lean or a Review (rdscomb, rdsfamily, (25, 12, 1), (27, 10, 1), N32, z17/z25, rem:z18) | paper |
+| E5, C18x | Optional: the (4, 4, 4, 1) RDS construction; X1b/X2b family claims | explanation |
+
+Group 3, technique tests (kill test first; work it if it hits):
+| ID | What | Rows |
+|---|---|---|
+| D14x | Literature: generalizations of Ma's lemma to non-cyclic Sylow subgroups; if one gives a usable bound, it joins Group 2, else it goes to "Open" | ~2,200 |
+| D15x (part) | Joint contraction: coset-sum vectors on two quotients at once must be compatible; kill test on the 124 core rows where every single quotient has a vector | ? |
+| P19 | LP/Farkas: relaxation of the SDS constraints on 5 core rows; an infeasible LP gives a rational dual certificate for Lean | 0–20 |
+| P14 | SAT with LRAT checked by the kernel: CaDiCaL (in the Lean toolchain) on N70, N76, N134 and one known set; measure solve time, certificate size, kernel time | 3–4 |
+| C3x | NL family (C12): the m = 6 norm-class recipe at m = 8, 10, Walsh check; a proof attempt if it holds | 0 (paper) |
+
+P14's catch: `bv_decide` proves with a native axiom (tested 2026-11-07, `scratch/sat/BvAxioms.lean`), which Trust forbids; an LRAT certificate counts only if the kernel checks it.
+
+**Search list (search mode only), in this order.**
+| Class | ID | Search | Rows |
+|---|---|---|---|
+| minutes | C3x | NL recipe at m = 8, 10 (if not done in Group 3) | 0 |
+| minutes | C10x | Rerun E8's 4 kills on committed code | 4 |
+| minutes | C15x | Second engine on I17's 11 NONE rows | 11 |
+| minutes | C20x | Rerun N1's search on N44059, N44123 | 2 |
+| minutes | E4 | A2 uncapped; C17 ε search at r = 5; C19 at N = 128, 256 | few |
+| minutes–hours | E8 / P22c | N7891's witness under multiplier 3 in C₁₈₂ | 1 (exists backing) |
+| minutes–hours | E17 | Validation-only cross-checks | 0 |
+| minutes–hours | D11x | SAT for sets in the 11 open order-64 rows | 11 |
+| hours | C11x | I9 symmetry searches with larger budgets | ~851 |
+| hours | C16x / D2x | Weighing-element and H/P searches after the edge reduction | 258 + 524 |
+| hours | D3x | Support-parity zero-set search past d(d − 1) ≥ v − 1 (d ≤ 12) | ~406 |
+| hours | P17 / D6x | Mod-q split inside E8 on quotients prime to q (core D3) | 392 |
+| hours | D8x | X1 census at rank 16–30 (53 (q, e, j) cases) | 323 |
+| hours | P13 | Gordon's 58 orbit-exhaust "No" rows with gcd(v, n) > 1: our verified rules, then exhaustion up to v = 36 | 58 |
+| hours | P10 / C14x / D16x | I16 lift search in Rust on the open rows with v < 50 (v 39–48) | 15 |
+| hours | P12 | Resume E7 on N204, N205, N207, N212 (a `none` needs a certificate: lift or SAT) | 4 |
+| hours | C13x | (16, 4, 16, 4) RDS in five order-64 groups, exhaustive | → 2 each |
+| hours | D5x | Finish A7 on every row with a coprime quotient | ? |
+| hours | D9x | X3 census at rank ≤ 16, index ≤ 16 (two primes); rank 14–30 (three primes) | ? |
+| hours | E9 | N3058 (121, 60, 7) in C₁₁² | 1 |
+| hours | C7x (lookup) | PDS targets: literature lookup and bounds | 136 |
+| hours–days | P11 | I17 rerun with DFS pruning on core B1 | 333 |
+| hours–days | E1 | O35/O36 series t = 10, 12 (N29863, N62263) | 2 |
+| hours–days | E19 | X4 at r 19–25; X5 with \|H\| > 4 | 1,851 |
+| hours–days | D4x | Assumed-multiplier searches, r ≤ 40 | ? |
+| days | E10 / C4x | N24175: (50, 6, 49, 8) RDS in C₅ × C₆₀, or direct | 1 |
+| days | P9 | N9540, N9542: T with TT* = 25 inside the 50 zeros | 2 |
+| days | C17x | I21 doubling with structured T | ~78 |
+| days | D12x | Exhaustive with Aut(G) symmetry breaking (or SAT) for core B0, v ≤ 100 | 138 |
+
+**Not in the plan for now** (the user may bring them back).
+| ID | What | Rows | Why |
+|---|---|---|---|
+| C19x | E10/E11 `none` rows without a Lean file (+46 in unimported files) | 159 (+46) | kernel certificates need 45–175 h |
+| P8 | C28's heavy kills | 18–24 | 36–140 h of kernel |
+| P6, P7 | Heavy halved rows; N20961 | 7 | over 13 GB in one Lean process, or days |
+| P13 (rest), P10 (rest) | Gordon's "No" rows with v ≥ 39 and no multiplier; N280, N282, N354 | ~25 | 10⁹–10²⁰ leaves |
+| C7x (search) | PDS searches of order 256 | — | weeks |
+| P15 | G1: stronger exact search for the cut rows | 1,901 | 10¹²–10²⁸ after the split |
+| P20 / D10x / D18x | G4: Galois-ring / lifting constructions, twins, p-group rows | 562 | theory first, weeks |
+| D13x | Character-value enumeration (A1/A2/B3) | ~2,700 | weeks; certificates not cheaply checkable |
+| E7 | N63320 in C₄₇₅ | 1 | ~10¹⁷ leaves |
+| D15x (whole) | A global argument for the core | ~3,000 | no known method |
+| D14x (if no source) | Ma-type lemma for non-cyclic Sylow subgroups | ~2,200 | new mathematics |
+| P21 | Planned ideator rounds on the core | — | dropped by the user (no new ideators) |
+
+**Running.** Nothing. The two leftover processes are gone (checked 2026-11-09 20:14):
+- PID 23752, I17's prototype (`scratch/n2/modq_batch.py`, maxfree 13): both batches finished. Of the 272 cyclic B1 rows, 234 too big, 16 NONE (11 still open: N3067, N15689, N17962, N26085, N44138, N45372, N47110, N49189, N49203, N49278, N60164; C15x), 4 FOUND (the known Paley-and-zero sets N10864, N16190, N19488, N49190), the rest skipped (`scratch/n2/b1_cyc_{a,b}.out`).
+- E7, process 33500: gone; partial output `scratch/e7.out` (11 of 22 rows, E7.md); its open rows N204, N205, N207, N212 are P12 in the search list.
 
 **Building.** Lean through the one lock `scratch/lean.lock`: `sh scratch/lean-locked-big.sh <owner> <module> <min free GB>` (waits for the lock and the RAM, then `scratch/lean-build.ps1`, the RAM watchdog that kills under 4 GB free); `sh scratch/lenv-locked.sh <owner> <file>` for scratch files (its output stops at 80 lines: split `#print axioms` lists). About 17 GB is free with no build running, so builds go one at a time; large row files are split into parts of a few rows with `set_option Elab.async false`, the heaviest rows into files of their own. Generators in `solver/` (`halfrows.py`, `evenrows.py`, `liftrows.py`, `orbitsplit.py`, `a7selfconj.py`) write Lean row files: check `git status` on `lean/` after running one.
 
 Results only in scratch (git-ignored):
-- The worktree's `scratch/`: `e5.out`, `e6.out`, `e7.out`, `r4.out` (recorded in E5, E6, E7, E4 with SHA-256; `e7.out` still open in the suspended E7); the refuter's working folders (their reports and scripts are recorded in `reviews/`; outputs over 1 MB stay here); settle batches `settle-*.tsv`, `c26/half_rows.tsv`, `c26/even_rows.tsv`; `build-*.log`, `bench/*.lean`. Keep.
-- The **main folder's** `problems/signed-difference-sets/scratch/` (the overnight work of 2026-11-06, outside the worktree; copy it into the worktree's scratch before citing it there): the refuter's working folders of that night (recorded as [R4](reviews/R4.md)–[R9](reviews/R9.md)) and of paper P1 ([R33](reviews/R33.md)), with the downloaded papers they opened (not redistributed); `ideator/` (reports `2026-11-06-0110.md`, `2026-11-06-2034-none.md`, `2036-exists.md`, the core reports, rule scripts and outputs); `e8/` (exploration: the all-rows contraction passes, the orbit search, `turyn.py`, README); `other-session/` (another session's hand-off, N735 and N17201). Keep.
+- The worktree's `scratch/`: `e5.out`, `e6.out`, `e7.out`, `r4.out` (recorded in E5, E6, E7, E4 with SHA-256; `e7.out` still open in E7); the refuter's working folders (their reports and scripts are recorded in `reviews/`; outputs over 1 MB stay here); settle batches `settle-*.tsv`, `c26/half_rows.tsv`, `c26/even_rows.tsv`; `build-*.log`, `bench/*.lean`; `inventory/` (the plan and the inventory); `ideator/` (the six reports and their row lists, copied from the main folder). Keep.
+- The **main folder's** `problems/signed-difference-sets/scratch/` (the overnight work of 2026-11-06, outside the worktree; copy it into the worktree's scratch before citing it there): the refuter's working folders of that night (recorded as [R4](reviews/R4.md)–[R9](reviews/R9.md)) and of paper P1 ([R33](reviews/R33.md)), with the downloaded papers they opened (not redistributed); `e8/` (exploration: the all-rows contraction passes, the orbit search, `turyn.py`, README); `other-session/` (another session's hand-off, N735 and N17201). Keep.
 
 ## Needs the user
 
-- Sending `corrections.md` (11 rows, none sent) to Gordon.
 - Proposed corrections (refuter db-lags and a5-a3, [R7](reviews/R7.md), [R5](reviews/R5.md); listed in `corrections.md` only on approval):
   - N63320 (475, 241, 120) in C₄₇₅ is "Yes" ("Prime Power Pair", no stored set) while N63319, the same parameters in C₅ × C₉₅, is Open: Gordon's Thm 4.1 at q = 19, q + 6 = 25 builds its set in GF(19)⁺ × GF(25)⁺ ≅ C₅ × C₉₅, never cyclic (GF(25)⁺ = C₅²). The two entries look swapped; C₄₇₅ should be open (not "No": nothing rules a set there out).
   - "Yes" resting only on stored sets that fail the SDS check: 148 of 279 stored sets fail, 22 keys have no valid stored set (rechecked 2026-11-07 with the reading the other 131 sets pass; 1-based indices, swapped signs and primitive-root exponents do not fix them). Valid sets are ours for 21 of the 22 (O59, O60, O68–O70, O85–O100, Lean-checked); N7891 (182, 38, 2, "assuming multiplier 3") has no valid witness anywhere. Our table keeps them `exists` on Gordon's word.
 - `scratch/lean-build.ps1` (the RAM watchdog) has no committed home.
+- Requests for an ideator, with their reason (none so far).
