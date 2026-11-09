@@ -110,7 +110,7 @@ P14's catch: `bv_decide` proves with a native axiom (tested 2026-11-07, `scratch
 | P21 | Planned ideator rounds on the core | — | dropped by the user (no new ideators) |
 
 **Running.** (2026-11-09 20:25)
-- Agents (2 of 3): Lean helper on C6x / N27692 (`scratch/c6x/brief.md`, notes `scratch/c6x/progress.md`); Lean spike for P18, Schmidt's field descent in Mathlib (`scratch/p18/brief.md`, report `scratch/p18/report.md`, since 21:03). C29 in Lean is done (`MaComb.lean`, `MaCombRows.lean`, `Tests/MaComb.lean`, in the root); its rows settle after the refuter.
+- Agents (3 of 3, 21:41): refuter on C6x / N27692 (`scratch/refuter/c6x-brief.md`, `scratch/refuter/c6x/`; paused and resumed with `continue.flag`); Lean helper on P18's milestone M1, field descent at an odd prime, 46 rows (`scratch/p18/m1-brief.md`, notes `scratch/p18/m1-progress.md`; the spike's report `scratch/p18/report.md`); Lean helper on C17x(c), N464 by C26's T-side and a search over the 648 halved sets (`scratch/c17x/brief.md`, notes `scratch/c17x/progress.md`).
 - Lean: C10x's N6970 certificate (1.47M search nodes, 2,815 subtree checks, `answer.py contract N6970 3,3`), built to measure the kernel time (E8's 4 kills rerun on committed code `solver/src/bin/e8_passes.rs`: `scratch/e8_c10x.out`).
 - The leftover processes are gone (checked 2026-11-09 20:14). I17's prototype finished both batches: of the 272 cyclic B1 rows, 234 too big, 16 NONE (11 still open: N3067, N15689, N17962, N26085, N44138, N45372, N47110, N49189, N49203, N49278, N60164; C15x), 4 FOUND (the known Paley-and-zero sets), the rest skipped (`scratch/n2/b1_cyc_{a,b}.out`). E7's partial output `scratch/e7.out` (11 of 22 rows, E7.md); its open rows N204, N205, N207, N212 are P12 in the search list.
 
