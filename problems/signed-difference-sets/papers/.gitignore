@@ -1,2 +1,3 @@
-# Everything a build generates: the PDF, the numbers, LaTeX's intermediate files.
+# Everything a build generates: the working PDF, the numbers, LaTeX's intermediate files.
+# Approved versions are committed beside main.tex as P<n>-v<k>.pdf.
 build/
