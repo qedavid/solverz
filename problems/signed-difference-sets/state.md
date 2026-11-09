@@ -110,7 +110,7 @@ Group 3, technique tests (kill test first; work it if it hits):
 
 **Running.** (2026-11-10 00:15, before the user's account switch)
 - Agents: none running. P18 M2 done (00:16): C35, `FieldDescentChain.lean`, `FieldDescentChainRows.lean` (66 rows), tests, all built (`scratch/p18/m2-report.md`); axioms not yet printed. The C17x(c) helper stopped (N464 not finished; `scratch/c17x/report.md`, `progress.md`). After the switch the no-new-agents rule is lifted (the user, 2026-11-10 00:10).
-- Lean: `MaDivided.lean` rebuilding (00:10, output `scratch/madivided-build.out`; the last build failed only on the `letI` linter, fixed). N6970 at depth 3: Check, Part00–02 built; Part03 and the join to build (`sh scratch/c10x/chain.sh 7 N6970` skips what is built).
+- Lean: `MaDivided.lean` (C34 with `MaDivCert`) builds `--wfail` (2026-11-10, 64 s, 2.6 GB). N6970 at depth 3: Check, Part00–02 built; Part03 and the join to build (`sh scratch/c10x/chain.sh 7 N6970` skips what is built).
 - **Next steps, in order:**
   1. N6970's Part03 and join; then the root alone (`sh scratch/lean-slot.sh root researcher`): it now imports FieldDescent, FieldDescentRows, Tests.FieldDescent, MaEdge, MaEdgeRows, Tests.MaEdge, HalfRows.OrbitCited (via HalfRows), MarkedCountsInt; add N6970 if its join built.
   2. `#print axioms` for the new theorems (extend `scratch/c10x_axioms.lean`: `fieldDescentRows_not_hasSDS`, `MaEdgeRows.not_hasSDS_of_mem_maEdgeRows`, a few row theorems, `HalfRows.n7412_not_hasSDS`, `n27692_not_hasSDS`, N6970).
