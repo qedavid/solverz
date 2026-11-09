@@ -1,0 +1,15 @@
+== FieldDescent
+
+real	0m41.853s
+user	0m0.280s
+sys	0m0.420s
+== FieldDescentRows
+
+real	1m25.208s
+user	0m0.358s
+sys	0m1.123s
+== Tests/FieldDescent
+
+real	0m48.442s
+user	0m0.233s
+sys	0m0.717s

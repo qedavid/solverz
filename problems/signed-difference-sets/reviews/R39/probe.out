@@ -1,0 +1,79 @@
+@IsSDS.totient_mul_le_of_descent : ∀ {G : Type u_1} [inst : AddCommGroup G] [inst_1 : Fintype G] {k : ℕ} {lam : ℤ}
+  {D : G → SignType},
+  IsSDS k lam D →
+    ∀ {m c p : ℕ} [NeZero m],
+      1 < m →
+        ∀ (φ : G →+ ZMod m),
+          Function.Surjective ⇑φ →
+            Fintype.card G = c * m →
+              0 < ↑k - lam →
+                Nat.Prime p →
+                  p ≠ 2 →
+                    p ^ 2 ∣ m →
+                      (∀ (q : ℕ),
+                          Nat.Prime q → ↑q ∣ ↑k - lam → ∃ e, 1 + m / p ≡ q ^ e [MOD m / q ^ m.factorization q]) →
+                        ↑m.totient * (↑k - lam) ≤ ↑m * (↑m / ↑p) * ↑c ^ 2
+@IsSDS.totient_mul_le_of_descent' : ∀ {G : Type u_1} [inst : AddCommGroup G] [inst_1 : Fintype G] {k : ℕ} {lam : ℤ}
+  {D : G → SignType},
+  IsSDS k lam D →
+    ∀ {m c p F : ℕ} [NeZero m],
+      1 < m →
+        ∀ (φ : G →+ ZMod m),
+          Function.Surjective ⇑φ →
+            Fintype.card G = c * m →
+              0 < ↑k - lam →
+                p * F = m →
+                  p ∣ F →
+                    Odd p →
+                      (∀ (q : ℕ), Nat.Prime q → ↑q ∣ ↑k - lam → ∃ a e, q ^ a ∣ m ∧ 1 + F ≡ q ^ e [MOD m / q ^ a]) →
+                        ↑m.totient * (↑k - lam) ≤ ↑m * ↑F * ↑c ^ 2
+@FieldDescent.totient_mul_le_of_descent_aux : ∀ {m : ℕ} [inst : NeZero m] (K : Type u_1) [inst_1 : Field K]
+  [inst_2 : NumberField K] [IsCyclotomicExtension {m} ℚ K] {f : ZMod m → ℤ} {n : ℕ} {μ : ℤ} {c p F : ℕ},
+  1 < m →
+    n ≠ 0 →
+      (∀ (g : ZMod m), ∑ h, f h * f (h + g) = (if g = 0 then ↑n else 0) + μ) →
+        (∀ (h : ZMod m), |f h| ≤ ↑c) →
+          p * F = m →
+            p ∣ F →
+              Odd p →
+                (∀ (q : ℕ), Nat.Prime q → q ∣ n → ∃ a e, q ^ a ∣ m ∧ 1 + F ≡ q ^ e [MOD m / q ^ a]) →
+                  ↑m.totient * ↑n ≤ ↑m * ↑F * ↑c ^ 2
+@FieldDescentCert.not_hasSDS : ∀ {w : Row} {c : FieldDescentCert},
+  FieldDescentCert.Kills w c → ∀ (inst : Fintype (Grp w.ms)), ¬HasSDS (Grp w.ms) w.k w.lam
+@fieldDescentRows_not_hasSDS : ∀ {x : Row × FieldDescentCert},
+  x ∈ fieldDescentRows → ∀ (inst : Fintype (Grp x.1.ms)), ¬HasSDS (Grp x.1.ms) x.1.k x.1.lam
+def SignedDifferenceSets.FieldDescentCert.Kills : Row → FieldDescentCert → Prop :=
+fun w c =>
+  (∀ x ∈ w.ms, 0 < x) ∧
+    1 < c.m ∧
+      c.m ∣ w.ms.prod ∧
+        MapOk w.ms [c.m] [c.A] ∧
+          SurjCert w.ms [c.m] [c.A] [c.P] ∧
+            IsPrimeTD c.p ∧
+              c.p ≠ 2 ∧
+                c.m % (c.p * c.p) = 0 ∧
+                  0 < ↑w.k - w.lam ∧
+                    (∀ q ∈ List.range ((↑w.k - w.lam).toNat + 1),
+                        2 ≤ q →
+                          q ∣ (↑w.k - w.lam).toNat →
+                            (∀ r ∈ List.range q, 2 ≤ r → q % r ≠ 0) →
+                              ∃ a ∈ List.range c.m,
+                                ∃ e ∈ List.range c.m,
+                                  c.m % q ^ a = 0 ∧ (1 + c.m / c.p) % (c.m / q ^ a) = q ^ e % (c.m / q ^ a)) ∧
+                      c.m * (c.m / c.p) * (w.ms.prod / c.m) ^ 2 < c.m.totient * (↑w.k - w.lam).toNat
+'SignedDifferenceSets.IsSDS.totient_mul_le_of_descent' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SignedDifferenceSets.IsSDS.totient_mul_le_of_descent'' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SignedDifferenceSets.FieldDescent.totient_mul_le_of_descent_aux' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SignedDifferenceSets.FieldDescentCert.not_hasSDS' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SignedDifferenceSets.fieldDescentRows_kill' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SignedDifferenceSets.fieldDescentRows_not_hasSDS' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+real	0m47.254s
+user	0m0.357s
+sys	0m0.514s
+
+real	0m48.285s
+user	0m0.480s
+sys	0m0.650s
