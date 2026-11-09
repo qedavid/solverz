@@ -331,10 +331,26 @@ def write_contract(instance: str, divisors: str) -> None:
             cur.append(pre)
             size += cnt
         batches.append(cur)
-        defs = "\n\n".join(
-            f"set_option maxHeartbeats 1000000 in\n-- a long list literal\n/-- Prefixes, batch {j}. -/\n"
-            f"def batch{j} : List (List ℤ) :=\n  ["
-            + ",\n    ".join("[" + ", ".join(map(str, p)) + "]" for p in bt) + "]\n\n"
+        base = 2 * c + 1  # a prefix is one ℕ: its coordinates plus c as base-(2c+1) digits (ℤ list literals elaborate slowly)
+
+        def code(p):
+            return sum((x + c) * base ** i for i, x in enumerate(p))
+
+        def wrapped(nums):
+            out, line = [], "    "
+            for i, x in enumerate(nums):
+                piece = str(x) + (", " if i < len(nums) - 1 else "]")
+                if len(line) + len(piece) > 98:
+                    out.append(line.rstrip())
+                    line = "    "
+                line += piece
+            return "\n".join(out + [line])
+
+        defs = (f"/-- A prefix stored as one number: coordinate `i` plus {c} is its base-{base} digit `i`. -/\n"
+                f"def decodePrefix (x : ℕ) : List ℤ :=\n"
+                f"  (List.range {depth}).map fun i => ((x / {base} ^ i % {base} : ℕ) : ℤ) - {c}\n\n") + "\n\n".join(
+            f"/-- Prefixes, batch {j}. -/\n"
+            f"def batch{j} : List (List ℤ) :=\n  List.map decodePrefix [\n" + wrapped([code(p) for p in bt]) + "\n\n"
             f"set_option maxRecDepth 100000 in\ntheorem below{j} : ∀ p ∈ batch{j}, check p = true := by\n  decide +kernel"
             for j, bt in enumerate(batches))
         plist, pline = [], ""

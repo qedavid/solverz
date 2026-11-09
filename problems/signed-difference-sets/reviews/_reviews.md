@@ -39,3 +39,4 @@ The refuter's reports that statuses here rest on, oldest first.
 | [R33](R33.md) | P1 | REFUTED (round 1); FLAWED (round 2); FLAWED, minor (round 3, fixed in 71368a3); SURVIVES, typesetting fixed (round 4, f6cfdf7) | 2026-11-07 |
 | [R34](R34.md) | N236, N1008, N11602, N14597, N14828, N31880, N31994, N14472 (I19, O61–O67, O103); N448, N463, N3539, N933, N934, N931, N449, N939 (I21, O79–O84, O101, O104) | FLAWED, credit only (I21's doubling is a published weighing-matrix construction); statements and sets SURVIVE | 2026-11-09 |
 | [R35](R35.md) | C29; N6822, N9200, N44532, N44533, N44562, N44563, N44662, N44663, N44752, N44753, N58644 | SURVIVES | 2026-11-09 |
+| [R36](R36.md) | C7 (integer form); N27692 | SURVIVES (the root import it asked for is done) | 2026-11-09 |

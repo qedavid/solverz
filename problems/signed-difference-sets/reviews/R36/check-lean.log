@@ -1,0 +1,37 @@
+'SignedDifferenceSets.not_hasSDS_of_counts' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SignedDifferenceSets.ScCert.not_hasSDS_of_countsKill' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SignedDifferenceSets.n27692_not_hasSDS' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SignedDifferenceSets.IsSDS.countsOk' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SignedDifferenceSets.anyCounts_of' depends on axioms: [propext, Classical.choice, Quot.sound]
+n27692_not_hasSDS : ¬HasSDS (ZMod 2 × ZMod 4 × ZMod 40) 306 162
+@not_hasSDS_of_counts : ∀ {G : Type u_1} {H : Type u_2} [inst : AddCommGroup G] [inst_1 : Fintype G]
+  [inst_2 : AddCommGroup H] [inst_3 : Fintype H] (φ : G →+ H),
+  Function.Surjective ⇑φ →
+    ∀ {c : ℕ},
+      Fintype.card G = c * Fintype.card H →
+        ∀ {p i j : ℕ} [inst_4 : Fact (Nat.Prime p)],
+          0 < i →
+            (∀ (h : H), p ^ i • h = -h) →
+              ↑(Fintype.card H) ≠ 0 →
+                (∃ g, g ≠ 0) →
+                  ∀ {k : ℕ} {lam : ℤ},
+                    ↑p ^ (2 * j) ∣ ↑k - lam →
+                      ∀ {s : ℤ},
+                        s ^ 2 = ↑k + lam * (↑c * ↑(Fintype.card H) - 1) →
+                          (∀ s' ∈ [s, -s],
+                              ∀ t0 ∈ Finset.Ico 0 (↑p ^ j),
+                                anyCounts (↑c) (orderVals s' (classVals (↑p ^ j) t0 ↑c)) (Fintype.card H) s'
+                                    (↑k + lam * (↑c - 1)) ↑k =
+                                  false) →
+                            ¬HasSDS G k lam
+([-9, -6, -3, 0, 3, 6, 9], [-8, -5, -2, 1, 4, 7, 10], [-10, -7, -4, -1, 2, 5, 8])
+[10, 9, 10, 9, 10, 9, 10, 9, 10, 9, 10, 9, 10, 9, 10, 9, 10, 9, 10, 9, 10]
+[[false, false, false], [false, false, false]]
+[[true, false, false], [true, false, false]]
+[[false, false, false], [false, false, false]]
+[[true, true, false, false], [true, true, false, false]]
+(10, 1764, 51984, 51984)
+
+real	0m36.269s
+user	0m0.139s
+sys	0m0.187s
