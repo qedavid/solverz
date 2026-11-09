@@ -26,7 +26,7 @@ Group 1, settle what is already proved:
 | D1x | Ma × an extra self-conjugate modulus (p^b·Q > 2c), extending C21 | 11 none |
 | C6x | N27692: integer certificate for C7 | 1 none |
 | C17x(c) | N464: T-side of C26 and a kernel search over the 648 halved sets | 1 none |
-| C1x, C2x, C5x, E11, E12 | C4's status (R28), C6 marked superseded by C13/C14, ModQ (C24) imported, full `#print axioms` and unreachable modules, code defects before reuse. Done: C1x (C4 verified), C2x, C5x (C24 verified), E11(a) (all 11,236 library constants use only the three standard axioms, `scratch/e11/AllAxioms.lean`), E11(b) (ModQ, Tests.UnramifiedDescent in the root), E11(e) (objects index) | — |
+| C1x, C2x, C5x, E11, E12 | C4's status (R28), C6 marked superseded by C13/C14, ModQ (C24) imported, full `#print axioms` and unreachable modules, code defects before reuse. Done: C1x (C4 verified), C2x, C5x (C24 verified), E11(a) (all 11,236 library constants use only the three standard axioms, `scratch/e11/AllAxioms.lean`), E11(b) (ModQ, Tests.UnramifiedDescent in the root), E11(c) (all 76 objects with a Lean answer equal their Lean data element by element, `scratch/e11/objects_vs_lean.py`), E11(d) (`AxiomsC27.lean` rerun 2026-11-07, clean), E11(e) (objects index), E12's R1-a (`solver/src/lib.rs`: k = 0 handled). E12's other defects are in scratch tools (tiers.py k < v, sc_rows.py `j = max(j, 1)`, sp_hits' producer, E8's k ≤ Σ maxm): fix them before reusing those tools | — |
 
 In research mode the short Lean items of Group 1 come first (P4, P5, C10x, C20x, D1x, C6x, C17x(c), the housekeeping items), then Groups 2 and 3; P1's and P2's long builds wait for search mode (the user, 2026-11-09: they would hold the Lean lock for ~12 h).
 
