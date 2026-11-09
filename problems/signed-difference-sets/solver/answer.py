@@ -259,6 +259,7 @@ end SignedDifferenceSets.Answer.{instance}
 # The kernel keeps about 0.1 MB per search node of one declaration (N79: 51,596 nodes, 7.5 GB).
 SPLIT_NODES = 60_000
 BRANCH_NODES = 20_000
+BATCH_NODES = 50_000  # nodes per `decide +kernel` in a split contraction answer (300,000 peaked at 11 GB on N6970)
 
 
 def prefix_nodes(n, c, Q, s, depth):
@@ -315,37 +316,64 @@ def write_contract(instance: str, divisors: str) -> None:
     lam_lean = f"({lam})" if lam < 0 else str(lam)
     q = k + lam * (c - 1)
     total = sum(prefix_nodes(n, c, q, s, 1).values()) + 1
-    search = "(by decide +kernel)"
+    search = " (by decide +kernel)"
     split = ""
+    hb = ""
     if total > SPLIT_NODES:
         depth = next(d for d in range(2, n + 1)
                      if max(prefix_nodes(n, c, q, s, d).values()) <= BRANCH_NODES)
-        prefixes = list(prefix_nodes(n, c, q, s, depth))
-        lists = ",\n    ".join("[" + ", ".join(map(str, p)) + "]" for p in prefixes)
-        checks = "\n\n".join(
-            f"set_option maxRecDepth 100000 in\n"
-            f"theorem below_{i} : check [{', '.join(map(str, p))}] = true := by\n"
-            "  decide +kernel" for i, p in enumerate(prefixes))
-        cases = " | ".join("rfl" for _ in prefixes)
-        names = ", ".join(f"below_{i}" for i in range(len(prefixes)))
+        counts = prefix_nodes(n, c, q, s, depth)
+        batches, cur, size = [], [], 0  # as evenrows.py: one `decide +kernel` per batch of prefixes
+        for pre, cnt in counts.items():
+            if cur and size + cnt > BATCH_NODES:
+                batches.append(cur)
+                cur, size = [], 0
+            cur.append(pre)
+            size += cnt
+        batches.append(cur)
+        defs = "\n\n".join(
+            f"set_option maxHeartbeats 1000000 in\n-- a long list literal\n/-- Prefixes, batch {j}. -/\n"
+            f"def batch{j} : List (List ℤ) :=\n  ["
+            + ",\n    ".join("[" + ", ".join(map(str, p)) + "]" for p in bt) + "]\n\n"
+            f"set_option maxRecDepth 100000 in\ntheorem below{j} : ∀ p ∈ batch{j}, check p = true := by\n  decide +kernel"
+            for j, bt in enumerate(batches))
+        plist, pline = [], ""
+        for j in range(len(batches)):
+            piece = f"batch{j}" + (" ++ " if j < len(batches) - 1 else "")
+            if len(pline) + len(piece) > 94:
+                plist.append(pline.rstrip())
+                pline = ""
+            pline += piece
+        plist = "\n    ".join(plist + [pline])
+        parts, line = [], "          exact ⟨"
+        for j in range(len(batches)):
+            piece = f"below{j}" + (", " if j < len(batches) - 1 else "⟩")
+            if len(line) + len(piece) > 98:
+                parts.append(line.rstrip())
+                line = "            "
+            line += piece
+        anon = "\n".join(parts + [line])
+        hb = "set_option maxHeartbeats 4000000 in\n-- elaborating the join over the batches\n"
         split = f"""
 /-- `below` with this Instance's search arguments (those `not_hasSDS_of_noVector` asks for). -/
 abbrev check (p : List ℤ) : Bool :=
   below (Indexed.size ({quotient})) (Indexed.addIdx ({quotient})) ({c} : ℕ)
     (({k} : ℕ) + ({lam_lean} : ℤ) * (({c} : ℕ) - 1)) (({lam_lean} : ℤ) * ({c} : ℕ)) ({k} : ℕ) {s} p
 
-/-- The prefixes of {depth} coordinates whose subtrees are checked one by one ({total} nodes in
-all, at most {BRANCH_NODES} per check), from `solver/answer.py`. -/
-def prefixes : List (List ℤ) :=
-  [{lists}]
+{defs}
 
-{checks}
+/-- The prefixes of {depth} coordinates ({total} nodes in {len(batches)} batches of at most
+{BATCH_NODES}), from `solver/answer.py`. -/
+def prefixes : List (List ℤ) :=
+  {plist}
 """
-        search = f"""(noVector_of_top (P := prefixes) (d := {depth - 1}) (by decide)
+        search = f"""
+    (noVector_of_top (P := prefixes) (d := {depth - 1}) (by decide)
       (by decide +kernel) fun p hp => by
-        simp only [prefixes, List.mem_cons, List.not_mem_nil, or_false] at hp
-        rcases hp with {cases}
-        exacts [{names}])"""
+        have h : ∀ p ∈ prefixes, check p = true := by
+          simp only [prefixes, List.forall_mem_append]
+{anon}
+        exact h p hp)"""
     text = f"""module
 
 public import SignedDifferenceSets.ContractionCheck
@@ -371,12 +399,12 @@ set_option Elab.async false
 def proj : Proj ({group}) ({quotient}) :=
   {proj_term(shape, ds)}
 {split}
-set_option maxRecDepth 100000 in
+{hb}set_option maxRecDepth 100000 in
 -- `decide +kernel` runs the vector search.
 /-- {instance}: {pretty} has no signed difference set with parameters ({v}, {k}, {lam}). -/
 theorem not_hasSDS : ¬ HasSDS ({group}) {k} {lam_lean} :=
   not_hasSDS_of_noVector proj {c} {s} (by simp [Fintype.card_prod, ZMod.card])
-    (by norm_num [Fintype.card_prod, ZMod.card]) {search}
+    (by norm_num [Fintype.card_prod, ZMod.card]){search}
 
 end SignedDifferenceSets.Answer.{instance}
 """
