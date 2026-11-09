@@ -45,7 +45,7 @@ Group 2, known work (port known proofs, extend rules):
 | P17 (Lean part) | C24 on quotients, ContractionCheck-style certificates | up to 392 |
 | C15x | I17's checker: per-branch echelon form over a certified field, `decide +kernel` slices | 11 none |
 | C4x | C18's family in Lean | family |
-| E14 | P2's statements that are only on paper, as claims with Lean or a Review (rdscomb, rdsfamily, (25, 12, 1), (27, 10, 1), N32, z17/z25, rem:z18) | paper |
+| E14 | P2's statements that are only on paper, as claims with Lean or a Review (rdscomb, rdsfamily, (25, 12, 1), (27, 10, 1), N32, z17/z25, rem:z18). Started: rdscomb is claim C30 (with the (27, 10, 1) remark); rdsfamily is C18 (C4x); next one refuter round over C30, the (25, 12, 1) description, the closed form after Thm z17, the z25/z17 comparison and rem:z18 (R18 checked N ≤ 64) | paper |
 | E5, C18x | Optional: the (4, 4, 4, 1) RDS construction; X1b/X2b family claims | explanation |
 
 Group 3, technique tests (kill test first; work it if it hits):

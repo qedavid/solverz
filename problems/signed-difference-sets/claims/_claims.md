@@ -31,3 +31,4 @@
 | [C27](C27.md) | Field descent without ramification: φ(m) n ≤ m F c² on ZMod m, gcd(m, n) = 1 | C10 | verified | `IsSDS.totient_mul_le` | — |
 | [C28](C28.md) | The even contraction (C26 at any c): halved coset sums on Z_(2r) × K meet no demands | C3, C26 | verified | `not_hasSDS_of_evenContraction` | — |
 | [C29](C29.md) | Ma's lemma with an extra self-conjugate modulus: p^b·Q > 2c ⇒ no SDS (C21 × C5) | C21, C5 | verified | `maCombRule` | — |
+| [C30](C30.md) | Signed combinations of a relative difference set: R − N, G − R − N, G − 2R − N, G − R − 2N (I15) | — | open | — | — |
