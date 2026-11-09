@@ -1,0 +1,5 @@
+O7 (3, 3, 3) (27, 10, 1): SDS (27, 10, 1); R - N decompositions: []
+O8 (3, 9) (27, 10, 1): SDS (27, 10, 1); R - N decompositions: [(1, (0, 5), [(0, 0), (1, 3), (2, 6)], [(0, 0), (0, 4), (1, 0), (1, 1), (2, 0), (2, 2), (2, 5), (2, 7), (2, 8)], True)]
+|Aut(C3 x C9)| = 108
+classes of R - N in C3 x C9: 3 [108, 54, 54]
+O8's class among them: True

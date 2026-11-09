@@ -1,0 +1,8 @@
+GaussKills 8 4 8: mine True, R18/Lean decide True
+GaussKills 8 4 12: mine False, R18/Lean decide False
+GaussKills 16 4 12: mine False, R18/Lean decide False
+GaussKills 4 3 9: mine False, R18/Lean decide False
+GaussKills 4 2 2: mine False, R18/Lean decide False
+GaussKills 1 3 5: mine False, R18/Lean decide False
+Open@ rows killed by a quotient with a C4 factor, N <= 64 (R18 F4 says 347): 408
+exists rows strongly killed at some quotient: 0

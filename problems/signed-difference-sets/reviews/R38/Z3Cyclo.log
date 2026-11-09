@@ -1,0 +1,6 @@
+'E14.hasSDS' depends on axioms: [propext, Classical.choice, Quot.sound]
+'E14.g_primitive' depends on axioms: [propext, Quot.sound]
+
+real	0m43.511s
+user	0m0.311s
+sys	0m0.405s

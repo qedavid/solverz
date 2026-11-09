@@ -45,7 +45,7 @@ Group 2, known work (port known proofs, extend rules):
 | P17 (Lean part) | C24 on quotients, ContractionCheck-style certificates | up to 392 |
 | C15x | I17's checker: per-branch echelon form over a certified field, `decide +kernel` slices | 11 none |
 | C4x | C18's family in Lean | family |
-| E14 | P2's statements that are only on paper, as claims with Lean or a Review (rdscomb, rdsfamily, (25, 12, 1), (27, 10, 1), N32, z17/z25, rem:z18). Started: rdscomb is claim C30 (with the (27, 10, 1) remark); rdsfamily is C18 (C4x); next one refuter round over C30, the (25, 12, 1) description, the closed form after Thm z17, the z25/z17 comparison and rem:z18 (R18 checked N ≤ 64) | paper |
+| E14 | P2's statements that are only on paper: refuter round done 2026-11-09, SURVIVES ([R38](reviews/R38.md)): rdscomb is C30 (now proved, Lean checks the 19 sets), the (27, 10, 1) and (25, 12, 1) remarks, rem:z17, rem:z18 (full scope: same 629 rows), rem:z25; rdsfamily is C18 (C4x). P2's credit and wording findings are under Needs the user | — |
 | E5, C18x | Optional: the (4, 4, 4, 1) RDS construction; X1b/X2b family claims | explanation |
 
 Group 3, technique tests (kill test first; work it if it hits):
@@ -132,5 +132,6 @@ Results only in scratch (git-ignored):
 - Proposed corrections (refuter db-lags and a5-a3, [R7](reviews/R7.md), [R5](reviews/R5.md); listed in `corrections.md` only on approval):
   - N63320 (475, 241, 120) in C₄₇₅ is "Yes" ("Prime Power Pair", no stored set) while N63319, the same parameters in C₅ × C₉₅, is Open: Gordon's Thm 4.1 at q = 19, q + 6 = 25 builds its set in GF(19)⁺ × GF(25)⁺ ≅ C₅ × C₉₅, never cyclic (GF(25)⁺ = C₅²). The two entries look swapped; C₄₇₅ should be open (not "No": nothing rules a set there out).
   - "Yes" resting only on stored sets that fail the SDS check: 148 of 279 stored sets fail, 22 keys have no valid stored set (rechecked 2026-11-07 with the reading the other 131 sets pass; 1-based indices, swapped signs and primitive-root exponents do not fix them). Valid sets are ours for 21 of the 22 (O59, O60, O68–O70, O85–O100, Lean-checked); N7891 (182, 38, 2, "assuming multiplier 3") has no valid witness anywhere. Our table keeps them `exists` on Gordon's word.
+- Paper P2 (the user's; [R38](reviews/R38.md), 2026-11-09): Prop rdscomb's credit remark (`constructions.tex` l. 316–322) names neither family member Gordon's table already lists as a known cyclic set: (80, 72, 36) in C₈₀ (N1216, (2)(a), n = 8, q = 9) and (200, 151, 102) in C₂₀₀ (N9807, (2)(b), n = 4, q = 49). Wording: the citation for the (27, 17, 8) cases fits N73 (Gordon Thm 4.1, in C₃³); N74 (C₃ × C₉) is only a table entry.
 - `scratch/lean-build.ps1` (the RAM watchdog) has no committed home.
 - Requests for an ideator, with their reason (none so far).

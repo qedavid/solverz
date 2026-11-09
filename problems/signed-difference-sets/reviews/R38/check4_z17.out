@@ -1,0 +1,4 @@
+(a,b) 293280 triples (r 1..8, |m| <= 70, 0 <= s < 260): mismatches 0
+(d) z17 kill <=> (z25a or z25b) kill on H = C2^t: mismatches 0; z17 kills 187560, z25 kills 187560; q=2 vs q=4 differ on 0
+(c) 214 Lean rows (distinct ids 213): bad 0; rows with r != R: 0
+open rows z17 kills for some r <= R: 270; Lean rows among them: 213; killed but not a Lean row: 57

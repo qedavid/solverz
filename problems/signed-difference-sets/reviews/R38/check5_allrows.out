@@ -1,0 +1,2 @@
+{'rows': 70543, 'applicable': 11363, 'weak': 629, 'strong': 629, 'diff': 0, 'maxN': 256}
+Lean GaussCharsRows: 297 entries; quotient orders used: {8: 90, 16: 155, 32: 52}; failures 0
