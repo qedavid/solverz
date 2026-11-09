@@ -1,0 +1,20 @@
+'SignedDifferenceSets.Answer.N236.hasSDS' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SignedDifferenceSets.Answer.N1008.hasSDS' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SignedDifferenceSets.Answer.N11602.hasSDS' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SignedDifferenceSets.Answer.N14597.hasSDS' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SignedDifferenceSets.Answer.N14828.hasSDS' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SignedDifferenceSets.Answer.N31880.hasSDS' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SignedDifferenceSets.Answer.N31994.hasSDS' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SignedDifferenceSets.Answer.N14472.hasSDS' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SignedDifferenceSets.Answer.N448.hasSDS' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SignedDifferenceSets.Answer.N463.hasSDS' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SignedDifferenceSets.Answer.N3539.hasSDS' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SignedDifferenceSets.Answer.N933.hasSDS' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SignedDifferenceSets.Answer.N934.hasSDS' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SignedDifferenceSets.Answer.N931.hasSDS' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SignedDifferenceSets.Answer.N449.hasSDS' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SignedDifferenceSets.Answer.N939.hasSDS' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+real	0m32.043s
+user	0m0.108s
+sys	0m0.327s

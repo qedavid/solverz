@@ -1,0 +1,29 @@
+SignedDifferenceSets.Answer.N236.hasSDS : SignedDifferenceSets.HasSDS (ZMod 42) 18 2
+SignedDifferenceSets.Answer.N1008.hasSDS : SignedDifferenceSets.HasSDS (ZMod 5 × ZMod 15) 26 1
+SignedDifferenceSets.Answer.N11602.hasSDS : SignedDifferenceSets.HasSDS (ZMod 217) 112 12
+SignedDifferenceSets.Answer.N14597.hasSDS : SignedDifferenceSets.HasSDS (ZMod 3 × ZMod 3 × ZMod 3 × ZMod 3 × ZMod 3) 121
+  40
+SignedDifferenceSets.Answer.N14828.hasSDS : SignedDifferenceSets.HasSDS (ZMod 3 × ZMod 3 × ZMod 3 × ZMod 3 × ZMod 3) 177
+  96
+SignedDifferenceSets.Answer.N31880.hasSDS : SignedDifferenceSets.HasSDS (ZMod 7 × ZMod 7 × ZMod 7) 199 3
+SignedDifferenceSets.Answer.N31994.hasSDS : SignedDifferenceSets.HasSDS (ZMod 7 × ZMod 7 × ZMod 7) 247 51
+SignedDifferenceSets.Answer.N14472.hasSDS : SignedDifferenceSets.HasSDS (ZMod 3 × ZMod 3 × ZMod 3 × ZMod 9) 82 1
+SignedDifferenceSets.Answer.N448.hasSDS : SignedDifferenceSets.HasSDS (ZMod 3 × ZMod 3 × ZMod 6) 38 2
+SignedDifferenceSets.Answer.N463.hasSDS : SignedDifferenceSets.HasSDS (ZMod 3 × ZMod 3 × ZMod 6) 46 10
+SignedDifferenceSets.Answer.N3539.hasSDS : SignedDifferenceSets.HasSDS
+  (ZMod 2 × ZMod 2 × ZMod 2 × ZMod 2 × ZMod 2 × ZMod 2 × ZMod 2) 68 4
+SignedDifferenceSets.Answer.N933.hasSDS : SignedDifferenceSets.HasSDS (ZMod 3 × ZMod 24) 40 4
+SignedDifferenceSets.Answer.N934.hasSDS : SignedDifferenceSets.HasSDS (ZMod 6 × ZMod 12) 40 4
+SignedDifferenceSets.Answer.N931.hasSDS : SignedDifferenceSets.HasSDS (ZMod 2 × ZMod 6 × ZMod 6) 40 4
+SignedDifferenceSets.Answer.N449.hasSDS : SignedDifferenceSets.HasSDS (ZMod 3 × ZMod 18) 38 2
+SignedDifferenceSets.Answer.N939.hasSDS : SignedDifferenceSets.HasSDS (ZMod 3 × ZMod 24) 48 12
+def SignedDifferenceSets.HasSDS.{u_1} : (G : Type u_1) → [AddCommGroup G] → [Fintype G] → ℕ → ℤ → Prop :=
+fun G [AddCommGroup G] [Fintype G] k lam => ∃ D, SignedDifferenceSets.IsSDS k lam D
+def SignedDifferenceSets.IsSDS.{u_1} : {G : Type u_1} →
+  [AddCommGroup G] → [Fintype G] → ℕ → ℤ → (G → SignType) → Prop :=
+fun {G} [AddCommGroup G] [Fintype G] k lam D =>
+  {x | D x ≠ 0}.card = k ∧ ∀ (g : G), g ≠ 0 → ∑ x, ↑(D x) * ↑(D (x + g)) = lam
+
+real	0m30.358s
+user	0m0.108s
+sys	0m0.218s
