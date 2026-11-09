@@ -1,0 +1,90 @@
+\section{Introduction}\label{sec:intro}
+
+Signed difference sets were introduced by Gordon~\cite{gordon} as a common generalization of
+difference sets and circulant weighing matrices: a difference set is a signed difference set
+with all signs positive, and a circulant weighing matrix is one with $\lambda = 0$ in a cyclic
+group. Gordon's database~\cite{gordon-db} lists, for every abelian group $G$ of order
+$v < 500$ and every parameter set $(v,k,\lambda)$ that passes the basic counting conditions,
+whether a signed difference set is known to exist, known not to exist, or open. Of its
+\tableRows{} cases, \sourceOpen{} were open in the version we started from (Version~1.2,
+commit \texttt{e3bf810}). He and Wu~\cite{he-wu} settled most of them with four general
+obstructions and three constructions, leaving \openAfterHeWu{} open.
+
+\begin{theorem}\label{thm:main}
+Of the \openAfterHeWu{} cases of~\cite{gordon-db} that remain open after~\cite{he-wu},
+\ourNone{} admit no signed difference set and \ourExists{} admit one. Moreover, \corrections{}
+cases listed as open are settled by published constructions (Section~\ref{sec:corrections}).
+\end{theorem}
+
+Every statement behind Theorem~\ref{thm:main} is a theorem of the Lean~4 proof
+assistant~\cite{lean4} with Mathlib~\cite{mathlib}: each nonexistence criterion is proved once
+for every finite abelian group, and each case is settled by a Lean theorem whose statement
+names its group and parameters (Section~\ref{sec:verification}). The cases with a set are
+settled by exhibiting the set, which Lean checks directly.
+
+\subsection*{The criteria}
+Most criteria share one shape. If a signed difference set $D$ existed, its coset sums on a
+suitable quotient $H$ of $G$ would form an integer vector with prescribed absolute bounds,
+sum, autocorrelation and character values (Lemmas~\ref{lem:contraction}
+and~\ref{lem:chars}), and often with further structure: congruences from self-conjugate primes,
+congruences from Ma's lemma, or invariance under multipliers. Each criterion shows that for
+its cases no integer vector meets all these conditions. Table~\ref{tab:rules} lists them with
+the number of cases each settles; a case is counted once, by the first criterion in the order
+in which they were found, which is also the order of their labels Z1--Z33 in the accompanying
+repository. ``Ours'' in the table means that we found no earlier statement of the criterion for
+signed difference sets; it does not mean that the idea is new.
+
+\begingroup\small
+\begin{longtable}{@{}l >{\raggedright\arraybackslash}p{0.47\textwidth} r >{\raggedright\arraybackslash}p{0.26\textwidth}@{}}
+\caption{Criteria settling open cases (no SDS).}\label{tab:rules}\\
+\toprule
+& Criterion & Cases & Origin \\ \midrule
+\endfirsthead
+\toprule
+& Criterion & Cases & Origin \\ \midrule
+\endhead
+\multicolumn{4}{@{}l}{\emph{Congruences from self-conjugacy} (Section~\ref{sec:congruences})} \\
+Z8 & Self-conjugacy on a quotient & \zrows{8} & Turyn~\cite{turyn}; SDS form ours \\
+Z9 & Moments of the coset sums & \zrows{9} & ours, on~\cite[Lemma~5.2]{gordon} \\
+Z10 & Box bound & \zrows{10} & ours \\
+Z22 & Several self-conjugate primes (CRT) & \zrows{22} & ours \\
+\addlinespace
+\multicolumn{4}{@{}l}{\emph{Counting and parity} (Section~\ref{sec:counting})} \\
+Z11 & Support parity & \zrows{11} & classical for $\lambda = 0$~\cite{wallis-whiteman};
+  general $\lambda$ ours \\
+Z16 & Marked elements per coset (LP certificate) & \zrows{16} & ours \\
+\addlinespace
+\multicolumn{4}{@{}l}{\emph{Characters} (Section~\ref{sec:characters})} \\
+Z17 & Real characters on a quotient $C_2^r$ & \zrows{17} & extends~\cite[Thm.~4.2]{he-wu} \\
+Z18 & Characters of a quotient of exponent 4 & \zrows{18} & ours \\
+Z19 & Characters of a quotient of exponent 3 & \zrows{19} & classical; SDS form ours \\
+Z25 & Sylow quotients & \zrows{25} & ours, on Turyn's argument \\
+\addlinespace
+\multicolumn{4}{@{}l}{\emph{Ma's lemma} (Section~\ref{sec:ma})} \\
+Z24 & Ma's lemma on $C_{p^j} \times K$ & \zrows{24} & Ma's lemma~\cite{pott}; SDS form ours \\
+Z29 & Ma's lemma at its edge; halving & \zrows{29} & halving for $c=1$:~\cite{schmidt-smith};
+  general $c$ ours \\
+Z32 & Even contraction & \zrows{32} & ours, on Ma's lemma \\
+\addlinespace
+\multicolumn{4}{@{}l}{\emph{Multipliers and search} (Section~\ref{sec:multipliers})} \\
+Z15 & Multiplier theorem, $n$ squarefree, orbit search & \zrows{15} & McFarland, as
+  in~\cite[Thm.~5.1]{gordon}; fixed translate~\cite{mcfarland-rice} \\
+Z27 & The same for every $n$ prime to $v$ & \zrows{27} & as Z15 \\
+Z28 & Multiplier-fixed coset sums, searched & \zrows{28} & the search of~\cite[\S5]{gordon} \\
+Z31 & Self-conjugate primes enlarge the multiplier group & \zrows{31} & for difference
+  sets~\cite{gordon-schmidt,miller}; SDS form ours \\
+Z30 & Field descent without ramification & \zrows{30} & Schmidt's field descent~\cite{tan};
+  this form ours \\
+Z1, Z2, Z26 & Exhaustive search and contraction, single cases & 4 & ours \\
+Z33 & Contraction, then a lift coset by coset & \zrows{33} & as in~\cite[\S5]{gordon} \\
+\bottomrule
+\end{longtable}
+\endgroup
+
+\subsection*{Organization}
+Section~\ref{sec:prelim} fixes notation and collects the facts about coset sums that every
+criterion uses. Sections~\ref{sec:congruences}--\ref{sec:multipliers} state and prove the
+criteria, grouped by argument. Section~\ref{sec:constructions} gives the new sets,
+Section~\ref{sec:corrections} the corrections to the database, Section~\ref{sec:verification}
+explains how the Lean development can be checked, and Section~\ref{sec:open} describes the cases
+that remain open. Appendix~\ref{app:sets} lists the cases settled with a set.

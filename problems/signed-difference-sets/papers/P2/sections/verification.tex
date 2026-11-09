@@ -1,0 +1,47 @@
+\section{Formal verification}\label{sec:verification}
+
+All results of this paper are theorems of a Lean library in the repository \repo, folder
+\path{problems/signed-difference-sets/lean} (Lean~4 v4.35.0 with Mathlib~\cite{lean4,mathlib}).
+Every statement refers to the following definitions, which transcribe
+Definition~\ref{def:sds}:
+
+\begin{Verbatim}[fontsize=\small]
+def IsSDS (k : ℕ) (lam : ℤ) (D : G → SignType) : Prop :=
+  (Finset.univ.filter fun x => D x ≠ 0).card = k ∧
+    ∀ g : G, g ≠ 0 → ∑ x, ((D x : ℤ) * (D (x + g) : ℤ)) = lam
+
+def HasSDS (G : Type*) [AddCommGroup G] [Fintype G] (k : ℕ) (lam : ℤ) : Prop :=
+  ∃ D : G → SignType, IsSDS k lam D
+\end{Verbatim}
+
+\subsection*{Criteria and cases}
+Each criterion of Sections~\ref{sec:congruences}--\ref{sec:multipliers} is a Lean theorem for
+every finite abelian group, named after its statement in the text. A case is then settled by a
+theorem whose statement is the case itself, for example
+\begin{Verbatim}[fontsize=\small]
+theorem not_hasSDS : ¬ HasSDS (ZMod 3 × ZMod 3) 8 1
+\end{Verbatim}
+(\lean{SignedDifferenceSets.Answer.N3.not_hasSDS}). Its group is
+$\Z_{m_1} \times \cdots \times \Z_{m_r}$ for the invariant factors $[m_1,\dots,m_r]$ of the
+table entry, written out as above or through a definition \lean{Grp} that unfolds to that
+product (Lean proves that it has $m_1 \cdots m_r$ elements). The proof checks the criterion's
+hypotheses for the case, a finite computation, and applies the criterion. Searches
+(Section~\ref{sec:multipliers}) are certified the same way: the exhaustion is a computation
+that Lean's kernel carries out. A reader therefore needs to check only
+Definition~\ref{def:sds} against \texttt{IsSDS} and, for each case, that the statement's group,
+$k$ and $\lambda$ match its table entry, which a script can compare.
+
+\subsection*{Trust}
+From the repository root, \texttt{lake build --wfail SignedDifferenceSets} checks every result.
+The library contains no \texttt{sorry} and no added axioms, and no proof uses
+\texttt{native\_decide}: every computation is checked by the kernel. For every theorem of the
+library, \texttt{\#print axioms} lists only the three standard axioms \texttt{propext},
+\texttt{Classical.choice} and \texttt{Quot.sound}. A build from scratch takes hours, and single
+modules need up to 12.3~GB of memory; the problem's README describes how to build on smaller
+machines.
+
+\subsection*{Data}
+The repository also holds the table as we use it (\path{instances.csv}: every case with its
+status, evidence and Lean theorem), the sets of Appendix~\ref{app:sets} as text files
+(\path{objects/}), and the reports of an independent review of every result before it was
+accepted (\path{reviews/}).

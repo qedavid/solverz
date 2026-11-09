@@ -1,0 +1,106 @@
+\section{Preliminaries}\label{sec:prelim}
+
+Throughout, $G$ is a finite abelian group of order $v$, written additively.
+
+\begin{definition}[\cite{gordon}]\label{def:sds}
+A \emph{signed difference set} (SDS) with parameters $(v,k,\lambda)$ in $G$ is a map
+$D \colon G \to \{0,\pm1\}$ with exactly $k$ nonzero values such that
+\[
+  \sum_{x \in G} D(x)\, D(x+g) = \lambda \qquad \text{for every } g \neq 0.
+\]
+We write $n = k - \lambda$ for its \emph{order}.
+\end{definition}
+
+In the group ring $\Z[G]$, with $D = \sum_x D(x)\,x$ and $D^{(-1)} = \sum_x D(x)\,(-x)$, the
+condition reads $D D^{(-1)} = n + \lambda G$, which is Gordon's form of the
+definition~\cite{gordon}. In the table~\cite{gordon-db}, a case is a group $G$, given by its
+invariant factors $[m_1, \dots, m_r]$ with $m_1 \mid \cdots \mid m_r$, together with a
+parameter set $(v,k,\lambda)$.
+
+\begin{lemma}\label{lem:square}
+If $D$ is an SDS with parameters $(v,k,\lambda)$, then
+$\bigl(\sum_x D(x)\bigr)^2 = k + \lambda(v-1)$. In particular $k + \lambda(v-1) = s^2$ for an
+integer $s \ge 0$, and $\sum_x D(x) = \pm s$.
+\end{lemma}
+
+\begin{proof}
+Sum $\sum_x D(x) D(x+g)$ over all $g \in G$. The left side becomes $(\sum_x D(x))^2$; on the
+right, $g = 0$ contributes $k$ and each of the $v - 1$ other shifts contributes $\lambda$.
+\end{proof}
+
+\begin{lemma}\label{lem:translate}
+If $D$ is an SDS, so are $x \mapsto D(x+t)$ for every $t \in G$ and $x \mapsto -D(x)$, with the
+same parameters.
+\end{lemma}
+
+\begin{proof}
+The defining sum is unchanged by the substitution $x \mapsto x + t$, and signs enter it in
+pairs.
+\end{proof}
+
+\subsection{Coset sums}
+Let $\phi \colon G \to H$ be a surjective homomorphism and $c = v/|H|$, the size of each fibre.
+The \emph{coset sums} of $D$ on $H$ are
+\[
+  a_h = \sum_{\phi(x) = h} D(x) \qquad (h \in H);
+\]
+they are Gordon's intersection numbers~\cite[Lemma~5.2]{gordon}.
+
+\begin{lemma}\label{lem:contraction}
+Let $D$ be an SDS with parameters $(v,k,\lambda)$ and $a$ its coset sums on $H$. Then
+\begin{enumerate}
+\item $|a_h| \le c$ for every $h$;
+\item $\sum_h a_h = \pm s$;
+\item $\sum_h a_h^2 = k + \lambda(c-1)$;
+\item $\sum_h a_h\, a_{h+g} = \lambda c$ for every $g \neq 0$ in $H$.
+\end{enumerate}
+\end{lemma}
+
+\begin{proof}
+(1) holds because a fibre has $c$ elements, each contributing $0$ or $\pm1$, and (2) is
+Lemma~\ref{lem:square}. For (3) and (4), fix $g' \in H$. The sum $\sum_h a_h a_{h+g'}$ counts
+$D(x) D(y)$ over all pairs with $\phi(y - x) = g'$, so it equals $\sum_{g \in \phi^{-1}(g')}
+\sum_x D(x) D(x+g)$. For $g' \neq 0$ all $c$ shifts $g$ in the fibre are nonzero and contribute
+$\lambda$ each; for $g' = 0$ the shift $g = 0$ contributes $k$ and the other $c - 1$ contribute
+$\lambda$.
+\end{proof}
+
+For a character $\chi$ of $H$ and a vector $a$ on $H$ write $\chi(a) = \sum_h a_h \chi(h)$.
+
+\begin{lemma}\label{lem:chars}
+If $a$ is the vector of coset sums of an SDS on $H$, then $|\chi(a)|^2 = n$ for every nontrivial
+character $\chi$ of $H$, and $\chi_0(a)^2 = s^2$ for the trivial one.
+\end{lemma}
+
+\begin{proof}
+$|\chi(a)|^2 = \sum_{g} \chi(g) \sum_h a_h a_{h+g}$, which by Lemma~\ref{lem:contraction} equals
+$k + \lambda(c-1) + \lambda c \sum_{g \neq 0} \chi(g) = k + \lambda(c - 1) - \lambda c = n$ for
+$\chi \neq \chi_0$.
+\end{proof}
+
+Taking $H = G$ and $\phi$ the identity gives the familiar condition $|\chi(D)|^2 = n$ for every
+nontrivial character of $G$.
+
+\begin{example}\label{ex:coset}
+The $(25,12,1)$ set in $C_5 \times C_5$ of Section~\ref{sec:constructions} has $n = 11$ and
+$s = 6$. Contracting along the projection to the first factor ($H = C_5$, $c = 5$) gives the
+coset sums $a = (1, 1, -1, 3, 2)$: indeed $\sum_h a_h = 6$, $\sum_h a_h^2 = 16 = 12 + 1 \cdot 4$,
+and $\sum_h a_h a_{h+g} = 5$ for $g = 1, 2$ (and so for $g = 3, 4$).
+\end{example}
+
+\subsection{Self-conjugacy}
+For a positive integer $e$ let $\zeta_e$ be a primitive $e$-th root of unity.
+
+\begin{definition}\label{def:selfconj}
+A prime $p$ is \emph{self-conjugate modulo} $e$ if $p^i \equiv -1 \pmod{e'}$ for some
+$i \ge 0$, where $e'$ is the largest divisor of $e$ prime to $p$.
+\end{definition}
+
+\begin{lemma}[Turyn~\cite{turyn}]\label{lem:turyn}
+Let $p$ be self-conjugate modulo $e$ and $X \in \Z[\zeta_e]$. If $p^{2j}$ divides
+$X\overline{X}$, then $p^j$ divides $X$.
+\end{lemma}
+
+Since $\chi(a)\overline{\chi(a)} = n$ by Lemma~\ref{lem:chars}, Turyn's lemma turns a prime
+power dividing $n$ into a congruence on all character values of the coset sums; this is the
+source of the criteria in Sections~\ref{sec:congruences} and~\ref{sec:characters}.

@@ -1,0 +1,406 @@
+% constructions: the 50 sets (Z3-Z7, Z12-Z14, Z20, Z21, Z23).
+% Open questions for the author:
+% - Proposition prop:rdscomb (the signed combinations F1, F1', F3, F4 of idea I15) has no claim
+%   file: I15 states the families, R22 checked only the 19 sets. The proofs below are short
+%   group-ring computations written for this paper (not formalized, not refuter-reviewed as
+%   general statements). Keep, have them reviewed, or cut to "the sets come from ...".
+% - The explicit (25,12,1) description after thm:z3 (GF(25) = F_5[w]/(w^2-2), g = 1+2w,
+%   P = C_0+C_1+C_5, N = C_3) was found and checked by direct computation for this paper; R2
+%   only says O6 is affinely equivalent to some octic set of this kind. Not in Lean.
+% - The remark that prop:rdscomb(a) at n = 3 also gives (27,10,1) in C_3 x C_9 comes from the
+%   ideator's notes (scratch) and a numerical check; it is not in claims/ or reviews/.
+% - The (32,20,4)/(32,28,12) construction from a (4,4,4,1) RDS (remark after thm:z12) is the
+%   refuter's derivation in R6 (Literature), not a claim file.
+% - Assumed environments as in multipliers.tex plus `example`; labels from preliminaries as given.
+
+\section{New signed difference sets}\label{sec:constructions}
+
+We found SDSs in \ourExists{} open cases of the table (Solutions Z3--Z7, Z12--Z14, Z20, Z21,
+Z23); Appendix~\ref{app:sets} lists them. They come from exhaustive and orbit searches, from
+cyclotomic classes, from partial difference sets, and from signed combinations of relative
+difference sets. For each case Lean checks a concrete set: the theorem
+\lean{Answer.N<case>.hasSDS} states $\mathrm{HasSDS}\ G\ k\ \lambda$ for the case's group and
+parameters and is proved by exhibiting $D$ and evaluating the definition. Small sets are given
+as tables and checked by \texttt{decide}; larger ones as two bit masks (the $+1$ and the $-1$
+elements, in the numbering of Section~\ref{sec:searchcheck}), and a Boolean function that
+counts the support and the signed count at every shift is evaluated by
+\texttt{decide +kernel} (\lean{isSDS_of_checkSet}, \texttt{SetCheck.lean}); for the largest
+sets the shifts are split into ranges checked in separate declarations
+(\texttt{SetCheckSplit.lean}). So no construction below needs to be trusted for the existence
+results: each is an explanation of where a checked set comes from. The sets are in
+\path{lean/SignedDifferenceSets/Answer/N<case>.lean} and in \path{objects/}.
+
+\subsection{Sets found by search}
+
+Exhaustive searches fix one marked element at $0$ and the sign sum at $+s$
+(Lemmas~\ref{lem:translate} and~\ref{lem:square}) and stop at the first set. Orbit searches
+assume the set is constant on the orbits of a group of maps $x \mapsto tx$; when $n$ is prime to
+$v$ this is forced by Theorem~\ref{thm:multiplier}, otherwise it is an assumption that
+happens to succeed.
+
+\begin{theorem}\label{thm:z3}
+$C_5 \times C_5$ has a $(25, 12, 1)$ SDS.
+\end{theorem}
+
+\begin{theorem}\label{thm:z5}
+$C_3 \times C_9$ has a $(27, 10, 1)$ SDS.
+\end{theorem}
+
+\begin{theorem}\label{thm:z6}
+$C_3 \times C_9$ has a $(27, 14, 5)$ SDS.
+\end{theorem}
+
+\begin{proof}[Proof of Theorems~\ref{thm:z3}--\ref{thm:z6}]
+Exhaustive search (Experiment E4) found the sets O6, O8, O10; Lean checks them.
+\end{proof}
+
+\begin{remark}
+Lean: \lean{Answer.N49.hasSDS}, \lean{Answer.N62.hasSDS}, \lean{Answer.N68.hasSDS} (cases
+N49, N62, N68), settling \zrows{3}, \zrows{5} and \zrows{6} row. Origin: ours. The $(27, 14, 5)$ set
+in $C_3^3$ (N67) is Gordon's Paley-and-zero construction~\cite[Prop.~2.3]{gordon} over
+$\mathrm{GF}(27)$, a correction rather than a new case; in $C_3 \times C_9$ we found no
+construction explaining O10.
+\end{remark}
+
+The $(25, 12, 1)$ set has a cyclotomic description. Identify $(\mathrm{GF}(25), +)$ with
+$C_5 \times C_5$ through $\mathrm{GF}(25) = \mathbb{F}_5[w]/(w^2 - 2)$, $a + bw \mapsto (a, b)$;
+then $g = 1 + 2w$ is primitive. Let $C_i = g^i\langle g^8\rangle$ ($i = 0, \dots, 7$) be the
+eighth-power classes, of size $3$. Then $D = C_0 \cup C_1 \cup C_5$ marked $+1$ and $C_3$ marked
+$-1$ is a $(25, 12, 1)$ SDS (we checked this directly; it is not the set Lean checks). The set
+O6 is affinely equivalent to such a set (Review R2), and the cyclotomic search E6 finds the
+parameters $(25, 12, 1)$ at $q = 25$ among order-$8$ class unions.
+
+\begin{theorem}\label{thm:z12}
+There are SDSs with parameters $(32, 20, 4)$ in $C_2^5$, $C_2^3 \times C_4$,
+$C_2^2 \times C_8$, $C_2 \times C_4 \times C_4$, $C_2 \times C_{16}$ and $C_4 \times C_8$;
+$(32, 28, 12)$ in $C_2 \times C_4 \times C_4$ and $C_4 \times C_8$; $(36, 11, 2)$ in
+$C_3 \times C_{12}$ and $C_6 \times C_6$.
+\end{theorem}
+
+\begin{proof}
+Exhaustive search (Experiments E4, E7) found the sets O13--O22; Lean checks them.
+\end{proof}
+
+\begin{remark}
+Lean: \lean{Answer.N<case>.hasSDS} for N127--N132, N137, N139, N169, N170; \zrows{12} rows.
+Origin: ours (E4, E7). Four of the sets also have a construction. Let $H$ be a subgroup of index
+$2$ in $G$, $t \notin H$, and $X$ a $(4, 4, 4, 1)$ relative difference set in $H$ relative to
+$K$, $|K| = 4$, so $XX^{(-1)} = 4 + H - K$ and $XK = H$. With $A = H - 2X$ one has
+$AA^{(-1)} = 16 + 4H - 4K$ and $AK = 2H$, and a direct computation shows that $A + tK$ is a
+$(32, 20, 4)$ SDS and $A + t(H - K)$ a $(32, 28, 12)$ SDS. Such $X$ exists in
+$C_4 \times C_4$, which gives sets in $C_2 \times C_4 \times C_4$ and $C_4 \times C_8$ (cases
+N130, N132, N137, N139); the found sets for N137 and N139 have this shape (Review R6; not
+formalized). The $(36, 11, 2)$ set in $C_6 \times C_6$ is also $P - \{0\}$ for the rook-graph
+partial difference set (Example~\ref{ex:rook}).
+\end{remark}
+
+\begin{theorem}\label{thm:z13}
+There are SDSs with parameters $(45, 37, 1)$ in $C_3 \times C_{15}$, $(63, 47, 11)$ in
+$C_3 \times C_{21}$, and $(49, 33, 1)$ in $C_7 \times C_7$.
+\end{theorem}
+
+\begin{proof}
+The first two were found by an orbit search assuming invariance under $x \mapsto 2x$ (here
+$\gcd(v, n) = 9$, so the multiplier theorem does not force it); two independent searches found
+the same sets. The third is a union of eleven of the sixteen cosets of the subgroup of order $3$
+in $\mathrm{GF}(49)^\times$ (the order-$16$ cyclotomic classes, the orbits of
+$\{1, 2, 4\} \subset \mathbb{F}_7^\times$), with signs, and $0$ unmarked. Lean checks O23, O25,
+O24.
+\end{proof}
+
+\begin{remark}
+Lean: \lean{Answer.N286.hasSDS}, \lean{Answer.N638.hasSDS}, \lean{Answer.N352.hasSDS};
+\zrows{13} rows. Origin: ours (Experiment E9 and an orbit search). By Gordon's table, the cyclic
+groups $C_{45}$ and $C_{49}$ have no SDS with these parameters (``Orbit Exhaust'').
+\end{remark}
+
+\begin{theorem}\label{thm:z20}
+The cyclic groups of orders $79$, $127$, $217$, $222$, $455$ have SDSs with parameters
+$(79, 61, 38)$, $(127, 109, 90)$, $(217, 193, 168)$, $(222, 69, 20)$, $(455, 71, 7)$.
+\end{theorem}
+
+\begin{proof}
+In each case $\gcd(v, n) = 1$, and the orbit search of Theorem~\ref{thm:z15} over the orbits
+of the multiplier group (of order $3$, $3$, $6$, $9$, $12$) found a set (Experiment E10);
+Lean checks it.
+\end{proof}
+
+\begin{remark}
+Lean: \lean{Answer.N<case>.hasSDS} for N1164, N3486, N11650, N11991, N58470; \zrows{20} rows.
+Origin: ours (E10). The $(455, 71, 7)$ set is also the case $q = 8$ of
+Theorem~\ref{thm:rdsfamily}.
+\end{remark}
+
+\subsection{Cyclotomic classes}
+
+Let $q \equiv 1 \pmod e$ be a prime power and $C_0, \dots, C_{e-1}$ the cosets of the subgroup
+of $e$-th powers in $\mathrm{GF}(q)^\times$. He, Chen and Ge~\cite[\S5]{he-chen-ge} consider
+SDSs whose plus and minus parts are unions of classes, possibly with $0$, and classify them for
+$e = 4$; Gordon~\cite[\S3]{gordon} searched $e$-th powers with minus part $\{0\}$ and $q$
+prime. Experiment E6 ran every sign choice on $C_0, \dots, C_7$ and $\{0\}$ for all prime powers
+$q \equiv 1 \pmod 8$ up to $10^5$; besides $(25, 12, 1)$ above it found one open case.
+
+\begin{theorem}\label{thm:z7}
+Let $\mathrm{GF}(361) = \mathbb{F}_{19}[x]/(x^2 - 2)$, $g = 1 + 9x$, $h = g^7$, and
+$C_i = h^i\langle h^8\rangle$ $(i = 0, \dots, 7)$ the octic classes. Then
+$D = C_7 - (C_0 \cup \dots \cup C_5 \cup \{0\})$ is a $(361, 316, 141)$ SDS in
+$C_{19} \times C_{19}$.
+\end{theorem}
+
+\begin{proof}
+The set O12 is this set up to an automorphism and sign; Lean checks O12. (The description was
+rebuilt and checked independently in Review R6; with the classes of $g$ itself in place of
+$h = g^7$ the construction fails.) Here $k = 6 \cdot 45 + 1 + 45 = 316$ and
+$\sum D = -226$, $226^2 = 316 + 141 \cdot 360$.
+\end{proof}
+
+\begin{remark}
+Lean: \lean{Answer.N35840.hasSDS} (case N35840); \zrows{7} row. Origin: ours (E6); the nearest
+work is He--Chen--Ge~\cite[\S5]{he-chen-ge} (cyclotomic SDSs, classified for order $4$ only)
+and Gordon~\cite[\S3]{gordon} ($e$-th powers with minus part $\{0\}$, prime $v$). E6 found no
+other open case and no family: no sign pattern succeeds at more than two values of $q$.
+\end{remark}
+
+\subsection{Partial difference sets}
+
+A \emph{partial difference set} (PDS) with parameters $(v, k_P, \lambda', \mu)$ in an abelian
+group $G$ of order $v$ is a $k_P$-subset $P$ with $-P = P$, $0 \notin P$, such that each
+$g \neq 0$ has $\lambda'$ representations $g = x - y$ with $x, y \in P$ if $g \in P$ and $\mu$
+if $g \notin P$; in $\mathbb{Z}[G]$,
+$PP^{(-1)} = P^2 = k_P + \lambda' P + \mu(G - 1 - P)$.
+
+\begin{lemma}\label{lem:pds}
+If $P$ is a PDS with $\lambda' - \mu = 2$, then $D = P - \{0\}$ ($+1$ on $P$, $-1$ at $0$) is an
+SDS $(v, k_P + 1, \mu)$.
+\end{lemma}
+
+\begin{proof}
+Since $P^{(-1)} = P$,
+\begin{align*}
+  DD^{(-1)} = (P - 1)^2 = P^2 - 2P + 1
+  &= (k_P - \mu + 1) + (\lambda' - \mu - 2)P + \mu G \\
+  &= (k_P - \mu + 1) + \mu G. \qedhere
+\end{align*}
+\end{proof}
+
+\begin{remark}
+Lean: \lean{IsPDS.isSDS_minusZero}, \lean{IsPDS.hasSDS} (\texttt{Pds.lean}). He and Wu use this
+identity in the proof of~\cite[Thm.~5.3]{he-wu}, for Latin-square-type PDSs in $C_2^{2m}$ from
+Desarguesian spreads, without stating it separately. We found no other source.
+\end{remark}
+
+\begin{example}\label{ex:rook}
+In $G = C_6 \times C_6$ let $P = (H_1 \cup H_2) \setminus \{0\}$ for
+$H_1 = C_6 \times \{0\}$, $H_2 = \{0\} \times C_6$ (the rook graph, a Latin-square-type PDS
+$(36, 10, 4, 2)$). Then $D = P - \{0\} = H_1 + H_2 - 3$, and with $H_i^2 = 6H_i$,
+$H_1H_2 = G$,
+\[
+  DD^{(-1)} = 6H_1 + 6H_2 + 2G - 6H_1 - 6H_2 + 9 = 9 + 2G ,
+\]
+a $(36, 11, 2)$ SDS: $+1$ on the ten nonzero elements of the two axes, $-1$ at $0$. This settles
+N170, which exhaustive search also found (Theorem~\ref{thm:z12}).
+\end{example}
+
+The Latin-square type $L_m(r)$ has parameters $(m^2, r(m-1), m + r^2 - 3r, r^2 - r)$ and the
+negative Latin-square type $NL_m(r)$ has $(m^2, r(m+1), -m + r^2 + 3r, r^2 + r)$, so
+$\lambda' - \mu = m - 2r$, resp.\ $2r - m$; the lemma applies to $L_m(m/2 - 1)$ and
+$NL_m(m/2 + 1)$.
+
+\begin{theorem}\label{thm:z14}
+There are SDSs with parameters $(64, 22, 6)$ in $C_2^2 \times C_4^2$ and $C_8 \times C_8$;
+$(64, 46, 30)$ in $C_2^6$, $C_2^2 \times C_4^2$ and $C_8 \times C_8$; $(256, 106, 42)$ in
+$C_{16} \times C_{16}$; $(256, 154, 90)$ in $C_2^8$.
+\end{theorem}
+
+\begin{proof}
+Each is $P - \{0\}$ (Lemma~\ref{lem:pds}) for a PDS $P$ with $\lambda' - \mu = 2$:
+\begin{itemize}
+\item $(64, 22, 6)$: $L_8(3)$, the union minus $0$ of the three subgroups $K \times 0$,
+  $0 \times K$ and the diagonal in $G = K \times K$, $|K| = 8$ (a partial congruence
+  partition), for $K = C_2 \times C_4$ and $K = C_8$;
+\item $(64, 46, 30)$: $NL_8(5)$; in $C_2^6$ the complement of the hyperoval PDS $T_2^*(O)$;
+  in $C_8 \times C_8$ the complement of one of Malandro and Smith's $NL_8(2)$
+  sets~\cite{malandro-smith}; in $C_2^2 \times C_4^2$ the complement of an $NL_8(2)$ set
+  found by our exhaustive search over unions of rational classes;
+\item $(256, 106, 42)$: an $L_{16}(7)$ set in $C_{16} \times C_{16}$ from the same search (its
+  count, $98304$, agrees with Malandro and Smith's);
+\item $(256, 154, 90)$: $NL_{16}(9)$, the union of three of the five order-$5$ cyclotomic
+  classes of $\mathrm{GF}(256)$.
+\end{itemize}
+Lean checks each set directly (O26--O32).
+\end{proof}
+
+\begin{remark}
+Lean: \lean{Answer.N<case>.hasSDS} for N672, N678, N735, N738, N744, N16957, N17201;
+\zrows{14} rows. Origin: the step $P - \{0\}$ is from the proof of~\cite[Thm.~5.3]{he-wu};
+the PDSs are classical (partial congruence partitions, the hyperoval, semiprimitive
+cyclotomy) or from~\cite{malandro-smith} and our search, as listed; these SDSs are ours.
+\end{remark}
+
+\subsection{Signed combinations of relative difference sets}
+
+A $(m, n, k_R, \lambda_R)$ \emph{relative difference set} (RDS) in an abelian group $G$ of order
+$mn$ relative to a subgroup $N$ of order $n$ is a $k_R$-subset $R$ with
+$RR^{(-1)} = k_R + \lambda_R(G - N)$. Its elements lie in distinct cosets of $N$. We use two
+classical families (see~\cite{pott}): \emph{semiregular} RDSs $(n^2, n, n^2, n)$, which meet
+every coset of $N$ once, so $RN = G$; and Bose's \emph{affine} RDSs $(q+1, n, q, (q-1)/n)$ for a
+prime power $q$ and $n \mid q - 1$, in the cyclic group of order $n(q+1)$: the set
+$\{x \in \mathrm{GF}(q^2)^\times : \mathrm{Tr}(x) = 1\}$, a $(q+1, q-1, q, 1)$ RDS relative to
+$\mathrm{GF}(q)^\times$, projected modulo the subgroup of $\mathrm{GF}(q)^\times$ of index $n$. An
+affine RDS meets $q$ of the $q+1$ cosets of $N$ once each; after a translation it misses $N$,
+and then $RN = G - N$.
+
+\begin{proposition}\label{prop:rdscomb}
+Let $R$ be an RDS relative to $N$ in $G$, with $|N| = n$.
+\begin{enumerate}
+\item If $R$ is semiregular, $(n^2, n, n^2, n)$, with $R \cap N = \{0\}$, then $R - N$ is an
+  SDS $(n^3, n^2 + n - 2, n - 2)$ and $G - R - N$ is an SDS
+  $(n^3, n^3 - n^2 - n + 2, n^3 - 2n^2 - n + 2)$.
+\item If $R$ is affine, $(q+1, n, q, (q-1)/n)$, with $R \cap N = \emptyset$, and
+  $v = n(q+1)$, then
+  \begin{enumerate}
+  \item $G - 2R - N$ is an SDS $(v, nq, q(n-4))$ if $q = (n/2 - 1)^2$;
+  \item $G - R - 2N$ is an SDS $(v, v - q, v - 2q)$ if $q = (2n - 1)^2$.
+  \end{enumerate}
+\end{enumerate}
+\end{proposition}
+
+\noindent Here, for instance, $G - R - N$ takes the values $+1$ off $R \cup N$, $0$ on
+$(R \cup N) \setminus \{0\}$ and $-1$ at $0$; in each case the values lie in $\{0, \pm1\}$.
+This proposition is not formalized; only the sets below are checked.
+
+\begin{proof}
+Write $\rho = RR^{(-1)}$ and use $GX = (\sum X)G$, $NN^{(-1)} = nN$ and
+$NR^{(-1)} = (RN)^{(-1)}$.
+(1) $RN = G$ and $\rho = n^2 + n(G - N)$, so
+$(R - N)(R - N)^{(-1)} = \rho - 2G + nN = n^2 + (n - 2)G$, and
+$(G - R - N)(G - R - N)^{(-1)} = (n^3 - 2n^2 - 2n)G + \rho + 2G + nN
+= n^2 + (n^3 - 2n^2 - n + 2)G$.
+(2) $RN = G - N$ and $\rho = q + \lambda_R(G - N)$ with $\lambda_R = (q-1)/n$. Then
+\begin{align*}
+(G - 2R - N)(\cdot)^{(-1)} &= 4q + (v - 4q - 2n + 4\lambda_R + 4)G + (n - 4\lambda_R - 4)N,\\
+(G - R - 2N)(\cdot)^{(-1)} &= q + (v - 2q - 4n + \lambda_R + 4)G + (4n - \lambda_R - 4)N .
+\end{align*}
+The coefficient of $N$ vanishes exactly when $\lambda_R = n/4 - 1$, i.e.\ $q = (n/2 - 1)^2$, resp.\
+$\lambda_R = 4n - 4$, i.e.\ $q = (2n-1)^2$; the remaining coefficients give the parameters.
+\end{proof}
+
+\begin{theorem}\label{thm:z23}
+There are SDSs with parameters
+\begin{itemize}
+\item $(64, 18, 2)$ in $C_2^6$, $C_2^4 \times C_4$, $C_2^3 \times C_8$, $C_2^2 \times C_4^2$,
+  $C_2 \times C_4 \times C_8$, $C_4^3$;
+\item $(64, 46, 30)$ in $C_2^4 \times C_4$, $C_2^3 \times C_8$, $C_2 \times C_4 \times C_8$,
+  $C_4^3$;
+\item $(125, 28, 3)$ in $C_5 \times C_{25}$; $(125, 97, 72)$ in $C_5^3$ and
+  $C_5 \times C_{25}$;
+\item $(343, 54, 5)$ and $(343, 289, 240)$ in $C_7^3$ and $C_7 \times C_{49}$;
+\item $(312, 300, 200)$ in $C_{312}$; $(410, 329, 248)$ in $C_{410}$.
+\end{itemize}
+\end{theorem}
+
+\begin{proof}
+Proposition~\ref{prop:rdscomb}(1) with $n = 4, 5, 7$ gives the first four lines: $R - N$ for
+$(n^3, n^2 + n - 2, n - 2)$ and $G - R - N$ for the complementary parameters. For $n = p$ odd,
+$R = \{(x, y, xy)\}$ in $\mathbb{F}_p^3$ relative to $\{(0, 0, z)\}$, and
+$R = \{(x + pxy, y) : x, y \in \mathbb{Z}_p\}$ in $\mathbb{Z}_{p^2} \times \mathbb{Z}_p$ relative
+to $\langle (p, 0)\rangle$, are semiregular RDSs; for the groups of order $64$ a semiregular
+$(16, 4, 16, 4)$ RDS was found by computer search. Proposition~\ref{prop:rdscomb}(2) with the
+affine RDS gives $(312, 300, 200)$ ($q = 25$, $n = 12$, case (a)) and $(410, 329, 248)$
+($q = 81$, $n = 5$, case (b)). Lean checks each of the nineteen sets (O40--O58).
+\end{proof}
+
+\begin{remark}
+Lean: \lean{Answer.N<case>.hasSDS} for N658--N661, N663, N665, N736, N737, N740, N742, N3243,
+N3314, N3315, N31721, N31722, N32087, N32088, N26075, N47314; \zrows{23} rows. Origin: the
+constructions of Proposition~\ref{prop:rdscomb} as SDS constructions are ours, on the classical
+RDSs (semiregular: see~\cite{pott}; affine: Bose's). He and Wu~\cite[Thm.~5.6]{he-wu} construct
+a $(125, 28, 3)$ SDS of the shape of (1) in $C_5^3$ (case N3242, not among ours), and
+Gordon's Table~1~\cite{gordon} lists the points $(20, 11, 2)$ and $(78, 53, 28)$ of (2)(b) as
+search results. At $n = 3$, (1) gives $(27, 10, 1)$ sets in $C_3^3$ and $C_3 \times C_9$ and
+$(27, 17, 8)$ sets, cases settled otherwise (Theorems~\ref{thm:z4}, \ref{thm:z5}
+and~\cite[Thm.~4.1]{gordon}).
+\end{remark}
+
+The case $R - N$ for an affine RDS gives a cyclic family.
+
+\begin{theorem}\label{thm:rdsfamily}
+For every prime power $q \ge 3$ the cyclic group of order $(q-1)(q^2+1)$ has an SDS with
+parameters
+\[
+  \bigl((q-1)(q^2+1),\; q^2 + q - 1,\; q - 1\bigr).
+\]
+\end{theorem}
+
+\begin{proof}
+Not formalized. Let $n = q - 1 \ge 2$ and $Q = q^2$, and let $R$ be Bose's affine
+$(Q + 1, n, Q, (Q-1)/n)$ RDS in the cyclic group $G$ of order $n(Q+1)$, translated to miss
+$N$. Then $RN = G - N$, $NN^{(-1)} = nN$ and
+\[
+  (R - N)(R - N)^{(-1)} = Q + \tfrac{Q-1}{n}(G - N) - 2(G - N) + nN .
+\]
+Here $(Q - 1)/n = q + 1 = n + 2$, so the coefficient of $N$ vanishes and
+$(R - N)(R - N)^{(-1)} = Q + nG$: $R - N$ ($+1$ on $R$, $-1$ on $N$) is an SDS
+$(n(Q+1), Q + n, n)$. (For $n \ge 2$ the coefficient of $N$ vanishes only when
+$Q = (n+1)^2$.)
+\end{proof}
+
+\begin{remark}
+For $q = 2$ the same set is the trivial $(5, 5, 1)$ SDS. The members $q = 3, 4, 5$,
+$(20, 11, 2)$, $(51, 19, 3)$, $(104, 29, 4)$, are among Gordon's sporadic cyclic
+SDSs~\cite[Table~1]{gordon}; they also give valid sets for the cases N388 and N2215, whose
+stored sets in the database fail. The members $q = 7$ and $q = 8$ were open: $(455, 71, 7)$ is
+also found by search (Theorem~\ref{thm:z20}) and $(300, 55, 6)$ is Theorem~\ref{thm:z21}. The
+family was found in this work (Review R14) and checked on paper and numerically (Review R16);
+we found it in no publication, but did not search the literature on ternary sequences in
+depth.
+\end{remark}
+
+\begin{theorem}\label{thm:z21}
+$C_{300}$ has a $(300, 55, 6)$ SDS.
+\end{theorem}
+
+\begin{proof}
+Theorem~\ref{thm:rdsfamily} with $q = 7$: $R - N$ for Bose's $(50, 6, 49, 8)$ RDS projected to
+$C_{300}$, relative to the subgroup of order $6$. Lean checks the set O39.
+\end{proof}
+
+\begin{remark}
+Lean: \lean{Answer.N24177.hasSDS} (case N24177); \zrows{21} row. Origin: Bose's affine RDS;
+the projection to an SDS was found in this work (Review R14). The same parameters in
+$C_5 \times C_{60}$ (N24175) remain open: we found no RDS there.
+\end{remark}
+
+\subsection{A product construction at its smallest case}
+
+He, Chen and Ge~\cite[Thm.~4.1]{he-chen-ge} build $(3^{2m+1}, 3^{2m} + 1, 1)$ SDSs in
+$G_0 \times G_1 \times G_1$, $G_0 = C_3$, $G_1 = C_3^m$, from a $(3^m, 3^m - 1, -1)$ SDS $D'$
+in $G_1$; their theorem states $m$ even. At $m = 1$, with $D' = [1] - [2]$ in $C_3$ and their
+$x_1 = 0$, it gives the following set.
+
+\begin{theorem}\label{thm:z4}
+On $C_3^3$ let $D(1, 0, y) = D(0, y, 0) = 1$ for $y \in \mathbb{Z}_3$,
+$D(0, a, b) = \varepsilon(a)\varepsilon(b)$ for $a, b \in \{1, 2\}$ with $\varepsilon(1) = 1$,
+$\varepsilon(2) = -1$, and $D = 0$ elsewhere. Then $D$ is a $(27, 10, 1)$ SDS.
+\end{theorem}
+
+\begin{proof}
+Lean checks the set O7, which is $D$ moved by the automorphism
+$x \mapsto Ax$, $A = \left(\begin{smallmatrix} 2&1&0\\ 2&2&0\\ 0&0&1 \end{smallmatrix}\right)$:
+$\mathrm{O7}(Ax) = D(x)$ (Review R2; we rechecked this map). Explicitly, O7 is $+1$ at
+\[
+  (0,0,0),\ (1,2,0),\ (1,2,1),\ (2,1,0),\ (2,1,2),\ (2,2,0),\ (2,2,1),\ (2,2,2)
+\]
+and $-1$ at $(1,2,2)$ and $(2,1,1)$. Directly: with $K_2 = 0 \times C_3 \times 0$,
+$K_3 = 0 \times 0 \times C_3$ and $E = \sum_{a,b} \varepsilon(a)\varepsilon(b)[(0,a,b)]$,
+$D = [(1,0,0)]K_3 + K_2 + E$, and since $E = E_2E_3$ with $E_iE_i^{(-1)} = 3 - K_i$
+(the $(3, 2, -1)$ SDS $[1] - [2]$), $E_iK_i = 0$, one gets
+$DD^{(-1)} = 9 + G$.
+\end{proof}
+
+\begin{remark}
+Lean: \lean{Answer.N61.hasSDS} (case N61); \zrows{4} row. Origin: first stated and Lean-checked
+here; it is He--Chen--Ge's product construction~\cite[\S4]{he-chen-ge} at $m = 1$, outside the
+range their theorem states. The same parameters arise from
+Proposition~\ref{prop:rdscomb}(1) with $n = 3$.
+\end{remark}

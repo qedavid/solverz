@@ -1,0 +1,19 @@
+\section{The cases settled with a set}\label{app:sets}
+
+The \ourExists{} cases of Theorem~\ref{thm:main} settled by a set. The last column names the
+Solution in \path{solutions.md} of the repository; each set is there as data, in
+\path{lean/SignedDifferenceSets/Answer/N<case>.lean} and as a text file listed in
+\path{objects/_objects.md}.
+
+\begingroup\small
+\begin{longtable}{@{}llll@{}}
+\toprule
+Case & $(v,k,\lambda)$ & Group & Solution \\ \midrule
+\endfirsthead
+\toprule
+Case & $(v,k,\lambda)$ & Group & Solution \\ \midrule
+\endhead
+\csname @@input\endcsname build/sets % TeX's primitive \input: LaTeX's breaks inside a table
+\bottomrule
+\end{longtable}
+\endgroup

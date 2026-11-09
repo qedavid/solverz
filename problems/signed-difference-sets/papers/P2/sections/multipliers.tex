@@ -1,0 +1,493 @@
+% multipliers: Z15, Z27, Z28, Z31, Z30; exhaustive search Z1, Z2, Z26, Z33.
+% Open questions for the author:
+% - Assumed environments theorem, proposition, lemma, corollary, definition, remark (amsthm),
+%   and labels from other sections: thm:z8 (self-conjugacy rule, congruences section).
+% - \lean{...} is given names relative to the namespace SignedDifferenceSets, with raw
+%   underscores; adjust if the macro wants full names or escaped underscores.
+% - solutions.md (Z33) names the lift theorem `SignedDifferenceSets.not_hasSDS_of_lift`; in
+%   LiftSearch.lean it lies in namespace LiftSearch, so its full name is
+%   SignedDifferenceSets.LiftSearch.not_hasSDS_of_lift (used below).
+% - Lemma lem:cosetconds (C4, C7: absolute sum, parity, marked counts) may duplicate a lemma in
+%   the counting section (Z16); merge if so.
+% - Added refs.bib entry arasu-gordon-zhang (Z28's Origin cites their Algorithm 1).
+% - The hand argument for N32 after Theorem thm:z2 is ours, written for this paper; it is not
+%   in claims/ and not formalized. Drop it if unwanted.
+
+\section{Multipliers and exhaustive search}\label{sec:multipliers}
+
+When $n$ is prime to $v$, McFarland's multiplier theorem makes some translate of an SDS
+constant on the orbits of certain automorphisms $x \mapsto tx$, and the same holds for its
+coset sums on a quotient whose order is prime to $n$. The search space then shrinks to one
+value per orbit, and a computer can exhaust it. This section gives the multiplier theorem in
+the form we use (one translate fixed by all multipliers at once), four rules built on it
+(Z15, Z27, Z28, Z31), a bound derived from it (Z30), and the cases settled by plain exhaustive
+search (Z1, Z2, Z26, Z33). Section~\ref{sec:searchcheck} explains how Lean checks the searches.
+
+\subsection{Notation}
+For a finite abelian group $H$ we work in the group ring $\mathbb{Z}[H]$ and identify a
+function $a \colon H \to \mathbb{Z}$ with $A = \sum_h a(h)[h]$. We write $H$ also for
+$\sum_{h \in H} [h]$, and for an integer $t$ we put $A^{(t)} = \sum_h a(h)[th]$, so that
+$A^{(-1)} = \sum_h a(h)[-h]$. The identity
+\begin{equation}\label{eq:autocorr}
+  \sum_{h} a(h)\,a(h+g) = n\,[g = 0] + \mu \quad (g \in H)
+  \qquad\Longleftrightarrow\qquad A A^{(-1)} = n + \mu H
+\end{equation}
+says that $a$ has \emph{autocorrelation} $n[g=0] + \mu$. An SDS $D$ on $G$ has it with
+$n = k - \lambda$ and $\mu = \lambda$; its coset sums on a quotient $H$ with fibres of size
+$c$ have it with $\mu = \lambda c$ (Lemma~\ref{lem:contraction}). Summing~\eqref{eq:autocorr}
+over $g$ gives $s^2 = n + \mu |H|$ for $s = \sum_h a(h)$.
+
+\begin{definition}\label{def:multipliers}
+For a finite abelian group $H$ and an integer $n \neq 0$, let $M(H, n)$ be the set of integers
+$t$ prime to $|H|$ such that for every prime $p \mid n$ there is $f \ge 0$ with $tx = p^f x$
+for all $x \in H$ (that is, $t \equiv p^f \pmod{\exp H}$).
+\end{definition}
+
+For $t$ prime to $|H|$ the map $x \mapsto tx$ is an automorphism of $H$; its orbits are the
+\emph{orbits of $t$}.
+
+\begin{lemma}\label{lem:cosetconds}
+Let $D$ be an SDS $(v, k, \lambda)$ on $G$, $\phi \colon G \to H$ surjective, $c = v/|H|$ and
+$a$ the coset sums of $D$. For $x \in \mathbb{Z}$ let $m_c(x) = c$ if $x \equiv c \pmod 2$ and
+$m_c(x) = c - 1$ otherwise. Then $\sum_h |a(h)| \le k$, $k - \sum_h |a(h)|$ is even, and
+$k \le \sum_h m_c(a(h))$.
+\end{lemma}
+
+\begin{proof}
+Let $m(h)$ be the number of marked elements in the coset of $h$. Then $a(h)$ is a sum of
+$m(h)$ signs, so $|a(h)| \le m(h) \le c$ and $m(h) \equiv a(h) \pmod 2$; hence
+$m(h) \le m_c(a(h))$. Sum over $h$, using $\sum_h m(h) = k$.
+\end{proof}
+
+\noindent Lean: \lean{IsSDS.sum_abs_contract_le}, \lean{IsSDS.sum_abs_contract_parity},
+\lean{marked_le_maxMarked} with \lean{IsSDS.sum_marked}.
+
+\begin{definition}\label{def:cosetconds}
+Let $H$ be a finite abelian group and $c, k \ge 1$, $\lambda$, $s$ integers. A function
+$a \colon H \to \mathbb{Z}$ \emph{meets the coset conditions} for $(c, k, \lambda, s)$ if
+$|a(h)| \le c$ for all $h$, $\sum_h a(h) = s$, $\sum_h a(h)^2 = k + \lambda(c-1)$,
+$\sum_h a(h)a(h+g) = \lambda c$ for $g \neq 0$, and the three conditions of
+Lemma~\ref{lem:cosetconds} hold.
+\end{definition}
+
+By Lemmas~\ref{lem:contraction} and~\ref{lem:cosetconds}, the coset sums of an SDS meet the
+coset conditions for $(c, k, \lambda, s')$ with $s' = \pm s$; since all conditions but the sum
+are even in $a$, either $a$ or $-a$ meets them for $(c, k, \lambda, s)$.
+
+\subsection{The multiplier theorem with a fixed translate}
+
+\begin{theorem}[McFarland]\label{thm:multiplier}
+Let $a \colon H \to \mathbb{Z}$ have autocorrelation $n[g=0] + \mu$ with $n \neq 0$ and
+$\gcd(n, |H|) = 1$. Then there is $b \in H$ with $a(tx + b) = a(x + b)$ for all $x \in H$ and
+all $t \in M(H, n)$.
+\end{theorem}
+
+The theorem is McFarland's (Gordon~\cite[Thm.~5.1]{gordon}, Tan~\cite[Result~3.2]{tan}); the
+classical statement gives, for each $t$, a translate fixed by $t$. That one translate serves
+every $t$ at once is the observation of McFarland and Rice~\cite{mcfarland-rice}. We give
+the proof, since Lean follows it.
+
+\begin{proof}
+Fix $t \in M(H, n)$ and let $W = A^{(t)}A^{(-1)} - \mu H$. Write $s = \sum_h a(h)$, so
+$s^2 = n + \mu|H|$.
+
+\emph{Step 1: $n$ divides every coefficient of $W$.} It suffices to show $p^e \mid W$ for
+every prime power $p^e \,\|\, n$. Let $f$ be as in Definition~\ref{def:multipliers}, so
+$A^{(t)} = A^{(p^f)}$.
+
+If $n$ is squarefree ($e = 1$), work in $\mathbb{F}_p[H]$. There $A^{p} = A^{(p)}$
+(Frobenius, since $a(h)^p \equiv a(h)$), so
+$A^{(t)} \equiv A^{p^f}$ and
+\[
+  W \equiv A^{p^f - 1} A A^{(-1)} - \mu H = A^{p^f-1}(n + \mu H) - \mu H
+  \equiv \mu\,(s^{p^f - 1} - 1)\,H \pmod p ,
+\]
+using $AH = sH$. If $p \mid \mu$ this vanishes; otherwise $p \nmid s^2 = n + \mu|H|$
+(as $p \nmid |H|$), and $s^{p^f - 1} \equiv 1$ by Fermat, since $p - 1 \mid p^f - 1$.
+
+For general $e$, let $\kappa$ be a finite field of characteristic $p$ containing a primitive
+$|H|$-th root of unity, and $\Lambda = W(\kappa)$ its ring of Witt vectors: a complete discrete
+valuation ring with uniformizer $p$, containing a primitive $|H|$-th root of unity (the
+Teichmüller lift of one in $\kappa$), with a Frobenius automorphism $\sigma$ that fixes
+$\mathbb{Z}$ and maps every root of unity $u$ of order prime to $p$ to $u^p$. Let $\chi$ run
+over the characters $H \to \Lambda^\times$. For $\chi \ne 1$ we have $\chi(H) = 0$,
+$\chi(A)\chi(A^{(-1)}) = n$ and $\chi(A^{(t)}) = \sum_h a(h)\chi(h)^{p^f} = \sigma^f(\chi(A))$.
+A ring automorphism of a discrete valuation ring with $\sigma(p) = p$ preserves the
+valuation, so $\chi(W) = \sigma^f(\chi(A))\,\chi(A^{(-1)})$ has the valuation of $n$, and
+$p^e \mid \chi(W)$. For $\chi = 1$, $\chi(W) = s^2 - \mu|H| = n$. Fourier inversion,
+$|H|\,W(g) = \sum_\chi \chi(W)\chi(-g)$, gives $p^e \mid |H|\,W(g)$ in $\Lambda$; $|H|$ is a
+unit, and an integer divisible by $p^e$ in $\Lambda$ is divisible by $p^e$ in $\mathbb{Z}$.
+
+\emph{Step 2: $W = n[g]$ for some $g \in H$.} Since $x \mapsto tx$ is an automorphism,
+$A^{(t)}A^{(-t)} = (n + \mu H)^{(t)} = n + \mu H$, and $A^{(\pm t)}H = A^{(\pm 1)} H = sH$.
+Expanding,
+\[
+  W W^{(-1)} = (n + \mu H)^2 - 2\mu s^2 H + \mu^2|H|H
+  = n^2 + 2\mu\,(n + \mu|H| - s^2)\,H = n^2 ,
+\]
+and $\sum_h W(h) = s^2 - \mu|H| = n$. So $U = W/n \in \mathbb{Z}[H]$ has $\sum_h U(h)^2 = 1$
+(the coefficient of $[0]$ in $UU^{(-1)} = 1$) and $\sum_h U(h) = 1$: $U = [g]$.
+
+\emph{Step 3: $A^{(t)} = [g]A$.} Indeed $WA = A^{(t)}(n + \mu H) - \mu sH = nA^{(t)}$, and
+$WA = n[g]A$. In coordinates, $a(x) = a(tx - g)$ for all $x$.
+
+\emph{Step 4: one translate for all $t$.} As $\gcd(n, |H|) = 1$ and $s^2 = n + \mu|H|$, $s$ is
+prime to $|H|$, so there is $b \in H$ with $sb = \sum_h a(h)h$. The translate
+$a'(x) = a(x + b)$ has the same autocorrelation and $\sum_x a'(x)x = \sum_y a(y)(y - b) = 0$.
+Steps 1--3 for $a'$ give $g$ with $a'(x) = a'(tx - g)$. Then, substituting $y = tx$,
+\[
+  0 = t\sum_x a'(x)x = \sum_x a'(tx - g)\,tx = \sum_y a'(y - g)\,y = \sum_z a'(z)(z + g) = sg,
+\]
+so $g = 0$. Since $b$ does not depend on $t$, $a'$ is fixed by every $t \in M(H, n)$.
+\end{proof}
+
+\noindent Lean: \lean{exists_translate_fixed_of_autocorr} (squarefree $n$, Step~1 by
+Frobenius, \texttt{Multiplier.lean}) and \lean{exists_translate_fixed_of_autocorr'} (every
+$n \neq 0$, Step~1 in Witt vectors, \texttt{MultiplierWitt.lean}). For an SDS:
+\lean{IsSDS.exists_translate_fixed}, \lean{IsSDS.exists_translate_fixed'}; for its coset sums
+on a quotient $H$ with $\gcd(|H|, n) = 1$: \lean{IsSDS.exists_translate_fixed_contract},
+\lean{IsSDS.exists_translate_fixed_contract'}.
+
+\begin{remark}
+Step~1 for squarefree $n$ is elementary; we did not find this proof in print, but every step is
+standard. The proof for general $n$ is the usual character argument with ideals of
+$\mathbb{Z}[\zeta]$ replaced by the discrete valuation ring $\Lambda$; we chose Witt vectors
+because Mathlib provides them, and found no earlier formalization of a multiplier theorem.
+\end{remark}
+
+\subsection{Orbit exhaustion}
+
+\begin{theorem}\label{thm:z15}
+Let $G$ be a finite abelian group of order $v$, and $k$, $\lambda$ integers with
+$n = k - \lambda > 0$ squarefree and $\gcd(n, v) = 1$. Let $t \in M(G, n)$ and let $s$ be an
+integer with $s^2 = k + \lambda(v - 1)$. Suppose there is no $D \colon G \to \{0, \pm 1\}$ with
+$D(tx) = D(x)$ for all $x$, $k$ nonzero values, $\sum_x D(x) = s$ and
+$\sum_x D(x)D(x+g) = \lambda$ for all $g \neq 0$. Then $G$ has no $(v, k, \lambda)$ SDS.
+\end{theorem}
+
+\begin{proof}
+Let $D$ be an SDS. It has autocorrelation $n[g=0] + \lambda$, so by
+Theorem~\ref{thm:multiplier} a translate $D'$ is fixed by $t$; $D'$ is an SDS
+(Lemma~\ref{lem:translate}) with $\sum D' = \pm s$ (Lemma~\ref{lem:square}). Either $D'$ or
+$-D'$, also fixed by $t$, is excluded by the hypothesis.
+\end{proof}
+
+\noindent In Lean the group is $\mathbb{Z}_{m_1} \times \dots \times \mathbb{Z}_{m_r}$ and the
+condition $t \in M(G, n)$ reads $t \equiv p^f \pmod{m_i}$ for all $i$; the hypothesis on $D$
+is decided by a kernel computation (Section~\ref{sec:searchcheck}), as are the arithmetic
+conditions (squarefreeness, primality, coprimality, by trial division).
+
+\begin{remark}
+Lean: \lean{not_hasSDS_of_orbitRow} (\texttt{OrbitSearch.lean}); the two largest rows, N71 and
+N363, through \lean{not_hasSDS_of_orbitSlices} (\texttt{OrbitSearchSplit.lean}). It settles
+\zrows{15} rows. Origin: McFarland's multiplier theorem, as in~\cite[Thm.~5.1]{gordon}, with
+the fixed translate of~\cite{mcfarland-rice}; Gordon's database already uses orbit exhaustion
+(``Orbit Exhaust''); our part is the search for these rows and its Lean proof.
+\end{remark}
+
+\begin{theorem}\label{thm:z27}
+Theorem~\ref{thm:z15} holds without the hypothesis that $n$ is squarefree.
+\end{theorem}
+
+\begin{proof}
+The same, with Theorem~\ref{thm:multiplier} for general $n$.
+\end{proof}
+
+\begin{remark}
+Lean: \lean{not_hasSDS_of_orbitRow'} (\texttt{OrbitSearchWitt.lean}),
+\lean{not_hasSDS_of_orbitSlices'}. It settles \zrows{27} rows, all with $n$ not squarefree.
+Origin: McFarland's theorem~\cite[Thm.~5.1]{gordon}, \cite[Result~3.2]{tan}, and orbit
+exhaustion as in Gordon's database; the Lean proof through Witt vectors is ours.
+\end{remark}
+
+\subsection{Multiplier-fixed coset sums}
+
+When the orbits of $t$ on $G$ are too many to search, one searches the coset sums on a
+quotient instead.
+
+\begin{theorem}\label{thm:z28}
+Let $G = \mathbb{Z}_{m_1} \times \dots \times \mathbb{Z}_{m_r}$ of order $v$,
+$H = \mathbb{Z}_{d_1} \times \dots \times \mathbb{Z}_{d_r}$ with $d_i \mid m_i$, $\phi$ the
+reduction map and $c = v/|H|$. Let $n = k - \lambda > 0$ with $\gcd(n, |H|) = 1$,
+$t \in M(H, n)$, and $s^2 = k + \lambda(v-1)$. If no $a \colon H \to \mathbb{Z}$ with
+$a(th) = a(h)$ for all $h$ meets the coset conditions for $(c, k, \lambda, s)$, then $G$ has no
+$(v, k, \lambda)$ SDS.
+\end{theorem}
+
+\begin{proof}
+The coset sums of an SDS have autocorrelation $n[g = 0] + \lambda c$
+(Lemma~\ref{lem:contraction}), so by Theorem~\ref{thm:multiplier} a translate $a$ of them is
+fixed by $t$. A translate of the coset sums is the coset sums of a translate of $D$, so $a$ or
+$-a$ meets the coset conditions for $(c, k, \lambda, s)$ (Definition~\ref{def:cosetconds}).
+\end{proof}
+
+\begin{remark}
+Lean: \lean{not_hasSDS_of_cosetRow} (squarefree $n$) and \lean{not_hasSDS_of_cosetRow'}
+(\texttt{CosetSearch.lean}, \texttt{CosetSearchWitt.lean}); both go through
+\lean{not_hasSDS_of_cosetSearch}, which takes the multiplier theorem for coset sums as a
+hypothesis (\lean{C10Holds}), proved by \lean{c10Holds_of_squarefree} and
+\lean{c10Holds_of_ne_zero}. It settles \zrows{28} rows. Origin: the search
+of~\cite[\S5]{gordon} (after Arasu, Gordon and Zhang~\cite[Algorithm~1]{arasu-gordon-zhang}),
+on McFarland's theorem; its exhaustion as a kernel check and the Lean proof are ours.
+\end{remark}
+
+\subsection{Self-conjugate primes enlarge the multiplier group}
+
+A prime $p \mid n$ restricts $t$ to powers of $p$. If $p$ is self-conjugate on $H$, the
+restriction can be dropped: the coset sums are then constant modulo $p^{v_p(n)/2}$, which
+already gives $p^{v_p(n)} \mid W$ for every $t$.
+
+\begin{theorem}\label{thm:z31}
+Let $D$ be an SDS $(v, k, \lambda)$ on $G$, $\phi \colon G \to H$ surjective, $c = v/|H|$, $a$
+the coset sums, and $n = k - \lambda \ne 0$ with $\gcd(n, |H|) = 1$. Let $M'(H, n)$ be the set
+of integers $t$ prime to $|H|$ such that for every prime $p \mid n$, either $tx = p^f x$ on $H$
+for some $f \ge 0$, or $v_p(n)$ is even and $p^i x = -x$ on $H$ for some $i > 0$. Then
+\begin{enumerate}
+\item there is $b \in H$ with $a(th + b) = a(h + b)$ for all $h \in H$ and all
+  $t \in M'(H, n)$;
+\item consequently Theorem~\ref{thm:z28} holds with $M'(H, n)$ in place of $M(H, n)$.
+\end{enumerate}
+\end{theorem}
+
+\begin{proof}
+(1) We repeat the proof of Theorem~\ref{thm:multiplier} with $\mu = \lambda c$; only Step~1
+changes, and only for a prime $p \mid n$ of the second kind, $v_p(n) = 2j$, $p$
+self-conjugate on $H$. For such $p$, Turyn's lemma (Lemma~\ref{lem:turyn}, as used for
+Theorem~\ref{thm:z8}) gives $a = rH + p^j Z$ with $r \in \mathbb{Z}$, $Z \in \mathbb{Z}[H]$. For any
+$t$ prime to $|H|$,
+\[
+  W = A^{(t)}A^{(-1)} - \mu H = \kappa H + p^{2j} Z^{(t)}Z^{(-1)}, \qquad
+  \kappa = r^2|H| + 2rp^j\textstyle\sum_h Z(h) - \mu .
+\]
+Summing coefficients, $\kappa|H| + p^{2j}(\sum_h Z(h))^2 = \sum_h W(h) = n$, so
+$p^{2j} \mid \kappa |H|$, and $p \nmid |H|$ gives $p^{2j} \mid \kappa$. Hence $p^{2j} \mid W$.
+The other primes are handled as in Step~1, and Steps~2--4 are unchanged.
+(2) As the proof of Theorem~\ref{thm:z28}, with (1) in place of Theorem~\ref{thm:multiplier}.
+\end{proof}
+
+\begin{remark}
+If $v_p(n)$ is odd, $p$ is self-conjugate on $H$ and $|H| > 1$, there is no SDS at all
+($|\chi(a)|^2 = n$ for a nontrivial character $\chi$), so the parity condition loses nothing.
+Lean: (1) \lean{IsSDS.exists_translate_fixed_contract_selfConj}
+(\texttt{MultiplierSelfConj.lean}, with \lean{SelfConjEven}); (2)
+\lean{not_hasSDS_of_cosetRowSelfConj} (\texttt{CosetSearchSelfConj.lean}) and
+\lean{not_hasSDS_of_cosetRowCongr} (\texttt{CosetSearchCongr.lean}), which also restricts the
+search to vectors constant modulo $p^j$, trying every residue. It settles \zrows{31} rows.
+Origin: for difference sets, the self-conjugate exemption is Gordon and
+Schmidt's~\cite[Thm.~3.1]{gordon-schmidt} (generalizing a theorem of Leung, Ma and Schmidt),
+with the variant~\cite[Thm.~7]{miller}; self-conjugacy goes back to Turyn~\cite{turyn}. The
+form for SDS coset sums on quotients prime to $n$ and its Lean proof are ours.
+\end{remark}
+
+\subsection{Field descent without ramification}
+
+On a cyclic quotient, a large multiplier group forces the coset sums' characters to live on a
+small subgroup, and Parseval bounds $n$.
+
+\begin{theorem}\label{thm:z30}
+Let $D$ be an SDS $(v, k, \lambda)$ on $G$, $n = k - \lambda \neq 0$, and
+$\phi \colon G \to \mathbb{Z}_m$ surjective with $m > 1$, $v = cm$ and $\gcd(m, n) = 1$. Let
+$Fd = m$, and suppose that for every $u < d$ the integer $t_u = 1 + Fu$ is prime to $m$ and
+congruent modulo $m$ to a power of each prime $p \mid n$. Then
+\[
+  \varphi(m)\, n \le m F c^2 .
+\]
+\end{theorem}
+
+\begin{proof}
+Each $t_u$ lies in $M(\mathbb{Z}_m, n)$, so by Theorem~\ref{thm:multiplier} a translate $Y$ of
+the coset sums is fixed by every $t_u$; it has autocorrelation $n[g=0] + \lambda c$ and
+$|Y(h)| \le c$. Let $\zeta = e^{2\pi i/m}$ and $\chi_\alpha(Y) = \sum_h Y(h)\zeta^{\alpha h}$. For
+$\alpha \neq 0$, $|\chi_\alpha(Y)|^2 = n$. Let $\alpha$ be a unit. Substituting $h \mapsto t_u h$,
+\[
+  \chi_\alpha(Y) = \sum_h Y(t_u h)\zeta^{\alpha t_u h} = \sum_h Y(h)\zeta^{\alpha h} w_h^u,
+  \qquad w_h = \zeta^{\alpha F h},
+\]
+and averaging over $u < d$: $w_h$ is a $d$-th root of unity, equal to $1$ exactly when
+$Fh = 0$ in $\mathbb{Z}_m$ ($\alpha$ is a unit), so $\sum_{u<d} w_h^u$ is $d$ or $0$. Hence
+$\chi_\alpha(Y) = \chi_\alpha(Y_S)$, where $Y_S$ is $Y$ restricted to the subgroup
+$S = \{h : Fh = 0\}$ of order $F$. By Parseval,
+\[
+  \varphi(m)\,n = \sum_{\alpha \text{ unit}} |\chi_\alpha(Y_S)|^2
+  \le \sum_{\alpha \in \mathbb{Z}_m} |\chi_\alpha(Y_S)|^2 = m\sum_{h \in S} Y(h)^2 \le mFc^2. \qedhere
+\]
+\end{proof}
+
+\begin{remark}
+Lean: \lean{IsSDS.totient_mul_le}; rows through \lean{DescentRowCert.not_hasSDS}
+(\texttt{UnramifiedDescent.lean}), where a certificate gives $m$, $F$ and the map $\phi$. It
+settles \zrows{30} rows. Origin: Schmidt's field descent and the Leung--Schmidt bound, in the
+form of~\cite[Results~2.11--2.12]{tan}, with McFarland's multiplier theorem and the fixed
+translate of~\cite{mcfarland-rice}. Here the descent comes from the multiplier group and $F$ is
+read off it; for $n$ prime to $m$ the bound is at least as strong as Schmidt's, and stronger on
+N9792, $(200, 139, 18)$ in $C_2 \times C_{100}$, where it allows $F = 10$ against
+$F(100, 121) = 20$ in~\cite{tan}. This form and its Lean proof are ours.
+\end{remark}
+
+\subsection{Exhaustive search}
+
+Four Solutions settle single rows or a few rows by direct search, on $G$ or after contraction.
+
+\begin{theorem}\label{thm:z1}
+$C_3 \times C_3$ has no $(9, 8, 1)$ SDS.
+\end{theorem}
+
+\begin{proof}
+Exactly one element is unmarked; by Lemma~\ref{lem:translate} we may translate it to $0$.
+Lean evaluates the definition of an SDS on all $3^8$ assignments of $\{0, \pm1\}$ to the other
+eight elements and finds none.
+\end{proof}
+
+\begin{remark}
+Lean: \lean{Answer.N3.not_hasSDS} (case N3), by \texttt{decide}. It settles \zrows{1} row.
+Origin: ours.
+\end{remark}
+
+\begin{theorem}\label{thm:z2}
+$C_2 \times C_{10}$ has no $(20, 17, 8)$ SDS.
+\end{theorem}
+
+\begin{proof}
+Here $s = 13$. Contract to $H = C_5$, so $c = 4$. By Lemmas~\ref{lem:contraction}
+and~\ref{lem:cosetconds} the coset sums, after a sign change, would meet the coset conditions
+for $(4, 17, 8, 13)$: values in $[-4, 4]$, sum $13$, square sum $41$, autocorrelation $32$.
+A search of the vectors in $[-4, 4]^5$, run in Lean, finds none.
+\end{proof}
+
+\noindent By hand: for a generator $\chi$ of the characters of $C_5$, $|\chi(a)|^2 = n = 9$.
+As $3$ has order $4$ modulo $5$, it is inert in $\mathbb{Z}[\zeta_5]$, so
+$(\chi(a)) = (3)$ and $\chi(a) = 3u$ with $u$ a unit; the conjugates of $\chi(a)$ are the
+values of the other nontrivial characters, so $u$ has absolute value $1$ in every embedding
+and is a root of unity, $\chi(a) = \pm 3\zeta_5^j$. Then $a - (\pm 3[j])$ vanishes under every nontrivial
+character, so $a = \pm 3[j] + rH$ with $r \in \mathbb{Z}$; the sum $13 = \pm 3 + 5r$ forces
+$r = 2$ and $a(j) = 5 > c$.
+
+\begin{remark}
+Lean: \lean{Answer.N32.not_hasSDS} (case N32), by \lean{not_hasSDS_of_noVector}. It settles
+\zrows{2} row. Origin: ours.
+\end{remark}
+
+\begin{theorem}\label{thm:z26}
+Neither $C_3^3$ nor $C_3 \times C_9$ has a $(27, 22, 9)$ SDS.
+\end{theorem}
+
+\begin{proof}
+Here $s = 16$. Contract to $H = C_3 \times C_3$, $c = 3$: the coset sums would meet the coset
+conditions for $(3, 22, 9, 16)$ (values in $[-3,3]$, square sum $40$, autocorrelation $27$).
+A search over $H$, run in Lean, finds no such vector.
+\end{proof}
+
+\begin{remark}
+Lean: \lean{Answer.N79.not_hasSDS}, \lean{Answer.N80.not_hasSDS} (cases N79, N80), by
+\lean{not_hasSDS_of_noVector}. It settles \zrows{26} rows. Origin: ours; we found
+$(27, 22, 9)$ nowhere in print.
+\end{remark}
+
+When contraction alone leaves solutions, each surviving coset-sum vector can be lifted back to
+$G$ coset by coset.
+
+\begin{theorem}\label{thm:z33}
+There is no SDS with parameters $(27, 17, 4)$ in $C_3^3$; $(27, 22, 3)$ in $C_3^3$ or
+$C_3 \times C_9$; $(32, 28, 12)$ in $C_2^5$, $C_2^3 \times C_4$, $C_2^2 \times C_8$ or
+$C_2 \times C_{16}$; $(36, 29, 20)$ in $C_3 \times C_{12}$ or $C_6 \times C_6$.
+\end{theorem}
+
+\begin{proof}
+For each group take the quotient $H$ of Table~\ref{tab:lift}. \emph{Phase~1}: list every
+$a \colon H \to \mathbb{Z}$ that meets the conditions of Lemmas~\ref{lem:contraction}
+and~\ref{lem:cosetconds} except the marked-count bound, normalized by a translation and a
+sign change so that $\sum_h a(h) = s$ and $|a(0)| = \max_h |a(h)|$; the coset sums of a
+translate of $D$ or $-D$ are on the list. \emph{Phase~2}: for each listed $a$, search all
+$D \colon G \to \{0, \pm1\}$ with coset sums $a$ and autocorrelation $\lambda$, assigning the
+cosets one at a time in a fixed order, each by every sign pattern with the prescribed sum.
+After each coset the partial autocorrelation at every shift $g$ (the sum over pairs
+$(x, x+g)$ with both ends assigned) must lie within the number of pairs not yet both assigned
+of its target ($k$ at $g = 0$, $\lambda$ elsewhere). A second cut uses a list of affine bijections
+$\alpha$ of $G$ fixing every coset: these map SDSs with coset sums $a$ to SDSs with coset sums
+$a$, so it suffices to search assignments that are lexicographically least among their images
+$D \circ \alpha$; an assignment is cut as soon as an image of its assigned part is smaller. Both
+phases find nothing in all nine cases.
+\end{proof}
+
+\begin{table}[ht]
+\centering\small
+\begin{tabular}{@{}llll@{}}
+\toprule
+Case & $(v, k, \lambda)$ & $G \to H$ & $c$ \\ \midrule
+N70 & $(27, 17, 4)$ & $C_3^3 \to C_3^2$ & 3 \\
+N76, N77 & $(27, 22, 3)$ & $C_3^3,\ C_3 \times C_9 \to C_3^2$ & 3 \\
+N134, N135, N136 & $(32, 28, 12)$ & $C_2^5,\ C_2^3 \times C_4,\ C_2^2 \times C_8 \to C_2^3$ & 4 \\
+N138 & $(32, 28, 12)$ & $C_2 \times C_{16} \to C_2 \times C_4$ & 4 \\
+N177 & $(36, 29, 20)$ & $C_3 \times C_{12} \to C_3 \times C_4$ & 3 \\
+N178 & $(36, 29, 20)$ & $C_6 \times C_6 \to C_2 \times C_6$ & 3 \\
+\bottomrule
+\end{tabular}
+\caption{Quotients for Theorem~\ref{thm:z33}.}\label{tab:lift}
+\end{table}
+
+\begin{remark}
+Lean: \lean{LiftSearch.not_hasSDS_of_lift} (\texttt{LiftSearch.lean}); rows
+\lean{LiftRows.n70_not_hasSDS} and so on (\texttt{LiftRows/Part01}--\texttt{09}). It settles
+\zrows{33} rows. Origin: contraction and lift as in~\cite[\S5]{gordon}; these rows and the
+Lean search are ours.
+\end{remark}
+
+\subsection{How the searches are checked}\label{sec:searchcheck}
+
+Each search above is a Boolean function written in Lean, together with a soundness theorem
+proved once: if the function returns \texttt{true} on given parameters, the corresponding
+hypothesis (``no $D$ fixed by $t$ \dots'', ``no $a$ \dots'') holds. A row is then closed by
+evaluating the function on its parameters with \texttt{decide +kernel}: Lean's kernel reduces
+the expression to \texttt{true} by its own evaluation rules, with natural-number arithmetic
+done by the kernel's built-in big-number routines. No compiled code is trusted
+(\texttt{native\_decide} is not used), so the only trusted component is the kernel. We describe
+what a reader needs to see that the functions compute what their soundness theorems say.
+
+\emph{Groups as numbers.} The elements of
+$\mathbb{Z}_{m_1} \times \dots \times \mathbb{Z}_{m_r}$ are numbered $0, \dots, v-1$ in mixed
+radix, $0$ first, and addition is computed on the numbers; a lemma proves that this numbering
+is a bijection compatible with addition (\texttt{Index.lean}). Sums over $G$ thus become sums
+over $0, \dots, v-1$.
+
+\emph{Untrusted data, checked.} The orbits of $x \mapsto tx$ are found by a routine whose
+correctness is not proved; instead the search checks its output. Each element $y$ gets a label
+and a distance, and \lean{OrbitSearch.labelsOK} checks that every $y$ is either a root
+(distance $0$, its own label) or that $ty$ has the same label and a smaller distance. By
+induction on the distance, every function fixed by $t$ is constant on each label class, which
+is all the soundness proof needs. Likewise the lift search's affine maps are checked by
+\lean{LiftSearch.mapOK} (bijective, affine, fixing every coset), and Phase~1's list is checked
+by rerunning the vector search with membership in the list as its leaf test.
+
+\emph{The orbit search} (Theorems~\ref{thm:z15}, \ref{thm:z27}) assigns a sign or $0$ to each
+class. It prunes exactly by counts: a bit mask records which pairs (number of $+$, number of
+$-$) the remaining classes can still reach, and a branch survives only if the totals
+$(\tfrac{k+s}{2}, \tfrac{k-s}{2})$ stay reachable. At a leaf it evaluates the autocorrelation at
+one shift per nonzero class root, as $\sum_{c, c'} W_g(c, c')\,\sigma_c\sigma_{c'}$ with
+precomputed weights $W_g(c, c') = \#\{y \in c : y + g \in c'\}$; the leaf must miss $\lambda$ at
+some shift. (Checking only some shifts is sound: one miss suffices.)
+
+\emph{The coset search} (Theorems~\ref{thm:z28}, \ref{thm:z31}) assigns a value in $[-c, c]$
+to each class of $t$ on $H$, larger classes first. A value is tried only if the remaining
+classes, of total size $R$, can still bring the sum to $s$ and the square sum to $Q$: with
+remaining sum $S_r$ and square sum $Q_r$ this needs $Q_r \ge 0$ and $S_r^2 \le R\,Q_r$
+(Cauchy--Schwarz) besides $|a| \le c$. A leaf must violate one of the coset conditions. In
+\texttt{CosetSearchCongr.lean} the values are further restricted to one residue class modulo
+$p^j$, and the search is run for every residue.
+
+\emph{The lift search} (Theorem~\ref{thm:z33}) keeps signs in two bit masks and the partial
+autocorrelation per shift as two counts; the cut of the proof above is proved sound by
+bounding the change of each product term by $1$ per pair not yet assigned.
+
+\emph{Engineering.} Integers are shifted into $\mathbb{N}$ (values $x$ stored as $x + c$, signs
+coded $0, 1, 2$) so that the kernel uses its fast natural-number arithmetic; lemmas transfer the
+results back. Large searches are split: one declaration checks that the tree has at most $N$
+nodes at depth $d$, others check the subtrees below slices of these nodes, and a theorem joins
+them (\texttt{OrbitSearchSplit.lean}, \lean{cosetSearch_of_slices},
+\lean{LiftSearch.liftRow_of_slices}). The arithmetic hypotheses of each rule (primality,
+squarefreeness, coprimality, $s^2 = k + \lambda(v-1)$, $t \equiv p^f$) are decided in the same
+way, by trial division.
+
+\emph{Controls.} The Lean files run the same functions on parameters where an SDS exists, for
+instance $(11, 6, 1)$ in $C_{11}$ and $(19, 10, 3)$ in $C_{19}$, and check that the search
+returns \texttt{false} there. Independent searches by the refuter, written separately from the
+Lean code, agree on the rows they recomputed (Reviews R26, R27, R30, R31, R32).

@@ -1,0 +1,12 @@
+A signed difference set with parameters $(v,k,\lambda)$ in an abelian group $G$ of order $v$ is
+a map $D \colon G \to \{0,\pm1\}$ with $k$ nonzero values whose signed autocorrelation is
+$\lambda$ at every nonzero shift. Gordon's table~\cite{gordon-db} lists every abelian group and
+parameter set in its range; of its \tableRows{} cases, \openAfterHeWu{} remain open after the
+work of He and Wu~\cite{he-wu}. We settle \ourRows{} of them: \ourNone{} admit no signed
+difference set and \ourExists{} admit one. The nonexistence results come from about twenty
+general criteria, mostly classical tools carried over to signed sets (self-conjugacy, characters
+of small quotients, Ma's lemma, multipliers) and applied to coset sums on quotients; the sets
+come from computer searches and from partial and relative difference sets. We also list
+\corrections{} cases recorded as open that published constructions already settle. Every
+criterion and every case is a theorem checked by the Lean~4 proof assistant, with no unproved
+steps and only Lean's standard axioms.

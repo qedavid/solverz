@@ -1,0 +1,75 @@
+% P2: the full paper on run 1 (tag signed-difference-sets/run1); P1 is its short summary.
+% Build: latexmk (see latexmkrc); the PDF is build/main.pdf. Sections live in sections/.
+\documentclass[11pt]{amsart}
+
+\usepackage{fontspec}
+\setmonofont{DejaVu Sans Mono}[Scale=MatchLowercase]
+\usepackage{amssymb}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{longtable}
+\usepackage{fancyvrb}
+\usepackage[margin=2.5cm]{geometry}
+\usepackage[hidelinks]{hyperref}
+
+\input{build/numbers}
+\emergencystretch=1.5em % room for lines with long code words
+\newcommand{\zrows}[1]{\csname zrows#1\endcsname}
+\newcommand{\repo}{\url{https://github.com/qedavid/solverz}}
+\DeclareUrlCommand\lean{\urlstyle{tt}} % a Lean name; breaks at its dots
+\newcommand{\Z}{\mathbb{Z}}
+\makeatletter % load the math fonts early: amsart sets the abstract, with formulas, in a box
+\AtBeginDocument{\check@mathfonts}
+\makeatother
+
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+
+\title[Open cases of the SDS table]{Signed difference sets: Lean-checked results on the
+open cases of Gordon's table}
+\author{David Schneider}
+\address{Independent researcher, Austria}
+\email{david.schneider1920@gmail.com}
+\renewcommand{\urladdrname}{{\itshape ORCID}}
+\urladdr{\href{https://orcid.org/0009-0009-4935-8285}{0009-0009-4935-8285}}
+\date{Draft, November 9, 2026}
+\subjclass[2020]{05B10, 05B20, 68V15}
+\keywords{signed difference set, circulant weighing matrix, multiplier, self-conjugacy,
+Ma's lemma, formal verification, Lean}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+\input{sections/abstract}
+\end{abstract}
+
+\input{sections/introduction}
+\input{sections/preliminaries}
+\input{sections/congruences}
+\input{sections/counting}
+\input{sections/characters}
+\input{sections/ma}
+\input{sections/multipliers}
+\input{sections/constructions}
+\input{sections/corrections}
+\input{sections/verification}
+\input{sections/open}
+\input{sections/ai}
+
+\appendix
+\input{sections/appendix}
+
+\bibliographystyle{amsplain}
+\bibliography{refs}
+
+\end{document}

@@ -1,0 +1,26 @@
+\section{Corrections to the database}\label{sec:corrections}
+
+The \corrections{} cases in Table~\ref{tab:corrections} are listed as open in the
+database~\cite{gordon-db}, although published constructions settle them. We found them while
+checking published constructions against the open cases; for each we give a set checked in
+Lean. The list is not complete (Section~\ref{sec:open}).
+
+\begin{table}[ht]\small
+\caption{Open cases settled by published constructions.}\label{tab:corrections}
+\begin{tabular}{@{}lll@{}}
+\toprule
+Cases & Parameters & Construction \\ \midrule
+N10864, N12056, N13963, & $(211,106,51)$, $(223,112,54)$, $(239,120,58)$, & \cite[Prop.~2.3]{gordon}
+  (Paley and zero) \\
+N16190, N18527, N19488, & $(251,126,61)$, $(263,132,64)$, $(271,136,66)$, & \\
+N49190 & $(419,210,103)$, all cyclic & \\
+N67 & $(27,14,5)$ in $C_3^3$ & \cite[Prop.~2.3]{gordon} in $\mathrm{GF}(27)$ \\
+N73 & $(27,17,8)$ in $C_3^3$ & \cite[Thm.~4.1]{gordon}, $q = 3$ \\
+N49624 & $(421,316,25)$ cyclic & \cite[Prop.~5.5(2)]{he-chen-ge} \\
+N14471 & $(243,82,1)$ in $C_3^5$ & \cite[Thm.~4.1]{he-chen-ge} with $x_1 = 0$ \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+For N14471, Theorem~4.1 of~\cite{he-chen-ge} needs $x_1 = 0$: for $x_1 \neq 0$, as in their
+Example~4.2 ($x_1 = (1,0)$), the construction does not give a signed set.

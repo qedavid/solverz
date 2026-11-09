@@ -1,0 +1,130 @@
+% Counting and parity: Z11 (C8), Z16 (C7).
+% Open questions for the author:
+% - Z11's credit adds Arasu-Seberry 1998, Thm 1(iii)-(iv) (read by the refuter in R5, from OCR);
+%   R5 notes that Wallis-Whiteman attribute the bound to their reference [2], not opened.
+% - Z16: R12 notes that the coset facts |a_h| <= m_h <= c, m_h = a_h (mod 2) are also in He-Wu,
+%   Lemma 4.1; the remark says so. solutions.md's Origin says only "ours".
+% - MarkedCounts.lean's doc-string says weights exist "whenever no real counts ... meet both
+%   bounds". By Farkas' lemma a one-sided certificate exists only when the relaxation with that
+%   one bound is infeasible; the text below says this. Lean is unaffected (it checks weights).
+% - The examples (N318, N1767) were checked by hand and by a script against the Lean certificates.
+
+\section{Counting and parity}\label{sec:counting}
+
+The two criteria of this section count \emph{marked} elements, those $x$ with $D(x) \ne 0$:
+on $G$ itself (Theorem~\ref{thm:z11}), and coset by coset on a quotient
+(Theorem~\ref{thm:z16}).
+
+\subsection{Support parity}
+
+\begin{theorem}\label{thm:z11}
+Let $G$ be a finite abelian group of odd order $v$, let $k \ge 0$ and $\lambda$ be integers with
+$\lambda$ even, and put $d = \max(v - k, 0)$. If $d(d - 1) < v - 1$, then $G$ has no SDS with
+parameters $(v,k,\lambda)$.
+\end{theorem}
+
+\begin{proof}
+Let $D$ be such an SDS and $Z = \{x : D(x) = 0\}$ its set of unmarked elements; $|Z| = v - k = d$.
+Fix $g \ne 0$. Modulo~$2$, $D(x) D(x+g)$ is $1$ exactly when $x$ and $x + g$ are both marked. By
+inclusion--exclusion the number of such $x$ is $v - 2d + |Z \cap (Z - g)|$, so
+\[
+  \lambda \equiv v - 2d + |Z \cap (Z - g)| \pmod 2 .
+\]
+With $v$ odd and $\lambda$ even, $|Z \cap (Z - g)|$ is odd, in particular nonzero: $g = z' - z$
+for some $z, z' \in Z$. So the $d(d-1)$ ordered pairs of distinct elements of $Z$ give all
+$v - 1$ nonzero differences, and $d(d - 1) \ge v - 1$.
+\end{proof}
+
+The bound is sharp: the circulant weighing matrix $(7, 4, 0)$ and a $(13, 9, 6)$ SDS have
+$d(d-1) = v - 1$. In that case every $g \ne 0$ is a difference of unmarked elements in exactly
+one way, so $Z$ is a planar difference set.
+
+\begin{example}
+The case N318, $(47, 41, 20)$ in $C_{47}$, has $v$ odd, $\lambda$ even and $d = 6$, and
+$d(d-1) = 30 < 46$.
+\end{example}
+
+\begin{remark}
+For $\lambda = 0$ this is the classical bound for weighing matrices of odd
+order~\cite{wallis-whiteman}, \cite[Thm.~1(iii)--(iv)]{arasu-seberry}, the latter for circulant
+ones, with the planar difference set in the case of equality. For general $\lambda$ it is ours;
+He and Wu~\cite[Cor.~4.5]{he-wu} cover $d = 1$ with $v = p^m$, $p \equiv 3 \pmod 4$, $m$ even.
+The criterion settles \zrows{11} cases. Lean:
+\lean{SignedDifferenceSets.not_hasSDS_of_supportParity}; the cases are checked in the module
+\lean{SignedDifferenceSets.ParityRows}.
+\end{remark}
+
+\subsection{Marked elements per coset}
+Let $\phi \colon G \to H$ be surjective with fibres of size $c$, and let $m_h$ be the number of
+marked elements in the fibre over $h$. For an integer $x$ let $M_c(x)$ be $c$ if
+$x \equiv c \pmod 2$ and $c - 1$ otherwise: the largest number of marked elements a fibre with
+sum $x$ can hold.
+
+\begin{lemma}\label{lem:marked}
+For an SDS with parameters $(v,k,\lambda)$ and coset sums $a$ on $H$,
+\[
+  |a_h| \le m_h \le M_c(a_h) \quad (h \in H), \qquad \sum_h m_h = k, \qquad
+  \text{hence} \quad \sum_h |a_h| \le k \le \sum_h M_c(a_h).
+\]
+\end{lemma}
+
+\begin{proof}
+$a_h$ is a sum of $m_h$ signs, so $|a_h| \le m_h$ and $m_h \equiv a_h \pmod 2$; and
+$m_h \le c$, which with the parity gives $m_h \le M_c(a_h)$. The fibres partition $G$, and $D$
+has $k$ marked elements.
+\end{proof}
+
+We keep the notation of Section~\ref{sec:congruences}: $N = |H|$, $Q = k + \lambda(c - 1)$,
+modulus $q$, residue $t_0$, and the box test (Definition~\ref{def:box}). Let
+$V(t_0) = \{x \in \Z : |x| \le c,\ x \equiv t_0 \pmod q\}$. For integers $\alpha, \beta, \gamma$
+put $P(x) = \gamma + \beta x + \alpha x^2$ and $T(s') = \gamma N + \beta s' + \alpha Q$, which is
+$\sum_h P(a_h)$ when $\sum_h a_h = s'$ and $\sum_h a_h^2 = Q$.
+
+\begin{theorem}\label{thm:z16}
+Let $G$, $k \neq \lambda$, $\phi \colon G \to H$, $c$, $p, i, j$ and $s$ be as in
+Theorem~\ref{thm:z9}, and $q = p^j$. Suppose that for both $s' \in \{s, -s\}$ and every
+$t_0 \in \{0, \dots, q - 1\}$, either $(N, q, s', Q, t_0)$ fails the box test with $c$, or there
+are integers $\alpha, \beta, \gamma$ and $d \ge 0$ such that
+\begin{enumerate}
+\item[(L)] $P(x) \le d\,|x|$ for all $x \in V(t_0)$, and $T(s') > dk$; or
+\item[(U)] $P(x) \ge d\,M_c(x)$ for all $x \in V(t_0)$, and $T(s') < dk$.
+\end{enumerate}
+Then $G$ has no SDS with parameters $(v,k,\lambda)$.
+\end{theorem}
+
+\begin{proof}
+Let $D$ be such an SDS, $s' = \sum_h a_h \in \{s, -s\}$, and $t_0$ the residue of $a_0$ modulo
+$q$. By Lemma~\ref{lem:sc-congr} and Lemma~\ref{lem:contraction}(1), every $a_h$ lies in
+$V(t_0)$; they are not all equal (proof of Theorem~\ref{thm:z8}), so by Lemma~\ref{lem:box}
+the box test passes. So there are weights as in (L)
+or~(U), and $\sum_h P(a_h) = T(s')$. In case (L), Lemma~\ref{lem:marked} gives
+$T(s') = \sum_h P(a_h) \le d \sum_h |a_h| \le dk$. In case (U) it gives
+$dk = d \sum_h m_h \le d \sum_h M_c(a_h) \le \sum_h P(a_h) = T(s')$. Both contradict the
+hypothesis.
+\end{proof}
+
+The weights are a dual (Farkas) certificate. Let $n_x$ be the number of $h$ with $a_h = x$, for
+$x \in V(t_0)$. Then $n_x \ge 0$, $\sum_x n_x = N$, $\sum_x x\, n_x = s'$,
+$\sum_x x^2 n_x = Q$, and, by Lemma~\ref{lem:marked}, $\sum_x |x|\, n_x \le k$ and
+$\sum_x M_c(x)\, n_x \ge k$. By Farkas' lemma, weights as in (L) exist exactly when this system
+without its last inequality has no real solution, and weights as in (U) exactly when it has
+none without the inequality before; the weights can be taken integral. We find them by linear
+programming; Lean only checks the finitely many inequalities on $V(t_0)$, and needs only the
+direction proved above.
+
+\begin{example}
+The case N1767, $(95, 84, 40)$ in $C_{95}$, has $n = 44$ and $s = 62$. Take $H = C_{19}$
+($c = 5$), $p = 2$, $j = 1$, $i = 9$ ($2^9 \equiv -1 \pmod{19}$). For $t_0 = 1$ the nineteen
+coset sums would be odd, with even sum $\pm 62$; the box test fails. For $t_0 = 0$ it passes
+for both signs. But then every coset sum is even, so every fibre of size $5$ holds an even
+number, at most $4$, of marked elements, and $k \le 19 \cdot 4 = 76 < 84$. This is (U) with
+$(\alpha, \beta, \gamma, d) = (0, 0, 4, 1)$: $M_5(x) = 4$ on $V(0) = \{0, \pm 2, \pm 4\}$, and
+$T(\pm 62) = 76 < 84$.
+\end{example}
+
+\begin{remark}
+The facts of Lemma~\ref{lem:marked} on a single coset are also in~\cite[Lemma~4.1]{he-wu}; the
+criterion and its certificates are ours. It settles \zrows{16} cases. Lean:
+\lean{SignedDifferenceSets.not_hasSDS_of_marked}; the cases are checked in the modules
+\lean{SignedDifferenceSets.MarkedCountsRows.Part01} to \lean{Part03}.
+\end{remark}

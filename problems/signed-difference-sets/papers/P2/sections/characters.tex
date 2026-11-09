@@ -1,0 +1,226 @@
+% Open questions for the author (characters.tex):
+% 1. The set \mathcal{P} of prime powers (the cyclotomic input, Lean's maPairs) is defined here,
+%    in Section~\ref{sec:sylow}, and used again in sec:ma. If the section order changes, or other
+%    sections need it, it may belong in the preliminaries.
+% 2. \zrows{25} and \zrows{29} are totals. solutions.md splits them (Z25: 159 by part (a), 63 by
+%    part (b); Z29: 177 by the parity, 94 by the halving); numbers.py does not emit the splits,
+%    so the text gives none.
+% 3. Credit for Z17: solutions.md's Origin says "ours"; P1 and the introduction's table say
+%    "extends He-Wu Thm 4.2"; R15 says both. The remark says both.
+% 4. Theorem z19 assumes n >= 0: Lean's trace list for n < 0 is {0}, not empty, so without it the
+%    prose would claim more than Lean. Every SDS has n >= 0, so nothing is lost.
+% 5. The closed form after Theorem z17 and the comparison of Theorems z25a/b with z17 are proved
+%    on paper only; Lean checks each case in the form of the theorems. C22.md also says the Sylow
+%    rule covers C19's and C20's rows (a computation); I left that out, as I did not check it.
+% 6. "On the open cases of the table both versions settle the same cases" (Remark rem:z18) is
+%    R18's check, made on quotients of order N <= 64.
+
+\section{Character values on small quotients}\label{sec:characters}
+
+The criteria of Section~\ref{sec:congruences} use a prime $p$ that does not divide $|H|$. Here
+$H$ has exponent $2$, $3$ or $4$, or is a $p$-group, so its character values lie in a small ring,
+and we use the values themselves. All criteria rest on two facts. If $a$ is the vector of coset
+sums of an SDS $D$ on $H$, then $|\chi(a)|^2 = n$ for $\chi \ne \chi_0$
+(Lemma~\ref{lem:chars}), and orthogonality gives the inversion formula
+\begin{equation}\label{eq:inversion}
+  \sum_{\chi} \chi(a) = \sum_h a_h \sum_\chi \chi(h) = |H|\, a_0 ,
+\end{equation}
+where $\chi$ runs over all characters of $H$ and $\chi_0(a) = \sum_h a_h = s'$ with
+$s' = \sum_x D(x) \in \{s, -s\}$. Note also $\chi^{-1}(a) = \overline{\chi(a)}$, where
+$\chi^{-1}(h) = \chi(-h)$.
+
+\subsection{Real characters}
+
+\begin{theorem}\label{thm:z17}
+Let $H$ be a quotient of $G$ with $h + h = 0$ for all $h \in H$ and $|H| = 2^r$, $r \ge 1$, and
+suppose $n = m^2$ with $m \in \Z$. If for both $s' \in \{s,-s\}$ and every odd integer $T$ with
+$|T| \le 2^r - 1$ the integer $s' + mT$ is not divisible by $2^r$, then $G$ has no SDS with
+parameters $(v,k,\lambda)$.
+\end{theorem}
+
+\begin{proof}
+Let $a$ be the coset sums of an SDS on $H$. Every character $\chi$ of $H$ takes values $\pm 1$, so
+$\chi(a) \in \Z$ and $\chi(a)^2 = n = m^2$ for $\chi \ne \chi_0$; write $\chi(a) = \varepsilon_\chi m$
+with $\varepsilon_\chi = \pm 1$. By~\eqref{eq:inversion},
+$2^r a_0 = s' + mT$ with $T = \sum_{\chi \ne \chi_0} \varepsilon_\chi$, a sum of $2^r - 1$
+signs. So $T$ is odd, $|T| \le 2^r - 1$ and $2^r \mid s' + mT$.
+\end{proof}
+
+\begin{remark}\label{rem:z17}
+Write $v_2$ for the $2$-adic valuation, with $v_2(0) = \infty$. The hypothesis of
+Theorem~\ref{thm:z17} holds if and only if $\min(v_2(s), r) \ne \min(v_2(m), r)$: the odd $T$
+with $|T| \le 2^r - 1$ meet every odd residue modulo $2^r$, and the residues $mT \bmod 2^r$, $T$
+odd, are those of valuation exactly $v_2(m)$ if $v_2(m) < r$, and $0$ otherwise. If the condition
+holds for $r$, it holds for every larger $r$; and $G$ has a quotient $C_2^r$ exactly when $r$ is at
+most the number $R$ of even invariant factors of $G$. So the theorem is best applied with $r = R$,
+as the Lean certificates do. For example, the case $(24,18,2)$ in $C_2 \times C_2 \times C_6$
+(N46) has $R = 3$, $n = 16$, $m = 4$ and $s^2 = 18 + 2 \cdot 23 = 64$, so $s = 8$: here
+$\min(3,3) \ne \min(2,3)$; directly, $8 a_0 = \pm 8 + 4T$ would force $T$ to be even.
+
+Origin: ours. Its first step, that $n$ is a square when $v$ is even, is~\cite[Thm.~4.2]{he-wu},
+which the theorem extends. It settles \zrows{17} cases (Lean:
+\lean{SignedDifferenceSets.not_hasSDS_of_realChars}).
+\end{remark}
+
+\subsection{Quotients of exponent 4 and 3}
+
+\begin{theorem}\label{thm:z18}
+Let $H$ be a quotient of $G$ with $4h = 0$ for all $h \in H$, $N = |H|$, and suppose $n = m^2$
+with $m \ge 0$. Let $X = \{x \in \Z : m^2 - x^2 = y^2 \text{ for some } y \in \Z\}$. Suppose that
+for both $s' \in \{s, -s\}$ and every $R \in \{1, \dots, N\}$ with $N - R$ even, there are no
+$\varepsilon_1, \dots, \varepsilon_{R-1} \in \{\pm 1\}$ and
+$x_1, \dots, x_{(N-R)/2} \in X$ with
+\[
+  s' + m \sum_i \varepsilon_i + 2 \sum_j x_j \equiv 0 \pmod N .
+\]
+Then $G$ has no SDS with parameters $(v,k,\lambda)$.
+\end{theorem}
+
+\begin{proof}
+Let $a$ be the coset sums of an SDS on $H$. Characters of $H$ take values in $\{\pm 1, \pm i\}$,
+so $\chi(a) = A_\chi + B_\chi i$ with $A_\chi, B_\chi \in \Z$, and $A_\chi^2 + B_\chi^2 = n$ for
+$\chi \ne \chi_0$. Let $R$ be the number of real characters ($\chi = \chi^{-1}$), the trivial one
+included; then $N - R$ is even. For real $\chi \ne \chi_0$, $B_\chi = 0$ and so $A_\chi = \pm m$.
+The other characters fall into $(N-R)/2$ pairs $\{\chi, \chi^{-1}\}$ with
+$\chi^{-1}(a) = \overline{\chi(a)}$, so both have real part $A_\chi \in X$. The real part
+of~\eqref{eq:inversion} reads
+\[
+  N a_0 = s' + \sum_{\chi \text{ real},\, \chi \ne \chi_0} A_\chi + \sum_{\text{pairs}} 2 A_\chi ,
+\]
+which is the excluded congruence for this $R$.
+\end{proof}
+
+\begin{remark}\label{rem:z18}
+The true $R$ is $|H/2H|$; the theorem asks the condition for every $R$ of the right parity, which
+only makes it weaker; on the open cases of the table both versions settle the same cases. For
+$R = N$ the condition is that of Theorem~\ref{thm:z17}; the theorem gains on quotients with a
+factor $C_4$. Example: $(24,18,2)$ in $C_2 \times C_{12}$ (N47) has $n = 16$,
+$m = 4$, $s = 8$, and only one even invariant factor, so Theorem~\ref{thm:z17} does not apply.
+On $H = C_2 \times C_4$ ($N = 8$) we have $X = \{0, \pm 4\}$, so $2x_j \equiv 0$ and
+$s' \equiv 0 \pmod 8$, while $R - 1$ is odd and $m \sum_i \varepsilon_i \equiv 4 \pmod 8$.
+
+Origin: ours; the ingredients ($|\chi(a)|^2 = n$ and inversion) are classical. It settles
+\zrows{18} cases (Lean: \lean{SignedDifferenceSets.not_hasSDS_of_gaussChars}).
+\end{remark}
+
+Let $\omega = e^{2\pi i/3}$.
+
+\begin{theorem}\label{thm:z19}
+Let $H$ be a quotient of $G$ with $3h = 0$ for all $h \in H$, $N = |H|$, and assume $n \ge 0$
+(which holds for every SDS, as $\lambda \le k$). Let
+$T(n) = \{2A - B : A, B \in \Z,\ A^2 - AB + B^2 = n\}$. If for both $s' \in \{s,-s\}$ there are
+no $t_1, \dots, t_{(N-1)/2} \in T(n)$ with $s' + \sum_j t_j \equiv 0 \pmod N$, then $G$ has no
+SDS with parameters $(v,k,\lambda)$.
+\end{theorem}
+
+\begin{proof}
+Let $a$ be the coset sums of an SDS on $H$. Characters of $H$ take values in $\{1, \omega,
+\omega^2\}$, so $\chi(a) = A_\chi + B_\chi \omega$ with $A_\chi, B_\chi \in \Z$, and
+$|\chi(a)|^2 = A_\chi^2 - A_\chi B_\chi + B_\chi^2 = n$ for $\chi \ne \chi_0$. No nontrivial
+character is real ($\chi^2 = \chi^3 = 1$ forces $\chi = \chi_0$), so the nontrivial characters
+fall into $(N-1)/2$ pairs $\{\chi, \chi^{-1}\}$, and
+$\chi(a) + \chi^{-1}(a) = 2\operatorname{Re}\chi(a) = 2A_\chi - B_\chi \in T(n)$. So the real
+part of~\eqref{eq:inversion} reads $N a_0 = s' + \sum_{\text{pairs}} (2A_\chi - B_\chi)$.
+\end{proof}
+
+\begin{remark}\label{rem:z19}
+Example: $(90,85,4)$ in $C_3 \times C_{30}$ (N1605) has $n = 81$ and $s^2 = 85 + 4 \cdot 89 =
+441$, $s = 21$. On $H = C_3^2$, $t \in T(81)$ means $t^2 + 3B^2 = 324$, so $T(81) = \{\pm 9, \pm
+18\}$; all its elements are divisible by $9$ and $9 \nmid 21$. This is typical: on each of
+its cases the criterion amounts to $3^{\min(a, \lceil e/2 \rceil)} \nmid s$, where $|H| = 3^a$ and
+$e$ is the exponent of $3$ in $n$, a consequence of self-conjugacy for the prime $1 - \omega$ above
+$3$, which complex conjugation fixes (compare Theorem~\ref{thm:z25a}). A quotient $C_3$ suffices
+only when $T(n)$ is empty: as $3 \mid v$, every $t \in T(n)$ has $t^2 \equiv 4n \equiv n \equiv s^2
+\pmod 3$, and $T(n) = -T(n)$.
+
+Origin: classical (the ramified prime above $3$); the form for SDS and its Lean proof are ours. It
+settles \zrows{19} cases (Lean: \lean{SignedDifferenceSets.not_hasSDS_of_eisensteinChars}).
+\end{remark}
+
+\subsection{Sylow quotients}\label{sec:sylow}
+
+For a prime power $q = p^J$ let $\Phi_q$ be the $q$-th cyclotomic polynomial and
+$\varphi(q) = (p-1)p^{J-1}$. In $\Z[\zeta_q] \cong \Z[X]/(\Phi_q)$ the element $\pi = 1 - \zeta_q$
+generates a prime ideal with $(p) = (\pi)^{\varphi(q)}$, and $\overline{\pi} = -\zeta_q^{-1}\pi$.
+The Lean proofs of this section and of Section~\ref{sec:ma} take the needed part of this as a
+hypothesis: in every commutative ring $S$, a root $x$ of $\Phi_q$ satisfies
+$p \in (x - 1)^{\varphi(q)} S$ and $(x-1)^{\varphi(q)} \in pS$ (\lean{SignedDifferenceSets.CycloFacts}).
+Lean proves it, by explicit polynomial identities, for $q$ in
+\begin{equation}\label{eq:cyclo}
+  \mathcal{P} = \{2^j : 1 \le j \le 8\} \cup \{3^j : 1 \le j \le 5\} \cup
+  \{5, 25, 125, 7, 49, 343, 11, 121, 13, 169, 17, 19\}
+\end{equation}
+(\lean{SignedDifferenceSets.MaRows.maPairs}). We therefore state the theorems for $q \in
+\mathcal{P}$; the restriction comes only from this input.
+
+\begin{theorem}\label{thm:z25a}
+Let $p$ be a prime, $q = p^J \in \mathcal{P}$, and $H$ a quotient of $G$ that is an abelian
+$p$-group with $qH = 0$ and $|H| = p^t$. Let $e \ge 0$ with $p^e \mid n$, and let $b \ge 1$ be an
+integer with $2\bigl((b-1)\varphi(q) + 1\bigr) \le e\,\varphi(q)$. If $G$ has an SDS with
+parameters $(v,k,\lambda)$, then $p^{\min(t,b)}$ divides $s$.
+\end{theorem}
+
+For $e = v_p(n) \ge 1$ and $q \ne 2$ (so $\varphi(q) \ge 2$) the largest admissible $b$ is
+$\lceil e/2 \rceil$, which gives $p^{\min(t, \lceil e/2 \rceil)} \mid s$. An elementary abelian
+$2$-group $H$ may be treated with $q = 4$.
+
+\begin{proof}
+Let $a$ be the coset sums of the SDS on $H$ and $\varphi = \varphi(q)$. Characters of $H$ take
+values in $\Z[\zeta_q]$. For $\chi \ne \chi_0$, $\chi(a)\overline{\chi(a)} = n$
+(Lemma~\ref{lem:chars}), so $v_\pi(\chi(a)) + v_\pi(\overline{\chi(a)}) = v_\pi(n) \ge
+e\varphi$. Conjugation fixes the ideal $(\pi)$, so both valuations are equal and
+$v_\pi(\chi(a)) \ge e\varphi/2 \ge (b-1)\varphi + 1$. By~\eqref{eq:inversion},
+\[
+  p^t a_0 - s' = \sum_{\chi \ne \chi_0} \chi(a) \in \pi^{(b-1)\varphi + 1}\Z[\zeta_q] \cap \Z
+  = p^b \Z ,
+\]
+since $v_\pi(z) = \varphi\, v_p(z)$ for $z \in \Z$. Hence $p^{\min(t,b)}$ divides $s' = \pm s$.
+\end{proof}
+
+The Lean proof works in $\Z[X]/(\Phi_q)$ without valuations: $\pi = X - 1$ is a non-zero-divisor,
+and $y\,\overline{y} \in \pi^{2M}$ implies $y \in \pi^M$, by induction from the case $M = 1$, where
+$\Z[X]/(\Phi_q, \pi) = \mathbb{F}_p$ and $\overline{y} \equiv y$. This is the case $K = 0$ of the
+argument in Section~\ref{sec:ma}.
+
+\begin{theorem}\label{thm:z25b}
+Let $q = 2^J \in \mathcal{P}$ and $H$ a quotient of $G$ that is an abelian $2$-group with
+$qH = 0$ and $|H| = 2^t$. Suppose $n = m^2$ with $m \in \Z$, $2^w \mid m$, $2^{w+1} \nmid m$ and
+$w < t$. If $G$ has an SDS with parameters $(v,k,\lambda)$, then $2^{w+1} \nmid s$.
+\end{theorem}
+
+\begin{proof}
+Let $a$ and $\varphi$ be as before, and $\pi = 1 - \zeta_q$; now $\Z[\zeta_q]/(\pi) =
+\mathbb{F}_2$. The real characters $\chi \ne \chi_0$ have $\chi(a) = \pm m$; there are
+$|H/2H| - 1$ of them, an odd number since $t \ge 1$. So they contribute $mT$ with $T$ odd. The
+other characters fall into pairs $\{\chi, \overline{\chi}\}$. As in the previous proof,
+$v_\pi(\chi(a)) \ge w\varphi$; write $\chi(a) = \pi^{w\varphi} z$. Then
+$\overline{\chi(a)} = (-\zeta_q^{-1})^{w\varphi} \pi^{w\varphi}\, \overline{z}$, and modulo $\pi$
+both $-\zeta_q^{-1} \equiv 1$ and $\overline{z} \equiv z$, so
+$\chi(a) + \overline{\chi(a)} \in \pi^{w\varphi}(2z + \pi\Z[\zeta_q]) \subseteq \pi^{w\varphi+1}
+\Z[\zeta_q]$. By~\eqref{eq:inversion},
+\[
+  2^t a_0 - s' - mT \in \pi^{w\varphi + 1}\Z[\zeta_q] \cap \Z = 2^{w+1}\Z .
+\]
+If $2^{w+1} \mid s$, then, as $w + 1 \le t$, also $2^{w+1} \mid mT$, which is false since
+$v_2(mT) = w$.
+\end{proof}
+
+\begin{remark}\label{rem:z25}
+With $e = 2w$, Theorem~\ref{thm:z25a} (with $b = w$, if $w \ge 1$) gives $2^{\min(t,w)} \mid s$; so for
+$w < t$ the two theorems together say $v_2(s) = w$. For $H = C_2^r$ this is the condition of
+Remark~\ref{rem:z17}, so Theorems~\ref{thm:z25a} and~\ref{thm:z25b} contain
+Theorem~\ref{thm:z17}; cases are counted by the earlier criterion.
+
+Examples. $(99,50,23)$ in $C_{99}$ (N1944) has $n = 27$, $e = 3$ and $s^2 = 50 + 23 \cdot 98 =
+2304$, $s = 48$. On the Sylow quotient $C_9$ ($t = 2$, $q = 9$, $\varphi = 6$) we may take
+$b = 2$, since $2(6 + 1) \le 18$; but $9 \nmid 48$. Its only quotient of exponent~$3$ is $C_3$, so
+Theorem~\ref{thm:z19} does not settle it. And $(112,84,20)$ in $C_2 \times C_{56}$ (N2640) has
+$n = 64$, $m = 8$, $w = 3$ and $s^2 = 84 + 20 \cdot 111 = 2304$, $s = 48$. On the Sylow quotient
+$C_2 \times C_8$ ($t = 4 > w$, $q = 8$), Theorem~\ref{thm:z25a} asks only $8 \mid 48$, but
+$16 \mid 48$ contradicts Theorem~\ref{thm:z25b}.
+
+Origin: ours, on Turyn's self-conjugacy argument~\cite{turyn}; we did not find either theorem in
+print. That $n$ is a square when $v$ is even is~\cite[Thm.~4.2]{he-wu}. Together they settle
+\zrows{25} cases (Lean: \lean{SignedDifferenceSets.not_hasSDS_of_sylow} and
+\lean{SignedDifferenceSets.not_hasSDS_of_sylow_two}).
+\end{remark}
