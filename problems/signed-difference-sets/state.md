@@ -18,10 +18,10 @@ Group 1, settle what is already proved:
 |---|---|---|
 | P1 | A7: import the built CosetRows parts (Part22–35: 8 rows, 2026-11-09); the remaining parts' builds are in the search list | 76 none |
 | P2 | I5: import the built OrbitRows parts (Part78–85, 2026-11-09); Part86–137's builds are in the search list | ~27 none |
-| P3 | Six halved C26 rows (N1512, N7332, N9513, N13357, N3958, N13285) | 6 none |
+| P3 | Rows whose halved row OrbitRows proves (`halfrows.py --orbit`, `HalfRows/OrbitCited.lean`): N7412 (halved N1512), N33806 (N7332), N61082 (N13357) built 2026-11-09, settle after the next root build; N18643 (N3958, Part104), N60752 (N13285, Part127) follow P2's builds; N9513 has no open parent row | 3 + 2 none |
 | P4 | Refuter on the 16 Lean-checked objects not yet proposed (statement, object, credit), then propose them: done, [R34](reviews/R34.md), proposed under Needs the user | 16 exists |
 | P5 | Lean sets for the database lags N14604, N31832, N63319: done (O105–O107), settled; proposed as corrections under Needs the user | 3 exists |
-| C10x | E8's 4 kills (N2847, N2863, N6970, N26266): rerun on committed code, sliced `noVector` | 4 none |
+| C10x | E8's 4 kills (N2847, N2863, N6970, N26266): split certificates (`answer.py contract`: Check, parts of ≤ 500,000 nodes, checks of ≤ 25,000, join; ~8 ms and ~0.1 MB per node). N6970 (1.5M nodes, 3 parts) building 2026-11-09; N26266, N2847, N2863 (16M nodes, ~35 CPU-hours) moved to the search list | 4 none |
 | C20x | N1's kills N44059, N44123: done (A7 rows in CosetRows Part52, Part61), settled | 2 none |
 | D1x | Ma × an extra self-conjugate modulus (p^b·Q > 2c), extending C21: done, C29 verified ([R35](reviews/R35.md)), settled | 11 none |
 | C6x | N27692: integer certificate for C7 | 1 none |
@@ -40,7 +40,7 @@ Group 1 pointers:
 Group 2, known work (port known proofs, extend rules):
 | ID | What | Rows |
 |---|---|---|
-| P18 | Schmidt's field descent in general (I10): spike done 2026-11-09, GO (`scratch/p18/`: `Spike.lean` proves steps S1–S4, `rows.py`/`rows.out` the 126 rows' descent chains; ~600–900 more lines, 3–5 agent-days). Next: move S1–S4 into `FieldDescent.lean`, then milestone M1 (one descent step at an odd prime: 46 rows), refuter, then M2 (chains, p = 2: 80 rows) | 126 none |
+| P18 | Schmidt's field descent in general (I10): spike done 2026-11-09, GO. M1 done 2026-11-09 (C32: one step at an odd prime; `FieldDescent.lean`, `FieldDescentRows.lean` 60 rows, `Tests/FieldDescent.lean`, built `--wfail`, standard axioms; not in the root): refuter on C32 and the rows running (`scratch/refuter/p18m1-brief.md`), then import, root build, settle `scratch/p18/settle-m1.tsv`. Then M2 (chains, p = 2: 80 rows) | 60 + ~66 none |
 | P16 + C16x/D2x | Rules at their edge: Ma at equality for c ≥ 2, two-valued cosets for margins in [½, 1) | up to 1,658 (258 class A) |
 | P17 (Lean part) | C24 on quotients, ContractionCheck-style certificates | up to 392 |
 | C15x | I17's checker: per-branch echelon form over a certified field, `decide +kernel` slices | 11 none |
@@ -62,13 +62,14 @@ Group 3, technique tests (kill test first; work it if it hits):
 | Class | ID | Search | Rows |
 |---|---|---|---|
 | minutes | C3x | NL recipe at m = 8, 10 (if not done in Group 3) | 0 |
-| minutes | C10x | Rerun E8's 4 kills on committed code | 4 |
+| minutes | C10x | Rerun E8's 4 kills on committed code: done 2026-11-09 (`e8_passes`, `scratch/e8_c10x.out`) | 4 |
 | minutes | C15x | Second engine on I17's 11 NONE rows | 11 |
 | minutes | C20x | Rerun N1's search on N44059, N44123 | 2 |
 | minutes | E4 | A2 uncapped; C17 ε search at r = 5; C19 at N = 128, 256 | few |
 | minutes–hours | E8 / P22c | N7891's witness under multiplier 3 in C₁₈₂ | 1 (exists backing) |
 | minutes–hours | E17 | Validation-only cross-checks | 0 |
 | minutes–hours | D11x | SAT for sets in the 11 open order-64 rows | 11 |
+| hours (overnight) | C10x builds | N26266 (9 parts), N2847 (10), N2863 (15): `sh scratch/c10x/chain.sh 4 N26266 N2847 N2863` (log `scratch/c10x/chain.log`), ~35 CPU-hours at 2 parts at a time, ~4 GB each; then import, root build, settle | 3 |
 | hours (overnight) | P1 + P2 builds | A7's remaining CosetRows parts (Part36–39, 50, 52–94, 44, 15, 17) and OrbitRows Part86–137, one at a time through the lock: `sh scratch/group1_chain.sh`; measured 5–9.5 min per part, ~12 h; afterwards import, root build, `#print axioms`, settle (`scratch/settle-a7.tsv`; Part128–137's rows) | 68 + 24 none (+ P3's halved rows) |
 | hours | C11x | I9 symmetry searches with larger budgets | ~851 |
 | hours | C16x / D2x | Weighing-element and H/P searches after the edge reduction | 258 + 524 |
@@ -108,9 +109,9 @@ Group 3, technique tests (kill test first; work it if it hits):
 | D14x | Ma-type lemma for non-cyclic Sylow subgroups (no source, D14x 2026-11-09) | ~2,200 | new mathematics; the no-loss form is false for SDS |
 | P21 | Planned ideator rounds on the core | — | dropped by the user (no new ideators) |
 
-**Running.** (2026-11-09 22:25)
-- Agents (3 of 3): Lean helper on P18's milestone M1 (21:46; `scratch/p18/m1-brief.md`, notes `scratch/p18/m1-progress.md`); Lean helper on C17x(c), N464 (21:46; `scratch/c17x/brief.md`, notes `scratch/c17x/progress.md`); refuter on E14, P2's paper-only statements (22:23; `scratch/refuter/e14-brief.md`, reports `scratch/refuter/e14/`). Done: D14x (goes to Open, `scratch/d14x/report.md`); the C6x refuter SURVIVES ([R36](reviews/R36.md)), N27692 settles after the next root build.
-- Lean: C10x's four contraction certificates (N6970, N26266, N2847, N2863; `answer.py contract`). N6970 in one file with 33 batches of 50,000 nodes was killed by the watchdog at 8.8 GB after 1,120 s, so the chain is stopped; the bigger three would fare worse. Next: measure one batch (`scratch/c10x/N6970_b{1,3}.lean`), then split each certificate into part modules small enough for a slot, a join module on top; then the root alone (with `MarkedCountsInt` and the answers that built), `scratch/c10x_axioms.lean`, settle.
+**Running.** (2026-11-09 22:40)
+- Agents (3 of 3): Lean helper on C17x(c), N464 (21:46; `scratch/c17x/brief.md`, notes `scratch/c17x/progress.md`); refuter on E14, P2's paper-only statements (22:23; `scratch/refuter/e14-brief.md`, reports `scratch/refuter/e14/`); refuter on C32, P18 M1 and its 60 rows (22:38; `scratch/refuter/p18m1-brief.md`, reports `scratch/refuter/p18m1/`). Done: P18 M1 (committed, C32), D14x (goes to Open, `scratch/d14x/report.md`); the C6x refuter SURVIVES ([R36](reviews/R36.md)), N27692 settles after the next root build.
+- Lean: N6970's split certificate (C10x), parts two at a time in slots (`sh scratch/c10x/chain.sh 4 N6970`, log `scratch/c10x/chain.log`; ~3 CPU-hours); then the root alone (with `MarkedCountsInt`, `HalfRows/OrbitCited`, N6970 and, after its refuter, P18's modules), `scratch/c10x_axioms.lean`, settle N6970, N27692, P3's three rows.
 - The leftover processes are gone (checked 2026-11-09 20:14). I17's prototype finished both batches: of the 272 cyclic B1 rows, 234 too big, 16 NONE (11 still open: N3067, N15689, N17962, N26085, N44138, N45372, N47110, N49189, N49203, N49278, N60164; C15x), 4 FOUND (the known Paley-and-zero sets), the rest skipped (`scratch/n2/b1_cyc_{a,b}.out`). E7's partial output `scratch/e7.out` (11 of 22 rows, E7.md); its open rows N204, N205, N207, N212 are P12 in the search list.
 
 **Building.** Lean through slots: `sh scratch/lean-slot.sh build <owner> <module> <expected peak GB>` (a leaf module whose SignedDifferenceSets imports are already built: checked with `lake build --no-build`, else it runs alone), `sh scratch/lean-slot.sh env <owner> <file> <peak>` (scratch files; output stops at 80 lines), `sh scratch/lean-slot.sh root <owner>` (the library root, alone). Parallel `lake build`s share the build directory, so only leaves build side by side; Lake 5.0 has no build lock of its own. Tested 2026-11-09 with 2 parallel builds (CosetRows Part36 beside a helper's builds, clean); raise to 4 after more clean runs. The old single lock (`lean-locked-big.sh`, `lenv-locked.sh`, used by agents started before) counts as one heavy job. Measured peaks: light leaf builds 3–7 GB; HalfRows heavy parts 12–14 GB; a contraction certificate checked in batches of 300,000 nodes 11.4 GB (killed), per prefix 3.9 GB: batches of 50,000 now (`solver/answer.py`). About 17 GB is free with no build and the user's usual apps. Large row files are split into parts with `set_option Elab.async false`. Generators in `solver/` write Lean row files: check `git status` on `lean/` after running one.
