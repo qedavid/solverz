@@ -9191,7 +9191,7 @@ N9189,"SDS(195,99,35,[195])",No@e3bf810,none,Gordon: Orbit Exhaust,,
 N9190,"SDS(195,101,46,[195])",Open@e3bf810,none,He-Wu Thm 3.2: n=55; p=5; m=3; j=1,,
 N9191,"SDS(195,101,50,[195])",Open@e3bf810,none,He-Wu Thm 3.2: n=51; p=3; m=5; j=2,,
 N9192,"SDS(195,103,9,[195])",Open@e3bf810,none,He-Wu Thm 3.2: n=94; p=2; m=3; j=1,,
-N9193,"SDS(195,105,24,[195])",Open@e3bf810,open,,,
+N9193,"SDS(195,105,24,[195])",Open@e3bf810,none,"A7 (C10, C10 (I13)); CosetRows Part52",SignedDifferenceSets.CosetRows.n9193_not_hasSDS,
 N9194,"SDS(195,106,45,[195])",Open@e3bf810,open,,,
 N9195,"SDS(195,106,51,[195])",Open@e3bf810,none,He-Wu Thm 3.2: n=55; p=5; m=3; j=1,,
 N9196,"SDS(195,108,18,[195])",Open@e3bf810,none,He-Wu Thm 3.2: n=90; p=2; m=3; j=1,,
@@ -14602,7 +14602,7 @@ N14600,"SDS(243,121,40,[3,9,9])",Open@e3bf810,open,,,
 N14601,"SDS(243,121,40,[3,81])",Open@e3bf810,none,C21; MaRows part02,SignedDifferenceSets.MaRows.not_hasSDS_of_mem_part02,Z24
 N14602,"SDS(243,121,40,[9,27])",Open@e3bf810,open,,,
 N14603,"SDS(243,121,40,[243])",Open@e3bf810,none,C21; MaRows part02,SignedDifferenceSets.MaRows.not_hasSDS_of_mem_part02,Z24
-N14604,"SDS(243,122,59,[3,3,3,3,3])",Open@e3bf810,open,,,
+N14604,"SDS(243,122,59,[3,3,3,3,3])",Open@e3bf810,exists,Gordon Prop 2.3 (database lag); O105,SignedDifferenceSets.Answer.N14604.hasSDS,
 N14605,"SDS(243,122,59,[3,3,3,9])",Open@e3bf810,open,,,
 N14606,"SDS(243,122,59,[3,3,27])",Open@e3bf810,open,,,
 N14607,"SDS(243,122,59,[3,9,9])",Open@e3bf810,open,,,
@@ -31830,7 +31830,7 @@ N31828,"SDS(343,171,9,[343])",Open@e3bf810,none,C5; SelfConjugacyRows part06,Sig
 N31829,"SDS(343,172,52,[7,7,7])",Open@e3bf810,none,He-Wu Thm 3.2: n=120; p=3; m=7; j=3,,
 N31830,"SDS(343,172,52,[7,49])",Open@e3bf810,none,He-Wu Thm 3.2: n=120; p=3; m=7; j=3,,
 N31831,"SDS(343,172,52,[343])",Open@e3bf810,none,He-Wu Thm 3.2: n=120; p=3; m=7; j=3,,
-N31832,"SDS(343,172,84,[7,7,7])",Open@e3bf810,open,,,
+N31832,"SDS(343,172,84,[7,7,7])",Open@e3bf810,exists,Gordon Prop 2.3 (database lag); O106,SignedDifferenceSets.Answer.N31832.hasSDS,
 N31833,"SDS(343,172,84,[7,49])",Open@e3bf810,open,,,
 N31834,"SDS(343,172,84,[343])",Open@e3bf810,none,E10/E11; I13 (C9 for every n); OrbitSearchWitt Part58,SignedDifferenceSets.OrbitRows.n31834_not_hasSDS,Z27
 N31835,"SDS(343,175,27,[7,7,7])",Open@e3bf810,open,,,
@@ -44057,7 +44057,7 @@ N44055,"SDS(399,130,7,[399])",Open@e3bf810,none,He-Wu Thm 3.2: n=123; p=3; m=7; 
 N44056,"SDS(399,131,1,[399])",Open@e3bf810,none,He-Wu Thm 3.2: n=130; p=2; m=3; j=1,,
 N44057,"SDS(399,139,9,[399])",Open@e3bf810,none,He-Wu Thm 3.2: n=130; p=2; m=3; j=1,,
 N44058,"SDS(399,140,20,[399])",Open@e3bf810,none,He-Wu Thm 3.2: n=120; p=2; m=3; j=1,,
-N44059,"SDS(399,151,51,[399])",Open@e3bf810,open,,,
+N44059,"SDS(399,151,51,[399])",Open@e3bf810,none,"A7 (C10, C10 (I13)); CosetRows Part61",SignedDifferenceSets.CosetRows.n44059_not_hasSDS,
 N44060,"SDS(399,155,13,[399])",Open@e3bf810,none,He-Wu Thm 3.2: n=142; p=2; m=3; j=1,,
 N44061,"SDS(399,157,34,[399])",Open@e3bf810,none,He-Wu Thm 3.2: n=123; p=3; m=7; j=3,,
 N44062,"SDS(399,158,37,[399])",Open@e3bf810,open,,,
@@ -44121,7 +44121,7 @@ N44119,"SDS(399,262,9,[399])",Open@e3bf810,none,He-Wu Thm 3.2: n=253; p=11; m=3;
 N44120,"SDS(399,263,91,[399])",Open@e3bf810,open,,,
 N44121,"SDS(399,263,107,[399])",Open@e3bf810,none,He-Wu Thm 3.2: n=156; p=3; m=7; j=3,,
 N44122,"SDS(399,264,50,[399])",Open@e3bf810,none,He-Wu Thm 3.2: n=214; p=2; m=3; j=1,,
-N44123,"SDS(399,264,164,[399])",Open@e3bf810,open,,,
+N44123,"SDS(399,264,164,[399])",Open@e3bf810,none,"A7 (C10, C10 (I13)); CosetRows Part52",SignedDifferenceSets.CosetRows.n44123_not_hasSDS,
 N44124,"SDS(399,265,12,[399])",Open@e3bf810,none,He-Wu Thm 3.2: n=253; p=11; m=3; j=1,,
 N44125,"SDS(399,269,22,[399])",Open@e3bf810,none,He-Wu Thm 3.2: n=247; p=13; m=7; j=1,,
 N44126,"SDS(399,271,15,[399])",Open@e3bf810,none,C5; SelfConjugacyRows part08,SignedDifferenceSets.SelfConjugacyRows.part08_not_hasSDS,Z8
@@ -60338,7 +60338,7 @@ N60336,"SDS(462,102,2,[462])",Open@e3bf810,none,"A7 (C10, C10 (I13)); CosetRows 
 N60337,"SDS(462,107,14,[462])",Open@e3bf810,none,He-Wu Thm 3.2: n=93; p=3; m=2; j=1,,
 N60338,"SDS(462,114,26,[462])",Open@e3bf810,none,He-Wu Thm 3.2: n=88; p=2; m=3; j=1,,
 N60339,"SDS(462,132,32,[462])",Open@e3bf810,none,C13; SelfConjugacyRows part11,SignedDifferenceSets.SelfConjugacyRows.part11_not_hasSDS,Z9
-N60340,"SDS(462,150,6,[462])",Open@e3bf810,open,,,
+N60340,"SDS(462,150,6,[462])",Open@e3bf810,none,"A7 (C10, C10 (I13)); CosetRows Part61",SignedDifferenceSets.CosetRows.n60340_not_hasSDS,
 N60341,"SDS(462,151,10,[462])",Open@e3bf810,none,He-Wu Thm 3.2: n=141; p=3; m=2; j=1,,
 N60342,"SDS(462,156,8,[462])",Open@e3bf810,none,He-Wu Thm 3.2: n=148; p=37; m=2; j=1,,
 N60343,"SDS(462,165,44,[462])",Open@e3bf810,open,,,
@@ -63317,7 +63317,7 @@ N63315,"SDS(475,241,12,[5,95])",Open@e3bf810,none,He-Wu Thm 3.2: n=229; p=229; m
 N63316,"SDS(475,241,12,[475])",Open@e3bf810,none,He-Wu Thm 3.2: n=229; p=229; m=5; j=1,,
 N63317,"SDS(475,241,116,[5,95])",Open@e3bf810,none,C22; SylowRows chunk 6,SignedDifferenceSets.sylowRows6_not_hasSDS,Z25
 N63318,"SDS(475,241,116,[475])",Open@e3bf810,none,C22; SylowRows chunk 6,SignedDifferenceSets.sylowRows6_not_hasSDS,Z25
-N63319,"SDS(475,241,120,[5,95])",Open@e3bf810,open,,,
+N63319,"SDS(475,241,120,[5,95])",Open@e3bf810,exists,Gordon Thm 4.1 (database lag); O107,SignedDifferenceSets.Answer.N63319.hasSDS,
 N63320,"SDS(475,241,120,[475])",Yes@e3bf810,exists,Gordon: Prime Power Pair,,
 N63321,"SDS(475,246,115,[5,95])",Open@e3bf810,open,,,
 N63322,"SDS(475,246,115,[475])",Open@e3bf810,none,C27; UnramifiedRows,SignedDifferenceSets.unramifiedRows4_not_hasSDS,Z30
@@ -63755,7 +63755,7 @@ N63753,"SDS(476,301,20,[2,238])",Open@e3bf810,none,He-Wu Thm 3.2: n=281; p=281; 
 N63754,"SDS(476,301,20,[476])",Open@e3bf810,none,He-Wu Thm 3.2: n=281; p=281; m=2; j=1,,
 N63755,"SDS(476,301,132,[2,238])",Open@e3bf810,none,C13; SelfConjugacyRows part11,SignedDifferenceSets.SelfConjugacyRows.part11_not_hasSDS,Z9
 N63756,"SDS(476,301,132,[476])",Open@e3bf810,none,C14; BoxRows part03,SignedDifferenceSets.BoxRows.part03_not_hasSDS,Z10
-N63757,"SDS(476,304,48,[2,238])",Open@e3bf810,open,,,
+N63757,"SDS(476,304,48,[2,238])",Open@e3bf810,none,"A7 (C10, C10 (I13)); CosetRows Part52",SignedDifferenceSets.CosetRows.n63757_not_hasSDS,
 N63758,"SDS(476,304,48,[476])",Open@e3bf810,none,C21; MaRows part06,SignedDifferenceSets.MaRows.not_hasSDS_of_mem_part06,Z24
 N63759,"SDS(476,309,4,[2,238])",Open@e3bf810,none,He-Wu Thm 3.2: n=305; p=5; m=2; j=1,,
 N63760,"SDS(476,309,4,[476])",Open@e3bf810,none,He-Wu Thm 3.2: n=305; p=5; m=2; j=1,,

@@ -17,14 +17,14 @@ namespace SignedDifferenceSets
 variable {G K : Type*} [AddCommGroup G] [Fintype G] [Field K]
 
 /-- `ψ(D) = Σ_x D(x) ψ(x)` for a character `ψ : Multiplicative G →* K`. -/
-def charSum (ψ : Multiplicative G →* K) (D : G → SignType) : K :=
+def charSumMod (ψ : Multiplicative G →* K) (D : G → SignType) : K :=
   ∑ x, ((D x : ℤ) : K) * ψ (Multiplicative.ofAdd x)
 
 /-- C24: `ψ(D) ψ(D^(−1)) = 0` when `q ∣ k − λ`, `K` has characteristic `q` and `Σ ψ = 0`. -/
 theorem IsSDS.charSum_mul_charSum_neg {k : ℕ} {lam : ℤ} {D : G → SignType}
     (hD : IsSDS k lam D) (q : ℕ) [CharP K q] (hq : (q : ℤ) ∣ (k : ℤ) - lam)
     (ψ : Multiplicative G →* K) (hψ : ∑ x : G, ψ (Multiplicative.ofAdd x) = 0) :
-    charSum ψ D * charSum ψ (fun x => D (-x)) = 0 := by
+    charSumMod ψ D * charSumMod ψ (fun x => D (-x)) = 0 := by
   classical
   have hψadd : ∀ y g : G, ψ (Multiplicative.ofAdd (y + g)) * ψ (Multiplicative.ofAdd (-y)) =
       ψ (Multiplicative.ofAdd g) := by
@@ -35,11 +35,11 @@ theorem IsSDS.charSum_mul_charSum_neg {k : ℕ} {lam : ℤ} {D : G → SignType}
   have hn : (((k : ℤ) - lam : ℤ) : K) = 0 := by
     obtain ⟨c, hc⟩ := hq
     rw [hc, Int.cast_mul, Int.cast_natCast, CharP.cast_eq_zero, zero_mul]
-  have hneg : charSum ψ (fun x => D (-x)) =
+  have hneg : charSumMod ψ (fun x => D (-x)) =
       ∑ y, ((D y : ℤ) : K) * ψ (Multiplicative.ofAdd (-y)) := by
-    unfold charSum
+    unfold charSumMod
     exact Fintype.sum_equiv (Equiv.neg G) _ _ fun x => by simp
-  rw [hneg, charSum, Finset.sum_mul_sum, Finset.sum_comm]
+  rw [hneg, charSumMod, Finset.sum_mul_sum, Finset.sum_comm]
   have hre : ∀ y : G, ∑ x, ((D x : ℤ) : K) * ψ (Multiplicative.ofAdd x) *
       (((D y : ℤ) : K) * ψ (Multiplicative.ofAdd (-y))) =
       ∑ g, ψ (Multiplicative.ofAdd g) * (((D y : ℤ) * (D (y + g) : ℤ) : ℤ) : K) := by
@@ -65,7 +65,7 @@ theorem IsSDS.charSum_mul_charSum_neg {k : ℕ} {lam : ℤ} {D : G → SignType}
 theorem IsSDS.charSum_eq_zero_or {k : ℕ} {lam : ℤ} {D : G → SignType}
     (hD : IsSDS k lam D) (q : ℕ) [CharP K q] (hq : (q : ℤ) ∣ (k : ℤ) - lam)
     (ψ : Multiplicative G →* K) (hψ : ∑ x : G, ψ (Multiplicative.ofAdd x) = 0) :
-    charSum ψ D = 0 ∨ charSum ψ (fun x => D (-x)) = 0 :=
+    charSumMod ψ D = 0 ∨ charSumMod ψ (fun x => D (-x)) = 0 :=
   mul_eq_zero.1 (hD.charSum_mul_charSum_neg q hq ψ hψ)
 
 end SignedDifferenceSets

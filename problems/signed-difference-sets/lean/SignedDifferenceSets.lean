@@ -316,6 +316,8 @@ public import SignedDifferenceSets.CosetRows.Part32
 public import SignedDifferenceSets.CosetRows.Part33
 public import SignedDifferenceSets.CosetRows.Part34
 public import SignedDifferenceSets.CosetRows.Part35
+public import SignedDifferenceSets.CosetRows.Part52
+public import SignedDifferenceSets.CosetRows.Part61
 public import SignedDifferenceSets.CosetRows.Part95
 public import SignedDifferenceSets.CosetRows.Part96
 public import SignedDifferenceSets.CosetRows.Part97
@@ -343,6 +345,9 @@ public import SignedDifferenceSets.Answer.N14471
 public import SignedDifferenceSets.Answer.N14472
 public import SignedDifferenceSets.Answer.N939
 public import SignedDifferenceSets.Answer.N449
+public import SignedDifferenceSets.Answer.N14604
+public import SignedDifferenceSets.Answer.N31832
+public import SignedDifferenceSets.Answer.N63319
 public import SignedDifferenceSets.Answer.N14597
 public import SignedDifferenceSets.Answer.N14828
 public import SignedDifferenceSets.Answer.N39499

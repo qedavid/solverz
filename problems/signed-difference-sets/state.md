@@ -1,6 +1,6 @@
 # State
 
-**Focus.** The user's plan of 2026-11-09 (`scratch/inventory/final-plan.md`, items cited by the IDs of `scratch/inventory/inventory.md`, both copied from the main folder). Research mode: Groups 1–3 below, in that order; now Group 1. Search mode only when the user says so. Table 91.04% settled (none 63,994, exists 226, open 6,323); Solutions Z1–Z33 (`solutions.md`), corrections in `corrections.md`.
+**Focus.** The user's plan of 2026-11-09 (`scratch/inventory/final-plan.md`, items cited by the IDs of `scratch/inventory/inventory.md`, both copied from the main folder). Research mode: Groups 1–3 below, in that order; now Group 1. Search mode only when the user says so. Table 91.05% settled (none 63,999, exists 229, open 6,315); Solutions Z1–Z33 (`solutions.md`), corrections in `corrections.md`.
 
 **Rules.**
 - **NO NEW IDEATORS.** A request for one goes with its reason under "Needs the user"; the user decides.
@@ -20,9 +20,9 @@ Group 1, settle what is already proved:
 | P2 | I5: import the built OrbitRows parts (Part78–85, 2026-11-09); Part86–137's builds are in the search list | ~27 none |
 | P3 | Six halved C26 rows (N1512, N7332, N9513, N13357, N3958, N13285) | 6 none |
 | P4 | Refuter on the 16 Lean-checked objects not yet proposed (statement, object, credit), then propose them: done, [R34](reviews/R34.md), proposed under Needs the user | 16 exists |
-| P5 | Lean sets for the database lags N14604, N31832, N63319 | 3 exists |
+| P5 | Lean sets for the database lags N14604, N31832, N63319: done (O105–O107), settled; proposed as corrections under Needs the user | 3 exists |
 | C10x | E8's 4 kills (N2847, N2863, N6970, N26266): rerun on committed code, sliced `noVector` | 4 none |
-| C20x | N1's kills N44059, N44123 | 2 none |
+| C20x | N1's kills N44059, N44123: done (A7 rows in CosetRows Part52, Part61), settled | 2 none |
 | D1x | Ma × an extra self-conjugate modulus (p^b·Q > 2c), extending C21 | 11 none |
 | C6x | N27692: integer certificate for C7 | 1 none |
 | C17x(c) | N464: T-side of C26 and a kernel search over the 648 halved sets | 1 none |
@@ -126,6 +126,7 @@ Results only in scratch (git-ignored):
   - Cyclotomic constructions (I19, ideator round 3's X1, X3): 7 rows, N236 (42, 18, 2), N1008 (75, 26, 1), N11602 (217, 112, 12) by generalized cyclotomy on products of fields; N14597 (243, 121, 40), N14828 (243, 177, 96), N31880 (343, 199, 3), N31994 (343, 247, 51) by semilinear cyclotomy (O61–O67). Origin: ours, in known frameworks; none found in print; O64 is the nonzero squares of GF(243) (Paley) minus the Berlekamp–van Lint–Seidel PDS (243, 22, 1, 2).
   - N14472 (243, 82, 1) in C₃³ × C₉ (O103): He–Chen–Ge Thm 4.1 transported to the non-split index-3 subgroup C₃⁴; the transport and the set: ours.
   - Doubling (I21): 8 rows, N448, N463 (54, ·, ·), N3539 (128, 68, 4), N931, N933, N934 (72, 40, 4), N449 (54, 38, 2), N939 (72, 48, 12) (O79–O84, O101, O104). Origin: the weighing-matrix doubling of Arasu–Leung–Ma–Nabavi–Ray-Chaudhuri 2006 Thm 2.3 (Arasu–Kotsireas–Koukouvinos–Seberry 2010 Thm 4), extended to SDS with λ ≠ 0 and twisted: ours; the sets: ours.
+- Proposed corrections (plan item P5; [R7](reviews/R7.md) SURVIVES these constructions): N14604 (243, 122, 59) in C₃⁵ and N31832 (343, 172, 84) in C₇³ (Gordon's Prop 2.3, Paley and zero; O105, O106), N63319 (475, 241, 120) in C₅ × C₉₅ (Gordon's Thm 4.1, q = 19, r = 25; O107): Open in Gordon's database, settled `exists` here with Lean-checked sets.
 - Proposed corrections (refuter db-lags and a5-a3, [R7](reviews/R7.md), [R5](reviews/R5.md); listed in `corrections.md` only on approval):
   - N63320 (475, 241, 120) in C₄₇₅ is "Yes" ("Prime Power Pair", no stored set) while N63319, the same parameters in C₅ × C₉₅, is Open: Gordon's Thm 4.1 at q = 19, q + 6 = 25 builds its set in GF(19)⁺ × GF(25)⁺ ≅ C₅ × C₉₅, never cyclic (GF(25)⁺ = C₅²). The two entries look swapped; C₄₇₅ should be open (not "No": nothing rules a set there out).
   - "Yes" resting only on stored sets that fail the SDS check: 148 of 279 stored sets fail, 22 keys have no valid stored set (rechecked 2026-11-07 with the reading the other 131 sets pass; 1-based indices, swapped signs and primitive-root exponents do not fix them). Valid sets are ours for 21 of the 22 (O59, O60, O68–O70, O85–O100, Lean-checked); N7891 (182, 38, 2, "assuming multiplier 3") has no valid witness anywhere. Our table keeps them `exists` on Gordon's word.
