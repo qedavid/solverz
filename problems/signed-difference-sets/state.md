@@ -16,8 +16,8 @@
 Group 1, settle what is already proved:
 | ID | What | Rows |
 |---|---|---|
-| P1 | A7: import and build the remaining CosetRows parts | 76 none |
-| P2 | I5: import and build OrbitRows Part78–137 (incl. halved rows) | ~27 none |
+| P1 | A7: import the built CosetRows parts (Part22–35: 8 rows, 2026-11-09); the remaining parts' builds are in the search list | 76 none |
+| P2 | I5: import the built OrbitRows parts (Part78–85, 2026-11-09); Part86–137's builds are in the search list | ~27 none |
 | P3 | Six halved C26 rows (N1512, N7332, N9513, N13357, N3958, N13285) | 6 none |
 | P4 | Refuter on the 16 Lean-checked objects not yet proposed (statement, object, credit), then propose them | 16 exists |
 | P5 | Lean sets for the database lags N14604, N31832, N63319 | 3 exists |
@@ -28,9 +28,11 @@ Group 1, settle what is already proved:
 | C17x(c) | N464: T-side of C26 and a kernel search over the 648 halved sets | 1 none |
 | C1x, C2x, C5x, E11, E12 | C4's status (R28), C6 marked superseded by C13/C14, ModQ (C24) imported, full `#print axioms` and unreachable modules, code defects before reuse | — |
 
+In research mode the short Lean items of Group 1 come first (P4, P5, C10x, C20x, D1x, C6x, C17x(c), the housekeeping items), then Groups 2 and 3; P1's and P2's long builds wait for search mode (the user, 2026-11-09: they would hold the Lean lock for ~12 h).
+
 Group 1 pointers:
-- P1: CosetRows Part22–35 are built, not imported (8 open rows): import, root build, `#print axioms`, settle from `scratch/settle-a7.tsv`. Then `sh scratch/agentV/build_parts.sh <first> <last>` for Part36–39, 50, 52–94, 44, 15, 17. Rows a Solution's rule settles later are proposed under "Needs the user" as additions to that Z (here Z28).
-- P2: OrbitRows Part78–85 are built, not imported; then `sh scratch/agentX/build_parts.sh $(seq 86 137)` (log `scratch/agentX/parts.log`): halved rows N3958 (Part104), N13285 (Part127); Part128–137 hold 24 open rows (N31876, N15437, N32197, N31825, N45850 there are `none` by C27 already: keep that evidence). Review [R31](reviews/R31.md).
+- P1: CosetRows Part22–35 built, imported 2026-11-09 (8 open rows, settle from `scratch/settle-a7c.tsv`). The rest: search list, `scratch/group1_chain.sh`. Rows a Solution's rule settles later are proposed under "Needs the user" as additions to that Z (here Z28).
+- P2: OrbitRows Part78–85 built, imported 2026-11-09; Part86–137 in the search list (log `scratch/agentX/parts.log`): halved rows N3958 (Part104), N13285 (Part127); Part128–137 hold 24 open rows (N31876, N15437, N32197, N31825, N45850 there are `none` by C27 already: keep that evidence). Review [R31](reviews/R31.md).
 - P3: teach `solver/halfrows.py`'s `reduced_proof` to cite `OrbitRows.n…_not_hasSDS` (stated with `inst`).
 - P4: I19's O61–O67, O103 (N236, N1008, N11602, N14597, N14828, N31880, N31994, N14472) and I21's O79–O84, O101, O104 (N448, N463, N3539, N931, N933, N934, N939, N449).
 - P5: the constructions the refuter db-lags rebuilt ([R7](reviews/R7.md)): objects, `Answer/N<id>.lean`, settle, then propose them as corrections.
@@ -68,6 +70,7 @@ P14's catch: `bv_decide` proves with a native axiom (tested 2026-11-07, `scratch
 | minutes–hours | E8 / P22c | N7891's witness under multiplier 3 in C₁₈₂ | 1 (exists backing) |
 | minutes–hours | E17 | Validation-only cross-checks | 0 |
 | minutes–hours | D11x | SAT for sets in the 11 open order-64 rows | 11 |
+| hours (overnight) | P1 + P2 builds | A7's remaining CosetRows parts (Part36–39, 50, 52–94, 44, 15, 17) and OrbitRows Part86–137, one at a time through the lock: `sh scratch/group1_chain.sh`; measured 5–9.5 min per part, ~12 h; afterwards import, root build, `#print axioms`, settle (`scratch/settle-a7.tsv`; Part128–137's rows) | 68 + 24 none (+ P3's halved rows) |
 | hours | C11x | I9 symmetry searches with larger budgets | ~851 |
 | hours | C16x / D2x | Weighing-element and H/P searches after the edge reduction | 258 + 524 |
 | hours | D3x | Support-parity zero-set search past d(d − 1) ≥ v − 1 (d ≤ 12) | ~406 |
