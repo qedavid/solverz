@@ -1,6 +1,6 @@
 # State
 
-**Focus.** The user's plan of 2026-11-09 (`scratch/inventory/final-plan.md`, items cited by the IDs of `scratch/inventory/inventory.md`, both copied from the main folder). Research mode: Groups 1–3 below, in that order; now Group 1. Search mode only when the user says so. Table 91.03% settled (none 63,986, exists 226, open 6,331); Solutions Z1–Z33 (`solutions.md`), corrections in `corrections.md`.
+**Focus.** The user's plan of 2026-11-09 (`scratch/inventory/final-plan.md`, items cited by the IDs of `scratch/inventory/inventory.md`, both copied from the main folder). Research mode: Groups 1–3 below, in that order; now Group 1. Search mode only when the user says so. Table 91.04% settled (none 63,994, exists 226, open 6,323); Solutions Z1–Z33 (`solutions.md`), corrections in `corrections.md`.
 
 **Rules.**
 - **NO NEW IDEATORS.** A request for one goes with its reason under "Needs the user"; the user decides.

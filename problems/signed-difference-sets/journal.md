@@ -1,5 +1,8 @@
 # Journal
 
+## 2026-11-09
+- 20:32 Settled 8 rows none by A7 (C10, C16; [R27](reviews/R27.md)): CosetRows Part22–35 imported (with OrbitRows Part78–85), root build clean, axioms clean. Table 91.04% (none 63,994, exists 226, open 6,323)
+
 ## 2026-11-07
 - 17:13 Z11's credit corrected (approved by the user; P1 refuter round 2, [R33](reviews/R33.md) R2-2): He–Wu Cor 4.5 covers d = 1 only with v = p^m, p ≡ 3 mod 4, m even (N30948 (337,336,20) in C₃₃₇ is a Z11 row with d = 1 open after He–Wu)
 - 16:25 Credits corrected in `solutions.md` (approved by the user; refuter on P1, main folder [R33](reviews/R33.md) F7, F9, F10, F12): Z9 on Gordon Lemma 5.2; Z11 general λ ours beyond d = 1 (He–Wu Cor 4.5); Z14 P − {0} step He–Wu Thm 5.3; Z28 the search of Gordon §5 (after Arasu–Gordon–Zhang Algorithm 1); Z33 contraction and lift as in Gordon §5; Z29 halving Schmidt–Smith 2013 Lemma 6.2; Z19 wording
