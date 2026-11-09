@@ -42,3 +42,4 @@ The refuter's reports that statuses here rest on, oldest first.
 | [R36](R36.md) | C7 (integer form); N27692 | SURVIVES (the root import it asked for is done) | 2026-11-09 |
 | [R38](R38.md) | C30; E14 (P2: Prop rdscomb, rem:z17, rem:z18, rem:z25, the (27, 10, 1) and (25, 12, 1) remarks) | SURVIVES (credit gap in P2's rdscomb remark: N1216, N9807) | 2026-11-09 |
 | [R39](R39.md) | C32; FieldDescentRows (60 rows) | SURVIVES (wording in C32.md) | 2026-11-09 |
+| [R40](R40.md) | C33; MaEdgeRows (151 rows) | SURVIVES (two corrections to C33.md) | 2026-11-09 |

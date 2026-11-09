@@ -1,0 +1,36 @@
+'SignedDifferenceSets.IsSDS.dvd_lam_mul_of_ma' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SignedDifferenceSets.MaEdgeCert.not_hasSDS' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SignedDifferenceSets.MaEdgeRows.maEdgeRows_kills' depends on axioms: [propext, Quot.sound]
+'SignedDifferenceSets.MaEdgeRows.n2847_not_hasSDS' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SignedDifferenceSets.MaEdgeRows.n21854_not_hasSDS' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SignedDifferenceSets.MaEdgeRows.n54548_not_hasSDS' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SignedDifferenceSets.MaEdgeRows.n69420_not_hasSDS' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SignedDifferenceSets.MaEdgeRows.n23593_not_hasSDS' depends on axioms: [propext, Classical.choice, Quot.sound]
+@IsSDS.dvd_lam_mul_of_ma : ∀ {G K : Type} [inst : AddCommGroup G] [inst_1 : Fintype G] [inst_2 : AddCommGroup K]
+  [inst_3 : Fintype K] {p r i e b c k : ℕ} {lam : ℤ} [hp : Fact (Nat.Prime p)] [inst_4 : NeZero (r * p)] [NeZero r]
+  {φ : G →+ ZMod (r * p) × K},
+  Function.Surjective ⇑φ →
+    Fintype.card G = c * Fintype.card (ZMod (r * p) × K) →
+      0 < r →
+        0 < i →
+          (∀ (x : K), p ^ i • x = -x) →
+            ↑p ^ e ∣ ↑k - lam →
+              2 * b ≤ e →
+                0 < b → CycloFacts p r → ∀ {D : G → SignType}, IsSDS k lam D → ∀ {g : ZMod r × K}, g ≠ 0 → ↑p ∣ lam * ↑c
+def SignedDifferenceSets.MaEdgeCert.Kills : Row → MaEdgeCert → Prop :=
+fun w c =>
+  IsPrimeTD c.p ∧
+    1 < c.r ∧
+      0 < c.i ∧
+        c.ks ≠ [] ∧
+          (∀ d ∈ c.ks, d ∣ c.p ^ c.i + 1) ∧
+            MapOk w.ms (c.r * c.p :: c.ks) c.A ∧
+              SurjCert w.ms (c.r * c.p :: c.ks) c.A c.P ∧
+                c.r * c.p * c.ks.prod ∣ w.ms.prod ∧
+                  ↑c.p ^ c.e ∣ ↑w.k - w.lam ∧
+                    2 * c.b ≤ c.e ∧
+                      0 < c.b ∧ ¬↑c.p ∣ w.lam * ↑(w.ms.prod / (c.r * c.p * c.ks.prod)) ∧ (c.p, c.r) ∈ MaRows.maPairs
+
+real	6m27.136s
+user	0m1.749s
+sys	0m3.529s

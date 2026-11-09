@@ -284,6 +284,12 @@ public import SignedDifferenceSets.UnramifiedDescent
 public import SignedDifferenceSets.UnramifiedRows
 public import SignedDifferenceSets.ModQ
 public import SignedDifferenceSets.Tests.UnramifiedDescent
+public import SignedDifferenceSets.FieldDescent
+public import SignedDifferenceSets.FieldDescentRows
+public import SignedDifferenceSets.Tests.FieldDescent
+public import SignedDifferenceSets.MaEdge
+public import SignedDifferenceSets.MaEdgeRows
+public import SignedDifferenceSets.Tests.MaEdge
 public import SignedDifferenceSets.EvenContraction
 public import SignedDifferenceSets.EvenRows
 public import SignedDifferenceSets.MultiplierSelfConj
