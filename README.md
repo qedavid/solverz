@@ -8,7 +8,7 @@ without trusting the AI or the search code behind it.
 
 | Date | Problem | Solution | Proof | Paper |
 |---|---|---|---|---|
-| 2026-11-05 – 2026-11-07 | [Signed difference sets](problems/signed-difference-sets/README.md) | 16,101 open entries of Gordon's table settled: 50 sets found, 16,051 proved impossible by about twenty Lean-checked rules | [solutions.md](problems/signed-difference-sets/solutions.md) | — |
+| 2026-11-05 – 2026-11-07 | [Signed difference sets](problems/signed-difference-sets/README.md) | 16,101 open entries of Gordon's table settled: 50 sets found, 16,051 proved impossible by about twenty Lean-checked rules | [solutions.md](problems/signed-difference-sets/solutions.md) | [P2](problems/signed-difference-sets/papers/P2/) (draft) |
 
 ## Problems
 
