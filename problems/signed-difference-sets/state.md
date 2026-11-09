@@ -55,7 +55,7 @@ Group 3, technique tests (kill test first; work it if it hits):
 | D15x (part) | Joint contraction: coset-sum vectors on two quotients at once must be compatible; kill test on the 124 core rows where every single quotient has a vector | ? |
 | P19 | LP/Farkas: relaxation of the SDS constraints on 5 core rows; an infeasible LP gives a rational dual certificate for Lean | 0–20 |
 | P14 | SAT with LRAT checked by the kernel. Kill test 2026-11-09: negative for the off-the-shelf route. `bv_decide` proves with a native axiom; Std's checker (`Std.Tactic.BVDecide.LRAT.check_sound`) has the right theorem, but `decide +kernel` gets stuck on its `check.go` (well-founded recursion, private), even on x₀ ∧ ¬x₀ (`scratch/p14/Tiny.lean`). The route needs our own structurally recursive LRAT checker with a soundness proof for RUP steps (a substantial Lean project, not started) | 3–4 |
-| C3x | NL family (C12): the m = 6 norm-class recipe at m = 8, 10, Walsh check; a proof attempt if it holds | 0 (paper) |
+| C3x | NL family (C12): the m = 6 norm-class recipe at m = 8, 10. Kill test negative (2026-11-09): at m = 8 no Frobenius-invariant union of the norm classes of order 255 gives NL₂₅₆(126) (R9's complete run, `reviews/R9/cyc/big_16_255_126.out`: 0 hits, 5.3·10⁸ nodes), so the recipe gives no even-m family; m = 10 not run | 0 (paper) |
 
 
 **Search list (search mode only), in this order.**
