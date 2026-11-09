@@ -22,6 +22,14 @@ Picture of the low phase (2026-11-05): the defender never needs turns of more th
 **Running.**
 (none) — nothing running or suspended at the 2026-11-06 migration pause; no agent active.
 
+## Toolbox check (user and main session, 2026-11-09)
+The toolbox (2026-11-05) came after most of this work; only fresh07–08 drew on it. A pass over the entries matching catch-up's signals (`game`, `additive`, `parity`, `induction-stuck`, `regular-structure`) and the reformulate, explore and judge stages found these untried and most promising, cheapest first. Suggestions; the researcher decides.
+1. Learn the safe set from data (T86, T88, T112). Kill test: a rich feature vector per position (deficit, gaps, min, max, the deficit's subset-sum representations, …); two positions with equal features and different values rule the feature set out, which tests the Blocks claim systematically rather than by hand. With no collisions, fit a small decision tree and read it.
+2. Search the defender's rule as a program (T110 CEGIS, T107 FunSearch). By I27 the defender picks one number; express each drawing move relatively (max, deficit − 1, partner of the last pick, …) and test whether a short decision list over a small grammar, with memory of the last turn, covers every defender position to N = 20. Shares 1's code.
+3. Richer model, then perturb (T1371, T1301): a fluid version where exact catch-up is always possible; if it draws easily, see what integer granularity breaks. A thought experiment first.
+4. Root-cause the first failure (T1316, T334) of the best defender rules; partly done in the files.
+Ruled out in the check: T807 strategy stealing (needs "an extra move never hurts", false by C51); T812, T814, T818 game sums (the turn rule couples everything, no independent components).
+
 ## Optional long runs
 - Queued for the overnight session (user, 2026-11-05 21:20: "not yet, later in the overnight session"); start when the user says it has begun, one at a time, each stated as an experiment first:
   - C116 at the C1 roots N = 23, 24 and C92's families: `target/release/e42_largest_change.exe 3 3 24` (about 5 GB at N = 24, 1 thread).
