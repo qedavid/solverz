@@ -54,10 +54,9 @@ Group 3, technique tests (kill test first; work it if it hits):
 | D14x | Literature: generalizations of Ma's lemma to non-cyclic Sylow subgroups; if one gives a usable bound, it joins Group 2, else it goes to "Open" | ~2,200 |
 | D15x (part) | Joint contraction: coset-sum vectors on two quotients at once must be compatible; kill test on the 124 core rows where every single quotient has a vector | ? |
 | P19 | LP/Farkas: relaxation of the SDS constraints on 5 core rows; an infeasible LP gives a rational dual certificate for Lean | 0–20 |
-| P14 | SAT with LRAT checked by the kernel: CaDiCaL (in the Lean toolchain) on N70, N76, N134 and one known set; measure solve time, certificate size, kernel time | 3–4 |
+| P14 | SAT with LRAT checked by the kernel. Kill test 2026-11-09: negative for the off-the-shelf route. `bv_decide` proves with a native axiom; Std's checker (`Std.Tactic.BVDecide.LRAT.check_sound`) has the right theorem, but `decide +kernel` gets stuck on its `check.go` (well-founded recursion, private), even on x₀ ∧ ¬x₀ (`scratch/p14/Tiny.lean`). The route needs our own structurally recursive LRAT checker with a soundness proof for RUP steps (a substantial Lean project, not started) | 3–4 |
 | C3x | NL family (C12): the m = 6 norm-class recipe at m = 8, 10, Walsh check; a proof attempt if it holds | 0 (paper) |
 
-P14's catch: `bv_decide` proves with a native axiom (tested 2026-11-07, `scratch/sat/BvAxioms.lean`), which Trust forbids; an LRAT certificate counts only if the kernel checks it.
 
 **Search list (search mode only), in this order.**
 | Class | ID | Search | Rows |
