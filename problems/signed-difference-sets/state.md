@@ -108,7 +108,7 @@ Group 3, technique tests (kill test first; work it if it hits):
 | D14x | Ma-type lemma for non-cyclic Sylow subgroups (no source, D14x 2026-11-09) | ~2,200 | new mathematics; the no-loss form is false for SDS |
 | P21 | Planned ideator rounds on the core | — | dropped by the user (no new ideators) |
 
-**Running.** (2026-11-10 00:25)
+**Running.** (2026-11-10 00:24)
 - Agents (3): refuter on C35 (00:16; `scratch/refuter/c35-brief.md`, reports `scratch/refuter/c35/`); Lean helper finishing C17x(c), N464 (00:17; from `scratch/c17x/progress.md`); D15x joint-contraction kill test (00:24; `scratch/d15x/brief.md`, report `scratch/d15x/report.md`). The no-new-agents pause is lifted (the user, 2026-11-10).
 - Lean: N6970's join (rebuilt with `and_assoc`: `++` is left-associative, so the join's `simp` gave left-nested conjunctions; parts built) waits as a heavy job; C34's 27 rows (`solver/madividedrows.py` on `answer.write_search`, splits over 25,000 nodes; N19445 left out: 2,737 prefixes) building two at a time (`scratch/c34/row.sh`, log `scratch/c34/chain.log`); N38250 built.
 - **Next steps, in order:**
