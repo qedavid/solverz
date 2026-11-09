@@ -1,18 +1,27 @@
-"""Writes build/numbers.tex and build/sets.tex from instances.csv and corrections.md.
+"""Writes build/numbers.tex and build/sets.tex from instances.csv and corrections.md
+as they are at the paper's baseline tag, so a rebuild always gives the same numbers.
 
 latexmk runs it before every build; every number in the text comes from here.
 """
 import csv
 import re
+import subprocess
 from collections import Counter
 from pathlib import Path
 
 PROBLEM = Path(__file__).resolve().parents[2]
+BASELINE = "signed-difference-sets/run1"  # git tag of the data the paper reports
 BUILD = Path(__file__).parent / "build"
 SIZE_BANDS = [(0, 50), (50, 100), (100, 200), (200, 500), (500, 10**9)]
 OPEN_IN_SOURCE = "Open"
 HE_WU = "He-Wu"
 EXAMPLE_OBJECT = "O6"  # the (25, 12, 1) set in C5 x C5 (N49), shown in the note
+
+
+def baseline_text(rel: str) -> str:
+    """A file of the problem folder as it is at BASELINE."""
+    return subprocess.run(["git", "show", f"{BASELINE}:./{rel}"], cwd=PROBLEM, check=True,
+                          capture_output=True, encoding="utf-8").stdout
 
 
 def fmt(n: int) -> str:
@@ -33,7 +42,7 @@ def group_tex(shape: list[int]) -> str:
 
 def write_example() -> None:
     """build/example.tex: the example set as a grid, entry (a, b) = D(a, b), blank for 0."""
-    lines = (PROBLEM / "objects" / f"{EXAMPLE_OBJECT}.txt").read_text(encoding="utf-8").split("\n")
+    lines = baseline_text(f"objects/{EXAMPLE_OBJECT}.txt").split("\n")
     m = int(re.match(r"C(\d+)xC\1 ", lines[0]).group(1))
     signs = {}
     for ln in lines[1:]:
@@ -50,8 +59,8 @@ def write_example() -> None:
 def main() -> None:
     BUILD.mkdir(exist_ok=True)
     write_example()
-    rows = list(csv.DictReader(open(PROBLEM / "instances.csv", encoding="utf-8")))
-    corrected = set(re.findall(r"N\d+", (PROBLEM / "corrections.md").read_text(encoding="utf-8")))
+    rows = list(csv.DictReader(baseline_text("instances.csv").splitlines()))
+    corrected = set(re.findall(r"N\d+", baseline_text("corrections.md")))
     source_open = [r for r in rows if r["source"].startswith(OPEN_IN_SOURCE)]
     ours = [r for r in rows if r["solution"]]
     # Settled by He-Wu: their four obstructions (none) and three constructions.
