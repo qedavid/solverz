@@ -108,9 +108,9 @@ Group 3, technique tests (kill test first; work it if it hits):
 | D14x | Ma-type lemma for non-cyclic Sylow subgroups (no source, D14x 2026-11-09) | ~2,200 | new mathematics; the no-loss form is false for SDS |
 | P21 | Planned ideator rounds on the core | — | dropped by the user (no new ideators) |
 
-**Running.** (2026-11-10 00:15, before the user's account switch)
-- Agents: none running. P18 M2 done (00:16): C35, `FieldDescentChain.lean`, `FieldDescentChainRows.lean` (66 rows), tests, all built (`scratch/p18/m2-report.md`); axioms not yet printed. The C17x(c) helper stopped (N464 not finished; `scratch/c17x/report.md`, `progress.md`). After the switch the no-new-agents rule is lifted (the user, 2026-11-10 00:10).
-- Lean: `MaDivided.lean` (C34 with `MaDivCert`) builds `--wfail` (2026-11-10, 64 s, 2.6 GB). N6970 at depth 3: Check, Part00–02 built; Part03 and the join to build (`sh scratch/c10x/chain.sh 7 N6970` skips what is built).
+**Running.** (2026-11-10 00:25)
+- Agents (3): refuter on C35 (00:16; `scratch/refuter/c35-brief.md`, reports `scratch/refuter/c35/`); Lean helper finishing C17x(c), N464 (00:17; from `scratch/c17x/progress.md`); D15x joint-contraction kill test (00:24; `scratch/d15x/brief.md`, report `scratch/d15x/report.md`). The no-new-agents pause is lifted (the user, 2026-11-10).
+- Lean: N6970's join (rebuilt with `and_assoc`: `++` is left-associative, so the join's `simp` gave left-nested conjunctions; parts built) waits as a heavy job; C34's 27 rows (`solver/madividedrows.py` on `answer.write_search`, splits over 25,000 nodes; N19445 left out: 2,737 prefixes) building two at a time (`scratch/c34/row.sh`, log `scratch/c34/chain.log`); N38250 built.
 - **Next steps, in order:**
   1. N6970's Part03 and join; then the root alone (`sh scratch/lean-slot.sh root researcher`): it now imports FieldDescent, FieldDescentRows, Tests.FieldDescent, MaEdge, MaEdgeRows, Tests.MaEdge, HalfRows.OrbitCited (via HalfRows), MarkedCountsInt; add N6970 if its join built.
   2. `#print axioms` for the new theorems (extend `scratch/c10x_axioms.lean`: `fieldDescentRows_not_hasSDS`, `MaEdgeRows.not_hasSDS_of_mem_maEdgeRows`, a few row theorems, `HalfRows.n7412_not_hasSDS`, `n27692_not_hasSDS`, N6970).

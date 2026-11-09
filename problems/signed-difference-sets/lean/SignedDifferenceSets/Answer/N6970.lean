@@ -40,7 +40,7 @@ theorem not_hasSDS : ¬ HasSDS (ZMod 3 × ZMod 57) 154 135 :=
     (noVector_of_top (P := prefixes) (d := 2) (by decide)
       (by decide +kernel) fun p hp => by
         have h : ∀ p ∈ prefixes, check p = true := by
-          simp only [prefixes, List.forall_mem_append]
+          simp only [prefixes, List.forall_mem_append, and_assoc]
           exact ⟨below0, below1, below2, below3, below4, below5, below6, below7, below8, below9,
             below10, below11, below12, below13, below14, below15, below16, below17, below18,
             below19, below20, below21, below22, below23, below24, below25, below26, below27,
