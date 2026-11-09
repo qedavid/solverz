@@ -56,6 +56,9 @@ folder `scratch/ideator/2026-11-06-core-{none,exists}.md`):
   Ma lemma without the |S|/exp loss is false for SDS (it would kill 70 `exists` rows, e.g.
   N2, N127, N658). Of the 2,070 open K-arith rows, 698 have no non-cyclic Sylow subgroup at
   stake (227 with no p | gcd(v, n), b ≥ 1; 471 with cyclic ones).
+- The near-miss classes still give way to sharper local rules: Ma's lemma at its edge (C33, and its divided search
+  C34) and Schmidt's field descent (C32 one step, C35 chains) reach 257 open rows together (class C 142, D2 55, D3 36,
+  A 24; 2026-11-09/10), none in the core K.
 
 **So a Solution must.** Per row: a set Lean checks, or a rule's Lean theorem plus its
 Lean check for that row; and, before it is proposed, a check against the known
