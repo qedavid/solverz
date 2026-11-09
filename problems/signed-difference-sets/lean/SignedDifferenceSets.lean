@@ -273,6 +273,9 @@ public import SignedDifferenceSets.Answer.N49190
 public import SignedDifferenceSets.Answer.N49624
 public import SignedDifferenceSets.MaDescent
 public import SignedDifferenceSets.MaDescentFull
+public import SignedDifferenceSets.MaComb
+public import SignedDifferenceSets.MaCombRows
+public import SignedDifferenceSets.Tests.MaComb
 public import SignedDifferenceSets.HalfRows
 public import SignedDifferenceSets.DescentRows
 public import SignedDifferenceSets.UnramifiedDescent
