@@ -50,6 +50,12 @@ folder `scratch/ideator/2026-11-06-core-{none,exists}.md`):
 - the core K, about 3,100 rows: no usable multiplier (gcd(v, n) > 1, or tiny M), every
   congruence modulus below c, quotient vectors exist on every quotient E8 decides, and far
   below the random threshold. They are probably `none`, but no local view can show it.
+  No exponent bound helps there (D14x, 2026-11-09, `scratch/d14x/report.md`): the published
+  non-cyclic forms (Ma–Schmidt 1995 Lemma 3.2, the Hadamard descents) need D ≥ 0 or a ±1
+  array, and apply only at C21 margin ≥ ½, which no open K-arith row reaches (≤ 0.444); a
+  Ma lemma without the |S|/exp loss is false for SDS (it would kill 70 `exists` rows, e.g.
+  N2, N127, N658). Of the 2,070 open K-arith rows, 698 have no non-cyclic Sylow subgroup at
+  stake (227 with no p | gcd(v, n), b ≥ 1; 471 with cyclic ones).
 
 **So a Solution must.** Per row: a set Lean checks, or a rule's Lean theorem plus its
 Lean check for that row; and, before it is proposed, a check against the known
