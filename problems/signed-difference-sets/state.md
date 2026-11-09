@@ -40,7 +40,7 @@ Group 1 pointers:
 Group 2, known work (port known proofs, extend rules):
 | ID | What | Rows |
 |---|---|---|
-| P18 | Schmidt's field descent in general (I10): a Lean spike first (what Mathlib's prime decomposition in cyclotomic fields provides), then the proof | 126 none |
+| P18 | Schmidt's field descent in general (I10): spike done 2026-11-09, GO (`scratch/p18/`: `Spike.lean` proves steps S1–S4, `rows.py`/`rows.out` the 126 rows' descent chains; ~600–900 more lines, 3–5 agent-days). Next: move S1–S4 into `FieldDescent.lean`, then milestone M1 (one descent step at an odd prime: 46 rows), refuter, then M2 (chains, p = 2: 80 rows) | 126 none |
 | P16 + C16x/D2x | Rules at their edge: Ma at equality for c ≥ 2, two-valued cosets for margins in [½, 1) | up to 1,658 (258 class A) |
 | P17 (Lean part) | C24 on quotients, ContractionCheck-style certificates | up to 392 |
 | C15x | I17's checker: per-branch echelon form over a certified field, `decide +kernel` slices | 11 none |
