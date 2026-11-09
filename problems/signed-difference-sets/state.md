@@ -1,6 +1,6 @@
 # State
 
-**Focus.** The user's plan of 2026-11-09 (`scratch/inventory/final-plan.md`, items cited by the IDs of `scratch/inventory/inventory.md`, both copied from the main folder). Research mode: Groups 1–3 below, in that order; now Group 1. Search mode only when the user says so. Table 91.05% settled (none 63,999, exists 229, open 6,315); Solutions Z1–Z33 (`solutions.md`), corrections in `corrections.md`.
+**Focus.** The user's plan of 2026-11-09 (`scratch/inventory/final-plan.md`, items cited by the IDs of `scratch/inventory/inventory.md`, both copied from the main folder). Research mode: Groups 1–3 below, in that order; now Group 1. Search mode only when the user says so. Table 91.06% settled (none 64,010, exists 229, open 6,304); Solutions Z1–Z33 (`solutions.md`), corrections in `corrections.md`.
 
 **Rules.**
 - **NO NEW IDEATORS.** A request for one goes with its reason under "Needs the user"; the user decides.
@@ -23,7 +23,7 @@ Group 1, settle what is already proved:
 | P5 | Lean sets for the database lags N14604, N31832, N63319: done (O105–O107), settled; proposed as corrections under Needs the user | 3 exists |
 | C10x | E8's 4 kills (N2847, N2863, N6970, N26266): rerun on committed code, sliced `noVector` | 4 none |
 | C20x | N1's kills N44059, N44123: done (A7 rows in CosetRows Part52, Part61), settled | 2 none |
-| D1x | Ma × an extra self-conjugate modulus (p^b·Q > 2c), extending C21 | 11 none |
+| D1x | Ma × an extra self-conjugate modulus (p^b·Q > 2c), extending C21: done, C29 verified ([R35](reviews/R35.md)), settled | 11 none |
 | C6x | N27692: integer certificate for C7 | 1 none |
 | C17x(c) | N464: T-side of C26 and a kernel search over the 648 halved sets | 1 none |
 | C1x, C2x, C5x, E11, E12 | C4's status (R28), C6 marked superseded by C13/C14, ModQ (C24) imported, full `#print axioms` and unreachable modules, code defects before reuse. Done: C1x (C4 verified), C2x, C5x (C24 verified), E11(a) (all 11,236 library constants use only the three standard axioms, `scratch/e11/AllAxioms.lean`), E11(b) (ModQ, Tests.UnramifiedDescent in the root), E11(c) (all 76 objects with a Lean answer equal their Lean data element by element, `scratch/e11/objects_vs_lean.py`), E11(d) (`AxiomsC27.lean` rerun 2026-11-07, clean), E11(e) (objects index), E12's R1-a (`solver/src/lib.rs`: k = 0 handled). E12's other defects are in scratch tools (tiers.py k < v, sc_rows.py `j = max(j, 1)`, sp_hits' producer, E8's k ≤ Σ maxm): fix them before reusing those tools | — |
@@ -110,7 +110,7 @@ P14's catch: `bv_decide` proves with a native axiom (tested 2026-11-07, `scratch
 | P21 | Planned ideator rounds on the core | — | dropped by the user (no new ideators) |
 
 **Running.** (2026-11-09 20:25)
-- Agents (3 of 3, resumed after the usage limit at 21:00): Lean helper on C6x / N27692 (`scratch/c6x/brief.md`, notes `scratch/c6x/progress.md`); refuter on C29 and its 11 rows (`scratch/refuter/c29-brief.md`, `scratch/refuter/c29/`); Lean spike for P18, Schmidt's field descent in Mathlib (`scratch/p18/brief.md`, report `scratch/p18/report.md`, since 21:03). C29 in Lean is done (`MaComb.lean`, `MaCombRows.lean`, `Tests/MaComb.lean`, in the root); its rows settle after the refuter.
+- Agents (2 of 3): Lean helper on C6x / N27692 (`scratch/c6x/brief.md`, notes `scratch/c6x/progress.md`); Lean spike for P18, Schmidt's field descent in Mathlib (`scratch/p18/brief.md`, report `scratch/p18/report.md`, since 21:03). C29 in Lean is done (`MaComb.lean`, `MaCombRows.lean`, `Tests/MaComb.lean`, in the root); its rows settle after the refuter.
 - Lean: C10x's N6970 certificate (1.47M search nodes, 2,815 subtree checks, `answer.py contract N6970 3,3`), built to measure the kernel time (E8's 4 kills rerun on committed code `solver/src/bin/e8_passes.rs`: `scratch/e8_c10x.out`).
 - The leftover processes are gone (checked 2026-11-09 20:14). I17's prototype finished both batches: of the 272 cyclic B1 rows, 234 too big, 16 NONE (11 still open: N3067, N15689, N17962, N26085, N44138, N45372, N47110, N49189, N49203, N49278, N60164; C15x), 4 FOUND (the known Paley-and-zero sets), the rest skipped (`scratch/n2/b1_cyc_{a,b}.out`). E7's partial output `scratch/e7.out` (11 of 22 rows, E7.md); its open rows N204, N205, N207, N212 are P12 in the search list.
 
@@ -122,6 +122,8 @@ Results only in scratch (git-ignored):
 
 ## Needs the user
 
+- Proposed Solution: C29 (Ma's lemma with an extra self-conjugate modulus, p^b·Q > 2c): no SDS in 11 rows Gordon lists Open (N6822, N9200, N44532, N44533, N44562, N44563, N44662, N44663, N44752, N44753, N58644; `MaCombRows.n…_not_hasSDS`). Refuter SURVIVES ([R35](reviews/R35.md)). Origin: Ma's lemma (Ma 1985) with Turyn's self-conjugacy; the combination: ideator round 2, Lean proof ours; not found in print (Arasu–Ma 2001, Pott 1995, Leung–Ma–Schmidt not opened).
+- Side result, outside our table: C29's certificate also proves that the circulant weighing matrix CW(195, 100) does not exist (`¬ HasSDS (ZMod 195) 100 0`, `reviews/R35/Probe2.lean`, axioms clean; H = ℤ₅ × ℤ₁₃, c = 3, p^b = 5, Q = 2). CW(195, 100) is open in Arasu–Gordon–Zhang's Table 10 and in Tan 2026. Before it counts: a literature check (Arasu–Ma 2001, Leung–Ma–Schmidt), a theorem in the library, and your call whether it is a Solution of that table.
 - Proposed Solutions (plan item P4; refuter [R34](reviews/R34.md): statements and sets SURVIVE, the credit was FLAWED for I21 and is corrected as R34 says, in `ideas/I21.md` and `objects/_objects.md`; all 16 rows are `exists`, Open in Gordon's sds.json e3bf810, Lean `Answer.N<id>.hasSDS` in the root):
   - Cyclotomic constructions (I19, ideator round 3's X1, X3): 7 rows, N236 (42, 18, 2), N1008 (75, 26, 1), N11602 (217, 112, 12) by generalized cyclotomy on products of fields; N14597 (243, 121, 40), N14828 (243, 177, 96), N31880 (343, 199, 3), N31994 (343, 247, 51) by semilinear cyclotomy (O61–O67). Origin: ours, in known frameworks; none found in print; O64 is the nonzero squares of GF(243) (Paley) minus the Berlekamp–van Lint–Seidel PDS (243, 22, 1, 2).
   - N14472 (243, 82, 1) in C₃³ × C₉ (O103): He–Chen–Ge Thm 4.1 transported to the non-split index-3 subgroup C₃⁴; the transport and the set: ours.

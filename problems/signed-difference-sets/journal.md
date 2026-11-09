@@ -1,6 +1,7 @@
 # Journal
 
 ## 2026-11-09
+- 21:21 C29 verified (refuter SURVIVES, [R35](reviews/R35.md); `MaComb.lean` in the root, axioms clean): 11 rows settled none (`MaCombRows`). Table 91.06% (none 64,010, exists 229, open 6,304)
 - 20:52 E11(a): all 11,236 constants of SignedDifferenceSets depend only on propext, Classical.choice, Quot.sound (`scratch/e11/AllAxioms.lean`, `collectAxioms` over the library). C29 proved in Lean (`MaComb.lean`, 11 rows in `MaCombRows.lean`); refuter next
 - 20:50 Settled 8 rows: N14604, N31832, N63319 exists (P5: Gordon's Prop 2.3 and Thm 4.1, database lags; objects O105–O107, [R7](reviews/R7.md)); N44059, N44123 (C20x), N9193, N63757, N60340 none by A7 (CosetRows Part52, Part61). C24 verified (ModQ in the root; its `charSum` renamed `charSumMod`, it clashed with RealChars'). Root build clean, axioms clean. Table 91.05% (none 63,999, exists 229, open 6,315)
 - 20:32 Settled 8 rows none by A7 (C10, C16; [R27](reviews/R27.md)): CosetRows Part22–35 imported (with OrbitRows Part78–85), root build clean, axioms clean. Table 91.04% (none 63,994, exists 226, open 6,323)

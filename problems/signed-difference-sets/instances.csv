@@ -6820,7 +6820,7 @@ N6818,"SDS(170,134,14,[170])",Open@e3bf810,none,He-Wu Thm 3.2: n=120; p=2; m=5; 
 N6819,"SDS(170,139,38,[170])",Open@e3bf810,none,He-Wu Thm 3.2: n=101; p=101; m=2; j=1,,
 N6820,"SDS(170,140,56,[170])",Open@e3bf810,none,He-Wu Thm 3.2: n=84; p=3; m=2; j=1,,
 N6821,"SDS(170,142,6,[170])",Open@e3bf810,none,He-Wu Thm 3.2: n=136; p=2; m=5; j=2,,
-N6822,"SDS(170,146,2,[170])",Open@e3bf810,open,,,
+N6822,"SDS(170,146,2,[170])",Open@e3bf810,none,C29 (Ma × self-conjugate modulus); MaCombRows,SignedDifferenceSets.MaCombRows.n6822_not_hasSDS,
 N6823,"SDS(170,147,46,[170])",Open@e3bf810,none,He-Wu Thm 3.2: n=101; p=101; m=2; j=1,,
 N6824,"SDS(170,152,76,[170])",Open@e3bf810,none,He-Wu Thm 3.2: n=76; p=19; m=2; j=1,,
 N6825,"SDS(170,153,72,[170])",No@e3bf810,none,Gordon: Orbit Exhaust,,
@@ -9198,7 +9198,7 @@ N9196,"SDS(195,108,18,[195])",Open@e3bf810,none,He-Wu Thm 3.2: n=90; p=2; m=3; j
 N9197,"SDS(195,109,30,[195])",Open@e3bf810,none,He-Wu Thm 3.2: n=79; p=79; m=5; j=1,,
 N9198,"SDS(195,113,44,[195])",Open@e3bf810,none,He-Wu Thm 3.2: n=69; p=3; m=5; j=2,,
 N9199,"SDS(195,113,52,[195])",Open@e3bf810,open,,,
-N9200,"SDS(195,115,15,[195])",Open@e3bf810,open,,,
+N9200,"SDS(195,115,15,[195])",Open@e3bf810,none,C29 (Ma × self-conjugate modulus); MaCombRows,SignedDifferenceSets.MaCombRows.n9200_not_hasSDS,
 N9201,"SDS(195,119,5,[195])",Open@e3bf810,none,He-Wu Thm 3.2: n=114; p=2; m=3; j=1,,
 N9202,"SDS(195,122,43,[195])",Open@e3bf810,none,He-Wu Thm 3.2: n=79; p=79; m=5; j=1,,
 N9203,"SDS(195,122,53,[195])",Open@e3bf810,none,He-Wu Thm 3.2: n=69; p=3; m=5; j=2,,
@@ -44530,8 +44530,8 @@ N44528,"SDS(400,235,10,[2,2,2,50])",Open@e3bf810,none,C5; SelfConjugacyRows part
 N44529,"SDS(400,235,10,[2,2,10,10])",Open@e3bf810,none,C5; SelfConjugacyRows part08,SignedDifferenceSets.SelfConjugacyRows.part08_not_hasSDS,Z8
 N44530,"SDS(400,235,10,[2,2,100])",Open@e3bf810,none,C13; SelfConjugacyRows part08,SignedDifferenceSets.SelfConjugacyRows.part08_not_hasSDS,Z9
 N44531,"SDS(400,235,10,[2,10,20])",Open@e3bf810,none,C13; SelfConjugacyRows part08,SignedDifferenceSets.SelfConjugacyRows.part08_not_hasSDS,Z9
-N44532,"SDS(400,235,10,[2,200])",Open@e3bf810,open,,,
-N44533,"SDS(400,235,10,[4,100])",Open@e3bf810,open,,,
+N44532,"SDS(400,235,10,[2,200])",Open@e3bf810,none,C29 (Ma × self-conjugate modulus); MaCombRows,SignedDifferenceSets.MaCombRows.n44532_not_hasSDS,
+N44533,"SDS(400,235,10,[4,100])",Open@e3bf810,none,C29 (Ma × self-conjugate modulus); MaCombRows,SignedDifferenceSets.MaCombRows.n44533_not_hasSDS,
 N44534,"SDS(400,235,10,[5,80])",Open@e3bf810,open,,,
 N44535,"SDS(400,235,10,[10,40])",Open@e3bf810,open,,,
 N44536,"SDS(400,235,10,[20,20])",Open@e3bf810,open,,,
@@ -44560,8 +44560,8 @@ N44558,"SDS(400,247,22,[2,2,2,50])",Open@e3bf810,none,C5; SelfConjugacyRows part
 N44559,"SDS(400,247,22,[2,2,10,10])",Open@e3bf810,none,C5; SelfConjugacyRows part08,SignedDifferenceSets.SelfConjugacyRows.part08_not_hasSDS,Z8
 N44560,"SDS(400,247,22,[2,2,100])",Open@e3bf810,none,C13; SelfConjugacyRows part08,SignedDifferenceSets.SelfConjugacyRows.part08_not_hasSDS,Z9
 N44561,"SDS(400,247,22,[2,10,20])",Open@e3bf810,none,C13; SelfConjugacyRows part08,SignedDifferenceSets.SelfConjugacyRows.part08_not_hasSDS,Z9
-N44562,"SDS(400,247,22,[2,200])",Open@e3bf810,open,,,
-N44563,"SDS(400,247,22,[4,100])",Open@e3bf810,open,,,
+N44562,"SDS(400,247,22,[2,200])",Open@e3bf810,none,C29 (Ma × self-conjugate modulus); MaCombRows,SignedDifferenceSets.MaCombRows.n44562_not_hasSDS,
+N44563,"SDS(400,247,22,[4,100])",Open@e3bf810,none,C29 (Ma × self-conjugate modulus); MaCombRows,SignedDifferenceSets.MaCombRows.n44563_not_hasSDS,
 N44564,"SDS(400,247,22,[5,80])",Open@e3bf810,open,,,
 N44565,"SDS(400,247,22,[10,40])",Open@e3bf810,open,,,
 N44566,"SDS(400,247,22,[20,20])",Open@e3bf810,open,,,
@@ -44660,8 +44660,8 @@ N44658,"SDS(400,277,52,[2,2,2,50])",Open@e3bf810,none,C5; SelfConjugacyRows part
 N44659,"SDS(400,277,52,[2,2,10,10])",Open@e3bf810,none,C5; SelfConjugacyRows part08,SignedDifferenceSets.SelfConjugacyRows.part08_not_hasSDS,Z8
 N44660,"SDS(400,277,52,[2,2,100])",Open@e3bf810,none,C13; SelfConjugacyRows part08,SignedDifferenceSets.SelfConjugacyRows.part08_not_hasSDS,Z9
 N44661,"SDS(400,277,52,[2,10,20])",Open@e3bf810,none,C13; SelfConjugacyRows part08,SignedDifferenceSets.SelfConjugacyRows.part08_not_hasSDS,Z9
-N44662,"SDS(400,277,52,[2,200])",Open@e3bf810,open,,,
-N44663,"SDS(400,277,52,[4,100])",Open@e3bf810,open,,,
+N44662,"SDS(400,277,52,[2,200])",Open@e3bf810,none,C29 (Ma × self-conjugate modulus); MaCombRows,SignedDifferenceSets.MaCombRows.n44662_not_hasSDS,
+N44663,"SDS(400,277,52,[4,100])",Open@e3bf810,none,C29 (Ma × self-conjugate modulus); MaCombRows,SignedDifferenceSets.MaCombRows.n44663_not_hasSDS,
 N44664,"SDS(400,277,52,[5,80])",Open@e3bf810,open,,,
 N44665,"SDS(400,277,52,[10,40])",Open@e3bf810,open,,,
 N44666,"SDS(400,277,52,[20,20])",Open@e3bf810,open,,,
@@ -44750,8 +44750,8 @@ N44748,"SDS(400,301,76,[2,2,2,50])",Open@e3bf810,none,C5; SelfConjugacyRows part
 N44749,"SDS(400,301,76,[2,2,10,10])",Open@e3bf810,none,C5; SelfConjugacyRows part08,SignedDifferenceSets.SelfConjugacyRows.part08_not_hasSDS,Z8
 N44750,"SDS(400,301,76,[2,2,100])",Open@e3bf810,none,C13; SelfConjugacyRows part08,SignedDifferenceSets.SelfConjugacyRows.part08_not_hasSDS,Z9
 N44751,"SDS(400,301,76,[2,10,20])",Open@e3bf810,none,C13; SelfConjugacyRows part08,SignedDifferenceSets.SelfConjugacyRows.part08_not_hasSDS,Z9
-N44752,"SDS(400,301,76,[2,200])",Open@e3bf810,open,,,
-N44753,"SDS(400,301,76,[4,100])",Open@e3bf810,open,,,
+N44752,"SDS(400,301,76,[2,200])",Open@e3bf810,none,C29 (Ma × self-conjugate modulus); MaCombRows,SignedDifferenceSets.MaCombRows.n44752_not_hasSDS,
+N44753,"SDS(400,301,76,[4,100])",Open@e3bf810,none,C29 (Ma × self-conjugate modulus); MaCombRows,SignedDifferenceSets.MaCombRows.n44753_not_hasSDS,
 N44754,"SDS(400,301,76,[5,80])",Open@e3bf810,open,,,
 N44755,"SDS(400,301,76,[10,40])",Open@e3bf810,open,,,
 N44756,"SDS(400,301,76,[20,20])",Open@e3bf810,open,,,
@@ -58642,7 +58642,7 @@ N58640,"SDS(455,412,6,[455])",Open@e3bf810,none,He-Wu Thm 3.2: n=406; p=2; m=5; 
 N58641,"SDS(455,412,348,[455])",Open@e3bf810,none,C14; BoxRows part03,SignedDifferenceSets.BoxRows.part03_not_hasSDS,Z10
 N58642,"SDS(455,413,62,[455])",Open@e3bf810,none,He-Wu Thm 3.2: n=351; p=3; m=5; j=2,,
 N58643,"SDS(455,413,178,[455])",Open@e3bf810,none,He-Wu Thm 3.2: n=235; p=5; m=7; j=3,,
-N58644,"SDS(455,415,15,[455])",Open@e3bf810,open,,,
+N58644,"SDS(455,415,15,[455])",Open@e3bf810,none,C29 (Ma × self-conjugate modulus); MaCombRows,SignedDifferenceSets.MaCombRows.n58644_not_hasSDS,
 N58645,"SDS(455,415,299,[455])",Open@e3bf810,none,He-Wu Thm 3.2: n=116; p=29; m=5; j=1,,
 N58646,"SDS(455,416,22,[455])",Open@e3bf810,none,He-Wu Thm 3.2: n=394; p=2; m=5; j=2,,
 N58647,"SDS(455,416,272,[455])",Open@e3bf810,none,C13; SelfConjugacyRows part11,SignedDifferenceSets.SelfConjugacyRows.part11_not_hasSDS,Z9
