@@ -1,6 +1,10 @@
 # Journal
 
 ## 2026-11-09
+- 23:36 C33 proved (refuter SURVIVES, [R40](reviews/R40.md)): Ma's lemma at its edge forces p ∣ λc; with a cyclic Sylow p of order ≥ p² and p² ∣ n, p ∣ λ (`MaEdge.lean`, `MaEdgeRows.lean`: 151 open rows, incl. N2847, N2863, N26266). In the root; settles after the root build
+- 22:54 C32 proved (refuter SURVIVES, [R39](reviews/R39.md)): field descent, one step at an odd prime (P18 M1; `FieldDescent.lean`, `FieldDescentRows.lean`: 60 open rows, 39 of them also C33's). In the root; settles after the root build
+- 22:53 C30 proved (E14's refuter SURVIVES, [R38](reviews/R38.md)): signed combinations of an RDS (P2's Prop rdscomb), with P2's other paper-only remarks
+- 22:22 D14x goes to Open: no published Ma-type bound for non-cyclic Sylow subgroups transfers to SDS; the no-loss form would kill 70 `exists` rows (`scratch/d14x/report.md`)
 - 21:21 C29 verified (refuter SURVIVES, [R35](reviews/R35.md); `MaComb.lean` in the root, axioms clean): 11 rows settled none (`MaCombRows`). Table 91.06% (none 64,010, exists 229, open 6,304)
 - 20:52 E11(a): all 11,236 constants of SignedDifferenceSets depend only on propext, Classical.choice, Quot.sound (`scratch/e11/AllAxioms.lean`, `collectAxioms` over the library). C29 proved in Lean (`MaComb.lean`, 11 rows in `MaCombRows.lean`); refuter next
 - 20:50 Settled 8 rows: N14604, N31832, N63319 exists (P5: Gordon's Prop 2.3 and Thm 4.1, database lags; objects O105–O107, [R7](reviews/R7.md)); N44059, N44123 (C20x), N9193, N63757, N60340 none by A7 (CosetRows Part52, Part61). C24 verified (ModQ in the root; its `charSum` renamed `charSumMod`, it clashed with RealChars'). Root build clean, axioms clean. Table 91.05% (none 63,999, exists 229, open 6,315)

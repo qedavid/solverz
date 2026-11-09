@@ -34,3 +34,4 @@
 | [C30](C30.md) | Signed combinations of a relative difference set: R − N, G − R − N, G − 2R − N, G − R − 2N (I15) | — | proved | — | — |
 | [C32](C32.md) | Field descent, one step at an odd prime p (p² ∣ m, 1 + m/p ≡ q^e): φ(m) n ≤ m (m/p) c² (Schmidt; P18 M1) | C27 | proved | `IsSDS.totient_mul_le_of_descent` | — |
 | [C33](C33.md) | Ma's lemma at its edge: p ∣ λc on a C21 quotient with b ≥ 1 (cyclic Sylow p of order ≥ p², p² ∣ n ⇒ p ∣ λ) | C21, C3 | proved | `IsSDS.dvd_lam_mul_of_ma` | — |
+| [C34](C34.md) | The divided contraction below a Ma quotient: W/p meets demands with square sum (k + λ(pc − 1))/p² (p odd) | C33, C3 | open | `IsSDS.false_of_maDivided` | — |

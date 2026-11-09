@@ -25,6 +25,6 @@ abbrev check (p : List ℤ) : Bool :=
 
 /-- A prefix stored as one number: coordinate `i` plus 19 is its base-39 digit `i`. -/
 def decodePrefix (x : ℕ) : List ℤ :=
-  (List.range 4).map fun i => ((x / 39 ^ i % 39 : ℕ) : ℤ) - 19
+  (List.range 3).map fun i => ((x / 39 ^ i % 39 : ℕ) : ℤ) - 19
 
 end SignedDifferenceSets.Answer.N6970
