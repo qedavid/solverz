@@ -48,3 +48,4 @@ The refuter's reports that statuses here rest on, oldest first.
 | [R43](R43.md) | C36; MaDivided2Rows (49 rows) | SURVIVES (rows not built; 24 more kills the exploration missed) | 2026-11-10 |
 | [R44](R44.md) | C37; N464 | SURVIVES (wording in C37.md) | 2026-11-10 |
 | [R45](R45.md) | C40; TomographyRows (9 rows) | SURVIVES (Uses: C16, not C10; the identity is folklore) | 2026-11-10 |
+| [R46](R46.md) | C38, C39; MaDividedResRows (14), MaCountRows (52) | SURVIVES (C38's p = 3 rows die without the residue too) | 2026-11-10 |

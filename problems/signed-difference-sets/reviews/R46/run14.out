@@ -1,0 +1,4 @@
+N22390 H'=3,2,2 c=8 Q=137 t=112 s'=37 M=5 | residue: RESULT nodes=224 sols=0 capped=false  | no residue: RESULT nodes=26658318 sols=0 capped=false 
+N22392 H'=3,2,2 c=8 Q=137 t=112 s'=37 M=5 | residue: RESULT nodes=224 sols=0 capped=false  | no residue: RESULT nodes=26658318 sols=0 capped=false 
+N25970 H'=2,13 c=6 Q=289 t=264 s'=83 M=5 | residue: RESULT nodes=228 sols=0 capped=false  | no residue: 
+N26009 H'=2,13 c=6 Q=181 t=132 s'=59 M=7 | residue: RESULT nodes=472 sols=0 capped=false  | no residue: 

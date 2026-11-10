@@ -1,0 +1,66 @@
+{'name': 'N5887', 'sub': 'MaCountRows', 'p': 2, 'l': 1, 'r': 16, 'ks': [5], 'c': 1, 'N': 80, 'Q': 11, 's1': 13, 'bad': [], 'e': 2, 'b': 1, 'n': 36, 'amax': 20, 'min_nonzero': None, 'dies': True}
+{'name': 'N6055', 'sub': 'MaCountRows', 'p': 2, 'l': 1, 'r': 16, 'ks': [5], 'c': 1, 'N': 80, 'Q': 65, 's1': 67, 'bad': [], 'e': 2, 'b': 1, 'n': 36, 'amax': 74, 'min_nonzero': None, 'dies': True}
+{'name': 'N7340', 'sub': 'MaCountRows', 'p': 2, 'l': 1, 'r': 4, 'ks': [11], 'c': 2, 'N': 44, 'Q': 17, 's1': 19, 'bad': [], 'e': 2, 'b': 1, 'n': 36, 'amax': 22, 'min_nonzero': None, 'dies': True}
+{'name': 'N7450', 'sub': 'MaCountRows', 'p': 2, 'l': 1, 'r': 4, 'ks': [11], 'c': 2, 'N': 44, 'Q': 117, 's1': 69, 'bad': [], 'e': 2, 'b': 1, 'n': 36, 'amax': 72, 'min_nonzero': 45, 'dies': True}
+{'name': 'N11250', 'sub': 'MaCountRows', 'p': 2, 'l': 1, 'r': 2, 'ks': [3, 3, 3], 'c': 2, 'N': 54, 'Q': 13, 's1': 15, 'bad': [], 'e': 2, 'b': 1, 'n': 36, 'amax': 20, 'min_nonzero': None, 'dies': True}
+{'name': 'N11259', 'sub': 'MaCountRows', 'p': 2, 'l': 1, 'r': 2, 'ks': [3, 3, 3], 'c': 2, 'N': 54, 'Q': 17, 's1': 21, 'bad': [], 'e': 2, 'b': 1, 'n': 36, 'amax': 22, 'min_nonzero': None, 'dies': True}
+{'name': 'N11493', 'sub': 'MaCountRows', 'p': 2, 'l': 1, 'r': 2, 'ks': [3, 3, 3], 'c': 2, 'N': 54, 'Q': 149, 's1': 87, 'bad': [], 'e': 2, 'b': 1, 'n': 36, 'amax': 88, 'min_nonzero': 56, 'dies': True}
+{'name': 'N11565', 'sub': 'MaCountRows', 'p': 2, 'l': 1, 'r': 2, 'ks': [3, 3, 3], 'c': 2, 'N': 54, 'Q': 169, 's1': 93, 'bad': [], 'e': 2, 'b': 1, 'n': 36, 'amax': 98, 'min_nonzero': 55, 'dies': True}
+{'name': 'N27066', 'sub': 'MaCountRows', 'p': 2, 'l': 1, 'r': 16, 'ks': [5], 'c': 2, 'N': 80, 'Q': 11, 's1': 13, 'bad': [], 'e': 2, 'b': 1, 'n': 36, 'amax': 19, 'min_nonzero': None, 'dies': True}
+{'name': 'N33767', 'sub': 'MaCountRows', 'p': 2, 'l': 1, 'r': 4, 'ks': [11], 'c': 4, 'N': 44, 'Q': 17, 's1': 19, 'bad': [], 'e': 2, 'b': 1, 'n': 36, 'amax': 20, 'min_nonzero': None, 'dies': True}
+{'name': 'N33769', 'sub': 'MaCountRows', 'p': 2, 'l': 1, 'r': 4, 'ks': [11], 'c': 4, 'N': 44, 'Q': 17, 's1': 19, 'bad': [], 'e': 2, 'b': 1, 'n': 36, 'amax': 20, 'min_nonzero': None, 'dies': True}
+{'name': 'N33770', 'sub': 'MaCountRows', 'p': 2, 'l': 1, 'r': 4, 'ks': [11], 'c': 4, 'N': 44, 'Q': 17, 's1': 19, 'bad': [], 'e': 2, 'b': 1, 'n': 36, 'amax': 20, 'min_nonzero': None, 'dies': True}
+{'name': 'N33881', 'sub': 'MaCountRows', 'p': 2, 'l': 2, 'r': 4, 'ks': [11], 'c': 2, 'N': 44, 'Q': 17, 's1': 19, 'bad': [], 'e': 4, 'b': 2, 'n': 144, 'amax': 40, 'min_nonzero': None, 'dies': True}
+{'name': 'N33895', 'sub': 'MaCountRows', 'p': 2, 'l': 2, 'r': 4, 'ks': [11], 'c': 2, 'N': 44, 'Q': 23, 's1': 25, 'bad': [], 'e': 4, 'b': 2, 'n': 144, 'amax': 43, 'min_nonzero': None, 'dies': True}
+{'name': 'N34201', 'sub': 'MaCountRows', 'p': 2, 'l': 1, 'r': 4, 'ks': [11], 'c': 4, 'N': 44, 'Q': 569, 's1': 157, 'bad': [], 'e': 2, 'b': 1, 'n': 36, 'amax': 158, 'min_nonzero': 45, 'dies': True}
+{'name': 'N34203', 'sub': 'MaCountRows', 'p': 2, 'l': 1, 'r': 4, 'ks': [11], 'c': 4, 'N': 44, 'Q': 569, 's1': 157, 'bad': [], 'e': 2, 'b': 1, 'n': 36, 'amax': 158, 'min_nonzero': 45, 'dies': True}
+{'name': 'N34204', 'sub': 'MaCountRows', 'p': 2, 'l': 1, 'r': 4, 'ks': [11], 'c': 4, 'N': 44, 'Q': 569, 's1': 157, 'bad': [], 'e': 2, 'b': 1, 'n': 36, 'amax': 158, 'min_nonzero': 45, 'dies': True}
+{'name': 'N34231', 'sub': 'MaCountRows', 'p': 2, 'l': 2, 'r': 4, 'ks': [11], 'c': 2, 'N': 44, 'Q': 99, 's1': 63, 'bad': [], 'e': 4, 'b': 2, 'n': 144, 'amax': 81, 'min_nonzero': 45, 'dies': True}
+{'name': 'N40375', 'sub': 'MaCountRows', 'p': 2, 'l': 2, 'r': 16, 'ks': [1], 'c': 6, 'N': 16, 'Q': 36, 's1': 21, 'bad': [], 'e': 4, 'b': 2, 'n': 144, 'amax': 40, 'min_nonzero': None, 'dies': True}
+{'name': 'N41125', 'sub': 'MaCountRows', 'p': 2, 'l': 2, 'r': 16, 'ks': [1], 'c': 6, 'N': 16, 'Q': 306, 's1': 69, 'bad': [], 'e': 4, 'b': 2, 'n': 144, 'amax': 85, 'min_nonzero': None, 'dies': True}
+{'name': 'N41305', 'sub': 'MaCountRows', 'p': 2, 'l': 2, 'r': 16, 'ks': [1], 'c': 6, 'N': 16, 'Q': 360, 's1': 75, 'bad': [], 'e': 4, 'b': 2, 'n': 144, 'amax': 94, 'min_nonzero': None, 'dies': True}
+{'name': 'N48360', 'sub': 'MaCountRows', 'p': 2, 'l': 2, 'r': 4, 'ks': [13], 'c': 2, 'N': 52, 'Q': 19, 's1': 23, 'bad': [], 'e': 4, 'b': 2, 'n': 144, 'amax': 41, 'min_nonzero': None, 'dies': True}
+{'name': 'N48374', 'sub': 'MaCountRows', 'p': 2, 'l': 2, 'r': 4, 'ks': [13], 'c': 2, 'N': 52, 'Q': 25, 's1': 29, 'bad': [], 'e': 4, 'b': 2, 'n': 144, 'amax': 44, 'min_nonzero': None, 'dies': True}
+{'name': 'N48752', 'sub': 'MaCountRows', 'p': 2, 'l': 2, 'r': 4, 'ks': [13], 'c': 2, 'N': 52, 'Q': 117, 's1': 75, 'bad': [], 'e': 4, 'b': 2, 'n': 144, 'amax': 90, 'min_nonzero': 54, 'dies': True}
+{'name': 'N48850', 'sub': 'MaCountRows', 'p': 2, 'l': 2, 'r': 4, 'ks': [13], 'c': 2, 'N': 52, 'Q': 135, 's1': 81, 'bad': [], 'e': 4, 'b': 2, 'n': 144, 'amax': 99, 'min_nonzero': 54, 'dies': True}
+{'name': 'N51792', 'sub': 'MaCountRows', 'p': 2, 'l': 1, 'r': 2, 'ks': [3, 3, 3], 'c': 4, 'N': 54, 'Q': 13, 's1': 15, 'bad': [], 'e': 2, 'b': 1, 'n': 36, 'amax': 19, 'min_nonzero': None, 'dies': True}
+{'name': 'N51793', 'sub': 'MaCountRows', 'p': 2, 'l': 1, 'r': 2, 'ks': [3, 3, 3], 'c': 4, 'N': 54, 'Q': 13, 's1': 15, 'bad': [], 'e': 2, 'b': 1, 'n': 36, 'amax': 19, 'min_nonzero': None, 'dies': True}
+{'name': 'N51796', 'sub': 'MaCountRows', 'p': 2, 'l': 1, 'r': 2, 'ks': [3, 3, 3], 'c': 4, 'N': 54, 'Q': 13, 's1': 15, 'bad': [], 'e': 2, 'b': 1, 'n': 36, 'amax': 19, 'min_nonzero': None, 'dies': True}
+{'name': 'N51882', 'sub': 'MaCountRows', 'p': 2, 'l': 2, 'r': 2, 'ks': [3, 3, 3], 'c': 2, 'N': 54, 'Q': 13, 's1': 15, 'bad': [], 'e': 4, 'b': 2, 'n': 144, 'amax': 38, 'min_nonzero': None, 'dies': True}
+{'name': 'N51887', 'sub': 'MaCountRows', 'p': 2, 'l': 2, 'r': 2, 'ks': [3, 9], 'c': 2, 'N': 54, 'Q': 13, 's1': 15, 'bad': [], 'e': 4, 'b': 2, 'n': 144, 'amax': 38, 'min_nonzero': None, 'dies': True}
+{'name': 'N51912', 'sub': 'MaCountRows', 'p': 2, 'l': 2, 'r': 2, 'ks': [3, 3, 3], 'c': 2, 'N': 54, 'Q': 17, 's1': 21, 'bad': [], 'e': 4, 'b': 2, 'n': 144, 'amax': 40, 'min_nonzero': None, 'dies': True}
+{'name': 'N51917', 'sub': 'MaCountRows', 'p': 2, 'l': 2, 'r': 2, 'ks': [3, 9], 'c': 2, 'N': 54, 'Q': 17, 's1': 21, 'bad': [], 'e': 4, 'b': 2, 'n': 144, 'amax': 40, 'min_nonzero': None, 'dies': True}
+{'name': 'N51987', 'sub': 'MaCountRows', 'p': 2, 'l': 2, 'r': 2, 'ks': [3, 3, 3], 'c': 2, 'N': 54, 'Q': 29, 's1': 33, 'bad': [], 'e': 4, 'b': 2, 'n': 144, 'amax': 46, 'min_nonzero': None, 'dies': True}
+{'name': 'N51992', 'sub': 'MaCountRows', 'p': 2, 'l': 2, 'r': 2, 'ks': [3, 9], 'c': 2, 'N': 54, 'Q': 29, 's1': 33, 'bad': [], 'e': 4, 'b': 2, 'n': 144, 'amax': 46, 'min_nonzero': None, 'dies': True}
+{'name': 'N52002', 'sub': 'MaCountRows', 'p': 2, 'l': 2, 'r': 2, 'ks': [3, 3, 3], 'c': 2, 'N': 54, 'Q': 37, 's1': 39, 'bad': [], 'e': 4, 'b': 2, 'n': 144, 'amax': 50, 'min_nonzero': None, 'dies': True}
+{'name': 'N52007', 'sub': 'MaCountRows', 'p': 2, 'l': 2, 'r': 2, 'ks': [3, 9], 'c': 2, 'N': 54, 'Q': 37, 's1': 39, 'bad': [], 'e': 4, 'b': 2, 'n': 144, 'amax': 50, 'min_nonzero': None, 'dies': True}
+{'name': 'N52452', 'sub': 'MaCountRows', 'p': 2, 'l': 2, 'r': 2, 'ks': [3, 3, 3], 'c': 2, 'N': 54, 'Q': 97, 's1': 69, 'bad': [], 'e': 4, 'b': 2, 'n': 144, 'amax': 80, 'min_nonzero': 55, 'dies': True}
+{'name': 'N52457', 'sub': 'MaCountRows', 'p': 2, 'l': 2, 'r': 2, 'ks': [3, 9], 'c': 2, 'N': 54, 'Q': 97, 's1': 69, 'bad': [], 'e': 4, 'b': 2, 'n': 144, 'amax': 80, 'min_nonzero': 55, 'dies': True}
+{'name': 'N52587', 'sub': 'MaCountRows', 'p': 2, 'l': 2, 'r': 2, 'ks': [3, 3, 3], 'c': 2, 'N': 54, 'Q': 113, 's1': 75, 'bad': [], 'e': 4, 'b': 2, 'n': 144, 'amax': 88, 'min_nonzero': 56, 'dies': True}
+{'name': 'N52592', 'sub': 'MaCountRows', 'p': 2, 'l': 2, 'r': 2, 'ks': [3, 9], 'c': 2, 'N': 54, 'Q': 113, 's1': 75, 'bad': [], 'e': 4, 'b': 2, 'n': 144, 'amax': 88, 'min_nonzero': 56, 'dies': True}
+{'name': 'N52902', 'sub': 'MaCountRows', 'p': 2, 'l': 1, 'r': 2, 'ks': [3, 3, 3], 'c': 4, 'N': 54, 'Q': 757, 's1': 201, 'bad': [], 'e': 2, 'b': 1, 'n': 36, 'amax': 205, 'min_nonzero': 55, 'dies': True}
+{'name': 'N52903', 'sub': 'MaCountRows', 'p': 2, 'l': 1, 'r': 2, 'ks': [3, 3, 3], 'c': 4, 'N': 54, 'Q': 757, 's1': 201, 'bad': [], 'e': 2, 'b': 1, 'n': 36, 'amax': 205, 'min_nonzero': 55, 'dies': True}
+{'name': 'N52906', 'sub': 'MaCountRows', 'p': 2, 'l': 1, 'r': 2, 'ks': [3, 3, 3], 'c': 4, 'N': 54, 'Q': 757, 's1': 201, 'bad': [], 'e': 2, 'b': 1, 'n': 36, 'amax': 205, 'min_nonzero': 55, 'dies': True}
+{'name': 'N52962', 'sub': 'MaCountRows', 'p': 2, 'l': 2, 'r': 2, 'ks': [3, 3, 3], 'c': 2, 'N': 54, 'Q': 149, 's1': 87, 'bad': [], 'e': 4, 'b': 2, 'n': 144, 'amax': 106, 'min_nonzero': 56, 'dies': True}
+{'name': 'N52967', 'sub': 'MaCountRows', 'p': 2, 'l': 2, 'r': 2, 'ks': [3, 9], 'c': 2, 'N': 54, 'Q': 149, 's1': 87, 'bad': [], 'e': 4, 'b': 2, 'n': 144, 'amax': 106, 'min_nonzero': 56, 'dies': True}
+{'name': 'N58698', 'sub': 'MaCountRows', 'p': 2, 'l': 1, 'r': 2, 'ks': [57], 'c': 2, 'N': 114, 'Q': 41, 's1': 43, 'bad': [], 'e': 2, 'b': 1, 'n': 100, 'amax': 58, 'min_nonzero': None, 'dies': True}
+{'name': 'N58699', 'sub': 'MaCountRows', 'p': 2, 'l': 1, 'r': 2, 'ks': [57], 'c': 2, 'N': 114, 'Q': 41, 's1': 43, 'bad': [], 'e': 2, 'b': 1, 'n': 100, 'amax': 58, 'min_nonzero': None, 'dies': True}
+{'name': 'N58707', 'sub': 'MaCountRows', 'p': 2, 'l': 1, 'r': 2, 'ks': [57], 'c': 2, 'N': 114, 'Q': 69, 's1': 71, 'bad': [], 'e': 2, 'b': 1, 'n': 100, 'amax': 72, 'min_nonzero': None, 'dies': True}
+{'name': 'N58708', 'sub': 'MaCountRows', 'p': 2, 'l': 1, 'r': 2, 'ks': [57], 'c': 2, 'N': 114, 'Q': 69, 's1': 71, 'bad': [], 'e': 2, 'b': 1, 'n': 100, 'amax': 72, 'min_nonzero': None, 'dies': True}
+{'name': 'N58827', 'sub': 'MaCountRows', 'p': 2, 'l': 1, 'r': 2, 'ks': [57], 'c': 2, 'N': 114, 'Q': 241, 's1': 157, 'bad': [], 'e': 2, 'b': 1, 'n': 100, 'amax': 158, 'min_nonzero': 115, 'dies': True}
+{'name': 'N58828', 'sub': 'MaCountRows', 'p': 2, 'l': 1, 'r': 2, 'ks': [57], 'c': 2, 'N': 114, 'Q': 241, 's1': 157, 'bad': [], 'e': 2, 'b': 1, 'n': 100, 'amax': 158, 'min_nonzero': 115, 'dies': True}
+{'name': 'N60667', 'sub': 'MaCountRows', 'p': 2, 'l': 1, 'r': 4, 'ks': [29], 'c': 2, 'N': 116, 'Q': 49, 's1': 53, 'bad': [], 'e': 2, 'b': 1, 'n': 100, 'amax': 62, 'min_nonzero': None, 'dies': True}
+{'name': 'N22390', 'sub': 'MaDividedResRows', 'p': 3, 'l': 1, 'r': 3, 'ks': [2, 2], 'c': 8, 'N': 12, 'Q': 137, 's1': 37, 'bad': [], 'e': 2, 'b': 1, 'n': 225, 'M': 5, 't': 112, 'bounds': [89], 'qs': [(5, 1, 1)]}
+{'name': 'N22392', 'sub': 'MaDividedResRows', 'p': 3, 'l': 1, 'r': 3, 'ks': [2, 2], 'c': 8, 'N': 12, 'Q': 137, 's1': 37, 'bad': [], 'e': 2, 'b': 1, 'n': 225, 'M': 5, 't': 112, 'bounds': [89], 'qs': [(5, 1, 1)]}
+{'name': 'N25970', 'sub': 'MaDividedResRows', 'p': 2, 'l': 1, 'r': 2, 'ks': [13], 'c': 6, 'N': 26, 'Q': 289, 's1': 83, 'bad': [], 'e': 2, 'b': 1, 'n': 100, 'M': 5, 't': 264, 'bounds': [94, 93], 'qs': [(5, 2, 1)]}
+{'name': 'N26009', 'sub': 'MaDividedResRows', 'p': 2, 'l': 1, 'r': 2, 'ks': [13], 'c': 6, 'N': 26, 'Q': 181, 's1': 59, 'bad': [], 'e': 2, 'b': 1, 'n': 196, 'M': 7, 't': 132, 'bounds': [120, 119], 'qs': [(7, 6, 1)]}
+{'name': 'N31317', 'sub': 'MaDividedResRows', 'p': 2, 'l': 1, 'r': 2, 'ks': [17], 'c': 5, 'N': 34, 'Q': 69, 's1': 27, 'bad': [], 'e': 2, 'b': 1, 'n': 196, 'M': 7, 't': 20, 'bounds': [102, 101], 'qs': [(7, 8, 1)]}
+{'name': 'N43597', 'sub': 'MaDividedResRows', 'p': 3, 'l': 1, 'r': 3, 'ks': [2, 2], 'c': 11, 'N': 12, 'Q': 223, 's1': 49, 'bad': [], 'e': 2, 'b': 1, 'n': 225, 'M': 5, 't': 198, 'bounds': [93], 'qs': [(5, 1, 1)]}
+{'name': 'N43641', 'sub': 'MaDividedResRows', 'p': 3, 'l': 1, 'r': 3, 'ks': [2, 2], 'c': 11, 'N': 12, 'Q': 333, 's1': 61, 'bad': [], 'e': 2, 'b': 1, 'n': 225, 'M': 5, 't': 308, 'bounds': [103], 'qs': [(5, 1, 1)]}
+{'name': 'N43697', 'sub': 'MaDividedResRows', 'p': 3, 'l': 1, 'r': 3, 'ks': [2, 2], 'c': 11, 'N': 12, 'Q': 443, 's1': 71, 'bad': [], 'e': 2, 'b': 1, 'n': 225, 'M': 5, 't': 418, 'bounds': [113], 'qs': [(5, 1, 1)]}
+{'name': 'N43761', 'sub': 'MaDividedResRows', 'p': 3, 'l': 1, 'r': 3, 'ks': [2, 2], 'c': 11, 'N': 12, 'Q': 597, 's1': 83, 'bad': [], 'e': 2, 'b': 1, 'n': 225, 'M': 5, 't': 572, 'bounds': [127], 'qs': [(5, 1, 1)]}
+{'name': 'N46887', 'sub': 'MaDividedResRows', 'p': 2, 'l': 1, 'r': 2, 'ks': [17], 'c': 6, 'N': 34, 'Q': 181, 's1': 73, 'bad': [], 'e': 2, 'b': 1, 'n': 100, 'M': 5, 't': 156, 'bounds': [76, 75], 'qs': [(5, 8, 1)]}
+{'name': 'N46914', 'sub': 'MaDividedResRows', 'p': 2, 'l': 1, 'r': 2, 'ks': [17], 'c': 6, 'N': 34, 'Q': 97, 's1': 41, 'bad': [], 'e': 2, 'b': 1, 'n': 196, 'M': 7, 't': 48, 'bounds': [106, 105], 'qs': [(7, 8, 1)]}
+{'name': 'N61800', 'sub': 'MaDividedResRows', 'p': 3, 'l': 1, 'r': 3, 'ks': [2, 2], 'c': 13, 'N': 12, 'Q': 207, 's1': 47, 'bad': [], 'e': 2, 'b': 1, 'n': 225, 'M': 5, 't': 182, 'bounds': [89], 'qs': [(5, 1, 1)]}
+{'name': 'N61885', 'sub': 'MaDividedResRows', 'p': 2, 'l': 1, 'r': 2, 'ks': [13], 'c': 9, 'N': 26, 'Q': 769, 's1': 137, 'bad': [], 'e': 2, 'b': 1, 'n': 196, 'M': 7, 't': 720, 'bounds': [178, 177], 'qs': [(7, 6, 1)]}
+{'name': 'N61887', 'sub': 'MaDividedResRows', 'p': 2, 'l': 1, 'r': 2, 'ks': [13], 'c': 9, 'N': 26, 'Q': 769, 's1': 137, 'bad': [], 'e': 2, 'b': 1, 'n': 196, 'M': 7, 't': 720, 'bounds': [178, 177], 'qs': [(7, 6, 1)]}
