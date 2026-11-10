@@ -15,8 +15,10 @@ from answer import BATCH_NODES, write_search
 from macombrows import ma_pairs
 from marows import conj_exp, crt, is_prime_td, lst, map_ok, surj_cert, vp
 
-# the join's coverage check is quadratic in the prefixes: N19445 needs 2,737 at the default depth
-SKIP = {"N19445"}
+# the join's coverage check is quadratic in the prefixes (720 cost N6970's join 8.8 GB): N19445 needs 2,737 at the
+# default depth, 483 at depth 8 (largest check 52,298 nodes)
+SKIP = set()
+DEPTH = {"N19445": "8"}
 ROOT = Path(__file__).resolve().parent.parent
 KILLS = ROOT / "scratch" / "x_ma_divided.out"
 C33 = ROOT / "scratch" / "maedge" / "settle.tsv"
@@ -88,7 +90,7 @@ theorem not_hasSDS : ¬ HasSDS ({group}) {k} {lam_l} :=
                  f"({x['c']} : ℕ) ({x['Q']} : ℤ) ({x['t']} : ℤ) ({x['k1']} : ℕ) {x['s1']}",
                  "the divided quotient and the subtree check", "row's divided search arguments (those `MaDivCert.not_hasSDS` asks for)",
                  math.prod(qf), x["c"], x["Q"], x["s1"], theorem, tool="solver/madividedrows.py",
-                 split_nodes=BATCH_NODES)
+                 split_nodes=BATCH_NODES, depth=DEPTH.get(f"N{rid}", ""))
 
 
 def main(wanted):
