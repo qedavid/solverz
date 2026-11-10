@@ -1287,7 +1287,7 @@ N1285,"SDS(81,49,27,[9,9])",Open@e3bf810,none,He-Wu Thm 3.2: n=22; p=2; m=3; j=1
 N1286,"SDS(81,49,27,[81])",Open@e3bf810,none,He-Wu Thm 3.2: n=22; p=2; m=3; j=1,,
 N1287,"SDS(81,64,1,[3,3,3,3])",Open@e3bf810,open,,,
 N1288,"SDS(81,64,1,[3,3,9])",Open@e3bf810,open,,,
-N1289,"SDS(81,64,1,[3,27])",Open@e3bf810,open,,,
+N1289,"SDS(81,64,1,[3,27])",Open@e3bf810,none,C35 (field descent along a chain); FieldDescentChainRows,SignedDifferenceSets.fieldDescentChainRows_not_hasSDS,
 N1290,"SDS(81,64,1,[9,9])",Open@e3bf810,open,,,
 N1291,"SDS(81,64,1,[81])",Open@e3bf810,none,C21; MaRows part01,SignedDifferenceSets.MaRows.not_hasSDS_of_mem_part01,Z24
 N1292,"SDS(81,64,9,[3,3,3,3])",Open@e3bf810,none,He-Wu Thm 3.2: n=55; p=5; m=3; j=1,,
@@ -1312,7 +1312,7 @@ N1310,"SDS(81,64,33,[9,9])",Open@e3bf810,open,,,
 N1311,"SDS(81,64,33,[81])",No@e3bf810,none,Gordon: Orbit Exhaust,,
 N1312,"SDS(81,65,2,[3,3,3,3])",Open@e3bf810,open,,,
 N1313,"SDS(81,65,2,[3,3,9])",Open@e3bf810,open,,,
-N1314,"SDS(81,65,2,[3,27])",Open@e3bf810,open,,,
+N1314,"SDS(81,65,2,[3,27])",Open@e3bf810,none,C35 (field descent along a chain); FieldDescentChainRows,SignedDifferenceSets.fieldDescentChainRows_not_hasSDS,
 N1315,"SDS(81,65,2,[9,9])",Open@e3bf810,open,,,
 N1316,"SDS(81,65,2,[81])",Open@e3bf810,none,C21; MaRows part01,SignedDifferenceSets.MaRows.not_hasSDS_of_mem_part01,Z24
 N1317,"SDS(81,65,7,[3,3,3,3])",Open@e3bf810,none,He-Wu Thm 3.2: n=58; p=2; m=3; j=1,,
@@ -2845,7 +2845,7 @@ N2843,"SDS(117,52,12,[117])",Open@e3bf810,none,He-Wu Thm 3.2: n=40; p=2; m=3; j=
 N2844,"SDS(117,53,1,[3,39])",Open@e3bf810,open,,,
 N2845,"SDS(117,53,1,[117])",Open@e3bf810,open,,,
 N2846,"SDS(117,53,17,[3,39])",Open@e3bf810,open,,,
-N2847,"SDS(117,53,17,[117])",Open@e3bf810,open,,,
+N2847,"SDS(117,53,17,[117])",Open@e3bf810,none,"C33 (Ma's lemma at its edge, p ∤ λc); MaEdgeRows",SignedDifferenceSets.MaEdgeRows.n2847_not_hasSDS,
 N2848,"SDS(117,57,2,[3,39])",Open@e3bf810,none,He-Wu Thm 3.2: n=55; p=5; m=3; j=1,,
 N2849,"SDS(117,57,2,[117])",Open@e3bf810,none,He-Wu Thm 3.2: n=55; p=5; m=3; j=1,,
 N2850,"SDS(117,57,14,[3,39])",Open@e3bf810,none,He-Wu Thm 3.2: n=43; p=43; m=13; j=3,,
@@ -2861,7 +2861,7 @@ N2859,"SDS(117,80,1,[117])",Open@e3bf810,none,C27; UnramifiedRows,SignedDifferen
 N2860,"SDS(117,80,16,[3,39])",Open@e3bf810,none,"A7 (C10, C10 (I13)); CosetRows Part40",SignedDifferenceSets.CosetRows.n2860_not_hasSDS,Z28
 N2861,"SDS(117,80,16,[117])",No@e3bf810,none,Gordon: Orbit Exhaust,,
 N2862,"SDS(117,80,44,[3,39])",Open@e3bf810,open,,,
-N2863,"SDS(117,80,44,[117])",Open@e3bf810,open,,,
+N2863,"SDS(117,80,44,[117])",Open@e3bf810,none,"C33 (Ma's lemma at its edge, p ∤ λc); MaEdgeRows",SignedDifferenceSets.MaEdgeRows.n2863_not_hasSDS,
 N2864,"SDS(117,81,20,[3,39])",Open@e3bf810,none,"A7 (C10, C16); CosetRows Part01",SignedDifferenceSets.CosetRows.n2864_not_hasSDS,Z28
 N2865,"SDS(117,81,20,[117])",No@e3bf810,none,Gordon: Orbit Exhaust,,
 N2866,"SDS(117,81,38,[3,39])",Open@e3bf810,none,He-Wu Thm 3.2: n=43; p=43; m=13; j=3,,
@@ -3802,7 +3802,7 @@ N3800,"SDS(128,122,22,[2,2,32])",Open@e3bf810,open,,,
 N3801,"SDS(128,122,22,[2,4,4,4])",Open@e3bf810,open,,,
 N3802,"SDS(128,122,22,[2,4,16])",Open@e3bf810,open,,,
 N3803,"SDS(128,122,22,[2,8,8])",Open@e3bf810,open,,,
-N3804,"SDS(128,122,22,[2,64])",Open@e3bf810,open,,,
+N3804,"SDS(128,122,22,[2,64])",Open@e3bf810,none,C35 (field descent along a chain); FieldDescentChainRows,SignedDifferenceSets.fieldDescentChainRows_not_hasSDS,
 N3805,"SDS(128,122,22,[4,4,8])",Open@e3bf810,open,,,
 N3806,"SDS(128,122,22,[4,32])",Open@e3bf810,open,,,
 N3807,"SDS(128,122,22,[8,16])",Open@e3bf810,open,,,
@@ -4795,7 +4795,7 @@ N4793,"SDS(144,104,4,[3,48])",Open@e3bf810,open,,,
 N4794,"SDS(144,104,4,[4,36])",Open@e3bf810,none,C14; BoxRows part01,SignedDifferenceSets.BoxRows.part01_not_hasSDS,Z10
 N4795,"SDS(144,104,4,[6,24])",Open@e3bf810,none,C14; BoxRows part01,SignedDifferenceSets.BoxRows.part01_not_hasSDS,Z10
 N4796,"SDS(144,104,4,[12,12])",Open@e3bf810,none,C14; BoxRows part01,SignedDifferenceSets.BoxRows.part01_not_hasSDS,Z10
-N4797,"SDS(144,104,4,[144])",Open@e3bf810,open,,,
+N4797,"SDS(144,104,4,[144])",Open@e3bf810,none,C35 (field descent along a chain); FieldDescentChainRows,SignedDifferenceSets.fieldDescentChainRows_not_hasSDS,
 N4798,"SDS(144,108,44,[2,2,2,18])",Open@e3bf810,none,C17; RealCharsRows,SignedDifferenceSets.realCharsRows_not_hasSDS,Z17
 N4799,"SDS(144,108,44,[2,2,6,6])",Open@e3bf810,none,C17; RealCharsRows,SignedDifferenceSets.realCharsRows_not_hasSDS,Z17
 N4800,"SDS(144,108,44,[2,2,36])",Open@e3bf810,none,C19; GaussCharsRows chunk 1,SignedDifferenceSets.gaussCharsRows1_not_hasSDS,Z18
@@ -7410,7 +7410,7 @@ N7408,"SDS(176,116,16,[2,2,2,22])",Open@e3bf810,open,,,
 N7409,"SDS(176,116,16,[2,2,44])",Open@e3bf810,open,,,
 N7410,"SDS(176,116,16,[2,88])",Open@e3bf810,open,,,
 N7411,"SDS(176,116,16,[4,44])",Open@e3bf810,open,,,
-N7412,"SDS(176,116,16,[176])",Open@e3bf810,open,,,
+N7412,"SDS(176,116,16,[176])",Open@e3bf810,none,"C35 (field descent along a chain); FieldDescentChainRows; also C26, halved row N1512 by I5 (OrbitRows); HalfRows OrbitCited",SignedDifferenceSets.fieldDescentChainRows_not_hasSDS,
 N7413,"SDS(176,116,52,[2,2,2,22])",Open@e3bf810,none,C17; RealCharsRows,SignedDifferenceSets.realCharsRows_not_hasSDS,Z17
 N7414,"SDS(176,116,52,[2,2,44])",Open@e3bf810,none,C19; GaussCharsRows chunk 1,SignedDifferenceSets.gaussCharsRows1_not_hasSDS,Z18
 N7415,"SDS(176,116,52,[2,88])",Open@e3bf810,none,C21; MaRows part01,SignedDifferenceSets.MaRows.not_hasSDS_of_mem_part01,Z24
@@ -7806,7 +7806,7 @@ N7804,"SDS(180,171,2,[180])",Open@e3bf810,open,,,
 N7805,"SDS(180,172,28,[2,90])",Open@e3bf810,none,C21; MaRows part01,SignedDifferenceSets.MaRows.not_hasSDS_of_mem_part01,Z24
 N7806,"SDS(180,172,28,[3,60])",Open@e3bf810,open,,,
 N7807,"SDS(180,172,28,[6,30])",Open@e3bf810,open,,,
-N7808,"SDS(180,172,28,[180])",Open@e3bf810,open,,,
+N7808,"SDS(180,172,28,[180])",Open@e3bf810,none,"C33 (Ma's lemma at its edge, p ∤ λc); MaEdgeRows",SignedDifferenceSets.MaEdgeRows.n7808_not_hasSDS,
 N7809,"SDS(180,173,92,[2,90])",Open@e3bf810,none,C14; BoxRows part01,SignedDifferenceSets.BoxRows.part01_not_hasSDS,Z10
 N7810,"SDS(180,173,92,[3,60])",Open@e3bf810,none,C14; BoxRows part01,SignedDifferenceSets.BoxRows.part01_not_hasSDS,Z10
 N7811,"SDS(180,173,92,[6,30])",Open@e3bf810,none,C14; BoxRows part01,SignedDifferenceSets.BoxRows.part01_not_hasSDS,Z10
@@ -8869,7 +8869,7 @@ N8867,"SDS(192,128,28,[2,96])",Open@e3bf810,open,,,
 N8868,"SDS(192,128,28,[4,4,12])",Open@e3bf810,none,C13; SelfConjugacyRows part02,SignedDifferenceSets.SelfConjugacyRows.part02_not_hasSDS,Z9
 N8869,"SDS(192,128,28,[4,48])",Open@e3bf810,open,,,
 N8870,"SDS(192,128,28,[8,24])",Open@e3bf810,open,,,
-N8871,"SDS(192,128,28,[192])",Open@e3bf810,open,,,
+N8871,"SDS(192,128,28,[192])",Open@e3bf810,none,C35 (field descent along a chain); FieldDescentChainRows,SignedDifferenceSets.fieldDescentChainRows_not_hasSDS,
 N8872,"SDS(192,129,32,[2,2,2,2,2,6])",Open@e3bf810,none,He-Wu Thm 3.2: n=97; p=97; m=2; j=1,,
 N8873,"SDS(192,129,32,[2,2,2,2,12])",Open@e3bf810,none,He-Wu Thm 3.2: n=97; p=97; m=2; j=1,,
 N8874,"SDS(192,129,32,[2,2,2,24])",Open@e3bf810,none,He-Wu Thm 3.2: n=97; p=97; m=2; j=1,,
@@ -9023,7 +9023,7 @@ N9021,"SDS(192,172,72,[2,96])",Open@e3bf810,open,,,
 N9022,"SDS(192,172,72,[4,4,12])",Open@e3bf810,none,C13; SelfConjugacyRows part02,SignedDifferenceSets.SelfConjugacyRows.part02_not_hasSDS,Z9
 N9023,"SDS(192,172,72,[4,48])",Open@e3bf810,open,,,
 N9024,"SDS(192,172,72,[8,24])",Open@e3bf810,open,,,
-N9025,"SDS(192,172,72,[192])",Open@e3bf810,open,,,
+N9025,"SDS(192,172,72,[192])",Open@e3bf810,none,C35 (field descent along a chain); FieldDescentChainRows,SignedDifferenceSets.fieldDescentChainRows_not_hasSDS,
 N9026,"SDS(192,177,24,[2,2,2,2,2,6])",Open@e3bf810,none,He-Wu Thm 3.2: n=153; p=17; m=2; j=1,,
 N9027,"SDS(192,177,24,[2,2,2,2,12])",Open@e3bf810,none,He-Wu Thm 3.2: n=153; p=17; m=2; j=1,,
 N9028,"SDS(192,177,24,[2,2,2,24])",Open@e3bf810,none,He-Wu Thm 3.2: n=153; p=17; m=2; j=1,,
@@ -10379,7 +10379,7 @@ N10377,"SDS(207,116,8,[207])",Open@e3bf810,none,C22; SylowRows chunk 2,SignedDif
 N10378,"SDS(207,117,2,[3,69])",Open@e3bf810,none,He-Wu Thm 3.2: n=115; p=5; m=3; j=1,,
 N10379,"SDS(207,117,2,[207])",Open@e3bf810,none,He-Wu Thm 3.2: n=115; p=5; m=3; j=1,,
 N10380,"SDS(207,118,1,[3,69])",Open@e3bf810,open,,,
-N10381,"SDS(207,118,1,[207])",Open@e3bf810,open,,,
+N10381,"SDS(207,118,1,[207])",Open@e3bf810,none,"C33 (Ma's lemma at its edge, p ∤ λc); MaEdgeRows; also C32 (field descent, one step at an odd prime); FieldDescentRows",SignedDifferenceSets.MaEdgeRows.n10381_not_hasSDS,
 N10382,"SDS(207,119,47,[3,69])",Open@e3bf810,none,He-Wu Thm 3.2: n=72; p=2; m=3; j=1,,
 N10383,"SDS(207,119,47,[207])",Open@e3bf810,none,He-Wu Thm 3.2: n=72; p=2; m=3; j=1,,
 N10384,"SDS(207,119,55,[3,69])",Open@e3bf810,none,E10/E11; I13 (C9 for every n); OrbitSearchWitt Part59,SignedDifferenceSets.OrbitRows.n10384_not_hasSDS,Z27
@@ -10397,7 +10397,7 @@ N10395,"SDS(207,128,46,[207])",Open@e3bf810,none,He-Wu Thm 3.2: n=82; p=2; m=3; 
 N10396,"SDS(207,128,56,[3,69])",Open@e3bf810,none,He-Wu Thm 3.2: n=72; p=2; m=3; j=1,,
 N10397,"SDS(207,128,56,[207])",Open@e3bf810,none,He-Wu Thm 3.2: n=72; p=2; m=3; j=1,,
 N10398,"SDS(207,129,12,[3,69])",Open@e3bf810,open,,,
-N10399,"SDS(207,129,12,[207])",Open@e3bf810,open,,,
+N10399,"SDS(207,129,12,[207])",Open@e3bf810,none,"C32 (field descent, one step at an odd prime); FieldDescentRows",SignedDifferenceSets.fieldDescentRows_not_hasSDS,
 N10400,"SDS(207,131,13,[3,69])",Open@e3bf810,none,He-Wu Thm 3.2: n=118; p=2; m=3; j=1,,
 N10401,"SDS(207,131,13,[207])",Open@e3bf810,none,He-Wu Thm 3.2: n=118; p=2; m=3; j=1,,
 N10402,"SDS(207,132,32,[3,69])",Open@e3bf810,none,C5; SelfConjugacyRows part02,SignedDifferenceSets.SelfConjugacyRows.part02_not_hasSDS,Z8
@@ -10425,7 +10425,7 @@ N10423,"SDS(207,152,44,[207])",Open@e3bf810,none,C22; SylowRows chunk 2,SignedDi
 N10424,"SDS(207,152,58,[3,69])",Open@e3bf810,none,He-Wu Thm 3.2: n=94; p=2; m=3; j=1,,
 N10425,"SDS(207,152,58,[207])",Open@e3bf810,none,He-Wu Thm 3.2: n=94; p=2; m=3; j=1,,
 N10426,"SDS(207,153,36,[3,69])",Open@e3bf810,open,,,
-N10427,"SDS(207,153,36,[207])",Open@e3bf810,open,,,
+N10427,"SDS(207,153,36,[207])",Open@e3bf810,none,"C32 (field descent, one step at an odd prime); FieldDescentRows",SignedDifferenceSets.fieldDescentRows_not_hasSDS,
 N10428,"SDS(207,153,68,[3,69])",Open@e3bf810,none,He-Wu Thm 3.2: n=85; p=5; m=3; j=1,,
 N10429,"SDS(207,153,68,[207])",Open@e3bf810,none,He-Wu Thm 3.2: n=85; p=5; m=3; j=1,,
 N10430,"SDS(207,155,1,[3,69])",Open@e3bf810,none,He-Wu Thm 3.2: n=154; p=2; m=3; j=1,,
@@ -10433,7 +10433,7 @@ N10431,"SDS(207,155,1,[207])",Open@e3bf810,none,He-Wu Thm 3.2: n=154; p=2; m=3; 
 N10432,"SDS(207,158,7,[3,69])",Open@e3bf810,none,"A7 (C10, C16); CosetRows Part01",SignedDifferenceSets.CosetRows.n10432_not_hasSDS,Z28
 N10433,"SDS(207,158,7,[207])",No@e3bf810,none,Gordon: Orbit Exhaust,,
 N10434,"SDS(207,159,15,[3,69])",Open@e3bf810,open,,,
-N10435,"SDS(207,159,15,[207])",Open@e3bf810,open,,,
+N10435,"SDS(207,159,15,[207])",Open@e3bf810,none,"C32 (field descent, one step at an odd prime); FieldDescentRows",SignedDifferenceSets.fieldDescentRows_not_hasSDS,
 N10436,"SDS(207,159,107,[3,69])",Open@e3bf810,none,"A7 (C10, C10 (I13)); CosetRows Part40",SignedDifferenceSets.CosetRows.n10436_not_hasSDS,Z28
 N10437,"SDS(207,159,107,[207])",Open@e3bf810,none,E10/E11; I13 (C9 for every n); OrbitSearchWitt Part59,SignedDifferenceSets.OrbitRows.n10437_not_hasSDS,Z27
 N10438,"SDS(207,161,28,[3,69])",Open@e3bf810,none,He-Wu Thm 3.2: n=133; p=7; m=23; j=11,,
@@ -10461,7 +10461,7 @@ N10459,"SDS(207,171,9,[207])",Open@e3bf810,none,He-Wu Thm 3.2: n=162; p=2; m=3; 
 N10460,"SDS(207,171,125,[3,69])",Open@e3bf810,none,He-Wu Thm 3.2: n=46; p=2; m=3; j=1,,
 N10461,"SDS(207,171,125,[207])",Open@e3bf810,none,He-Wu Thm 3.2: n=46; p=2; m=3; j=1,,
 N10462,"SDS(207,175,31,[3,69])",Open@e3bf810,open,,,
-N10463,"SDS(207,175,31,[207])",Open@e3bf810,open,,,
+N10463,"SDS(207,175,31,[207])",Open@e3bf810,none,"C33 (Ma's lemma at its edge, p ∤ λc); MaEdgeRows; also C32 (field descent, one step at an odd prime); FieldDescentRows",SignedDifferenceSets.MaEdgeRows.n10463_not_hasSDS,
 N10464,"SDS(207,175,75,[3,69])",Open@e3bf810,none,C5; SelfConjugacyRows part02,SignedDifferenceSets.SelfConjugacyRows.part02_not_hasSDS,Z8
 N10465,"SDS(207,175,75,[207])",Open@e3bf810,none,C5; SelfConjugacyRows part02,SignedDifferenceSets.SelfConjugacyRows.part02_not_hasSDS,Z8
 N10466,"SDS(207,179,25,[3,69])",Open@e3bf810,none,He-Wu Thm 3.2: n=154; p=2; m=3; j=1,,
@@ -12284,7 +12284,7 @@ N12282,"SDS(224,152,8,[2,2,56])",Open@e3bf810,none,C13; SelfConjugacyRows part02
 N12283,"SDS(224,152,8,[2,4,28])",Open@e3bf810,none,C5; SelfConjugacyRows part02,SignedDifferenceSets.SelfConjugacyRows.part02_not_hasSDS,Z8
 N12284,"SDS(224,152,8,[2,112])",Open@e3bf810,open,,,
 N12285,"SDS(224,152,8,[4,56])",Open@e3bf810,none,C13; SelfConjugacyRows part02,SignedDifferenceSets.SelfConjugacyRows.part02_not_hasSDS,Z9
-N12286,"SDS(224,152,8,[224])",Open@e3bf810,open,,,
+N12286,"SDS(224,152,8,[224])",Open@e3bf810,none,C35 (field descent along a chain); FieldDescentChainRows,SignedDifferenceSets.fieldDescentChainRows_not_hasSDS,
 N12287,"SDS(224,153,16,[2,2,2,2,14])",Open@e3bf810,none,He-Wu Thm 3.2: n=137; p=137; m=2; j=1,,
 N12288,"SDS(224,153,16,[2,2,2,28])",Open@e3bf810,none,He-Wu Thm 3.2: n=137; p=137; m=2; j=1,,
 N12289,"SDS(224,153,16,[2,2,56])",Open@e3bf810,none,He-Wu Thm 3.2: n=137; p=137; m=2; j=1,,
@@ -12312,7 +12312,7 @@ N12310,"SDS(224,164,20,[2,2,56])",Open@e3bf810,none,C13; SelfConjugacyRows part0
 N12311,"SDS(224,164,20,[2,4,28])",Open@e3bf810,none,C5; SelfConjugacyRows part02,SignedDifferenceSets.SelfConjugacyRows.part02_not_hasSDS,Z8
 N12312,"SDS(224,164,20,[2,112])",Open@e3bf810,open,,,
 N12313,"SDS(224,164,20,[4,56])",Open@e3bf810,none,C13; SelfConjugacyRows part02,SignedDifferenceSets.SelfConjugacyRows.part02_not_hasSDS,Z9
-N12314,"SDS(224,164,20,[224])",Open@e3bf810,open,,,
+N12314,"SDS(224,164,20,[224])",Open@e3bf810,none,C35 (field descent along a chain); FieldDescentChainRows,SignedDifferenceSets.fieldDescentChainRows_not_hasSDS,
 N12315,"SDS(224,166,66,[2,2,2,2,14])",Open@e3bf810,none,C5; SelfConjugacyRows part02,SignedDifferenceSets.SelfConjugacyRows.part02_not_hasSDS,Z8
 N12316,"SDS(224,166,66,[2,2,2,28])",Open@e3bf810,none,C5; SelfConjugacyRows part02,SignedDifferenceSets.SelfConjugacyRows.part02_not_hasSDS,Z8
 N12317,"SDS(224,166,66,[2,2,56])",Open@e3bf810,none,C14; BoxRows part01,SignedDifferenceSets.BoxRows.part01_not_hasSDS,Z10
@@ -12361,7 +12361,7 @@ N12359,"SDS(224,188,44,[2,2,56])",Open@e3bf810,none,C14; BoxRows part01,SignedDi
 N12360,"SDS(224,188,44,[2,4,28])",Open@e3bf810,none,C5; SelfConjugacyRows part02,SignedDifferenceSets.SelfConjugacyRows.part02_not_hasSDS,Z8
 N12361,"SDS(224,188,44,[2,112])",Open@e3bf810,none,C14; BoxRows part01,SignedDifferenceSets.BoxRows.part01_not_hasSDS,Z10
 N12362,"SDS(224,188,44,[4,56])",Open@e3bf810,none,C14; BoxRows part01,SignedDifferenceSets.BoxRows.part01_not_hasSDS,Z10
-N12363,"SDS(224,188,44,[224])",Open@e3bf810,open,,,
+N12363,"SDS(224,188,44,[224])",Open@e3bf810,none,C35 (field descent along a chain); FieldDescentChainRows,SignedDifferenceSets.fieldDescentChainRows_not_hasSDS,
 N12364,"SDS(224,197,4,[2,2,2,2,14])",Open@e3bf810,none,He-Wu Thm 3.2: n=193; p=193; m=2; j=1,,
 N12365,"SDS(224,197,4,[2,2,2,28])",Open@e3bf810,none,He-Wu Thm 3.2: n=193; p=193; m=2; j=1,,
 N12366,"SDS(224,197,4,[2,2,56])",Open@e3bf810,none,He-Wu Thm 3.2: n=193; p=193; m=2; j=1,,
@@ -12424,7 +12424,7 @@ N12422,"SDS(224,212,68,[2,2,56])",Open@e3bf810,none,C14; BoxRows part01,SignedDi
 N12423,"SDS(224,212,68,[2,4,28])",Open@e3bf810,none,C5; SelfConjugacyRows part02,SignedDifferenceSets.SelfConjugacyRows.part02_not_hasSDS,Z8
 N12424,"SDS(224,212,68,[2,112])",Open@e3bf810,none,C14; BoxRows part01,SignedDifferenceSets.BoxRows.part01_not_hasSDS,Z10
 N12425,"SDS(224,212,68,[4,56])",Open@e3bf810,none,C14; BoxRows part01,SignedDifferenceSets.BoxRows.part01_not_hasSDS,Z10
-N12426,"SDS(224,212,68,[224])",Open@e3bf810,open,,,
+N12426,"SDS(224,212,68,[224])",Open@e3bf810,none,C35 (field descent along a chain); FieldDescentChainRows,SignedDifferenceSets.fieldDescentChainRows_not_hasSDS,
 N12427,"SDS(224,213,76,[2,2,2,2,14])",Open@e3bf810,none,He-Wu Thm 3.2: n=137; p=137; m=2; j=1,,
 N12428,"SDS(224,213,76,[2,2,2,28])",Open@e3bf810,none,He-Wu Thm 3.2: n=137; p=137; m=2; j=1,,
 N12429,"SDS(224,213,76,[2,2,56])",Open@e3bf810,none,He-Wu Thm 3.2: n=137; p=137; m=2; j=1,,
@@ -13541,7 +13541,7 @@ N13539,"SDS(234,175,58,[234])",Open@e3bf810,none,He-Wu Thm 3.2: n=117; p=13; m=2
 N13540,"SDS(234,177,56,[3,78])",Open@e3bf810,none,C14; BoxRows part01,SignedDifferenceSets.BoxRows.part01_not_hasSDS,Z10
 N13541,"SDS(234,177,56,[234])",No@e3bf810,none,Gordon: Orbit Exhaust,,
 N13542,"SDS(234,178,34,[3,78])",Open@e3bf810,open,,,
-N13543,"SDS(234,178,34,[234])",Open@e3bf810,open,,,
+N13543,"SDS(234,178,34,[234])",Open@e3bf810,none,"C33 (Ma's lemma at its edge, p ∤ λc); MaEdgeRows",SignedDifferenceSets.MaEdgeRows.n13543_not_hasSDS,
 N13544,"SDS(234,181,60,[3,78])",Open@e3bf810,none,C14; BoxRows part01,SignedDifferenceSets.BoxRows.part01_not_hasSDS,Z10
 N13545,"SDS(234,181,60,[234])",No@e3bf810,none,Gordon: Orbit Exhaust,,
 N13546,"SDS(234,182,74,[3,78])",Open@e3bf810,none,He-Wu Thm 3.2: n=108; p=3; m=2; j=1,,
@@ -13591,7 +13591,7 @@ N13589,"SDS(234,229,12,[234])",Open@e3bf810,none,He-Wu Thm 3.2: n=217; p=7; m=2;
 N13590,"SDS(234,231,50,[3,78])",Open@e3bf810,none,He-Wu Thm 3.2: n=181; p=181; m=2; j=1,,
 N13591,"SDS(234,231,50,[234])",Open@e3bf810,none,He-Wu Thm 3.2: n=181; p=181; m=2; j=1,,
 N13592,"SDS(234,232,88,[3,78])",Open@e3bf810,open,,,
-N13593,"SDS(234,232,88,[234])",Open@e3bf810,open,,,
+N13593,"SDS(234,232,88,[234])",Open@e3bf810,none,"C33 (Ma's lemma at its edge, p ∤ λc); MaEdgeRows",SignedDifferenceSets.MaEdgeRows.n13593_not_hasSDS,
 N13594,"SDS(235,22,1,[235])",Open@e3bf810,none,He-Wu Thm 3.2: n=21; p=3; m=5; j=2,,
 N13595,"SDS(235,40,6,[235])",Open@e3bf810,none,He-Wu Thm 3.2: n=34; p=2; m=5; j=2,,
 N13596,"SDS(235,43,7,[235])",Open@e3bf810,none,E10/E11; I13 (C9 for every n); OrbitSearchWitt Part42,SignedDifferenceSets.OrbitRows.n13596_not_hasSDS,Z27
@@ -14452,14 +14452,14 @@ N14450,"SDS(243,69,6,[3,3,3,3,3])",Open@e3bf810,open,,,
 N14451,"SDS(243,69,6,[3,3,3,9])",Open@e3bf810,open,,,
 N14452,"SDS(243,69,6,[3,3,27])",Open@e3bf810,open,,,
 N14453,"SDS(243,69,6,[3,9,9])",Open@e3bf810,open,,,
-N14454,"SDS(243,69,6,[3,81])",Open@e3bf810,open,,,
+N14454,"SDS(243,69,6,[3,81])",Open@e3bf810,none,C35 (field descent along a chain); FieldDescentChainRows,SignedDifferenceSets.fieldDescentChainRows_not_hasSDS,
 N14455,"SDS(243,69,6,[9,27])",Open@e3bf810,open,,,
 N14456,"SDS(243,69,6,[243])",Open@e3bf810,none,C21; MaRows part02,SignedDifferenceSets.MaRows.not_hasSDS_of_mem_part02,Z24
 N14457,"SDS(243,70,7,[3,3,3,3,3])",Open@e3bf810,open,,,
 N14458,"SDS(243,70,7,[3,3,3,9])",Open@e3bf810,open,,,
 N14459,"SDS(243,70,7,[3,3,27])",Open@e3bf810,open,,,
 N14460,"SDS(243,70,7,[3,9,9])",Open@e3bf810,open,,,
-N14461,"SDS(243,70,7,[3,81])",Open@e3bf810,open,,,
+N14461,"SDS(243,70,7,[3,81])",Open@e3bf810,none,C35 (field descent along a chain); FieldDescentChainRows,SignedDifferenceSets.fieldDescentChainRows_not_hasSDS,
 N14462,"SDS(243,70,7,[9,27])",Open@e3bf810,open,,,
 N14463,"SDS(243,70,7,[243])",Open@e3bf810,none,C21; MaRows part02,SignedDifferenceSets.MaRows.not_hasSDS_of_mem_part02,Z24
 N14464,"SDS(243,80,10,[3,3,3,3,3])",Open@e3bf810,none,He-Wu Thm 3.2: n=70; p=2; m=3; j=1,,
@@ -14578,7 +14578,7 @@ N14576,"SDS(243,121,4,[3,3,3,3,3])",Open@e3bf810,open,,,
 N14577,"SDS(243,121,4,[3,3,3,9])",Open@e3bf810,open,,,
 N14578,"SDS(243,121,4,[3,3,27])",Open@e3bf810,open,,,
 N14579,"SDS(243,121,4,[3,9,9])",Open@e3bf810,open,,,
-N14580,"SDS(243,121,4,[3,81])",Open@e3bf810,open,,,
+N14580,"SDS(243,121,4,[3,81])",Open@e3bf810,none,C35 (field descent along a chain); FieldDescentChainRows,SignedDifferenceSets.fieldDescentChainRows_not_hasSDS,
 N14581,"SDS(243,121,4,[9,27])",Open@e3bf810,open,,,
 N14582,"SDS(243,121,4,[243])",Open@e3bf810,none,C21; MaRows part02,SignedDifferenceSets.MaRows.not_hasSDS_of_mem_part02,Z24
 N14583,"SDS(243,121,12,[3,3,3,3,3])",Open@e3bf810,open,,,
@@ -14606,7 +14606,7 @@ N14604,"SDS(243,122,59,[3,3,3,3,3])",Open@e3bf810,exists,Gordon Prop 2.3 (databa
 N14605,"SDS(243,122,59,[3,3,3,9])",Open@e3bf810,open,,,
 N14606,"SDS(243,122,59,[3,3,27])",Open@e3bf810,open,,,
 N14607,"SDS(243,122,59,[3,9,9])",Open@e3bf810,open,,,
-N14608,"SDS(243,122,59,[3,81])",Open@e3bf810,open,,,
+N14608,"SDS(243,122,59,[3,81])",Open@e3bf810,none,C35 (field descent along a chain); FieldDescentChainRows,SignedDifferenceSets.fieldDescentChainRows_not_hasSDS,
 N14609,"SDS(243,122,59,[9,27])",Open@e3bf810,open,,,
 N14610,"SDS(243,122,59,[243])",Open@e3bf810,none,C21; MaRows part02,SignedDifferenceSets.MaRows.not_hasSDS_of_mem_part02,Z24
 N14611,"SDS(243,124,36,[3,3,3,3,3])",Open@e3bf810,none,He-Wu Thm 3.2: n=88; p=2; m=3; j=1,,
@@ -14627,14 +14627,14 @@ N14625,"SDS(243,125,62,[3,3,3,3,3])",Open@e3bf810,open,,,
 N14626,"SDS(243,125,62,[3,3,3,9])",Open@e3bf810,open,,,
 N14627,"SDS(243,125,62,[3,3,27])",Open@e3bf810,open,,,
 N14628,"SDS(243,125,62,[3,9,9])",Open@e3bf810,open,,,
-N14629,"SDS(243,125,62,[3,81])",Open@e3bf810,open,,,
+N14629,"SDS(243,125,62,[3,81])",Open@e3bf810,none,C35 (field descent along a chain); FieldDescentChainRows,SignedDifferenceSets.fieldDescentChainRows_not_hasSDS,
 N14630,"SDS(243,125,62,[9,27])",Open@e3bf810,open,,,
 N14631,"SDS(243,125,62,[243])",Open@e3bf810,none,C21; MaRows part02,SignedDifferenceSets.MaRows.not_hasSDS_of_mem_part02,Z24
 N14632,"SDS(243,126,9,[3,3,3,3,3])",Open@e3bf810,open,,,
 N14633,"SDS(243,126,9,[3,3,3,9])",Open@e3bf810,open,,,
 N14634,"SDS(243,126,9,[3,3,27])",Open@e3bf810,open,,,
 N14635,"SDS(243,126,9,[3,9,9])",Open@e3bf810,open,,,
-N14636,"SDS(243,126,9,[3,81])",Open@e3bf810,open,,,
+N14636,"SDS(243,126,9,[3,81])",Open@e3bf810,none,C35 (field descent along a chain); FieldDescentChainRows,SignedDifferenceSets.fieldDescentChainRows_not_hasSDS,
 N14637,"SDS(243,126,9,[9,27])",Open@e3bf810,open,,,
 N14638,"SDS(243,126,9,[243])",Open@e3bf810,none,C21; MaRows part02,SignedDifferenceSets.MaRows.not_hasSDS_of_mem_part02,Z24
 N14639,"SDS(243,130,57,[3,3,3,3,3])",Open@e3bf810,open,,,
@@ -14802,7 +14802,7 @@ N14800,"SDS(243,170,53,[3,3,3,3,3])",Open@e3bf810,open,,,
 N14801,"SDS(243,170,53,[3,3,3,9])",Open@e3bf810,open,,,
 N14802,"SDS(243,170,53,[3,3,27])",Open@e3bf810,open,,,
 N14803,"SDS(243,170,53,[3,9,9])",Open@e3bf810,open,,,
-N14804,"SDS(243,170,53,[3,81])",Open@e3bf810,open,,,
+N14804,"SDS(243,170,53,[3,81])",Open@e3bf810,none,C35 (field descent along a chain); FieldDescentChainRows,SignedDifferenceSets.fieldDescentChainRows_not_hasSDS,
 N14805,"SDS(243,170,53,[9,27])",Open@e3bf810,open,,,
 N14806,"SDS(243,170,53,[243])",Open@e3bf810,none,C21; MaRows part02,SignedDifferenceSets.MaRows.not_hasSDS_of_mem_part02,Z24
 N14807,"SDS(243,170,67,[3,3,3,3,3])",Open@e3bf810,open,,,
@@ -14816,7 +14816,7 @@ N14814,"SDS(243,174,3,[3,3,3,3,3])",Open@e3bf810,open,,,
 N14815,"SDS(243,174,3,[3,3,3,9])",Open@e3bf810,open,,,
 N14816,"SDS(243,174,3,[3,3,27])",Open@e3bf810,open,,,
 N14817,"SDS(243,174,3,[3,9,9])",Open@e3bf810,open,,,
-N14818,"SDS(243,174,3,[3,81])",Open@e3bf810,open,,,
+N14818,"SDS(243,174,3,[3,81])",Open@e3bf810,none,C35 (field descent along a chain); FieldDescentChainRows,SignedDifferenceSets.fieldDescentChainRows_not_hasSDS,
 N14819,"SDS(243,174,3,[9,27])",Open@e3bf810,open,,,
 N14820,"SDS(243,174,3,[243])",Open@e3bf810,none,C21; MaRows part02,SignedDifferenceSets.MaRows.not_hasSDS_of_mem_part02,Z24
 N14821,"SDS(243,177,32,[3,3,3,3,3])",Open@e3bf810,none,He-Wu Thm 3.2: n=145; p=5; m=3; j=1,,
@@ -14858,7 +14858,7 @@ N14856,"SDS(243,181,10,[3,3,3,3,3])",Open@e3bf810,open,,,
 N14857,"SDS(243,181,10,[3,3,3,9])",Open@e3bf810,open,,,
 N14858,"SDS(243,181,10,[3,3,27])",Open@e3bf810,open,,,
 N14859,"SDS(243,181,10,[3,9,9])",Open@e3bf810,open,,,
-N14860,"SDS(243,181,10,[3,81])",Open@e3bf810,open,,,
+N14860,"SDS(243,181,10,[3,81])",Open@e3bf810,none,C35 (field descent along a chain); FieldDescentChainRows,SignedDifferenceSets.fieldDescentChainRows_not_hasSDS,
 N14861,"SDS(243,181,10,[9,27])",Open@e3bf810,open,,,
 N14862,"SDS(243,181,10,[243])",Open@e3bf810,none,C21; MaRows part02,SignedDifferenceSets.MaRows.not_hasSDS_of_mem_part02,Z24
 N14863,"SDS(243,185,52,[3,3,3,3,3])",Open@e3bf810,open,,,
@@ -14872,7 +14872,7 @@ N14870,"SDS(243,185,68,[3,3,3,3,3])",Open@e3bf810,open,,,
 N14871,"SDS(243,185,68,[3,3,3,9])",Open@e3bf810,open,,,
 N14872,"SDS(243,185,68,[3,3,27])",Open@e3bf810,open,,,
 N14873,"SDS(243,185,68,[3,9,9])",Open@e3bf810,open,,,
-N14874,"SDS(243,185,68,[3,81])",Open@e3bf810,open,,,
+N14874,"SDS(243,185,68,[3,81])",Open@e3bf810,none,C35 (field descent along a chain); FieldDescentChainRows,SignedDifferenceSets.fieldDescentChainRows_not_hasSDS,
 N14875,"SDS(243,185,68,[9,27])",Open@e3bf810,open,,,
 N14876,"SDS(243,185,68,[243])",Open@e3bf810,none,C21; MaRows part02,SignedDifferenceSets.MaRows.not_hasSDS_of_mem_part02,Z24
 N14877,"SDS(243,188,4,[3,3,3,3,3])",Open@e3bf810,none,He-Wu Thm 3.2: n=184; p=2; m=3; j=1,,
@@ -15054,7 +15054,7 @@ N15052,"SDS(243,221,50,[3,3,3,3,3])",Open@e3bf810,open,,,
 N15053,"SDS(243,221,50,[3,3,3,9])",Open@e3bf810,open,,,
 N15054,"SDS(243,221,50,[3,3,27])",Open@e3bf810,open,,,
 N15055,"SDS(243,221,50,[3,9,9])",Open@e3bf810,open,,,
-N15056,"SDS(243,221,50,[3,81])",Open@e3bf810,open,,,
+N15056,"SDS(243,221,50,[3,81])",Open@e3bf810,none,C35 (field descent along a chain); FieldDescentChainRows,SignedDifferenceSets.fieldDescentChainRows_not_hasSDS,
 N15057,"SDS(243,221,50,[9,27])",Open@e3bf810,open,,,
 N15058,"SDS(243,221,50,[243])",Open@e3bf810,none,C21; MaRows part02,SignedDifferenceSets.MaRows.not_hasSDS_of_mem_part02,Z24
 N15059,"SDS(243,221,70,[3,3,3,3,3])",Open@e3bf810,open,,,
@@ -15131,7 +15131,7 @@ N15129,"SDS(243,234,171,[3,3,3,3,3])",Open@e3bf810,open,,,
 N15130,"SDS(243,234,171,[3,3,3,9])",Open@e3bf810,open,,,
 N15131,"SDS(243,234,171,[3,3,27])",Open@e3bf810,open,,,
 N15132,"SDS(243,234,171,[3,9,9])",Open@e3bf810,open,,,
-N15133,"SDS(243,234,171,[3,81])",Open@e3bf810,open,,,
+N15133,"SDS(243,234,171,[3,81])",Open@e3bf810,none,C35 (field descent along a chain); FieldDescentChainRows,SignedDifferenceSets.fieldDescentChainRows_not_hasSDS,
 N15134,"SDS(243,234,171,[9,27])",Open@e3bf810,open,,,
 N15135,"SDS(243,234,171,[243])",Open@e3bf810,none,C21; MaRows part02,SignedDifferenceSets.MaRows.not_hasSDS_of_mem_part02,Z24
 N15136,"SDS(243,235,3,[3,3,3,3,3])",Open@e3bf810,none,He-Wu Thm 3.2: n=232; p=2; m=3; j=1,,
@@ -15215,7 +15215,7 @@ N15213,"SDS(243,242,71,[3,3,3,3,3])",Open@e3bf810,open,,,
 N15214,"SDS(243,242,71,[3,3,3,9])",Open@e3bf810,open,,,
 N15215,"SDS(243,242,71,[3,3,27])",Open@e3bf810,open,,,
 N15216,"SDS(243,242,71,[3,9,9])",Open@e3bf810,open,,,
-N15217,"SDS(243,242,71,[3,81])",Open@e3bf810,open,,,
+N15217,"SDS(243,242,71,[3,81])",Open@e3bf810,none,C35 (field descent along a chain); FieldDescentChainRows,SignedDifferenceSets.fieldDescentChainRows_not_hasSDS,
 N15218,"SDS(243,242,71,[9,27])",Open@e3bf810,open,,,
 N15219,"SDS(243,242,71,[243])",Open@e3bf810,none,C21; MaRows part02,SignedDifferenceSets.MaRows.not_hasSDS_of_mem_part02,Z24
 N15220,"SDS(243,242,97,[3,3,3,3,3])",Open@e3bf810,none,He-Wu Thm 3.2: n=145; p=5; m=3; j=1,,
@@ -17169,7 +17169,7 @@ N17167,"SDS(256,154,10,[2,2,64])",Open@e3bf810,open,,,
 N17168,"SDS(256,154,10,[2,4,4,8])",Open@e3bf810,none,C13; SelfConjugacyRows part03,SignedDifferenceSets.SelfConjugacyRows.part03_not_hasSDS,Z9
 N17169,"SDS(256,154,10,[2,4,32])",Open@e3bf810,open,,,
 N17170,"SDS(256,154,10,[2,8,16])",Open@e3bf810,open,,,
-N17171,"SDS(256,154,10,[2,128])",Open@e3bf810,open,,,
+N17171,"SDS(256,154,10,[2,128])",Open@e3bf810,none,C35 (field descent along a chain); FieldDescentChainRows,SignedDifferenceSets.fieldDescentChainRows_not_hasSDS,
 N17172,"SDS(256,154,10,[4,4,4,4])",Open@e3bf810,none,C5; SelfConjugacyRows part03,SignedDifferenceSets.SelfConjugacyRows.part03_not_hasSDS,Z8
 N17173,"SDS(256,154,10,[4,4,16])",Open@e3bf810,open,,,
 N17174,"SDS(256,154,10,[4,8,8])",Open@e3bf810,open,,,
@@ -17191,7 +17191,7 @@ N17189,"SDS(256,154,54,[2,2,64])",Open@e3bf810,open,,,
 N17190,"SDS(256,154,54,[2,4,4,8])",Open@e3bf810,open,,,
 N17191,"SDS(256,154,54,[2,4,32])",Open@e3bf810,open,,,
 N17192,"SDS(256,154,54,[2,8,16])",Open@e3bf810,open,,,
-N17193,"SDS(256,154,54,[2,128])",Open@e3bf810,open,,,
+N17193,"SDS(256,154,54,[2,128])",Open@e3bf810,none,C35 (field descent along a chain); FieldDescentChainRows,SignedDifferenceSets.fieldDescentChainRows_not_hasSDS,
 N17194,"SDS(256,154,54,[4,4,4,4])",Open@e3bf810,open,,,
 N17195,"SDS(256,154,54,[4,4,16])",Open@e3bf810,open,,,
 N17196,"SDS(256,154,54,[4,8,8])",Open@e3bf810,open,,,
@@ -17257,7 +17257,7 @@ N17255,"SDS(256,166,22,[2,2,64])",Open@e3bf810,open,,,
 N17256,"SDS(256,166,22,[2,4,4,8])",Open@e3bf810,none,C13; SelfConjugacyRows part03,SignedDifferenceSets.SelfConjugacyRows.part03_not_hasSDS,Z9
 N17257,"SDS(256,166,22,[2,4,32])",Open@e3bf810,open,,,
 N17258,"SDS(256,166,22,[2,8,16])",Open@e3bf810,open,,,
-N17259,"SDS(256,166,22,[2,128])",Open@e3bf810,open,,,
+N17259,"SDS(256,166,22,[2,128])",Open@e3bf810,none,C35 (field descent along a chain); FieldDescentChainRows,SignedDifferenceSets.fieldDescentChainRows_not_hasSDS,
 N17260,"SDS(256,166,22,[4,4,4,4])",Open@e3bf810,none,C5; SelfConjugacyRows part03,SignedDifferenceSets.SelfConjugacyRows.part03_not_hasSDS,Z8
 N17261,"SDS(256,166,22,[4,4,16])",Open@e3bf810,open,,,
 N17262,"SDS(256,166,22,[4,8,8])",Open@e3bf810,open,,,
@@ -17367,7 +17367,7 @@ N17365,"SDS(256,174,74,[2,2,64])",Open@e3bf810,open,,,
 N17366,"SDS(256,174,74,[2,4,4,8])",Open@e3bf810,open,,,
 N17367,"SDS(256,174,74,[2,4,32])",Open@e3bf810,open,,,
 N17368,"SDS(256,174,74,[2,8,16])",Open@e3bf810,open,,,
-N17369,"SDS(256,174,74,[2,128])",Open@e3bf810,open,,,
+N17369,"SDS(256,174,74,[2,128])",Open@e3bf810,none,C35 (field descent along a chain); FieldDescentChainRows,SignedDifferenceSets.fieldDescentChainRows_not_hasSDS,
 N17370,"SDS(256,174,74,[4,4,4,4])",Open@e3bf810,open,,,
 N17371,"SDS(256,174,74,[4,4,16])",Open@e3bf810,open,,,
 N17372,"SDS(256,174,74,[4,8,8])",Open@e3bf810,open,,,
@@ -17499,7 +17499,7 @@ N17497,"SDS(256,196,52,[2,2,64])",Open@e3bf810,open,,,
 N17498,"SDS(256,196,52,[2,4,4,8])",Open@e3bf810,none,C14; BoxRows part01,SignedDifferenceSets.BoxRows.part01_not_hasSDS,Z10
 N17499,"SDS(256,196,52,[2,4,32])",Open@e3bf810,open,,,
 N17500,"SDS(256,196,52,[2,8,16])",Open@e3bf810,open,,,
-N17501,"SDS(256,196,52,[2,128])",Open@e3bf810,open,,,
+N17501,"SDS(256,196,52,[2,128])",Open@e3bf810,none,C35 (field descent along a chain); FieldDescentChainRows,SignedDifferenceSets.fieldDescentChainRows_not_hasSDS,
 N17502,"SDS(256,196,52,[4,4,4,4])",Open@e3bf810,none,C5; SelfConjugacyRows part03,SignedDifferenceSets.SelfConjugacyRows.part03_not_hasSDS,Z8
 N17503,"SDS(256,196,52,[4,4,16])",Open@e3bf810,none,C14; BoxRows part01,SignedDifferenceSets.BoxRows.part01_not_hasSDS,Z10
 N17504,"SDS(256,196,52,[4,8,8])",Open@e3bf810,none,C14; BoxRows part01,SignedDifferenceSets.BoxRows.part01_not_hasSDS,Z10
@@ -17631,7 +17631,7 @@ N17629,"SDS(256,220,76,[2,2,64])",Open@e3bf810,open,,,
 N17630,"SDS(256,220,76,[2,4,4,8])",Open@e3bf810,none,C14; BoxRows part01,SignedDifferenceSets.BoxRows.part01_not_hasSDS,Z10
 N17631,"SDS(256,220,76,[2,4,32])",Open@e3bf810,open,,,
 N17632,"SDS(256,220,76,[2,8,16])",Open@e3bf810,open,,,
-N17633,"SDS(256,220,76,[2,128])",Open@e3bf810,open,,,
+N17633,"SDS(256,220,76,[2,128])",Open@e3bf810,none,C35 (field descent along a chain); FieldDescentChainRows,SignedDifferenceSets.fieldDescentChainRows_not_hasSDS,
 N17634,"SDS(256,220,76,[4,4,4,4])",Open@e3bf810,none,C5; SelfConjugacyRows part03,SignedDifferenceSets.SelfConjugacyRows.part03_not_hasSDS,Z8
 N17635,"SDS(256,220,76,[4,4,16])",Open@e3bf810,none,C14; BoxRows part01,SignedDifferenceSets.BoxRows.part01_not_hasSDS,Z10
 N17636,"SDS(256,220,76,[4,8,8])",Open@e3bf810,none,C14; BoxRows part01,SignedDifferenceSets.BoxRows.part01_not_hasSDS,Z10
@@ -17807,7 +17807,7 @@ N17805,"SDS(256,246,50,[2,2,64])",Open@e3bf810,none,C14; BoxRows part01,SignedDi
 N17806,"SDS(256,246,50,[2,4,4,8])",Open@e3bf810,none,C5; SelfConjugacyRows part03,SignedDifferenceSets.SelfConjugacyRows.part03_not_hasSDS,Z8
 N17807,"SDS(256,246,50,[2,4,32])",Open@e3bf810,none,C14; BoxRows part01,SignedDifferenceSets.BoxRows.part01_not_hasSDS,Z10
 N17808,"SDS(256,246,50,[2,8,16])",Open@e3bf810,none,C5; SelfConjugacyRows part03,SignedDifferenceSets.SelfConjugacyRows.part03_not_hasSDS,Z8
-N17809,"SDS(256,246,50,[2,128])",Open@e3bf810,open,,,
+N17809,"SDS(256,246,50,[2,128])",Open@e3bf810,none,C35 (field descent along a chain); FieldDescentChainRows,SignedDifferenceSets.fieldDescentChainRows_not_hasSDS,
 N17810,"SDS(256,246,50,[4,4,4,4])",Open@e3bf810,none,C5; SelfConjugacyRows part03,SignedDifferenceSets.SelfConjugacyRows.part03_not_hasSDS,Z8
 N17811,"SDS(256,246,50,[4,4,16])",Open@e3bf810,none,C5; SelfConjugacyRows part03,SignedDifferenceSets.SelfConjugacyRows.part03_not_hasSDS,Z8
 N17812,"SDS(256,246,50,[4,8,8])",Open@e3bf810,none,C5; SelfConjugacyRows part03,SignedDifferenceSets.SelfConjugacyRows.part03_not_hasSDS,Z8
@@ -20038,7 +20038,7 @@ N20036,"SDS(275,103,17,[275])",Open@e3bf810,none,He-Wu Thm 3.2: n=86; p=2; m=5; 
 N20037,"SDS(275,105,16,[5,55])",Open@e3bf810,none,He-Wu Thm 3.2: n=89; p=89; m=5; j=1,,
 N20038,"SDS(275,105,16,[275])",Open@e3bf810,none,He-Wu Thm 3.2: n=89; p=89; m=5; j=1,,
 N20039,"SDS(275,107,7,[5,55])",Open@e3bf810,open,,,
-N20040,"SDS(275,107,7,[275])",Open@e3bf810,open,,,
+N20040,"SDS(275,107,7,[275])",Open@e3bf810,none,"C33 (Ma's lemma at its edge, p ∤ λc); MaEdgeRows",SignedDifferenceSets.MaEdgeRows.n20040_not_hasSDS,
 N20041,"SDS(275,109,18,[5,55])",Open@e3bf810,none,He-Wu Thm 3.2: n=91; p=7; m=5; j=2,,
 N20042,"SDS(275,109,18,[275])",Open@e3bf810,none,He-Wu Thm 3.2: n=91; p=7; m=5; j=2,,
 N20043,"SDS(275,112,8,[5,55])",Open@e3bf810,none,He-Wu Thm 3.2: n=104; p=2; m=5; j=2,,
@@ -20066,7 +20066,7 @@ N20064,"SDS(275,133,14,[275])",Open@e3bf810,none,He-Wu Thm 3.2: n=119; p=7; m=5;
 N20065,"SDS(275,135,9,[5,55])",Open@e3bf810,none,He-Wu Thm 3.2: n=126; p=2; m=5; j=2,,
 N20066,"SDS(275,135,9,[275])",Open@e3bf810,none,He-Wu Thm 3.2: n=126; p=2; m=5; j=2,,
 N20067,"SDS(275,136,36,[5,55])",Open@e3bf810,open,,,
-N20068,"SDS(275,136,36,[275])",Open@e3bf810,open,,,
+N20068,"SDS(275,136,36,[275])",Open@e3bf810,none,"C33 (Ma's lemma at its edge, p ∤ λc); MaEdgeRows",SignedDifferenceSets.MaEdgeRows.n20068_not_hasSDS,
 N20069,"SDS(275,138,67,[5,55])",Open@e3bf810,open,,,
 N20070,"SDS(275,138,67,[275])",Open@e3bf810,open,,,
 N20071,"SDS(275,139,3,[5,55])",Open@e3bf810,none,He-Wu Thm 3.2: n=136; p=2; m=5; j=2,,
@@ -20076,7 +20076,7 @@ N20074,"SDS(275,141,66,[275])",Open@e3bf810,none,He-Wu Thm 3.2: n=75; p=3; m=5; 
 N20075,"SDS(275,141,70,[5,55])",Open@e3bf810,open,,,
 N20076,"SDS(275,141,70,[275])",Open@e3bf810,open,,,
 N20077,"SDS(275,145,20,[5,55])",Open@e3bf810,open,,,
-N20078,"SDS(275,145,20,[275])",Open@e3bf810,open,,,
+N20078,"SDS(275,145,20,[275])",Open@e3bf810,none,"C32 (field descent, one step at an odd prime); FieldDescentRows",SignedDifferenceSets.fieldDescentRows_not_hasSDS,
 N20079,"SDS(275,146,65,[5,55])",Open@e3bf810,none,C14; BoxRows part01,SignedDifferenceSets.BoxRows.part01_not_hasSDS,Z10
 N20080,"SDS(275,146,65,[275])",Open@e3bf810,none,C14; BoxRows part01,SignedDifferenceSets.BoxRows.part01_not_hasSDS,Z10
 N20081,"SDS(275,146,71,[5,55])",Open@e3bf810,none,He-Wu Thm 3.2: n=75; p=3; m=5; j=2,,
@@ -20086,7 +20086,7 @@ N20084,"SDS(275,148,24,[275])",Open@e3bf810,open,,,
 N20085,"SDS(275,151,5,[5,55])",Open@e3bf810,none,He-Wu Thm 3.2: n=146; p=2; m=5; j=2,,
 N20086,"SDS(275,151,5,[275])",Open@e3bf810,none,He-Wu Thm 3.2: n=146; p=2; m=5; j=2,,
 N20087,"SDS(275,152,52,[5,55])",Open@e3bf810,open,,,
-N20088,"SDS(275,152,52,[275])",Open@e3bf810,open,,,
+N20088,"SDS(275,152,52,[275])",Open@e3bf810,none,"C33 (Ma's lemma at its edge, p ∤ λc); MaEdgeRows",SignedDifferenceSets.MaEdgeRows.n20088_not_hasSDS,
 N20089,"SDS(275,153,64,[5,55])",Open@e3bf810,none,He-Wu Thm 3.2: n=89; p=89; m=5; j=1,,
 N20090,"SDS(275,153,64,[275])",Open@e3bf810,none,He-Wu Thm 3.2: n=89; p=89; m=5; j=1,,
 N20091,"SDS(275,153,72,[5,55])",Open@e3bf810,none,E10/E11; I13 (C9 for every n); OrbitSearchWitt Part54,SignedDifferenceSets.OrbitRows.n20091_not_hasSDS,Z27
@@ -20130,7 +20130,7 @@ N20128,"SDS(275,186,75,[275])",Open@e3bf810,none,He-Wu Thm 3.2: n=111; p=3; m=5;
 N20129,"SDS(275,187,51,[5,55])",Open@e3bf810,none,He-Wu Thm 3.2: n=136; p=2; m=5; j=2,,
 N20130,"SDS(275,187,51,[275])",Open@e3bf810,none,He-Wu Thm 3.2: n=136; p=2; m=5; j=2,,
 N20131,"SDS(275,187,87,[5,55])",Open@e3bf810,open,,,
-N20132,"SDS(275,187,87,[275])",Open@e3bf810,open,,,
+N20132,"SDS(275,187,87,[275])",Open@e3bf810,none,"C33 (Ma's lemma at its edge, p ∤ λc); MaEdgeRows",SignedDifferenceSets.MaEdgeRows.n20132_not_hasSDS,
 N20133,"SDS(275,193,12,[5,55])",Open@e3bf810,open,,,
 N20134,"SDS(275,193,12,[275])",Open@e3bf810,open,,,
 N20135,"SDS(275,197,38,[5,55])",Open@e3bf810,none,He-Wu Thm 3.2: n=159; p=3; m=5; j=2,,
@@ -20160,7 +20160,7 @@ N20158,"SDS(275,210,1,[275])",Open@e3bf810,none,He-Wu Thm 3.2: n=209; p=19; m=5;
 N20159,"SDS(275,211,35,[5,55])",Open@e3bf810,open,,,
 N20160,"SDS(275,211,35,[275])",Open@e3bf810,open,,,
 N20161,"SDS(275,211,111,[5,55])",Open@e3bf810,open,,,
-N20162,"SDS(275,211,111,[275])",Open@e3bf810,open,,,
+N20162,"SDS(275,211,111,[275])",Open@e3bf810,none,"C33 (Ma's lemma at its edge, p ∤ λc); MaEdgeRows",SignedDifferenceSets.MaEdgeRows.n20162_not_hasSDS,
 N20163,"SDS(275,213,22,[5,55])",Open@e3bf810,open,,,
 N20164,"SDS(275,213,22,[275])",Open@e3bf810,open,,,
 N20165,"SDS(275,213,138,[5,55])",Open@e3bf810,none,He-Wu Thm 3.2: n=75; p=3; m=5; j=2,,
@@ -20202,7 +20202,7 @@ N20200,"SDS(275,240,16,[275])",Open@e3bf810,none,He-Wu Thm 3.2: n=224; p=2; m=5;
 N20201,"SDS(275,240,154,[5,55])",Open@e3bf810,none,He-Wu Thm 3.2: n=86; p=2; m=5; j=2,,
 N20202,"SDS(275,240,154,[275])",Open@e3bf810,none,He-Wu Thm 3.2: n=86; p=2; m=5; j=2,,
 N20203,"SDS(275,242,17,[5,55])",Open@e3bf810,open,,,
-N20204,"SDS(275,242,17,[275])",Open@e3bf810,open,,,
+N20204,"SDS(275,242,17,[275])",Open@e3bf810,none,"C33 (Ma's lemma at its edge, p ∤ λc); MaEdgeRows",SignedDifferenceSets.MaEdgeRows.n20204_not_hasSDS,
 N20205,"SDS(275,242,151,[5,55])",Open@e3bf810,none,He-Wu Thm 3.2: n=91; p=7; m=5; j=2,,
 N20206,"SDS(275,242,151,[275])",Open@e3bf810,none,He-Wu Thm 3.2: n=91; p=7; m=5; j=2,,
 N20207,"SDS(275,244,30,[5,55])",Open@e3bf810,none,He-Wu Thm 3.2: n=214; p=2; m=5; j=2,,
@@ -20226,7 +20226,7 @@ N20224,"SDS(275,255,1,[275])",Open@e3bf810,none,He-Wu Thm 3.2: n=254; p=2; m=5; 
 N20225,"SDS(275,255,229,[5,55])",Open@e3bf810,none,He-Wu Thm 3.2: n=26; p=2; m=5; j=2,,
 N20226,"SDS(275,255,229,[275])",Open@e3bf810,none,He-Wu Thm 3.2: n=26; p=2; m=5; j=2,,
 N20227,"SDS(275,257,32,[5,55])",Open@e3bf810,open,,,
-N20228,"SDS(275,257,32,[275])",Open@e3bf810,open,,,
+N20228,"SDS(275,257,32,[275])",Open@e3bf810,none,"C33 (Ma's lemma at its edge, p ∤ λc); MaEdgeRows",SignedDifferenceSets.MaEdgeRows.n20228_not_hasSDS,
 N20229,"SDS(275,257,116,[5,55])",Open@e3bf810,none,He-Wu Thm 3.2: n=141; p=3; m=5; j=2,,
 N20230,"SDS(275,257,116,[275])",Open@e3bf810,none,He-Wu Thm 3.2: n=141; p=3; m=5; j=2,,
 N20231,"SDS(275,258,57,[5,55])",Open@e3bf810,none,He-Wu Thm 3.2: n=201; p=3; m=5; j=2,,
@@ -20260,7 +20260,7 @@ N20258,"SDS(275,267,211,[275])",Open@e3bf810,none,He-Wu Thm 3.2: n=56; p=2; m=5;
 N20259,"SDS(275,270,19,[5,55])",Open@e3bf810,open,,,
 N20260,"SDS(275,270,19,[275])",Open@e3bf810,open,,,
 N20261,"SDS(275,270,145,[5,55])",Open@e3bf810,open,,,
-N20262,"SDS(275,270,145,[275])",Open@e3bf810,open,,,
+N20262,"SDS(275,270,145,[275])",Open@e3bf810,none,"C32 (field descent, one step at an odd prime); FieldDescentRows",SignedDifferenceSets.fieldDescentRows_not_hasSDS,
 N20263,"SDS(275,272,26,[5,55])",Open@e3bf810,none,He-Wu Thm 3.2: n=246; p=2; m=5; j=2,,
 N20264,"SDS(275,272,26,[275])",Open@e3bf810,none,He-Wu Thm 3.2: n=246; p=2; m=5; j=2,,
 N20265,"SDS(275,272,128,[5,55])",Open@e3bf810,none,C8; ParityRows,SignedDifferenceSets.ParityRows.parityRows_not_hasSDS,Z11
@@ -21852,13 +21852,13 @@ N21850,"SDS(288,148,4,[2,2,2,2,18])",Open@e3bf810,none,C21; MaRows part03,Signed
 N21851,"SDS(288,148,4,[2,2,2,6,6])",Open@e3bf810,open,,,
 N21852,"SDS(288,148,4,[2,2,2,36])",Open@e3bf810,none,C21; MaRows part03,SignedDifferenceSets.MaRows.not_hasSDS_of_mem_part03,Z24
 N21853,"SDS(288,148,4,[2,2,6,12])",Open@e3bf810,open,,,
-N21854,"SDS(288,148,4,[2,2,72])",Open@e3bf810,open,,,
+N21854,"SDS(288,148,4,[2,2,72])",Open@e3bf810,none,"C33 (Ma's lemma at its edge, p ∤ λc); MaEdgeRows",SignedDifferenceSets.MaEdgeRows.n21854_not_hasSDS,
 N21855,"SDS(288,148,4,[2,4,36])",Open@e3bf810,none,C21; MaRows part03,SignedDifferenceSets.MaRows.not_hasSDS_of_mem_part03,Z24
 N21856,"SDS(288,148,4,[2,6,24])",Open@e3bf810,open,,,
 N21857,"SDS(288,148,4,[2,12,12])",Open@e3bf810,open,,,
-N21858,"SDS(288,148,4,[2,144])",Open@e3bf810,open,,,
+N21858,"SDS(288,148,4,[2,144])",Open@e3bf810,none,"C33 (Ma's lemma at its edge, p ∤ λc); MaEdgeRows",SignedDifferenceSets.MaEdgeRows.n21858_not_hasSDS,
 N21859,"SDS(288,148,4,[3,96])",Open@e3bf810,none,C21; MaRows part03,SignedDifferenceSets.MaRows.not_hasSDS_of_mem_part03,Z24
-N21860,"SDS(288,148,4,[4,72])",Open@e3bf810,open,,,
+N21860,"SDS(288,148,4,[4,72])",Open@e3bf810,none,"C33 (Ma's lemma at its edge, p ∤ λc); MaEdgeRows",SignedDifferenceSets.MaEdgeRows.n21860_not_hasSDS,
 N21861,"SDS(288,148,4,[6,48])",Open@e3bf810,open,,,
 N21862,"SDS(288,148,4,[12,24])",Open@e3bf810,open,,,
 N21863,"SDS(288,148,4,[288])",Open@e3bf810,none,C21; MaRows part03,SignedDifferenceSets.MaRows.not_hasSDS_of_mem_part03,Z24
@@ -22006,13 +22006,13 @@ N22004,"SDS(288,184,40,[2,2,2,2,18])",Open@e3bf810,none,C21; MaRows part03,Signe
 N22005,"SDS(288,184,40,[2,2,2,6,6])",Open@e3bf810,open,,,
 N22006,"SDS(288,184,40,[2,2,2,36])",Open@e3bf810,none,C21; MaRows part03,SignedDifferenceSets.MaRows.not_hasSDS_of_mem_part03,Z24
 N22007,"SDS(288,184,40,[2,2,6,12])",Open@e3bf810,open,,,
-N22008,"SDS(288,184,40,[2,2,72])",Open@e3bf810,open,,,
+N22008,"SDS(288,184,40,[2,2,72])",Open@e3bf810,none,"C33 (Ma's lemma at its edge, p ∤ λc); MaEdgeRows",SignedDifferenceSets.MaEdgeRows.n22008_not_hasSDS,
 N22009,"SDS(288,184,40,[2,4,36])",Open@e3bf810,none,C21; MaRows part03,SignedDifferenceSets.MaRows.not_hasSDS_of_mem_part03,Z24
 N22010,"SDS(288,184,40,[2,6,24])",Open@e3bf810,open,,,
 N22011,"SDS(288,184,40,[2,12,12])",Open@e3bf810,open,,,
-N22012,"SDS(288,184,40,[2,144])",Open@e3bf810,open,,,
+N22012,"SDS(288,184,40,[2,144])",Open@e3bf810,none,"C33 (Ma's lemma at its edge, p ∤ λc); MaEdgeRows",SignedDifferenceSets.MaEdgeRows.n22012_not_hasSDS,
 N22013,"SDS(288,184,40,[3,96])",Open@e3bf810,none,C21; MaRows part03,SignedDifferenceSets.MaRows.not_hasSDS_of_mem_part03,Z24
-N22014,"SDS(288,184,40,[4,72])",Open@e3bf810,open,,,
+N22014,"SDS(288,184,40,[4,72])",Open@e3bf810,none,"C33 (Ma's lemma at its edge, p ∤ λc); MaEdgeRows",SignedDifferenceSets.MaEdgeRows.n22014_not_hasSDS,
 N22015,"SDS(288,184,40,[6,48])",Open@e3bf810,open,,,
 N22016,"SDS(288,184,40,[12,24])",Open@e3bf810,open,,,
 N22017,"SDS(288,184,40,[288])",Open@e3bf810,none,C21; MaRows part03,SignedDifferenceSets.MaRows.not_hasSDS_of_mem_part03,Z24
@@ -22085,7 +22085,7 @@ N22083,"SDS(288,204,8,[3,96])",Open@e3bf810,open,,,
 N22084,"SDS(288,204,8,[4,72])",Open@e3bf810,open,,,
 N22085,"SDS(288,204,8,[6,48])",Open@e3bf810,open,,,
 N22086,"SDS(288,204,8,[12,24])",Open@e3bf810,open,,,
-N22087,"SDS(288,204,8,[288])",Open@e3bf810,open,,,
+N22087,"SDS(288,204,8,[288])",Open@e3bf810,none,C35 (field descent along a chain); FieldDescentChainRows,SignedDifferenceSets.fieldDescentChainRows_not_hasSDS,
 N22088,"SDS(288,204,60,[2,2,2,2,18])",Open@e3bf810,none,C21; MaRows part03,SignedDifferenceSets.MaRows.not_hasSDS_of_mem_part03,Z24
 N22089,"SDS(288,204,60,[2,2,2,6,6])",Open@e3bf810,open,,,
 N22090,"SDS(288,204,60,[2,2,2,36])",Open@e3bf810,none,C21; MaRows part03,SignedDifferenceSets.MaRows.not_hasSDS_of_mem_part03,Z24
@@ -22290,12 +22290,12 @@ N22288,"SDS(288,247,22,[2,2,72])",Open@e3bf810,none,C13; SelfConjugacyRows part0
 N22289,"SDS(288,247,22,[2,4,36])",Open@e3bf810,none,C13; SelfConjugacyRows part04,SignedDifferenceSets.SelfConjugacyRows.part04_not_hasSDS,Z9
 N22290,"SDS(288,247,22,[2,6,24])",Open@e3bf810,none,C13; SelfConjugacyRows part04,SignedDifferenceSets.SelfConjugacyRows.part04_not_hasSDS,Z9
 N22291,"SDS(288,247,22,[2,12,12])",Open@e3bf810,none,C13; SelfConjugacyRows part04,SignedDifferenceSets.SelfConjugacyRows.part04_not_hasSDS,Z9
-N22292,"SDS(288,247,22,[2,144])",Open@e3bf810,open,,,
+N22292,"SDS(288,247,22,[2,144])",Open@e3bf810,none,"C33 (Ma's lemma at its edge, p ∤ λc); MaEdgeRows",SignedDifferenceSets.MaEdgeRows.n22292_not_hasSDS,
 N22293,"SDS(288,247,22,[3,96])",Open@e3bf810,open,,,
-N22294,"SDS(288,247,22,[4,72])",Open@e3bf810,open,,,
+N22294,"SDS(288,247,22,[4,72])",Open@e3bf810,none,"C33 (Ma's lemma at its edge, p ∤ λc); MaEdgeRows",SignedDifferenceSets.MaEdgeRows.n22294_not_hasSDS,
 N22295,"SDS(288,247,22,[6,48])",Open@e3bf810,open,,,
 N22296,"SDS(288,247,22,[12,24])",Open@e3bf810,open,,,
-N22297,"SDS(288,247,22,[288])",Open@e3bf810,open,,,
+N22297,"SDS(288,247,22,[288])",Open@e3bf810,none,"C33 (Ma's lemma at its edge, p ∤ λc); MaEdgeRows; also C35 (field descent along a chain); FieldDescentChainRows",SignedDifferenceSets.MaEdgeRows.n22297_not_hasSDS,
 N22298,"SDS(288,247,94,[2,2,2,2,18])",Open@e3bf810,none,He-Wu Thm 3.2: n=153; p=17; m=2; j=1,,
 N22299,"SDS(288,247,94,[2,2,2,6,6])",Open@e3bf810,none,He-Wu Thm 3.2: n=153; p=17; m=2; j=1,,
 N22300,"SDS(288,247,94,[2,2,2,36])",Open@e3bf810,none,He-Wu Thm 3.2: n=153; p=17; m=2; j=1,,
@@ -22342,13 +22342,13 @@ N22340,"SDS(288,256,112,[2,2,2,2,18])",Open@e3bf810,none,C21; MaRows part03,Sign
 N22341,"SDS(288,256,112,[2,2,2,6,6])",Open@e3bf810,open,,,
 N22342,"SDS(288,256,112,[2,2,2,36])",Open@e3bf810,none,C21; MaRows part03,SignedDifferenceSets.MaRows.not_hasSDS_of_mem_part03,Z24
 N22343,"SDS(288,256,112,[2,2,6,12])",Open@e3bf810,open,,,
-N22344,"SDS(288,256,112,[2,2,72])",Open@e3bf810,open,,,
+N22344,"SDS(288,256,112,[2,2,72])",Open@e3bf810,none,"C33 (Ma's lemma at its edge, p ∤ λc); MaEdgeRows",SignedDifferenceSets.MaEdgeRows.n22344_not_hasSDS,
 N22345,"SDS(288,256,112,[2,4,36])",Open@e3bf810,none,C21; MaRows part03,SignedDifferenceSets.MaRows.not_hasSDS_of_mem_part03,Z24
 N22346,"SDS(288,256,112,[2,6,24])",Open@e3bf810,open,,,
 N22347,"SDS(288,256,112,[2,12,12])",Open@e3bf810,open,,,
-N22348,"SDS(288,256,112,[2,144])",Open@e3bf810,open,,,
+N22348,"SDS(288,256,112,[2,144])",Open@e3bf810,none,"C33 (Ma's lemma at its edge, p ∤ λc); MaEdgeRows",SignedDifferenceSets.MaEdgeRows.n22348_not_hasSDS,
 N22349,"SDS(288,256,112,[3,96])",Open@e3bf810,none,C21; MaRows part03,SignedDifferenceSets.MaRows.not_hasSDS_of_mem_part03,Z24
-N22350,"SDS(288,256,112,[4,72])",Open@e3bf810,open,,,
+N22350,"SDS(288,256,112,[4,72])",Open@e3bf810,none,"C33 (Ma's lemma at its edge, p ∤ λc); MaEdgeRows",SignedDifferenceSets.MaEdgeRows.n22350_not_hasSDS,
 N22351,"SDS(288,256,112,[6,48])",Open@e3bf810,open,,,
 N22352,"SDS(288,256,112,[12,24])",Open@e3bf810,open,,,
 N22353,"SDS(288,256,112,[288])",Open@e3bf810,none,C21; MaRows part03,SignedDifferenceSets.MaRows.not_hasSDS_of_mem_part03,Z24
@@ -22393,7 +22393,7 @@ N22391,"SDS(288,267,42,[3,96])",Open@e3bf810,open,,,
 N22392,"SDS(288,267,42,[4,72])",Open@e3bf810,open,,,
 N22393,"SDS(288,267,42,[6,48])",Open@e3bf810,open,,,
 N22394,"SDS(288,267,42,[12,24])",Open@e3bf810,open,,,
-N22395,"SDS(288,267,42,[288])",Open@e3bf810,open,,,
+N22395,"SDS(288,267,42,[288])",Open@e3bf810,none,C35 (field descent along a chain); FieldDescentChainRows,SignedDifferenceSets.fieldDescentChainRows_not_hasSDS,
 N22396,"SDS(288,277,12,[2,2,2,2,18])",Open@e3bf810,none,He-Wu Thm 3.2: n=265; p=5; m=2; j=1,,
 N22397,"SDS(288,277,12,[2,2,2,6,6])",Open@e3bf810,none,He-Wu Thm 3.2: n=265; p=5; m=2; j=1,,
 N22398,"SDS(288,277,12,[2,2,2,36])",Open@e3bf810,none,He-Wu Thm 3.2: n=265; p=5; m=2; j=1,,
@@ -23591,7 +23591,7 @@ N23589,"SDS(296,289,216,[2,148])",Open@e3bf810,none,He-Wu Thm 3.2: n=73; p=73; m
 N23590,"SDS(296,289,216,[296])",Open@e3bf810,none,He-Wu Thm 3.2: n=73; p=73; m=2; j=1,,
 N23591,"SDS(297,28,1,[3,3,33])",Open@e3bf810,open,,,
 N23592,"SDS(297,28,1,[3,99])",Open@e3bf810,open,,,
-N23593,"SDS(297,28,1,[297])",Open@e3bf810,open,,,
+N23593,"SDS(297,28,1,[297])",Open@e3bf810,none,"C33 (Ma's lemma at its edge, p ∤ λc); MaEdgeRows",SignedDifferenceSets.MaEdgeRows.n23593_not_hasSDS,
 N23594,"SDS(297,33,2,[3,3,33])",Open@e3bf810,open,,,
 N23595,"SDS(297,33,2,[3,99])",Open@e3bf810,open,,,
 N23596,"SDS(297,33,2,[297])",Open@e3bf810,none,"A7 (C10, C16); CosetRows Part01",SignedDifferenceSets.CosetRows.n23596_not_hasSDS,Z28
@@ -23627,7 +23627,7 @@ N23625,"SDS(297,108,11,[3,99])",Open@e3bf810,open,,,
 N23626,"SDS(297,108,11,[297])",Open@e3bf810,none,C27; UnramifiedRows,SignedDifferenceSets.unramifiedRows2_not_hasSDS,Z30
 N23627,"SDS(297,108,27,[3,3,33])",Open@e3bf810,open,,,
 N23628,"SDS(297,108,27,[3,99])",Open@e3bf810,open,,,
-N23629,"SDS(297,108,27,[297])",Open@e3bf810,open,,,
+N23629,"SDS(297,108,27,[297])",Open@e3bf810,none,C35 (field descent along a chain); FieldDescentChainRows,SignedDifferenceSets.fieldDescentChainRows_not_hasSDS,
 N23630,"SDS(297,112,4,[3,3,33])",Open@e3bf810,none,C14; BoxRows part01,SignedDifferenceSets.BoxRows.part01_not_hasSDS,Z10
 N23631,"SDS(297,112,4,[3,99])",Open@e3bf810,none,C14; BoxRows part01,SignedDifferenceSets.BoxRows.part01_not_hasSDS,Z10
 N23632,"SDS(297,112,4,[297])",Open@e3bf810,none,C14; BoxRows part01,SignedDifferenceSets.BoxRows.part01_not_hasSDS,Z10
@@ -23636,7 +23636,7 @@ N23634,"SDS(297,120,5,[3,99])",Open@e3bf810,none,He-Wu Thm 3.2: n=115; p=5; m=3;
 N23635,"SDS(297,120,5,[297])",Open@e3bf810,none,He-Wu Thm 3.2: n=115; p=5; m=3; j=1,,
 N23636,"SDS(297,120,39,[3,3,33])",Open@e3bf810,open,,,
 N23637,"SDS(297,120,39,[3,99])",Open@e3bf810,open,,,
-N23638,"SDS(297,120,39,[297])",Open@e3bf810,open,,,
+N23638,"SDS(297,120,39,[297])",Open@e3bf810,none,C35 (field descent along a chain); FieldDescentChainRows,SignedDifferenceSets.fieldDescentChainRows_not_hasSDS,
 N23639,"SDS(297,121,13,[3,3,33])",Open@e3bf810,none,C13; SelfConjugacyRows part04,SignedDifferenceSets.SelfConjugacyRows.part04_not_hasSDS,Z9
 N23640,"SDS(297,121,13,[3,99])",Open@e3bf810,none,C13; SelfConjugacyRows part04,SignedDifferenceSets.SelfConjugacyRows.part04_not_hasSDS,Z9
 N23641,"SDS(297,121,13,[297])",Open@e3bf810,none,C13; SelfConjugacyRows part04,SignedDifferenceSets.SelfConjugacyRows.part04_not_hasSDS,Z9
@@ -23774,7 +23774,7 @@ N23772,"SDS(297,201,110,[3,99])",Open@e3bf810,none,He-Wu Thm 3.2: n=91; p=7; m=1
 N23773,"SDS(297,201,110,[297])",Open@e3bf810,none,He-Wu Thm 3.2: n=91; p=7; m=11; j=5,,
 N23774,"SDS(297,201,120,[3,3,33])",Open@e3bf810,open,,,
 N23775,"SDS(297,201,120,[3,99])",Open@e3bf810,open,,,
-N23776,"SDS(297,201,120,[297])",Open@e3bf810,open,,,
+N23776,"SDS(297,201,120,[297])",Open@e3bf810,none,C35 (field descent along a chain); FieldDescentChainRows,SignedDifferenceSets.fieldDescentChainRows_not_hasSDS,
 N23777,"SDS(297,212,14,[3,3,33])",Open@e3bf810,none,He-Wu Thm 3.2: n=198; p=2; m=3; j=1,,
 N23778,"SDS(297,212,14,[3,99])",Open@e3bf810,none,He-Wu Thm 3.2: n=198; p=2; m=3; j=1,,
 N23779,"SDS(297,212,14,[297])",Open@e3bf810,none,He-Wu Thm 3.2: n=198; p=2; m=3; j=1,,
@@ -23795,10 +23795,10 @@ N23793,"SDS(297,225,89,[3,99])",Open@e3bf810,none,He-Wu Thm 3.2: n=136; p=2; m=3
 N23794,"SDS(297,225,89,[297])",Open@e3bf810,none,He-Wu Thm 3.2: n=136; p=2; m=3; j=1,,
 N23795,"SDS(297,225,144,[3,3,33])",Open@e3bf810,open,,,
 N23796,"SDS(297,225,144,[3,99])",Open@e3bf810,open,,,
-N23797,"SDS(297,225,144,[297])",Open@e3bf810,open,,,
+N23797,"SDS(297,225,144,[297])",Open@e3bf810,none,C35 (field descent along a chain); FieldDescentChainRows,SignedDifferenceSets.fieldDescentChainRows_not_hasSDS,
 N23798,"SDS(297,232,7,[3,3,33])",Open@e3bf810,open,,,
 N23799,"SDS(297,232,7,[3,99])",Open@e3bf810,open,,,
-N23800,"SDS(297,232,7,[297])",Open@e3bf810,open,,,
+N23800,"SDS(297,232,7,[297])",Open@e3bf810,none,"C33 (Ma's lemma at its edge, p ∤ λc); MaEdgeRows; also C32 (field descent, one step at an odd prime); FieldDescentRows",SignedDifferenceSets.MaEdgeRows.n23800_not_hasSDS,
 N23801,"SDS(297,232,33,[3,3,33])",Open@e3bf810,open,,,
 N23802,"SDS(297,232,33,[3,99])",Open@e3bf810,open,,,
 N23803,"SDS(297,232,33,[297])",Open@e3bf810,none,C27; UnramifiedRows,SignedDifferenceSets.unramifiedRows2_not_hasSDS,Z30
@@ -23810,7 +23810,7 @@ N23808,"SDS(297,233,1,[3,99])",Open@e3bf810,none,He-Wu Thm 3.2: n=232; p=2; m=3;
 N23809,"SDS(297,233,1,[297])",Open@e3bf810,none,He-Wu Thm 3.2: n=232; p=2; m=3; j=1,,
 N23810,"SDS(297,233,8,[3,3,33])",Open@e3bf810,open,,,
 N23811,"SDS(297,233,8,[3,99])",Open@e3bf810,open,,,
-N23812,"SDS(297,233,8,[297])",Open@e3bf810,open,,,
+N23812,"SDS(297,233,8,[297])",Open@e3bf810,none,"C33 (Ma's lemma at its edge, p ∤ λc); MaEdgeRows; also C32 (field descent, one step at an odd prime); FieldDescentRows",SignedDifferenceSets.MaEdgeRows.n23812_not_hasSDS,
 N23813,"SDS(297,233,31,[3,3,33])",Open@e3bf810,none,He-Wu Thm 3.2: n=202; p=2; m=3; j=1,,
 N23814,"SDS(297,233,31,[3,99])",Open@e3bf810,none,He-Wu Thm 3.2: n=202; p=2; m=3; j=1,,
 N23815,"SDS(297,233,31,[297])",Open@e3bf810,none,He-Wu Thm 3.2: n=202; p=2; m=3; j=1,,
@@ -23828,7 +23828,7 @@ N23826,"SDS(297,248,13,[3,99])",Open@e3bf810,none,He-Wu Thm 3.2: n=235; p=5; m=3
 N23827,"SDS(297,248,13,[297])",Open@e3bf810,none,He-Wu Thm 3.2: n=235; p=5; m=3; j=1,,
 N23828,"SDS(297,248,23,[3,3,33])",Open@e3bf810,open,,,
 N23829,"SDS(297,248,23,[3,99])",Open@e3bf810,open,,,
-N23830,"SDS(297,248,23,[297])",Open@e3bf810,open,,,
+N23830,"SDS(297,248,23,[297])",Open@e3bf810,none,"C33 (Ma's lemma at its edge, p ∤ λc); MaEdgeRows; also C32 (field descent, one step at an odd prime); FieldDescentRows",SignedDifferenceSets.MaEdgeRows.n23830_not_hasSDS,
 N23831,"SDS(297,248,151,[3,3,33])",Open@e3bf810,open,,,
 N23832,"SDS(297,248,151,[3,99])",Open@e3bf810,open,,,
 N23833,"SDS(297,248,151,[297])",Open@e3bf810,none,"A7 (C10, C16); CosetRows Part05",SignedDifferenceSets.CosetRows.n23833_not_hasSDS,Z28
@@ -23855,7 +23855,7 @@ N23853,"SDS(297,249,125,[3,99])",Open@e3bf810,none,C13; SelfConjugacyRows part04
 N23854,"SDS(297,249,125,[297])",Open@e3bf810,none,C13; SelfConjugacyRows part04,SignedDifferenceSets.SelfConjugacyRows.part04_not_hasSDS,Z9
 N23855,"SDS(297,252,9,[3,3,33])",Open@e3bf810,open,,,
 N23856,"SDS(297,252,9,[3,99])",Open@e3bf810,open,,,
-N23857,"SDS(297,252,9,[297])",Open@e3bf810,open,,,
+N23857,"SDS(297,252,9,[297])",Open@e3bf810,none,"C32 (field descent, one step at an odd prime); FieldDescentRows",SignedDifferenceSets.fieldDescentRows_not_hasSDS,
 N23858,"SDS(297,252,29,[3,3,33])",Open@e3bf810,open,,,
 N23859,"SDS(297,252,29,[3,99])",Open@e3bf810,open,,,
 N23860,"SDS(297,252,29,[297])",Open@e3bf810,none,C27; UnramifiedRows,SignedDifferenceSets.unramifiedRows2_not_hasSDS,Z30
@@ -23888,7 +23888,7 @@ N23886,"SDS(297,268,3,[3,99])",Open@e3bf810,none,He-Wu Thm 3.2: n=265; p=5; m=3;
 N23887,"SDS(297,268,3,[297])",Open@e3bf810,none,He-Wu Thm 3.2: n=265; p=5; m=3; j=1,,
 N23888,"SDS(297,268,43,[3,3,33])",Open@e3bf810,open,,,
 N23889,"SDS(297,268,43,[3,99])",Open@e3bf810,open,,,
-N23890,"SDS(297,268,43,[297])",Open@e3bf810,open,,,
+N23890,"SDS(297,268,43,[297])",Open@e3bf810,none,"C33 (Ma's lemma at its edge, p ∤ λc); MaEdgeRows; also C32 (field descent, one step at an odd prime); FieldDescentRows",SignedDifferenceSets.MaEdgeRows.n23890_not_hasSDS,
 N23891,"SDS(297,268,111,[3,3,33])",Open@e3bf810,open,,,
 N23892,"SDS(297,268,111,[3,99])",Open@e3bf810,open,,,
 N23893,"SDS(297,268,111,[297])",Open@e3bf810,none,C27; UnramifiedRows,SignedDifferenceSets.unramifiedRows2_not_hasSDS,Z30
@@ -23897,7 +23897,7 @@ N23895,"SDS(297,268,231,[3,99])",Open@e3bf810,none,"A7 (C10, C16); CosetRows Par
 N23896,"SDS(297,268,231,[297])",Open@e3bf810,none,"A7 (C10, C16); CosetRows Part02",SignedDifferenceSets.CosetRows.n23896_not_hasSDS,Z28
 N23897,"SDS(297,280,1,[3,3,33])",Open@e3bf810,open,,,
 N23898,"SDS(297,280,1,[3,99])",Open@e3bf810,open,,,
-N23899,"SDS(297,280,1,[297])",Open@e3bf810,open,,,
+N23899,"SDS(297,280,1,[297])",Open@e3bf810,none,"C33 (Ma's lemma at its edge, p ∤ λc); MaEdgeRows; also C32 (field descent, one step at an odd prime); FieldDescentRows",SignedDifferenceSets.MaEdgeRows.n23899_not_hasSDS,
 N23900,"SDS(297,280,51,[3,3,33])",Open@e3bf810,open,,,
 N23901,"SDS(297,280,51,[3,99])",Open@e3bf810,open,,,
 N23902,"SDS(297,280,51,[297])",Open@e3bf810,none,C27; UnramifiedRows,SignedDifferenceSets.unramifiedRows2_not_hasSDS,Z30
@@ -23909,7 +23909,7 @@ N23907,"SDS(297,280,249,[3,99])",Open@e3bf810,none,"A7 (C10, C16); CosetRows Par
 N23908,"SDS(297,280,249,[297])",Open@e3bf810,none,E10/E11; C15; OrbitSearch,SignedDifferenceSets.OrbitRows.n23908_not_hasSDS,Z15
 N23909,"SDS(297,284,5,[3,3,33])",Open@e3bf810,open,,,
 N23910,"SDS(297,284,5,[3,99])",Open@e3bf810,open,,,
-N23911,"SDS(297,284,5,[297])",Open@e3bf810,open,,,
+N23911,"SDS(297,284,5,[297])",Open@e3bf810,none,"C33 (Ma's lemma at its edge, p ∤ λc); MaEdgeRows; also C32 (field descent, one step at an odd prime); FieldDescentRows",SignedDifferenceSets.MaEdgeRows.n23911_not_hasSDS,
 N23912,"SDS(297,284,37,[3,3,33])",Open@e3bf810,none,He-Wu Thm 3.2: n=247; p=13; m=11; j=5,,
 N23913,"SDS(297,284,37,[3,99])",Open@e3bf810,none,He-Wu Thm 3.2: n=247; p=13; m=11; j=5,,
 N23914,"SDS(297,284,37,[297])",Open@e3bf810,none,He-Wu Thm 3.2: n=247; p=13; m=11; j=5,,
@@ -26264,7 +26264,7 @@ N26262,"SDS(314,310,42,[314])",Open@e3bf810,none,He-Wu Thm 3.2: n=268; p=67; m=2
 N26263,"SDS(314,311,106,[314])",Open@e3bf810,none,He-Wu Thm 3.2: n=205; p=5; m=2; j=1,,
 N26264,"SDS(314,312,264,[314])",Open@e3bf810,none,He-Wu Thm 3.2: n=48; p=3; m=2; j=1,,
 N26265,"SDS(315,40,4,[3,105])",Open@e3bf810,open,,,
-N26266,"SDS(315,40,4,[315])",Open@e3bf810,open,,,
+N26266,"SDS(315,40,4,[315])",Open@e3bf810,none,"C33 (Ma's lemma at its edge, p ∤ λc); MaEdgeRows",SignedDifferenceSets.MaEdgeRows.n26266_not_hasSDS,
 N26267,"SDS(315,47,1,[3,105])",Open@e3bf810,none,He-Wu Thm 3.2: n=46; p=2; m=3; j=1,,
 N26268,"SDS(315,47,1,[315])",Open@e3bf810,none,He-Wu Thm 3.2: n=46; p=2; m=3; j=1,,
 N26269,"SDS(315,48,2,[3,105])",Open@e3bf810,none,He-Wu Thm 3.2: n=46; p=2; m=3; j=1,,
@@ -26336,7 +26336,7 @@ N26334,"SDS(315,156,2,[315])",Open@e3bf810,none,He-Wu Thm 3.2: n=154; p=2; m=3; 
 N26335,"SDS(315,158,77,[3,105])",Open@e3bf810,none,C20; EisensteinCharsRows 2,SignedDifferenceSets.eisensteinCharsRows2_not_hasSDS,Z19
 N26336,"SDS(315,158,77,[315])",Open@e3bf810,none,C22; SylowRows chunk 3,SignedDifferenceSets.sylowRows3_not_hasSDS,Z25
 N26337,"SDS(315,160,16,[3,105])",Open@e3bf810,open,,,
-N26338,"SDS(315,160,16,[315])",Open@e3bf810,open,,,
+N26338,"SDS(315,160,16,[315])",Open@e3bf810,none,"C33 (Ma's lemma at its edge, p ∤ λc); MaEdgeRows",SignedDifferenceSets.MaEdgeRows.n26338_not_hasSDS,
 N26339,"SDS(315,161,76,[3,105])",Open@e3bf810,none,He-Wu Thm 3.2: n=85; p=5; m=3; j=1,,
 N26340,"SDS(315,161,76,[315])",Open@e3bf810,none,He-Wu Thm 3.2: n=85; p=5; m=3; j=1,,
 N26341,"SDS(315,161,80,[3,105])",Open@e3bf810,none,C20; EisensteinCharsRows 2,SignedDifferenceSets.eisensteinCharsRows2_not_hasSDS,Z19
@@ -26368,7 +26368,7 @@ N26366,"SDS(315,182,83,[315])",Open@e3bf810,none,He-Wu Thm 3.2: n=99; p=11; m=3;
 N26367,"SDS(315,184,30,[3,105])",Open@e3bf810,none,He-Wu Thm 3.2: n=154; p=2; m=3; j=1,,
 N26368,"SDS(315,184,30,[315])",Open@e3bf810,none,He-Wu Thm 3.2: n=154; p=2; m=3; j=1,,
 N26369,"SDS(315,187,43,[3,105])",Open@e3bf810,open,,,
-N26370,"SDS(315,187,43,[315])",Open@e3bf810,open,,,
+N26370,"SDS(315,187,43,[315])",Open@e3bf810,none,"C33 (Ma's lemma at its edge, p ∤ λc); MaEdgeRows",SignedDifferenceSets.MaEdgeRows.n26370_not_hasSDS,
 N26371,"SDS(315,188,4,[3,105])",Open@e3bf810,none,He-Wu Thm 3.2: n=184; p=2; m=3; j=1,,
 N26372,"SDS(315,188,4,[315])",Open@e3bf810,none,He-Wu Thm 3.2: n=184; p=2; m=3; j=1,,
 N26373,"SDS(315,190,15,[3,105])",Open@e3bf810,none,He-Wu Thm 3.2: n=175; p=7; m=5; j=2,,
@@ -26480,7 +26480,7 @@ N26478,"SDS(315,267,203,[315])",Open@e3bf810,none,"A7 (C10, C10 (I13)); CosetRow
 N26479,"SDS(315,268,42,[3,105])",Open@e3bf810,none,He-Wu Thm 3.2: n=226; p=2; m=3; j=1,,
 N26480,"SDS(315,268,42,[315])",Open@e3bf810,none,He-Wu Thm 3.2: n=226; p=2; m=3; j=1,,
 N26481,"SDS(315,268,124,[3,105])",Open@e3bf810,open,,,
-N26482,"SDS(315,268,124,[315])",Open@e3bf810,open,,,
+N26482,"SDS(315,268,124,[315])",Open@e3bf810,none,"C33 (Ma's lemma at its edge, p ∤ λc); MaEdgeRows",SignedDifferenceSets.MaEdgeRows.n26482_not_hasSDS,
 N26483,"SDS(315,270,45,[3,105])",Open@e3bf810,none,C13; SelfConjugacyRows part05,SignedDifferenceSets.SelfConjugacyRows.part05_not_hasSDS,Z9
 N26484,"SDS(315,270,45,[315])",Open@e3bf810,none,C13; SelfConjugacyRows part05,SignedDifferenceSets.SelfConjugacyRows.part05_not_hasSDS,Z9
 N26485,"SDS(315,270,119,[3,105])",Open@e3bf810,open,,,
@@ -26514,7 +26514,7 @@ N26512,"SDS(315,281,172,[315])",Open@e3bf810,none,He-Wu Thm 3.2: n=109; p=109; m
 N26513,"SDS(315,283,3,[3,105])",Open@e3bf810,none,He-Wu Thm 3.2: n=280; p=2; m=3; j=1,,
 N26514,"SDS(315,283,3,[315])",Open@e3bf810,none,He-Wu Thm 3.2: n=280; p=2; m=3; j=1,,
 N26515,"SDS(315,283,247,[3,105])",Open@e3bf810,open,,,
-N26516,"SDS(315,283,247,[315])",Open@e3bf810,open,,,
+N26516,"SDS(315,283,247,[315])",Open@e3bf810,none,"C33 (Ma's lemma at its edge, p ∤ λc); MaEdgeRows",SignedDifferenceSets.MaEdgeRows.n26516_not_hasSDS,
 N26517,"SDS(315,284,58,[3,105])",Open@e3bf810,none,He-Wu Thm 3.2: n=226; p=2; m=3; j=1,,
 N26518,"SDS(315,284,58,[315])",Open@e3bf810,none,He-Wu Thm 3.2: n=226; p=2; m=3; j=1,,
 N26519,"SDS(315,284,100,[3,105])",Open@e3bf810,none,He-Wu Thm 3.2: n=184; p=2; m=3; j=1,,
@@ -27690,7 +27690,7 @@ N27688,"SDS(320,306,162,[2,2,2,2,20])",Open@e3bf810,none,C13; SelfConjugacyRows 
 N27689,"SDS(320,306,162,[2,2,2,40])",Open@e3bf810,none,C14; BoxRows part02,SignedDifferenceSets.BoxRows.part02_not_hasSDS,Z10
 N27690,"SDS(320,306,162,[2,2,4,20])",Open@e3bf810,none,C14; BoxRows part02,SignedDifferenceSets.BoxRows.part02_not_hasSDS,Z10
 N27691,"SDS(320,306,162,[2,2,80])",Open@e3bf810,open,,,
-N27692,"SDS(320,306,162,[2,4,40])",Open@e3bf810,open,,,
+N27692,"SDS(320,306,162,[2,4,40])",Open@e3bf810,none,"C7 (integer counts, C6x; R36); MarkedCountsInt",SignedDifferenceSets.n27692_not_hasSDS,
 N27693,"SDS(320,306,162,[2,160])",Open@e3bf810,open,,,
 N27694,"SDS(320,306,162,[4,4,20])",Open@e3bf810,none,C14; BoxRows part02,SignedDifferenceSets.BoxRows.part02_not_hasSDS,Z10
 N27695,"SDS(320,306,162,[4,80])",Open@e3bf810,open,,,
@@ -33273,7 +33273,7 @@ N33271,"SDS(350,348,52,[5,70])",Open@e3bf810,none,He-Wu Thm 3.2: n=296; p=2; m=5
 N33272,"SDS(350,348,52,[350])",Open@e3bf810,none,He-Wu Thm 3.2: n=296; p=2; m=5; j=2,,
 N33273,"SDS(351,29,2,[3,3,39])",Open@e3bf810,open,,,
 N33274,"SDS(351,29,2,[3,117])",Open@e3bf810,open,,,
-N33275,"SDS(351,29,2,[351])",Open@e3bf810,open,,,
+N33275,"SDS(351,29,2,[351])",Open@e3bf810,none,"C33 (Ma's lemma at its edge, p ∤ λc); MaEdgeRows",SignedDifferenceSets.MaEdgeRows.n33275_not_hasSDS,
 N33276,"SDS(351,39,3,[3,3,39])",Open@e3bf810,open,,,
 N33277,"SDS(351,39,3,[3,117])",Open@e3bf810,open,,,
 N33278,"SDS(351,39,3,[351])",Open@e3bf810,open,,,
@@ -33318,25 +33318,25 @@ N33316,"SDS(351,109,30,[3,117])",Open@e3bf810,open,,,
 N33317,"SDS(351,109,30,[351])",Open@e3bf810,none,"A7 (C10, C16); CosetRows Part06",SignedDifferenceSets.CosetRows.n33317_not_hasSDS,Z28
 N33318,"SDS(351,114,33,[3,3,39])",Open@e3bf810,open,,,
 N33319,"SDS(351,114,33,[3,117])",Open@e3bf810,open,,,
-N33320,"SDS(351,114,33,[351])",Open@e3bf810,open,,,
+N33320,"SDS(351,114,33,[351])",Open@e3bf810,none,C35 (field descent along a chain); FieldDescentChainRows,SignedDifferenceSets.fieldDescentChainRows_not_hasSDS,
 N33321,"SDS(351,116,8,[3,3,39])",Open@e3bf810,open,,,
 N33322,"SDS(351,116,8,[3,117])",Open@e3bf810,open,,,
-N33323,"SDS(351,116,8,[351])",Open@e3bf810,open,,,
+N33323,"SDS(351,116,8,[351])",Open@e3bf810,none,"C33 (Ma's lemma at its edge, p ∤ λc); MaEdgeRows",SignedDifferenceSets.MaEdgeRows.n33323_not_hasSDS,
 N33324,"SDS(351,116,26,[3,3,39])",Open@e3bf810,none,He-Wu Thm 3.2: n=90; p=2; m=3; j=1,,
 N33325,"SDS(351,116,26,[3,117])",Open@e3bf810,none,He-Wu Thm 3.2: n=90; p=2; m=3; j=1,,
 N33326,"SDS(351,116,26,[351])",Open@e3bf810,none,He-Wu Thm 3.2: n=90; p=2; m=3; j=1,,
 N33327,"SDS(351,119,11,[3,3,39])",Open@e3bf810,open,,,
 N33328,"SDS(351,119,11,[3,117])",Open@e3bf810,open,,,
-N33329,"SDS(351,119,11,[351])",Open@e3bf810,open,,,
+N33329,"SDS(351,119,11,[351])",Open@e3bf810,none,"C33 (Ma's lemma at its edge, p ∤ λc); MaEdgeRows",SignedDifferenceSets.MaEdgeRows.n33329_not_hasSDS,
 N33330,"SDS(351,121,4,[3,3,39])",Open@e3bf810,open,,,
 N33331,"SDS(351,121,4,[3,117])",Open@e3bf810,open,,,
-N33332,"SDS(351,121,4,[351])",Open@e3bf810,open,,,
+N33332,"SDS(351,121,4,[351])",Open@e3bf810,none,"C33 (Ma's lemma at its edge, p ∤ λc); MaEdgeRows; also C35 (field descent along a chain); FieldDescentChainRows",SignedDifferenceSets.MaEdgeRows.n33332_not_hasSDS,
 N33333,"SDS(351,134,1,[3,3,39])",Open@e3bf810,none,He-Wu Thm 3.2: n=133; p=7; m=13; j=6,,
 N33334,"SDS(351,134,1,[3,117])",Open@e3bf810,none,He-Wu Thm 3.2: n=133; p=7; m=13; j=6,,
 N33335,"SDS(351,134,1,[351])",Open@e3bf810,none,He-Wu Thm 3.2: n=133; p=7; m=13; j=6,,
 N33336,"SDS(351,134,17,[3,3,39])",Open@e3bf810,open,,,
 N33337,"SDS(351,134,17,[3,117])",Open@e3bf810,open,,,
-N33338,"SDS(351,134,17,[351])",Open@e3bf810,open,,,
+N33338,"SDS(351,134,17,[351])",Open@e3bf810,none,"C33 (Ma's lemma at its edge, p ∤ λc); MaEdgeRows; also C35 (field descent along a chain); FieldDescentChainRows",SignedDifferenceSets.MaEdgeRows.n33338_not_hasSDS,
 N33339,"SDS(351,141,2,[3,3,39])",Open@e3bf810,open,,,
 N33340,"SDS(351,141,2,[3,117])",Open@e3bf810,open,,,
 N33341,"SDS(351,141,2,[351])",Open@e3bf810,none,"A7 (C10, C16); CosetRows Part31",SignedDifferenceSets.CosetRows.n33341_not_hasSDS,
@@ -33351,7 +33351,7 @@ N33349,"SDS(351,149,58,[3,117])",Open@e3bf810,none,He-Wu Thm 3.2: n=91; p=7; m=1
 N33350,"SDS(351,149,58,[351])",Open@e3bf810,none,He-Wu Thm 3.2: n=91; p=7; m=13; j=6,,
 N33351,"SDS(351,151,7,[3,3,39])",Open@e3bf810,open,,,
 N33352,"SDS(351,151,7,[3,117])",Open@e3bf810,open,,,
-N33353,"SDS(351,151,7,[351])",Open@e3bf810,open,,,
+N33353,"SDS(351,151,7,[351])",Open@e3bf810,none,"C33 (Ma's lemma at its edge, p ∤ λc); MaEdgeRows",SignedDifferenceSets.MaEdgeRows.n33353_not_hasSDS,
 N33354,"SDS(351,151,63,[3,3,39])",Open@e3bf810,none,He-Wu Thm 3.2: n=88; p=2; m=3; j=1,,
 N33355,"SDS(351,151,63,[3,117])",Open@e3bf810,none,He-Wu Thm 3.2: n=88; p=2; m=3; j=1,,
 N33356,"SDS(351,151,63,[351])",Open@e3bf810,none,He-Wu Thm 3.2: n=88; p=2; m=3; j=1,,
@@ -33375,7 +33375,7 @@ N33373,"SDS(351,175,3,[3,117])",Open@e3bf810,none,He-Wu Thm 3.2: n=172; p=43; m=
 N33374,"SDS(351,175,3,[351])",Open@e3bf810,none,He-Wu Thm 3.2: n=172; p=43; m=13; j=3,,
 N33375,"SDS(351,175,31,[3,3,39])",Open@e3bf810,open,,,
 N33376,"SDS(351,175,31,[3,117])",Open@e3bf810,open,,,
-N33377,"SDS(351,175,31,[351])",Open@e3bf810,open,,,
+N33377,"SDS(351,175,31,[351])",Open@e3bf810,none,"C33 (Ma's lemma at its edge, p ∤ λc); MaEdgeRows",SignedDifferenceSets.MaEdgeRows.n33377_not_hasSDS,
 N33378,"SDS(351,176,16,[3,3,39])",Open@e3bf810,none,He-Wu Thm 3.2: n=160; p=2; m=3; j=1,,
 N33379,"SDS(351,176,16,[3,117])",Open@e3bf810,none,He-Wu Thm 3.2: n=160; p=2; m=3; j=1,,
 N33380,"SDS(351,176,16,[351])",Open@e3bf810,none,He-Wu Thm 3.2: n=160; p=2; m=3; j=1,,
@@ -33405,16 +33405,16 @@ N33403,"SDS(351,186,5,[3,117])",Open@e3bf810,none,He-Wu Thm 3.2: n=181; p=181; m
 N33404,"SDS(351,186,5,[351])",Open@e3bf810,none,He-Wu Thm 3.2: n=181; p=181; m=13; j=1,,
 N33405,"SDS(351,186,69,[3,3,39])",Open@e3bf810,open,,,
 N33406,"SDS(351,186,69,[3,117])",Open@e3bf810,open,,,
-N33407,"SDS(351,186,69,[351])",Open@e3bf810,open,,,
+N33407,"SDS(351,186,69,[351])",Open@e3bf810,none,C35 (field descent along a chain); FieldDescentChainRows,SignedDifferenceSets.fieldDescentChainRows_not_hasSDS,
 N33408,"SDS(351,189,50,[3,3,39])",Open@e3bf810,open,,,
 N33409,"SDS(351,189,50,[3,117])",Open@e3bf810,open,,,
 N33410,"SDS(351,189,50,[351])",Open@e3bf810,none,"A7 (C10, C16); CosetRows Part28",SignedDifferenceSets.CosetRows.n33410_not_hasSDS,
 N33411,"SDS(351,191,47,[3,3,39])",Open@e3bf810,open,,,
 N33412,"SDS(351,191,47,[3,117])",Open@e3bf810,open,,,
-N33413,"SDS(351,191,47,[351])",Open@e3bf810,open,,,
+N33413,"SDS(351,191,47,[351])",Open@e3bf810,none,"C33 (Ma's lemma at its edge, p ∤ λc); MaEdgeRows",SignedDifferenceSets.MaEdgeRows.n33413_not_hasSDS,
 N33414,"SDS(351,191,83,[3,3,39])",Open@e3bf810,open,,,
 N33415,"SDS(351,191,83,[3,117])",Open@e3bf810,open,,,
-N33416,"SDS(351,191,83,[351])",Open@e3bf810,open,,,
+N33416,"SDS(351,191,83,[351])",Open@e3bf810,none,"C33 (Ma's lemma at its edge, p ∤ λc); MaEdgeRows",SignedDifferenceSets.MaEdgeRows.n33416_not_hasSDS,
 N33417,"SDS(351,191,91,[3,3,39])",Open@e3bf810,open,,,
 N33418,"SDS(351,191,91,[3,117])",Open@e3bf810,open,,,
 N33419,"SDS(351,191,91,[351])",Open@e3bf810,open,,,
@@ -33435,7 +33435,7 @@ N33433,"SDS(351,200,82,[3,117])",Open@e3bf810,none,He-Wu Thm 3.2: n=118; p=2; m=
 N33434,"SDS(351,200,82,[351])",Open@e3bf810,none,He-Wu Thm 3.2: n=118; p=2; m=3; j=1,,
 N33435,"SDS(351,200,92,[3,3,39])",Open@e3bf810,open,,,
 N33436,"SDS(351,200,92,[3,117])",Open@e3bf810,open,,,
-N33437,"SDS(351,200,92,[351])",Open@e3bf810,open,,,
+N33437,"SDS(351,200,92,[351])",Open@e3bf810,none,"C33 (Ma's lemma at its edge, p ∤ λc); MaEdgeRows",SignedDifferenceSets.MaEdgeRows.n33437_not_hasSDS,
 N33438,"SDS(351,204,6,[3,3,39])",Open@e3bf810,none,He-Wu Thm 3.2: n=198; p=2; m=3; j=1,,
 N33439,"SDS(351,204,6,[3,117])",Open@e3bf810,none,He-Wu Thm 3.2: n=198; p=2; m=3; j=1,,
 N33440,"SDS(351,204,6,[351])",Open@e3bf810,none,He-Wu Thm 3.2: n=198; p=2; m=3; j=1,,
@@ -33480,7 +33480,7 @@ N33478,"SDS(351,221,22,[3,117])",Open@e3bf810,none,He-Wu Thm 3.2: n=199; p=199; 
 N33479,"SDS(351,221,22,[351])",Open@e3bf810,none,He-Wu Thm 3.2: n=199; p=199; m=13; j=3,,
 N33480,"SDS(351,224,80,[3,3,39])",Open@e3bf810,open,,,
 N33481,"SDS(351,224,80,[3,117])",Open@e3bf810,open,,,
-N33482,"SDS(351,224,80,[351])",Open@e3bf810,open,,,
+N33482,"SDS(351,224,80,[351])",Open@e3bf810,none,"C33 (Ma's lemma at its edge, p ∤ λc); MaEdgeRows",SignedDifferenceSets.MaEdgeRows.n33482_not_hasSDS,
 N33483,"SDS(351,224,94,[3,3,39])",Open@e3bf810,none,He-Wu Thm 3.2: n=130; p=2; m=3; j=1,,
 N33484,"SDS(351,224,94,[3,117])",Open@e3bf810,none,He-Wu Thm 3.2: n=130; p=2; m=3; j=1,,
 N33485,"SDS(351,224,94,[351])",Open@e3bf810,none,He-Wu Thm 3.2: n=130; p=2; m=3; j=1,,
@@ -33498,16 +33498,16 @@ N33496,"SDS(351,225,68,[3,117])",Open@e3bf810,open,,,
 N33497,"SDS(351,225,68,[351])",Open@e3bf810,none,C27; UnramifiedRows,SignedDifferenceSets.unramifiedRows3_not_hasSDS,Z30
 N33498,"SDS(351,225,108,[3,3,39])",Open@e3bf810,open,,,
 N33499,"SDS(351,225,108,[3,117])",Open@e3bf810,open,,,
-N33500,"SDS(351,225,108,[351])",Open@e3bf810,open,,,
+N33500,"SDS(351,225,108,[351])",Open@e3bf810,none,C35 (field descent along a chain); FieldDescentChainRows,SignedDifferenceSets.fieldDescentChainRows_not_hasSDS,
 N33501,"SDS(351,226,1,[3,3,39])",Open@e3bf810,open,,,
 N33502,"SDS(351,226,1,[3,117])",Open@e3bf810,open,,,
-N33503,"SDS(351,226,1,[351])",Open@e3bf810,open,,,
+N33503,"SDS(351,226,1,[351])",Open@e3bf810,none,"C33 (Ma's lemma at its edge, p ∤ λc); MaEdgeRows; also C32 (field descent, one step at an odd prime); FieldDescentRows",SignedDifferenceSets.MaEdgeRows.n33503_not_hasSDS,
 N33504,"SDS(351,226,15,[3,3,39])",Open@e3bf810,open,,,
 N33505,"SDS(351,226,15,[3,117])",Open@e3bf810,open,,,
 N33506,"SDS(351,226,15,[351])",Open@e3bf810,none,C27; UnramifiedRows,SignedDifferenceSets.unramifiedRows3_not_hasSDS,Z30
 N33507,"SDS(351,231,23,[3,3,39])",Open@e3bf810,open,,,
 N33508,"SDS(351,231,23,[3,117])",Open@e3bf810,open,,,
-N33509,"SDS(351,231,23,[351])",Open@e3bf810,open,,,
+N33509,"SDS(351,231,23,[351])",Open@e3bf810,none,"C32 (field descent, one step at an odd prime); FieldDescentRows",SignedDifferenceSets.fieldDescentRows_not_hasSDS,
 N33510,"SDS(351,239,19,[3,3,39])",Open@e3bf810,none,He-Wu Thm 3.2: n=220; p=5; m=3; j=1,,
 N33511,"SDS(351,239,19,[3,117])",Open@e3bf810,none,He-Wu Thm 3.2: n=220; p=5; m=3; j=1,,
 N33512,"SDS(351,239,19,[351])",Open@e3bf810,none,He-Wu Thm 3.2: n=220; p=5; m=3; j=1,,
@@ -33516,7 +33516,7 @@ N33514,"SDS(351,239,79,[3,117])",Open@e3bf810,none,He-Wu Thm 3.2: n=160; p=2; m=
 N33515,"SDS(351,239,79,[351])",Open@e3bf810,none,He-Wu Thm 3.2: n=160; p=2; m=3; j=1,,
 N33516,"SDS(351,239,95,[3,3,39])",Open@e3bf810,open,,,
 N33517,"SDS(351,239,95,[3,117])",Open@e3bf810,open,,,
-N33518,"SDS(351,239,95,[351])",Open@e3bf810,open,,,
+N33518,"SDS(351,239,95,[351])",Open@e3bf810,none,"C33 (Ma's lemma at its edge, p ∤ λc); MaEdgeRows",SignedDifferenceSets.MaEdgeRows.n33518_not_hasSDS,
 N33519,"SDS(351,246,3,[3,3,39])",Open@e3bf810,none,C20; EisensteinCharsRows 2,SignedDifferenceSets.eisensteinCharsRows2_not_hasSDS,Z19
 N33520,"SDS(351,246,3,[3,117])",Open@e3bf810,none,C22; SylowRows chunk 3,SignedDifferenceSets.sylowRows3_not_hasSDS,Z25
 N33521,"SDS(351,246,3,[351])",Open@e3bf810,none,C22; SylowRows chunk 3,SignedDifferenceSets.sylowRows3_not_hasSDS,Z25
@@ -33525,19 +33525,19 @@ N33523,"SDS(351,246,11,[3,117])",Open@e3bf810,none,He-Wu Thm 3.2: n=235; p=5; m=
 N33524,"SDS(351,246,11,[351])",Open@e3bf810,none,He-Wu Thm 3.2: n=235; p=5; m=3; j=1,,
 N33525,"SDS(351,249,24,[3,3,39])",Open@e3bf810,open,,,
 N33526,"SDS(351,249,24,[3,117])",Open@e3bf810,open,,,
-N33527,"SDS(351,249,24,[351])",Open@e3bf810,open,,,
+N33527,"SDS(351,249,24,[351])",Open@e3bf810,none,"C32 (field descent, one step at an odd prime); FieldDescentRows",SignedDifferenceSets.fieldDescentRows_not_hasSDS,
 N33528,"SDS(351,249,32,[3,3,39])",Open@e3bf810,none,He-Wu Thm 3.2: n=217; p=7; m=13; j=6,,
 N33529,"SDS(351,249,32,[3,117])",Open@e3bf810,none,He-Wu Thm 3.2: n=217; p=7; m=13; j=6,,
 N33530,"SDS(351,249,32,[351])",Open@e3bf810,none,He-Wu Thm 3.2: n=217; p=7; m=13; j=6,,
 N33531,"SDS(351,249,168,[3,3,39])",Open@e3bf810,open,,,
 N33532,"SDS(351,249,168,[3,117])",Open@e3bf810,open,,,
-N33533,"SDS(351,249,168,[351])",Open@e3bf810,open,,,
+N33533,"SDS(351,249,168,[351])",Open@e3bf810,none,C35 (field descent along a chain); FieldDescentChainRows,SignedDifferenceSets.fieldDescentChainRows_not_hasSDS,
 N33534,"SDS(351,254,7,[3,3,39])",Open@e3bf810,none,He-Wu Thm 3.2: n=247; p=19; m=13; j=6,,
 N33535,"SDS(351,254,7,[3,117])",Open@e3bf810,none,He-Wu Thm 3.2: n=247; p=19; m=13; j=6,,
 N33536,"SDS(351,254,7,[351])",Open@e3bf810,none,He-Wu Thm 3.2: n=247; p=19; m=13; j=6,,
 N33537,"SDS(351,254,29,[3,3,39])",Open@e3bf810,open,,,
 N33538,"SDS(351,254,29,[3,117])",Open@e3bf810,open,,,
-N33539,"SDS(351,254,29,[351])",Open@e3bf810,open,,,
+N33539,"SDS(351,254,29,[351])",Open@e3bf810,none,"C33 (Ma's lemma at its edge, p ∤ λc); MaEdgeRows; also C32 (field descent, one step at an odd prime); FieldDescentRows",SignedDifferenceSets.MaEdgeRows.n33539_not_hasSDS,
 N33540,"SDS(351,254,175,[3,3,39])",Open@e3bf810,open,,,
 N33541,"SDS(351,254,175,[3,117])",Open@e3bf810,open,,,
 N33542,"SDS(351,254,175,[351])",Open@e3bf810,none,"A7 (C10, C16); CosetRows Part03",SignedDifferenceSets.CosetRows.n33542_not_hasSDS,Z28
@@ -33558,7 +33558,7 @@ N33556,"SDS(351,261,2,[3,117])",Open@e3bf810,none,He-Wu Thm 3.2: n=259; p=7; m=1
 N33557,"SDS(351,261,2,[351])",Open@e3bf810,none,He-Wu Thm 3.2: n=259; p=7; m=13; j=6,,
 N33558,"SDS(351,261,18,[3,3,39])",Open@e3bf810,open,,,
 N33559,"SDS(351,261,18,[3,117])",Open@e3bf810,open,,,
-N33560,"SDS(351,261,18,[351])",Open@e3bf810,open,,,
+N33560,"SDS(351,261,18,[351])",Open@e3bf810,none,"C32 (field descent, one step at an odd prime); FieldDescentRows",SignedDifferenceSets.fieldDescentRows_not_hasSDS,
 N33561,"SDS(351,266,67,[3,3,39])",Open@e3bf810,none,He-Wu Thm 3.2: n=199; p=199; m=13; j=3,,
 N33562,"SDS(351,266,67,[3,117])",Open@e3bf810,none,He-Wu Thm 3.2: n=199; p=199; m=13; j=3,,
 N33563,"SDS(351,266,67,[351])",Open@e3bf810,none,He-Wu Thm 3.2: n=199; p=199; m=13; j=3,,
@@ -33570,7 +33570,7 @@ N33568,"SDS(351,274,39,[3,117])",Open@e3bf810,none,He-Wu Thm 3.2: n=235; p=5; m=
 N33569,"SDS(351,274,39,[351])",Open@e3bf810,none,He-Wu Thm 3.2: n=235; p=5; m=3; j=1,,
 N33570,"SDS(351,274,49,[3,3,39])",Open@e3bf810,open,,,
 N33571,"SDS(351,274,49,[3,117])",Open@e3bf810,open,,,
-N33572,"SDS(351,274,49,[351])",Open@e3bf810,open,,,
+N33572,"SDS(351,274,49,[351])",Open@e3bf810,none,"C33 (Ma's lemma at its edge, p ∤ λc); MaEdgeRows; also C32 (field descent, one step at an odd prime); FieldDescentRows",SignedDifferenceSets.MaEdgeRows.n33572_not_hasSDS,
 N33573,"SDS(351,274,135,[3,3,39])",Open@e3bf810,open,,,
 N33574,"SDS(351,274,135,[3,117])",Open@e3bf810,open,,,
 N33575,"SDS(351,274,135,[351])",Open@e3bf810,none,"A7 (C10, C16); CosetRows Part22",SignedDifferenceSets.CosetRows.n33575_not_hasSDS,
@@ -33606,7 +33606,7 @@ N33604,"SDS(351,281,4,[3,117])",Open@e3bf810,none,He-Wu Thm 3.2: n=277; p=277; m
 N33605,"SDS(351,281,4,[351])",Open@e3bf810,none,He-Wu Thm 3.2: n=277; p=277; m=13; j=3,,
 N33606,"SDS(351,281,56,[3,3,39])",Open@e3bf810,open,,,
 N33607,"SDS(351,281,56,[3,117])",Open@e3bf810,open,,,
-N33608,"SDS(351,281,56,[351])",Open@e3bf810,open,,,
+N33608,"SDS(351,281,56,[351])",Open@e3bf810,none,"C33 (Ma's lemma at its edge, p ∤ λc); MaEdgeRows; also C32 (field descent, one step at an odd prime); FieldDescentRows",SignedDifferenceSets.MaEdgeRows.n33608_not_hasSDS,
 N33609,"SDS(351,281,124,[3,3,39])",Open@e3bf810,open,,,
 N33610,"SDS(351,281,124,[3,117])",Open@e3bf810,open,,,
 N33611,"SDS(351,281,124,[351])",Open@e3bf810,none,C27; UnramifiedRows,SignedDifferenceSets.unramifiedRows3_not_hasSDS,Z30
@@ -33618,7 +33618,7 @@ N33616,"SDS(351,284,46,[3,117])",Open@e3bf810,none,He-Wu Thm 3.2: n=238; p=2; m=
 N33617,"SDS(351,284,46,[351])",Open@e3bf810,none,He-Wu Thm 3.2: n=238; p=2; m=3; j=1,,
 N33618,"SDS(351,284,140,[3,3,39])",Open@e3bf810,open,,,
 N33619,"SDS(351,284,140,[3,117])",Open@e3bf810,open,,,
-N33620,"SDS(351,284,140,[351])",Open@e3bf810,open,,,
+N33620,"SDS(351,284,140,[351])",Open@e3bf810,none,"C33 (Ma's lemma at its edge, p ∤ λc); MaEdgeRows",SignedDifferenceSets.MaEdgeRows.n33620_not_hasSDS,
 N33621,"SDS(351,284,220,[3,3,39])",Open@e3bf810,none,C14; BoxRows part02,SignedDifferenceSets.BoxRows.part02_not_hasSDS,Z10
 N33622,"SDS(351,284,220,[3,117])",Open@e3bf810,none,C14; BoxRows part02,SignedDifferenceSets.BoxRows.part02_not_hasSDS,Z10
 N33623,"SDS(351,284,220,[351])",Open@e3bf810,none,C14; BoxRows part02,SignedDifferenceSets.BoxRows.part02_not_hasSDS,Z10
@@ -33684,7 +33684,7 @@ N33682,"SDS(351,316,118,[3,117])",Open@e3bf810,none,He-Wu Thm 3.2: n=198; p=2; m
 N33683,"SDS(351,316,118,[351])",Open@e3bf810,none,He-Wu Thm 3.2: n=198; p=2; m=3; j=1,,
 N33684,"SDS(351,316,172,[3,3,39])",Open@e3bf810,open,,,
 N33685,"SDS(351,316,172,[3,117])",Open@e3bf810,open,,,
-N33686,"SDS(351,316,172,[351])",Open@e3bf810,open,,,
+N33686,"SDS(351,316,172,[351])",Open@e3bf810,none,"C33 (Ma's lemma at its edge, p ∤ λc); MaEdgeRows",SignedDifferenceSets.MaEdgeRows.n33686_not_hasSDS,
 N33687,"SDS(351,319,3,[3,3,39])",Open@e3bf810,open,,,
 N33688,"SDS(351,319,3,[3,117])",Open@e3bf810,open,,,
 N33689,"SDS(351,319,3,[351])",Open@e3bf810,none,C27; UnramifiedRows,SignedDifferenceSets.unramifiedRows3_not_hasSDS,Z30
@@ -33705,7 +33705,7 @@ N33703,"SDS(351,324,288,[3,117])",Open@e3bf810,open,,,
 N33704,"SDS(351,324,288,[351])",Open@e3bf810,open,,,
 N33705,"SDS(351,326,1,[3,3,39])",Open@e3bf810,open,,,
 N33706,"SDS(351,326,1,[3,117])",Open@e3bf810,open,,,
-N33707,"SDS(351,326,1,[351])",Open@e3bf810,open,,,
+N33707,"SDS(351,326,1,[351])",Open@e3bf810,none,"C32 (field descent, one step at an odd prime); FieldDescentRows",SignedDifferenceSets.fieldDescentRows_not_hasSDS,
 N33708,"SDS(351,326,43,[3,3,39])",Open@e3bf810,none,He-Wu Thm 3.2: n=283; p=283; m=13; j=3,,
 N33709,"SDS(351,326,43,[3,117])",Open@e3bf810,none,He-Wu Thm 3.2: n=283; p=283; m=13; j=3,,
 N33710,"SDS(351,326,43,[351])",Open@e3bf810,none,He-Wu Thm 3.2: n=283; p=283; m=13; j=3,,
@@ -33714,13 +33714,13 @@ N33712,"SDS(351,326,145,[3,117])",Open@e3bf810,none,He-Wu Thm 3.2: n=181; p=181;
 N33713,"SDS(351,326,145,[351])",Open@e3bf810,none,He-Wu Thm 3.2: n=181; p=181; m=13; j=1,,
 N33714,"SDS(351,326,299,[3,3,39])",Open@e3bf810,open,,,
 N33715,"SDS(351,326,299,[3,117])",Open@e3bf810,open,,,
-N33716,"SDS(351,326,299,[351])",Open@e3bf810,open,,,
+N33716,"SDS(351,326,299,[351])",Open@e3bf810,none,"C33 (Ma's lemma at its edge, p ∤ λc); MaEdgeRows",SignedDifferenceSets.MaEdgeRows.n33716_not_hasSDS,
 N33717,"SDS(351,329,16,[3,3,39])",Open@e3bf810,open,,,
 N33718,"SDS(351,329,16,[3,117])",Open@e3bf810,open,,,
 N33719,"SDS(351,329,16,[351])",Open@e3bf810,none,C27; UnramifiedRows,SignedDifferenceSets.unramifiedRows3_not_hasSDS,Z30
 N33720,"SDS(351,329,212,[3,3,39])",Open@e3bf810,open,,,
 N33721,"SDS(351,329,212,[3,117])",Open@e3bf810,open,,,
-N33722,"SDS(351,329,212,[351])",Open@e3bf810,open,,,
+N33722,"SDS(351,329,212,[351])",Open@e3bf810,none,"C33 (Ma's lemma at its edge, p ∤ λc); MaEdgeRows; also C35 (field descent along a chain); FieldDescentChainRows",SignedDifferenceSets.MaEdgeRows.n33722_not_hasSDS,
 N33723,"SDS(351,331,9,[3,3,39])",Open@e3bf810,none,He-Wu Thm 3.2: n=322; p=2; m=3; j=1,,
 N33724,"SDS(351,331,9,[3,117])",Open@e3bf810,none,He-Wu Thm 3.2: n=322; p=2; m=3; j=1,,
 N33725,"SDS(351,331,9,[351])",Open@e3bf810,none,He-Wu Thm 3.2: n=322; p=2; m=3; j=1,,
@@ -33804,7 +33804,7 @@ N33802,"SDS(352,108,8,[2,2,88])",Open@e3bf810,open,,,
 N33803,"SDS(352,108,8,[2,4,44])",Open@e3bf810,open,,,
 N33804,"SDS(352,108,8,[2,176])",Open@e3bf810,open,,,
 N33805,"SDS(352,108,8,[4,88])",Open@e3bf810,open,,,
-N33806,"SDS(352,108,8,[352])",Open@e3bf810,open,,,
+N33806,"SDS(352,108,8,[352])",Open@e3bf810,none,"C35 (field descent along a chain); FieldDescentChainRows; also C26, halved row N7332 by I5 (OrbitRows); HalfRows OrbitCited",SignedDifferenceSets.fieldDescentChainRows_not_hasSDS,
 N33807,"SDS(352,117,4,[2,2,2,2,22])",Open@e3bf810,none,He-Wu Thm 3.2: n=113; p=113; m=2; j=1,,
 N33808,"SDS(352,117,4,[2,2,2,44])",Open@e3bf810,none,He-Wu Thm 3.2: n=113; p=113; m=2; j=1,,
 N33809,"SDS(352,117,4,[2,2,88])",Open@e3bf810,none,He-Wu Thm 3.2: n=113; p=113; m=2; j=1,,
@@ -35286,10 +35286,10 @@ N35284,"SDS(360,164,4,[6,60])",Open@e3bf810,none,He-Wu Thm 3.2: n=160; p=2; m=3;
 N35285,"SDS(360,164,4,[360])",Open@e3bf810,none,He-Wu Thm 3.2: n=160; p=2; m=3; j=1,,
 N35286,"SDS(360,176,32,[2,2,90])",Open@e3bf810,none,C21; MaRows part04,SignedDifferenceSets.MaRows.not_hasSDS_of_mem_part04,Z24
 N35287,"SDS(360,176,32,[2,6,30])",Open@e3bf810,open,,,
-N35288,"SDS(360,176,32,[2,180])",Open@e3bf810,open,,,
+N35288,"SDS(360,176,32,[2,180])",Open@e3bf810,none,"C33 (Ma's lemma at its edge, p ∤ λc); MaEdgeRows",SignedDifferenceSets.MaEdgeRows.n35288_not_hasSDS,
 N35289,"SDS(360,176,32,[3,120])",Open@e3bf810,open,,,
 N35290,"SDS(360,176,32,[6,60])",Open@e3bf810,open,,,
-N35291,"SDS(360,176,32,[360])",Open@e3bf810,open,,,
+N35291,"SDS(360,176,32,[360])",Open@e3bf810,none,"C33 (Ma's lemma at its edge, p ∤ λc); MaEdgeRows",SignedDifferenceSets.MaEdgeRows.n35291_not_hasSDS,
 N35292,"SDS(360,180,80,[2,2,90])",Open@e3bf810,none,C13; SelfConjugacyRows part06,SignedDifferenceSets.SelfConjugacyRows.part06_not_hasSDS,Z9
 N35293,"SDS(360,180,80,[2,6,30])",Open@e3bf810,none,C13; SelfConjugacyRows part06,SignedDifferenceSets.SelfConjugacyRows.part06_not_hasSDS,Z9
 N35294,"SDS(360,180,80,[2,180])",Open@e3bf810,none,C21; MaRows part04,SignedDifferenceSets.MaRows.not_hasSDS_of_mem_part04,Z24
@@ -35451,7 +35451,7 @@ N35449,"SDS(360,275,50,[2,6,30])",Open@e3bf810,none,C13; SelfConjugacyRows part0
 N35450,"SDS(360,275,50,[2,180])",Open@e3bf810,none,C21; MaRows part04,SignedDifferenceSets.MaRows.not_hasSDS_of_mem_part04,Z24
 N35451,"SDS(360,275,50,[3,120])",Open@e3bf810,open,,,
 N35452,"SDS(360,275,50,[6,60])",Open@e3bf810,none,C21; MaRows part04,SignedDifferenceSets.MaRows.not_hasSDS_of_mem_part04,Z24
-N35453,"SDS(360,275,50,[360])",Open@e3bf810,open,,,
+N35453,"SDS(360,275,50,[360])",Open@e3bf810,none,"C33 (Ma's lemma at its edge, p ∤ λc); MaEdgeRows",SignedDifferenceSets.MaEdgeRows.n35453_not_hasSDS,
 N35454,"SDS(360,281,40,[2,2,90])",Open@e3bf810,none,He-Wu Thm 3.2: n=241; p=241; m=2; j=1,,
 N35455,"SDS(360,281,40,[2,6,30])",Open@e3bf810,none,He-Wu Thm 3.2: n=241; p=241; m=2; j=1,,
 N35456,"SDS(360,281,40,[2,180])",Open@e3bf810,none,He-Wu Thm 3.2: n=241; p=241; m=2; j=1,,
@@ -35538,10 +35538,10 @@ N35536,"SDS(360,316,12,[6,60])",Open@e3bf810,none,He-Wu Thm 3.2: n=304; p=19; m=
 N35537,"SDS(360,316,12,[360])",Open@e3bf810,none,He-Wu Thm 3.2: n=304; p=19; m=2; j=1,,
 N35538,"SDS(360,320,176,[2,2,90])",Open@e3bf810,none,C21; MaRows part04,SignedDifferenceSets.MaRows.not_hasSDS_of_mem_part04,Z24
 N35539,"SDS(360,320,176,[2,6,30])",Open@e3bf810,open,,,
-N35540,"SDS(360,320,176,[2,180])",Open@e3bf810,open,,,
+N35540,"SDS(360,320,176,[2,180])",Open@e3bf810,none,"C33 (Ma's lemma at its edge, p ∤ λc); MaEdgeRows",SignedDifferenceSets.MaEdgeRows.n35540_not_hasSDS,
 N35541,"SDS(360,320,176,[3,120])",Open@e3bf810,open,,,
 N35542,"SDS(360,320,176,[6,60])",Open@e3bf810,open,,,
-N35543,"SDS(360,320,176,[360])",Open@e3bf810,open,,,
+N35543,"SDS(360,320,176,[360])",Open@e3bf810,none,"C33 (Ma's lemma at its edge, p ∤ λc); MaEdgeRows",SignedDifferenceSets.MaEdgeRows.n35543_not_hasSDS,
 N35544,"SDS(360,321,272,[2,2,90])",Open@e3bf810,open,,,
 N35545,"SDS(360,321,272,[2,6,30])",Open@e3bf810,open,,,
 N35546,"SDS(360,321,272,[2,180])",Open@e3bf810,open,,,
@@ -40632,7 +40632,7 @@ N40630,"SDS(384,248,52,[2,192])",Open@e3bf810,open,,,
 N40631,"SDS(384,248,52,[4,4,24])",Open@e3bf810,none,C5; SelfConjugacyRows part07,SignedDifferenceSets.SelfConjugacyRows.part07_not_hasSDS,Z8
 N40632,"SDS(384,248,52,[4,96])",Open@e3bf810,open,,,
 N40633,"SDS(384,248,52,[8,48])",Open@e3bf810,none,C14; BoxRows part02,SignedDifferenceSets.BoxRows.part02_not_hasSDS,Z10
-N40634,"SDS(384,248,52,[384])",Open@e3bf810,open,,,
+N40634,"SDS(384,248,52,[384])",Open@e3bf810,none,C35 (field descent along a chain); FieldDescentChainRows,SignedDifferenceSets.fieldDescentChainRows_not_hasSDS,
 N40635,"SDS(384,251,146,[2,2,2,2,2,2,6])",Open@e3bf810,none,He-Wu Thm 3.2: n=105; p=3; m=2; j=1,,
 N40636,"SDS(384,251,146,[2,2,2,2,2,12])",Open@e3bf810,none,He-Wu Thm 3.2: n=105; p=3; m=2; j=1,,
 N40637,"SDS(384,251,146,[2,2,2,2,24])",Open@e3bf810,none,He-Wu Thm 3.2: n=105; p=3; m=2; j=1,,
@@ -41172,7 +41172,7 @@ N41170,"SDS(384,348,152,[2,192])",Open@e3bf810,open,,,
 N41171,"SDS(384,348,152,[4,4,24])",Open@e3bf810,none,C5; SelfConjugacyRows part08,SignedDifferenceSets.SelfConjugacyRows.part08_not_hasSDS,Z8
 N41172,"SDS(384,348,152,[4,96])",Open@e3bf810,open,,,
 N41173,"SDS(384,348,152,[8,48])",Open@e3bf810,none,C14; BoxRows part02,SignedDifferenceSets.BoxRows.part02_not_hasSDS,Z10
-N41174,"SDS(384,348,152,[384])",Open@e3bf810,open,,,
+N41174,"SDS(384,348,152,[384])",Open@e3bf810,none,C35 (field descent along a chain); FieldDescentChainRows,SignedDifferenceSets.fieldDescentChainRows_not_hasSDS,
 N41175,"SDS(384,350,250,[2,2,2,2,2,2,6])",Open@e3bf810,none,C5; SelfConjugacyRows part08,SignedDifferenceSets.SelfConjugacyRows.part08_not_hasSDS,Z8
 N41176,"SDS(384,350,250,[2,2,2,2,2,12])",Open@e3bf810,none,C5; SelfConjugacyRows part08,SignedDifferenceSets.SelfConjugacyRows.part08_not_hasSDS,Z8
 N41177,"SDS(384,350,250,[2,2,2,2,24])",Open@e3bf810,none,C13; SelfConjugacyRows part08,SignedDifferenceSets.SelfConjugacyRows.part08_not_hasSDS,Z9
@@ -43555,10 +43555,10 @@ N43553,"SDS(396,239,70,[2,198])",Open@e3bf810,none,C13; SelfConjugacyRows part08
 N43554,"SDS(396,239,70,[3,132])",Open@e3bf810,none,C14; BoxRows part02,SignedDifferenceSets.BoxRows.part02_not_hasSDS,Z10
 N43555,"SDS(396,239,70,[6,66])",Open@e3bf810,none,C13; SelfConjugacyRows part08,SignedDifferenceSets.SelfConjugacyRows.part08_not_hasSDS,Z9
 N43556,"SDS(396,239,70,[396])",Open@e3bf810,none,C14; BoxRows part02,SignedDifferenceSets.BoxRows.part02_not_hasSDS,Z10
-N43557,"SDS(396,241,16,[2,198])",Open@e3bf810,open,,,
+N43557,"SDS(396,241,16,[2,198])",Open@e3bf810,none,"C33 (Ma's lemma at its edge, p ∤ λc); MaEdgeRows",SignedDifferenceSets.MaEdgeRows.n43557_not_hasSDS,
 N43558,"SDS(396,241,16,[3,132])",Open@e3bf810,open,,,
 N43559,"SDS(396,241,16,[6,66])",Open@e3bf810,open,,,
-N43560,"SDS(396,241,16,[396])",Open@e3bf810,open,,,
+N43560,"SDS(396,241,16,[396])",Open@e3bf810,none,"C33 (Ma's lemma at its edge, p ∤ λc); MaEdgeRows",SignedDifferenceSets.MaEdgeRows.n43560_not_hasSDS,
 N43561,"SDS(396,241,144,[2,198])",Open@e3bf810,none,He-Wu Thm 3.2: n=97; p=97; m=2; j=1,,
 N43562,"SDS(396,241,144,[3,132])",Open@e3bf810,none,He-Wu Thm 3.2: n=97; p=97; m=2; j=1,,
 N43563,"SDS(396,241,144,[6,66])",Open@e3bf810,none,He-Wu Thm 3.2: n=97; p=97; m=2; j=1,,
@@ -43583,10 +43583,10 @@ N43581,"SDS(396,256,76,[2,198])",Open@e3bf810,none,He-Wu Thm 3.2: n=180; p=5; m=
 N43582,"SDS(396,256,76,[3,132])",Open@e3bf810,none,He-Wu Thm 3.2: n=180; p=5; m=2; j=1,,
 N43583,"SDS(396,256,76,[6,66])",Open@e3bf810,none,He-Wu Thm 3.2: n=180; p=5; m=2; j=1,,
 N43584,"SDS(396,256,76,[396])",Open@e3bf810,none,He-Wu Thm 3.2: n=180; p=5; m=2; j=1,,
-N43585,"SDS(396,259,34,[2,198])",Open@e3bf810,open,,,
+N43585,"SDS(396,259,34,[2,198])",Open@e3bf810,none,"C33 (Ma's lemma at its edge, p ∤ λc); MaEdgeRows",SignedDifferenceSets.MaEdgeRows.n43585_not_hasSDS,
 N43586,"SDS(396,259,34,[3,132])",Open@e3bf810,open,,,
 N43587,"SDS(396,259,34,[6,66])",Open@e3bf810,open,,,
-N43588,"SDS(396,259,34,[396])",Open@e3bf810,open,,,
+N43588,"SDS(396,259,34,[396])",Open@e3bf810,none,"C33 (Ma's lemma at its edge, p ∤ λc); MaEdgeRows",SignedDifferenceSets.MaEdgeRows.n43588_not_hasSDS,
 N43589,"SDS(396,269,4,[2,198])",Open@e3bf810,none,He-Wu Thm 3.2: n=265; p=5; m=2; j=1,,
 N43590,"SDS(396,269,4,[3,132])",Open@e3bf810,none,He-Wu Thm 3.2: n=265; p=5; m=2; j=1,,
 N43591,"SDS(396,269,4,[6,66])",Open@e3bf810,none,He-Wu Thm 3.2: n=265; p=5; m=2; j=1,,
@@ -44240,8 +44240,8 @@ N44238,"SDS(400,102,2,[2,2,2,50])",Open@e3bf810,none,C21; MaRows part05,SignedDi
 N44239,"SDS(400,102,2,[2,2,10,10])",Open@e3bf810,open,,,
 N44240,"SDS(400,102,2,[2,2,100])",Open@e3bf810,none,C21; MaRows part05,SignedDifferenceSets.MaRows.not_hasSDS_of_mem_part05,Z24
 N44241,"SDS(400,102,2,[2,10,20])",Open@e3bf810,open,,,
-N44242,"SDS(400,102,2,[2,200])",Open@e3bf810,open,,,
-N44243,"SDS(400,102,2,[4,100])",Open@e3bf810,open,,,
+N44242,"SDS(400,102,2,[2,200])",Open@e3bf810,none,"C33 (Ma's lemma at its edge, p ∤ λc); MaEdgeRows",SignedDifferenceSets.MaEdgeRows.n44242_not_hasSDS,
+N44243,"SDS(400,102,2,[4,100])",Open@e3bf810,none,"C33 (Ma's lemma at its edge, p ∤ λc); MaEdgeRows",SignedDifferenceSets.MaEdgeRows.n44243_not_hasSDS,
 N44244,"SDS(400,102,2,[5,80])",Open@e3bf810,none,C26 (parity of the halved coset sums); DescentRows chunk 3,SignedDifferenceSets.descentRows3_not_hasSDS,Z29
 N44245,"SDS(400,102,2,[10,40])",Open@e3bf810,open,,,
 N44246,"SDS(400,102,2,[20,20])",Open@e3bf810,open,,,
@@ -44250,8 +44250,8 @@ N44248,"SDS(400,106,6,[2,2,2,50])",Open@e3bf810,none,C21; MaRows part05,SignedDi
 N44249,"SDS(400,106,6,[2,2,10,10])",Open@e3bf810,open,,,
 N44250,"SDS(400,106,6,[2,2,100])",Open@e3bf810,none,C21; MaRows part05,SignedDifferenceSets.MaRows.not_hasSDS_of_mem_part05,Z24
 N44251,"SDS(400,106,6,[2,10,20])",Open@e3bf810,open,,,
-N44252,"SDS(400,106,6,[2,200])",Open@e3bf810,open,,,
-N44253,"SDS(400,106,6,[4,100])",Open@e3bf810,open,,,
+N44252,"SDS(400,106,6,[2,200])",Open@e3bf810,none,"C33 (Ma's lemma at its edge, p ∤ λc); MaEdgeRows",SignedDifferenceSets.MaEdgeRows.n44252_not_hasSDS,
+N44253,"SDS(400,106,6,[4,100])",Open@e3bf810,none,"C33 (Ma's lemma at its edge, p ∤ λc); MaEdgeRows",SignedDifferenceSets.MaEdgeRows.n44253_not_hasSDS,
 N44254,"SDS(400,106,6,[5,80])",Open@e3bf810,none,C26 (parity of the halved coset sums); DescentRows chunk 3,SignedDifferenceSets.descentRows3_not_hasSDS,Z29
 N44255,"SDS(400,106,6,[10,40])",Open@e3bf810,open,,,
 N44256,"SDS(400,106,6,[20,20])",Open@e3bf810,open,,,
@@ -44270,8 +44270,8 @@ N44268,"SDS(400,112,12,[2,2,2,50])",Open@e3bf810,none,C21; MaRows part05,SignedD
 N44269,"SDS(400,112,12,[2,2,10,10])",Open@e3bf810,open,,,
 N44270,"SDS(400,112,12,[2,2,100])",Open@e3bf810,none,C21; MaRows part05,SignedDifferenceSets.MaRows.not_hasSDS_of_mem_part05,Z24
 N44271,"SDS(400,112,12,[2,10,20])",Open@e3bf810,open,,,
-N44272,"SDS(400,112,12,[2,200])",Open@e3bf810,open,,,
-N44273,"SDS(400,112,12,[4,100])",Open@e3bf810,open,,,
+N44272,"SDS(400,112,12,[2,200])",Open@e3bf810,none,"C33 (Ma's lemma at its edge, p ∤ λc); MaEdgeRows",SignedDifferenceSets.MaEdgeRows.n44272_not_hasSDS,
+N44273,"SDS(400,112,12,[4,100])",Open@e3bf810,none,"C33 (Ma's lemma at its edge, p ∤ λc); MaEdgeRows",SignedDifferenceSets.MaEdgeRows.n44273_not_hasSDS,
 N44274,"SDS(400,112,12,[5,80])",Open@e3bf810,none,C26 (halved row off the table); HalfRows Part11,SignedDifferenceSets.HalfRows.n44274_not_hasSDS,Z29
 N44275,"SDS(400,112,12,[10,40])",Open@e3bf810,open,,,
 N44276,"SDS(400,112,12,[20,20])",Open@e3bf810,open,,,
@@ -44310,8 +44310,8 @@ N44308,"SDS(400,142,42,[2,2,2,50])",Open@e3bf810,none,C21; MaRows part05,SignedD
 N44309,"SDS(400,142,42,[2,2,10,10])",Open@e3bf810,open,,,
 N44310,"SDS(400,142,42,[2,2,100])",Open@e3bf810,none,C21; MaRows part05,SignedDifferenceSets.MaRows.not_hasSDS_of_mem_part05,Z24
 N44311,"SDS(400,142,42,[2,10,20])",Open@e3bf810,open,,,
-N44312,"SDS(400,142,42,[2,200])",Open@e3bf810,open,,,
-N44313,"SDS(400,142,42,[4,100])",Open@e3bf810,open,,,
+N44312,"SDS(400,142,42,[2,200])",Open@e3bf810,none,"C33 (Ma's lemma at its edge, p ∤ λc); MaEdgeRows",SignedDifferenceSets.MaEdgeRows.n44312_not_hasSDS,
+N44313,"SDS(400,142,42,[4,100])",Open@e3bf810,none,"C33 (Ma's lemma at its edge, p ∤ λc); MaEdgeRows",SignedDifferenceSets.MaEdgeRows.n44313_not_hasSDS,
 N44314,"SDS(400,142,42,[5,80])",Open@e3bf810,none,C26 (parity of the halved coset sums); DescentRows chunk 3,SignedDifferenceSets.descentRows3_not_hasSDS,Z29
 N44315,"SDS(400,142,42,[10,40])",Open@e3bf810,open,,,
 N44316,"SDS(400,142,42,[20,20])",Open@e3bf810,open,,,
@@ -44330,8 +44330,8 @@ N44328,"SDS(400,156,56,[2,2,2,50])",Open@e3bf810,none,C21; MaRows part05,SignedD
 N44329,"SDS(400,156,56,[2,2,10,10])",Open@e3bf810,open,,,
 N44330,"SDS(400,156,56,[2,2,100])",Open@e3bf810,none,C21; MaRows part05,SignedDifferenceSets.MaRows.not_hasSDS_of_mem_part05,Z24
 N44331,"SDS(400,156,56,[2,10,20])",Open@e3bf810,open,,,
-N44332,"SDS(400,156,56,[2,200])",Open@e3bf810,open,,,
-N44333,"SDS(400,156,56,[4,100])",Open@e3bf810,open,,,
+N44332,"SDS(400,156,56,[2,200])",Open@e3bf810,none,"C33 (Ma's lemma at its edge, p ∤ λc); MaEdgeRows",SignedDifferenceSets.MaEdgeRows.n44332_not_hasSDS,
+N44333,"SDS(400,156,56,[4,100])",Open@e3bf810,none,"C33 (Ma's lemma at its edge, p ∤ λc); MaEdgeRows",SignedDifferenceSets.MaEdgeRows.n44333_not_hasSDS,
 N44334,"SDS(400,156,56,[5,80])",Open@e3bf810,none,C26 (halved row off the table); HalfRows Part12,SignedDifferenceSets.HalfRows.n44334_not_hasSDS,Z29
 N44335,"SDS(400,156,56,[10,40])",Open@e3bf810,open,,,
 N44336,"SDS(400,156,56,[20,20])",Open@e3bf810,open,,,
@@ -44390,8 +44390,8 @@ N44388,"SDS(400,172,72,[2,2,2,50])",Open@e3bf810,none,C21; MaRows part05,SignedD
 N44389,"SDS(400,172,72,[2,2,10,10])",Open@e3bf810,open,,,
 N44390,"SDS(400,172,72,[2,2,100])",Open@e3bf810,none,C21; MaRows part05,SignedDifferenceSets.MaRows.not_hasSDS_of_mem_part05,Z24
 N44391,"SDS(400,172,72,[2,10,20])",Open@e3bf810,open,,,
-N44392,"SDS(400,172,72,[2,200])",Open@e3bf810,open,,,
-N44393,"SDS(400,172,72,[4,100])",Open@e3bf810,open,,,
+N44392,"SDS(400,172,72,[2,200])",Open@e3bf810,none,"C33 (Ma's lemma at its edge, p ∤ λc); MaEdgeRows",SignedDifferenceSets.MaEdgeRows.n44392_not_hasSDS,
+N44393,"SDS(400,172,72,[4,100])",Open@e3bf810,none,"C33 (Ma's lemma at its edge, p ∤ λc); MaEdgeRows",SignedDifferenceSets.MaEdgeRows.n44393_not_hasSDS,
 N44394,"SDS(400,172,72,[5,80])",Open@e3bf810,none,C26 (halved row off the table); HalfRows Part12,SignedDifferenceSets.HalfRows.n44394_not_hasSDS,Z29
 N44395,"SDS(400,172,72,[10,40])",Open@e3bf810,open,,,
 N44396,"SDS(400,172,72,[20,20])",Open@e3bf810,open,,,
@@ -44520,8 +44520,8 @@ N44518,"SDS(400,232,132,[2,2,2,50])",Open@e3bf810,none,C21; MaRows part05,Signed
 N44519,"SDS(400,232,132,[2,2,10,10])",Open@e3bf810,open,,,
 N44520,"SDS(400,232,132,[2,2,100])",Open@e3bf810,none,C21; MaRows part05,SignedDifferenceSets.MaRows.not_hasSDS_of_mem_part05,Z24
 N44521,"SDS(400,232,132,[2,10,20])",Open@e3bf810,open,,,
-N44522,"SDS(400,232,132,[2,200])",Open@e3bf810,open,,,
-N44523,"SDS(400,232,132,[4,100])",Open@e3bf810,open,,,
+N44522,"SDS(400,232,132,[2,200])",Open@e3bf810,none,"C33 (Ma's lemma at its edge, p ∤ λc); MaEdgeRows",SignedDifferenceSets.MaEdgeRows.n44522_not_hasSDS,
+N44523,"SDS(400,232,132,[4,100])",Open@e3bf810,none,"C33 (Ma's lemma at its edge, p ∤ λc); MaEdgeRows",SignedDifferenceSets.MaEdgeRows.n44523_not_hasSDS,
 N44524,"SDS(400,232,132,[5,80])",Open@e3bf810,none,C26 (halved row off the table); HalfRows Part12,SignedDifferenceSets.HalfRows.n44524_not_hasSDS,Z29
 N44525,"SDS(400,232,132,[10,40])",Open@e3bf810,open,,,
 N44526,"SDS(400,232,132,[20,20])",Open@e3bf810,open,,,
@@ -44535,7 +44535,7 @@ N44533,"SDS(400,235,10,[4,100])",Open@e3bf810,none,C29 (Ma × self-conjugate mod
 N44534,"SDS(400,235,10,[5,80])",Open@e3bf810,open,,,
 N44535,"SDS(400,235,10,[10,40])",Open@e3bf810,open,,,
 N44536,"SDS(400,235,10,[20,20])",Open@e3bf810,open,,,
-N44537,"SDS(400,235,10,[400])",Open@e3bf810,open,,,
+N44537,"SDS(400,235,10,[400])",Open@e3bf810,none,"C32 (field descent, one step at an odd prime); FieldDescentRows",SignedDifferenceSets.fieldDescentRows_not_hasSDS,
 N44538,"SDS(400,235,26,[2,2,2,50])",Open@e3bf810,none,He-Wu Thm 3.2: n=209; p=11; m=2; j=1,,
 N44539,"SDS(400,235,26,[2,2,10,10])",Open@e3bf810,none,He-Wu Thm 3.2: n=209; p=11; m=2; j=1,,
 N44540,"SDS(400,235,26,[2,2,100])",Open@e3bf810,none,He-Wu Thm 3.2: n=209; p=11; m=2; j=1,,
@@ -44565,7 +44565,7 @@ N44563,"SDS(400,247,22,[4,100])",Open@e3bf810,none,C29 (Ma × self-conjugate mod
 N44564,"SDS(400,247,22,[5,80])",Open@e3bf810,open,,,
 N44565,"SDS(400,247,22,[10,40])",Open@e3bf810,open,,,
 N44566,"SDS(400,247,22,[20,20])",Open@e3bf810,open,,,
-N44567,"SDS(400,247,22,[400])",Open@e3bf810,open,,,
+N44567,"SDS(400,247,22,[400])",Open@e3bf810,none,"C33 (Ma's lemma at its edge, p ∤ λc); MaEdgeRows; also C32 (field descent, one step at an odd prime); FieldDescentRows",SignedDifferenceSets.MaEdgeRows.n44567_not_hasSDS,
 N44568,"SDS(400,253,4,[2,2,2,50])",Open@e3bf810,none,He-Wu Thm 3.2: n=249; p=3; m=2; j=1,,
 N44569,"SDS(400,253,4,[2,2,10,10])",Open@e3bf810,none,He-Wu Thm 3.2: n=249; p=3; m=2; j=1,,
 N44570,"SDS(400,253,4,[2,2,100])",Open@e3bf810,none,He-Wu Thm 3.2: n=249; p=3; m=2; j=1,,
@@ -44610,8 +44610,8 @@ N44608,"SDS(400,256,156,[2,2,2,50])",Open@e3bf810,none,C21; MaRows part05,Signed
 N44609,"SDS(400,256,156,[2,2,10,10])",Open@e3bf810,open,,,
 N44610,"SDS(400,256,156,[2,2,100])",Open@e3bf810,none,C21; MaRows part05,SignedDifferenceSets.MaRows.not_hasSDS_of_mem_part05,Z24
 N44611,"SDS(400,256,156,[2,10,20])",Open@e3bf810,open,,,
-N44612,"SDS(400,256,156,[2,200])",Open@e3bf810,open,,,
-N44613,"SDS(400,256,156,[4,100])",Open@e3bf810,open,,,
+N44612,"SDS(400,256,156,[2,200])",Open@e3bf810,none,"C33 (Ma's lemma at its edge, p ∤ λc); MaEdgeRows",SignedDifferenceSets.MaEdgeRows.n44612_not_hasSDS,
+N44613,"SDS(400,256,156,[4,100])",Open@e3bf810,none,"C33 (Ma's lemma at its edge, p ∤ λc); MaEdgeRows",SignedDifferenceSets.MaEdgeRows.n44613_not_hasSDS,
 N44614,"SDS(400,256,156,[5,80])",Open@e3bf810,none,C26 (halved row off the table); HalfRows Part13,SignedDifferenceSets.HalfRows.n44614_not_hasSDS,Z29
 N44615,"SDS(400,256,156,[10,40])",Open@e3bf810,open,,,
 N44616,"SDS(400,256,156,[20,20])",Open@e3bf810,open,,,
@@ -44665,7 +44665,7 @@ N44663,"SDS(400,277,52,[4,100])",Open@e3bf810,none,C29 (Ma × self-conjugate mod
 N44664,"SDS(400,277,52,[5,80])",Open@e3bf810,open,,,
 N44665,"SDS(400,277,52,[10,40])",Open@e3bf810,open,,,
 N44666,"SDS(400,277,52,[20,20])",Open@e3bf810,open,,,
-N44667,"SDS(400,277,52,[400])",Open@e3bf810,open,,,
+N44667,"SDS(400,277,52,[400])",Open@e3bf810,none,"C33 (Ma's lemma at its edge, p ∤ λc); MaEdgeRows; also C32 (field descent, one step at an odd prime); FieldDescentRows",SignedDifferenceSets.MaEdgeRows.n44667_not_hasSDS,
 N44668,"SDS(400,282,86,[2,2,2,50])",Open@e3bf810,none,C5; SelfConjugacyRows part08,SignedDifferenceSets.SelfConjugacyRows.part08_not_hasSDS,Z8
 N44669,"SDS(400,282,86,[2,2,10,10])",Open@e3bf810,none,C5; SelfConjugacyRows part08,SignedDifferenceSets.SelfConjugacyRows.part08_not_hasSDS,Z8
 N44670,"SDS(400,282,86,[2,2,100])",Open@e3bf810,none,C5; SelfConjugacyRows part08,SignedDifferenceSets.SelfConjugacyRows.part08_not_hasSDS,Z8
@@ -44680,8 +44680,8 @@ N44678,"SDS(400,282,182,[2,2,2,50])",Open@e3bf810,none,C21; MaRows part05,Signed
 N44679,"SDS(400,282,182,[2,2,10,10])",Open@e3bf810,open,,,
 N44680,"SDS(400,282,182,[2,2,100])",Open@e3bf810,none,C21; MaRows part05,SignedDifferenceSets.MaRows.not_hasSDS_of_mem_part05,Z24
 N44681,"SDS(400,282,182,[2,10,20])",Open@e3bf810,open,,,
-N44682,"SDS(400,282,182,[2,200])",Open@e3bf810,open,,,
-N44683,"SDS(400,282,182,[4,100])",Open@e3bf810,open,,,
+N44682,"SDS(400,282,182,[2,200])",Open@e3bf810,none,"C33 (Ma's lemma at its edge, p ∤ λc); MaEdgeRows",SignedDifferenceSets.MaEdgeRows.n44682_not_hasSDS,
+N44683,"SDS(400,282,182,[4,100])",Open@e3bf810,none,"C33 (Ma's lemma at its edge, p ∤ λc); MaEdgeRows",SignedDifferenceSets.MaEdgeRows.n44683_not_hasSDS,
 N44684,"SDS(400,282,182,[5,80])",Open@e3bf810,none,C26 (parity of the halved coset sums); DescentRows chunk 3,SignedDifferenceSets.descentRows3_not_hasSDS,Z29
 N44685,"SDS(400,282,182,[10,40])",Open@e3bf810,open,,,
 N44686,"SDS(400,282,182,[20,20])",Open@e3bf810,open,,,
@@ -44755,7 +44755,7 @@ N44753,"SDS(400,301,76,[4,100])",Open@e3bf810,none,C29 (Ma × self-conjugate mod
 N44754,"SDS(400,301,76,[5,80])",Open@e3bf810,open,,,
 N44755,"SDS(400,301,76,[10,40])",Open@e3bf810,open,,,
 N44756,"SDS(400,301,76,[20,20])",Open@e3bf810,open,,,
-N44757,"SDS(400,301,76,[400])",Open@e3bf810,open,,,
+N44757,"SDS(400,301,76,[400])",Open@e3bf810,none,"C33 (Ma's lemma at its edge, p ∤ λc); MaEdgeRows; also C32 (field descent, one step at an odd prime); FieldDescentRows",SignedDifferenceSets.MaEdgeRows.n44757_not_hasSDS,
 N44758,"SDS(400,309,140,[2,2,2,50])",Open@e3bf810,none,C5; SelfConjugacyRows part08,SignedDifferenceSets.SelfConjugacyRows.part08_not_hasSDS,Z8
 N44759,"SDS(400,309,140,[2,2,10,10])",Open@e3bf810,none,C5; SelfConjugacyRows part08,SignedDifferenceSets.SelfConjugacyRows.part08_not_hasSDS,Z8
 N44760,"SDS(400,309,140,[2,2,100])",Open@e3bf810,none,C5; SelfConjugacyRows part08,SignedDifferenceSets.SelfConjugacyRows.part08_not_hasSDS,Z8
@@ -44895,7 +44895,7 @@ N44893,"SDS(400,351,126,[4,100])",Open@e3bf810,none,C7; MarkedCountsRows part02,
 N44894,"SDS(400,351,126,[5,80])",Open@e3bf810,open,,,
 N44895,"SDS(400,351,126,[10,40])",Open@e3bf810,none,C7; MarkedCountsRows part02,SignedDifferenceSets.MarkedCountsRows.part02_not_hasSDS,Z16
 N44896,"SDS(400,351,126,[20,20])",Open@e3bf810,none,C7; MarkedCountsRows part02,SignedDifferenceSets.MarkedCountsRows.part02_not_hasSDS,Z16
-N44897,"SDS(400,351,126,[400])",Open@e3bf810,open,,,
+N44897,"SDS(400,351,126,[400])",Open@e3bf810,none,"C33 (Ma's lemma at its edge, p ∤ λc); MaEdgeRows; also C32 (field descent, one step at an odd prime); FieldDescentRows",SignedDifferenceSets.MaEdgeRows.n44897_not_hasSDS,
 N44898,"SDS(400,358,2,[2,2,2,50])",Open@e3bf810,none,He-Wu Thm 3.2: n=356; p=89; m=2; j=1,,
 N44899,"SDS(400,358,2,[2,2,10,10])",Open@e3bf810,none,He-Wu Thm 3.2: n=356; p=89; m=2; j=1,,
 N44900,"SDS(400,358,2,[2,2,100])",Open@e3bf810,none,He-Wu Thm 3.2: n=356; p=89; m=2; j=1,,
@@ -44980,8 +44980,8 @@ N44978,"SDS(400,372,272,[2,2,2,50])",Open@e3bf810,none,C21; MaRows part05,Signed
 N44979,"SDS(400,372,272,[2,2,10,10])",Open@e3bf810,open,,,
 N44980,"SDS(400,372,272,[2,2,100])",Open@e3bf810,none,C21; MaRows part05,SignedDifferenceSets.MaRows.not_hasSDS_of_mem_part05,Z24
 N44981,"SDS(400,372,272,[2,10,20])",Open@e3bf810,open,,,
-N44982,"SDS(400,372,272,[2,200])",Open@e3bf810,open,,,
-N44983,"SDS(400,372,272,[4,100])",Open@e3bf810,open,,,
+N44982,"SDS(400,372,272,[2,200])",Open@e3bf810,none,"C33 (Ma's lemma at its edge, p ∤ λc); MaEdgeRows",SignedDifferenceSets.MaEdgeRows.n44982_not_hasSDS,
+N44983,"SDS(400,372,272,[4,100])",Open@e3bf810,none,"C33 (Ma's lemma at its edge, p ∤ λc); MaEdgeRows",SignedDifferenceSets.MaEdgeRows.n44983_not_hasSDS,
 N44984,"SDS(400,372,272,[5,80])",Open@e3bf810,none,C26 (halved row off the table); HalfRows Part13,SignedDifferenceSets.HalfRows.n44984_not_hasSDS,Z29
 N44985,"SDS(400,372,272,[10,40])",Open@e3bf810,open,,,
 N44986,"SDS(400,372,272,[20,20])",Open@e3bf810,open,,,
@@ -45035,7 +45035,7 @@ N45033,"SDS(400,387,162,[4,100])",Open@e3bf810,none,C7; MarkedCountsRows part03,
 N45034,"SDS(400,387,162,[5,80])",Open@e3bf810,open,,,
 N45035,"SDS(400,387,162,[10,40])",Open@e3bf810,none,C7; MarkedCountsRows part03,SignedDifferenceSets.MarkedCountsRows.part03_not_hasSDS,Z16
 N45036,"SDS(400,387,162,[20,20])",Open@e3bf810,none,C7; MarkedCountsRows part03,SignedDifferenceSets.MarkedCountsRows.part03_not_hasSDS,Z16
-N45037,"SDS(400,387,162,[400])",Open@e3bf810,open,,,
+N45037,"SDS(400,387,162,[400])",Open@e3bf810,none,"C33 (Ma's lemma at its edge, p ∤ λc); MaEdgeRows; also C32 (field descent, one step at an odd prime); FieldDescentRows",SignedDifferenceSets.MaEdgeRows.n45037_not_hasSDS,
 N45038,"SDS(400,396,12,[2,2,2,50])",Open@e3bf810,none,He-Wu Thm 3.2: n=384; p=2; m=5; j=2,,
 N45039,"SDS(400,396,12,[2,2,10,10])",Open@e3bf810,none,He-Wu Thm 3.2: n=384; p=2; m=5; j=2,,
 N45040,"SDS(400,396,12,[2,2,100])",Open@e3bf810,none,He-Wu Thm 3.2: n=384; p=2; m=5; j=2,,
@@ -46081,7 +46081,7 @@ N46079,"SDS(405,280,159,[9,45])",Open@e3bf810,none,C5; SelfConjugacyRows part08,
 N46080,"SDS(405,280,159,[405])",Open@e3bf810,none,C5; SelfConjugacyRows part09,SignedDifferenceSets.SelfConjugacyRows.part09_not_hasSDS,Z8
 N46081,"SDS(405,281,2,[3,3,3,15])",Open@e3bf810,open,,,
 N46082,"SDS(405,281,2,[3,3,45])",Open@e3bf810,open,,,
-N46083,"SDS(405,281,2,[3,135])",Open@e3bf810,open,,,
+N46083,"SDS(405,281,2,[3,135])",Open@e3bf810,none,C35 (field descent along a chain); FieldDescentChainRows,SignedDifferenceSets.fieldDescentChainRows_not_hasSDS,
 N46084,"SDS(405,281,2,[9,45])",Open@e3bf810,open,,,
 N46085,"SDS(405,281,2,[405])",Open@e3bf810,none,C21; MaRows part05,SignedDifferenceSets.MaRows.not_hasSDS_of_mem_part05,Z24
 N46086,"SDS(405,281,70,[3,3,3,15])",Open@e3bf810,open,,,
@@ -46096,7 +46096,7 @@ N46094,"SDS(405,281,136,[9,45])",Open@e3bf810,none,He-Wu Thm 3.2: n=145; p=5; m=
 N46095,"SDS(405,281,136,[405])",Open@e3bf810,none,He-Wu Thm 3.2: n=145; p=5; m=3; j=1,,
 N46096,"SDS(405,284,5,[3,3,3,15])",Open@e3bf810,open,,,
 N46097,"SDS(405,284,5,[3,3,45])",Open@e3bf810,open,,,
-N46098,"SDS(405,284,5,[3,135])",Open@e3bf810,open,,,
+N46098,"SDS(405,284,5,[3,135])",Open@e3bf810,none,C35 (field descent along a chain); FieldDescentChainRows,SignedDifferenceSets.fieldDescentChainRows_not_hasSDS,
 N46099,"SDS(405,284,5,[9,45])",Open@e3bf810,open,,,
 N46100,"SDS(405,284,5,[405])",Open@e3bf810,none,C21; MaRows part05,SignedDifferenceSets.MaRows.not_hasSDS_of_mem_part05,Z24
 N46101,"SDS(405,284,58,[3,3,3,15])",Open@e3bf810,none,He-Wu Thm 3.2: n=226; p=2; m=3; j=1,,
@@ -46121,7 +46121,7 @@ N46119,"SDS(405,289,118,[9,45])",Open@e3bf810,none,He-Wu Thm 3.2: n=171; p=19; m
 N46120,"SDS(405,289,118,[405])",Open@e3bf810,none,He-Wu Thm 3.2: n=171; p=19; m=5; j=1,,
 N46121,"SDS(405,297,18,[3,3,3,15])",Open@e3bf810,open,,,
 N46122,"SDS(405,297,18,[3,3,45])",Open@e3bf810,open,,,
-N46123,"SDS(405,297,18,[3,135])",Open@e3bf810,open,,,
+N46123,"SDS(405,297,18,[3,135])",Open@e3bf810,none,C35 (field descent along a chain); FieldDescentChainRows,SignedDifferenceSets.fieldDescentChainRows_not_hasSDS,
 N46124,"SDS(405,297,18,[9,45])",Open@e3bf810,open,,,
 N46125,"SDS(405,297,18,[405])",Open@e3bf810,none,C21; MaRows part05,SignedDifferenceSets.MaRows.not_hasSDS_of_mem_part05,Z24
 N46126,"SDS(405,297,32,[3,3,3,15])",Open@e3bf810,none,He-Wu Thm 3.2: n=265; p=5; m=3; j=1,,
@@ -46141,7 +46141,7 @@ N46139,"SDS(405,304,24,[9,45])",Open@e3bf810,none,He-Wu Thm 3.2: n=280; p=2; m=3
 N46140,"SDS(405,304,24,[405])",Open@e3bf810,none,He-Wu Thm 3.2: n=280; p=2; m=3; j=1,,
 N46141,"SDS(405,304,25,[3,3,3,15])",Open@e3bf810,open,,,
 N46142,"SDS(405,304,25,[3,3,45])",Open@e3bf810,open,,,
-N46143,"SDS(405,304,25,[3,135])",Open@e3bf810,open,,,
+N46143,"SDS(405,304,25,[3,135])",Open@e3bf810,none,C35 (field descent along a chain); FieldDescentChainRows,SignedDifferenceSets.fieldDescentChainRows_not_hasSDS,
 N46144,"SDS(405,304,25,[9,45])",Open@e3bf810,open,,,
 N46145,"SDS(405,304,25,[405])",Open@e3bf810,none,C21; MaRows part05,SignedDifferenceSets.MaRows.not_hasSDS_of_mem_part05,Z24
 N46146,"SDS(405,304,225,[3,3,3,15])",Open@e3bf810,none,He-Wu Thm 3.2: n=79; p=79; m=5; j=1,,
@@ -46351,7 +46351,7 @@ N46349,"SDS(405,348,2,[9,45])",Open@e3bf810,none,He-Wu Thm 3.2: n=346; p=2; m=3;
 N46350,"SDS(405,348,2,[405])",Open@e3bf810,none,He-Wu Thm 3.2: n=346; p=2; m=3; j=1,,
 N46351,"SDS(405,348,69,[3,3,3,15])",Open@e3bf810,open,,,
 N46352,"SDS(405,348,69,[3,3,45])",Open@e3bf810,open,,,
-N46353,"SDS(405,348,69,[3,135])",Open@e3bf810,open,,,
+N46353,"SDS(405,348,69,[3,135])",Open@e3bf810,none,C35 (field descent along a chain); FieldDescentChainRows,SignedDifferenceSets.fieldDescentChainRows_not_hasSDS,
 N46354,"SDS(405,348,69,[9,45])",Open@e3bf810,open,,,
 N46355,"SDS(405,348,69,[405])",Open@e3bf810,none,C21; MaRows part05,SignedDifferenceSets.MaRows.not_hasSDS_of_mem_part05,Z24
 N46356,"SDS(405,348,137,[3,3,3,15])",Open@e3bf810,open,,,
@@ -46401,7 +46401,7 @@ N46399,"SDS(405,357,251,[9,45])",Open@e3bf810,none,He-Wu Thm 3.2: n=106; p=2; m=
 N46400,"SDS(405,357,251,[405])",Open@e3bf810,none,He-Wu Thm 3.2: n=106; p=2; m=3; j=1,,
 N46401,"SDS(405,361,82,[3,3,3,15])",Open@e3bf810,open,,,
 N46402,"SDS(405,361,82,[3,3,45])",Open@e3bf810,open,,,
-N46403,"SDS(405,361,82,[3,135])",Open@e3bf810,open,,,
+N46403,"SDS(405,361,82,[3,135])",Open@e3bf810,none,C35 (field descent along a chain); FieldDescentChainRows,SignedDifferenceSets.fieldDescentChainRows_not_hasSDS,
 N46404,"SDS(405,361,82,[9,45])",Open@e3bf810,open,,,
 N46405,"SDS(405,361,82,[405])",Open@e3bf810,none,C21; MaRows part05,SignedDifferenceSets.MaRows.not_hasSDS_of_mem_part05,Z24
 N46406,"SDS(405,361,120,[3,3,3,15])",Open@e3bf810,open,,,
@@ -46556,7 +46556,7 @@ N46554,"SDS(405,400,81,[9,45])",Open@e3bf810,none,He-Wu Thm 3.2: n=319; p=11; m=
 N46555,"SDS(405,400,81,[405])",Open@e3bf810,none,He-Wu Thm 3.2: n=319; p=11; m=3; j=1,,
 N46556,"SDS(405,400,121,[3,3,3,15])",Open@e3bf810,open,,,
 N46557,"SDS(405,400,121,[3,3,45])",Open@e3bf810,open,,,
-N46558,"SDS(405,400,121,[3,135])",Open@e3bf810,open,,,
+N46558,"SDS(405,400,121,[3,135])",Open@e3bf810,none,C35 (field descent along a chain); FieldDescentChainRows,SignedDifferenceSets.fieldDescentChainRows_not_hasSDS,
 N46559,"SDS(405,400,121,[9,45])",Open@e3bf810,open,,,
 N46560,"SDS(405,400,121,[405])",Open@e3bf810,none,C21; MaRows part05,SignedDifferenceSets.MaRows.not_hasSDS_of_mem_part05,Z24
 N46561,"SDS(405,400,364,[3,3,3,15])",Open@e3bf810,none,C13; SelfConjugacyRows part09,SignedDifferenceSets.SelfConjugacyRows.part09_not_hasSDS,Z9
@@ -47942,7 +47942,7 @@ N47940,"SDS(414,154,30,[414])",Open@e3bf810,none,He-Wu Thm 3.2: n=124; p=31; m=2
 N47941,"SDS(414,177,8,[3,138])",Open@e3bf810,none,"A7 (C10, C10 (I13)); CosetRows Part40",SignedDifferenceSets.CosetRows.n47941_not_hasSDS,Z28
 N47942,"SDS(414,177,8,[414])",Open@e3bf810,none,"A7 (C10, C10 (I13)); CosetRows Part40",SignedDifferenceSets.CosetRows.n47942_not_hasSDS,Z28
 N47943,"SDS(414,182,38,[3,138])",Open@e3bf810,open,,,
-N47944,"SDS(414,182,38,[414])",Open@e3bf810,open,,,
+N47944,"SDS(414,182,38,[414])",Open@e3bf810,none,"C33 (Ma's lemma at its edge, p ∤ λc); MaEdgeRows",SignedDifferenceSets.MaEdgeRows.n47944_not_hasSDS,
 N47945,"SDS(414,184,60,[3,138])",Open@e3bf810,none,He-Wu Thm 3.2: n=124; p=31; m=2; j=1,,
 N47946,"SDS(414,184,60,[414])",Open@e3bf810,none,He-Wu Thm 3.2: n=124; p=31; m=2; j=1,,
 N47947,"SDS(414,186,78,[3,138])",Open@e3bf810,none,He-Wu Thm 3.2: n=108; p=3; m=2; j=1,,
@@ -48038,7 +48038,7 @@ N48036,"SDS(414,340,108,[414])",Open@e3bf810,none,He-Wu Thm 3.2: n=232; p=2; m=3
 N48037,"SDS(414,343,42,[3,138])",Open@e3bf810,none,He-Wu Thm 3.2: n=301; p=7; m=2; j=1,,
 N48038,"SDS(414,343,42,[414])",Open@e3bf810,none,He-Wu Thm 3.2: n=301; p=7; m=2; j=1,,
 N48039,"SDS(414,344,200,[3,138])",Open@e3bf810,open,,,
-N48040,"SDS(414,344,200,[414])",Open@e3bf810,open,,,
+N48040,"SDS(414,344,200,[414])",Open@e3bf810,none,"C33 (Ma's lemma at its edge, p ∤ λc); MaEdgeRows",SignedDifferenceSets.MaEdgeRows.n48040_not_hasSDS,
 N48041,"SDS(414,344,220,[3,138])",Open@e3bf810,none,He-Wu Thm 3.2: n=124; p=31; m=2; j=1,,
 N48042,"SDS(414,344,220,[414])",Open@e3bf810,none,He-Wu Thm 3.2: n=124; p=31; m=2; j=1,,
 N48043,"SDS(414,352,96,[3,138])",Open@e3bf810,none,"A7 (C10, C10 (I13)); CosetRows Part40",SignedDifferenceSets.CosetRows.n48043_not_hasSDS,Z28
@@ -48843,7 +48843,7 @@ N48841,"SDS(416,396,72,[2,2,104])",Open@e3bf810,open,,,
 N48842,"SDS(416,396,72,[2,4,52])",Open@e3bf810,none,C7; MarkedCountsRows part03,SignedDifferenceSets.MarkedCountsRows.part03_not_hasSDS,Z16
 N48843,"SDS(416,396,72,[2,208])",Open@e3bf810,open,,,
 N48844,"SDS(416,396,72,[4,104])",Open@e3bf810,open,,,
-N48845,"SDS(416,396,72,[416])",Open@e3bf810,open,,,
+N48845,"SDS(416,396,72,[416])",Open@e3bf810,none,C35 (field descent along a chain); FieldDescentChainRows,SignedDifferenceSets.fieldDescentChainRows_not_hasSDS,
 N48846,"SDS(416,396,252,[2,2,2,2,26])",Open@e3bf810,open,,,
 N48847,"SDS(416,396,252,[2,2,2,52])",Open@e3bf810,open,,,
 N48848,"SDS(416,396,252,[2,2,104])",Open@e3bf810,open,,,
@@ -49855,7 +49855,7 @@ N49853,"SDS(423,193,48,[423])",Open@e3bf810,none,He-Wu Thm 3.2: n=145; p=5; m=3;
 N49854,"SDS(423,194,5,[3,141])",Open@e3bf810,none,C20; EisensteinCharsRows 2,SignedDifferenceSets.eisensteinCharsRows2_not_hasSDS,Z19
 N49855,"SDS(423,194,5,[423])",Open@e3bf810,none,C22; SylowRows chunk 4,SignedDifferenceSets.sylowRows4_not_hasSDS,Z25
 N49856,"SDS(423,199,55,[3,141])",Open@e3bf810,open,,,
-N49857,"SDS(423,199,55,[423])",Open@e3bf810,open,,,
+N49857,"SDS(423,199,55,[423])",Open@e3bf810,none,"C33 (Ma's lemma at its edge, p ∤ λc); MaEdgeRows",SignedDifferenceSets.MaEdgeRows.n49857_not_hasSDS,
 N49858,"SDS(423,201,44,[3,141])",Open@e3bf810,none,E10/E11; C15; OrbitSearch,SignedDifferenceSets.OrbitRows.n49858_not_hasSDS,Z15
 N49859,"SDS(423,201,44,[423])",Open@e3bf810,none,E10/E11; C15; OrbitSearch,SignedDifferenceSets.OrbitRows.n49859_not_hasSDS,Z15
 N49860,"SDS(423,203,1,[3,141])",Open@e3bf810,none,He-Wu Thm 3.2: n=202; p=2; m=3; j=1,,
@@ -49913,7 +49913,7 @@ N49911,"SDS(423,248,4,[423])",Open@e3bf810,none,E10/E11; I13 (C9 for every n); O
 N49912,"SDS(423,254,1,[3,141])",Open@e3bf810,none,He-Wu Thm 3.2: n=253; p=11; m=3; j=1,,
 N49913,"SDS(423,254,1,[423])",Open@e3bf810,none,He-Wu Thm 3.2: n=253; p=11; m=3; j=1,,
 N49914,"SDS(423,255,3,[3,141])",Open@e3bf810,open,,,
-N49915,"SDS(423,255,3,[423])",Open@e3bf810,open,,,
+N49915,"SDS(423,255,3,[423])",Open@e3bf810,none,"C32 (field descent, one step at an odd prime); FieldDescentRows",SignedDifferenceSets.fieldDescentRows_not_hasSDS,
 N49916,"SDS(423,257,52,[3,141])",Open@e3bf810,none,He-Wu Thm 3.2: n=205; p=5; m=3; j=1,,
 N49917,"SDS(423,257,52,[423])",Open@e3bf810,none,He-Wu Thm 3.2: n=205; p=5; m=3; j=1,,
 N49918,"SDS(423,258,11,[3,141])",Open@e3bf810,none,He-Wu Thm 3.2: n=247; p=13; m=47; j=23,,
@@ -50007,7 +50007,7 @@ N50005,"SDS(423,314,145,[423])",Open@e3bf810,none,C14; BoxRows part03,SignedDiff
 N50006,"SDS(423,316,54,[3,141])",Open@e3bf810,none,He-Wu Thm 3.2: n=262; p=2; m=3; j=1,,
 N50007,"SDS(423,316,54,[423])",Open@e3bf810,none,He-Wu Thm 3.2: n=262; p=2; m=3; j=1,,
 N50008,"SDS(423,316,172,[3,141])",Open@e3bf810,open,,,
-N50009,"SDS(423,316,172,[423])",Open@e3bf810,open,,,
+N50009,"SDS(423,316,172,[423])",Open@e3bf810,none,"C33 (Ma's lemma at its edge, p ∤ λc); MaEdgeRows",SignedDifferenceSets.MaEdgeRows.n50009_not_hasSDS,
 N50010,"SDS(423,318,83,[3,141])",Open@e3bf810,none,He-Wu Thm 3.2: n=235; p=5; m=3; j=1,,
 N50011,"SDS(423,318,83,[423])",Open@e3bf810,none,He-Wu Thm 3.2: n=235; p=5; m=3; j=1,,
 N50012,"SDS(423,318,129,[3,141])",Open@e3bf810,open,,,
@@ -50017,7 +50017,7 @@ N50015,"SDS(423,320,22,[423])",Open@e3bf810,none,He-Wu Thm 3.2: n=298; p=2; m=3;
 N50016,"SDS(423,325,18,[3,141])",Open@e3bf810,none,"A7 (C10, C16); CosetRows Part01",SignedDifferenceSets.CosetRows.n50016_not_hasSDS,Z28
 N50017,"SDS(423,325,18,[423])",Open@e3bf810,none,"A7 (C10, C16); CosetRows Part01",SignedDifferenceSets.CosetRows.n50017_not_hasSDS,Z28
 N50018,"SDS(423,328,76,[3,141])",Open@e3bf810,open,,,
-N50019,"SDS(423,328,76,[423])",Open@e3bf810,open,,,
+N50019,"SDS(423,328,76,[423])",Open@e3bf810,none,"C33 (Ma's lemma at its edge, p ∤ λc); MaEdgeRows; also C32 (field descent, one step at an odd prime); FieldDescentRows",SignedDifferenceSets.MaEdgeRows.n50019_not_hasSDS,
 N50020,"SDS(423,328,138,[3,141])",Open@e3bf810,none,He-Wu Thm 3.2: n=190; p=2; m=3; j=1,,
 N50021,"SDS(423,328,138,[423])",Open@e3bf810,none,He-Wu Thm 3.2: n=190; p=2; m=3; j=1,,
 N50022,"SDS(423,330,47,[3,141])",Open@e3bf810,open,,,
@@ -51788,7 +51788,7 @@ N51786,"SDS(432,38,2,[2,2,6,18])",Open@e3bf810,open,,,
 N51787,"SDS(432,38,2,[2,2,108])",Open@e3bf810,none,C21; MaRows part05,SignedDifferenceSets.MaRows.not_hasSDS_of_mem_part05,Z24
 N51788,"SDS(432,38,2,[2,6,6,6])",Open@e3bf810,open,,,
 N51789,"SDS(432,38,2,[2,6,36])",Open@e3bf810,open,,,
-N51790,"SDS(432,38,2,[2,216])",Open@e3bf810,open,,,
+N51790,"SDS(432,38,2,[2,216])",Open@e3bf810,none,"C33 (Ma's lemma at its edge, p ∤ λc); MaEdgeRows",SignedDifferenceSets.MaEdgeRows.n51790_not_hasSDS,
 N51791,"SDS(432,38,2,[3,3,48])",Open@e3bf810,none,C26 (parity of the halved coset sums); DescentRows chunk 3,SignedDifferenceSets.descentRows3_not_hasSDS,Z29
 N51792,"SDS(432,38,2,[3,6,24])",Open@e3bf810,open,,,
 N51793,"SDS(432,38,2,[3,12,12])",Open@e3bf810,open,,,
@@ -51878,7 +51878,7 @@ N51876,"SDS(432,152,8,[2,2,6,18])",Open@e3bf810,open,,,
 N51877,"SDS(432,152,8,[2,2,108])",Open@e3bf810,none,C21; MaRows part05,SignedDifferenceSets.MaRows.not_hasSDS_of_mem_part05,Z24
 N51878,"SDS(432,152,8,[2,6,6,6])",Open@e3bf810,open,,,
 N51879,"SDS(432,152,8,[2,6,36])",Open@e3bf810,open,,,
-N51880,"SDS(432,152,8,[2,216])",Open@e3bf810,open,,,
+N51880,"SDS(432,152,8,[2,216])",Open@e3bf810,none,"C33 (Ma's lemma at its edge, p ∤ λc); MaEdgeRows",SignedDifferenceSets.MaEdgeRows.n51880_not_hasSDS,
 N51881,"SDS(432,152,8,[3,3,48])",Open@e3bf810,none,C21; MaRows part05,SignedDifferenceSets.MaRows.not_hasSDS_of_mem_part05,Z24
 N51882,"SDS(432,152,8,[3,6,24])",Open@e3bf810,open,,,
 N51883,"SDS(432,152,8,[3,12,12])",Open@e3bf810,open,,,
@@ -51908,7 +51908,7 @@ N51906,"SDS(432,160,16,[2,2,6,18])",Open@e3bf810,open,,,
 N51907,"SDS(432,160,16,[2,2,108])",Open@e3bf810,none,C21; MaRows part05,SignedDifferenceSets.MaRows.not_hasSDS_of_mem_part05,Z24
 N51908,"SDS(432,160,16,[2,6,6,6])",Open@e3bf810,open,,,
 N51909,"SDS(432,160,16,[2,6,36])",Open@e3bf810,open,,,
-N51910,"SDS(432,160,16,[2,216])",Open@e3bf810,open,,,
+N51910,"SDS(432,160,16,[2,216])",Open@e3bf810,none,"C33 (Ma's lemma at its edge, p ∤ λc); MaEdgeRows",SignedDifferenceSets.MaEdgeRows.n51910_not_hasSDS,
 N51911,"SDS(432,160,16,[3,3,48])",Open@e3bf810,none,C21; MaRows part05,SignedDifferenceSets.MaRows.not_hasSDS_of_mem_part05,Z24
 N51912,"SDS(432,160,16,[3,6,24])",Open@e3bf810,open,,,
 N51913,"SDS(432,160,16,[3,12,12])",Open@e3bf810,open,,,
@@ -51983,7 +51983,7 @@ N51981,"SDS(432,184,40,[2,2,6,18])",Open@e3bf810,open,,,
 N51982,"SDS(432,184,40,[2,2,108])",Open@e3bf810,none,C21; MaRows part05,SignedDifferenceSets.MaRows.not_hasSDS_of_mem_part05,Z24
 N51983,"SDS(432,184,40,[2,6,6,6])",Open@e3bf810,open,,,
 N51984,"SDS(432,184,40,[2,6,36])",Open@e3bf810,open,,,
-N51985,"SDS(432,184,40,[2,216])",Open@e3bf810,open,,,
+N51985,"SDS(432,184,40,[2,216])",Open@e3bf810,none,"C33 (Ma's lemma at its edge, p ∤ λc); MaEdgeRows",SignedDifferenceSets.MaEdgeRows.n51985_not_hasSDS,
 N51986,"SDS(432,184,40,[3,3,48])",Open@e3bf810,none,C21; MaRows part05,SignedDifferenceSets.MaRows.not_hasSDS_of_mem_part05,Z24
 N51987,"SDS(432,184,40,[3,6,24])",Open@e3bf810,open,,,
 N51988,"SDS(432,184,40,[3,12,12])",Open@e3bf810,open,,,
@@ -51998,7 +51998,7 @@ N51996,"SDS(432,200,56,[2,2,6,18])",Open@e3bf810,open,,,
 N51997,"SDS(432,200,56,[2,2,108])",Open@e3bf810,none,C21; MaRows part05,SignedDifferenceSets.MaRows.not_hasSDS_of_mem_part05,Z24
 N51998,"SDS(432,200,56,[2,6,6,6])",Open@e3bf810,open,,,
 N51999,"SDS(432,200,56,[2,6,36])",Open@e3bf810,open,,,
-N52000,"SDS(432,200,56,[2,216])",Open@e3bf810,open,,,
+N52000,"SDS(432,200,56,[2,216])",Open@e3bf810,none,"C33 (Ma's lemma at its edge, p ∤ λc); MaEdgeRows",SignedDifferenceSets.MaEdgeRows.n52000_not_hasSDS,
 N52001,"SDS(432,200,56,[3,3,48])",Open@e3bf810,none,C21; MaRows part05,SignedDifferenceSets.MaRows.not_hasSDS_of_mem_part05,Z24
 N52002,"SDS(432,200,56,[3,6,24])",Open@e3bf810,open,,,
 N52003,"SDS(432,200,56,[3,12,12])",Open@e3bf810,open,,,
@@ -52052,7 +52052,7 @@ N52050,"SDS(432,216,20,[4,108])",Open@e3bf810,open,,,
 N52051,"SDS(432,216,20,[6,6,12])",Open@e3bf810,open,,,
 N52052,"SDS(432,216,20,[6,72])",Open@e3bf810,open,,,
 N52053,"SDS(432,216,20,[12,36])",Open@e3bf810,open,,,
-N52054,"SDS(432,216,20,[432])",Open@e3bf810,open,,,
+N52054,"SDS(432,216,20,[432])",Open@e3bf810,none,C35 (field descent along a chain); FieldDescentChainRows,SignedDifferenceSets.fieldDescentChainRows_not_hasSDS,
 N52055,"SDS(432,223,6,[2,2,2,54])",Open@e3bf810,none,He-Wu Thm 3.2: n=217; p=7; m=2; j=1,,
 N52056,"SDS(432,223,6,[2,2,6,18])",Open@e3bf810,none,He-Wu Thm 3.2: n=217; p=7; m=2; j=1,,
 N52057,"SDS(432,223,6,[2,2,108])",Open@e3bf810,none,He-Wu Thm 3.2: n=217; p=7; m=2; j=1,,
@@ -52337,7 +52337,7 @@ N52335,"SDS(432,297,72,[4,108])",Open@e3bf810,none,C13; SelfConjugacyRows part10
 N52336,"SDS(432,297,72,[6,6,12])",Open@e3bf810,none,C5; SelfConjugacyRows part10,SignedDifferenceSets.SelfConjugacyRows.part10_not_hasSDS,Z8
 N52337,"SDS(432,297,72,[6,72])",Open@e3bf810,none,C13; SelfConjugacyRows part10,SignedDifferenceSets.SelfConjugacyRows.part10_not_hasSDS,Z9
 N52338,"SDS(432,297,72,[12,36])",Open@e3bf810,none,C13; SelfConjugacyRows part10,SignedDifferenceSets.SelfConjugacyRows.part10_not_hasSDS,Z9
-N52339,"SDS(432,297,72,[432])",Open@e3bf810,open,,,
+N52339,"SDS(432,297,72,[432])",Open@e3bf810,none,C35 (field descent along a chain); FieldDescentChainRows,SignedDifferenceSets.fieldDescentChainRows_not_hasSDS,
 N52340,"SDS(432,301,4,[2,2,2,54])",Open@e3bf810,none,He-Wu Thm 3.2: n=297; p=3; m=2; j=1,,
 N52341,"SDS(432,301,4,[2,2,6,18])",Open@e3bf810,none,He-Wu Thm 3.2: n=297; p=3; m=2; j=1,,
 N52342,"SDS(432,301,4,[2,2,108])",Open@e3bf810,none,He-Wu Thm 3.2: n=297; p=3; m=2; j=1,,
@@ -52448,7 +52448,7 @@ N52446,"SDS(432,320,176,[2,2,6,18])",Open@e3bf810,open,,,
 N52447,"SDS(432,320,176,[2,2,108])",Open@e3bf810,none,C21; MaRows part05,SignedDifferenceSets.MaRows.not_hasSDS_of_mem_part05,Z24
 N52448,"SDS(432,320,176,[2,6,6,6])",Open@e3bf810,open,,,
 N52449,"SDS(432,320,176,[2,6,36])",Open@e3bf810,open,,,
-N52450,"SDS(432,320,176,[2,216])",Open@e3bf810,open,,,
+N52450,"SDS(432,320,176,[2,216])",Open@e3bf810,none,"C33 (Ma's lemma at its edge, p ∤ λc); MaEdgeRows",SignedDifferenceSets.MaEdgeRows.n52450_not_hasSDS,
 N52451,"SDS(432,320,176,[3,3,48])",Open@e3bf810,none,C21; MaRows part05,SignedDifferenceSets.MaRows.not_hasSDS_of_mem_part05,Z24
 N52452,"SDS(432,320,176,[3,6,24])",Open@e3bf810,open,,,
 N52453,"SDS(432,320,176,[3,12,12])",Open@e3bf810,open,,,
@@ -52583,7 +52583,7 @@ N52581,"SDS(432,352,208,[2,2,6,18])",Open@e3bf810,open,,,
 N52582,"SDS(432,352,208,[2,2,108])",Open@e3bf810,none,C21; MaRows part05,SignedDifferenceSets.MaRows.not_hasSDS_of_mem_part05,Z24
 N52583,"SDS(432,352,208,[2,6,6,6])",Open@e3bf810,open,,,
 N52584,"SDS(432,352,208,[2,6,36])",Open@e3bf810,open,,,
-N52585,"SDS(432,352,208,[2,216])",Open@e3bf810,open,,,
+N52585,"SDS(432,352,208,[2,216])",Open@e3bf810,none,"C33 (Ma's lemma at its edge, p ∤ λc); MaEdgeRows",SignedDifferenceSets.MaEdgeRows.n52585_not_hasSDS,
 N52586,"SDS(432,352,208,[3,3,48])",Open@e3bf810,none,C21; MaRows part05,SignedDifferenceSets.MaRows.not_hasSDS_of_mem_part05,Z24
 N52587,"SDS(432,352,208,[3,6,24])",Open@e3bf810,open,,,
 N52588,"SDS(432,352,208,[3,12,12])",Open@e3bf810,open,,,
@@ -52898,7 +52898,7 @@ N52896,"SDS(432,410,374,[2,2,6,18])",Open@e3bf810,open,,,
 N52897,"SDS(432,410,374,[2,2,108])",Open@e3bf810,none,C21; MaRows part05,SignedDifferenceSets.MaRows.not_hasSDS_of_mem_part05,Z24
 N52898,"SDS(432,410,374,[2,6,6,6])",Open@e3bf810,open,,,
 N52899,"SDS(432,410,374,[2,6,36])",Open@e3bf810,open,,,
-N52900,"SDS(432,410,374,[2,216])",Open@e3bf810,open,,,
+N52900,"SDS(432,410,374,[2,216])",Open@e3bf810,none,"C33 (Ma's lemma at its edge, p ∤ λc); MaEdgeRows",SignedDifferenceSets.MaEdgeRows.n52900_not_hasSDS,
 N52901,"SDS(432,410,374,[3,3,48])",Open@e3bf810,none,C26 (parity of the halved coset sums); DescentRows chunk 4,SignedDifferenceSets.descentRows4_not_hasSDS,Z29
 N52902,"SDS(432,410,374,[3,6,24])",Open@e3bf810,open,,,
 N52903,"SDS(432,410,374,[3,12,12])",Open@e3bf810,open,,,
@@ -52958,7 +52958,7 @@ N52956,"SDS(432,424,280,[2,2,6,18])",Open@e3bf810,open,,,
 N52957,"SDS(432,424,280,[2,2,108])",Open@e3bf810,none,C21; MaRows part05,SignedDifferenceSets.MaRows.not_hasSDS_of_mem_part05,Z24
 N52958,"SDS(432,424,280,[2,6,6,6])",Open@e3bf810,open,,,
 N52959,"SDS(432,424,280,[2,6,36])",Open@e3bf810,open,,,
-N52960,"SDS(432,424,280,[2,216])",Open@e3bf810,open,,,
+N52960,"SDS(432,424,280,[2,216])",Open@e3bf810,none,"C33 (Ma's lemma at its edge, p ∤ λc); MaEdgeRows",SignedDifferenceSets.MaEdgeRows.n52960_not_hasSDS,
 N52961,"SDS(432,424,280,[3,3,48])",Open@e3bf810,none,C21; MaRows part05,SignedDifferenceSets.MaRows.not_hasSDS_of_mem_part05,Z24
 N52962,"SDS(432,424,280,[3,6,24])",Open@e3bf810,open,,,
 N52963,"SDS(432,424,280,[3,12,12])",Open@e3bf810,open,,,
@@ -54546,10 +54546,10 @@ N54544,"SDS(441,201,3,[3,147])",Open@e3bf810,none,He-Wu Thm 3.2: n=198; p=2; m=3
 N54545,"SDS(441,201,3,[7,63])",Open@e3bf810,none,He-Wu Thm 3.2: n=198; p=2; m=3; j=1,,
 N54546,"SDS(441,201,3,[21,21])",Open@e3bf810,none,He-Wu Thm 3.2: n=198; p=2; m=3; j=1,,
 N54547,"SDS(441,201,3,[441])",Open@e3bf810,none,He-Wu Thm 3.2: n=198; p=2; m=3; j=1,,
-N54548,"SDS(441,201,5,[3,147])",Open@e3bf810,open,,,
+N54548,"SDS(441,201,5,[3,147])",Open@e3bf810,none,"C33 (Ma's lemma at its edge, p ∤ λc); MaEdgeRows",SignedDifferenceSets.MaEdgeRows.n54548_not_hasSDS,
 N54549,"SDS(441,201,5,[7,63])",Open@e3bf810,open,,,
 N54550,"SDS(441,201,5,[21,21])",Open@e3bf810,open,,,
-N54551,"SDS(441,201,5,[441])",Open@e3bf810,open,,,
+N54551,"SDS(441,201,5,[441])",Open@e3bf810,none,"C33 (Ma's lemma at its edge, p ∤ λc); MaEdgeRows; also C32 (field descent, one step at an odd prime); FieldDescentRows",SignedDifferenceSets.MaEdgeRows.n54551_not_hasSDS,
 N54552,"SDS(441,201,8,[3,147])",Open@e3bf810,none,"A7 (C10, C16); CosetRows Part01",SignedDifferenceSets.CosetRows.n54552_not_hasSDS,Z28
 N54553,"SDS(441,201,8,[7,63])",Open@e3bf810,open,,,
 N54554,"SDS(441,201,8,[21,21])",Open@e3bf810,open,,,
@@ -54578,10 +54578,10 @@ N54576,"SDS(441,209,2,[3,147])",Open@e3bf810,none,He-Wu Thm 3.2: n=207; p=23; m=
 N54577,"SDS(441,209,2,[7,63])",Open@e3bf810,none,He-Wu Thm 3.2: n=207; p=23; m=3; j=1,,
 N54578,"SDS(441,209,2,[21,21])",Open@e3bf810,none,He-Wu Thm 3.2: n=207; p=23; m=3; j=1,,
 N54579,"SDS(441,209,2,[441])",Open@e3bf810,none,He-Wu Thm 3.2: n=207; p=23; m=3; j=1,,
-N54580,"SDS(441,209,13,[3,147])",Open@e3bf810,open,,,
+N54580,"SDS(441,209,13,[3,147])",Open@e3bf810,none,"C33 (Ma's lemma at its edge, p ∤ λc); MaEdgeRows",SignedDifferenceSets.MaEdgeRows.n54580_not_hasSDS,
 N54581,"SDS(441,209,13,[7,63])",Open@e3bf810,open,,,
 N54582,"SDS(441,209,13,[21,21])",Open@e3bf810,open,,,
-N54583,"SDS(441,209,13,[441])",Open@e3bf810,open,,,
+N54583,"SDS(441,209,13,[441])",Open@e3bf810,none,"C33 (Ma's lemma at its edge, p ∤ λc); MaEdgeRows; also C32 (field descent, one step at an odd prime); FieldDescentRows",SignedDifferenceSets.MaEdgeRows.n54583_not_hasSDS,
 N54584,"SDS(441,209,46,[3,147])",Open@e3bf810,none,"A7 (C10, C16); CosetRows Part01",SignedDifferenceSets.CosetRows.n54584_not_hasSDS,Z28
 N54585,"SDS(441,209,46,[7,63])",Open@e3bf810,open,,,
 N54586,"SDS(441,209,46,[21,21])",Open@e3bf810,open,,,
@@ -54605,7 +54605,7 @@ N54603,"SDS(441,224,26,[441])",Open@e3bf810,none,He-Wu Thm 3.2: n=198; p=2; m=3;
 N54604,"SDS(441,224,28,[3,147])",Open@e3bf810,open,,,
 N54605,"SDS(441,224,28,[7,63])",Open@e3bf810,open,,,
 N54606,"SDS(441,224,28,[21,21])",Open@e3bf810,open,,,
-N54607,"SDS(441,224,28,[441])",Open@e3bf810,open,,,
+N54607,"SDS(441,224,28,[441])",Open@e3bf810,none,"C32 (field descent, one step at an odd prime); FieldDescentRows",SignedDifferenceSets.fieldDescentRows_not_hasSDS,
 N54608,"SDS(441,224,52,[3,147])",Open@e3bf810,open,,,
 N54609,"SDS(441,224,52,[7,63])",Open@e3bf810,open,,,
 N54610,"SDS(441,224,52,[21,21])",Open@e3bf810,open,,,
@@ -54642,10 +54642,10 @@ N54640,"SDS(441,240,14,[3,147])",Open@e3bf810,none,He-Wu Thm 3.2: n=226; p=2; m=
 N54641,"SDS(441,240,14,[7,63])",Open@e3bf810,none,He-Wu Thm 3.2: n=226; p=2; m=3; j=1,,
 N54642,"SDS(441,240,14,[21,21])",Open@e3bf810,none,He-Wu Thm 3.2: n=226; p=2; m=3; j=1,,
 N54643,"SDS(441,240,14,[441])",Open@e3bf810,none,He-Wu Thm 3.2: n=226; p=2; m=3; j=1,,
-N54644,"SDS(441,240,44,[3,147])",Open@e3bf810,open,,,
+N54644,"SDS(441,240,44,[3,147])",Open@e3bf810,none,"C33 (Ma's lemma at its edge, p ∤ λc); MaEdgeRows",SignedDifferenceSets.MaEdgeRows.n54644_not_hasSDS,
 N54645,"SDS(441,240,44,[7,63])",Open@e3bf810,open,,,
 N54646,"SDS(441,240,44,[21,21])",Open@e3bf810,open,,,
-N54647,"SDS(441,240,44,[441])",Open@e3bf810,open,,,
+N54647,"SDS(441,240,44,[441])",Open@e3bf810,none,"C33 (Ma's lemma at its edge, p ∤ λc); MaEdgeRows; also C32 (field descent, one step at an odd prime); FieldDescentRows",SignedDifferenceSets.MaEdgeRows.n54647_not_hasSDS,
 N54648,"SDS(441,256,24,[3,147])",Open@e3bf810,none,He-Wu Thm 3.2: n=232; p=2; m=3; j=1,,
 N54649,"SDS(441,256,24,[7,63])",Open@e3bf810,none,He-Wu Thm 3.2: n=232; p=2; m=3; j=1,,
 N54650,"SDS(441,256,24,[21,21])",Open@e3bf810,none,He-Wu Thm 3.2: n=232; p=2; m=3; j=1,,
@@ -54682,10 +54682,10 @@ N54680,"SDS(441,265,54,[3,147])",Open@e3bf810,open,,,
 N54681,"SDS(441,265,54,[7,63])",Open@e3bf810,open,,,
 N54682,"SDS(441,265,54,[21,21])",Open@e3bf810,open,,,
 N54683,"SDS(441,265,54,[441])",Open@e3bf810,none,C27; UnramifiedRows,SignedDifferenceSets.unramifiedRows4_not_hasSDS,Z30
-N54684,"SDS(441,265,69,[3,147])",Open@e3bf810,open,,,
+N54684,"SDS(441,265,69,[3,147])",Open@e3bf810,none,"C33 (Ma's lemma at its edge, p ∤ λc); MaEdgeRows",SignedDifferenceSets.MaEdgeRows.n54684_not_hasSDS,
 N54685,"SDS(441,265,69,[7,63])",Open@e3bf810,open,,,
 N54686,"SDS(441,265,69,[21,21])",Open@e3bf810,open,,,
-N54687,"SDS(441,265,69,[441])",Open@e3bf810,open,,,
+N54687,"SDS(441,265,69,[441])",Open@e3bf810,none,"C33 (Ma's lemma at its edge, p ∤ λc); MaEdgeRows; also C32 (field descent, one step at an odd prime); FieldDescentRows",SignedDifferenceSets.MaEdgeRows.n54687_not_hasSDS,
 N54688,"SDS(441,276,2,[3,147])",Open@e3bf810,none,He-Wu Thm 3.2: n=274; p=2; m=3; j=1,,
 N54689,"SDS(441,276,2,[7,63])",Open@e3bf810,none,He-Wu Thm 3.2: n=274; p=2; m=3; j=1,,
 N54690,"SDS(441,276,2,[21,21])",Open@e3bf810,none,He-Wu Thm 3.2: n=274; p=2; m=3; j=1,,
@@ -54766,10 +54766,10 @@ N54764,"SDS(441,289,84,[3,147])",Open@e3bf810,none,He-Wu Thm 3.2: n=205; p=5; m=
 N54765,"SDS(441,289,84,[7,63])",Open@e3bf810,none,He-Wu Thm 3.2: n=205; p=5; m=3; j=1,,
 N54766,"SDS(441,289,84,[21,21])",Open@e3bf810,none,He-Wu Thm 3.2: n=205; p=5; m=3; j=1,,
 N54767,"SDS(441,289,84,[441])",Open@e3bf810,none,He-Wu Thm 3.2: n=205; p=5; m=3; j=1,,
-N54768,"SDS(441,289,93,[3,147])",Open@e3bf810,open,,,
+N54768,"SDS(441,289,93,[3,147])",Open@e3bf810,none,"C33 (Ma's lemma at its edge, p ∤ λc); MaEdgeRows",SignedDifferenceSets.MaEdgeRows.n54768_not_hasSDS,
 N54769,"SDS(441,289,93,[7,63])",Open@e3bf810,open,,,
 N54770,"SDS(441,289,93,[21,21])",Open@e3bf810,open,,,
-N54771,"SDS(441,289,93,[441])",Open@e3bf810,open,,,
+N54771,"SDS(441,289,93,[441])",Open@e3bf810,none,"C33 (Ma's lemma at its edge, p ∤ λc); MaEdgeRows; also C32 (field descent, one step at an odd prime); FieldDescentRows",SignedDifferenceSets.MaEdgeRows.n54771_not_hasSDS,
 N54772,"SDS(441,289,127,[3,147])",Open@e3bf810,none,He-Wu Thm 3.2: n=162; p=2; m=3; j=1,,
 N54773,"SDS(441,289,127,[7,63])",Open@e3bf810,none,He-Wu Thm 3.2: n=162; p=2; m=3; j=1,,
 N54774,"SDS(441,289,127,[21,21])",Open@e3bf810,none,He-Wu Thm 3.2: n=162; p=2; m=3; j=1,,
@@ -54810,10 +54810,10 @@ N54808,"SDS(441,324,92,[3,147])",Open@e3bf810,none,He-Wu Thm 3.2: n=232; p=2; m=
 N54809,"SDS(441,324,92,[7,63])",Open@e3bf810,none,He-Wu Thm 3.2: n=232; p=2; m=3; j=1,,
 N54810,"SDS(441,324,92,[21,21])",Open@e3bf810,none,He-Wu Thm 3.2: n=232; p=2; m=3; j=1,,
 N54811,"SDS(441,324,92,[441])",Open@e3bf810,none,He-Wu Thm 3.2: n=232; p=2; m=3; j=1,,
-N54812,"SDS(441,324,128,[3,147])",Open@e3bf810,open,,,
+N54812,"SDS(441,324,128,[3,147])",Open@e3bf810,none,"C33 (Ma's lemma at its edge, p ∤ λc); MaEdgeRows",SignedDifferenceSets.MaEdgeRows.n54812_not_hasSDS,
 N54813,"SDS(441,324,128,[7,63])",Open@e3bf810,open,,,
 N54814,"SDS(441,324,128,[21,21])",Open@e3bf810,open,,,
-N54815,"SDS(441,324,128,[441])",Open@e3bf810,open,,,
+N54815,"SDS(441,324,128,[441])",Open@e3bf810,none,"C33 (Ma's lemma at its edge, p ∤ λc); MaEdgeRows; also C32 (field descent, one step at an odd prime); FieldDescentRows",SignedDifferenceSets.MaEdgeRows.n54815_not_hasSDS,
 N54816,"SDS(441,324,180,[3,147])",Open@e3bf810,open,,,
 N54817,"SDS(441,324,180,[7,63])",Open@e3bf810,none,C21; MaRows part05,SignedDifferenceSets.MaRows.not_hasSDS_of_mem_part05,Z24
 N54818,"SDS(441,324,180,[21,21])",Open@e3bf810,open,,,
@@ -54882,10 +54882,10 @@ N54880,"SDS(441,356,68,[3,147])",Open@e3bf810,none,He-Wu Thm 3.2: n=288; p=2; m=
 N54881,"SDS(441,356,68,[7,63])",Open@e3bf810,none,He-Wu Thm 3.2: n=288; p=2; m=3; j=1,,
 N54882,"SDS(441,356,68,[21,21])",Open@e3bf810,none,He-Wu Thm 3.2: n=288; p=2; m=3; j=1,,
 N54883,"SDS(441,356,68,[441])",Open@e3bf810,none,He-Wu Thm 3.2: n=288; p=2; m=3; j=1,,
-N54884,"SDS(441,356,160,[3,147])",Open@e3bf810,open,,,
+N54884,"SDS(441,356,160,[3,147])",Open@e3bf810,none,"C33 (Ma's lemma at its edge, p ∤ λc); MaEdgeRows",SignedDifferenceSets.MaEdgeRows.n54884_not_hasSDS,
 N54885,"SDS(441,356,160,[7,63])",Open@e3bf810,open,,,
 N54886,"SDS(441,356,160,[21,21])",Open@e3bf810,open,,,
-N54887,"SDS(441,356,160,[441])",Open@e3bf810,open,,,
+N54887,"SDS(441,356,160,[441])",Open@e3bf810,none,"C33 (Ma's lemma at its edge, p ∤ λc); MaEdgeRows; also C32 (field descent, one step at an odd prime); FieldDescentRows",SignedDifferenceSets.MaEdgeRows.n54887_not_hasSDS,
 N54888,"SDS(441,356,212,[3,147])",Open@e3bf810,none,"A7 (C10, C10 (I13)); CosetRows Part40",SignedDifferenceSets.CosetRows.n54888_not_hasSDS,Z28
 N54889,"SDS(441,356,212,[7,63])",Open@e3bf810,none,C21; MaRows part05,SignedDifferenceSets.MaRows.not_hasSDS_of_mem_part05,Z24
 N54890,"SDS(441,356,212,[21,21])",Open@e3bf810,open,,,
@@ -54946,10 +54946,10 @@ N54944,"SDS(441,364,13,[3,147])",Open@e3bf810,none,He-Wu Thm 3.2: n=351; p=3; m=
 N54945,"SDS(441,364,13,[7,63])",Open@e3bf810,none,He-Wu Thm 3.2: n=351; p=3; m=7; j=3,,
 N54946,"SDS(441,364,13,[21,21])",Open@e3bf810,none,He-Wu Thm 3.2: n=351; p=3; m=7; j=3,,
 N54947,"SDS(441,364,13,[441])",Open@e3bf810,none,He-Wu Thm 3.2: n=351; p=3; m=7; j=3,,
-N54948,"SDS(441,364,21,[3,147])",Open@e3bf810,open,,,
+N54948,"SDS(441,364,21,[3,147])",Open@e3bf810,none,"C32 (field descent, one step at an odd prime); FieldDescentRows",SignedDifferenceSets.fieldDescentRows_not_hasSDS,
 N54949,"SDS(441,364,21,[7,63])",Open@e3bf810,open,,,
 N54950,"SDS(441,364,21,[21,21])",Open@e3bf810,open,,,
-N54951,"SDS(441,364,21,[441])",Open@e3bf810,open,,,
+N54951,"SDS(441,364,21,[441])",Open@e3bf810,none,"C32 (field descent, one step at an odd prime); FieldDescentRows",SignedDifferenceSets.fieldDescentRows_not_hasSDS,
 N54952,"SDS(441,364,33,[3,147])",Open@e3bf810,none,"A7 (C10, C16); CosetRows Part01",SignedDifferenceSets.CosetRows.n54952_not_hasSDS,Z28
 N54953,"SDS(441,364,33,[7,63])",Open@e3bf810,open,,,
 N54954,"SDS(441,364,33,[21,21])",Open@e3bf810,open,,,
@@ -54986,7 +54986,7 @@ N54984,"SDS(441,385,171,[3,147])",Open@e3bf810,none,He-Wu Thm 3.2: n=214; p=2; m
 N54985,"SDS(441,385,171,[7,63])",Open@e3bf810,none,He-Wu Thm 3.2: n=214; p=2; m=3; j=1,,
 N54986,"SDS(441,385,171,[21,21])",Open@e3bf810,none,He-Wu Thm 3.2: n=214; p=2; m=3; j=1,,
 N54987,"SDS(441,385,171,[441])",Open@e3bf810,none,He-Wu Thm 3.2: n=214; p=2; m=3; j=1,,
-N54988,"SDS(441,396,9,[3,147])",Open@e3bf810,open,,,
+N54988,"SDS(441,396,9,[3,147])",Open@e3bf810,none,"C32 (field descent, one step at an odd prime); FieldDescentRows",SignedDifferenceSets.fieldDescentRows_not_hasSDS,
 N54989,"SDS(441,396,9,[7,63])",Open@e3bf810,none,C21; MaRows part05,SignedDifferenceSets.MaRows.not_hasSDS_of_mem_part05,Z24
 N54990,"SDS(441,396,9,[21,21])",Open@e3bf810,open,,,
 N54991,"SDS(441,396,9,[441])",Open@e3bf810,none,C21; MaRows part05,SignedDifferenceSets.MaRows.not_hasSDS_of_mem_part05,Z24
@@ -55022,7 +55022,7 @@ N55020,"SDS(441,401,7,[3,147])",Open@e3bf810,none,He-Wu Thm 3.2: n=394; p=2; m=3
 N55021,"SDS(441,401,7,[7,63])",Open@e3bf810,none,He-Wu Thm 3.2: n=394; p=2; m=3; j=1,,
 N55022,"SDS(441,401,7,[21,21])",Open@e3bf810,none,He-Wu Thm 3.2: n=394; p=2; m=3; j=1,,
 N55023,"SDS(441,401,7,[441])",Open@e3bf810,none,He-Wu Thm 3.2: n=394; p=2; m=3; j=1,,
-N55024,"SDS(441,401,14,[3,147])",Open@e3bf810,open,,,
+N55024,"SDS(441,401,14,[3,147])",Open@e3bf810,none,"C32 (field descent, one step at an odd prime); FieldDescentRows",SignedDifferenceSets.fieldDescentRows_not_hasSDS,
 N55025,"SDS(441,401,14,[7,63])",Open@e3bf810,none,C21; MaRows part06,SignedDifferenceSets.MaRows.not_hasSDS_of_mem_part06,Z24
 N55026,"SDS(441,401,14,[21,21])",Open@e3bf810,open,,,
 N55027,"SDS(441,401,14,[441])",Open@e3bf810,none,C21; MaRows part06,SignedDifferenceSets.MaRows.not_hasSDS_of_mem_part06,Z24
@@ -55054,10 +55054,10 @@ N55052,"SDS(441,401,176,[3,147])",Open@e3bf810,none,C5; SelfConjugacyRows part10
 N55053,"SDS(441,401,176,[7,63])",Open@e3bf810,none,C5; SelfConjugacyRows part10,SignedDifferenceSets.SelfConjugacyRows.part10_not_hasSDS,Z8
 N55054,"SDS(441,401,176,[21,21])",Open@e3bf810,none,C5; SelfConjugacyRows part10,SignedDifferenceSets.SelfConjugacyRows.part10_not_hasSDS,Z8
 N55055,"SDS(441,401,176,[441])",Open@e3bf810,none,C5; SelfConjugacyRows part10,SignedDifferenceSets.SelfConjugacyRows.part10_not_hasSDS,Z8
-N55056,"SDS(441,401,205,[3,147])",Open@e3bf810,open,,,
+N55056,"SDS(441,401,205,[3,147])",Open@e3bf810,none,"C33 (Ma's lemma at its edge, p ∤ λc); MaEdgeRows",SignedDifferenceSets.MaEdgeRows.n55056_not_hasSDS,
 N55057,"SDS(441,401,205,[7,63])",Open@e3bf810,open,,,
 N55058,"SDS(441,401,205,[21,21])",Open@e3bf810,open,,,
-N55059,"SDS(441,401,205,[441])",Open@e3bf810,open,,,
+N55059,"SDS(441,401,205,[441])",Open@e3bf810,none,"C33 (Ma's lemma at its edge, p ∤ λc); MaEdgeRows; also C32 (field descent, one step at an odd prime); FieldDescentRows",SignedDifferenceSets.MaEdgeRows.n55059_not_hasSDS,
 N55060,"SDS(441,401,292,[3,147])",Open@e3bf810,none,"A7 (C10, C16); CosetRows Part01",SignedDifferenceSets.CosetRows.n55060_not_hasSDS,Z28
 N55061,"SDS(441,401,292,[7,63])",Open@e3bf810,open,,,
 N55062,"SDS(441,401,292,[21,21])",Open@e3bf810,open,,,
@@ -56205,7 +56205,7 @@ N56203,"SDS(448,148,4,[2,224])",Open@e3bf810,open,,,
 N56204,"SDS(448,148,4,[4,4,28])",Open@e3bf810,none,C5; SelfConjugacyRows part10,SignedDifferenceSets.SelfConjugacyRows.part10_not_hasSDS,Z8
 N56205,"SDS(448,148,4,[4,112])",Open@e3bf810,none,C13; SelfConjugacyRows part10,SignedDifferenceSets.SelfConjugacyRows.part10_not_hasSDS,Z9
 N56206,"SDS(448,148,4,[8,56])",Open@e3bf810,none,C13; SelfConjugacyRows part10,SignedDifferenceSets.SelfConjugacyRows.part10_not_hasSDS,Z9
-N56207,"SDS(448,148,4,[448])",Open@e3bf810,open,,,
+N56207,"SDS(448,148,4,[448])",Open@e3bf810,none,C35 (field descent along a chain); FieldDescentChainRows,SignedDifferenceSets.fieldDescentChainRows_not_hasSDS,
 N56208,"SDS(448,153,48,[2,2,2,2,2,14])",Open@e3bf810,none,He-Wu Thm 3.2: n=105; p=3; m=2; j=1,,
 N56209,"SDS(448,153,48,[2,2,2,2,28])",Open@e3bf810,none,He-Wu Thm 3.2: n=105; p=3; m=2; j=1,,
 N56210,"SDS(448,153,48,[2,2,2,56])",Open@e3bf810,none,He-Wu Thm 3.2: n=105; p=3; m=2; j=1,,
@@ -56348,7 +56348,7 @@ N56346,"SDS(448,216,72,[2,224])",Open@e3bf810,open,,,
 N56347,"SDS(448,216,72,[4,4,28])",Open@e3bf810,none,C5; SelfConjugacyRows part10,SignedDifferenceSets.SelfConjugacyRows.part10_not_hasSDS,Z8
 N56348,"SDS(448,216,72,[4,112])",Open@e3bf810,none,C13; SelfConjugacyRows part10,SignedDifferenceSets.SelfConjugacyRows.part10_not_hasSDS,Z9
 N56349,"SDS(448,216,72,[8,56])",Open@e3bf810,none,C13; SelfConjugacyRows part10,SignedDifferenceSets.SelfConjugacyRows.part10_not_hasSDS,Z9
-N56350,"SDS(448,216,72,[448])",Open@e3bf810,open,,,
+N56350,"SDS(448,216,72,[448])",Open@e3bf810,none,C35 (field descent along a chain); FieldDescentChainRows,SignedDifferenceSets.fieldDescentChainRows_not_hasSDS,
 N56351,"SDS(448,229,68,[2,2,2,2,2,14])",Open@e3bf810,none,He-Wu Thm 3.2: n=161; p=7; m=2; j=1,,
 N56352,"SDS(448,229,68,[2,2,2,2,28])",Open@e3bf810,none,He-Wu Thm 3.2: n=161; p=7; m=2; j=1,,
 N56353,"SDS(448,229,68,[2,2,2,56])",Open@e3bf810,none,He-Wu Thm 3.2: n=161; p=7; m=2; j=1,,
@@ -56414,7 +56414,7 @@ N56412,"SDS(448,244,100,[2,224])",Open@e3bf810,open,,,
 N56413,"SDS(448,244,100,[4,4,28])",Open@e3bf810,none,C5; SelfConjugacyRows part10,SignedDifferenceSets.SelfConjugacyRows.part10_not_hasSDS,Z8
 N56414,"SDS(448,244,100,[4,112])",Open@e3bf810,none,C14; BoxRows part03,SignedDifferenceSets.BoxRows.part03_not_hasSDS,Z10
 N56415,"SDS(448,244,100,[8,56])",Open@e3bf810,none,C14; BoxRows part03,SignedDifferenceSets.BoxRows.part03_not_hasSDS,Z10
-N56416,"SDS(448,244,100,[448])",Open@e3bf810,open,,,
+N56416,"SDS(448,244,100,[448])",Open@e3bf810,none,C35 (field descent along a chain); FieldDescentChainRows,SignedDifferenceSets.fieldDescentChainRows_not_hasSDS,
 N56417,"SDS(448,249,56,[2,2,2,2,2,14])",Open@e3bf810,none,He-Wu Thm 3.2: n=193; p=193; m=2; j=1,,
 N56418,"SDS(448,249,56,[2,2,2,2,28])",Open@e3bf810,none,He-Wu Thm 3.2: n=193; p=193; m=2; j=1,,
 N56419,"SDS(448,249,56,[2,2,2,56])",Open@e3bf810,none,He-Wu Thm 3.2: n=193; p=193; m=2; j=1,,
@@ -56513,7 +56513,7 @@ N56511,"SDS(448,268,124,[2,224])",Open@e3bf810,open,,,
 N56512,"SDS(448,268,124,[4,4,28])",Open@e3bf810,none,C5; SelfConjugacyRows part10,SignedDifferenceSets.SelfConjugacyRows.part10_not_hasSDS,Z8
 N56513,"SDS(448,268,124,[4,112])",Open@e3bf810,none,C14; BoxRows part03,SignedDifferenceSets.BoxRows.part03_not_hasSDS,Z10
 N56514,"SDS(448,268,124,[8,56])",Open@e3bf810,none,C14; BoxRows part03,SignedDifferenceSets.BoxRows.part03_not_hasSDS,Z10
-N56515,"SDS(448,268,124,[448])",Open@e3bf810,open,,,
+N56515,"SDS(448,268,124,[448])",Open@e3bf810,none,C35 (field descent along a chain); FieldDescentChainRows,SignedDifferenceSets.fieldDescentChainRows_not_hasSDS,
 N56516,"SDS(448,270,42,[2,2,2,2,2,14])",Open@e3bf810,none,He-Wu Thm 3.2: n=228; p=3; m=2; j=1,,
 N56517,"SDS(448,270,42,[2,2,2,2,28])",Open@e3bf810,none,He-Wu Thm 3.2: n=228; p=3; m=2; j=1,,
 N56518,"SDS(448,270,42,[2,2,2,56])",Open@e3bf810,none,He-Wu Thm 3.2: n=228; p=3; m=2; j=1,,
@@ -56645,7 +56645,7 @@ N56643,"SDS(448,304,160,[2,224])",Open@e3bf810,open,,,
 N56644,"SDS(448,304,160,[4,4,28])",Open@e3bf810,none,C5; SelfConjugacyRows part10,SignedDifferenceSets.SelfConjugacyRows.part10_not_hasSDS,Z8
 N56645,"SDS(448,304,160,[4,112])",Open@e3bf810,none,C13; SelfConjugacyRows part10,SignedDifferenceSets.SelfConjugacyRows.part10_not_hasSDS,Z9
 N56646,"SDS(448,304,160,[8,56])",Open@e3bf810,none,C13; SelfConjugacyRows part10,SignedDifferenceSets.SelfConjugacyRows.part10_not_hasSDS,Z9
-N56647,"SDS(448,304,160,[448])",Open@e3bf810,open,,,
+N56647,"SDS(448,304,160,[448])",Open@e3bf810,none,C35 (field descent along a chain); FieldDescentChainRows,SignedDifferenceSets.fieldDescentChainRows_not_hasSDS,
 N56648,"SDS(448,307,194,[2,2,2,2,2,14])",Open@e3bf810,none,He-Wu Thm 3.2: n=113; p=113; m=2; j=1,,
 N56649,"SDS(448,307,194,[2,2,2,2,28])",Open@e3bf810,none,He-Wu Thm 3.2: n=113; p=113; m=2; j=1,,
 N56650,"SDS(448,307,194,[2,2,2,56])",Open@e3bf810,none,He-Wu Thm 3.2: n=113; p=113; m=2; j=1,,
@@ -56722,7 +56722,7 @@ N56720,"SDS(448,328,4,[2,224])",Open@e3bf810,none,C13; SelfConjugacyRows part10,
 N56721,"SDS(448,328,4,[4,4,28])",Open@e3bf810,none,C5; SelfConjugacyRows part10,SignedDifferenceSets.SelfConjugacyRows.part10_not_hasSDS,Z8
 N56722,"SDS(448,328,4,[4,112])",Open@e3bf810,none,C5; SelfConjugacyRows part10,SignedDifferenceSets.SelfConjugacyRows.part10_not_hasSDS,Z8
 N56723,"SDS(448,328,4,[8,56])",Open@e3bf810,none,C5; SelfConjugacyRows part10,SignedDifferenceSets.SelfConjugacyRows.part10_not_hasSDS,Z8
-N56724,"SDS(448,328,4,[448])",Open@e3bf810,open,,,
+N56724,"SDS(448,328,4,[448])",Open@e3bf810,none,C35 (field descent along a chain); FieldDescentChainRows,SignedDifferenceSets.fieldDescentChainRows_not_hasSDS,
 N56725,"SDS(448,331,2,[2,2,2,2,2,14])",Open@e3bf810,none,He-Wu Thm 3.2: n=329; p=7; m=2; j=1,,
 N56726,"SDS(448,331,2,[2,2,2,2,28])",Open@e3bf810,none,He-Wu Thm 3.2: n=329; p=7; m=2; j=1,,
 N56727,"SDS(448,331,2,[2,2,2,56])",Open@e3bf810,none,He-Wu Thm 3.2: n=329; p=7; m=2; j=1,,
@@ -56986,7 +56986,7 @@ N56984,"SDS(448,412,12,[2,224])",Open@e3bf810,open,,,
 N56985,"SDS(448,412,12,[4,4,28])",Open@e3bf810,none,C7; MarkedCountsRows part03,SignedDifferenceSets.MarkedCountsRows.part03_not_hasSDS,Z16
 N56986,"SDS(448,412,12,[4,112])",Open@e3bf810,open,,,
 N56987,"SDS(448,412,12,[8,56])",Open@e3bf810,open,,,
-N56988,"SDS(448,412,12,[448])",Open@e3bf810,open,,,
+N56988,"SDS(448,412,12,[448])",Open@e3bf810,none,C35 (field descent along a chain); FieldDescentChainRows,SignedDifferenceSets.fieldDescentChainRows_not_hasSDS,
 N56989,"SDS(448,412,312,[2,2,2,2,2,14])",Open@e3bf810,none,C5; SelfConjugacyRows part10,SignedDifferenceSets.SelfConjugacyRows.part10_not_hasSDS,Z8
 N56990,"SDS(448,412,312,[2,2,2,2,28])",Open@e3bf810,none,C5; SelfConjugacyRows part10,SignedDifferenceSets.SelfConjugacyRows.part10_not_hasSDS,Z8
 N56991,"SDS(448,412,312,[2,2,2,56])",Open@e3bf810,none,C13; SelfConjugacyRows part11,SignedDifferenceSets.SelfConjugacyRows.part11_not_hasSDS,Z9
@@ -61080,7 +61080,7 @@ N61078,"SDS(464,436,240,[2,2,2,58])",Open@e3bf810,open,,,
 N61079,"SDS(464,436,240,[2,2,116])",Open@e3bf810,open,,,
 N61080,"SDS(464,436,240,[2,232])",Open@e3bf810,open,,,
 N61081,"SDS(464,436,240,[4,116])",Open@e3bf810,open,,,
-N61082,"SDS(464,436,240,[464])",Open@e3bf810,open,,,
+N61082,"SDS(464,436,240,[464])",Open@e3bf810,none,"C26, halved row N13357 by I5 (OrbitRows); HalfRows OrbitCited",SignedDifferenceSets.HalfRows.n61082_not_hasSDS,
 N61083,"SDS(464,437,404,[2,2,2,58])",Open@e3bf810,none,He-Wu Thm 3.2: n=33; p=3; m=2; j=1,,
 N61084,"SDS(464,437,404,[2,2,116])",Open@e3bf810,none,He-Wu Thm 3.2: n=33; p=3; m=2; j=1,,
 N61085,"SDS(464,437,404,[2,232])",Open@e3bf810,none,He-Wu Thm 3.2: n=33; p=3; m=2; j=1,,
@@ -61730,10 +61730,10 @@ N61728,"SDS(468,186,14,[2,234])",Open@e3bf810,none,He-Wu Thm 3.2: n=172; p=43; m
 N61729,"SDS(468,186,14,[3,156])",Open@e3bf810,none,He-Wu Thm 3.2: n=172; p=43; m=2; j=1,,
 N61730,"SDS(468,186,14,[6,78])",Open@e3bf810,none,He-Wu Thm 3.2: n=172; p=43; m=2; j=1,,
 N61731,"SDS(468,186,14,[468])",Open@e3bf810,none,He-Wu Thm 3.2: n=172; p=43; m=2; j=1,,
-N61732,"SDS(468,188,44,[2,234])",Open@e3bf810,open,,,
+N61732,"SDS(468,188,44,[2,234])",Open@e3bf810,none,"C33 (Ma's lemma at its edge, p ∤ λc); MaEdgeRows",SignedDifferenceSets.MaEdgeRows.n61732_not_hasSDS,
 N61733,"SDS(468,188,44,[3,156])",Open@e3bf810,open,,,
 N61734,"SDS(468,188,44,[6,78])",Open@e3bf810,open,,,
-N61735,"SDS(468,188,44,[468])",Open@e3bf810,open,,,
+N61735,"SDS(468,188,44,[468])",Open@e3bf810,none,"C33 (Ma's lemma at its edge, p ∤ λc); MaEdgeRows",SignedDifferenceSets.MaEdgeRows.n61735_not_hasSDS,
 N61736,"SDS(468,204,60,[2,234])",Open@e3bf810,open,,,
 N61737,"SDS(468,204,60,[3,156])",Open@e3bf810,open,,,
 N61738,"SDS(468,204,60,[6,78])",Open@e3bf810,open,,,
@@ -61769,7 +61769,7 @@ N61767,"SDS(468,232,72,[468])",Open@e3bf810,none,He-Wu Thm 3.2: n=160; p=2; m=3;
 N61768,"SDS(468,233,8,[2,234])",Open@e3bf810,none,C13; SelfConjugacyRows part11,SignedDifferenceSets.SelfConjugacyRows.part11_not_hasSDS,Z9
 N61769,"SDS(468,233,8,[3,156])",Open@e3bf810,open,,,
 N61770,"SDS(468,233,8,[6,78])",Open@e3bf810,none,C13; SelfConjugacyRows part11,SignedDifferenceSets.SelfConjugacyRows.part11_not_hasSDS,Z9
-N61771,"SDS(468,233,8,[468])",Open@e3bf810,open,,,
+N61771,"SDS(468,233,8,[468])",Open@e3bf810,none,"C33 (Ma's lemma at its edge, p ∤ λc); MaEdgeRows",SignedDifferenceSets.MaEdgeRows.n61771_not_hasSDS,
 N61772,"SDS(468,239,86,[2,234])",Open@e3bf810,none,He-Wu Thm 3.2: n=153; p=17; m=2; j=1,,
 N61773,"SDS(468,239,86,[3,156])",Open@e3bf810,none,He-Wu Thm 3.2: n=153; p=17; m=2; j=1,,
 N61774,"SDS(468,239,86,[6,78])",Open@e3bf810,none,He-Wu Thm 3.2: n=153; p=17; m=2; j=1,,
@@ -61818,10 +61818,10 @@ N61816,"SDS(468,285,68,[2,234])",Open@e3bf810,none,He-Wu Thm 3.2: n=217; p=7; m=
 N61817,"SDS(468,285,68,[3,156])",Open@e3bf810,none,He-Wu Thm 3.2: n=217; p=7; m=2; j=1,,
 N61818,"SDS(468,285,68,[6,78])",Open@e3bf810,none,He-Wu Thm 3.2: n=217; p=7; m=2; j=1,,
 N61819,"SDS(468,285,68,[468])",Open@e3bf810,none,He-Wu Thm 3.2: n=217; p=7; m=2; j=1,,
-N61820,"SDS(468,287,62,[2,234])",Open@e3bf810,open,,,
+N61820,"SDS(468,287,62,[2,234])",Open@e3bf810,none,"C33 (Ma's lemma at its edge, p ∤ λc); MaEdgeRows",SignedDifferenceSets.MaEdgeRows.n61820_not_hasSDS,
 N61821,"SDS(468,287,62,[3,156])",Open@e3bf810,open,,,
 N61822,"SDS(468,287,62,[6,78])",Open@e3bf810,open,,,
-N61823,"SDS(468,287,62,[468])",Open@e3bf810,open,,,
+N61823,"SDS(468,287,62,[468])",Open@e3bf810,none,"C33 (Ma's lemma at its edge, p ∤ λc); MaEdgeRows",SignedDifferenceSets.MaEdgeRows.n61823_not_hasSDS,
 N61824,"SDS(468,291,2,[2,234])",Open@e3bf810,none,C5; SelfConjugacyRows part11,SignedDifferenceSets.SelfConjugacyRows.part11_not_hasSDS,Z8
 N61825,"SDS(468,291,2,[3,156])",Open@e3bf810,none,C5; SelfConjugacyRows part11,SignedDifferenceSets.SelfConjugacyRows.part11_not_hasSDS,Z8
 N61826,"SDS(468,291,2,[6,78])",Open@e3bf810,none,C5; SelfConjugacyRows part11,SignedDifferenceSets.SelfConjugacyRows.part11_not_hasSDS,Z8
@@ -61910,10 +61910,10 @@ N61908,"SDS(468,366,50,[2,234])",Open@e3bf810,none,He-Wu Thm 3.2: n=316; p=79; m
 N61909,"SDS(468,366,50,[3,156])",Open@e3bf810,none,He-Wu Thm 3.2: n=316; p=79; m=2; j=1,,
 N61910,"SDS(468,366,50,[6,78])",Open@e3bf810,none,He-Wu Thm 3.2: n=316; p=79; m=2; j=1,,
 N61911,"SDS(468,366,50,[468])",Open@e3bf810,none,He-Wu Thm 3.2: n=316; p=79; m=2; j=1,,
-N61912,"SDS(468,368,224,[2,234])",Open@e3bf810,open,,,
+N61912,"SDS(468,368,224,[2,234])",Open@e3bf810,none,"C33 (Ma's lemma at its edge, p ∤ λc); MaEdgeRows",SignedDifferenceSets.MaEdgeRows.n61912_not_hasSDS,
 N61913,"SDS(468,368,224,[3,156])",Open@e3bf810,open,,,
 N61914,"SDS(468,368,224,[6,78])",Open@e3bf810,open,,,
-N61915,"SDS(468,368,224,[468])",Open@e3bf810,open,,,
+N61915,"SDS(468,368,224,[468])",Open@e3bf810,none,"C33 (Ma's lemma at its edge, p ∤ λc); MaEdgeRows",SignedDifferenceSets.MaEdgeRows.n61915_not_hasSDS,
 N61916,"SDS(468,371,10,[2,234])",Open@e3bf810,none,C5; SelfConjugacyRows part11,SignedDifferenceSets.SelfConjugacyRows.part11_not_hasSDS,Z8
 N61917,"SDS(468,371,10,[3,156])",Open@e3bf810,none,C14; BoxRows part03,SignedDifferenceSets.BoxRows.part03_not_hasSDS,Z10
 N61918,"SDS(468,371,10,[6,78])",Open@e3bf810,none,C5; SelfConjugacyRows part11,SignedDifferenceSets.SelfConjugacyRows.part11_not_hasSDS,Z8
@@ -61986,10 +61986,10 @@ N61984,"SDS(468,411,74,[2,234])",Open@e3bf810,none,He-Wu Thm 3.2: n=337; p=337; 
 N61985,"SDS(468,411,74,[3,156])",Open@e3bf810,none,He-Wu Thm 3.2: n=337; p=337; m=2; j=1,,
 N61986,"SDS(468,411,74,[6,78])",Open@e3bf810,none,He-Wu Thm 3.2: n=337; p=337; m=2; j=1,,
 N61987,"SDS(468,411,74,[468])",Open@e3bf810,none,He-Wu Thm 3.2: n=337; p=337; m=2; j=1,,
-N61988,"SDS(468,413,188,[2,234])",Open@e3bf810,open,,,
+N61988,"SDS(468,413,188,[2,234])",Open@e3bf810,none,"C33 (Ma's lemma at its edge, p ∤ λc); MaEdgeRows",SignedDifferenceSets.MaEdgeRows.n61988_not_hasSDS,
 N61989,"SDS(468,413,188,[3,156])",Open@e3bf810,open,,,
 N61990,"SDS(468,413,188,[6,78])",Open@e3bf810,open,,,
-N61991,"SDS(468,413,188,[468])",Open@e3bf810,open,,,
+N61991,"SDS(468,413,188,[468])",Open@e3bf810,none,"C33 (Ma's lemma at its edge, p ∤ λc); MaEdgeRows",SignedDifferenceSets.MaEdgeRows.n61991_not_hasSDS,
 N61992,"SDS(468,417,56,[2,234])",Open@e3bf810,none,C5; SelfConjugacyRows part11,SignedDifferenceSets.SelfConjugacyRows.part11_not_hasSDS,Z8
 N61993,"SDS(468,417,56,[3,156])",Open@e3bf810,open,,,
 N61994,"SDS(468,417,56,[6,78])",Open@e3bf810,none,C5; SelfConjugacyRows part11,SignedDifferenceSets.SelfConjugacyRows.part11_not_hasSDS,Z8
@@ -63232,7 +63232,7 @@ N63230,"SDS(475,115,15,[475])",Open@e3bf810,open,,,
 N63231,"SDS(475,117,18,[5,95])",Open@e3bf810,open,,,
 N63232,"SDS(475,117,18,[475])",Open@e3bf810,open,,,
 N63233,"SDS(475,123,23,[5,95])",Open@e3bf810,open,,,
-N63234,"SDS(475,123,23,[475])",Open@e3bf810,open,,,
+N63234,"SDS(475,123,23,[475])",Open@e3bf810,none,"C33 (Ma's lemma at its edge, p ∤ λc); MaEdgeRows",SignedDifferenceSets.MaEdgeRows.n63234_not_hasSDS,
 N63235,"SDS(475,124,20,[5,95])",Open@e3bf810,none,He-Wu Thm 3.2: n=104; p=2; m=5; j=2,,
 N63236,"SDS(475,124,20,[475])",Open@e3bf810,none,He-Wu Thm 3.2: n=104; p=2; m=5; j=2,,
 N63237,"SDS(475,129,4,[5,95])",Open@e3bf810,none,C22; SylowRows chunk 6,SignedDifferenceSets.sylowRows6_not_hasSDS,Z25
@@ -63310,7 +63310,7 @@ N63308,"SDS(475,231,5,[475])",Open@e3bf810,none,He-Wu Thm 3.2: n=226; p=2; m=5; 
 N63309,"SDS(475,234,33,[5,95])",Open@e3bf810,none,He-Wu Thm 3.2: n=201; p=3; m=5; j=2,,
 N63310,"SDS(475,234,33,[475])",Open@e3bf810,none,He-Wu Thm 3.2: n=201; p=3; m=5; j=2,,
 N63311,"SDS(475,238,13,[5,95])",Open@e3bf810,open,,,
-N63312,"SDS(475,238,13,[475])",Open@e3bf810,open,,,
+N63312,"SDS(475,238,13,[475])",Open@e3bf810,none,"C33 (Ma's lemma at its edge, p ∤ λc); MaEdgeRows; also C32 (field descent, one step at an odd prime); FieldDescentRows",SignedDifferenceSets.MaEdgeRows.n63312_not_hasSDS,
 N63313,"SDS(475,238,117,[5,95])",Open@e3bf810,open,,,
 N63314,"SDS(475,238,117,[475])",Open@e3bf810,open,,,
 N63315,"SDS(475,241,12,[5,95])",Open@e3bf810,none,He-Wu Thm 3.2: n=229; p=229; m=5; j=1,,
@@ -63328,7 +63328,7 @@ N63326,"SDS(475,247,21,[475])",Open@e3bf810,none,He-Wu Thm 3.2: n=226; p=2; m=5;
 N63327,"SDS(475,247,97,[5,95])",Open@e3bf810,none,He-Wu Thm 3.2: n=150; p=2; m=5; j=2,,
 N63328,"SDS(475,247,97,[475])",Open@e3bf810,none,He-Wu Thm 3.2: n=150; p=2; m=5; j=2,,
 N63329,"SDS(475,250,25,[5,95])",Open@e3bf810,open,,,
-N63330,"SDS(475,250,25,[475])",Open@e3bf810,open,,,
+N63330,"SDS(475,250,25,[475])",Open@e3bf810,none,"C32 (field descent, one step at an odd prime); FieldDescentRows",SignedDifferenceSets.fieldDescentRows_not_hasSDS,
 N63331,"SDS(475,250,89,[5,95])",Open@e3bf810,none,He-Wu Thm 3.2: n=161; p=7; m=5; j=2,,
 N63332,"SDS(475,250,89,[475])",Open@e3bf810,none,He-Wu Thm 3.2: n=161; p=7; m=5; j=2,,
 N63333,"SDS(475,253,14,[5,95])",Open@e3bf810,none,He-Wu Thm 3.2: n=239; p=239; m=5; j=1,,
@@ -63362,13 +63362,13 @@ N63360,"SDS(475,273,112,[475])",Open@e3bf810,none,He-Wu Thm 3.2: n=161; p=7; m=5
 N63361,"SDS(475,273,124,[5,95])",Open@e3bf810,none,He-Wu Thm 3.2: n=149; p=149; m=5; j=1,,
 N63362,"SDS(475,273,124,[475])",Open@e3bf810,none,He-Wu Thm 3.2: n=149; p=149; m=5; j=1,,
 N63363,"SDS(475,277,2,[5,95])",Open@e3bf810,open,,,
-N63364,"SDS(475,277,2,[475])",Open@e3bf810,open,,,
+N63364,"SDS(475,277,2,[475])",Open@e3bf810,none,"C33 (Ma's lemma at its edge, p ∤ λc); MaEdgeRows; also C32 (field descent, one step at an odd prime); FieldDescentRows",SignedDifferenceSets.MaEdgeRows.n63364_not_hasSDS,
 N63365,"SDS(475,277,78,[5,95])",Open@e3bf810,none,He-Wu Thm 3.2: n=199; p=199; m=5; j=1,,
 N63366,"SDS(475,277,78,[475])",Open@e3bf810,none,He-Wu Thm 3.2: n=199; p=199; m=5; j=1,,
 N63367,"SDS(475,279,45,[5,95])",Open@e3bf810,none,He-Wu Thm 3.2: n=234; p=2; m=5; j=2,,
 N63368,"SDS(475,279,45,[475])",Open@e3bf810,none,He-Wu Thm 3.2: n=234; p=2; m=5; j=2,,
 N63369,"SDS(475,282,7,[5,95])",Open@e3bf810,open,,,
-N63370,"SDS(475,282,7,[475])",Open@e3bf810,open,,,
+N63370,"SDS(475,282,7,[475])",Open@e3bf810,none,"C33 (Ma's lemma at its edge, p ∤ λc); MaEdgeRows; also C32 (field descent, one step at an odd prime); FieldDescentRows",SignedDifferenceSets.MaEdgeRows.n63370_not_hasSDS,
 N63371,"SDS(475,283,39,[5,95])",Open@e3bf810,open,,,
 N63372,"SDS(475,283,39,[475])",Open@e3bf810,none,C27; UnramifiedRows,SignedDifferenceSets.unramifiedRows5_not_hasSDS,Z30
 N63373,"SDS(475,283,67,[5,95])",Open@e3bf810,none,He-Wu Thm 3.2: n=216; p=2; m=5; j=2,,
@@ -63382,7 +63382,7 @@ N63380,"SDS(475,286,125,[475])",Open@e3bf810,none,He-Wu Thm 3.2: n=161; p=7; m=5
 N63381,"SDS(475,288,24,[5,95])",Open@e3bf810,none,He-Wu Thm 3.2: n=264; p=2; m=5; j=2,,
 N63382,"SDS(475,288,24,[475])",Open@e3bf810,none,He-Wu Thm 3.2: n=264; p=2; m=5; j=2,,
 N63383,"SDS(475,289,64,[5,95])",Open@e3bf810,open,,,
-N63384,"SDS(475,289,64,[475])",Open@e3bf810,open,,,
+N63384,"SDS(475,289,64,[475])",Open@e3bf810,none,"C33 (Ma's lemma at its edge, p ∤ λc); MaEdgeRows; also C32 (field descent, one step at an odd prime); FieldDescentRows",SignedDifferenceSets.MaEdgeRows.n63384_not_hasSDS,
 N63385,"SDS(475,292,6,[5,95])",Open@e3bf810,none,He-Wu Thm 3.2: n=286; p=2; m=5; j=2,,
 N63386,"SDS(475,292,6,[475])",Open@e3bf810,none,He-Wu Thm 3.2: n=286; p=2; m=5; j=2,,
 N63387,"SDS(475,292,96,[5,95])",Open@e3bf810,none,C23; CompositeModulusRows chunk 3,SignedDifferenceSets.compositeModulusRows3_not_hasSDS,Z22
@@ -63406,11 +63406,11 @@ N63404,"SDS(475,309,178,[475])",Open@e3bf810,none,C27; UnramifiedRows,SignedDiff
 N63405,"SDS(475,310,1,[5,95])",Open@e3bf810,none,He-Wu Thm 3.2: n=309; p=3; m=5; j=2,,
 N63406,"SDS(475,310,1,[475])",Open@e3bf810,none,He-Wu Thm 3.2: n=309; p=3; m=5; j=2,,
 N63407,"SDS(475,310,35,[5,95])",Open@e3bf810,open,,,
-N63408,"SDS(475,310,35,[475])",Open@e3bf810,open,,,
+N63408,"SDS(475,310,35,[475])",Open@e3bf810,none,"C32 (field descent, one step at an odd prime); FieldDescentRows",SignedDifferenceSets.fieldDescentRows_not_hasSDS,
 N63409,"SDS(475,313,4,[5,95])",Open@e3bf810,none,He-Wu Thm 3.2: n=309; p=3; m=5; j=2,,
 N63410,"SDS(475,313,4,[475])",Open@e3bf810,none,He-Wu Thm 3.2: n=309; p=3; m=5; j=2,,
 N63411,"SDS(475,313,88,[5,95])",Open@e3bf810,open,,,
-N63412,"SDS(475,313,88,[475])",Open@e3bf810,open,,,
+N63412,"SDS(475,313,88,[475])",Open@e3bf810,none,"C33 (Ma's lemma at its edge, p ∤ λc); MaEdgeRows; also C32 (field descent, one step at an odd prime); FieldDescentRows",SignedDifferenceSets.MaEdgeRows.n63412_not_hasSDS,
 N63413,"SDS(475,313,152,[5,95])",Open@e3bf810,none,He-Wu Thm 3.2: n=161; p=7; m=5; j=2,,
 N63414,"SDS(475,313,152,[475])",Open@e3bf810,none,He-Wu Thm 3.2: n=161; p=7; m=5; j=2,,
 N63415,"SDS(475,316,52,[5,95])",Open@e3bf810,none,He-Wu Thm 3.2: n=264; p=2; m=5; j=2,,
@@ -63422,7 +63422,7 @@ N63420,"SDS(475,318,127,[475])",Open@e3bf810,none,C27; UnramifiedRows,SignedDiff
 N63421,"SDS(475,321,20,[5,95])",Open@e3bf810,none,He-Wu Thm 3.2: n=301; p=7; m=5; j=2,,
 N63422,"SDS(475,321,20,[475])",Open@e3bf810,none,He-Wu Thm 3.2: n=301; p=7; m=5; j=2,,
 N63423,"SDS(475,325,50,[5,95])",Open@e3bf810,open,,,
-N63424,"SDS(475,325,50,[475])",Open@e3bf810,open,,,
+N63424,"SDS(475,325,50,[475])",Open@e3bf810,none,"C32 (field descent, one step at an odd prime); FieldDescentRows",SignedDifferenceSets.fieldDescentRows_not_hasSDS,
 N63425,"SDS(475,325,54,[5,95])",Open@e3bf810,open,,,
 N63426,"SDS(475,325,54,[475])",Open@e3bf810,none,C27; UnramifiedRows,SignedDifferenceSets.unramifiedRows5_not_hasSDS,Z30
 N63427,"SDS(475,325,206,[5,95])",Open@e3bf810,none,He-Wu Thm 3.2: n=119; p=7; m=5; j=2,,
@@ -63494,9 +63494,9 @@ N63492,"SDS(475,367,173,[475])",Open@e3bf810,none,He-Wu Thm 3.2: n=194; p=2; m=5
 N63493,"SDS(475,378,87,[5,95])",Open@e3bf810,none,He-Wu Thm 3.2: n=291; p=3; m=5; j=2,,
 N63494,"SDS(475,378,87,[475])",Open@e3bf810,none,He-Wu Thm 3.2: n=291; p=3; m=5; j=2,,
 N63495,"SDS(475,378,153,[5,95])",Open@e3bf810,open,,,
-N63496,"SDS(475,378,153,[475])",Open@e3bf810,open,,,
+N63496,"SDS(475,378,153,[475])",Open@e3bf810,none,"C33 (Ma's lemma at its edge, p ∤ λc); MaEdgeRows; also C32 (field descent, one step at an odd prime); FieldDescentRows",SignedDifferenceSets.MaEdgeRows.n63496_not_hasSDS,
 N63497,"SDS(475,381,106,[5,95])",Open@e3bf810,open,,,
-N63498,"SDS(475,381,106,[475])",Open@e3bf810,open,,,
+N63498,"SDS(475,381,106,[475])",Open@e3bf810,none,"C33 (Ma's lemma at its edge, p ∤ λc); MaEdgeRows; also C32 (field descent, one step at an odd prime); FieldDescentRows",SignedDifferenceSets.MaEdgeRows.n63498_not_hasSDS,
 N63499,"SDS(475,381,130,[5,95])",Open@e3bf810,open,,,
 N63500,"SDS(475,381,130,[475])",Open@e3bf810,open,,,
 N63501,"SDS(475,388,22,[5,95])",Open@e3bf810,none,He-Wu Thm 3.2: n=366; p=2; m=5; j=2,,
@@ -63506,7 +63506,7 @@ N63504,"SDS(475,388,94,[475])",Open@e3bf810,none,He-Wu Thm 3.2: n=294; p=2; m=5;
 N63505,"SDS(475,388,144,[5,95])",Open@e3bf810,none,"A7 (C10, C10 (I13)); CosetRows Part40",SignedDifferenceSets.CosetRows.n63505_not_hasSDS,Z28
 N63506,"SDS(475,388,144,[475])",Open@e3bf810,none,"A7 (C10, C10 (I13)); CosetRows Part40",SignedDifferenceSets.CosetRows.n63506_not_hasSDS,Z28
 N63507,"SDS(475,388,288,[5,95])",Open@e3bf810,open,,,
-N63508,"SDS(475,388,288,[475])",Open@e3bf810,open,,,
+N63508,"SDS(475,388,288,[475])",Open@e3bf810,none,"C33 (Ma's lemma at its edge, p ∤ λc); MaEdgeRows",SignedDifferenceSets.MaEdgeRows.n63508_not_hasSDS,
 N63509,"SDS(475,396,12,[5,95])",Open@e3bf810,none,He-Wu Thm 3.2: n=384; p=2; m=5; j=2,,
 N63510,"SDS(475,396,12,[475])",Open@e3bf810,none,He-Wu Thm 3.2: n=384; p=2; m=5; j=2,,
 N63511,"SDS(475,397,46,[5,95])",Open@e3bf810,none,He-Wu Thm 3.2: n=351; p=3; m=5; j=2,,
@@ -63538,19 +63538,19 @@ N63536,"SDS(475,406,17,[475])",Open@e3bf810,none,He-Wu Thm 3.2: n=389; p=389; m=
 N63537,"SDS(475,406,105,[5,95])",Open@e3bf810,none,He-Wu Thm 3.2: n=301; p=7; m=5; j=2,,
 N63538,"SDS(475,406,105,[475])",Open@e3bf810,none,He-Wu Thm 3.2: n=301; p=7; m=5; j=2,,
 N63539,"SDS(475,406,131,[5,95])",Open@e3bf810,open,,,
-N63540,"SDS(475,406,131,[475])",Open@e3bf810,open,,,
+N63540,"SDS(475,406,131,[475])",Open@e3bf810,none,"C33 (Ma's lemma at its edge, p ∤ λc); MaEdgeRows; also C32 (field descent, one step at an odd prime); FieldDescentRows",SignedDifferenceSets.MaEdgeRows.n63540_not_hasSDS,
 N63541,"SDS(475,406,307,[5,95])",Open@e3bf810,open,,,
 N63542,"SDS(475,406,307,[475])",Open@e3bf810,open,,,
 N63543,"SDS(475,408,4,[5,95])",Open@e3bf810,open,,,
 N63544,"SDS(475,408,4,[475])",Open@e3bf810,open,,,
 N63545,"SDS(475,411,11,[5,95])",Open@e3bf810,open,,,
-N63546,"SDS(475,411,11,[475])",Open@e3bf810,open,,,
+N63546,"SDS(475,411,11,[475])",Open@e3bf810,none,"C33 (Ma's lemma at its edge, p ∤ λc); MaEdgeRows; also C32 (field descent, one step at an odd prime); FieldDescentRows",SignedDifferenceSets.MaEdgeRows.n63546_not_hasSDS,
 N63547,"SDS(475,411,335,[5,95])",Open@e3bf810,none,He-Wu Thm 3.2: n=76; p=19; m=5; j=1,,
 N63548,"SDS(475,411,335,[475])",Open@e3bf810,none,He-Wu Thm 3.2: n=76; p=19; m=5; j=1,,
 N63549,"SDS(475,414,63,[5,95])",Open@e3bf810,none,He-Wu Thm 3.2: n=351; p=3; m=5; j=2,,
 N63550,"SDS(475,414,63,[475])",Open@e3bf810,none,He-Wu Thm 3.2: n=351; p=3; m=5; j=2,,
 N63551,"SDS(475,414,189,[5,95])",Open@e3bf810,open,,,
-N63552,"SDS(475,414,189,[475])",Open@e3bf810,open,,,
+N63552,"SDS(475,414,189,[475])",Open@e3bf810,none,"C33 (Ma's lemma at its edge, p ∤ λc); MaEdgeRows; also C32 (field descent, one step at an odd prime); FieldDescentRows",SignedDifferenceSets.MaEdgeRows.n63552_not_hasSDS,
 N63553,"SDS(475,415,29,[5,95])",Open@e3bf810,none,He-Wu Thm 3.2: n=386; p=2; m=5; j=2,,
 N63554,"SDS(475,415,29,[475])",Open@e3bf810,none,He-Wu Thm 3.2: n=386; p=2; m=5; j=2,,
 N63555,"SDS(475,415,81,[5,95])",Open@e3bf810,none,He-Wu Thm 3.2: n=334; p=2; m=5; j=2,,
@@ -63586,7 +63586,7 @@ N63584,"SDS(475,426,1,[475])",Open@e3bf810,none,He-Wu Thm 3.2: n=425; p=17; m=5;
 N63585,"SDS(475,427,3,[5,95])",Open@e3bf810,none,He-Wu Thm 3.2: n=424; p=2; m=5; j=2,,
 N63586,"SDS(475,427,3,[475])",Open@e3bf810,none,He-Wu Thm 3.2: n=424; p=2; m=5; j=2,,
 N63587,"SDS(475,427,27,[5,95])",Open@e3bf810,open,,,
-N63588,"SDS(475,427,27,[475])",Open@e3bf810,open,,,
+N63588,"SDS(475,427,27,[475])",Open@e3bf810,none,"C33 (Ma's lemma at its edge, p ∤ λc); MaEdgeRows; also C32 (field descent, one step at an odd prime); FieldDescentRows",SignedDifferenceSets.MaEdgeRows.n63588_not_hasSDS,
 N63589,"SDS(475,427,271,[5,95])",Open@e3bf810,none,He-Wu Thm 3.2: n=156; p=3; m=5; j=2,,
 N63590,"SDS(475,427,271,[475])",Open@e3bf810,none,He-Wu Thm 3.2: n=156; p=3; m=5; j=2,,
 N63591,"SDS(475,433,8,[5,95])",Open@e3bf810,none,He-Wu Thm 3.2: n=425; p=17; m=5; j=2,,
@@ -67172,7 +67172,7 @@ N67170,"SDS(486,481,40,[3,3,3,3,6])",Open@e3bf810,open,,,
 N67171,"SDS(486,481,40,[3,3,3,18])",Open@e3bf810,open,,,
 N67172,"SDS(486,481,40,[3,3,54])",Open@e3bf810,open,,,
 N67173,"SDS(486,481,40,[3,9,18])",Open@e3bf810,open,,,
-N67174,"SDS(486,481,40,[3,162])",Open@e3bf810,open,,,
+N67174,"SDS(486,481,40,[3,162])",Open@e3bf810,none,C35 (field descent along a chain); FieldDescentChainRows,SignedDifferenceSets.fieldDescentChainRows_not_hasSDS,
 N67175,"SDS(486,481,40,[9,54])",Open@e3bf810,open,,,
 N67176,"SDS(486,481,40,[486])",Open@e3bf810,none,C21; MaRows part06,SignedDifferenceSets.MaRows.not_hasSDS_of_mem_part06,Z24
 N67177,"SDS(486,481,400,[3,3,3,3,6])",Open@e3bf810,open,,,
@@ -69138,7 +69138,7 @@ N69136,"SDS(495,289,60,[495])",Open@e3bf810,none,He-Wu Thm 3.2: n=229; p=229; m=
 N69137,"SDS(495,290,1,[3,165])",Open@e3bf810,none,C5; SelfConjugacyRows part12,SignedDifferenceSets.SelfConjugacyRows.part12_not_hasSDS,Z8
 N69138,"SDS(495,290,1,[495])",Open@e3bf810,none,C5; SelfConjugacyRows part12,SignedDifferenceSets.SelfConjugacyRows.part12_not_hasSDS,Z8
 N69139,"SDS(495,290,65,[3,165])",Open@e3bf810,open,,,
-N69140,"SDS(495,290,65,[495])",Open@e3bf810,open,,,
+N69140,"SDS(495,290,65,[495])",Open@e3bf810,none,"C33 (Ma's lemma at its edge, p ∤ λc); MaEdgeRows",SignedDifferenceSets.MaEdgeRows.n69140_not_hasSDS,
 N69141,"SDS(495,296,82,[3,165])",Open@e3bf810,none,He-Wu Thm 3.2: n=214; p=2; m=3; j=1,,
 N69142,"SDS(495,296,82,[495])",Open@e3bf810,none,He-Wu Thm 3.2: n=214; p=2; m=3; j=1,,
 N69143,"SDS(495,296,116,[3,165])",Open@e3bf810,none,He-Wu Thm 3.2: n=180; p=5; m=3; j=1,,
@@ -69150,7 +69150,7 @@ N69148,"SDS(495,296,172,[495])",Open@e3bf810,open,,,
 N69149,"SDS(495,302,13,[3,165])",Open@e3bf810,none,C5; SelfConjugacyRows part12,SignedDifferenceSets.SelfConjugacyRows.part12_not_hasSDS,Z8
 N69150,"SDS(495,302,13,[495])",Open@e3bf810,none,C5; SelfConjugacyRows part12,SignedDifferenceSets.SelfConjugacyRows.part12_not_hasSDS,Z8
 N69151,"SDS(495,302,23,[3,165])",Open@e3bf810,open,,,
-N69152,"SDS(495,302,23,[495])",Open@e3bf810,open,,,
+N69152,"SDS(495,302,23,[495])",Open@e3bf810,none,"C33 (Ma's lemma at its edge, p ∤ λc); MaEdgeRows",SignedDifferenceSets.MaEdgeRows.n69152_not_hasSDS,
 N69153,"SDS(495,308,2,[3,165])",Open@e3bf810,none,He-Wu Thm 3.2: n=306; p=2; m=3; j=1,,
 N69154,"SDS(495,308,2,[495])",Open@e3bf810,none,He-Wu Thm 3.2: n=306; p=2; m=3; j=1,,
 N69155,"SDS(495,308,74,[3,165])",Open@e3bf810,none,He-Wu Thm 3.2: n=234; p=2; m=3; j=1,,
@@ -69222,7 +69222,7 @@ N69220,"SDS(495,351,27,[495])",Open@e3bf810,open,,,
 N69221,"SDS(495,365,34,[3,165])",Open@e3bf810,open,,,
 N69222,"SDS(495,365,34,[495])",Open@e3bf810,open,,,
 N69223,"SDS(495,365,86,[3,165])",Open@e3bf810,open,,,
-N69224,"SDS(495,365,86,[495])",Open@e3bf810,open,,,
+N69224,"SDS(495,365,86,[495])",Open@e3bf810,none,"C33 (Ma's lemma at its edge, p ∤ λc); MaEdgeRows",SignedDifferenceSets.MaEdgeRows.n69224_not_hasSDS,
 N69225,"SDS(495,365,166,[3,165])",Open@e3bf810,none,He-Wu Thm 3.2: n=199; p=199; m=5; j=1,,
 N69226,"SDS(495,365,166,[495])",Open@e3bf810,none,He-Wu Thm 3.2: n=199; p=199; m=5; j=1,,
 N69227,"SDS(495,365,266,[3,165])",Open@e3bf810,none,He-Wu Thm 3.2: n=99; p=11; m=3; j=1,,
@@ -69334,7 +69334,7 @@ N69332,"SDS(495,425,4,[495])",Open@e3bf810,none,C27; UnramifiedRows,SignedDiffer
 N69333,"SDS(495,425,64,[3,165])",Open@e3bf810,none,C5; SelfConjugacyRows part12,SignedDifferenceSets.SelfConjugacyRows.part12_not_hasSDS,Z8
 N69334,"SDS(495,425,64,[495])",Open@e3bf810,none,C5; SelfConjugacyRows part12,SignedDifferenceSets.SelfConjugacyRows.part12_not_hasSDS,Z8
 N69335,"SDS(495,425,200,[3,165])",Open@e3bf810,open,,,
-N69336,"SDS(495,425,200,[495])",Open@e3bf810,open,,,
+N69336,"SDS(495,425,200,[495])",Open@e3bf810,none,"C33 (Ma's lemma at its edge, p ∤ λc); MaEdgeRows",SignedDifferenceSets.MaEdgeRows.n69336_not_hasSDS,
 N69337,"SDS(495,429,98,[3,165])",Open@e3bf810,open,,,
 N69338,"SDS(495,429,98,[495])",Open@e3bf810,open,,,
 N69339,"SDS(495,429,150,[3,165])",Open@e3bf810,open,,,
@@ -69364,11 +69364,11 @@ N69362,"SDS(495,443,137,[495])",Open@e3bf810,none,He-Wu Thm 3.2: n=306; p=2; m=3
 N69363,"SDS(495,443,229,[3,165])",Open@e3bf810,none,He-Wu Thm 3.2: n=214; p=2; m=3; j=1,,
 N69364,"SDS(495,443,229,[495])",Open@e3bf810,none,He-Wu Thm 3.2: n=214; p=2; m=3; j=1,,
 N69365,"SDS(495,446,5,[3,165])",Open@e3bf810,open,,,
-N69366,"SDS(495,446,5,[495])",Open@e3bf810,open,,,
+N69366,"SDS(495,446,5,[495])",Open@e3bf810,none,"C33 (Ma's lemma at its edge, p ∤ λc); MaEdgeRows; also C32 (field descent, one step at an odd prime); FieldDescentRows",SignedDifferenceSets.MaEdgeRows.n69366_not_hasSDS,
 N69367,"SDS(495,446,85,[3,165])",Open@e3bf810,none,C5; SelfConjugacyRows part12,SignedDifferenceSets.SelfConjugacyRows.part12_not_hasSDS,Z8
 N69368,"SDS(495,446,85,[495])",Open@e3bf810,none,C5; SelfConjugacyRows part12,SignedDifferenceSets.SelfConjugacyRows.part12_not_hasSDS,Z8
 N69369,"SDS(495,446,167,[3,165])",Open@e3bf810,open,,,
-N69370,"SDS(495,446,167,[495])",Open@e3bf810,open,,,
+N69370,"SDS(495,446,167,[495])",Open@e3bf810,none,"C33 (Ma's lemma at its edge, p ∤ λc); MaEdgeRows",SignedDifferenceSets.MaEdgeRows.n69370_not_hasSDS,
 N69371,"SDS(495,446,391,[3,165])",Open@e3bf810,none,He-Wu Thm 3.2: n=55; p=5; m=3; j=1,,
 N69372,"SDS(495,446,391,[495])",Open@e3bf810,none,He-Wu Thm 3.2: n=55; p=5; m=3; j=1,,
 N69373,"SDS(495,454,3,[3,165])",Open@e3bf810,none,He-Wu Thm 3.2: n=451; p=11; m=3; j=1,,
@@ -69382,7 +69382,7 @@ N69380,"SDS(495,454,409,[495])",Open@e3bf810,none,He-Wu Thm 3.2: n=45; p=5; m=3;
 N69381,"SDS(495,456,2,[3,165])",Open@e3bf810,none,He-Wu Thm 3.2: n=454; p=2; m=3; j=1,,
 N69382,"SDS(495,456,2,[495])",Open@e3bf810,none,He-Wu Thm 3.2: n=454; p=2; m=3; j=1,,
 N69383,"SDS(495,465,24,[3,165])",Open@e3bf810,open,,,
-N69384,"SDS(495,465,24,[495])",Open@e3bf810,open,,,
+N69384,"SDS(495,465,24,[495])",Open@e3bf810,none,"C32 (field descent, one step at an odd prime); FieldDescentRows",SignedDifferenceSets.fieldDescentRows_not_hasSDS,
 N69385,"SDS(495,465,44,[3,165])",Open@e3bf810,open,,,
 N69386,"SDS(495,465,44,[495])",Open@e3bf810,none,C27; UnramifiedRows,SignedDifferenceSets.unramifiedRows5_not_hasSDS,Z30
 N69387,"SDS(495,465,240,[3,165])",Open@e3bf810,open,,,
@@ -69418,7 +69418,7 @@ N69416,"SDS(495,481,76,[495])",Open@e3bf810,none,He-Wu Thm 3.2: n=405; p=5; m=3;
 N69417,"SDS(495,481,180,[3,165])",Open@e3bf810,none,He-Wu Thm 3.2: n=301; p=7; m=5; j=2,,
 N69418,"SDS(495,481,180,[495])",Open@e3bf810,none,He-Wu Thm 3.2: n=301; p=7; m=5; j=2,,
 N69419,"SDS(495,482,41,[3,165])",Open@e3bf810,open,,,
-N69420,"SDS(495,482,41,[495])",Open@e3bf810,open,,,
+N69420,"SDS(495,482,41,[495])",Open@e3bf810,none,"C33 (Ma's lemma at its edge, p ∤ λc); MaEdgeRows; also C32 (field descent, one step at an odd prime); FieldDescentRows",SignedDifferenceSets.MaEdgeRows.n69420_not_hasSDS,
 N69421,"SDS(495,482,97,[3,165])",Open@e3bf810,none,He-Wu Thm 3.2: n=385; p=5; m=3; j=1,,
 N69422,"SDS(495,482,97,[495])",Open@e3bf810,none,He-Wu Thm 3.2: n=385; p=5; m=3; j=1,,
 N69423,"SDS(495,482,151,[3,165])",Open@e3bf810,open,,,

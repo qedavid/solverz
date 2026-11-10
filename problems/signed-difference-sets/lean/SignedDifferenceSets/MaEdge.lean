@@ -128,7 +128,7 @@ def MaEdgeCert.Kills (w : Row) (c : MaEdgeCert) : Prop :=
     0 < c.b ∧ ¬ (c.p : ℤ) ∣ w.lam * (w.ms.prod / (c.r * c.p * c.ks.prod) : ℕ) ∧
     (c.p, c.r) ∈ MaRows.maPairs
 
-instance (w : Row) (c : MaEdgeCert) : Decidable (c.Kills w) := by
+instance MaEdgeCert.instDecidableKills (w : Row) (c : MaEdgeCert) : Decidable (c.Kills w) := by
   unfold MaEdgeCert.Kills; infer_instance
 
 /-- A row C33 kills has no SDS, whatever `Fintype` instance its group carries. -/

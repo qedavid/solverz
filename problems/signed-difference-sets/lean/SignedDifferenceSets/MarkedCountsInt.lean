@@ -234,7 +234,7 @@ def ScCert.CountsKill (r : Row) (c : ScCert) : Prop :=
           (orderVals s' (classVals ((c.p : ℤ) ^ c.j) t ((r.ms.prod / c.ds.prod : ℕ) : ℤ)))
           c.ds.prod s' (r.k + r.lam * (((r.ms.prod / c.ds.prod : ℕ) : ℤ) - 1)) r.k = false
 
-instance (r : Row) (c : ScCert) : Decidable (c.CountsKill r) := by
+instance ScCert.instDecidableCountsKill (r : Row) (c : ScCert) : Decidable (c.CountsKill r) := by
   unfold ScCert.CountsKill ScCert.Valid; infer_instance
 
 /-- A row C7's integer test kills has no SDS, whatever `Fintype` instance its group carries. -/

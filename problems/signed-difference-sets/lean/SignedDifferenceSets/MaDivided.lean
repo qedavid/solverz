@@ -341,7 +341,7 @@ def MaDivCert.Valid (w : Row) (c : MaDivCert) : Prop :=
     ((c.p : ℤ) * c.s') * ((c.p : ℤ) * c.s') = w.k + w.lam * ((w.ms.prod : ℤ) - 1) ∧
     w.k < c.p * (c.k' + 2) ∧ ((w.k : ℤ) - c.k') % 2 = 0 ∧ (c.p, c.r) ∈ MaRows.maPairs
 
-instance (w : Row) (c : MaDivCert) : Decidable (c.Valid w) := by
+instance MaDivCert.instDecidableValid (w : Row) (c : MaDivCert) : Decidable (c.Valid w) := by
   unfold MaDivCert.Valid; infer_instance
 
 /-- A row meeting C34's hypotheses whose divided search on `Grp (r :: ks)` finds no vector has
