@@ -2,8 +2,6 @@
 
 **Focus.** Settle what is proved (the user, 2026-11-10, via the peer session): the row certificates for the tomography kills (I23: about 370 rows in exploration; C40–C42 and the flats in Lean), the C36 chain, the root build, settle. Then the open items of Groups 2 and 3 (P16's edge, P17, C15x, C4x, P19, C3x at m = 10, E5/C18x) before any further tomography extension. Plan of 2026-11-09: `scratch/inventory/final-plan.md` (IDs of `scratch/inventory/inventory.md`). Search mode only when the user says so. Table 91.43% settled (none 64,270, exists 229, open 6,044); Solutions Z1–Z33 (`solutions.md`), corrections in `corrections.md`.
 
-**Temporary limits (the user, 2026-11-10 21:52, via the peer session; the main session runs two ideators):** Lean in 1 slot, light jobs only (peak ≤ 5 GB), no root build, no heavy jobs (`lean-slot.sh`: MAXJOBS=1, LIGHT=5120; restore MAXJOBS=4 and drop LIGHT when lifted); own computations ≤ 6 threads; no new agents (running ones carry the limits). The settle from the 21:42 root build goes ahead; the next root build waits for the lift.
-
 **Rules.**
 - **NO NEW IDEATORS.** A request for one goes with its reason under "Needs the user"; the user decides.
 - Ideas that come up as a by-product of the work go into `ideas/` with a kill test; work them only if they fit the plan's work, otherwise list them for the user.
