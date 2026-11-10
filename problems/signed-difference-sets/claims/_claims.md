@@ -41,3 +41,4 @@
 | [C38](C38.md) | The divided contraction with Turyn's residue class: values of W/p congruent mod M (C34 × C5) | C34, C5 | proved | `IsSDS.false_of_maDividedRes` | — |
 | [C39](C39.md) | Value counts of the divided vector: no counts with |H′| values, sum ±s′, square sum Q (levels 1, 2, any p) | C33, C36, C3 | proved | `DividedDemands.false_of_anyCountsMag` | — |
 | [C40](C40.md) | Line tomography on Z_p × Z_p: the p + 1 line contractions sum to pD + s; no valid choice integral mod p | C3, C4, C2, C16 | proved | `Tomography.not_hasSDS`, `Tomography.not_hasSDS_prime` | — |
+| [C41](C41.md) | Line tomography on a Z_p × Z_p quotient (box c, multiplier t, with or without centring) | C40, C3, C2, C10′ | proved | `TomographyQuot.not_hasSDS_grp`, `not_hasSDS_grp_nc` | — |
