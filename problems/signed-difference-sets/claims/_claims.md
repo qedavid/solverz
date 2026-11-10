@@ -40,4 +40,4 @@
 | [C37](C37.md) | The T-side of C26 at c = 1 (Z, T disjoint SDSs on K), and no SDS (54, 46, 10) in C₃ × C₁₈ (N464) | C26, C21 | verified | `n464_not_hasSDS` | — |
 | [C38](C38.md) | The divided contraction with Turyn's residue class: values of W/p congruent mod M (C34 × C5) | C34, C5 | proved | `IsSDS.false_of_maDividedRes` | — |
 | [C39](C39.md) | Value counts of the divided vector: no counts with |H′| values, sum ±s′, square sum Q (levels 1, 2, any p) | C33, C36, C3 | proved | `DividedDemands.false_of_anyCountsMag` | — |
-| [C40](C40.md) | Line tomography on Z_p × Z_p: the p + 1 line contractions sum to pD + s; no valid choice integral mod p | C3, C4, C2, C10 | proved | `Tomography.not_hasSDS`, `Tomography.not_hasSDS_prime` | — |
+| [C40](C40.md) | Line tomography on Z_p × Z_p: the p + 1 line contractions sum to pD + s; no valid choice integral mod p | C3, C4, C2, C16 | proved | `Tomography.not_hasSDS`, `Tomography.not_hasSDS_prime` | — |

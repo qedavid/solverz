@@ -1,0 +1,55 @@
+'SignedDifferenceSets.Tomography.not_hasSDS_of_mem' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SignedDifferenceSets.Tomography.not_hasSDS' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SignedDifferenceSets.Tomography.not_hasSDS_prime' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SignedDifferenceSets.Tomography.fixed_line' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SignedDifferenceSets.Tomography.sum_contract_lines' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SignedDifferenceSets.IsSDS.exists_translate_fixed_contract' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SignedDifferenceSets.TomographyRows.N346.not_hasSDS' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SignedDifferenceSets.TomographyRows.N348.not_hasSDS' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SignedDifferenceSets.TomographyRows.N354.not_hasSDS' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SignedDifferenceSets.TomographyRows.N3044.not_hasSDS' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SignedDifferenceSets.TomographyRows.N3058.not_hasSDS' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SignedDifferenceSets.TomographyRows.N3068.not_hasSDS' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SignedDifferenceSets.TomographyRows.N3072.not_hasSDS' depends on axioms: [propext, Classical.choice, Quot.sound]
+Tomography.not_hasSDS : ∀ (p : ℕ) [inst : Fact (Nat.Prime p)] {k : ℕ} {lam s : ℤ},
+  s * s = ↑k + lam * (↑p * ↑p - 1) →
+    ↑s ≠ 0 →
+      ∀ {V0 W : List (List ℤ)} {ws : List (List (List ℤ))} {R : List (List Tomography.Row)},
+        Tomography.inSearch (Indexed.size (ZMod p)) (Indexed.addIdx (ZMod p)) (↑p) (↑k + lam * (↑p - 1)) (lam * ↑p) (↑k)
+              s V0 =
+            true →
+          Tomography.rotOK p V0 W = true →
+            Tomography.certOK p ws = true →
+              Tomography.certRows p s ws = R → Tomography.tomoGo p s W R [] = true → ¬HasSDS (ZMod p × ZMod p) k lam
+Tomography.not_hasSDS_prime : ∀ (p : ℕ) [inst : Fact (Nat.Prime p)] {k : ℕ} {lam s : ℤ} (n : ℕ),
+  Nat.Prime n →
+    ↑k - lam = ↑n →
+      ↑n ≠ 0 →
+        ↑n ≠ 1 →
+          s * s = ↑k + lam * (↑p * ↑p - 1) →
+            ↑s ≠ 0 →
+              ∀ {fr ex : List ℕ},
+                Tomography.frOK p n fr ex = true →
+                  ∀ {W : List (List ℤ)} {ws : List (List (List ℤ))} {R : List (List Tomography.Row)},
+                    Tomography.fixSearch (Indexed.size (ZMod p)) (Indexed.addIdx (ZMod p)) (↑p) (↑k + lam * (↑p - 1))
+                          (lam * ↑p) (↑k) s fr W =
+                        true →
+                      Tomography.certOK p ws = true →
+                        Tomography.certRows p s ws = R →
+                          Tomography.tomoGo p s W R [] = true → ¬HasSDS (ZMod p × ZMod p) k lam
+@Tomography.fixed_line : ∀ {p : ℕ} [hp : Fact (Nat.Prime p)] {k : ℕ} {lam s : ℤ} {D : ZMod p × ZMod p → SignType},
+  IsSDS k lam D →
+    ∑ x, ↑(D x) = s →
+      ↑s ≠ 0 →
+        Tomography.Centered D →
+          ∀ {n : ℕ},
+            Nat.Prime n →
+              ↑k - lam = ↑n →
+                ↑n ≠ 0 →
+                  ↑n ≠ 1 →
+                    ∀ (j : ℕ) (h : ZMod p),
+                      contract (Tomography.lineMap p j) D (↑n * h) = contract (Tomography.lineMap p j) D h
+
+real	0m47.077s
+user	0m0.015s
+sys	0m0.264s
