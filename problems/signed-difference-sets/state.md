@@ -109,11 +109,14 @@ Group 3, technique tests (kill test first; work it if it hits):
 | P21 | Planned ideator rounds on the core | — | dropped by the user (no new ideators) |
 
 **Running.** (2026-11-10 13:55; the user lifted every temporary restriction: CLAUDE.md's limits only, "never stop")
-- Agents (3): Lean helper for C40 on Z_p² quotients and the remaining Z_p² rows (`scratch/tomo/lean2-brief.md`, notes
-  `scratch/tomo/lean2-progress.md`; started 15:11); Lean helper for the 67 + 2 Z_2² × Z_3 quotient kills (the mod-4 hand proof;
-  `scratch/tomo4/lean3-brief.md`, notes `scratch/tomo4/lean3-progress.md`; started 16:47); the tomo3 explorer only records its
-  last runs (`scratch/tomo3/notes.md`). Done today: refuters on C40 (R45) and C38/C39 (R46), both SURVIVES; the first C40 Lean
-  helper; the tomo4 explorer (I23: the 69 Z_p² × Z_m kills confirmed, 29 more on Z_11², Z_13² quotients).
+- Agents (3): Lean helper for the 67 + 2 Z_2² × Z_3 quotient kills (the mod-4 hand proof; `scratch/tomo4/lean3-brief.md`,
+  notes `scratch/tomo4/lean3-progress.md`; started 16:47); refuter on C41, tomography on Z_p² quotients
+  (`scratch/refuter/c41-brief.md`, notes `scratch/refuter/c41/`; started 17:45); the tomo3 explorer only records its last runs
+  (`scratch/tomo3/notes.md`). Done today: refuters on C40 (R45) and C38/C39 (R46), both SURVIVES; two C40/C41 Lean helpers; the
+  tomo4 explorer.
+- C41's rows build in two background lanes (`scratch/tomo/q/lane.sh`, queue `scratch/tomo/q/queue.txt`, results
+  `scratch/tomo/q/build_all.out`; `sh scratch/tomo/q/collect.sh` gathers the result files the lanes leave in the problem folder):
+  141 rows generated, 67 built at 17:44; then `python scratch/tomo/q/mkaxioms.py` and the AxiomsQ1/Q2 checks.
 - Experiments: the I23 explorer's last runs, N35706 and N35778 part 0/3 (`x_tomography`, started 11:31, output
   `scratch/tomo/runlat19.out`; parts 1/3 and 2/3 KILL int). Both rows die once part 0 does.
 - Lean: the C36 rows (`scratch/c34/tree.sh` over `scratch/c34/todo.txt`, log `scratch/c34/chain.log`, 39 of 48 trees done), then
@@ -128,7 +131,9 @@ Group 3, technique tests (kill test first; work it if it hits):
      (13 modules, likewise); then axioms, settle `settle-c36-merged.tsv`, `settle-c34b.tsv`, `settle-c36b.tsv`, `settle-c38.tsv`,
      `scratch/tomo/settle-c40.tsv` through `settle_safe.py`; C36, C38, C39, C40 → verified; proposed Solutions. N20961 (C38, not
      reviewed) is imported but not settled. The root needs 9.1 GB + the 4 GB reserve: it waits for a nearly idle machine.
-  3. C40: the Lean helper's quotient rows (175 in exploration) and the remaining 43 Z_p² rows.
+  3. C41: the lanes, the axioms, the refuter's report as a Review; root, settle. Still out of reach (lean2-progress.md): 41 p = 7
+     quotient rows without a multiplier (0.85M–2·10⁸ listing nodes), p | s rows, N3066, N6692, N6718, p = 19 with t of order 3,
+     the U0 = 1 Z_p² rows (lattices).
   3a. The 10M-node rows N8416, N8422, N8476, N752: parked (about 5 ms and 0.25 MB per kernel node; C34.md).
   4. The tomography explorer's families, as they come.
 - Slots (2026-11-09): admission counts each running job's headroom (calibrated peak − the working set its Lean processes hold now); peaks calibrated from `scratch/lean.peaks` (measured + 0.5 GB, written after every job); a mutex older than 2 minutes counts as stale. `answer.py contract <id> <divisors> [depth]`: depth 3 for N6970 (at depth 4 the join's coverage check over 2,812 prefixes hit 10.6 GB).
