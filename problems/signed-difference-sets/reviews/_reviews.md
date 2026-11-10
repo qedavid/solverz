@@ -46,3 +46,4 @@ The refuter's reports that statuses here rest on, oldest first.
 | [R41](R41.md) | C35; FieldDescentChainRows (66 rows) | SURVIVES (wording in C35.md) | 2026-11-10 |
 | [R42](R42.md) | C34; MaDividedRows (27 rows) | SURVIVES (rows to rebuild; wording in C34.md) | 2026-11-10 |
 | [R43](R43.md) | C36; MaDivided2Rows (49 rows) | SURVIVES (rows not built; 24 more kills the exploration missed) | 2026-11-10 |
+| [R44](R44.md) | C37; N464 | SURVIVES (wording in C37.md) | 2026-11-10 |

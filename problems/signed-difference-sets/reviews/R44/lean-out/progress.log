@@ -1,0 +1,31 @@
+start probe 11:35:31
+start part4 11:35:31
+done probe 11:42:28 exit=0
+start lists 11:42:28
+done part4 11:42:49 exit=0
+start part5 11:42:50
+done lists 11:43:56 exit=0
+start part0 11:43:56
+done part5 11:44:53 exit=0
+start part6 11:44:53
+done part0 11:45:58 exit=0
+start part1 11:45:58
+done mutation 11:46:25
+done part6 11:47:03 exit=0
+start main 11:47:03
+done main 11:50:40 exit=0
+start tests 11:50:40
+done mutation 11:51:08
+done tests 11:52:09 exit=0
+start pairsearch 11:52:09
+done part1 11:52:40 exit=0
+start part2 11:52:40
+done pairsearch 11:52:55 exit=0
+start paircheck 11:52:55
+done paircheck 11:53:42 exit=0
+done part2 11:54:49 exit=0
+start part3 11:54:49
+done part3 11:57:03 exit=0
+start doubling 11:57:03
+done doubling 11:57:43 exit=0
+all done 11:57:43
