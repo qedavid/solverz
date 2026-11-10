@@ -343,15 +343,15 @@ theorem not_hasSDS : ¬ HasSDS ({group}) {k} {lam_lean} :=
 def write_search(name: str, prefix: str, imports: list, title: str, doc: str, header: str, size: str, add: str,
                  args: str, check_title: str, check_doc: str, n: int, c: int, q: int, s: int, theorem: str,
                  close: str = "", depth: str = "", tool: str = "solver/answer.py",
-                 split_nodes: int = SPLIT_NODES, top_depth: str = "") -> None:
+                 split_nodes: int = SPLIT_NODES, top_depth: str = "", part_nodes: int = PART_NODES) -> None:
     """A `noVector` search on `n` elements (bound `c`, square sum `q`, sum `s`) closing `theorem`, whose next argument
     is the search (`close` follows it): one module `<prefix>.<name>` when it has at most SPLIT_NODES nodes, else
     `<name>/Check` (`header`, `check` = `below <size> <add> <args>`, `decodePrefix`), part modules of at most
     PART_NODES nodes in kernel checks of at most BATCH_NODES, and the join `<prefix>.<name>` (`split_nodes` replaces
-    SPLIT_NODES). With `top_depth` the split has two levels (`write_search_tree`)."""
+    SPLIT_NODES). With `top_depth` the split has two levels (`write_search_tree`, parts of at most `part_nodes`)."""
     if top_depth:
         return write_search_tree(name, prefix, imports, title, doc, header, size, add, args, check_title, check_doc,
-                                 n, c, q, s, theorem, close, int(depth), int(top_depth), tool)
+                                 n, c, q, s, theorem, close, int(depth), int(top_depth), tool, part_nodes)
     ns = f"{prefix}.{name}"
     folder = "/".join(prefix.split(".")[1:] + [name])
     total = sum(prefix_nodes(n, c, q, s, 1).values()) + 1
@@ -461,7 +461,7 @@ def wrap(pieces, indent, width=98):
 
 
 def write_search_tree(name, prefix, imports, title, doc, header, size, add, args, check_title, check_doc, n, c, q, s,
-                      theorem, close, depth, top_depth, tool):
+                      theorem, close, depth, top_depth, tool, part_nodes=PART_NODES):
     """`write_search` on two levels: the join covers the prefixes of `top_depth` coordinates (the groups); group `i`'s
     theorem covers the prefixes of `depth` coordinates below it (`below_of_top`), checked in batches that stay inside
     the group, in the part module of the group's last batch (which imports the parts with its other batches). Both
@@ -492,7 +492,7 @@ def write_search_tree(name, prefix, imports, title, doc, header, size, add, args
     part_of = {}
     for g, mine in enumerate(group_batches):
         for j in mine:
-            if (cur["batches"] or cur["groups"]) and size_ + batches[j][1] > PART_NODES:
+            if (cur["batches"] or cur["groups"]) and size_ + batches[j][1] > part_nodes:
                 parts.append(cur)
                 cur, size_ = {"batches": [], "groups": []}, 0
             cur["batches"].append(j)

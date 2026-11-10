@@ -18,7 +18,9 @@ from marows import conj_exp, crt, is_prime_td, lst, map_ok, surj_cert, vp
 
 # the join's coverage check is quadratic in the prefixes (720 cost N6970's join 8.8 GB): N19445 needs 2,737 at the
 # default depth, 483 at depth 8 (largest check 52,298 nodes)
-# two-level splits (answer.write_search_tree) for the 10M-node rows: 281–435 groups of at most 560 prefixes
+# two-level splits (answer.write_search_tree) for the 10M-node rows: 281–435 groups of at most 560 prefixes; their
+# nodes cost about 16 KB each (N8422's first part of 493K nodes reached 10.6 GB), so parts of at most TREE_PART_NODES
+TREE_PART_NODES = 200_000
 SKIP = set()
 DEPTH = {"N19445": "8", "N8416": "10", "N8422": "10", "N8476": "10"}
 TOP_DEPTH = {"N8416": "5", "N8422": "5", "N8476": "5"}
@@ -93,7 +95,8 @@ theorem not_hasSDS : ¬ HasSDS ({group}) {k} {lam_l} :=
                  f"({x['c']} : ℕ) ({x['Q']} : ℤ) ({x['t']} : ℤ) ({x['k1']} : ℕ) {x['s1']}",
                  "the divided quotient and the subtree check", "row's divided search arguments (those `MaDivCert.not_hasSDS` asks for)",
                  math.prod(qf), x["c"], x["Q"], x["s1"], theorem, tool="solver/madividedrows.py",
-                 split_nodes=BATCH_NODES, depth=DEPTH.get(f"N{rid}", ""), top_depth=TOP_DEPTH.get(f"N{rid}", ""))
+                 split_nodes=BATCH_NODES, depth=DEPTH.get(f"N{rid}", ""), top_depth=TOP_DEPTH.get(f"N{rid}", ""),
+                 part_nodes=TREE_PART_NODES)
 
 
 def main(wanted):
