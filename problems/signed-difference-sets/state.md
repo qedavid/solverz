@@ -1,6 +1,6 @@
 # State
 
-**Focus.** The user's plan of 2026-11-09 (`scratch/inventory/final-plan.md`, items cited by the IDs of `scratch/inventory/inventory.md`, both copied from the main folder). Research mode: Groups 1–3 below, in that order; now Group 1. Search mode only when the user says so. Table 91.06% settled (none 64,010, exists 229, open 6,304); Solutions Z1–Z33 (`solutions.md`), corrections in `corrections.md`.
+**Focus.** Settle what is proved (the user, 2026-11-10, via the peer session): the row certificates for the tomography kills (I23: about 370 rows in exploration; C40–C42 and the flats in Lean), the C36 chain, the root build, settle. Then the open items of Groups 2 and 3 (P16's edge, P17, C15x, C4x, P19, C3x at m = 10, E5/C18x) before any further tomography extension. Plan of 2026-11-09: `scratch/inventory/final-plan.md` (IDs of `scratch/inventory/inventory.md`). Search mode only when the user says so. Table 91.43% settled (none 64,270, exists 229, open 6,044); Solutions Z1–Z33 (`solutions.md`), corrections in `corrections.md`.
 
 **Rules.**
 - **NO NEW IDEATORS.** A request for one goes with its reason under "Needs the user"; the user decides.
@@ -18,14 +18,14 @@ Group 1, settle what is already proved:
 |---|---|---|
 | P1 | A7: import the built CosetRows parts (Part22–35: 8 rows, 2026-11-09); the remaining parts' builds are in the search list | 76 none |
 | P2 | I5: import the built OrbitRows parts (Part78–85, 2026-11-09); Part86–137's builds are in the search list | ~27 none |
-| P3 | Rows whose halved row OrbitRows proves (`halfrows.py --orbit`, `HalfRows/OrbitCited.lean`): N7412 (halved N1512), N33806 (N7332), N61082 (N13357) built 2026-11-09, settle after the next root build; N18643 (N3958, Part104), N60752 (N13285, Part127) follow P2's builds; N9513 has no open parent row | 3 + 2 none |
+| P3 | Halved C26 rows: N7412 settled 2026-11-10 (N33806, N61082 by C33); N18643 (Part104), N60752 (Part127) follow P2's builds; N9513 has no open parent row | 3 settled + 2 none |
 | P4 | Refuter on the 16 Lean-checked objects not yet proposed (statement, object, credit), then propose them: done, [R34](reviews/R34.md), proposed under Needs the user | 16 exists |
 | P5 | Lean sets for the database lags N14604, N31832, N63319: done (O105–O107), settled; proposed as corrections under Needs the user | 3 exists |
-| C10x | E8's 4 kills: N2847, N2863, N26266 are C33 rows (no certificate needed if C33 survives). N6970: split certificate (`answer.py contract N6970 3,3 3`: depth 3, 720 prefixes; at depth 4 the join's coverage check over 2,812 prefixes hit 10.6 GB); parts ~0.8 ms per node, 4–7 GB; building 2026-11-09 | 4 none |
+| C10x | Done 2026-11-10: N6970 settled (split certificate, `Answer/N6970`), N2847, N2863, N26266 settled by C33 | 4 settled |
 | C20x | N1's kills N44059, N44123: done (A7 rows in CosetRows Part52, Part61), settled | 2 none |
 | D1x | Ma × an extra self-conjugate modulus (p^b·Q > 2c), extending C21: done, C29 verified ([R35](reviews/R35.md)), settled | 11 none |
-| C6x | N27692: integer certificate for C7 | 1 none |
-| C17x(c) | N464: T-side of C26 and a kernel search over the 648 halved sets | 1 none |
+| C6x | Done 2026-11-10: N27692 settled (`MarkedCountsInt`) | 1 settled |
+| C17x(c) | Done 2026-11-10: N464 settled by C37 ([R44](reviews/R44.md)) | 1 settled |
 | C1x, C2x, C5x, E11, E12 | C4's status (R28), C6 marked superseded by C13/C14, ModQ (C24) imported, full `#print axioms` and unreachable modules, code defects before reuse. Done: C1x (C4 verified), C2x, C5x (C24 verified), E11(a) (all 11,236 library constants use only the three standard axioms, `scratch/e11/AllAxioms.lean`), E11(b) (ModQ, Tests.UnramifiedDescent in the root), E11(c) (all 76 objects with a Lean answer equal their Lean data element by element, `scratch/e11/objects_vs_lean.py`), E11(d) (`AxiomsC27.lean` rerun 2026-11-07, clean), E11(e) (objects index), E12's R1-a (`solver/src/lib.rs`: k = 0 handled). E12's other defects are in scratch tools (tiers.py k < v, sc_rows.py `j = max(j, 1)`, sp_hits' producer, E8's k ≤ Σ maxm): fix them before reusing those tools | — |
 
 In research mode the short Lean items of Group 1 come first (P4, P5, C10x, C20x, D1x, C6x, C17x(c), the housekeeping items), then Groups 2 and 3; P1's and P2's long builds wait for search mode (the user, 2026-11-09: they would hold the Lean lock for ~12 h).
@@ -40,8 +40,8 @@ Group 1 pointers:
 Group 2, known work (port known proofs, extend rules):
 | ID | What | Rows |
 |---|---|---|
-| P18 | Schmidt's field descent in general (I10). M1 done 2026-11-09: C32 (one step at an odd prime), 60 rows, refuter SURVIVES ([R39](reviews/R39.md)); imported in the root, root build and settle (`scratch/p18/settle-m1.tsv`) next. M2 (chains, p = 2: 66 rows, 4 also C33's) with a Lean helper since 2026-11-09 (`scratch/p18/m2-brief.md`) | 60 + 66 none |
-| P16 + C16x/D2x | Rules at their edge. C33 (2026-11-09, I22): at Ma's edge the contraction below the Ma quotient is divisible by p, so p ∣ λc; with a cyclic Sylow p of order ≥ p² and p² ∣ n, p ∣ λ. `MaEdge.lean`, `MaEdgeRows.lean` (151 open rows, incl. N2847, N2863, N26266), tests; built, refuter running, then root and settle (`scratch/maedge/settle.tsv`). Still open: Ma at equality for c ≥ 2 (two-valued cosets, I20), margins in [½, 1) | up to 1,658 (151 by C33) |
+| P18 | Done 2026-11-10: C32 (one step, 60 rows, 21 newly settled) and C35 (chains, 66 rows, 62 newly settled) verified, [R39](reviews/R39.md), [R41](reviews/R41.md) | 83 settled |
+| P16 + C16x/D2x | Rules at their edge. Settled: C33 (151), C34 (23; N4195, N19445 building). Proved, settle after the root build: C36 (49 rows, 36 of 50 modules built, chain paused), C38 (14) and C39 (52), [R46](reviews/R46.md); N20961 (C38) built, unreviewed; N8416, N8422, N8476, N752 parked (kernel cost). Still open: Ma at equality for c ≥ 2 (two-valued cosets, I20), margins in [½, 1) | 174 settled, 115 pending |
 | P17 (Lean part) | C24 on quotients, ContractionCheck-style certificates | up to 392 |
 | C15x | I17's checker: per-branch echelon form over a certified field, `decide +kernel` slices | 11 none |
 | C4x | C18's family in Lean | family |
@@ -52,7 +52,7 @@ Group 3, technique tests (kill test first; work it if it hits):
 | ID | What | Rows |
 |---|---|---|
 | D14x | Done 2026-11-09: goes to "Open" (no published non-cyclic Ma-type bound transfers to SDS; the no-loss form kills 70 `exists` rows; `scratch/d14x/report.md`, understanding.md). Leads it left, untested: a signed Ma–Schmidt Lemma 3.2 with I20's two-valued cosets on 1,336 open rows at C21 margin (½, 1] (P16's ground); nonnegativity arguments on the 258 open rows with one minus sign | 0 |
-| D15x (part) | Joint contraction: coset-sum vectors on two quotients at once must be compatible; kill test on the 124 core rows where every single quotient has a vector | ? |
+| D15x (part) | Done 2026-11-10: pairs of quotients are provably too weak (`scratch/d15x/report.md`); all quotients at once gave I23 (tomography): C40–C42 and the flats, see the tomography line under Running | → I23 |
 | P19 | LP/Farkas: relaxation of the SDS constraints on 5 core rows; an infeasible LP gives a rational dual certificate for Lean | 0–20 |
 | P14 | SAT with LRAT checked by the kernel. Kill test 2026-11-09: negative for the off-the-shelf route. `bv_decide` proves with a native axiom; Std's checker (`Std.Tactic.BVDecide.LRAT.check_sound`) has the right theorem, but `decide +kernel` gets stuck on its `check.go` (well-founded recursion, private), even on x₀ ∧ ¬x₀ (`scratch/p14/Tiny.lean`). The route needs our own structurally recursive LRAT checker with a soundness proof for RUP steps (a substantial Lean project, not started) | 3–4 |
 | C3x | NL family (C12): the m = 6 norm-class recipe at m = 8, 10. Kill test negative (2026-11-09): at m = 8 no Frobenius-invariant union of the norm classes of order 255 gives NL₂₅₆(126) (R9's complete run, `reviews/R9/cyc/big_16_255_126.out`: 0 hits, 5.3·10⁸ nodes), so the recipe gives no even-m family; m = 10 not run | 0 (paper) |
