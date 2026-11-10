@@ -34,7 +34,7 @@
 | [C30](C30.md) | Signed combinations of a relative difference set: R − N, G − R − N, G − 2R − N, G − R − 2N (I15) | — | proved | — | — |
 | [C32](C32.md) | Field descent, one step at an odd prime p (p² ∣ m, 1 + m/p ≡ q^e): φ(m) n ≤ m (m/p) c² (Schmidt; P18 M1) | C27 | verified | `IsSDS.totient_mul_le_of_descent` | — |
 | [C33](C33.md) | Ma's lemma at its edge: p ∣ λc on a C21 quotient with b ≥ 1 (cyclic Sylow p of order ≥ p², p² ∣ n ⇒ p ∣ λ) | C21, C3 | verified | `IsSDS.dvd_lam_mul_of_ma` | — |
-| [C34](C34.md) | The divided contraction below a Ma quotient: W/p meets demands with square sum (k + λ(pc − 1))/p² (p odd) | C33, C3 | proved | `IsSDS.false_of_maDivided` | — |
+| [C34](C34.md) | The divided contraction below a Ma quotient: W/p meets demands with square sum (k + λ(pc − 1))/p² (p odd) | C33, C3 | verified | `IsSDS.false_of_maDivided` | — |
 | [C35](C35.md) | Field descent along a chain d₀ → … → F (odd p, and p = 2 with 8 ∣ d): φ(m) n ≤ m F c² (Schmidt; P18 M2) | C32 | verified | `IsSDS.totient_mul_le_of_chain` | — |
 | [C36](C36.md) | The divided contraction two levels below a Ma quotient: p² ∣ W, W/p² meets demands (any p, b ≥ 2) | C34, C21, C3 | proved | `IsSDS.false_of_maDivided2` | — |
-| [C37](C37.md) | The T-side of C26 at c = 1 (Z, T disjoint SDSs on K), and no SDS (54, 46, 10) in C₃ × C₁₈ (N464) | C26, C21 | proved | `n464_not_hasSDS` | — |
+| [C37](C37.md) | The T-side of C26 at c = 1 (Z, T disjoint SDSs on K), and no SDS (54, 46, 10) in C₃ × C₁₈ (N464) | C26, C21 | verified | `n464_not_hasSDS` | — |

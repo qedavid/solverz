@@ -462,7 +462,7 @@ N460,"SDS(54,44,4,[3,3,6])",Open@e3bf810,none,He-Wu Thm 3.2: n=40; p=2; m=3; j=1
 N461,"SDS(54,44,4,[3,18])",Open@e3bf810,none,He-Wu Thm 3.2: n=40; p=2; m=3; j=1,,
 N462,"SDS(54,44,4,[54])",Open@e3bf810,none,He-Wu Thm 3.2: n=40; p=2; m=3; j=1,,
 N463,"SDS(54,46,10,[3,3,6])",Open@e3bf810,exists,I21; O80,SignedDifferenceSets.Answer.N463.hasSDS,
-N464,"SDS(54,46,10,[3,18])",Open@e3bf810,open,,,
+N464,"SDS(54,46,10,[3,18])",Open@e3bf810,none,C37 (T-side of C26 at c = 1; pair search over the halved sets); PairRows.N464,SignedDifferenceSets.PairRows.N464.n464_not_hasSDS,
 N465,"SDS(54,46,10,[54])",Open@e3bf810,none,C21; MaRows part01,SignedDifferenceSets.MaRows.not_hasSDS_of_mem_part01,Z24
 N466,"SDS(54,47,34,[3,3,6])",Open@e3bf810,none,He-Wu Thm 3.2: n=13; p=13; m=2; j=1,,
 N467,"SDS(54,47,34,[3,18])",Open@e3bf810,none,He-Wu Thm 3.2: n=13; p=13; m=2; j=1,,
@@ -4680,7 +4680,7 @@ N4678,"SDS(144,42,6,[2,2,2,18])",Open@e3bf810,none,C21; MaRows part01,SignedDiff
 N4679,"SDS(144,42,6,[2,2,6,6])",Open@e3bf810,open,,,
 N4680,"SDS(144,42,6,[2,2,36])",Open@e3bf810,none,C21; MaRows part01,SignedDifferenceSets.MaRows.not_hasSDS_of_mem_part01,Z24
 N4681,"SDS(144,42,6,[2,6,12])",Open@e3bf810,open,,,
-N4682,"SDS(144,42,6,[2,72])",Open@e3bf810,open,,,
+N4682,"SDS(144,42,6,[2,72])",Open@e3bf810,none,C34 (divided contraction below a Ma quotient); MaDividedRows,SignedDifferenceSets.MaDividedRows.N4682.not_hasSDS,
 N4683,"SDS(144,42,6,[3,48])",Open@e3bf810,none,C26 (parity of the halved coset sums); DescentRows chunk 1,SignedDifferenceSets.descentRows1_not_hasSDS,Z29
 N4684,"SDS(144,42,6,[4,36])",Open@e3bf810,none,C21; MaRows part01,SignedDifferenceSets.MaRows.not_hasSDS_of_mem_part01,Z24
 N4685,"SDS(144,42,6,[6,24])",Open@e3bf810,open,,,
@@ -4690,7 +4690,7 @@ N4688,"SDS(144,48,12,[2,2,2,18])",Open@e3bf810,none,C21; MaRows part01,SignedDif
 N4689,"SDS(144,48,12,[2,2,6,6])",Open@e3bf810,open,,,
 N4690,"SDS(144,48,12,[2,2,36])",Open@e3bf810,none,C21; MaRows part01,SignedDifferenceSets.MaRows.not_hasSDS_of_mem_part01,Z24
 N4691,"SDS(144,48,12,[2,6,12])",Open@e3bf810,open,,,
-N4692,"SDS(144,48,12,[2,72])",Open@e3bf810,open,,,
+N4692,"SDS(144,48,12,[2,72])",Open@e3bf810,none,C34 (divided contraction below a Ma quotient); MaDividedRows,SignedDifferenceSets.MaDividedRows.N4692.not_hasSDS,
 N4693,"SDS(144,48,12,[3,48])",Open@e3bf810,none,C26 (halved row off the table); HalfRows Part03,SignedDifferenceSets.HalfRows.n4693_not_hasSDS,Z29
 N4694,"SDS(144,48,12,[4,36])",Open@e3bf810,none,C21; MaRows part01,SignedDifferenceSets.MaRows.not_hasSDS_of_mem_part01,Z24
 N4695,"SDS(144,48,12,[6,24])",Open@e3bf810,open,,,
@@ -4810,7 +4810,7 @@ N4808,"SDS(144,108,72,[2,2,2,18])",Open@e3bf810,none,C21; MaRows part01,SignedDi
 N4809,"SDS(144,108,72,[2,2,6,6])",Open@e3bf810,open,,,
 N4810,"SDS(144,108,72,[2,2,36])",Open@e3bf810,none,C21; MaRows part01,SignedDifferenceSets.MaRows.not_hasSDS_of_mem_part01,Z24
 N4811,"SDS(144,108,72,[2,6,12])",Open@e3bf810,open,,,
-N4812,"SDS(144,108,72,[2,72])",Open@e3bf810,open,,,
+N4812,"SDS(144,108,72,[2,72])",Open@e3bf810,none,C34 (divided contraction below a Ma quotient); MaDividedRows,SignedDifferenceSets.MaDividedRows.N4812.not_hasSDS,
 N4813,"SDS(144,108,72,[3,48])",Open@e3bf810,none,C26 (halved row off the table); HalfRows Part04,SignedDifferenceSets.HalfRows.n4813_not_hasSDS,Z29
 N4814,"SDS(144,108,72,[4,36])",Open@e3bf810,none,C21; MaRows part01,SignedDifferenceSets.MaRows.not_hasSDS_of_mem_part01,Z24
 N4815,"SDS(144,108,72,[6,24])",Open@e3bf810,open,,,
@@ -4860,7 +4860,7 @@ N4858,"SDS(144,126,90,[2,2,2,18])",Open@e3bf810,none,C21; MaRows part01,SignedDi
 N4859,"SDS(144,126,90,[2,2,6,6])",Open@e3bf810,open,,,
 N4860,"SDS(144,126,90,[2,2,36])",Open@e3bf810,none,C21; MaRows part01,SignedDifferenceSets.MaRows.not_hasSDS_of_mem_part01,Z24
 N4861,"SDS(144,126,90,[2,6,12])",Open@e3bf810,open,,,
-N4862,"SDS(144,126,90,[2,72])",Open@e3bf810,open,,,
+N4862,"SDS(144,126,90,[2,72])",Open@e3bf810,none,C34 (divided contraction below a Ma quotient); MaDividedRows,SignedDifferenceSets.MaDividedRows.N4862.not_hasSDS,
 N4863,"SDS(144,126,90,[3,48])",Open@e3bf810,none,C26 (parity of the halved coset sums); DescentRows chunk 1,SignedDifferenceSets.descentRows1_not_hasSDS,Z29
 N4864,"SDS(144,126,90,[4,36])",Open@e3bf810,none,C21; MaRows part01,SignedDifferenceSets.MaRows.not_hasSDS_of_mem_part01,Z24
 N4865,"SDS(144,126,90,[6,24])",Open@e3bf810,open,,,
@@ -11245,22 +11245,22 @@ N11243,"SDS(215,209,100,[215])",No@e3bf810,none,Gordon: Orbit Exhaust,,
 N11244,"SDS(215,212,26,[215])",Open@e3bf810,none,He-Wu Thm 3.2: n=186; p=2; m=5; j=2,,
 N11245,"SDS(215,212,88,[215])",Open@e3bf810,none,C8; ParityRows,SignedDifferenceSets.ParityRows.parityRows_not_hasSDS,Z11
 N11246,"SDS(216,40,4,[2,2,54])",Open@e3bf810,none,C21; MaRows part02,SignedDifferenceSets.MaRows.not_hasSDS_of_mem_part02,Z24
-N11247,"SDS(216,40,4,[2,6,18])",Open@e3bf810,open,,,
+N11247,"SDS(216,40,4,[2,6,18])",Open@e3bf810,none,C34 (divided contraction below a Ma quotient); MaDividedRows,SignedDifferenceSets.MaDividedRows.N11247.not_hasSDS,
 N11248,"SDS(216,40,4,[2,108])",Open@e3bf810,none,C21; MaRows part02,SignedDifferenceSets.MaRows.not_hasSDS_of_mem_part02,Z24
 N11249,"SDS(216,40,4,[3,3,24])",Open@e3bf810,none,C26 (halved row off the table); HalfRows Part06,SignedDifferenceSets.HalfRows.n11249_not_hasSDS,Z29
 N11250,"SDS(216,40,4,[3,6,12])",Open@e3bf810,open,,,
 N11251,"SDS(216,40,4,[3,72])",Open@e3bf810,none,C26 (halved row off the table); HalfRows Part06,SignedDifferenceSets.HalfRows.n11251_not_hasSDS,Z29
 N11252,"SDS(216,40,4,[6,6,6])",Open@e3bf810,open,,,
-N11253,"SDS(216,40,4,[6,36])",Open@e3bf810,open,,,
+N11253,"SDS(216,40,4,[6,36])",Open@e3bf810,none,C34 (divided contraction below a Ma quotient); MaDividedRows,SignedDifferenceSets.MaDividedRows.N11253.not_hasSDS,
 N11254,"SDS(216,40,4,[216])",Open@e3bf810,none,C26 (halved row off the table); HalfRows Part06,SignedDifferenceSets.HalfRows.n11254_not_hasSDS,Z29
 N11255,"SDS(216,44,8,[2,2,54])",Open@e3bf810,none,C21; MaRows part02,SignedDifferenceSets.MaRows.not_hasSDS_of_mem_part02,Z24
-N11256,"SDS(216,44,8,[2,6,18])",Open@e3bf810,open,,,
+N11256,"SDS(216,44,8,[2,6,18])",Open@e3bf810,none,C34 (divided contraction below a Ma quotient); MaDividedRows,SignedDifferenceSets.MaDividedRows.N11256.not_hasSDS,
 N11257,"SDS(216,44,8,[2,108])",Open@e3bf810,none,C21; MaRows part02,SignedDifferenceSets.MaRows.not_hasSDS_of_mem_part02,Z24
 N11258,"SDS(216,44,8,[3,3,24])",Open@e3bf810,none,C26 (halved row off the table); HalfRows Part06,SignedDifferenceSets.HalfRows.n11258_not_hasSDS,Z29
 N11259,"SDS(216,44,8,[3,6,12])",Open@e3bf810,open,,,
 N11260,"SDS(216,44,8,[3,72])",Open@e3bf810,none,C26 (halved row off the table); HalfRows Part06,SignedDifferenceSets.HalfRows.n11260_not_hasSDS,Z29
 N11261,"SDS(216,44,8,[6,6,6])",Open@e3bf810,open,,,
-N11262,"SDS(216,44,8,[6,36])",Open@e3bf810,open,,,
+N11262,"SDS(216,44,8,[6,36])",Open@e3bf810,none,C34 (divided contraction below a Ma quotient); MaDividedRows,SignedDifferenceSets.MaDividedRows.N11262.not_hasSDS,
 N11263,"SDS(216,44,8,[216])",Open@e3bf810,none,C26 (halved row off the table); HalfRows Part06,SignedDifferenceSets.HalfRows.n11263_not_hasSDS,Z29
 N11264,"SDS(216,54,2,[2,2,54])",Open@e3bf810,none,He-Wu Thm 3.2: n=52; p=13; m=2; j=1,,
 N11265,"SDS(216,54,2,[2,6,18])",Open@e3bf810,none,He-Wu Thm 3.2: n=52; p=13; m=2; j=1,,
@@ -11488,13 +11488,13 @@ N11486,"SDS(216,176,32,[6,6,6])",Open@e3bf810,open,,,
 N11487,"SDS(216,176,32,[6,36])",Open@e3bf810,open,,,
 N11488,"SDS(216,176,32,[216])",Open@e3bf810,none,C21; MaRows part02,SignedDifferenceSets.MaRows.not_hasSDS_of_mem_part02,Z24
 N11489,"SDS(216,176,140,[2,2,54])",Open@e3bf810,none,C21; MaRows part02,SignedDifferenceSets.MaRows.not_hasSDS_of_mem_part02,Z24
-N11490,"SDS(216,176,140,[2,6,18])",Open@e3bf810,open,,,
+N11490,"SDS(216,176,140,[2,6,18])",Open@e3bf810,none,C34 (divided contraction below a Ma quotient); MaDividedRows,SignedDifferenceSets.MaDividedRows.N11490.not_hasSDS,
 N11491,"SDS(216,176,140,[2,108])",Open@e3bf810,none,C21; MaRows part02,SignedDifferenceSets.MaRows.not_hasSDS_of_mem_part02,Z24
 N11492,"SDS(216,176,140,[3,3,24])",Open@e3bf810,none,C26 (halved row off the table); HalfRows Part07,SignedDifferenceSets.HalfRows.n11492_not_hasSDS,Z29
 N11493,"SDS(216,176,140,[3,6,12])",Open@e3bf810,open,,,
 N11494,"SDS(216,176,140,[3,72])",Open@e3bf810,none,C26 (halved row off the table); HalfRows Part07,SignedDifferenceSets.HalfRows.n11494_not_hasSDS,Z29
 N11495,"SDS(216,176,140,[6,6,6])",Open@e3bf810,open,,,
-N11496,"SDS(216,176,140,[6,36])",Open@e3bf810,open,,,
+N11496,"SDS(216,176,140,[6,36])",Open@e3bf810,none,C34 (divided contraction below a Ma quotient); MaDividedRows,SignedDifferenceSets.MaDividedRows.N11496.not_hasSDS,
 N11497,"SDS(216,176,140,[216])",Open@e3bf810,none,C26 (halved row off the table); HalfRows Part07,SignedDifferenceSets.HalfRows.n11497_not_hasSDS,Z29
 N11498,"SDS(216,181,36,[2,2,54])",Open@e3bf810,none,He-Wu Thm 3.2: n=145; p=5; m=2; j=1,,
 N11499,"SDS(216,181,36,[2,6,18])",Open@e3bf810,none,He-Wu Thm 3.2: n=145; p=5; m=2; j=1,,
@@ -11560,13 +11560,13 @@ N11558,"SDS(216,195,2,[6,6,6])",Open@e3bf810,none,He-Wu Thm 3.2: n=193; p=193; m
 N11559,"SDS(216,195,2,[6,36])",Open@e3bf810,none,He-Wu Thm 3.2: n=193; p=193; m=2; j=1,,
 N11560,"SDS(216,195,2,[216])",No@e3bf810,none,Gordon: Orbit Exhaust,,
 N11561,"SDS(216,196,160,[2,2,54])",Open@e3bf810,none,C21; MaRows part02,SignedDifferenceSets.MaRows.not_hasSDS_of_mem_part02,Z24
-N11562,"SDS(216,196,160,[2,6,18])",Open@e3bf810,open,,,
+N11562,"SDS(216,196,160,[2,6,18])",Open@e3bf810,none,C34 (divided contraction below a Ma quotient); MaDividedRows,SignedDifferenceSets.MaDividedRows.N11562.not_hasSDS,
 N11563,"SDS(216,196,160,[2,108])",Open@e3bf810,none,C21; MaRows part02,SignedDifferenceSets.MaRows.not_hasSDS_of_mem_part02,Z24
 N11564,"SDS(216,196,160,[3,3,24])",Open@e3bf810,none,C26 (halved row off the table); HalfRows Part07,SignedDifferenceSets.HalfRows.n11564_not_hasSDS,Z29
 N11565,"SDS(216,196,160,[3,6,12])",Open@e3bf810,open,,,
 N11566,"SDS(216,196,160,[3,72])",Open@e3bf810,none,C26 (halved row off the table); HalfRows Part07,SignedDifferenceSets.HalfRows.n11566_not_hasSDS,Z29
 N11567,"SDS(216,196,160,[6,6,6])",Open@e3bf810,open,,,
-N11568,"SDS(216,196,160,[6,36])",Open@e3bf810,open,,,
+N11568,"SDS(216,196,160,[6,36])",Open@e3bf810,none,C34 (divided contraction below a Ma quotient); MaDividedRows,SignedDifferenceSets.MaDividedRows.N11568.not_hasSDS,
 N11569,"SDS(216,196,160,[216])",Open@e3bf810,none,C26 (halved row off the table); HalfRows Part07,SignedDifferenceSets.HalfRows.n11569_not_hasSDS,Z29
 N11570,"SDS(216,210,66,[2,2,54])",Open@e3bf810,none,C17; RealCharsRows,SignedDifferenceSets.realCharsRows_not_hasSDS,Z17
 N11571,"SDS(216,210,66,[2,6,18])",Open@e3bf810,none,C17; RealCharsRows,SignedDifferenceSets.realCharsRows_not_hasSDS,Z17
@@ -19281,7 +19281,7 @@ N19279,"SDS(269,265,162,[269])",Open@e3bf810,none,He-Wu Thm 3.2: n=103; p=103; m
 N19280,"SDS(269,268,-1,[269])",Yes@e3bf810,exists,Gordon: Paley,,
 N19281,"SDS(269,268,66,[269])",Open@e3bf810,none,He-Wu Thm 3.2: n=202; p=2; m=269; j=134,,
 N19282,"SDS(270,38,2,[3,3,30])",Open@e3bf810,open,,,
-N19283,"SDS(270,38,2,[3,90])",Open@e3bf810,open,,,
+N19283,"SDS(270,38,2,[3,90])",Open@e3bf810,none,C34 (divided contraction below a Ma quotient); MaDividedRows,SignedDifferenceSets.MaDividedRows.N19283.not_hasSDS,
 N19284,"SDS(270,38,2,[270])",Open@e3bf810,none,C21; MaRows part03,SignedDifferenceSets.MaRows.not_hasSDS_of_mem_part03,Z24
 N19285,"SDS(270,57,8,[3,3,30])",Open@e3bf810,open,,,
 N19286,"SDS(270,57,8,[3,90])",Open@e3bf810,open,,,
@@ -23636,7 +23636,7 @@ N23634,"SDS(297,120,5,[3,99])",Open@e3bf810,none,He-Wu Thm 3.2: n=115; p=5; m=3;
 N23635,"SDS(297,120,5,[297])",Open@e3bf810,none,He-Wu Thm 3.2: n=115; p=5; m=3; j=1,,
 N23636,"SDS(297,120,39,[3,3,33])",Open@e3bf810,open,,,
 N23637,"SDS(297,120,39,[3,99])",Open@e3bf810,open,,,
-N23638,"SDS(297,120,39,[297])",Open@e3bf810,none,C35 (field descent along a chain); FieldDescentChainRows,SignedDifferenceSets.fieldDescentChainRows_not_hasSDS,
+N23638,"SDS(297,120,39,[297])",Open@e3bf810,none,C35 (field descent along a chain); FieldDescentChainRows; also C34 (divided contraction below a Ma quotient); MaDividedRows,SignedDifferenceSets.fieldDescentChainRows_not_hasSDS,
 N23639,"SDS(297,121,13,[3,3,33])",Open@e3bf810,none,C13; SelfConjugacyRows part04,SignedDifferenceSets.SelfConjugacyRows.part04_not_hasSDS,Z9
 N23640,"SDS(297,121,13,[3,99])",Open@e3bf810,none,C13; SelfConjugacyRows part04,SignedDifferenceSets.SelfConjugacyRows.part04_not_hasSDS,Z9
 N23641,"SDS(297,121,13,[297])",Open@e3bf810,none,C13; SelfConjugacyRows part04,SignedDifferenceSets.SelfConjugacyRows.part04_not_hasSDS,Z9
@@ -23774,7 +23774,7 @@ N23772,"SDS(297,201,110,[3,99])",Open@e3bf810,none,He-Wu Thm 3.2: n=91; p=7; m=1
 N23773,"SDS(297,201,110,[297])",Open@e3bf810,none,He-Wu Thm 3.2: n=91; p=7; m=11; j=5,,
 N23774,"SDS(297,201,120,[3,3,33])",Open@e3bf810,open,,,
 N23775,"SDS(297,201,120,[3,99])",Open@e3bf810,open,,,
-N23776,"SDS(297,201,120,[297])",Open@e3bf810,none,C35 (field descent along a chain); FieldDescentChainRows,SignedDifferenceSets.fieldDescentChainRows_not_hasSDS,
+N23776,"SDS(297,201,120,[297])",Open@e3bf810,none,C35 (field descent along a chain); FieldDescentChainRows; also C34 (divided contraction below a Ma quotient); MaDividedRows,SignedDifferenceSets.fieldDescentChainRows_not_hasSDS,
 N23777,"SDS(297,212,14,[3,3,33])",Open@e3bf810,none,He-Wu Thm 3.2: n=198; p=2; m=3; j=1,,
 N23778,"SDS(297,212,14,[3,99])",Open@e3bf810,none,He-Wu Thm 3.2: n=198; p=2; m=3; j=1,,
 N23779,"SDS(297,212,14,[297])",Open@e3bf810,none,He-Wu Thm 3.2: n=198; p=2; m=3; j=1,,
@@ -33318,7 +33318,7 @@ N33316,"SDS(351,109,30,[3,117])",Open@e3bf810,open,,,
 N33317,"SDS(351,109,30,[351])",Open@e3bf810,none,"A7 (C10, C16); CosetRows Part06",SignedDifferenceSets.CosetRows.n33317_not_hasSDS,Z28
 N33318,"SDS(351,114,33,[3,3,39])",Open@e3bf810,open,,,
 N33319,"SDS(351,114,33,[3,117])",Open@e3bf810,open,,,
-N33320,"SDS(351,114,33,[351])",Open@e3bf810,none,C35 (field descent along a chain); FieldDescentChainRows,SignedDifferenceSets.fieldDescentChainRows_not_hasSDS,
+N33320,"SDS(351,114,33,[351])",Open@e3bf810,none,C35 (field descent along a chain); FieldDescentChainRows; also C34 (divided contraction below a Ma quotient); MaDividedRows,SignedDifferenceSets.fieldDescentChainRows_not_hasSDS,
 N33321,"SDS(351,116,8,[3,3,39])",Open@e3bf810,open,,,
 N33322,"SDS(351,116,8,[3,117])",Open@e3bf810,open,,,
 N33323,"SDS(351,116,8,[351])",Open@e3bf810,none,"C33 (Ma's lemma at its edge, p ∤ λc); MaEdgeRows",SignedDifferenceSets.MaEdgeRows.n33323_not_hasSDS,
@@ -33531,7 +33531,7 @@ N33529,"SDS(351,249,32,[3,117])",Open@e3bf810,none,He-Wu Thm 3.2: n=217; p=7; m=
 N33530,"SDS(351,249,32,[351])",Open@e3bf810,none,He-Wu Thm 3.2: n=217; p=7; m=13; j=6,,
 N33531,"SDS(351,249,168,[3,3,39])",Open@e3bf810,open,,,
 N33532,"SDS(351,249,168,[3,117])",Open@e3bf810,open,,,
-N33533,"SDS(351,249,168,[351])",Open@e3bf810,none,C35 (field descent along a chain); FieldDescentChainRows,SignedDifferenceSets.fieldDescentChainRows_not_hasSDS,
+N33533,"SDS(351,249,168,[351])",Open@e3bf810,none,C35 (field descent along a chain); FieldDescentChainRows; also C34 (divided contraction below a Ma quotient); MaDividedRows,SignedDifferenceSets.fieldDescentChainRows_not_hasSDS,
 N33534,"SDS(351,254,7,[3,3,39])",Open@e3bf810,none,He-Wu Thm 3.2: n=247; p=19; m=13; j=6,,
 N33535,"SDS(351,254,7,[3,117])",Open@e3bf810,none,He-Wu Thm 3.2: n=247; p=19; m=13; j=6,,
 N33536,"SDS(351,254,7,[351])",Open@e3bf810,none,He-Wu Thm 3.2: n=247; p=19; m=13; j=6,,
@@ -38248,7 +38248,7 @@ N38246,"SDS(374,369,72,[374])",Open@e3bf810,none,He-Wu Thm 3.2: n=297; p=3; m=2;
 N38247,"SDS(374,370,102,[374])",Open@e3bf810,none,He-Wu Thm 3.2: n=268; p=67; m=2; j=1,,
 N38248,"SDS(374,372,28,[374])",Open@e3bf810,none,He-Wu Thm 3.2: n=344; p=2; m=11; j=5,,
 N38249,"SDS(375,26,1,[5,5,15])",Open@e3bf810,open,,,
-N38250,"SDS(375,26,1,[5,75])",Open@e3bf810,open,,,
+N38250,"SDS(375,26,1,[5,75])",Open@e3bf810,none,C34 (divided contraction below a Ma quotient); MaDividedRows,SignedDifferenceSets.MaDividedRows.N38250.not_hasSDS,
 N38251,"SDS(375,26,1,[375])",Open@e3bf810,none,C21; MaRows part04,SignedDifferenceSets.MaRows.not_hasSDS_of_mem_part04,Z24
 N38252,"SDS(375,36,2,[5,5,15])",Open@e3bf810,none,He-Wu Thm 3.2: n=34; p=2; m=3; j=1,,
 N38253,"SDS(375,36,2,[5,75])",Open@e3bf810,none,He-Wu Thm 3.2: n=34; p=2; m=3; j=1,,
@@ -51784,10 +51784,10 @@ N51782,"SDS(431,411,373,[431])",Open@e3bf810,none,E10/E11; C15; OrbitSearch,Sign
 N51783,"SDS(431,425,20,[431])",Open@e3bf810,none,C8; ParityRows,SignedDifferenceSets.ParityRows.parityRows_not_hasSDS,Z11
 N51784,"SDS(431,425,260,[431])",Open@e3bf810,none,C8; ParityRows,SignedDifferenceSets.ParityRows.parityRows_not_hasSDS,Z11
 N51785,"SDS(432,38,2,[2,2,2,54])",Open@e3bf810,none,C21; MaRows part05,SignedDifferenceSets.MaRows.not_hasSDS_of_mem_part05,Z24
-N51786,"SDS(432,38,2,[2,2,6,18])",Open@e3bf810,open,,,
+N51786,"SDS(432,38,2,[2,2,6,18])",Open@e3bf810,none,C34 (divided contraction below a Ma quotient); MaDividedRows,SignedDifferenceSets.MaDividedRows.N51786.not_hasSDS,
 N51787,"SDS(432,38,2,[2,2,108])",Open@e3bf810,none,C21; MaRows part05,SignedDifferenceSets.MaRows.not_hasSDS_of_mem_part05,Z24
 N51788,"SDS(432,38,2,[2,6,6,6])",Open@e3bf810,open,,,
-N51789,"SDS(432,38,2,[2,6,36])",Open@e3bf810,open,,,
+N51789,"SDS(432,38,2,[2,6,36])",Open@e3bf810,none,C34 (divided contraction below a Ma quotient); MaDividedRows,SignedDifferenceSets.MaDividedRows.N51789.not_hasSDS,
 N51790,"SDS(432,38,2,[2,216])",Open@e3bf810,none,"C33 (Ma's lemma at its edge, p ∤ λc); MaEdgeRows",SignedDifferenceSets.MaEdgeRows.n51790_not_hasSDS,
 N51791,"SDS(432,38,2,[3,3,48])",Open@e3bf810,none,C26 (parity of the halved coset sums); DescentRows chunk 3,SignedDifferenceSets.descentRows3_not_hasSDS,Z29
 N51792,"SDS(432,38,2,[3,6,24])",Open@e3bf810,open,,,
@@ -51795,8 +51795,8 @@ N51793,"SDS(432,38,2,[3,12,12])",Open@e3bf810,open,,,
 N51794,"SDS(432,38,2,[3,144])",Open@e3bf810,none,C26 (parity of the halved coset sums); DescentRows chunk 3,SignedDifferenceSets.descentRows3_not_hasSDS,Z29
 N51795,"SDS(432,38,2,[4,108])",Open@e3bf810,none,C21; MaRows part05,SignedDifferenceSets.MaRows.not_hasSDS_of_mem_part05,Z24
 N51796,"SDS(432,38,2,[6,6,12])",Open@e3bf810,open,,,
-N51797,"SDS(432,38,2,[6,72])",Open@e3bf810,open,,,
-N51798,"SDS(432,38,2,[12,36])",Open@e3bf810,open,,,
+N51797,"SDS(432,38,2,[6,72])",Open@e3bf810,none,C34 (divided contraction below a Ma quotient); MaDividedRows,SignedDifferenceSets.MaDividedRows.N51797.not_hasSDS,
+N51798,"SDS(432,38,2,[12,36])",Open@e3bf810,none,C34 (divided contraction below a Ma quotient); MaDividedRows,SignedDifferenceSets.MaDividedRows.N51798.not_hasSDS,
 N51799,"SDS(432,38,2,[432])",Open@e3bf810,none,C26 (parity of the halved coset sums); DescentRows chunk 3,SignedDifferenceSets.descentRows3_not_hasSDS,Z29
 N51800,"SDS(432,99,2,[2,2,2,54])",Open@e3bf810,none,He-Wu Thm 3.2: n=97; p=97; m=2; j=1,,
 N51801,"SDS(432,99,2,[2,2,6,18])",Open@e3bf810,none,He-Wu Thm 3.2: n=97; p=97; m=2; j=1,,
@@ -52894,10 +52894,10 @@ N52892,"SDS(432,405,20,[6,72])",Open@e3bf810,none,He-Wu Thm 3.2: n=385; p=5; m=2
 N52893,"SDS(432,405,20,[12,36])",Open@e3bf810,none,He-Wu Thm 3.2: n=385; p=5; m=2; j=1,,
 N52894,"SDS(432,405,20,[432])",Open@e3bf810,none,He-Wu Thm 3.2: n=385; p=5; m=2; j=1,,
 N52895,"SDS(432,410,374,[2,2,2,54])",Open@e3bf810,none,C21; MaRows part05,SignedDifferenceSets.MaRows.not_hasSDS_of_mem_part05,Z24
-N52896,"SDS(432,410,374,[2,2,6,18])",Open@e3bf810,open,,,
+N52896,"SDS(432,410,374,[2,2,6,18])",Open@e3bf810,none,C34 (divided contraction below a Ma quotient); MaDividedRows,SignedDifferenceSets.MaDividedRows.N52896.not_hasSDS,
 N52897,"SDS(432,410,374,[2,2,108])",Open@e3bf810,none,C21; MaRows part05,SignedDifferenceSets.MaRows.not_hasSDS_of_mem_part05,Z24
 N52898,"SDS(432,410,374,[2,6,6,6])",Open@e3bf810,open,,,
-N52899,"SDS(432,410,374,[2,6,36])",Open@e3bf810,open,,,
+N52899,"SDS(432,410,374,[2,6,36])",Open@e3bf810,none,C34 (divided contraction below a Ma quotient); MaDividedRows,SignedDifferenceSets.MaDividedRows.N52899.not_hasSDS,
 N52900,"SDS(432,410,374,[2,216])",Open@e3bf810,none,"C33 (Ma's lemma at its edge, p ∤ λc); MaEdgeRows",SignedDifferenceSets.MaEdgeRows.n52900_not_hasSDS,
 N52901,"SDS(432,410,374,[3,3,48])",Open@e3bf810,none,C26 (parity of the halved coset sums); DescentRows chunk 4,SignedDifferenceSets.descentRows4_not_hasSDS,Z29
 N52902,"SDS(432,410,374,[3,6,24])",Open@e3bf810,open,,,
@@ -52905,8 +52905,8 @@ N52903,"SDS(432,410,374,[3,12,12])",Open@e3bf810,open,,,
 N52904,"SDS(432,410,374,[3,144])",Open@e3bf810,none,C26 (parity of the halved coset sums); DescentRows chunk 4,SignedDifferenceSets.descentRows4_not_hasSDS,Z29
 N52905,"SDS(432,410,374,[4,108])",Open@e3bf810,none,C21; MaRows part05,SignedDifferenceSets.MaRows.not_hasSDS_of_mem_part05,Z24
 N52906,"SDS(432,410,374,[6,6,12])",Open@e3bf810,open,,,
-N52907,"SDS(432,410,374,[6,72])",Open@e3bf810,open,,,
-N52908,"SDS(432,410,374,[12,36])",Open@e3bf810,open,,,
+N52907,"SDS(432,410,374,[6,72])",Open@e3bf810,none,C34 (divided contraction below a Ma quotient); MaDividedRows,SignedDifferenceSets.MaDividedRows.N52907.not_hasSDS,
+N52908,"SDS(432,410,374,[12,36])",Open@e3bf810,none,C34 (divided contraction below a Ma quotient); MaDividedRows,SignedDifferenceSets.MaDividedRows.N52908.not_hasSDS,
 N52909,"SDS(432,410,374,[432])",Open@e3bf810,none,C26 (parity of the halved coset sums); DescentRows chunk 4,SignedDifferenceSets.descentRows4_not_hasSDS,Z29
 N52910,"SDS(432,414,90,[2,2,2,54])",Open@e3bf810,none,C21; MaRows part05,SignedDifferenceSets.MaRows.not_hasSDS_of_mem_part05,Z24
 N52911,"SDS(432,414,90,[2,2,6,18])",Open@e3bf810,none,C21; MaRows part05,SignedDifferenceSets.MaRows.not_hasSDS_of_mem_part05,Z24
