@@ -71,6 +71,47 @@ fn tuples(o: &[i64]) -> Vec<Vec<i64>> {
     out
 }
 
+/// Some multiset of n values in [−c, c] has square sum q, absolute sum ≤ amax and sum s (or −s): the counts mₐ of
+/// each |value| a with Σ a² mₐ = q, Σ mₐ ≤ n, Σ a mₐ ≤ amax, and signs reaching s.
+fn counts_feasible(c: i64, n: i64, q: i64, s: i64, amax: i64) -> bool {
+    fn rec(a: i64, n: i64, q: i64, amax: i64, ms: &mut Vec<(i64, i64)>, s: i64) -> bool {
+        if q == 0 {
+            let mut reach: std::collections::HashSet<i64> = [0].into_iter().collect();
+            for &(a, m) in ms.iter() {
+                let mut next = std::collections::HashSet::new();
+                for &x in &reach {
+                    let mut t = -m;
+                    while t <= m {
+                        next.insert(x + a * t);
+                        t += 2;
+                    }
+                }
+                reach = next;
+            }
+            return reach.contains(&s) || reach.contains(&-s);
+        }
+        if a == 0 {
+            return false;
+        }
+        let mut m = 0;
+        while m * a * a <= q && m <= n && m * a <= amax {
+            if m > 0 {
+                ms.push((a, m));
+            }
+            let ok = rec(a - 1, n - m, q - m * a * a, amax - m * a, ms, s);
+            if m > 0 {
+                ms.pop();
+            }
+            if ok {
+                return true;
+            }
+            m += 1;
+        }
+        false
+    }
+    rec(c, n, q, amax, &mut Vec::new(), s)
+}
+
 fn run(inst: &Instance, max_nodes: u64) -> (bool, String) {
     let (v, k, lam) = (inst.v as i64, inst.k as i64, inst.lam);
     let n = k - lam;
@@ -113,6 +154,10 @@ fn run(inst: &Instance, max_nodes: u64) -> (bool, String) {
                             let kk = k / pl;
                             vec![if (kk - k) % 2 == 0 { kk } else { kk - 1 }]
                         };
+                        let amax = bounds.iter().copied().max().unwrap_or(-1);
+                        if !counts_feasible(c, group.order as i64, dem.square, dem.sum, amax) {
+                            return (true, format!("KILL {p} {j} {lv} {name} count"));
+                        }
                         let (mut found, mut cut, mut nodes) = (false, false, 0);
                         for kk in bounds.into_iter().filter(|&x| x >= 0) {
                             let out = search(&group, kk as usize, &dem, max_nodes);
