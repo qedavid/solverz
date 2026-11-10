@@ -108,7 +108,7 @@ Group 3, technique tests (kill test first; work it if it hits):
 | D14x | Ma-type lemma for non-cyclic Sylow subgroups (no source, D14x 2026-11-09) | ~2,200 | new mathematics; the no-loss form is false for SDS |
 | P21 | Planned ideator rounds on the core | — | dropped by the user (no new ideators) |
 
-**Running.** (2026-11-10 13:57; the user lifted every temporary restriction: CLAUDE.md's limits only, "never stop")
+**Running.** (2026-11-10 13:39; the user lifted every temporary restriction: CLAUDE.md's limits only, "never stop")
 - Agents (3): I23 tomography explorer (notes `scratch/tomo/notes.md`; 49 of 52 open Z_p² rows killed in exploration); Lean helper for I23 (`scratch/tomo/lean-brief.md`, notes `scratch/tomo/lean-progress.md`; p = 7 first); refuter on C38 and C39 (`scratch/refuter/c38-brief.md`, reports `scratch/refuter/c38/`).
 - Lean: the C36 rows (`scratch/c34/tree.sh` over `scratch/c34/todo.txt`, log `scratch/c34/chain.log`), then N4195 and N16779B16 again (killed by the watchdog under memory pressure), then the root with MaDivided2 and the C36 rows (settle `scratch/maedge/settle-c36-merged.tsv` through `scratch/settle_safe.py`), after C38/C39's refuter MaDividedCounts, MaDividedRes and their 66 rows (settle `settle-c34b.tsv`, `settle-c36b.tsv`, `settle-c38.tsv`).
 - Settled today so far: 237 (01:58–02:02) + 24 (12:52): C33, C32, C35, P3, N27692, N6970, C34 (23), C37 (N464). Table 91.43%. Always settle through `scratch/settle_safe.py`: `settle.py` overwrites the evidence of rows already settled.
