@@ -1,6 +1,7 @@
 # Journal
 
 ## 2026-11-10
+- 02:02 Settled N6970 (171, 154, 135) in C₃ × C₅₇ none (C10x): contraction to C₃ × C₃, `noVector` in 45 kernel checks over 4 part modules and a join (`Answer/N6970`, prefix depth 3; the join's `simp` needed `and_assoc`), root build `--wfail`, axioms standard. N2847, N2863, N26266, the other C10x rows, are C33's. Table 91.40% (none 64,247, exists 229, open 6,067)
 - 01:58 Settled 236 rows none (`scratch/settle-batch1.tsv`): C33 151 (`MaEdgeRows`), C32 21 more (`FieldDescentRows`; 39 of its 60 cite C33 first), C35 62 more (`FieldDescentChainRows`; 4 cite C33), P3's N7412 (`HalfRows.OrbitCited`; N33806, N61082 cite C33), N27692 (C7's integer test, `MarkedCountsInt`). C32, C33, C35 verified: root build `--wfail` (MaEdge's and MarkedCountsInt's `Decidable` instances named to end a name clash), axioms of all 155 cited theorems propext, Classical.choice, Quot.sound. Table 91.40% (none 64,246, exists 229, open 6,068)
 - 01:32 C35 proved (refuter SURVIVES, [R41](reviews/R41.md)): field descent along a chain (P18 M2; `FieldDescentChain.lean`, `FieldDescentChainRows.lean`: 66 open rows, 4 of them also C33's). In the root; settles after the root build
 

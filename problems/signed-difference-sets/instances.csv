@@ -6968,7 +6968,7 @@ N6966,"SDS(171,154,15,[3,57])",Open@e3bf810,none,E10/E11; C15; OrbitSearch,Signe
 N6967,"SDS(171,154,15,[171])",No@e3bf810,none,Gordon: Orbit Exhaust,,
 N6968,"SDS(171,154,81,[3,57])",Open@e3bf810,none,"A7 (C10, C16); CosetRows Part01",SignedDifferenceSets.CosetRows.n6968_not_hasSDS,Z28
 N6969,"SDS(171,154,81,[171])",Open@e3bf810,none,"A7 (C10, C16); CosetRows Part01",SignedDifferenceSets.CosetRows.n6969_not_hasSDS,Z28
-N6970,"SDS(171,154,135,[3,57])",Open@e3bf810,open,,,
+N6970,"SDS(171,154,135,[3,57])",Open@e3bf810,none,"C3 contraction to C₃ × C₃ (E8, C10x): noVector by kernel checks; Answer.N6970",SignedDifferenceSets.Answer.N6970.not_hasSDS,
 N6971,"SDS(171,154,135,[171])",Open@e3bf810,open,,,
 N6972,"SDS(171,155,11,[3,57])",Open@e3bf810,none,C5; SelfConjugacyRows part02,SignedDifferenceSets.SelfConjugacyRows.part02_not_hasSDS,Z8
 N6973,"SDS(171,155,11,[171])",Open@e3bf810,none,C5; SelfConjugacyRows part02,SignedDifferenceSets.SelfConjugacyRows.part02_not_hasSDS,Z8
