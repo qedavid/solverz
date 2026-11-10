@@ -64,9 +64,11 @@ folder `scratch/ideator/2026-11-06-core-{none,exists}.md`):
   without search when no value counts exist (C39), this reaches about 140 more rows, mostly p = 2 and class C/D2. Counting
   the plain coset sums adds nothing (C7's LP already has it; `x_counts`, 0 kills on 3,428 rows).
 - All quotients at once can decide a group no single quotient can: on Z_p × Z_p the p + 1 line contractions determine D
-  (Σᵢ Yᵢ(πᵢx) = pD(x) + s), and integrality mod p kills 49 of the 52 open Z_p² rows (I23, exploration; pairs of quotients
-  are provably too weak, D15x). This is the first global argument that reaches core rows; whether it extends to other
-  non-cyclic groups (Z_p³ through hyperplanes, Z_p² × K) is open.
+  (Σᵢ Yᵢ(πᵢx) = pD(x) + s), and integrality mod p kills all 52 open Z_p² rows (I23, exploration; C40 in Lean for nine so
+  far; pairs of quotients are provably too weak, D15x). It is the first global argument that reaches core rows, and it
+  carries over: on any Z_p² quotient (175 more rows, 160 through Z_7²), through hyperplanes of Z_p^r (48), on Z_p² × Z_m (69,
+  unchecked). It is strong where p is large (p(p − 1)/2 conditions mod p) and weak at p = 3, 5 alone; Z_{p^a} × Z_p gave
+  nothing. The cost moves to listing the line vectors (multipliers, lattices for p ≥ 11).
 - Open 2026-11-10: 6,044 rows; class C 2,095 (the arithmetic core), B1–B3 2,153 (cut orbit searches), D1–D3 1,340,
   A 232, unclassified 224.
 
