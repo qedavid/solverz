@@ -118,7 +118,9 @@ Group 3, technique tests (kill test first; work it if it hits):
 - C41's rows build in two background lanes (`scratch/tomo/q/lane.sh`, queue `scratch/tomo/q/queue.txt`, results
   `scratch/tomo/q/build_all.out`; `sh scratch/tomo/q/collect.sh` gathers the result files the lanes leave in the problem folder):
   141 rows generated, 67 built at 17:44; then `python scratch/tomo/q/mkaxioms.py` and the AxiomsQ1/Q2 checks.
-- Lean: the C36 rows (`scratch/c34/tree.sh` over `scratch/c34/todo.txt`, log `scratch/c34/chain.log`, 39 of 48 trees done), then
+- Lean: the C36 chain is paused (20:10) so C41's lanes finish and the root can build: 36 of C36's 50 modules built. Resume after the
+  root: unbuilt rows from `python scratch/root_prep.py` (C36 line) into `scratch/c34/todo.txt`, then
+  `xargs -P 2 -I{} sh scratch/c34/tree.sh {} < scratch/c34/todo.txt` (log `scratch/c34/chain.log`); then N4195, N16779, N19445.
   N4195 and N16779B16 again (killed by the watchdog under memory pressure), N19445, then the root with MaDivided2 and the C36 rows
   (settle `scratch/maedge/settle-c36-merged.tsv` through `scratch/settle_safe.py`), after C38/C39's refuter MaDividedCounts,
   MaDividedRes and their 66 rows (settle `settle-c34b.tsv`, `settle-c36b.tsv`, `settle-c38.tsv`).
