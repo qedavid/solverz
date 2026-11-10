@@ -43,3 +43,4 @@
 | [C40](C40.md) | Line tomography on Z_p × Z_p: the p + 1 line contractions sum to pD + s; no valid choice integral mod p | C3, C4, C2, C16 | proved | `Tomography.not_hasSDS`, `Tomography.not_hasSDS_prime` | — |
 | [C41](C41.md) | Line tomography on a Z_p × Z_p quotient (box c, multiplier t, with or without centring) | C40, C3, C2, C10 | proved | `TomographyQuot.not_hasSDS_grp`, `not_hasSDS_grp_nc` | — |
 | [C42](C42.md) | Tomography on a Z_2 × Z_2 × K quotient mod 4: z + d₁ + d₂ + d₃ ≡ 0, each twist d with autocorrelation nδ | C3 | proved | `not_hasSDS_of_kleinKills`, `KleinCert.not_hasSDS` | — |
+| [C43](C43.md) | Tomography through the hyperplanes of a Z_p^r quotient: flats' contractions sum to αs + (N − α)Z | C40, C41, C3, C2 | proved | `not_hasSDS_flat`, `not_hasSDS_flat_nc` | — |
