@@ -287,6 +287,9 @@ public import SignedDifferenceSets.Tests.UnramifiedDescent
 public import SignedDifferenceSets.FieldDescent
 public import SignedDifferenceSets.FieldDescentRows
 public import SignedDifferenceSets.Tests.FieldDescent
+public import SignedDifferenceSets.FieldDescentChain
+public import SignedDifferenceSets.FieldDescentChainRows
+public import SignedDifferenceSets.Tests.FieldDescentChain
 public import SignedDifferenceSets.MaEdge
 public import SignedDifferenceSets.MaEdgeRows
 public import SignedDifferenceSets.Tests.MaEdge

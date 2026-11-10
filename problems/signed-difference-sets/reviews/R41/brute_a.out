@@ -1,0 +1,4 @@
+m=8 c=1: 96 f with n>0; n values [1, 4]; (f,F<m) cases 96; bound violations 0; descent failures 0; relaxed-rule bound breaks {'four': 0, 'noq': 0}
+m=8 c=2: 416 f with n>0; n values [1, 4, 9, 16]; (f,F<m) cases 320; bound violations 0; descent failures 0; relaxed-rule bound breaks {'four': 0, 'noq': 0}
+m=8 c=3: 1216 f with n>0; n values [1, 4, 9, 16, 25, 36]; (f,F<m) cases 864; bound violations 0; descent failures 0; relaxed-rule bound breaks {'four': 0, 'noq': 0}
+m=16 c=1: 320 f with n>0; n values [1, 4]; (f,F<m) cases 640; bound violations 0; descent failures 0; relaxed-rule bound breaks {'four': 0, 'noq': 0}
