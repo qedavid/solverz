@@ -24,3 +24,4 @@
 | [I20](I20.md) | Ma's lemma at equality (none, filter) | `T438` Multiplier theorems and character sums for nonexistence | ideator round 3 (core class A) | C21 | alive |
 | [I21](I21.md) | Doubling: an SDS on C₂ × K from a halved SDS and a weighing matrix (exists) | `T437` Difference sets and cyclic constructions | us (from C26) | C2 | alive |
 | [I22](I22.md) | Ma's lemma at its edge: the contraction below a Ma quotient is divisible by p (none) | `T438` Multiplier theorems and character sums for nonexistence | us (P16) | C33 | alive |
+| [I23](I23.md) | Line tomography on Z_p × Z_p: all line quotients at once (none) | — tomography | us (D15x) | C3, C4 | alive |
