@@ -109,10 +109,11 @@ Group 3, technique tests (kill test first; work it if it hits):
 | P21 | Planned ideator rounds on the core | — | dropped by the user (no new ideators) |
 
 **Running.** (2026-11-10 13:55; the user lifted every temporary restriction: CLAUDE.md's limits only, "never stop")
-- Agents (3): refuter on C38 and C39 (`scratch/refuter/c38-brief.md`, reports `scratch/refuter/c38/`); explorer for
-  tomography beyond Z_p² (`scratch/tomo3/brief.md`, notes and report there; started 13:55); refuter on C40, the Lean
-  tomography (`scratch/refuter/c40-brief.md`, reports `scratch/refuter/c40/`; started 14:29). The Lean helper for I23 finished
-  (C40; its own loop still builds N3072, N3074, N3104 as owner `tomo`, then `scratch/tomo/Axioms.lean`).
+- Agents (3): Lean helper for C40 on Z_p² quotients and the remaining Z_p² rows (`scratch/tomo/lean2-brief.md`, notes
+  `scratch/tomo/lean2-progress.md`; started 15:12); explorer for tomography's next reach (independent check of the 69 Z_p² × Z_m
+  kills, mod-p² pruning for Z_p³, multipliers for p = 11, 13 quotients; `scratch/tomo4/brief.md`, notes there; started 15:21);
+  the tomo3 explorer only records its last runs (`scratch/tomo3/notes.md`). Done today: refuters on C40 (R45) and C38/C39
+  (R46), both SURVIVES; the first C40 Lean helper.
 - Experiments: the I23 explorer's last runs, N35706 and N35778 part 0/3 (`x_tomography`, started 11:31, output
   `scratch/tomo/runlat19.out`; parts 1/3 and 2/3 KILL int). Both rows die once part 0 does.
 - Lean: the C36 rows (`scratch/c34/tree.sh` over `scratch/c34/todo.txt`, log `scratch/c34/chain.log`, 39 of 48 trees done), then
@@ -123,13 +124,13 @@ Group 3, technique tests (kill test first; work it if it hits):
   Always settle through `scratch/settle_safe.py`: `settle.py` overwrites the evidence of rows already settled.
 - **Next steps, in order:**
   1. The C36 chain, the reruns, root import and build, axioms, settle; C36 → verified.
-  2. C38/C39: the refuter's report as a Review; then root, axioms, settle; both → verified.
-  3. C40: N3072, N3074, N3104, the axioms of all nine rows; the refuter's report as a Review; root, settle. The other 43 open
-     Z_p² rows need more Lean (p = 13 orbit rows: split `fixGo`; U0 = 1 rows: plain listing or lattices; KILL sds rows).
-  3a. The 10M-node rows: N8416, N8422, N8476 (C34) and N752 (C38, M = 1), split on two levels, parts of 200K nodes; N20961
-     (C38, built). N752, N20961 need a check of `MaDividedSplit.lean` before settling.
+  2. One root build after the C36 chain, with C36's rows, C38/C39 (72 modules, already in the root file, uncommitted) and C40
+     (13 modules, likewise); then axioms, settle `settle-c36-merged.tsv`, `settle-c34b.tsv`, `settle-c36b.tsv`, `settle-c38.tsv`,
+     `scratch/tomo/settle-c40.tsv` through `settle_safe.py`; C36, C38, C39, C40 → verified; proposed Solutions. N20961 (C38, not
+     reviewed) is imported but not settled. The root needs 9.1 GB + the 4 GB reserve: it waits for a nearly idle machine.
+  3. C40: the Lean helper's quotient rows (175 in exploration) and the remaining 43 Z_p² rows.
+  3a. The 10M-node rows N8416, N8422, N8476, N752: parked (about 5 ms and 0.25 MB per kernel node; C34.md).
   4. The tomography explorer's families, as they come.
-  5. N20961 (C34-type at p = 2, level 1) and N752, N8416, N8422, N8476 (10M-node kills): a single-level bounds-list certificate.
 - Slots (2026-11-09): admission counts each running job's headroom (calibrated peak − the working set its Lean processes hold now); peaks calibrated from `scratch/lean.peaks` (measured + 0.5 GB, written after every job); a mutex older than 2 minutes counts as stale. `answer.py contract <id> <divisors> [depth]`: depth 3 for N6970 (at depth 4 the join's coverage check over 2,812 prefixes hit 10.6 GB).
 - The leftover processes are gone (checked 2026-11-09 20:14). I17's prototype finished both batches: of the 272 cyclic B1 rows, 234 too big, 16 NONE (11 still open: N3067, N15689, N17962, N26085, N44138, N45372, N47110, N49189, N49203, N49278, N60164; C15x), 4 FOUND (the known Paley-and-zero sets), the rest skipped (`scratch/n2/b1_cyc_{a,b}.out`). E7's partial output `scratch/e7.out` (11 of 22 rows, E7.md); its open rows N204, N205, N207, N212 are P12 in the search list.
 
