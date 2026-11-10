@@ -109,12 +109,15 @@ Group 3, technique tests (kill test first; work it if it hits):
 | P21 | Planned ideator rounds on the core | — | dropped by the user (no new ideators) |
 
 **Running.** (2026-11-10 13:55; the user lifted every temporary restriction: CLAUDE.md's limits only, "never stop")
-- Agents (3): Lean helper for the 48 hyperplane-flat kills (Z_p^r, r ≥ 3; `scratch/tomo3/lean4-brief.md`, notes
-  `scratch/tomo3/lean4-progress.md`; started 18:16); Lean helper for the remaining tomography kills (n = p² quotient rows,
-  N1575, N1593, p = 7 rows without a multiplier, N3066, N6692, N6718; `scratch/tomo/lean5-brief.md`, notes
-  `scratch/tomo/lean5-progress.md`; started 19:41); the tomo3 explorer only records its last runs (`scratch/tomo3/notes.md`).
-  Done today: refuters on C40 (R45), C38/C39 (R46), C41 (R47), C42 (R48), all SURVIVES; Lean helpers for C40, C41, C42; the
-  tomo4 explorer.
+- Agents (2): Lean helper for the remaining tomography kills (n = p² quotient rows, N1575, N1593, p = 7 rows without a
+  multiplier, N3066, N6692, N6718; `scratch/tomo/lean5-brief.md`, notes `scratch/tomo/lean5-progress.md`; started 19:41); refuter
+  on C43 (the flats) and C41's rows built after R47 (`scratch/refuter/c43-brief.md`, notes `scratch/refuter/c43/`; started 21:15).
+  The third slot stays free until the root build is through. Done today: refuters R45–R48 (C40, C38/C39, C41, C42), all SURVIVES;
+  Lean helpers for C40, C41, C42, C43 (flats: 41 rows built, N758 building, `scratch/tomo3/lean4-progress.md`); explorers tomo3
+  (298 open rows killed in exploration, `scratch/tomo3/killed_all.txt`) and tomo4.
+- Root: `scratch/root_after_lanes.sh` (log `scratch/root-run.out`) waits for C41's lanes, adds every built module of C36, C41, C42
+  to the root (`scratch/root_prep.py --apply`) and builds it alone; then `python scratch/settle_prep.py` (settle lists in
+  `scratch/settle/`, `Axioms.lean` for the rows no refuter printed), axioms, settle through `scratch/settle_safe.py`.
 - C41's rows build in two background lanes (`scratch/tomo/q/lane.sh`, queue `scratch/tomo/q/queue.txt`, results
   `scratch/tomo/q/build_all.out`; `sh scratch/tomo/q/collect.sh` gathers the result files the lanes leave in the problem folder):
   141 rows generated, 67 built at 17:44; then `python scratch/tomo/q/mkaxioms.py` and the AxiomsQ1/Q2 checks.
