@@ -441,7 +441,7 @@ set_option maxRecDepth 100000 in
     (noVector_of_top (P := prefixes) (d := {depth - 1}) (by decide)
       (by decide +kernel) fun p hp => by
         have h : ∀ p ∈ prefixes, check p = true := by
-          simp only [prefixes, List.forall_mem_append, and_assoc]
+          simp only [prefixes, List.forall_mem_append{", and_assoc" if len(batches) > 2 else ""}]
 {anon}
         exact h p hp){close}""", ns=ns, prefix=prefix)
 
