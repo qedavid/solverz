@@ -108,19 +108,24 @@ Group 3, technique tests (kill test first; work it if it hits):
 | D14x | Ma-type lemma for non-cyclic Sylow subgroups (no source, D14x 2026-11-09) | ~2,200 | new mathematics; the no-loss form is false for SDS |
 | P21 | Planned ideator rounds on the core | — | dropped by the user (no new ideators) |
 
-**Running.** (2026-11-10 13:39; the user lifted every temporary restriction: CLAUDE.md's limits only, "never stop")
-- Agents (3): I23 tomography explorer (notes `scratch/tomo/notes.md`; 49 of 52 open Z_p² rows killed in exploration); Lean helper for I23 (`scratch/tomo/lean-brief.md`, notes `scratch/tomo/lean-progress.md`; p = 7 first); refuter on C38 and C39 (`scratch/refuter/c38-brief.md`, reports `scratch/refuter/c38/`).
-- Lean: the C36 rows (`scratch/c34/tree.sh` over `scratch/c34/todo.txt`, log `scratch/c34/chain.log`), then N4195 and N16779B16 again (killed by the watchdog under memory pressure), then the root with MaDivided2 and the C36 rows (settle `scratch/maedge/settle-c36-merged.tsv` through `scratch/settle_safe.py`), after C38/C39's refuter MaDividedCounts, MaDividedRes and their 66 rows (settle `settle-c34b.tsv`, `settle-c36b.tsv`, `settle-c38.tsv`).
-- Settled today so far: 237 (01:58–02:02) + 24 (12:52): C33, C32, C35, P3, N27692, N6970, C34 (23), C37 (N464). Table 91.43%. Always settle through `scratch/settle_safe.py`: `settle.py` overwrites the evidence of rows already settled.
+**Running.** (2026-11-10 13:55; the user lifted every temporary restriction: CLAUDE.md's limits only, "never stop")
+- Agents (3): Lean helper for I23 (`scratch/tomo/lean-brief.md`, notes `scratch/tomo/lean-progress.md`; p = 7 and p = 11 orbit rows
+  built, axioms next); refuter on C38 and C39 (`scratch/refuter/c38-brief.md`, reports `scratch/refuter/c38/`); explorer for
+  tomography beyond Z_p² (Z_p² × K, Z_p³, …; `scratch/tomo3/brief.md`, notes and report there; started 13:55).
+- Experiments: the I23 explorer's last runs, N35706 and N35778 part 0/3 (`x_tomography`, started 11:31, output
+  `scratch/tomo/runlat19.out`; parts 1/3 and 2/3 KILL int). Both rows die once part 0 does.
+- Lean: the C36 rows (`scratch/c34/tree.sh` over `scratch/c34/todo.txt`, log `scratch/c34/chain.log`, 39 of 48 trees done), then
+  N4195 and N16779B16 again (killed by the watchdog under memory pressure), N19445, then the root with MaDivided2 and the C36 rows
+  (settle `scratch/maedge/settle-c36-merged.tsv` through `scratch/settle_safe.py`), after C38/C39's refuter MaDividedCounts,
+  MaDividedRes and their 66 rows (settle `settle-c34b.tsv`, `settle-c36b.tsv`, `settle-c38.tsv`).
+- Settled today so far: 237 (01:58–02:02) + 24 (12:52): C33, C32, C35, P3, N27692, N6970, C34 (23), C37 (N464). Table 91.43%.
+  Always settle through `scratch/settle_safe.py`: `settle.py` overwrites the evidence of rows already settled.
 - **Next steps, in order:**
-  1. N6970's Part03 and join; then the root alone (`sh scratch/lean-slot.sh root researcher`): it now imports FieldDescent, FieldDescentRows, Tests.FieldDescent, MaEdge, MaEdgeRows, Tests.MaEdge, HalfRows.OrbitCited (via HalfRows), MarkedCountsInt; add N6970 if its join built.
-  2. `#print axioms` for the new theorems (extend `scratch/c10x_axioms.lean`: `fieldDescentRows_not_hasSDS`, `MaEdgeRows.not_hasSDS_of_mem_maEdgeRows`, a few row theorems, `HalfRows.n7412_not_hasSDS`, `n27692_not_hasSDS`, N6970).
-  3. Settle with `solver/import/settle.py --batch`: `scratch/maedge/settle.tsv` (151, evidence names C33), `scratch/settle-c32.tsv` (60; 39 rows are also C33's: settle.py accepts an already-`none` row and would overwrite the evidence, so drop those 39 from the C32 batch or give them one line citing both), `scratch/settle-p3.tsv` (3), `scratch/settle-c6x.tsv` (N27692), N6970. Then C32, C33 → verified, C7's status line, journal, and the newly settled Gordon-Open rows as proposed Solutions under Needs the user (credits: C32 Schmidt's field descent with the F-bound, R39; C33 ours, R40).
-  4. C34 (divided search): write `solver/madividedrows.py` on `answer.py`'s `write_search` (prefix `SignedDifferenceSets.MaDividedRows`; per row `MaDivCert.not_hasSDS (w := …) (c := …) (by decide +kernel) hpos _ <search>`; the check uses `Grp (r :: ks)` with `Grp.indexed`); `x_ma_divided` prints only p, j and H', so also print the factor and K or rebuild the certificate in Python as `marows.cert` does; 28 odd-p rows (`scratch/x_ma_divided.out`), split checks of ≤ 25,000 nodes; then a refuter round on C34.
-  5. C35 (P18 M2): `sh scratch/lean-slot.sh env researcher problems/signed-difference-sets/scratch/p18/AxiomsM2.lean 4`, a refuter round (targets in `scratch/p18/m2-report.md`), then the root imports and `scratch/p18/settle-m2.tsv` (66).
-  6. C37 (I22 extension 4, 14 rows of at most 208 nodes): a `noVector` variant whose values must be congruent mod M to the first coordinate (pairwise congruence is what C5's `IsSDS.contract_congr_pow` gives, and it survives negation and translation); Z = W/p^l is pairwise congruent mod M since p ∤ M; soundness as `noVector_sound`; a row certificate and a generator from `scratch/x_ma_c5.out`. One agent's work.
-  7. N20961 (C34-type at p = 2, level 1) and N752, N8416, N8422, N8476 (10M-node kills): a single-level bounds-list certificate.
-  8. Agents when allowed: C17x(c) successor (from `scratch/c17x/progress.md`), then the plan's next items (P17, C15x, P16's searches, P19/D15x).
+  1. The C36 chain, the reruns, root import and build, axioms, settle; C36 → verified.
+  2. C38/C39: the refuter's report as a Review; then root, axioms, settle; both → verified.
+  3. I23: the Lean helper's rows; a refuter round (claim for the line identity and the kills); root, settle.
+  4. The tomography explorer's families, as they come.
+  5. N20961 (C34-type at p = 2, level 1) and N752, N8416, N8422, N8476 (10M-node kills): a single-level bounds-list certificate.
 - Slots (2026-11-09): admission counts each running job's headroom (calibrated peak − the working set its Lean processes hold now); peaks calibrated from `scratch/lean.peaks` (measured + 0.5 GB, written after every job); a mutex older than 2 minutes counts as stale. `answer.py contract <id> <divisors> [depth]`: depth 3 for N6970 (at depth 4 the join's coverage check over 2,812 prefixes hit 10.6 GB).
 - The leftover processes are gone (checked 2026-11-09 20:14). I17's prototype finished both batches: of the 272 cyclic B1 rows, 234 too big, 16 NONE (11 still open: N3067, N15689, N17962, N26085, N44138, N45372, N47110, N49189, N49203, N49278, N60164; C15x), 4 FOUND (the known Paley-and-zero sets), the rest skipped (`scratch/n2/b1_cyc_{a,b}.out`). E7's partial output `scratch/e7.out` (11 of 22 rows, E7.md); its open rows N204, N205, N207, N212 are P12 in the search list.
 
