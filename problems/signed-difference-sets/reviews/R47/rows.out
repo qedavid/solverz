@@ -1,0 +1,141 @@
+N1028 p=5 c=3 (46,15) s=34 t=1 nc=False |V|=20 |W|=4 w==W:True W<=w:True origin_vals=[4] s_reachable_at_0=True integral=160 box=0 KILLED V=20 v0=8 v0inV=True Vinrots=True 0.1s
+N15045 p=3 c=27 (218,139) s=184 t=1 nc=False |V|=6 |W|=2 w==W:True W<=w:True origin_vals=[1] s_reachable_at_0=True integral=16 box=0 KILLED V=6 v0=2 v0inV=True Vinrots=True 0.0s
+N15241 p=3 c=27 (242,199) s=220 t=1 nc=False |V|=6 |W|=2 w==W:True W<=w:True origin_vals=[1] s_reachable_at_0=True integral=16 box=0 KILLED V=6 v0=2 v0inV=True Vinrots=True 0.0s
+N15398 p=7 c=5 (108,9) s=48 t=2 nc=False |V|=2 |W|=2 w==W:True W<=w:True origin_vals=[5] s_reachable_at_0=False integral=0 box=0 KILLED 0.0s
+N15426 p=7 c=5 (137,38) s=97 t=2 nc=False |V|=2 |W|=2 w==W:True W<=w:True origin_vals=[5] s_reachable_at_0=False integral=0 box=0 KILLED 0.0s
+N15446 p=7 c=5 (161,10) s=51 t=2 nc=False |V|=2 |W|=2 w==W:True W<=w:True origin_vals=[4] s_reachable_at_0=False integral=0 box=0 KILLED 0.0s
+N15460 p=7 c=5 (169,48) s=109 t=2 nc=False |V|=3 |W|=3 w==W:True W<=w:True origin_vals=[4, 6] s_reachable_at_0=True integral=17 box=0 KILLED 0.0s
+N15478 p=7 c=5 (188,37) s=96 t=2 nc=False |V|=2 |W|=2 w==W:True W<=w:True origin_vals=[3] s_reachable_at_0=False integral=0 box=0 KILLED 0.0s
+N15480 p=7 c=5 (188,89) s=148 t=2 nc=False |V|=2 |W|=2 w==W:True W<=w:True origin_vals=[2] s_reachable_at_0=False integral=0 box=0 KILLED 0.0s
+N15510 p=7 c=5 (208,17) s=66 t=2 nc=False |V|=2 |W|=2 w==W:True W<=w:True origin_vals=[6] s_reachable_at_0=False integral=0 box=0 KILLED 0.0s
+N15518 p=7 c=5 (217,26) s=81 t=2 nc=False |V|=2 |W|=2 w==W:True W<=w:True origin_vals=[1] s_reachable_at_0=False integral=0 box=0 KILLED 0.0s
+N15550 p=7 c=5 (229,185) s=213 t=2 nc=False |V|=4 |W|=4 w==W:True W<=w:True origin_vals=[2, 6] s_reachable_at_0=True integral=0 box=0 KILLED 0.0s
+N20163 p=5 c=11 (213,22) s=79 t=1 nc=False |V|=20 |W|=4 w==W:True W<=w:True origin_vals=[4] s_reachable_at_0=True integral=160 box=0 KILLED V=20 v0=4 v0inV=True Vinrots=True 0.4s
+N20237 p=5 c=11 (259,135) s=193 t=1 nc=False |V|=20 |W|=4 w==W:True W<=w:True origin_vals=[3] s_reachable_at_0=True integral=160 box=0 KILLED V=20 v0=8 v0inV=True Vinrots=True 1.4s
+N2096 p=5 c=4 (97,72) s=85 t=1 nc=True |V|=5 |W|=5 w==W:True W<=w:True origin_vals=[3] s_reachable_at_0=False integral=0 box=0 KILLED V=5 v0=4 v0inV=True Vinrots=True 0.2s
+N2097 p=5 c=4 (97,72) s=85 t=1 nc=True |V|=5 |W|=5 w==W:True W<=w:True origin_vals=[3] s_reachable_at_0=False integral=0 box=0 KILLED V=5 v0=4 v0inV=True Vinrots=True 0.2s
+N23172 p=7 c=6 (161,40) s=109 t=2 nc=False |V|=3 |W|=3 w==W:True W<=w:True origin_vals=[4, 6] s_reachable_at_0=True integral=17 box=0 KILLED 0.0s
+N31718 p=7 c=7 (45,2) s=27 t=1 nc=False |V|=56 |W|=8 w==W:True W<=w:True origin_vals=[2, 4] s_reachable_at_0=True integral=0 box=0 KILLED V=56 v0=8 v0inV=True Vinrots=True 10.0s
+N31719 p=7 c=7 (45,2) s=27 t=1 nc=False |V|=56 |W|=8 w==W:True W<=w:True origin_vals=[2, 4] s_reachable_at_0=True integral=0 box=0 KILLED V=56 v0=8 v0inV=True Vinrots=True 7.8s
+N31748 p=7 c=7 (85,18) s=79 t=2 nc=False |V|=2 |W|=2 w==W:True W<=w:True origin_vals=[6] s_reachable_at_0=False integral=0 box=0 KILLED 0.0s
+N31749 p=7 c=7 (85,18) s=79 t=2 nc=False |V|=2 |W|=2 w==W:True W<=w:True origin_vals=[6] s_reachable_at_0=False integral=0 box=0 KILLED 0.0s
+N31754 p=7 c=7 (99,25) s=93 t=2 nc=False |V|=4 |W|=4 w==W:True W<=w:True origin_vals=[4, 6] s_reachable_at_0=True integral=0 box=0 KILLED 0.0s
+N31772 p=7 c=7 (118,39) s=116 t=2 nc=False |V|=2 |W|=2 w==W:True W<=w:True origin_vals=[6] s_reachable_at_0=False integral=0 box=0 KILLED 0.0s
+N31773 p=7 c=7 (118,39) s=116 t=2 nc=False |V|=2 |W|=2 w==W:True W<=w:True origin_vals=[6] s_reachable_at_0=False integral=0 box=0 KILLED 0.0s
+N31775 p=7 c=7 (121,12) s=65 t=2 nc=False |V|=2 |W|=2 w==W:True W<=w:True origin_vals=[3] s_reachable_at_0=False integral=0 box=0 KILLED 0.0s
+N31784 p=7 c=7 (133,26) s=95 t=2 nc=False |V|=2 |W|=2 w==W:True W<=w:True origin_vals=[5] s_reachable_at_0=False integral=0 box=0 KILLED 0.0s
+N31787 p=7 c=7 (139,5) s=43 t=2 nc=False |V|=4 |W|=4 w==W:True W<=w:True origin_vals=[2, 5] s_reachable_at_0=True integral=0 box=0 KILLED 0.0s
+N31788 p=7 c=7 (139,5) s=43 t=2 nc=False |V|=4 |W|=4 w==W:True W<=w:True origin_vals=[2, 5] s_reachable_at_0=True integral=0 box=0 KILLED 0.0s
+N31805 p=7 c=7 (153,4) s=39 t=2 nc=False |V|=2 |W|=2 w==W:True W<=w:True origin_vals=[1] s_reachable_at_0=False integral=0 box=0 KILLED 0.0s
+N31808 p=7 c=7 (153,16) s=75 t=2 nc=False |V|=2 |W|=2 w==W:True W<=w:True origin_vals=[1] s_reachable_at_0=False integral=0 box=0 KILLED 0.0s
+N31814 p=7 c=7 (157,6) s=47 t=2 nc=False |V|=2 |W|=2 w==W:True W<=w:True origin_vals=[3] s_reachable_at_0=False integral=0 box=0 KILLED 0.0s
+N31898 p=7 c=7 (214,21) s=86 t=2 nc=False |V|=2 |W|=2 w==W:True W<=w:True origin_vals=[6] s_reachable_at_0=False integral=0 box=0 KILLED 0.0s
+N31904 p=7 c=7 (216,2) s=30 t=2 nc=False |V|=4 |W|=4 w==W:True W<=w:True origin_vals=[3, 4] s_reachable_at_0=True integral=0 box=0 KILLED 0.0s
+N31940 p=7 c=7 (229,38) s=115 t=2 nc=False |V|=2 |W|=2 w==W:True W<=w:True origin_vals=[6] s_reachable_at_0=False integral=0 box=0 KILLED 0.0s
+N31943 p=7 c=7 (229,66) s=151 t=2 nc=False |V|=2 |W|=2 w==W:True W<=w:True origin_vals=[6] s_reachable_at_0=False integral=0 box=0 KILLED 0.0s
+N31949 p=7 c=7 (229,150) s=227 t=2 nc=False |V|=2 |W|=2 w==W:True W<=w:True origin_vals=[1] s_reachable_at_0=False integral=0 box=0 KILLED 0.0s
+N31950 p=7 c=7 (229,150) s=227 t=2 nc=False |V|=2 |W|=2 w==W:True W<=w:True origin_vals=[1] s_reachable_at_0=False integral=0 box=0 KILLED 0.0s
+N31961 p=7 c=7 (234,1) s=24 t=2 nc=False |V|=2 |W|=2 w==W:True W<=w:True origin_vals=[1] s_reachable_at_0=False integral=0 box=0 KILLED 0.0s
+N31967 p=7 c=7 (234,55) s=138 t=2 nc=False |V|=2 |W|=2 w==W:True W<=w:True origin_vals=[4] s_reachable_at_0=False integral=0 box=0 KILLED 0.0s
+N32024 p=7 c=7 (256,182) s=250 t=2 nc=False |V|=4 |W|=4 w==W:True W<=w:True origin_vals=[1, 3] s_reachable_at_0=True integral=0 box=0 KILLED 0.0s
+N32030 p=7 c=7 (270,17) s=78 t=2 nc=False |V|=4 |W|=4 w==W:True W<=w:True origin_vals=[3, 5] s_reachable_at_0=True integral=0 box=0 KILLED 0.0s
+N32036 p=7 c=7 (270,107) s=192 t=2 nc=False |V|=2 |W|=2 w==W:True W<=w:True origin_vals=[1] s_reachable_at_0=False integral=0 box=0 KILLED 0.0s
+N32039 p=7 c=7 (270,203) s=264 t=2 nc=False |V|=2 |W|=2 w==W:True W<=w:True origin_vals=[1] s_reachable_at_0=False integral=0 box=0 KILLED 0.0s
+N32040 p=7 c=7 (270,203) s=264 t=2 nc=False |V|=2 |W|=2 w==W:True W<=w:True origin_vals=[1] s_reachable_at_0=False integral=0 box=0 KILLED 0.0s
+N32042 p=7 c=7 (271,59) s=143 t=2 nc=False |V|=6 |W|=6 w==W:True W<=w:True origin_vals=[1, 6] s_reachable_at_0=True integral=0 box=0 KILLED 0.0s
+N32072 p=7 c=7 (286,9) s=58 t=2 nc=False |V|=2 |W|=2 w==W:True W<=w:True origin_vals=[4] s_reachable_at_0=False integral=0 box=0 KILLED 0.0s
+N32078 p=7 c=7 (286,179) s=248 t=2 nc=False |V|=2 |W|=2 w==W:True W<=w:True origin_vals=[2] s_reachable_at_0=False integral=0 box=0 KILLED 0.0s
+N32108 p=7 c=7 (301,122) s=205 t=2 nc=False |V|=2 |W|=2 w==W:True W<=w:True origin_vals=[3] s_reachable_at_0=False integral=0 box=0 KILLED 0.0s
+N32123 p=7 c=7 (310,47) s=128 t=2 nc=False |V|=2 |W|=2 w==W:True W<=w:True origin_vals=[4] s_reachable_at_0=False integral=0 box=0 KILLED 0.0s
+N32124 p=7 c=7 (310,47) s=128 t=2 nc=False |V|=2 |W|=2 w==W:True W<=w:True origin_vals=[4] s_reachable_at_0=False integral=0 box=0 KILLED 0.0s
+N32147 p=7 c=7 (315,13) s=69 t=2 nc=False |V|=4 |W|=4 w==W:True W<=w:True origin_vals=[4, 5] s_reachable_at_0=True integral=0 box=0 KILLED 0.0s
+N32153 p=7 c=7 (315,97) s=183 t=2 nc=False |V|=4 |W|=4 w==W:True W<=w:True origin_vals=[1, 3] s_reachable_at_0=True integral=288 box=0 KILLED 0.0s
+N32162 p=7 c=7 (324,26) s=96 t=2 nc=False |V|=4 |W|=4 w==W:True W<=w:True origin_vals=[1, 3] s_reachable_at_0=True integral=0 box=0 KILLED 0.0s
+N32165 p=7 c=7 (324,50) s=132 t=2 nc=False |V|=4 |W|=4 w==W:True W<=w:True origin_vals=[2, 5] s_reachable_at_0=True integral=0 box=0 KILLED 0.0s
+N32192 p=7 c=7 (334,225) s=278 t=2 nc=False |V|=2 |W|=2 w==W:True W<=w:True origin_vals=[4] s_reachable_at_0=False integral=0 box=0 KILLED 0.0s
+N32213 p=7 c=7 (342,151) s=228 t=2 nc=False |V|=2 |W|=2 w==W:True W<=w:True origin_vals=[1] s_reachable_at_0=False integral=0 box=0 KILLED 0.0s
+N3362 p=5 c=5 (113,52) s=81 t=1 nc=False |V|=20 |W|=4 w==W:True W<=w:True origin_vals=[1] s_reachable_at_0=True integral=160 box=0 KILLED V=20 v0=4 v0inV=True Vinrots=True 0.2s
+N3363 p=5 c=5 (113,52) s=81 t=1 nc=False |V|=20 |W|=4 w==W:True W<=w:True origin_vals=[1] s_reachable_at_0=True integral=160 box=0 KILLED V=20 v0=4 v0inV=True Vinrots=True 0.2s
+N35640 p=19 c=1 (136,5) s=44 t=4 nc=False |V|=2 |W|=2 w==W:True W<=w:True origin_vals=[18] s_reachable_at_0=False integral=0 box=0 KILLED 0.1s
+N35656 p=19 c=1 (145,8) s=55 t=4 nc=False |V|=2 |W|=2 w==W:True W<=w:True origin_vals=[11] s_reachable_at_0=False integral=0 box=0 KILLED 0.1s
+N35786 p=19 c=1 (280,17) s=80 t=4 nc=False |V|=2 |W|=2 w==W:True W<=w:True origin_vals=[18] s_reachable_at_0=False integral=0 box=0 KILLED 0.1s
+N35802 p=19 c=1 (289,56) s=143 t=4 nc=False |V|=2 |W|=2 w==W:True W<=w:True origin_vals=[8] s_reachable_at_0=False integral=0 box=0 KILLED 0.1s
+N35810 p=19 c=1 (289,150) s=233 t=4 nc=False |V|=2 |W|=2 w==W:True W<=w:True origin_vals=[8] s_reachable_at_0=False integral=0 box=0 KILLED 0.1s
+N35814 p=19 c=1 (289,228) s=287 t=4 nc=False |V|=2 |W|=2 w==W:True W<=w:True origin_vals=[8] s_reachable_at_0=False integral=0 box=0 KILLED 0.1s
+N35836 p=19 c=1 (316,65) s=154 t=4 nc=False |V|=2 |W|=2 w==W:True W<=w:True origin_vals=[0] s_reachable_at_0=False integral=0 box=0 KILLED 0.1s
+N35838 p=19 c=1 (316,117) s=206 t=4 nc=False |V|=2 |W|=2 w==W:True W<=w:True origin_vals=[18] s_reachable_at_0=False integral=0 box=0 KILLED 0.1s
+N35842 p=19 c=1 (316,273) s=314 t=4 nc=False |V|=2 |W|=2 w==W:True W<=w:True origin_vals=[17] s_reachable_at_0=False integral=0 box=0 KILLED 0.1s
+N35877 p=19 c=1 (360,89) s=180 t=4 nc=False |V|=2 |W|=2 w==W:True W<=w:True origin_vals=[0] s_reachable_at_0=False integral=0 box=0 KILLED 0.1s
+N385 p=5 c=2 (49,24) s=35 t=1 nc=True |V|=5 |W|=5 w==W:True W<=w:True origin_vals=[3] s_reachable_at_0=False integral=0 box=0 KILLED V=5 v0=4 v0inV=True Vinrots=True 0.0s
+N38726 p=5 c=15 (353,292) s=331 t=1 nc=False |V|=20 |W|=4 w==W:True W<=w:True origin_vals=[1] s_reachable_at_0=True integral=160 box=0 KILLED V=20 v0=4 v0inV=True Vinrots=True 3.0s
+N38727 p=5 c=15 (353,292) s=331 t=1 nc=False |V|=20 |W|=4 w==W:True W<=w:True origin_vals=[1] s_reachable_at_0=True integral=160 box=0 KILLED V=20 v0=4 v0inV=True Vinrots=True 5.8s
+N4985 p=7 c=3 (41,4) s=25 t=2 nc=False |V|=2 |W|=2 w==W:True W<=w:True origin_vals=[1] s_reachable_at_0=False integral=0 box=0 KILLED 0.0s
+N4987 p=7 c=3 (46,3) s=22 t=1 nc=False |V|=56 |W|=8 w==W:True W<=w:True origin_vals=[3, 5] s_reachable_at_0=True integral=0 box=0 KILLED V=56 v0=12 v0inV=True Vinrots=True 5.0s
+N5003 p=7 c=3 (69,2) s=19 t=2 nc=False |V|=2 |W|=2 w==W:True W<=w:True origin_vals=[1] s_reachable_at_0=False integral=0 box=0 KILLED 0.0s
+N5017 p=7 c=3 (77,34) s=71 t=1 nc=False |V|=56 |W|=8 w==W:True W<=w:True origin_vals=[3, 5] s_reachable_at_0=True integral=0 box=0 KILLED V=56 v0=12 v0inV=True Vinrots=True 215.3s
+N5025 p=7 c=3 (82,39) s=76 t=1 nc=False |V|=56 |W|=8 w==W:True W<=w:True origin_vals=[2, 4] s_reachable_at_0=True integral=0 box=0 KILLED V=56 v0=8 v0inV=True Vinrots=True 240.9s
+N5027 p=7 c=3 (85,6) s=31 t=2 nc=False |V|=2 |W|=2 w==W:True W<=w:True origin_vals=[1] s_reachable_at_0=False integral=0 box=0 KILLED 0.0s
+N5043 p=7 c=3 (98,31) s=68 t=2 nc=False |V|=2 |W|=2 w==W:True W<=w:True origin_vals=[1] s_reachable_at_0=False integral=0 box=0 KILLED 0.0s
+N5053 p=7 c=3 (109,30) s=67 t=2 nc=False |V|=2 |W|=2 w==W:True W<=w:True origin_vals=[6] s_reachable_at_0=False integral=0 box=0 KILLED 0.0s
+N5055 p=7 c=3 (109,42) s=79 t=2 nc=False |V|=2 |W|=2 w==W:True W<=w:True origin_vals=[6] s_reachable_at_0=False integral=0 box=0 KILLED 0.0s
+N5057 p=7 c=3 (110,1) s=16 t=2 nc=False |V|=2 |W|=2 w==W:True W<=w:True origin_vals=[3] s_reachable_at_0=False integral=0 box=0 KILLED 0.0s
+N5071 p=7 c=3 (122,43) s=80 t=2 nc=False |V|=2 |W|=2 w==W:True W<=w:True origin_vals=[1] s_reachable_at_0=False integral=0 box=0 KILLED 0.0s
+N5085 p=7 c=3 (130,9) s=38 t=2 nc=False |V|=3 |W|=3 w==W:True W<=w:True origin_vals=[1, 3] s_reachable_at_0=True integral=17 box=0 KILLED 0.0s
+N54417 p=7 c=9 (44,1) s=22 t=1 nc=False |V|=56 |W|=8 w==W:True W<=w:True origin_vals=[3, 5] s_reachable_at_0=True integral=0 box=0 KILLED V=56 v0=12 v0inV=True Vinrots=True 5.3s
+N54418 p=7 c=9 (44,1) s=22 t=1 nc=False |V|=56 |W|=8 w==W:True W<=w:True origin_vals=[3, 5] s_reachable_at_0=True integral=0 box=0 KILLED V=56 v0=12 v0inV=True Vinrots=True 4.6s
+N54433 p=7 c=9 (81,2) s=31 t=2 nc=False |V|=2 |W|=2 w==W:True W<=w:True origin_vals=[1] s_reachable_at_0=False integral=0 box=0 KILLED 0.0s
+N54434 p=7 c=9 (81,2) s=31 t=2 nc=False |V|=2 |W|=2 w==W:True W<=w:True origin_vals=[1] s_reachable_at_0=False integral=0 box=0 KILLED 0.0s
+N54437 p=7 c=9 (81,14) s=79 t=2 nc=False |V|=2 |W|=2 w==W:True W<=w:True origin_vals=[6] s_reachable_at_0=False integral=0 box=0 KILLED 0.0s
+N54438 p=7 c=9 (81,14) s=79 t=2 nc=False |V|=2 |W|=2 w==W:True W<=w:True origin_vals=[6] s_reachable_at_0=False integral=0 box=0 KILLED 0.0s
+N54449 p=7 c=9 (89,10) s=67 t=2 nc=False |V|=2 |W|=2 w==W:True W<=w:True origin_vals=[6] s_reachable_at_0=False integral=0 box=0 KILLED 0.0s
+N54450 p=7 c=9 (89,10) s=67 t=2 nc=False |V|=2 |W|=2 w==W:True W<=w:True origin_vals=[6] s_reachable_at_0=False integral=0 box=0 KILLED 0.0s
+N54473 p=7 c=9 (124,15) s=82 t=2 nc=False |V|=2 |W|=2 w==W:True W<=w:True origin_vals=[4] s_reachable_at_0=False integral=0 box=0 KILLED 0.0s
+N54474 p=7 c=9 (124,15) s=82 t=2 nc=False |V|=2 |W|=2 w==W:True W<=w:True origin_vals=[4] s_reachable_at_0=False integral=0 box=0 KILLED 0.0s
+N54489 p=7 c=9 (169,6) s=53 t=2 nc=False |V|=2 |W|=2 w==W:True W<=w:True origin_vals=[6] s_reachable_at_0=False integral=0 box=0 KILLED 0.0s
+N54490 p=7 c=9 (169,6) s=53 t=2 nc=False |V|=2 |W|=2 w==W:True W<=w:True origin_vals=[6] s_reachable_at_0=False integral=0 box=0 KILLED 0.0s
+N54505 p=7 c=9 (169,60) s=163 t=2 nc=False |V|=2 |W|=2 w==W:True W<=w:True origin_vals=[3] s_reachable_at_0=False integral=0 box=0 KILLED 0.0s
+N54506 p=7 c=9 (169,60) s=163 t=2 nc=False |V|=2 |W|=2 w==W:True W<=w:True origin_vals=[3] s_reachable_at_0=False integral=0 box=0 KILLED 0.0s
+N54553 p=7 c=9 (201,8) s=61 t=2 nc=False |V|=2 |W|=2 w==W:True W<=w:True origin_vals=[1] s_reachable_at_0=False integral=0 box=0 KILLED 0.0s
+N54554 p=7 c=9 (201,8) s=61 t=2 nc=False |V|=2 |W|=2 w==W:True W<=w:True origin_vals=[1] s_reachable_at_0=False integral=0 box=0 KILLED 0.0s
+N54561 p=7 c=9 (201,50) s=149 t=2 nc=False |V|=2 |W|=2 w==W:True W<=w:True origin_vals=[4] s_reachable_at_0=False integral=0 box=0 KILLED 0.0s
+N54562 p=7 c=9 (201,50) s=149 t=2 nc=False |V|=2 |W|=2 w==W:True W<=w:True origin_vals=[4] s_reachable_at_0=False integral=0 box=0 KILLED 0.0s
+N54585 p=7 c=9 (209,46) s=143 t=2 nc=False |V|=2 |W|=2 w==W:True W<=w:True origin_vals=[1] s_reachable_at_0=False integral=0 box=0 KILLED 0.0s
+N54586 p=7 c=9 (209,46) s=143 t=2 nc=False |V|=2 |W|=2 w==W:True W<=w:True origin_vals=[1] s_reachable_at_0=False integral=0 box=0 KILLED 0.0s
+N54593 p=7 c=9 (220,27) s=110 t=2 nc=False |V|=2 |W|=2 w==W:True W<=w:True origin_vals=[1] s_reachable_at_0=False integral=0 box=0 KILLED 0.0s
+N54594 p=7 c=9 (220,27) s=110 t=2 nc=False |V|=2 |W|=2 w==W:True W<=w:True origin_vals=[1] s_reachable_at_0=False integral=0 box=0 KILLED 0.0s
+N54637 p=7 c=9 (236,85) s=194 t=2 nc=False |V|=2 |W|=2 w==W:True W<=w:True origin_vals=[3] s_reachable_at_0=False integral=0 box=0 KILLED 0.0s
+N54638 p=7 c=9 (236,85) s=194 t=2 nc=False |V|=2 |W|=2 w==W:True W<=w:True origin_vals=[3] s_reachable_at_0=False integral=0 box=0 KILLED 0.0s
+N54713 p=7 c=9 (280,3) s=40 t=2 nc=False |V|=2 |W|=2 w==W:True W<=w:True origin_vals=[3] s_reachable_at_0=False integral=0 box=0 KILLED 0.0s
+N54714 p=7 c=9 (280,3) s=40 t=2 nc=False |V|=2 |W|=2 w==W:True W<=w:True origin_vals=[3] s_reachable_at_0=False integral=0 box=0 KILLED 0.0s
+N54725 p=7 c=9 (284,7) s=58 t=2 nc=False |V|=2 |W|=2 w==W:True W<=w:True origin_vals=[4] s_reachable_at_0=False integral=0 box=0 KILLED 0.0s
+N54726 p=7 c=9 (284,7) s=58 t=2 nc=False |V|=2 |W|=2 w==W:True W<=w:True origin_vals=[4] s_reachable_at_0=False integral=0 box=0 KILLED 0.0s
+N54741 p=7 c=9 (284,175) s=278 t=2 nc=False |V|=2 |W|=2 w==W:True W<=w:True origin_vals=[4] s_reachable_at_0=False integral=0 box=0 KILLED 0.0s
+N54742 p=7 c=9 (284,175) s=278 t=2 nc=False |V|=2 |W|=2 w==W:True W<=w:True origin_vals=[4] s_reachable_at_0=False integral=0 box=0 KILLED 0.0s
+N54777 p=7 c=9 (289,138) s=247 t=2 nc=False |V|=2 |W|=2 w==W:True W<=w:True origin_vals=[4] s_reachable_at_0=False integral=0 box=0 KILLED 0.0s
+N54778 p=7 c=9 (289,138) s=247 t=2 nc=False |V|=2 |W|=2 w==W:True W<=w:True origin_vals=[4] s_reachable_at_0=False integral=0 box=0 KILLED 0.0s
+N54801 p=7 c=9 (324,8) s=62 t=2 nc=False |V|=6 |W|=6 w==W:True W<=w:True origin_vals=[2, 5] s_reachable_at_0=True integral=0 box=0 KILLED 0.0s
+N54802 p=7 c=9 (324,8) s=62 t=2 nc=False |V|=6 |W|=6 w==W:True W<=w:True origin_vals=[2, 5] s_reachable_at_0=True integral=0 box=0 KILLED 0.0s
+N54826 p=7 c=9 (344,11) s=72 t=2 nc=False |V|=2 |W|=2 w==W:True W<=w:True origin_vals=[4] s_reachable_at_0=False integral=0 box=0 KILLED 0.0s
+N54841 p=7 c=9 (344,193) s=292 t=2 nc=False |V|=2 |W|=2 w==W:True W<=w:True origin_vals=[3] s_reachable_at_0=False integral=0 box=0 KILLED 0.0s
+N54842 p=7 c=9 (344,193) s=292 t=2 nc=False |V|=2 |W|=2 w==W:True W<=w:True origin_vals=[3] s_reachable_at_0=False integral=0 box=0 KILLED 0.0s
+N54850 p=7 c=9 (345,12) s=75 t=2 nc=False |V|=2 |W|=2 w==W:True W<=w:True origin_vals=[3] s_reachable_at_0=False integral=0 box=0 KILLED 0.0s
+N54877 p=7 c=9 (356,40) s=134 t=2 nc=False |V|=6 |W|=6 w==W:True W<=w:True origin_vals=[2, 5] s_reachable_at_0=True integral=0 box=0 KILLED 0.0s
+N54878 p=7 c=9 (356,40) s=134 t=2 nc=False |V|=6 |W|=6 w==W:True W<=w:True origin_vals=[2, 5] s_reachable_at_0=True integral=0 box=0 KILLED 0.0s
+N54953 p=7 c=9 (364,33) s=122 t=2 nc=False |V|=2 |W|=2 w==W:True W<=w:True origin_vals=[2] s_reachable_at_0=False integral=0 box=0 KILLED 0.0s
+N54954 p=7 c=9 (364,33) s=122 t=2 nc=False |V|=2 |W|=2 w==W:True W<=w:True origin_vals=[2] s_reachable_at_0=False integral=0 box=0 KILLED 0.0s
+N54961 p=7 c=9 (364,201) s=298 t=2 nc=False |V|=2 |W|=2 w==W:True W<=w:True origin_vals=[6] s_reachable_at_0=False integral=0 box=0 KILLED 0.0s
+N54962 p=7 c=9 (364,201) s=298 t=2 nc=False |V|=2 |W|=2 w==W:True W<=w:True origin_vals=[6] s_reachable_at_0=False integral=0 box=0 KILLED 0.0s
+N54973 p=7 c=9 (364,297) s=362 t=2 nc=False |V|=2 |W|=2 w==W:True W<=w:True origin_vals=[1] s_reachable_at_0=False integral=0 box=0 KILLED 0.0s
+N54974 p=7 c=9 (364,297) s=362 t=2 nc=False |V|=2 |W|=2 w==W:True W<=w:True origin_vals=[1] s_reachable_at_0=False integral=0 box=0 KILLED 0.0s
+N55001 p=7 c=9 (396,317) s=374 t=2 nc=False |V|=2 |W|=2 w==W:True W<=w:True origin_vals=[1] s_reachable_at_0=False integral=0 box=0 KILLED 0.0s
+N55002 p=7 c=9 (396,317) s=374 t=2 nc=False |V|=2 |W|=2 w==W:True W<=w:True origin_vals=[1] s_reachable_at_0=False integral=0 box=0 KILLED 0.0s
+N55061 p=7 c=9 (401,292) s=359 t=2 nc=False |V|=2 |W|=2 w==W:True W<=w:True origin_vals=[3] s_reachable_at_0=False integral=0 box=0 KILLED 0.0s
+N55062 p=7 c=9 (401,292) s=359 t=2 nc=False |V|=2 |W|=2 w==W:True W<=w:True origin_vals=[3] s_reachable_at_0=False integral=0 box=0 KILLED 0.0s
+N55106 p=7 c=9 (440,109) s=220 t=2 nc=False |V|=2 |W|=2 w==W:True W<=w:True origin_vals=[2] s_reachable_at_0=False integral=0 box=0 KILLED 0.0s
+N6724 p=13 c=1 (88,27) s=68 t=3 nc=False |V|=4 |W|=4 w==W:True W<=w:True origin_vals=[12] s_reachable_at_0=False integral=0 box=0 KILLED 0.8s
+N6742 p=13 c=1 (120,7) s=36 t=3 nc=False |V|=4 |W|=4 w==W:True W<=w:True origin_vals=[9] s_reachable_at_0=False integral=0 box=0 KILLED 0.7s
+N6744 p=13 c=1 (120,13) s=48 t=3 nc=False |V|=4 |W|=4 w==W:True W<=w:True origin_vals=[3] s_reachable_at_0=False integral=0 box=0 KILLED 0.7s
+N7292 p=5 c=7 (141,70) s=111 t=1 nc=False |V|=20 |W|=4 w==W:True W<=w:True origin_vals=[1] s_reachable_at_0=True integral=160 box=0 KILLED V=20 v0=4 v0inV=True Vinrots=True 0.4s
+N8571 p=3 c=21 (168,89) s=130 t=1 nc=False |V|=6 |W|=2 w==W:True W<=w:True origin_vals=[1] s_reachable_at_0=True integral=16 box=0 KILLED V=6 v0=2 v0inV=True Vinrots=True 0.0s
+N9398 p=7 c=4 (181,60) s=109 t=2 nc=False |V|=3 |W|=3 w==W:True W<=w:True origin_vals=[4, 6] s_reachable_at_0=True integral=17 box=0 KILLED 0.0s
+N9399 p=7 c=4 (181,60) s=109 t=2 nc=False |V|=3 |W|=3 w==W:True W<=w:True origin_vals=[4, 6] s_reachable_at_0=True integral=17 box=0 KILLED 0.0s
