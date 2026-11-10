@@ -148,6 +148,33 @@ fn search(h: &Group, k: usize, dem: &Demand, modulus: i64, res: i64, max_nodes: 
     (false, cut, total)
 }
 
+/// Some multiset of n values in [−c, c], each ≡ res (mod m), has square sum q, absolute sum ≤ amax and sum s.
+fn counts_res_feasible(c: i64, n: i64, q: i64, s: i64, amax: i64, m: i64, res: i64) -> bool {
+    let vals: Vec<i64> = (-c..=c).filter(|&x| m <= 1 || (x - res).rem_euclid(m) == 0).collect();
+    // depth-first over values: counts with exact n, q; track sum and abs
+    fn rec(vals: &[i64], i: usize, n: i64, q: i64, sum: i64, abs: i64, s: i64, amax: i64) -> bool {
+        if i == vals.len() {
+            return n == 0 && q == 0 && sum == s && abs <= amax;
+        }
+        let v = vals[i];
+        let mut k = 0;
+        while k <= n && k * v * v <= q && abs + k * v.abs() <= amax {
+            if rec(vals, i + 1, n - k, q - k * v * v, sum + k * v, abs + k * v.abs(), s, amax) {
+                return true;
+            }
+            if v == 0 {
+                // zeros fill whatever is left: only the full count matters
+                return rec(vals, i + 1, 0, q, sum, abs, s, amax);
+            }
+            k += 1;
+        }
+        false
+    }
+    let mut ordered = vals.clone();
+    ordered.sort_by_key(|x| -(x.abs()));
+    rec(&ordered, 0, n, q, 0, 0, s, amax)
+}
+
 fn run(inst: &Instance, max_nodes: u64) -> (bool, String) {
     let (v, k, lam) = (inst.v as i64, inst.k as i64, inst.lam);
     let n = k - lam;
@@ -202,6 +229,10 @@ fn run(inst: &Instance, max_nodes: u64) -> (bool, String) {
                         let res = if modulus > 1 {
                             match inverse(pl * h1, modulus) { Some(inv) => (s * inv).rem_euclid(modulus), None => 0 }
                         } else { 0 };
+                        let amax = bounds.iter().copied().max().unwrap_or(-1);
+                        if !counts_res_feasible(c, group.order as i64, dem.square, dem.sum, amax, modulus, res) {
+                            return (true, format!("KILL {p} {j} {lv} {name} count"));
+                        }
                         let (mut found, mut cut, mut nodes) = (false, false, 0);
                         for kk in bounds.into_iter().filter(|&x| x >= 0) {
                             let (f, c2, nd) = search(&group, kk as usize, &dem, modulus, res, max_nodes);
