@@ -111,7 +111,7 @@ Group 3, technique tests (kill test first; work it if it hits):
 **Running.** (2026-11-10 13:55; the user lifted every temporary restriction: CLAUDE.md's limits only, "never stop")
 - Agents (3): refuter on C38 and C39 (`scratch/refuter/c38-brief.md`, reports `scratch/refuter/c38/`); explorer for
   tomography beyond Z_p² (`scratch/tomo3/brief.md`, notes and report there; started 13:55); refuter on C40, the Lean
-  tomography (`scratch/refuter/c40-brief.md`, reports `scratch/refuter/c40/`; started 14:35). The Lean helper for I23 finished
+  tomography (`scratch/refuter/c40-brief.md`, reports `scratch/refuter/c40/`; started 14:29). The Lean helper for I23 finished
   (C40; its own loop still builds N3072, N3074, N3104 as owner `tomo`, then `scratch/tomo/Axioms.lean`).
 - Experiments: the I23 explorer's last runs, N35706 and N35778 part 0/3 (`x_tomography`, started 11:31, output
   `scratch/tomo/runlat19.out`; parts 1/3 and 2/3 KILL int). Both rows die once part 0 does.
