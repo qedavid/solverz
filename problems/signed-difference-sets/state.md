@@ -110,10 +110,10 @@ Group 3, technique tests (kill test first; work it if it hits):
 
 **Running.** (2026-11-10 13:55; the user lifted every temporary restriction: CLAUDE.md's limits only, "never stop")
 - Agents (3): Lean helper for C40 on Z_p² quotients and the remaining Z_p² rows (`scratch/tomo/lean2-brief.md`, notes
-  `scratch/tomo/lean2-progress.md`; started 15:12); explorer for tomography's next reach (independent check of the 69 Z_p² × Z_m
-  kills, mod-p² pruning for Z_p³, multipliers for p = 11, 13 quotients; `scratch/tomo4/brief.md`, notes there; started 15:21);
-  the tomo3 explorer only records its last runs (`scratch/tomo3/notes.md`). Done today: refuters on C40 (R45) and C38/C39
-  (R46), both SURVIVES; the first C40 Lean helper.
+  `scratch/tomo/lean2-progress.md`; started 15:11); Lean helper for the 67 + 2 Z_2² × Z_3 quotient kills (the mod-4 hand proof;
+  `scratch/tomo4/lean3-brief.md`, notes `scratch/tomo4/lean3-progress.md`; started 16:00); the tomo3 explorer only records its
+  last runs (`scratch/tomo3/notes.md`). Done today: refuters on C40 (R45) and C38/C39 (R46), both SURVIVES; the first C40 Lean
+  helper; the tomo4 explorer (I23: the 69 Z_p² × Z_m kills confirmed, 29 more on Z_11², Z_13² quotients).
 - Experiments: the I23 explorer's last runs, N35706 and N35778 part 0/3 (`x_tomography`, started 11:31, output
   `scratch/tomo/runlat19.out`; parts 1/3 and 2/3 KILL int). Both rows die once part 0 does.
 - Lean: the C36 rows (`scratch/c34/tree.sh` over `scratch/c34/todo.txt`, log `scratch/c34/chain.log`, 39 of 48 trees done), then
