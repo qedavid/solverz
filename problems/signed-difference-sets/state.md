@@ -108,8 +108,8 @@ Group 3, technique tests (kill test first; work it if it hits):
 | D14x | Ma-type lemma for non-cyclic Sylow subgroups (no source, D14x 2026-11-09) | ~2,200 | new mathematics; the no-loss form is false for SDS |
 | P21 | Planned ideator rounds on the core | — | dropped by the user (no new ideators) |
 
-**Running.** (2026-11-10 11:33; the user lifted every temporary restriction: CLAUDE.md's limits only, "never stop")
-- Agents (3): I23 tomography explorer, resumed (notes `scratch/tomo/notes.md`; 49 of 52 open Z_p² rows killed so far); refuter on C37, N464 (11:32; `scratch/refuter/c37-brief.md`, reports `scratch/refuter/c37/`); Lean helper for C36's 24 extra rows by value counts and C38, the divided search with Turyn's residue class, 14 rows (11:33; `scratch/c38/brief.md`, notes `scratch/c38/progress.md`; new modules only, `MaDivided*.lean` stay as they are).
+**Running.** (2026-11-10 11:32; the user lifted every temporary restriction: CLAUDE.md's limits only, "never stop")
+- Agents (3): I23 tomography explorer, resumed (notes `scratch/tomo/notes.md`; 49 of 52 open Z_p² rows killed so far); refuter on C37, N464 (11:32; `scratch/refuter/c37-brief.md`, reports `scratch/refuter/c37/`); Lean helper for C36's 24 extra rows by value counts and C38, the divided search with Turyn's residue class, 14 rows (11:32; `scratch/c38/brief.md`, notes `scratch/c38/progress.md`; new modules only, `MaDivided*.lean` stay as they are).
 - Lean: the C34/C36 row chain restarted 11:31 (`scratch/c34/tree.sh` over `scratch/c34/tops.txt`, log `scratch/c34/chain.log`; built modules are no-ops; N4195's join rebuilds with the two-batch fix). Then the root with MaDivided, MaDivided2, the rows, Doubling/PairSearch/PairCheck/PairRows.N464 (after C37's refuter), axioms, settle C34 (28), C36 (45 open + C35's four noted), C37 (N464).
 - **Next steps, in order:**
   1. N6970's Part03 and join; then the root alone (`sh scratch/lean-slot.sh root researcher`): it now imports FieldDescent, FieldDescentRows, Tests.FieldDescent, MaEdge, MaEdgeRows, Tests.MaEdge, HalfRows.OrbitCited (via HalfRows), MarkedCountsInt; add N6970 if its join built.
