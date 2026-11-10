@@ -109,9 +109,10 @@ Group 3, technique tests (kill test first; work it if it hits):
 | P21 | Planned ideator rounds on the core | — | dropped by the user (no new ideators) |
 
 **Running.** (2026-11-10 13:55; the user lifted every temporary restriction: CLAUDE.md's limits only, "never stop")
-- Agents (3): Lean helper for I23 (`scratch/tomo/lean-brief.md`, notes `scratch/tomo/lean-progress.md`; p = 7 and p = 11 orbit rows
-  built, axioms next); refuter on C38 and C39 (`scratch/refuter/c38-brief.md`, reports `scratch/refuter/c38/`); explorer for
-  tomography beyond Z_p² (Z_p² × K, Z_p³, …; `scratch/tomo3/brief.md`, notes and report there; started 13:55).
+- Agents (3): refuter on C38 and C39 (`scratch/refuter/c38-brief.md`, reports `scratch/refuter/c38/`); explorer for
+  tomography beyond Z_p² (`scratch/tomo3/brief.md`, notes and report there; started 13:55); refuter on C40, the Lean
+  tomography (`scratch/refuter/c40-brief.md`, reports `scratch/refuter/c40/`; started 14:35). The Lean helper for I23 finished
+  (C40; its own loop still builds N3072, N3074, N3104 as owner `tomo`, then `scratch/tomo/Axioms.lean`).
 - Experiments: the I23 explorer's last runs, N35706 and N35778 part 0/3 (`x_tomography`, started 11:31, output
   `scratch/tomo/runlat19.out`; parts 1/3 and 2/3 KILL int). Both rows die once part 0 does.
 - Lean: the C36 rows (`scratch/c34/tree.sh` over `scratch/c34/todo.txt`, log `scratch/c34/chain.log`, 39 of 48 trees done), then
@@ -123,7 +124,10 @@ Group 3, technique tests (kill test first; work it if it hits):
 - **Next steps, in order:**
   1. The C36 chain, the reruns, root import and build, axioms, settle; C36 → verified.
   2. C38/C39: the refuter's report as a Review; then root, axioms, settle; both → verified.
-  3. I23: the Lean helper's rows; a refuter round (claim for the line identity and the kills); root, settle.
+  3. C40: N3072, N3074, N3104, the axioms of all nine rows; the refuter's report as a Review; root, settle. The other 43 open
+     Z_p² rows need more Lean (p = 13 orbit rows: split `fixGo`; U0 = 1 rows: plain listing or lattices; KILL sds rows).
+  3a. The 10M-node rows: N8416, N8422, N8476 (C34) and N752 (C38, M = 1), split on two levels, parts of 200K nodes; N20961
+     (C38, built). N752, N20961 need a check of `MaDividedSplit.lean` before settling.
   4. The tomography explorer's families, as they come.
   5. N20961 (C34-type at p = 2, level 1) and N752, N8416, N8422, N8476 (10M-node kills): a single-level bounds-list certificate.
 - Slots (2026-11-09): admission counts each running job's headroom (calibrated peak − the working set its Lean processes hold now); peaks calibrated from `scratch/lean.peaks` (measured + 0.5 GB, written after every job); a mutex older than 2 minutes counts as stale. `answer.py contract <id> <divisors> [depth]`: depth 3 for N6970 (at depth 4 the join's coverage check over 2,812 prefixes hit 10.6 GB).
