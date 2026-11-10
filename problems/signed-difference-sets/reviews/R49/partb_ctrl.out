@@ -1,0 +1,19 @@
+O10.txt [3, 9] (27, 14, 5) p=3 t=1 nc |L|=6 integral=405 boxed=396 SURVIVES
+O100.txt [3, 6] (18, 13, 4) p=3 t=1 nc |L|=6 integral=486 boxed=270 SURVIVES
+O101.txt [3, 18] (54, 38, 2) p=3 t=1 nc |L|=6 integral=405 boxed=405 SURVIVES
+O102.txt [3, 3, 3, 3, 3] (243, 82, 1) p=3 t=1 nc |L|=6 integral=1296 boxed=1296 SURVIVES
+O103.txt [3, 3, 3, 9] (243, 82, 1) p=3 t=1 nc |L|=6 integral=1296 boxed=1296 SURVIVES
+O104.txt [3, 24] (72, 48, 12) p=3 t=1 nc |L|=6 integral=405 boxed=405 SURVIVES
+O105.txt [3, 3, 3, 3, 3] (243, 122, 59) p=3 t=1 nc |L|=12 integral=6480 boxed=6480 SURVIVES
+O106.txt [7, 7, 7] (343, 172, 84) p=7 t=1 centred |L|=8 integral=7072 boxed=7040 SURVIVES
+O106.txt [7, 7, 7] (343, 172, 84) p=7 t=2 centred |L|=8 integral=7072 boxed=7040 SURVIVES
+O107.txt [5, 95] (475, 241, 120) p=5 t=1 centred |L|=9 integral=21249 boxed=21249 SURVIVES
+O11.txt [3, 3, 3] (27, 17, 8) p=3 t=1 nc |L|=6 integral=405 boxed=333 SURVIVES
+O21.txt [3, 12] (36, 11, 2) p=3 t=1 nc |L|=6 integral=486 boxed=486 SURVIVES
+O22.txt [6, 6] (36, 11, 2) p=3 t=1 nc |L|=6 integral=486 boxed=486 SURVIVES
+O23.txt [3, 15] (45, 37, 1) p=3 t=1 nc |L|=6 integral=486 boxed=486 SURVIVES
+O24.txt [7, 7] (49, 33, 1) p=7 t=1 centred |L|=6 integral=672 boxed=224 SURVIVES
+O24.txt [7, 7] (49, 33, 1) p=7 t=2 centred |L|=6 integral=672 boxed=224 SURVIVES
+O25.txt [3, 21] (63, 47, 11) p=3 t=1 nc |L|=6 integral=486 boxed=486 SURVIVES
+O40.txt [5, 25] (125, 28, 3) p=5 t=1 nc |L|=10 integral=109375 boxed=109375 SURVIVES
+O41.txt [7, 7, 7] (343, 54, 5) p=7 t=1 nc |L|=14 integral=51883209 boxed=51883209 SURVIVES

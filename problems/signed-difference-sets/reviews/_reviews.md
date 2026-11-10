@@ -51,3 +51,4 @@ The refuter's reports that statuses here rest on, oldest first.
 | [R46](R46.md) | C38, C39; MaDividedResRows (14), MaCountRows (52) | SURVIVES (C38's p = 3 rows die without the residue too) | 2026-11-10 |
 | [R47](R47.md) | C41; TomographyQuotRows (141 rows, 85 built at review) | SURVIVES (Uses: C10; only built rows count) | 2026-11-10 |
 | [R48](R48.md) | C42; KleinTomographyRows (67 rows) | SURVIVES | 2026-11-10 |
+| [R49](R49.md) | C43; TomographyFlatRows (41 built); C41's 62 rows after R47 | SURVIVES (C43's wording: two errors) | 2026-11-10 |
