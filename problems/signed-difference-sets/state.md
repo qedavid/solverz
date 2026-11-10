@@ -117,8 +117,6 @@ Group 3, technique tests (kill test first; work it if it hits):
 - C41's rows build in two background lanes (`scratch/tomo/q/lane.sh`, queue `scratch/tomo/q/queue.txt`, results
   `scratch/tomo/q/build_all.out`; `sh scratch/tomo/q/collect.sh` gathers the result files the lanes leave in the problem folder):
   141 rows generated, 67 built at 17:44; then `python scratch/tomo/q/mkaxioms.py` and the AxiomsQ1/Q2 checks.
-- Experiments: the I23 explorer's last runs, N35706 and N35778 part 0/3 (`x_tomography`, started 11:31, output
-  `scratch/tomo/runlat19.out`; parts 1/3 and 2/3 KILL int). Both rows die once part 0 does.
 - Lean: the C36 rows (`scratch/c34/tree.sh` over `scratch/c34/todo.txt`, log `scratch/c34/chain.log`, 39 of 48 trees done), then
   N4195 and N16779B16 again (killed by the watchdog under memory pressure), N19445, then the root with MaDivided2 and the C36 rows
   (settle `scratch/maedge/settle-c36-merged.tsv` through `scratch/settle_safe.py`), after C38/C39's refuter MaDividedCounts,
