@@ -59,6 +59,16 @@ folder `scratch/ideator/2026-11-06-core-{none,exists}.md`):
 - The near-miss classes still give way to sharper local rules: Ma's lemma at its edge (C33, and its divided search
   C34) and Schmidt's field descent (C32 one step, C35 chains) reach 257 open rows together (class C 142, D2 55, D3 36,
   A 24; 2026-11-09/10), none in the core K.
+- Below a Ma quotient the coset sums are divisible by p (by p² two levels down), so W/p is a vector with much smaller
+  entries and moments; it dies where the plain vector lives. Searched (C34, C36), with Turyn's residue class (C38), or
+  without search when no value counts exist (C39), this reaches about 140 more rows, mostly p = 2 and class C/D2. Counting
+  the plain coset sums adds nothing (C7's LP already has it; `x_counts`, 0 kills on 3,428 rows).
+- All quotients at once can decide a group no single quotient can: on Z_p × Z_p the p + 1 line contractions determine D
+  (Σᵢ Yᵢ(πᵢx) = pD(x) + s), and integrality mod p kills 49 of the 52 open Z_p² rows (I23, exploration; pairs of quotients
+  are provably too weak, D15x). This is the first global argument that reaches core rows; whether it extends to other
+  non-cyclic groups (Z_p³ through hyperplanes, Z_p² × K) is open.
+- Open 2026-11-10: 6,044 rows; class C 2,095 (the arithmetic core), B1–B3 2,153 (cut orbit searches), D1–D3 1,340,
+  A 232, unclassified 224.
 
 **So a Solution must.** Per row: a set Lean checks, or a rule's Lean theorem plus its
 Lean check for that row; and, before it is proposed, a check against the known
