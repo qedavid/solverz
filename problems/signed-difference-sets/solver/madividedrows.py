@@ -1,6 +1,7 @@
 """Rows killed by C34 (the divided contraction below a Ma quotient), written as Lean.
 
-`madividedrows.py [ids...]`: reads the kills of `x_ma_divided` (`scratch/x_ma_divided.out`: `id key v KILL p j H' nodes`) at odd p
+`madividedrows.py [ids...]`: reads the kills of `x_ma_divided` (`scratch/x_ma_divided.out`, then the 10M-node run
+`scratch/x_ma_divided_10m.out`: `id key v KILL p j H' nodes`) at odd p
 that C33 does not already settle (`scratch/maedge/settle.tsv`), rebuilds each certificate (`MaDivCert`: H = ZMod (p^j) × K with K
 the p'-parts of H', forms and preimages as `marows.py`), and writes `lean/SignedDifferenceSets/MaDividedRows/N<id>.lean` (split
 into part modules by `answer.write_search` when the search is large) and `scratch/maedge/settle-c34.tsv`. Mirrors
@@ -17,10 +18,12 @@ from marows import conj_exp, crt, is_prime_td, lst, map_ok, surj_cert, vp
 
 # the join's coverage check is quadratic in the prefixes (720 cost N6970's join 8.8 GB): N19445 needs 2,737 at the
 # default depth, 483 at depth 8 (largest check 52,298 nodes)
+# two-level splits (answer.write_search_tree) for the 10M-node rows: 281–435 groups of at most 560 prefixes
 SKIP = set()
-DEPTH = {"N19445": "8"}
+DEPTH = {"N19445": "8", "N8416": "10", "N8422": "10", "N8476": "10"}
+TOP_DEPTH = {"N8416": "5", "N8422": "5", "N8476": "5"}
 ROOT = Path(__file__).resolve().parent.parent
-KILLS = ROOT / "scratch" / "x_ma_divided.out"
+KILLS = [ROOT / "scratch" / "x_ma_divided.out", ROOT / "scratch" / "x_ma_divided_10m.out"]
 C33 = ROOT / "scratch" / "maedge" / "settle.tsv"
 TSV = ROOT / "scratch" / "maedge" / "settle-c34.tsv"
 PREFIX = "SignedDifferenceSets.MaDividedRows"
@@ -90,14 +93,14 @@ theorem not_hasSDS : ¬ HasSDS ({group}) {k} {lam_l} :=
                  f"({x['c']} : ℕ) ({x['Q']} : ℤ) ({x['t']} : ℤ) ({x['k1']} : ℕ) {x['s1']}",
                  "the divided quotient and the subtree check", "row's divided search arguments (those `MaDivCert.not_hasSDS` asks for)",
                  math.prod(qf), x["c"], x["Q"], x["s1"], theorem, tool="solver/madividedrows.py",
-                 split_nodes=BATCH_NODES, depth=DEPTH.get(f"N{rid}", ""))
+                 split_nodes=BATCH_NODES, depth=DEPTH.get(f"N{rid}", ""), top_depth=TOP_DEPTH.get(f"N{rid}", ""))
 
 
 def main(wanted):
     pairs = ma_pairs()
     c33 = {line.split("\t")[0] for line in C33.read_text(encoding="utf-8").splitlines() if line.strip()}
     rows = []
-    for line in KILLS.read_text(encoding="utf-8").splitlines():
+    for line in (line for f in KILLS for line in f.read_text(encoding="utf-8").splitlines()):
         m = LINE.match(line)
         if not m:
             continue
