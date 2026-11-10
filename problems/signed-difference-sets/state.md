@@ -110,10 +110,10 @@ Group 3, technique tests (kill test first; work it if it hits):
 
 **Running.** (2026-11-10 13:55; the user lifted every temporary restriction: CLAUDE.md's limits only, "never stop")
 - Agents (3): Lean helper for the 67 + 2 Z_2² × Z_3 quotient kills (the mod-4 hand proof; `scratch/tomo4/lean3-brief.md`,
-  notes `scratch/tomo4/lean3-progress.md`; started 16:47); refuter on C41, tomography on Z_p² quotients
-  (`scratch/refuter/c41-brief.md`, notes `scratch/refuter/c41/`; started 17:45); the tomo3 explorer only records its last runs
-  (`scratch/tomo3/notes.md`). Done today: refuters on C40 (R45) and C38/C39 (R46), both SURVIVES; two C40/C41 Lean helpers; the
-  tomo4 explorer.
+  notes `scratch/tomo4/lean3-progress.md`; started 16:47); Lean helper for the 48 hyperplane-flat kills (Z_p^r, r ≥ 3;
+  `scratch/tomo3/lean4-brief.md`, notes `scratch/tomo3/lean4-progress.md`; started 18:16); the tomo3 explorer only records its
+  last runs (`scratch/tomo3/notes.md`). Done today: refuters on C40 (R45), C38/C39 (R46), C41 (R47), all SURVIVES; two
+  C40/C41 Lean helpers; the tomo4 explorer.
 - C41's rows build in two background lanes (`scratch/tomo/q/lane.sh`, queue `scratch/tomo/q/queue.txt`, results
   `scratch/tomo/q/build_all.out`; `sh scratch/tomo/q/collect.sh` gathers the result files the lanes leave in the problem folder):
   141 rows generated, 67 built at 17:44; then `python scratch/tomo/q/mkaxioms.py` and the AxiomsQ1/Q2 checks.
