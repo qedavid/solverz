@@ -44,3 +44,4 @@ The refuter's reports that statuses here rest on, oldest first.
 | [R39](R39.md) | C32; FieldDescentRows (60 rows) | SURVIVES (wording in C32.md) | 2026-11-09 |
 | [R40](R40.md) | C33; MaEdgeRows (151 rows) | SURVIVES (two corrections to C33.md) | 2026-11-09 |
 | [R41](R41.md) | C35; FieldDescentChainRows (66 rows) | SURVIVES (wording in C35.md) | 2026-11-10 |
+| [R42](R42.md) | C34; MaDividedRows (27 rows) | SURVIVES (rows to rebuild; wording in C34.md) | 2026-11-10 |
