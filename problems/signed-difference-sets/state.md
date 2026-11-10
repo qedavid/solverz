@@ -3,7 +3,9 @@
 **Focus.** Settle what is proved (the user, 2026-11-10, via the peer session): the row certificates for the tomography kills (I23: about 370 rows in exploration; C40–C42 and the flats in Lean), the C36 chain, the root build, settle. Then the open items of Groups 2 and 3 (P16's edge, P17, C15x, C4x, P19, C3x at m = 10, E5/C18x) before any further tomography extension. Plan of 2026-11-09: `scratch/inventory/final-plan.md` (IDs of `scratch/inventory/inventory.md`). Search mode only when the user says so. Table 91.43% settled (none 64,270, exists 229, open 6,044); Solutions Z1–Z33 (`solutions.md`), corrections in `corrections.md`.
 
 **Paused (the user, 2026-11-10 22:03: "pause all current stuff … and continue").** Everything that used the machine is stopped; nothing is lost but the modules that were mid-build. To continue, in this order:
-1. Resume the refuter on C44/C45/TomographyLast (agent a5f5b181a77e36ecc, by message; its notes `scratch/refuter/c44/notes.md`).
+1. Resume the refuter on C44/C45/TomographyLast (agent a5f5b181a77e36ecc, by message; notes `scratch/refuter/c44/notes.md`,
+   interim report `scratch/refuter/c44/C44-2026-11-10-2131.md`: SURVIVES on all six checks, no row fails). Left: `Ax2.lean`
+   (axioms of N31745), axioms of the 8 TomographyLast rows once built, the final verdict.
 2. Rerun the axioms check: `sh scratch/lean-slot.sh env researcher problems/signed-difference-sets/scratch/settle/Axioms.lean 4`
    (97 theorems: C36's built rows, C41's rows after R47); if clean, settle `scratch/settle/batch1-safe.tsv` (325 rows, 321 new)
    and `scratch/settle/c43.tsv` (41, through `scratch/settle_safe.py`) with `python -I solver/import/settle.py --batch`;
