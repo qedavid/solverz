@@ -2,6 +2,8 @@
 
 **Focus.** Settle what is proved (the user, 2026-11-10, via the peer session): the row certificates for the tomography kills (I23: about 370 rows in exploration; C40–C42 and the flats in Lean), the C36 chain, the root build, settle. Then the open items of Groups 2 and 3 (P16's edge, P17, C15x, C4x, P19, C3x at m = 10, E5/C18x) before any further tomography extension. Plan of 2026-11-09: `scratch/inventory/final-plan.md` (IDs of `scratch/inventory/inventory.md`). Search mode only when the user says so. Table 91.97% settled (none 64,652, exists 229, open 5,662); Solutions Z1–Z33 (`solutions.md`), corrections in `corrections.md`.
 
+**No new agents (the user, 2026-11-11 16:10):** start no agent until the user says so; the three running ones finish. Builds, axioms and settling go on.
+
 **Rules.**
 - **NO NEW IDEATORS.** A request for one goes with its reason under "Needs the user"; the user decides.
 - Ideas that come up as a by-product of the work go into `ideas/` with a kill test; work them only if they fit the plan's work, otherwise list them for the user.
