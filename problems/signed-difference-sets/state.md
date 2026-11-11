@@ -111,7 +111,7 @@ Group 3, technique tests (kill test first; work it if it hits):
 **Running.** (2026-11-10 13:55; the user lifted every temporary restriction: CLAUDE.md's limits only, "never stop")
 - Resumed 2026-11-11 (the user: "the pc is yours"). Agents (3): explorer for P17, the mod-q split on quotients
   (`scratch/p17/brief.md`; started 14:25); C15x, a second engine and Lean for I17's 11 NONE rows (`scratch/c15x/brief.md`; 14:25);
-  Lean helper for I24's 67 coset-type-count rows (`scratch/p16/lean-brief.md`, notes `scratch/p16/lean-progress.md`; 15:43). Done:
+  Lean helper for I24's 67 coset-type-count rows (`scratch/p16/lean-brief.md`, notes `scratch/p16/lean-progress.md`; 15:17). Done:
   the P16 explorer (I24: 89 open rows in exploration, `scratch/p16/kills_final.tsv`); R50 (C44/C45) recorded from the paused
   refuter's report.
 - Lanes (restarted 2026-11-11): `scratch/tomo/q/lane2.sh` ×2 (queue `scratch/tomo/q/queue.txt`), `scratch/tomo/l5/lane.sh` on
