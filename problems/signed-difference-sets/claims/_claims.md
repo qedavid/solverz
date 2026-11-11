@@ -46,3 +46,4 @@
 | [C43](C43.md) | Tomography through the hyperplanes of a Z_p^r quotient: flats' contractions sum to αs + (N − α)Z | C40, C41, C3, C2 | verified | `not_hasSDS_flat`, `not_hasSDS_flat_nc` | — |
 | [C44](C44.md) | Line tomography when n = p²: line contractions constant mod p, so p ∣ q + 1 is needed (s = pq) | C41, C3 | verified | `not_hasSDS_sq`, `not_hasSDS_grp_sq` | — |
 | [C45](C45.md) | The Z_2-twist of a self-conjugate quotient: N1575 (90, 18, 2) and N1593 (90, 72, 8) | C5, C3, C42 | verified | `not_hasSDS_90_18_2`, `not_hasSDS_90_72_8` | — |
+| [C46](C46.md) | Coset-type counts on a Ma quotient: per-coset defects sum to (p − 1)n; an LP Farkas certificate kills | C21, C3, C1 | proved | `IsSDS.false_of_cosetWeights`, `MaCosetCert.not_hasSDS` | — |
