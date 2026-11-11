@@ -109,11 +109,11 @@ Group 3, technique tests (kill test first; work it if it hits):
 | P21 | Planned ideator rounds on the core | — | dropped by the user (no new ideators) |
 
 **Running.** (2026-11-10 13:55; the user lifted every temporary restriction: CLAUDE.md's limits only, "never stop")
-- Resumed 2026-11-11 (the user: "the pc is yours"). Agents (3): explorer for P17, the mod-q split on quotients
-  (`scratch/p17/brief.md`; started 14:25); C15x, a second engine and Lean for I17's 11 NONE rows (`scratch/c15x/brief.md`; 14:25);
-  Lean helper for I24's 67 coset-type-count rows (`scratch/p16/lean-brief.md`, notes `scratch/p16/lean-progress.md`; 15:17). Done:
-  the P16 explorer (I24: 89 open rows in exploration, `scratch/p16/kills_final.tsv`); R50 (C44/C45) recorded from the paused
-  refuter's report.
+- Resumed 2026-11-11 (the user: "the pc is yours"). Agents (3): C15x, a second engine and Lean for I17's 11 NONE rows
+  (`scratch/c15x/brief.md`; started 14:25); Lean helper for I24's 67 coset-type-count rows (`scratch/p16/lean-brief.md`, notes
+  `scratch/p16/lean-progress.md`; 15:17); second engine (A7) and Lean for I25's 139 kills (`scratch/p17/a7-brief.md`, notes
+  `scratch/p17/a7-progress.md`; 15:58). Done: the P16 explorer (I24: 89 open rows in exploration), the P17 explorer (I25: 162 rows,
+  139 new, `scratch/p17/kills.tsv`); R50 (C44/C45) recorded from the paused refuter's report.
 - Lanes (restarted 2026-11-11): `scratch/tomo/q/lane2.sh` ×2 (queue `scratch/tomo/q/queue.txt`), `scratch/tomo/l5/lane.sh` on
   `scratch/tomo/l5/q7.txt` (8 rows), `scratch/tomo3/l4/lane.sh` (N758); log `scratch/lanes-restart.out`. C36 chain resumed on 16
   rows (14 C36, C34's N4195, N19445; `scratch/c34/todo.txt`, log `scratch/c34/chain.log`).
