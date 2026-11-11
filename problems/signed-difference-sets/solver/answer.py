@@ -567,7 +567,7 @@ def decodeTop (x : ℕ) : List ℤ :=
                      f"-- one kernel check at a time: the subtree checks together hold too much memory\n"
                      f"set_option Elab.async false\n\n" + "\n\n".join(items), ns=ns, prefix=prefix)
     plist = wrap([f"top{g}, " for g in range(len(tops) - 1)] + [f"top{len(tops) - 1}]"], "  ", 96).replace("  ", "  [", 1)
-    tup = wrap([f"group{g}, " for g in range(len(tops) - 1)] + [f"group{len(tops) - 1}⟩"],
+    tup = wrap([f"group{g}, " for g in range(len(tops))] + ["List.forall_mem_nil _⟩"],
                "            ", 93).replace("            ", "          exact ⟨", 1)
     write_module(name, [f"{ns}.Part{num:02d}" for num in range(len(parts))], title,
                  doc + f"\nThe {total} search nodes are checked in {len(batches)} batches under {len(tops)} groups over "
@@ -583,7 +583,7 @@ set_option maxRecDepth 100000 in
     (noVector_of_top (P := prefixes) (d := {top_depth - 1}) (by decide)
       (by decide +kernel) fun p hp => by
         have h : ∀ p ∈ prefixes, check p = true := by
-          simp only [prefixes, List.forall_mem_cons, List.forall_mem_nil, and_true]
+          simp only [prefixes, List.forall_mem_cons]
 {tup}
         exact h p hp){close}""", ns=ns, prefix=prefix)
 

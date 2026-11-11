@@ -38,14 +38,15 @@ theorem search :
     (noVector_of_top (P := prefixes) (d := 2) (by decide)
       (by decide +kernel) fun p hp => by
         have h : ∀ p ∈ prefixes, check p = true := by
-          simp only [prefixes, List.forall_mem_cons, List.forall_mem_nil, and_true]
+          simp only [prefixes, List.forall_mem_cons]
           exact ⟨group0, group1, group2, group3, group4, group5, group6, group7, group8, group9,
             group10, group11, group12, group13, group14, group15, group16, group17, group18,
             group19, group20, group21, group22, group23, group24, group25, group26, group27,
             group28, group29, group30, group31, group32, group33, group34, group35, group36,
             group37, group38, group39, group40, group41, group42, group43, group44, group45,
             group46, group47, group48, group49, group50, group51, group52, group53, group54,
-            group55, group56, group57, group58, group59, group60, group61⟩
+            group55, group56, group57, group58, group59, group60, group61,
+            List.forall_mem_nil _⟩
         exact h p hp)
 
 end SignedDifferenceSets.MaDivided2Rows.N56207B37
