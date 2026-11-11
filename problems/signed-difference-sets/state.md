@@ -2,6 +2,8 @@
 
 **Focus.** Settle what is proved (the user, 2026-11-10, via the peer session): the row certificates for the tomography kills (I23: about 370 rows in exploration; C40–C42 and the flats in Lean), the C36 chain, the root build, settle. Then the open items of Groups 2 and 3 (P16's edge, P17, C15x, C4x, P19, C3x at m = 10, E5/C18x) before any further tomography extension. Plan of 2026-11-09: `scratch/inventory/final-plan.md` (IDs of `scratch/inventory/inventory.md`). Search mode only when the user says so. Table 91.97% settled (none 64,652, exists 229, open 5,662); Solutions Z1–Z33 (`solutions.md`), corrections in `corrections.md`.
 
+**Frozen (the user, 2026-11-11 18:09):** 48 compute processes are suspended at the OS level, not stopped (`scratch/freeze.ps1`, PIDs in `scratch/frozen-pids.txt`): the C36 chain and the N40420/N56207 rebuild, the agents' Lean builds, chains and Python/Rust runs, the watchdogs and slot scripts. To continue: `powershell.exe -NoProfile -ExecutionPolicy Bypass -File scratch/freeze.ps1 thaw` (from the problem folder), then resume the two agents by message (C15x: a8cb3b4b4b60d6cb9, notes `scratch/c15x/notes.md`; I25's A7 route: a183e8c4171d35f9d, notes `scratch/p17/a7-progress.md`). Jobs under `timeout 3600` (three `indep_lat` runs) may be killed on thaw if their hour has passed; rerun them from the notes. If the session restarts, the agents are gone; successors continue from their notes.
+
 **No new agents (the user, 2026-11-11 16:10):** start no agent until the user says so; the three running ones finish. Builds, axioms and settling go on.
 
 **Rules.**
