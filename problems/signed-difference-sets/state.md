@@ -116,7 +116,8 @@ Group 3, technique tests (kill test first; work it if it hits):
   `scratch/p16/lean-progress.md`; 15:17); second engine (A7) and Lean for I25's 139 kills (`scratch/p17/a7-brief.md`, notes
   `scratch/p17/a7-progress.md`; 15:58). Done: the P16 explorer (I24: 89 open rows in exploration), the P17 explorer (I25: 162 rows,
   139 new, `scratch/p17/kills.tsv`); R50 (C44/C45) recorded from the paused refuter's report.
-- Lanes (restarted 2026-11-11): `scratch/tomo/q/lane2.sh` ×2 (queue `scratch/tomo/q/queue.txt`), `scratch/tomo/l5/lane.sh` on
+- 17:43: the three agents had stopped at the account's usage limit (about 17:30) and were resumed by message after its reset.
+- Lanes finished 17:42. Lanes (restarted 2026-11-11): `scratch/tomo/q/lane2.sh` ×2 (queue `scratch/tomo/q/queue.txt`), `scratch/tomo/l5/lane.sh` on
   `scratch/tomo/l5/q7.txt` (8 rows), `scratch/tomo3/l4/lane.sh` (N758); log `scratch/lanes-restart.out`. C36 chain resumed on 16
   rows (14 C36, C34's N4195, N19445; `scratch/c34/todo.txt`, log `scratch/c34/chain.log`).
 - Root: built 2026-11-10 21:42 and 22:01; 362 rows settled 2026-11-11. Next root build with priority (`scratch/root_prep.py
