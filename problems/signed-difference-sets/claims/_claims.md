@@ -36,13 +36,13 @@
 | [C33](C33.md) | Ma's lemma at its edge: p ∣ λc on a C21 quotient with b ≥ 1 (cyclic Sylow p of order ≥ p², p² ∣ n ⇒ p ∣ λ) | C21, C3 | verified | `IsSDS.dvd_lam_mul_of_ma` | — |
 | [C34](C34.md) | The divided contraction below a Ma quotient: W/p meets demands with square sum (k + λ(pc − 1))/p² (p odd) | C33, C3 | verified | `IsSDS.false_of_maDivided` | — |
 | [C35](C35.md) | Field descent along a chain d₀ → … → F (odd p, and p = 2 with 8 ∣ d): φ(m) n ≤ m F c² (Schmidt; P18 M2) | C32 | verified | `IsSDS.totient_mul_le_of_chain` | — |
-| [C36](C36.md) | The divided contraction two levels below a Ma quotient: p² ∣ W, W/p² meets demands (any p, b ≥ 2) | C34, C21, C3 | proved | `IsSDS.false_of_maDivided2` | — |
+| [C36](C36.md) | The divided contraction two levels below a Ma quotient: p² ∣ W, W/p² meets demands (any p, b ≥ 2) | C34, C21, C3 | verified | `IsSDS.false_of_maDivided2` | — |
 | [C37](C37.md) | The T-side of C26 at c = 1 (Z, T disjoint SDSs on K), and no SDS (54, 46, 10) in C₃ × C₁₈ (N464) | C26, C21 | verified | `n464_not_hasSDS` | — |
-| [C38](C38.md) | The divided contraction with Turyn's residue class: values of W/p congruent mod M (C34 × C5) | C34, C5 | proved | `IsSDS.false_of_maDividedRes` | — |
-| [C39](C39.md) | Value counts of the divided vector: no counts with |H′| values, sum ±s′, square sum Q (levels 1, 2, any p) | C33, C36, C3 | proved | `DividedDemands.false_of_anyCountsMag` | — |
-| [C40](C40.md) | Line tomography on Z_p × Z_p: the p + 1 line contractions sum to pD + s; no valid choice integral mod p | C3, C4, C2, C16 | proved | `Tomography.not_hasSDS`, `Tomography.not_hasSDS_prime` | — |
-| [C41](C41.md) | Line tomography on a Z_p × Z_p quotient (box c, multiplier t, with or without centring) | C40, C3, C2, C10 | proved | `TomographyQuot.not_hasSDS_grp`, `not_hasSDS_grp_nc` | — |
-| [C42](C42.md) | Tomography on a Z_2 × Z_2 × K quotient mod 4: z + d₁ + d₂ + d₃ ≡ 0, each twist d with autocorrelation nδ | C3 | proved | `not_hasSDS_of_kleinKills`, `KleinCert.not_hasSDS` | — |
-| [C43](C43.md) | Tomography through the hyperplanes of a Z_p^r quotient: flats' contractions sum to αs + (N − α)Z | C40, C41, C3, C2 | proved | `not_hasSDS_flat`, `not_hasSDS_flat_nc` | — |
+| [C38](C38.md) | The divided contraction with Turyn's residue class: values of W/p congruent mod M (C34 × C5) | C34, C5 | verified | `IsSDS.false_of_maDividedRes` | — |
+| [C39](C39.md) | Value counts of the divided vector: no counts with |H′| verified | C33, C36, C3 | proved | `DividedDemands.false_of_anyCountsMag` | — |
+| [C40](C40.md) | Line tomography on Z_p × Z_p: the p + 1 line contractions sum to pD + s; no valid choice integral mod p | C3, C4, C2, C16 | verified | `Tomography.not_hasSDS`, `Tomography.not_hasSDS_prime` | — |
+| [C41](C41.md) | Line tomography on a Z_p × Z_p quotient (box c, multiplier t, with or without centring) | C40, C3, C2, C10 | verified | `TomographyQuot.not_hasSDS_grp`, `not_hasSDS_grp_nc` | — |
+| [C42](C42.md) | Tomography on a Z_2 × Z_2 × K quotient mod 4: z + d₁ + d₂ + d₃ ≡ 0, each twist d with autocorrelation nδ | C3 | verified | `not_hasSDS_of_kleinKills`, `KleinCert.not_hasSDS` | — |
+| [C43](C43.md) | Tomography through the hyperplanes of a Z_p^r quotient: flats' contractions sum to αs + (N − α)Z | C40, C41, C3, C2 | verified | `not_hasSDS_flat`, `not_hasSDS_flat_nc` | — |
 | [C44](C44.md) | Line tomography when n = p²: line contractions constant mod p, so p ∣ q + 1 is needed (s = pq) | C41, C3 | proved | `not_hasSDS_sq`, `not_hasSDS_grp_sq` | — |
 | [C45](C45.md) | The Z_2-twist of a self-conjugate quotient: N1575 (90, 18, 2) and N1593 (90, 72, 8) | C5, C3, C42 | proved | `not_hasSDS_90_18_2`, `not_hasSDS_90_72_8` | — |

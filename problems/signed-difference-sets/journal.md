@@ -1,5 +1,8 @@
 # Journal
 
+## 2026-11-11
+- 14:20 Settled 362 rows none (and merged evidence on 4 C35 rows; `scratch/settle/batch2-safe.tsv`): C41 147 (`TomographyQuotRows`), C42 67 (`KleinTomographyRows`), C39 52 (`MaCountRows`), C43 41 (`TomographyFlatRows`), C36 32 (`MaDivided2Rows`), C38 14 (`MaDividedResRows`), C40 9 (`TomographyRows`). Root builds `--wfail` 2026-11-10 21:42 and 22:01; axioms standard (R45–R49, `scratch/settle/axioms.out`, `axioms2.out`). C36, C38–C43 verified. Table 91.95% (none 64,632, exists 229, open 5,682)
+
 ## 2026-11-10
 - 19:40 C42 proved (refuter SURVIVES, [R48](reviews/R48.md)): tomography on a Z_2 × Z_2 × Z_3 quotient mod 4 (I23; `KleinTomography.lean`, 67 open rows, built). Root and settle next
 - 18:14 C41 proved (refuter SURVIVES, [R47](reviews/R47.md)): line tomography on a Z_p × Z_p quotient (I23; `TomographyQuot*.lean`, 141 rows generated, 85 built at review, 15 more Z_11² quotient rows after it). Root and settle next
