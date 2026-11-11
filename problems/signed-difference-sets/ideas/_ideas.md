@@ -26,3 +26,4 @@
 | [I22](I22.md) | Ma's lemma at its edge: the contraction below a Ma quotient is divisible by p (none) | `T438` Multiplier theorems and character sums for nonexistence | us (P16) | C33 | alive |
 | [I23](I23.md) | Line tomography on Z_p × Z_p: all line quotients at once (none) | — tomography | us (D15x) | C3, C4 | alive |
 | [I24](I24.md) | Coset-type counts and the Ma tower at and beyond Ma's edge (none) | `T438` Multiplier theorems and character sums for nonexistence | us (P16) | C21, C3 | alive |
+| [I25](I25.md) | The mod-q split on quotients: deciding the quotients E8 cut (none) | `T438` Multiplier theorems and character sums for nonexistence | us (P17) | C3, C24 | alive |
