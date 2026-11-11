@@ -1573,7 +1573,7 @@ N1571,"SDS(89,81,63,[89])",Open@e3bf810,none,C5; SelfConjugacyRows part01,Signed
 N1572,"SDS(89,81,70,[89])",No@e3bf810,none,Gordon: Orbit Exhaust,,
 N1573,"SDS(89,88,-1,[89])",Yes@e3bf810,exists,Gordon: Paley,,
 N1574,"SDS(89,88,21,[89])",No@e3bf810,none,Gordon: Orbit Exhaust,,
-N1575,"SDS(90,18,2,[3,30])",Open@e3bf810,open,,,
+N1575,"SDS(90,18,2,[3,30])",Open@e3bf810,none,C45 (the Z_2-twist of a self-conjugate quotient); TwistSelfConjRows,SignedDifferenceSets.TwistSelfConjRows.N1575.not_hasSDS,
 N1576,"SDS(90,18,2,[90])",Open@e3bf810,none,"A7 (C10, C10 (I13)); CosetRows Part40",SignedDifferenceSets.CosetRows.n1576_not_hasSDS,Z28
 N1577,"SDS(90,42,6,[3,30])",Open@e3bf810,open,,,
 N1578,"SDS(90,42,6,[90])",Open@e3bf810,none,C21; MaRows part01,SignedDifferenceSets.MaRows.not_hasSDS_of_mem_part01,Z24
@@ -1591,7 +1591,7 @@ N1589,"SDS(90,69,20,[3,30])",Open@e3bf810,open,,,
 N1590,"SDS(90,69,20,[90])",No@e3bf810,none,Gordon: Orbit Exhaust,,
 N1591,"SDS(90,71,10,[3,30])",Open@e3bf810,none,He-Wu Thm 3.2: n=61; p=61; m=2; j=1,,
 N1592,"SDS(90,71,10,[90])",Open@e3bf810,none,He-Wu Thm 3.2: n=61; p=61; m=2; j=1,,
-N1593,"SDS(90,72,8,[3,30])",Open@e3bf810,open,,,
+N1593,"SDS(90,72,8,[3,30])",Open@e3bf810,none,C45 (the Z_2-twist of a self-conjugate quotient); TwistSelfConjRows,SignedDifferenceSets.TwistSelfConjRows.N1593.not_hasSDS,
 N1594,"SDS(90,72,8,[90])",Open@e3bf810,none,"A7 (C10, C10 (I13)); CosetRows Part40",SignedDifferenceSets.CosetRows.n1594_not_hasSDS,Z28
 N1595,"SDS(90,73,24,[3,30])",Open@e3bf810,none,C14; BoxRows part01,SignedDifferenceSets.BoxRows.part01_not_hasSDS,Z10
 N1596,"SDS(90,73,24,[90])",No@e3bf810,none,Gordon: Orbit Exhaust,,
@@ -1909,7 +1909,7 @@ N1907,"SDS(98,86,14,[7,14])",Open@e3bf810,none,He-Wu Thm 4.2: v even; n=72 not a
 N1908,"SDS(98,86,14,[98])",Open@e3bf810,none,He-Wu Thm 4.2: v even; n=72 not a square,,
 N1909,"SDS(98,88,44,[7,14])",Open@e3bf810,none,He-Wu Thm 3.2: n=44; p=11; m=2; j=1,,
 N1910,"SDS(98,88,44,[98])",Open@e3bf810,none,He-Wu Thm 3.2: n=44; p=11; m=2; j=1,,
-N1911,"SDS(98,89,40,[7,14])",Open@e3bf810,open,,,
+N1911,"SDS(98,89,40,[7,14])",Open@e3bf810,none,C44 (line tomography when n = p²); TomographySquareRows,SignedDifferenceSets.TomographySquareRows.N1911.not_hasSDS,
 N1912,"SDS(98,89,40,[98])",Open@e3bf810,none,C21; MaRows part01,SignedDifferenceSets.MaRows.not_hasSDS_of_mem_part01,Z24
 N1913,"SDS(98,91,54,[7,14])",Open@e3bf810,none,He-Wu Thm 3.2: n=37; p=37; m=2; j=1,,
 N1914,"SDS(98,91,54,[98])",No@e3bf810,none,Gordon: Orbit Exhaust,,
@@ -5089,7 +5089,7 @@ N5087,"SDS(147,130,79,[7,21])",Open@e3bf810,none,He-Wu Thm 3.2: n=51; p=3; m=7; 
 N5088,"SDS(147,130,79,[147])",Open@e3bf810,none,He-Wu Thm 3.2: n=51; p=3; m=7; j=3,,
 N5089,"SDS(147,134,7,[7,21])",Open@e3bf810,open,,,
 N5090,"SDS(147,134,7,[147])",Open@e3bf810,none,C27; UnramifiedRows,SignedDifferenceSets.unramifiedRows1_not_hasSDS,Z30
-N5091,"SDS(147,134,85,[7,21])",Open@e3bf810,open,,,
+N5091,"SDS(147,134,85,[7,21])",Open@e3bf810,none,C44 (line tomography when n = p²); TomographySquareRows,SignedDifferenceSets.TomographySquareRows.N5091.not_hasSDS,
 N5092,"SDS(147,134,85,[147])",Open@e3bf810,none,C21; MaRows part01,SignedDifferenceSets.MaRows.not_hasSDS_of_mem_part01,Z24
 N5093,"SDS(147,137,28,[7,21])",Open@e3bf810,none,C8; ParityRows,SignedDifferenceSets.ParityRows.parityRows_not_hasSDS,Z11
 N5094,"SDS(147,137,28,[147])",No@e3bf810,none,Gordon: Orbit Exhaust,,
@@ -8942,7 +8942,7 @@ N8940,"SDS(192,150,6,[2,2,2,24])",Open@e3bf810,open,,,
 N8941,"SDS(192,150,6,[2,2,4,12])",Open@e3bf810,none,C7; MarkedCountsRows part01,SignedDifferenceSets.MarkedCountsRows.part01_not_hasSDS,Z16
 N8942,"SDS(192,150,6,[2,2,48])",Open@e3bf810,open,,,
 N8943,"SDS(192,150,6,[2,4,24])",Open@e3bf810,open,,,
-N8944,"SDS(192,150,6,[2,96])",Open@e3bf810,open,,,
+N8944,"SDS(192,150,6,[2,96])",Open@e3bf810,none,C36 (divided contraction two levels below a Ma quotient); MaDivided2Rows,SignedDifferenceSets.MaDivided2Rows.N8944.not_hasSDS,
 N8945,"SDS(192,150,6,[4,4,12])",Open@e3bf810,none,C7; MarkedCountsRows part01,SignedDifferenceSets.MarkedCountsRows.part01_not_hasSDS,Z16
 N8946,"SDS(192,150,6,[4,48])",Open@e3bf810,open,,,
 N8947,"SDS(192,150,6,[8,24])",Open@e3bf810,open,,,
@@ -8997,7 +8997,7 @@ N8995,"SDS(192,162,18,[2,2,2,24])",Open@e3bf810,open,,,
 N8996,"SDS(192,162,18,[2,2,4,12])",Open@e3bf810,none,C7; MarkedCountsRows part01,SignedDifferenceSets.MarkedCountsRows.part01_not_hasSDS,Z16
 N8997,"SDS(192,162,18,[2,2,48])",Open@e3bf810,open,,,
 N8998,"SDS(192,162,18,[2,4,24])",Open@e3bf810,open,,,
-N8999,"SDS(192,162,18,[2,96])",Open@e3bf810,open,,,
+N8999,"SDS(192,162,18,[2,96])",Open@e3bf810,none,C36 (divided contraction two levels below a Ma quotient); MaDivided2Rows,SignedDifferenceSets.MaDivided2Rows.N8999.not_hasSDS,
 N9000,"SDS(192,162,18,[4,4,12])",Open@e3bf810,none,C7; MarkedCountsRows part01,SignedDifferenceSets.MarkedCountsRows.part01_not_hasSDS,Z16
 N9001,"SDS(192,162,18,[4,48])",Open@e3bf810,open,,,
 N9002,"SDS(192,162,18,[8,24])",Open@e3bf810,open,,,
@@ -9404,8 +9404,8 @@ N9402,"SDS(196,181,116,[7,28])",Open@e3bf810,none,He-Wu Thm 3.2: n=65; p=5; m=2;
 N9403,"SDS(196,181,116,[14,14])",Open@e3bf810,none,He-Wu Thm 3.2: n=65; p=5; m=2; j=1,,
 N9404,"SDS(196,181,116,[196])",Open@e3bf810,none,He-Wu Thm 3.2: n=65; p=5; m=2; j=1,,
 N9405,"SDS(196,181,132,[2,98])",Open@e3bf810,none,C21; MaRows part02,SignedDifferenceSets.MaRows.not_hasSDS_of_mem_part02,Z24
-N9406,"SDS(196,181,132,[7,28])",Open@e3bf810,open,,,
-N9407,"SDS(196,181,132,[14,14])",Open@e3bf810,open,,,
+N9406,"SDS(196,181,132,[7,28])",Open@e3bf810,none,C44 (line tomography when n = p²); TomographySquareRows,SignedDifferenceSets.TomographySquareRows.N9406.not_hasSDS,
+N9407,"SDS(196,181,132,[14,14])",Open@e3bf810,none,C44 (line tomography when n = p²); TomographySquareRows,SignedDifferenceSets.TomographySquareRows.N9407.not_hasSDS,
 N9408,"SDS(196,181,132,[196])",Open@e3bf810,none,C21; MaRows part02,SignedDifferenceSets.MaRows.not_hasSDS_of_mem_part02,Z24
 N9409,"SDS(196,186,2,[2,98])",Open@e3bf810,none,He-Wu Thm 3.2: n=184; p=23; m=2; j=1,,
 N9410,"SDS(196,186,2,[7,28])",Open@e3bf810,none,He-Wu Thm 3.2: n=184; p=23; m=2; j=1,,
@@ -14380,7 +14380,7 @@ N14378,"SDS(242,194,2,[11,22])",Open@e3bf810,none,He-Wu Thm 3.2: n=192; p=3; m=2
 N14379,"SDS(242,194,2,[242])",Open@e3bf810,none,He-Wu Thm 3.2: n=192; p=3; m=2; j=1,,
 N14380,"SDS(242,201,64,[11,22])",Open@e3bf810,none,He-Wu Thm 3.2: n=137; p=137; m=2; j=1,,
 N14381,"SDS(242,201,64,[242])",Open@e3bf810,none,He-Wu Thm 3.2: n=137; p=137; m=2; j=1,,
-N14382,"SDS(242,205,84,[11,22])",Open@e3bf810,open,,,
+N14382,"SDS(242,205,84,[11,22])",Open@e3bf810,none,C44 (line tomography when n = p²); TomographySquareRows,SignedDifferenceSets.TomographySquareRows.N14382.not_hasSDS,
 N14383,"SDS(242,205,84,[242])",Open@e3bf810,none,C21; MaRows part02,SignedDifferenceSets.MaRows.not_hasSDS_of_mem_part02,Z24
 N14384,"SDS(242,209,32,[11,22])",Open@e3bf810,none,He-Wu Thm 3.2: n=177; p=3; m=2; j=1,,
 N14385,"SDS(242,209,32,[242])",Open@e3bf810,none,He-Wu Thm 3.2: n=177; p=3; m=2; j=1,,
@@ -14406,7 +14406,7 @@ N14404,"SDS(242,231,138,[11,22])",Open@e3bf810,none,He-Wu Thm 3.2: n=93; p=3; m=
 N14405,"SDS(242,231,138,[242])",Open@e3bf810,none,He-Wu Thm 3.2: n=93; p=3; m=2; j=1,,
 N14406,"SDS(242,232,152,[11,22])",Open@e3bf810,none,He-Wu Thm 3.2: n=80; p=5; m=2; j=1,,
 N14407,"SDS(242,232,152,[242])",Open@e3bf810,none,He-Wu Thm 3.2: n=80; p=5; m=2; j=1,,
-N14408,"SDS(242,233,112,[11,22])",Open@e3bf810,open,,,
+N14408,"SDS(242,233,112,[11,22])",Open@e3bf810,none,C44 (line tomography when n = p²); TomographySquareRows,SignedDifferenceSets.TomographySquareRows.N14408.not_hasSDS,
 N14409,"SDS(242,233,112,[242])",Open@e3bf810,none,C21; MaRows part02,SignedDifferenceSets.MaRows.not_hasSDS_of_mem_part02,Z24
 N14410,"SDS(242,235,6,[11,22])",Open@e3bf810,none,He-Wu Thm 3.2: n=229; p=229; m=2; j=1,,
 N14411,"SDS(242,235,6,[242])",Open@e3bf810,none,He-Wu Thm 3.2: n=229; p=229; m=2; j=1,,
@@ -23256,7 +23256,7 @@ N23254,"SDS(294,272,4,[7,42])",Open@e3bf810,none,He-Wu Thm 3.2: n=268; p=67; m=2
 N23255,"SDS(294,272,4,[294])",Open@e3bf810,none,He-Wu Thm 3.2: n=268; p=67; m=2; j=1,,
 N23256,"SDS(294,276,80,[7,42])",Open@e3bf810,open,,,
 N23257,"SDS(294,276,80,[294])",Open@e3bf810,none,C21; MaRows part03,SignedDifferenceSets.MaRows.not_hasSDS_of_mem_part03,Z24
-N23258,"SDS(294,277,228,[7,42])",Open@e3bf810,open,,,
+N23258,"SDS(294,277,228,[7,42])",Open@e3bf810,none,C44 (line tomography when n = p²); TomographySquareRows,SignedDifferenceSets.TomographySquareRows.N23258.not_hasSDS,
 N23259,"SDS(294,277,228,[294])",Open@e3bf810,none,C21; MaRows part03,SignedDifferenceSets.MaRows.not_hasSDS_of_mem_part03,Z24
 N23260,"SDS(294,278,22,[7,42])",Open@e3bf810,open,,,
 N23261,"SDS(294,278,22,[294])",Open@e3bf810,none,"A7 (C10, C10 (I13)); CosetRows Part43",SignedDifferenceSets.CosetRows.n23261_not_hasSDS,Z28
@@ -31037,7 +31037,7 @@ N31035,"SDS(338,273,88,[13,26])",Open@e3bf810,none,He-Wu Thm 3.2: n=185; p=5; m=
 N31036,"SDS(338,273,88,[338])",Open@e3bf810,none,He-Wu Thm 3.2: n=185; p=5; m=2; j=1,,
 N31037,"SDS(338,274,206,[13,26])",Open@e3bf810,none,He-Wu Thm 3.2: n=68; p=17; m=2; j=1,,
 N31038,"SDS(338,274,206,[338])",Open@e3bf810,none,He-Wu Thm 3.2: n=68; p=17; m=2; j=1,,
-N31039,"SDS(338,281,112,[13,26])",Open@e3bf810,open,,,
+N31039,"SDS(338,281,112,[13,26])",Open@e3bf810,none,C44 (line tomography when n = p²); TomographySquareRows,SignedDifferenceSets.TomographySquareRows.N31039.not_hasSDS,
 N31040,"SDS(338,281,112,[338])",Open@e3bf810,none,C21; MaRows part04,SignedDifferenceSets.MaRows.not_hasSDS_of_mem_part04,Z24
 N31041,"SDS(338,282,6,[13,26])",Open@e3bf810,none,He-Wu Thm 3.2: n=276; p=3; m=2; j=1,,
 N31042,"SDS(338,282,6,[338])",Open@e3bf810,none,He-Wu Thm 3.2: n=276; p=3; m=2; j=1,,
@@ -31069,7 +31069,7 @@ N31067,"SDS(338,311,50,[13,26])",Open@e3bf810,none,He-Wu Thm 3.2: n=261; p=29; m
 N31068,"SDS(338,311,50,[338])",Open@e3bf810,none,He-Wu Thm 3.2: n=261; p=29; m=2; j=1,,
 N31069,"SDS(338,312,12,[13,26])",Open@e3bf810,none,He-Wu Thm 3.2: n=300; p=3; m=2; j=1,,
 N31070,"SDS(338,312,12,[338])",Open@e3bf810,none,He-Wu Thm 3.2: n=300; p=3; m=2; j=1,,
-N31071,"SDS(338,313,144,[13,26])",Open@e3bf810,open,,,
+N31071,"SDS(338,313,144,[13,26])",Open@e3bf810,none,C44 (line tomography when n = p²); TomographySquareRows,SignedDifferenceSets.TomographySquareRows.N31071.not_hasSDS,
 N31072,"SDS(338,313,144,[338])",Open@e3bf810,none,C21; MaRows part04,SignedDifferenceSets.MaRows.not_hasSDS_of_mem_part04,Z24
 N31073,"SDS(338,316,20,[13,26])",Open@e3bf810,none,He-Wu Thm 3.2: n=296; p=2; m=13; j=6,,
 N31074,"SDS(338,316,20,[338])",Open@e3bf810,none,He-Wu Thm 3.2: n=296; p=2; m=13; j=6,,
@@ -31743,7 +31743,7 @@ N31741,"SDS(343,73,8,[343])",Open@e3bf810,none,He-Wu Thm 3.2: n=65; p=5; m=7; j=
 N31742,"SDS(343,76,4,[7,7,7])",Open@e3bf810,none,C5; SelfConjugacyRows part06,SignedDifferenceSets.SelfConjugacyRows.part06_not_hasSDS,Z8
 N31743,"SDS(343,76,4,[7,49])",Open@e3bf810,none,C5; SelfConjugacyRows part06,SignedDifferenceSets.SelfConjugacyRows.part06_not_hasSDS,Z8
 N31744,"SDS(343,76,4,[343])",Open@e3bf810,none,C5; SelfConjugacyRows part06,SignedDifferenceSets.SelfConjugacyRows.part06_not_hasSDS,Z8
-N31745,"SDS(343,82,11,[7,7,7])",Open@e3bf810,open,,,
+N31745,"SDS(343,82,11,[7,7,7])",Open@e3bf810,none,C41 (line tomography on a Z_p × Z_p quotient); TomographyQuotRows,SignedDifferenceSets.TomographyQuotRows.N31745.not_hasSDS,
 N31746,"SDS(343,82,11,[7,49])",Open@e3bf810,open,,,
 N31747,"SDS(343,82,11,[343])",Open@e3bf810,none,C27; UnramifiedRows,SignedDifferenceSets.unramifiedRows2_not_hasSDS,Z30
 N31748,"SDS(343,85,18,[7,7,7])",Open@e3bf810,none,C41 (line tomography on a Z_p × Z_p quotient); TomographyQuotRows,SignedDifferenceSets.TomographyQuotRows.N31748.not_hasSDS,
@@ -36253,7 +36253,7 @@ N36251,"SDS(363,328,268,[11,33])",Open@e3bf810,none,He-Wu Thm 3.2: n=60; p=5; m=
 N36252,"SDS(363,328,268,[363])",Open@e3bf810,none,He-Wu Thm 3.2: n=60; p=5; m=3; j=1,,
 N36253,"SDS(363,329,20,[11,33])",Open@e3bf810,open,,,
 N36254,"SDS(363,329,20,[363])",Open@e3bf810,open,,,
-N36255,"SDS(363,329,208,[11,33])",Open@e3bf810,open,,,
+N36255,"SDS(363,329,208,[11,33])",Open@e3bf810,none,C44 (line tomography when n = p²); TomographySquareRows,SignedDifferenceSets.TomographySquareRows.N36255.not_hasSDS,
 N36256,"SDS(363,329,208,[363])",Open@e3bf810,none,C21; MaRows part04,SignedDifferenceSets.MaRows.not_hasSDS_of_mem_part04,Z24
 N36257,"SDS(363,333,54,[11,33])",Open@e3bf810,open,,,
 N36258,"SDS(363,333,54,[363])",Open@e3bf810,open,,,
@@ -36273,7 +36273,7 @@ N36271,"SDS(363,342,251,[11,33])",Open@e3bf810,none,He-Wu Thm 3.2: n=91; p=7; m=
 N36272,"SDS(363,342,251,[363])",Open@e3bf810,none,He-Wu Thm 3.2: n=91; p=7; m=11; j=5,,
 N36273,"SDS(363,346,15,[11,33])",Open@e3bf810,open,,,
 N36274,"SDS(363,346,15,[363])",Open@e3bf810,none,C27; UnramifiedRows,SignedDifferenceSets.unramifiedRows3_not_hasSDS,Z30
-N36275,"SDS(363,346,225,[11,33])",Open@e3bf810,open,,,
+N36275,"SDS(363,346,225,[11,33])",Open@e3bf810,none,C44 (line tomography when n = p²); TomographySquareRows,SignedDifferenceSets.TomographySquareRows.N36275.not_hasSDS,
 N36276,"SDS(363,346,225,[363])",Open@e3bf810,none,C21; MaRows part04,SignedDifferenceSets.MaRows.not_hasSDS_of_mem_part04,Z24
 N36277,"SDS(363,347,19,[11,33])",Open@e3bf810,none,He-Wu Thm 3.2: n=328; p=2; m=3; j=1,,
 N36278,"SDS(363,347,19,[363])",Open@e3bf810,none,He-Wu Thm 3.2: n=328; p=2; m=3; j=1,,
@@ -66082,8 +66082,8 @@ N66080,"SDS(484,427,138,[11,44])",Open@e3bf810,none,C5; SelfConjugacyRows part12
 N66081,"SDS(484,427,138,[22,22])",Open@e3bf810,none,C5; SelfConjugacyRows part12,SignedDifferenceSets.SelfConjugacyRows.part12_not_hasSDS,Z8
 N66082,"SDS(484,427,138,[484])",Open@e3bf810,none,C5; SelfConjugacyRows part12,SignedDifferenceSets.SelfConjugacyRows.part12_not_hasSDS,Z8
 N66083,"SDS(484,427,306,[2,242])",Open@e3bf810,none,C21; MaRows part06,SignedDifferenceSets.MaRows.not_hasSDS_of_mem_part06,Z24
-N66084,"SDS(484,427,306,[11,44])",Open@e3bf810,open,,,
-N66085,"SDS(484,427,306,[22,22])",Open@e3bf810,open,,,
+N66084,"SDS(484,427,306,[11,44])",Open@e3bf810,none,C44 (line tomography when n = p²); TomographySquareRows,SignedDifferenceSets.TomographySquareRows.N66084.not_hasSDS,
+N66085,"SDS(484,427,306,[22,22])",Open@e3bf810,none,C44 (line tomography when n = p²); TomographySquareRows,SignedDifferenceSets.TomographySquareRows.N66085.not_hasSDS,
 N66086,"SDS(484,427,306,[484])",Open@e3bf810,none,C21; MaRows part06,SignedDifferenceSets.MaRows.not_hasSDS_of_mem_part06,Z24
 N66087,"SDS(484,438,26,[2,242])",Open@e3bf810,none,He-Wu Thm 3.2: n=412; p=103; m=2; j=1,,
 N66088,"SDS(484,438,26,[11,44])",Open@e3bf810,none,He-Wu Thm 3.2: n=412; p=103; m=2; j=1,,
@@ -66130,8 +66130,8 @@ N66128,"SDS(484,463,102,[11,44])",Open@e3bf810,none,C5; SelfConjugacyRows part12
 N66129,"SDS(484,463,102,[22,22])",Open@e3bf810,none,C5; SelfConjugacyRows part12,SignedDifferenceSets.SelfConjugacyRows.part12_not_hasSDS,Z8
 N66130,"SDS(484,463,102,[484])",Open@e3bf810,none,C5; SelfConjugacyRows part12,SignedDifferenceSets.SelfConjugacyRows.part12_not_hasSDS,Z8
 N66131,"SDS(484,463,342,[2,242])",Open@e3bf810,none,C21; MaRows part06,SignedDifferenceSets.MaRows.not_hasSDS_of_mem_part06,Z24
-N66132,"SDS(484,463,342,[11,44])",Open@e3bf810,open,,,
-N66133,"SDS(484,463,342,[22,22])",Open@e3bf810,open,,,
+N66132,"SDS(484,463,342,[11,44])",Open@e3bf810,none,C44 (line tomography when n = p²); TomographySquareRows,SignedDifferenceSets.TomographySquareRows.N66132.not_hasSDS,
+N66133,"SDS(484,463,342,[22,22])",Open@e3bf810,none,C44 (line tomography when n = p²); TomographySquareRows,SignedDifferenceSets.TomographySquareRows.N66133.not_hasSDS,
 N66134,"SDS(484,463,342,[484])",Open@e3bf810,none,C21; MaRows part06,SignedDifferenceSets.MaRows.not_hasSDS_of_mem_part06,Z24
 N66135,"SDS(484,463,366,[2,242])",Open@e3bf810,none,He-Wu Thm 3.2: n=97; p=97; m=2; j=1,,
 N66136,"SDS(484,463,366,[11,44])",Open@e3bf810,none,He-Wu Thm 3.2: n=97; p=97; m=2; j=1,,

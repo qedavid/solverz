@@ -1,6 +1,7 @@
 # Journal
 
 ## 2026-11-11
+- 14:42 Settled 20 rows none (`scratch/settle/batch3-safe.tsv`): C44 15 (`TomographySquareRows`), C45 2 (N1575, N1593, `TwistSelfConjRows`), C36 2 (N8944, N8999), C41 1 (N31745). Root build `--wfail` 14:40 with TomographySquare, TwistSelfConj and their rows and tests; axioms standard (R50, `scratch/settle/axioms3.out`). C44, C45 verified. Table 91.97% (none 64,652, exists 229, open 5,662)
 - 14:20 Settled 362 rows none (and merged evidence on 4 C35 rows; `scratch/settle/batch2-safe.tsv`): C41 147 (`TomographyQuotRows`), C42 67 (`KleinTomographyRows`), C39 52 (`MaCountRows`), C43 41 (`TomographyFlatRows`), C36 32 (`MaDivided2Rows`), C38 14 (`MaDividedResRows`), C40 9 (`TomographyRows`). Root builds `--wfail` 2026-11-10 21:42 and 22:01; axioms standard (R45–R49, `scratch/settle/axioms.out`, `axioms2.out`). C36, C38–C43 verified. Table 91.95% (none 64,632, exists 229, open 5,682)
 
 ## 2026-11-10
