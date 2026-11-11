@@ -109,9 +109,11 @@ Group 3, technique tests (kill test first; work it if it hits):
 | P21 | Planned ideator rounds on the core | — | dropped by the user (no new ideators) |
 
 **Running.** (2026-11-10 13:55; the user lifted every temporary restriction: CLAUDE.md's limits only, "never stop")
-- Resumed 2026-11-11 (the user: "the pc is yours"). Agents: none yet (the old ones ended with the session); the C44/C45
-  refuter's interim report (`scratch/refuter/c44/C44-2026-11-10-2131.md`, SURVIVES on all six checks) is finished here: the axioms
-  of N31745 and of the 8 TomographyLast rows once built, then the Review.
+- Resumed 2026-11-11 (the user: "the pc is yours"). Agents (3, started 14:27): explorer for P16/C16x/D2x, Ma's edge
+  (`scratch/p16/brief.md`, notes there); explorer for P17, the mod-q split on quotients (`scratch/p17/brief.md`); C15x, a second
+  engine and Lean for I17's 11 NONE rows (`scratch/c15x/brief.md`). The C44/C45 refuter's interim report
+  (`scratch/refuter/c44/C44-2026-11-10-2131.md`, SURVIVES on all six checks) is finished here: the axioms of N31745 and of the 8
+  TomographyLast rows once built, then the Review.
 - Lanes (restarted 2026-11-11): `scratch/tomo/q/lane2.sh` ×2 (queue `scratch/tomo/q/queue.txt`), `scratch/tomo/l5/lane.sh` on
   `scratch/tomo/l5/q7.txt` (8 rows), `scratch/tomo3/l4/lane.sh` (N758); log `scratch/lanes-restart.out`. C36 chain resumed on 16
   rows (14 C36, C34's N4195, N19445; `scratch/c34/todo.txt`, log `scratch/c34/chain.log`).
