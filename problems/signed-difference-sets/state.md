@@ -2,22 +2,6 @@
 
 **Focus.** Settle what is proved (the user, 2026-11-10, via the peer session): the row certificates for the tomography kills (I23: about 370 rows in exploration; C40–C42 and the flats in Lean), the C36 chain, the root build, settle. Then the open items of Groups 2 and 3 (P16's edge, P17, C15x, C4x, P19, C3x at m = 10, E5/C18x) before any further tomography extension. Plan of 2026-11-09: `scratch/inventory/final-plan.md` (IDs of `scratch/inventory/inventory.md`). Search mode only when the user says so. Table 91.95% settled (none 64,632, exists 229, open 5,682); Solutions Z1–Z33 (`solutions.md`), corrections in `corrections.md`.
 
-**Paused (the user, 2026-11-10 22:03: "pause all current stuff … and continue").** Everything that used the machine is stopped; nothing is lost but the modules that were mid-build. To continue, in this order:
-1. Resume the refuter on C44/C45/TomographyLast (agent a5f5b181a77e36ecc, by message; notes `scratch/refuter/c44/notes.md`,
-   interim report `scratch/refuter/c44/C44-2026-11-10-2131.md`: SURVIVES on all six checks, no row fails). Left: `Ax2.lean`
-   (axioms of N31745), axioms of the 8 TomographyLast rows once built, the final verdict.
-2. Rerun the axioms check: `sh scratch/lean-slot.sh env researcher problems/signed-difference-sets/scratch/settle/Axioms.lean 4`
-   (97 theorems: C36's built rows, C41's rows after R47); if clean, settle `scratch/settle/batch1-safe.tsv` (325 rows, 321 new)
-   and `scratch/settle/c43.tsv` (41, through `scratch/settle_safe.py`) with `python -I solver/import/settle.py --batch`;
-   roots built 21:42 and 22:01 cover them.
-3. Restart the lanes (each takes rows from its queue; built rows are skipped quickly):
-   `sh scratch/tomo/q/lane.sh scratch/tomo/q/build_all.out` twice (queue `scratch/tomo/q/queue.txt`: N36075, N36253, N36167,
-   N36257); `sh scratch/tomo/l5/lane.sh scratch/tomo/l5/q6.txt scratch/tomo/l5/build.out` (N31746 … N5089; N15384, N31745 built);
-   `sh scratch/tomo3/l4/lane.sh scratch/tomo3/l4/queue.txt scratch/tomo3/l4/build_rows.out` (queue: N758).
-4. The C36 chain (paused since 20:09): unbuilt rows from `python scratch/root_prep.py` into `scratch/c34/todo.txt`, then
-   `xargs -P 2 -I{} sh scratch/c34/tree.sh {} < scratch/c34/todo.txt`.
-5. Then the next root build with priority (`scratch/root_prep.py --apply`, `sh scratch/lean-slot.sh root researcher`).
-
 **Rules.**
 - **NO NEW IDEATORS.** A request for one goes with its reason under "Needs the user"; the user decides.
 - Ideas that come up as a by-product of the work go into `ideas/` with a kill test; work them only if they fit the plan's work, otherwise list them for the user.
@@ -125,18 +109,15 @@ Group 3, technique tests (kill test first; work it if it hits):
 | P21 | Planned ideator rounds on the core | — | dropped by the user (no new ideators) |
 
 **Running.** (2026-11-10 13:55; the user lifted every temporary restriction: CLAUDE.md's limits only, "never stop")
-- Agents (2): refuter on C43 (the flats) and C41's rows built after R47 (`scratch/refuter/c43-brief.md`, notes
-  `scratch/refuter/c43/`; started 21:15); refuter on C44, C45 and `TomographyLast` (`scratch/refuter/c44-brief.md`, notes
-  `scratch/refuter/c44/`; started 21:30). Done today: refuters R45–R48 (C40, C38/C39, C41, C42), all SURVIVES; Lean helpers for
-  C40, C41, C42, C43 (flats: 41 rows, N758 building), C44/C45 (18 rows; 9 more C41 rows building in its lane
-  `scratch/tomo/l5/q6.txt`, about 4 h, results `scratch/tomo/l5/build.out`); explorers tomo3 (298 open rows killed in exploration)
-  and tomo4.
-- Root (21:28): every built module of C36, C41, C42 is in the root file (`scratch/root_prep.py --apply`); a `lean-slot.sh root`
-  waiter holds priority (log `scratch/root-run.out`); `lean-slot.sh`'s INT/TERM traps now exit (a TERM at 17:12 had left the
-  15:12 waiter looping without priority). Then `scratch/settle/Axioms.lean` (C36 rows, C41 rows after R47), settle through
-  `scratch/settle_safe.py`: `scratch/settle/c36.tsv`, `c41.tsv` (R47's 85), `c42.tsv`, `scratch/maedge/settle-c34b.tsv`,
-  `settle-c36b.tsv`, `settle-c38.tsv`, `scratch/tomo/settle-c40.tsv`; `c41-later.tsv` after C43's refuter (part B). One root build
-  per settle round, queued with priority.
+- Resumed 2026-11-11 (the user: "the pc is yours"). Agents: none yet (the old ones ended with the session); the C44/C45
+  refuter's interim report (`scratch/refuter/c44/C44-2026-11-10-2131.md`, SURVIVES on all six checks) is finished here: the axioms
+  of N31745 and of the 8 TomographyLast rows once built, then the Review.
+- Lanes (restarted 2026-11-11): `scratch/tomo/q/lane2.sh` ×2 (queue `scratch/tomo/q/queue.txt`), `scratch/tomo/l5/lane.sh` on
+  `scratch/tomo/l5/q7.txt` (8 rows), `scratch/tomo3/l4/lane.sh` (N758); log `scratch/lanes-restart.out`. C36 chain resumed on 16
+  rows (14 C36, C34's N4195, N19445; `scratch/c34/todo.txt`, log `scratch/c34/chain.log`).
+- Root: built 2026-11-10 21:42 and 22:01; 362 rows settled 2026-11-11. Next root build with priority (`scratch/root_prep.py
+  --apply`, `sh scratch/lean-slot.sh root researcher`) when the lanes and the chain have built their rows; settle lists from
+  `python scratch/settle_prep.py` (plus C43's, C44's, C45's lists).
 - C41's rows build in two background lanes (`scratch/tomo/q/lane.sh`, queue `scratch/tomo/q/queue.txt`, results
   `scratch/tomo/q/build_all.out`; `sh scratch/tomo/q/collect.sh` gathers the result files the lanes leave in the problem folder):
   141 rows generated, 67 built at 17:44; then `python scratch/tomo/q/mkaxioms.py` and the AxiomsQ1/Q2 checks.
