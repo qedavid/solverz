@@ -57,12 +57,12 @@ aka: PARI/GP, Magma, Sage, class groups, elliptic curves, modular forms, L-funct
 
 ### T46 Lattice basis reduction (LLL)
 `find` `prove` · stage: algebra · signals: integers, matrix, construction
-aka: LLL, short lattice vectors, integer relations, Diophantine approximation, algebraic dependence, 0/1 solutions, Kramer–Mesner systems, Mertens conjecture
+aka: LLL, short lattice vectors, integer relations, Diophantine approximation, algebraic dependence, 0/1 solutions, Kramer–Mesner systems, Kreher–Radziszowski, Mertens conjecture
 - What: short lattice vectors give small integer relations or 0/1 solutions.
 - Fits when: Diophantine approximation, design existence, algebraic dependence.
 - Lean: the found vector is checked exactly; analytic consequences need interval arithmetic.
 - Example: the Mertens conjecture, disproved with zeta zeros and lattice reduction ([Odlyzko–te Riele](https://ir.cwi.nl/pub/6447/6447D.pdf)); Kramer–Mesner plus LLL found all 4,996,426 7-(33,8,10) designs with group PΓL(2,32) ([Wassermann](https://www.mat.univie.ac.at/~slc/wpapers/s35wasser.pdf)).
-- See also: T27, T47, T76
+- See also: T27, T47, T76, T1397
 
 ### T47 Lattice enumeration and BKZ
 `find` `compute` · stage: algebra · signals: geometry, matrix, exact-value

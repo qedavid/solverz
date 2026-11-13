@@ -84,7 +84,7 @@ aka: Ray-Chaudhuri–Wilson, restricted intersections mod p, chromatic number of
 
 ### T400 Eigenvalue interlacing
 `prove` `bound` · stage: argue · signals: graph, matrix, inequality
-aka: Cauchy interlacing, Cauchy interlacing on principal submatrices, Courant–Fischer min-max, sensitivity conjecture, Huang's theorem, induced subgraphs of the hypercube, signed adjacency matrix
+aka: Cauchy interlacing, Cauchy interlacing on principal submatrices, Courant–Fischer min-max, Haemers' interlacing, substructures of designs, sensitivity conjecture, Huang's theorem, induced subgraphs of the hypercube, signed adjacency matrix
 - What: eigenvalues of principal submatrices interlace with those of the matrix, bounding induced substructures.
 - Fits when: induced subgraphs, independence numbers, sensitivity.
 - Lean: Huang's theorem is in Mathlib's Archive (`huang_degree_theorem` in `Archive/Sensitivity.lean`); Mathlib: `SimpleGraph.adjMatrix`, `Matrix.IsHermitian.eigenvalues`.
@@ -93,7 +93,7 @@ aka: Cauchy interlacing, Cauchy interlacing on principal submatrices, Courant–
 
 ### T401 Integrality of eigenvalue multiplicities
 `prove` · stage: argue · signals: graph, matrix, classification, impossibility
-aka: strongly regular graphs, Moore graphs, Hoffman–Singleton theorem, degree 57, friendship theorem, feasibility conditions, eigenvalue multiplicities must be integers
+aka: strongly regular graphs, Moore graphs, Hoffman–Singleton theorem, degree 57, friendship theorem, (v, k, λ)-graphs, polarity trace, feasibility conditions, eigenvalue multiplicities must be integers
 - What: a strongly regular structure forces eigenvalues whose multiplicities must be integers, which only few parameters allow.
 - Fits when: classifying highly regular graphs or designs.
 - Lean: the friendship theorem is in Mathlib's Archive (`friendship_theorem`); Mathlib: `SimpleGraph.IsSRGWith`; the parameter arithmetic by `norm_num` or `decide +kernel`.

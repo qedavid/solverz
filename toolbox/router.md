@@ -17,7 +17,7 @@ The order is typical, not required.
    computation/formal-libraries, computation/ai-theorem-proving.
 
 ## find
-1. `construct`: pure-math/designs-and-codes, pure-math/extremal-combinatorics,
+1. `construct`: pure-math/designs-and-codes, pure-math/difference-sets, pure-math/extremal-combinatorics,
    pure-math/probabilistic-method, pure-math/discrete-geometry, algorithms/construction-heuristics.
 2. `encode`: computation/sat-solving, computation/constraint-solving,
    algorithms/reductions-and-hardness.

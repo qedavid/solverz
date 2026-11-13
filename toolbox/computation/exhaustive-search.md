@@ -71,4 +71,22 @@ aka: Hadamard matrices, Hadamard conjecture, weighing matrices, difference sets,
 - Fits when: Hadamard matrices, weighing matrices, difference sets.
 - Lean: the sequence autocorrelations by `decide` (O(n²) small integers); prove the array construction once.
 - Example: a Hadamard matrix of order 428, from Turyn-type sequences of lengths 36, 36, 36, 35 turned into base sequences and then T-sequences ([Kharaghani–Tayfeh-Rezaie](https://www.cs.uleth.ca/~hadi/research/h428.pdf)).
-- See also: T27, T94
+- See also: T27, T94, T1397, T1398
+
+### T1397 Contraction then lift for group-invariant objects
+`find` `compute` · stage: search · signals: group, integers, construction, impossibility
+aka: Baumert's method, contracted difference sets, quotient vectors, intersection numbers, multiplier orbits, unions of orbits, Rumsey's component method, CRT over cyclotomic factors, one character per Galois class, lift search, tables of cyclic difference sets
+- What: list every integer vector a solution can induce on each quotient (fixed sum, sum of squares and cross-sums, constant on multiplier orbits), glue the quotients through the components mod each cyclotomic factor, then search the lifts or the unions of multiplier orbits, testing |χ(D)|² = n on one character per Galois class.
+- Fits when: deciding existence of cyclic or abelian difference sets, relative difference sets or weighing matrices for given parameters; for {0, ±1} solutions the system is the same with coset sums in [−c, c] and a parity condition, but the sums no longer force entries in {0, ±1}, so each lift needs its own check.
+- Lean: two phases: a cover lemma that every possible quotient vector lies in a computed list, then per vector a lift search on bit masks, both by `decide +kernel`.
+- Example: all cyclic difference sets with k ≤ 100 decided by such tests and searches (Baumert 1971, Cyclic Difference Sets).
+- See also: T39, T27, T1384, T438
+
+### T1398 Mod-4 linearization of ±1 correlations
+`find` `prove` · stage: search · signals: sequence, parity, construction
+aka: Golay's parity lemma, ab ≡ a + b − 1 mod 4, sign bits, Andres–Stanton quad search, Golay complementary pairs, F₂-linear sign systems, ±1 correlation equations
+- What: for a, b ∈ {±1}, ab ≡ a + b − 1 mod 4, so with sign bits every correlation equation is linear mod 4 in the entries and linear over F₂ once its parity part is split off; a search fixes one family of bits and solves linear systems for the rest.
+- Fits when: ±1 or {0, ±1} sequences and arrays with prescribed correlations (Golay pairs, Barker-type and perfect sequences); for a fixed support of a {0, ±1} solution the signs satisfy an F₂-linear system, so an inconsistent system rules the support out.
+- Lean: an inconsistency as a combination of the equations summing to 0 = 1 over `ZMod 2`, checked by `decide +kernel`.
+- Example: Golay's parity lemma and the Andres–Stanton search for Golay pairs (Borwein 2002, Computational Excursions in Analysis and Number Theory).
+- See also: T39, T1023, T1389

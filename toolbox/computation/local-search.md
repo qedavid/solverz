@@ -3,7 +3,7 @@ Heuristic search over discrete objects or real coordinates for find and bound pr
 
 ### T90 Simulated annealing and tabu search
 `find` `bound` · stage: local-search · signals: set-family, colouring, construction, near-miss
-aka: annealing, temperature schedule, tabu search, Metropolis moves, covering designs, packing designs, La Jolla Covering Repository, colourings, codes
+aka: annealing, temperature schedule, tabu search, Metropolis moves, covering designs, packing designs, trades, negative block multiplicities, La Jolla Covering Repository, colourings, codes
 - What: random moves accepted with a temperature-dependent probability.
 - Fits when: covering and packing designs, colourings, codes (find and bound).
 - Lean: the property checked by `decide` over packed t-subsets (T121).

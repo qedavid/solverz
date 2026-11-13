@@ -3,48 +3,48 @@ Constructions and nonexistence proofs for designs, difference sets, Hadamard mat
 
 ### T437 Difference sets and cyclic constructions
 `find` · stage: construct · signals: group, set-family, construction
-aka: difference sets, base blocks, developing a block through a group, Singer difference sets, cyclic projective planes, symmetric designs
+aka: difference sets, base blocks, developing a block through a group, Singer difference sets, Gordon–Mills–Welch difference sets, cyclic projective planes, symmetric designs
 - What: develop a base block through a group to get a symmetric design.
 - Fits when: designs, Hadamard matrices or sequences with group symmetry.
 - Lean: the difference property of a given set in `ZMod n` by `decide +kernel`.
 - Example: Singer difference sets give cyclic projective planes ([Wikipedia: Difference set](https://en.wikipedia.org/wiki/Difference_set)).
-- See also: T438, T441, T27
+- See also: T438, T441, T27, T1389, T1391, T1392
 
 ### T438 Multiplier theorems and character sums for nonexistence
 `prove` · stage: argue · signals: group, set-family, impossibility
-aka: Hall's multiplier theorem, group-ring equations, characters of abelian groups, circulant Hadamard matrices, difference set nonexistence
+aka: Hall's multiplier theorem, McFarland's multiplier theorem, multiplier orbits, fixed translates, group-ring equations, characters of abelian groups, Fourier criterion, contraction to quotients, circulant Hadamard matrices, difference set nonexistence
 - What: group-ring and character arguments force multipliers and rule out parameters.
 - Fits when: deciding which difference sets or circulant matrices exist.
 - Lean: —
 - Example: Hall's multiplier theorem; nonexistence results for circulant Hadamard matrices ([Wikipedia: Difference set](https://en.wikipedia.org/wiki/Difference_set), [Wikipedia: Hadamard matrix](https://en.wikipedia.org/wiki/Hadamard_matrix)).
-- See also: T437, T439, T748
+- See also: T437, T439, T748, T1378, T1379, T1380, T1384
 
 ### T439 Number-theoretic obstruction via quadratic forms
 `prove` · stage: argue · signals: matrix, integers, impossibility
-aka: Bruck–Ryser–Chowla theorem, Hasse–Minkowski invariants, rational equivalence of quadratic forms, symmetric designs, projective plane of order 6
+aka: Bruck–Ryser–Chowla theorem, Bose–Connor theorem, divisible designs, Hasse–Minkowski invariants, Hilbert symbols, rational equivalence of quadratic forms, BRC on quotients, Hall–Ryser test, orbit matrices, Hughes's theorem, symmetric designs, projective plane of order 6
 - What: an incidence matrix gives a rational equivalence of quadratic forms; Hasse–Minkowski invariants must match.
 - Fits when: excluding parameters of symmetric designs or planes.
 - Lean: —
 - Example: Bruck–Ryser–Chowla: no projective plane of order 6 ([Wikipedia: Bruck–Ryser–Chowla theorem](https://en.wikipedia.org/wiki/Bruck–Ryser–Chowla_theorem)).
-- See also: T513, T410, T7
+- See also: T513, T410, T7, T1379
 
 ### T440 Recursive constructions
 `find` · stage: construct · signals: set-family, product-structure, construction
-aka: product constructions, PBD closure, pairwise balanced designs, Wilson's fundamental construction, orthogonal Latin squares, Graeco-Latin squares, Euler's 36 officers
+aka: product constructions, products of relative and Hadamard difference sets, Turyn's composition, PBD closure, pairwise balanced designs, Wilson's fundamental construction, orthogonal Latin squares, Graeco-Latin squares, Euler's 36 officers
 - What: combine small designs into large ones; Wilson's fundamental construction.
 - Fits when: existence for all large admissible parameters once enough small cases exist.
 - Lean: each small ingredient as a witness by `decide +kernel`; the recursion as a Lean construction.
 - Example: Bose–Shrikhande–Parker: orthogonal Latin squares exist for all orders except 2 and 6 ([Wikipedia: Graeco-Latin square](https://en.wikipedia.org/wiki/Graeco-Latin_square), [Wikipedia: Combinatorial design](https://en.wikipedia.org/wiki/Combinatorial_design)).
-- See also: T441, T360, T446
+- See also: T441, T360, T446, T1392, T1396
 
 ### T441 Hadamard matrix constructions
 `find` · stage: construct · signals: matrix, finite-field, construction
-aka: Hadamard matrices, Sylvester doubling, Kronecker product, Paley construction, quadratic residues, Williamson arrays, Hadamard conjecture
+aka: Hadamard matrices, Sylvester doubling, Kronecker product, Paley construction, quadratic residues, Williamson arrays, Williamson matrices, Hadamard conjecture
 - What: Sylvester doubling, Paley quadratic residues, Williamson arrays.
 - Fits when: orthogonal ±1 matrices of given order.
 - Lean: Mathlib: `Matrix.IsHadamard` with `Matrix.IsHadamard.kronecker` (Sylvester) and the `4 ∣ n` obstruction (`LinearAlgebra/Matrix/HadamardMatrix.lean`); a concrete matrix by `decide +kernel`.
 - Example: Paley's constructions from finite fields ([Wikipedia: Hadamard matrix](https://en.wikipedia.org/wiki/Hadamard_matrix)).
-- See also: T437, T440, T39
+- See also: T437, T440, T39, T1389, T1390
 
 ### T442 Codes from groups and designs from codes
 `find` · stage: construct · signals: group, set-family, construction
@@ -66,12 +66,12 @@ aka: Hamming bound, sphere-packing bound, Plotkin bound, Gilbert–Varshamov bou
 
 ### T444 MacWilliams duality
 `prove` `compute` · stage: argue · signals: set-family, polynomial, identity
-aka: MacWilliams identity, weight enumerators, dual codes, self-dual codes, nonnegativity of dual weight counts
+aka: MacWilliams identity, weight enumerators, dual codes, self-dual codes, code of a design, nonnegativity of dual weight counts
 - What: the weight enumerator of a code determines that of its dual.
 - Fits when: self-dual codes and nonexistence via nonnegativity of dual weight counts.
 - Lean: —
 - Example: MacWilliams identity ([Wikipedia: MacWilliams identity](https://en.wikipedia.org/wiki/MacWilliams_identity)).
-- See also: T445, T50
+- See also: T445, T50, T1386
 
 ### T445 Invariant theory of weight enumerators
 `prove` `bound` · stage: argue · signals: polynomial, group, set-family

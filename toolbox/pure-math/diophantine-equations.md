@@ -57,7 +57,7 @@ aka: cyclotomic fields, Galois-module structure of units and class groups, Catal
 
 ### T518 p-adic valuations, LTE and Hensel lifting
 `prove` · stage: argue · signals: integers, congruence
-aka: lifting-the-exponent lemma, LTE, p-adic valuation, ν_p, Hensel's lemma, divisibility of a^n − b^n, exponential Diophantine equations
+aka: lifting-the-exponent lemma, LTE, p-adic valuation, ν_p, Hensel's lemma, divisibility of a^n − b^n, orders of units mod p^k, exponential Diophantine equations
 - What: tracks valuations exactly; lifts solutions mod p to p-adic ones.
 - Fits when: exponential Diophantine equations; divisibility of a^n − b^n.
 - Lean: Mathlib `padicValNat`, LTE as `Nat.emultiplicity_pow_sub_pow` and `Int.emultiplicity_pow_sub_pow`, and `hensels_lemma`.
@@ -165,12 +165,12 @@ aka: Artin reciprocity, abelian extensions, Frobenius elements, Chebotarev densi
 
 ### T530 Gauss sums and reciprocity laws
 `prove` · stage: argue · signals: integers, finite-field, congruence
-aka: quadratic reciprocity, Gauss sums, Zolotarev's lemma, Legendre and Jacobi symbols, higher reciprocity, sign determinations, counting lattice points two ways
+aka: quadratic reciprocity, Gauss sums, Jacobi sums, Davenport–Hasse lifting, semiprimitive Gauss sums, Gaussian periods, Zolotarev's lemma, Legendre and Jacobi symbols, higher reciprocity, sign determinations, counting lattice points two ways
 - What: evaluates a sum two ways (or counts lattice points two ways) to relate residue symbols.
 - Fits when: quadratic or higher reciprocity; sign determinations.
 - Lean: Mathlib `legendreSym.quadratic_reciprocity`, `jacobiSym` and `gaussSum`; a symbol for given numbers by `decide +kernel`.
 - Example: proofs of quadratic reciprocity via Gauss sums and via Zolotarev's permutation signs ([Wikipedia: Quadratic reciprocity](https://en.wikipedia.org/wiki/Quadratic_reciprocity), [Wikipedia: Gauss sum](https://en.wikipedia.org/wiki/Gauss_sum), [Wikipedia: Zolotarev's lemma](https://en.wikipedia.org/wiki/Zolotarev's_lemma)).
-- See also: T327, T479
+- See also: T327, T479, T1383, T1391
 
 ### T531 Heights
 `prove` `bound` · stage: argue · signals: arithmetic-geometry, integers
