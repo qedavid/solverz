@@ -3,12 +3,12 @@ Speed and memory tricks for exhaustive runs: split searches, hashing, precompute
 
 ### T1130 Meet in the middle
 `find` `compute` · stage: search · signals: additive, integers
-aka: MITM, Horowitz–Sahni, two halves, sort and match, subset sum, O(2^{n/2})
+aka: MITM, Horowitz–Sahni, two halves, sort and match, subset sum, O(2^{n/2}), sorted PAF vectors, string sorting, hash join of half-lists, integer-norm keys, coset-piece joins
 - What: enumerates two halves, sorts them and matches.
 - Fits when: sums or compositions of two independent halves; O(2^{n/2}) instead of 2ⁿ.
 - Lean: a found solution by `decide`; "none" needs the full search as a certificate.
 - Example: Horowitz–Sahni subset sum ([Wikipedia: Subset sum problem](https://en.wikipedia.org/wiki/Subset_sum_problem)).
-- See also: T1131, T1132
+- See also: T1131, T1132, T1417
 
 ### T1131 Schroeppel–Shamir space reduction
 `find` `compute` · stage: search · signals: additive, integers

@@ -93,16 +93,16 @@ aka: Cauchy interlacing, Cauchy interlacing on principal submatrices, Courant–
 
 ### T401 Integrality of eigenvalue multiplicities
 `prove` · stage: argue · signals: graph, matrix, classification, impossibility
-aka: strongly regular graphs, Moore graphs, Hoffman–Singleton theorem, degree 57, friendship theorem, (v, k, λ)-graphs, polarity trace, feasibility conditions, eigenvalue multiplicities must be integers
+aka: strongly regular graphs, Moore graphs, Hoffman–Singleton theorem, degree 57, friendship theorem, (v, k, λ)-graphs, polarity trace, feasibility conditions, eigenvalue multiplicities must be integers, Benson–Higman class congruence, trace on an eigenspace, dual PDS integrality, √Δ | v, absolute points of a polarity, Baer's theorems
 - What: a strongly regular structure forces eigenvalues whose multiplicities must be integers, which only few parameters allow.
 - Fits when: classifying highly regular graphs or designs.
 - Lean: the friendship theorem is in Mathlib's Archive (`friendship_theorem`); Mathlib: `SimpleGraph.IsSRGWith`; the parameter arithmetic by `norm_num` or `decide +kernel`.
 - Example: Hoffman–Singleton: a Moore graph of diameter 2 must have degree 2, 3, 7 or 57 (graphs exist for 2, 3 and 7; degree 57 is open); the friendship theorem ([Wikipedia: Moore graph](https://en.wikipedia.org/wiki/Moore_graph), [Wikipedia: Friendship graph](https://en.wikipedia.org/wiki/Friendship_graph)).
-- See also: T400, T438
+- See also: T400, T438, T1411
 
 ### T402 Expander mixing lemma and spectral bounds
 `bound` `prove` · stage: argue · signals: graph, matrix, pseudorandom
-aka: expander mixing lemma, second eigenvalue, spectral gap, Cheeger inequality, Hoffman ratio bound, Hoory–Linial–Wigderson survey, d-regular expanders, edge distribution, independence number
+aka: expander mixing lemma, second eigenvalue, spectral gap, Cheeger inequality, Hoffman ratio bound, Hoory–Linial–Wigderson survey, d-regular expanders, edge distribution, independence number, Lindsey's lemma, submatrix sums of Hadamard matrices, discrepancy of a group matrix on rectangles
 - What: the second eigenvalue controls edge distribution between any two vertex sets.
 - Fits when: pseudorandom graphs, independence number bounds (Hoffman ratio bound).
 - Lean: Mathlib: `SimpleGraph.adjMatrix`, `SimpleGraph.lapMatrix`; eigenvalue bounds of explicit matrices need exact certificates.

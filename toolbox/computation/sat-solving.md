@@ -57,7 +57,7 @@ aka: PR, LPR, SR, substitution redundancy, cake_lpr, CakeML, dsr-trim, pigeonhol
 
 ### T7 SAT+CAS
 `find` `prove` `compute` · stage: search · signals: set-family, finite-field, impossibility
-aka: SAT plus computer algebra, orderly generation inside SAT, algebraic pruning, Lam's problem, projective plane of order 10, Kochen–Specker systems, orthogonality constraints, designs
+aka: SAT plus computer algebra, orderly generation inside SAT, algebraic pruning, Lam's problem, projective plane of order 10, Kochen–Specker systems, orthogonality constraints, designs, split certificates, verified LRAT (cake_lpr), single-shift bound, programmatic PSD clauses, compression clauses, Williamson sequences
 - What: a computer algebra system supplies isomorph-free orderly generation or algebraic pruning to the SAT search.
 - Fits when: objects with algebraic side conditions (orthogonality, designs).
 - Lean: each CAS-made clause needs a Lean justification; out of reach at terabyte scale.

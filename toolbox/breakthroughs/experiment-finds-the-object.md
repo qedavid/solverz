@@ -1,5 +1,5 @@
 # Experiment finds the object
-Amateurs win mostly at `find`: an object (tile, graph) that a computer or a referee can check, found by play, persistence and software (S10–S12). Simulation and numerics find what a proof then confirms (S13, S14); a blind benchmark with a checkable score lets an outsider method prove itself (S15).
+Amateurs win mostly at `find`: an object (tile, graph) that a computer or a referee can check, found by play, persistence and software (S10–S12). Simulation and numerics find what a proof then confirms (S13, S14); a blind benchmark with a checkable score lets an outsider method prove itself (S15); algebra-guided computer search finds objects that earlier lists missed (S72, S73).
 Stuck on a `find` or `bound` problem: build, play and simulate, then hand the object to a checker.
 
 ### S10 Einstein tile
@@ -37,3 +37,15 @@ Stuck: 1994–2020 · `find` · used: T1357
 - Unlock: a learned model judged by CASP, a double-blind community benchmark; AlphaFold 2 scored above 90 GDT on about two thirds of CASP14 targets.
 - From: machine learning, proved on a blind benchmark.
 - Source: [Wikipedia: AlphaFold](https://en.wikipedia.org/wiki/AlphaFold), [Wikipedia: CASP](https://en.wikipedia.org/wiki/CASP)
+
+### S72 Williamson sequences of every even order up to 70
+Stuck: to 2019 · `find` `compute` · used: T7, T1417, T1397, T1130
+- Unlock: compress each sequence to length n/2 or n/3, match compressed pairs by sorted correlation vectors, then solve one small SAT instance per match with the spectral test as a programmatic callback; Williamson sequences exist in every even order up to 70, and earlier searches called complete (orders 25, 27, 33, 39) had missed solutions. Not certified.
+- From: SAT solving guided by computer algebra.
+- Source: [Bright–Kotsireas–Ganesh 2019](https://doi.org/10.1016/j.jsc.2019.07.024)
+
+### S73 (144, 66, 30) difference sets through the holomorph
+Stuck: open (131 of 197 groups settled by 2019) · `find` · used: T1394, T440
+- Unlock: seeds from products of the (36, 15, 6) designs with (4, 1, 0) sets, read off in other regular subgroups of their automorphism groups, reached 62 groups; developing each known set under the holomorph of its group and testing every affine image in each regular subgroup of the holomorph, feeding successes back, reached 131 of the 197 groups of order 144 (5765 inequivalent sets).
+- From: computational group theory, after Mandić–Vučičić's method for order 400.
+- Source: [Vučičić 2019](https://doi.org/10.21857/ypn4oc88w9)

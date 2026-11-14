@@ -1,5 +1,5 @@
 # Checking decides what counts
-A claim counts once a check others can run accepts it. Formalization can referee frontier mathematics and teach the author something (S1); a proof experts cannot check does not count (S2); proofs of great size need systematic re-verification (S3).
+A claim counts once a check others can run accepts it. Formalization can referee frontier mathematics and teach the author something (S1); a proof experts cannot check does not count (S2); proofs of great size need systematic re-verification (S3); a certificate for an old search exposed bugs in earlier checks (S71).
 Stuck on a step whose status is in doubt: check it formally before building on it.
 
 ### S1 Liquid Tensor Experiment
@@ -19,3 +19,9 @@ Stuck: about 1955–2004 · `prove` · used: T1346
 - Unlock: tens of thousands of pages by about 100 authors; the quasithin gap was closed only in 2004 by Aschbacher–Smith (1221 pages); a second-generation proof is in progress.
 - From: group theory, as a collective effort.
 - Source: [Wikipedia: Classification of finite simple groups](https://en.wikipedia.org/wiki/Classification_of_finite_simple_groups)
+
+### S71 Projective plane of order 10: weight-15 codewords
+Stuck: searched 1973, certified 2020 · `prove` · used: T7, T4
+- Unlock: MacWilliams–Sloane–Thompson's 1973 computer search left no checkable record; fixing the start of the incidence matrix by their structure theorem, encoding only a 51 × 75 sub-rectangle as a small CNF and breaking symmetry with a computer algebra system gave a DRAT certificate that drat-trim checks; the work found bugs in two earlier verifications. The hand reduction is not machine-checked.
+- From: SAT solving with proof certificates.
+- Source: [Bright et al. 2020](https://doi.org/10.1007/s00200-020-00426-y), [arXiv:1911.04032](https://arxiv.org/abs/1911.04032)

@@ -75,12 +75,12 @@ aka: Hadamard matrices, Hadamard conjecture, weighing matrices, difference sets,
 
 ### T1397 Contraction then lift for group-invariant objects
 `find` `compute` · stage: search · signals: group, integers, construction, impossibility
-aka: Baumert's method, contracted difference sets, quotient vectors, intersection numbers, multiplier orbits, unions of orbits, Rumsey's component method, CRT over cyclotomic factors, one character per Galois class, lift search, tables of cyclic difference sets
+aka: Baumert's method, contracted difference sets, quotient vectors, intersection numbers, multiplier orbits, unions of orbits, Rumsey's component method, CRT over cyclotomic factors, one character per Galois class, lift search, tables of cyclic difference sets, staged lift, quotient chains, chief series, DifSets, Peifer's difference sums, multi-level compression, orbit-size value sets, class counts by generating functions
 - What: list every integer vector a solution can induce on each quotient (fixed sum, sum of squares and cross-sums, constant on multiplier orbits), glue the quotients through the components mod each cyclotomic factor, then search the lifts or the unions of multiplier orbits, testing |χ(D)|² = n on one character per Galois class.
 - Fits when: deciding existence of cyclic or abelian difference sets, relative difference sets or weighing matrices for given parameters; for {0, ±1} solutions the system is the same with coset sums in [−c, c] and a parity condition, but the sums no longer force entries in {0, ±1}, so each lift needs its own check.
 - Lean: two phases: a cover lemma that every possible quotient vector lies in a computed list, then per vector a lift search on bit masks, both by `decide +kernel`.
-- Example: all cyclic difference sets with k ≤ 100 decided by such tests and searches (Baumert 1971, Cyclic Difference Sets).
-- See also: T39, T27, T1384, T438
+- Example: all cyclic difference sets with k ≤ 100 decided by such tests and searches (Baumert 1971, Cyclic Difference Sets); all difference sets in 1006 of the 1032 groups of order below 100, by lifting through a chief series ([Peifer 2019](https://doi.org/10.2140/jsag.2019.9.35)).
+- See also: T39, T27, T1384, T438, T1399, T1418
 
 ### T1398 Mod-4 linearization of ±1 correlations
 `find` `prove` · stage: search · signals: sequence, parity, construction
@@ -90,3 +90,21 @@ aka: Golay's parity lemma, ab ≡ a + b − 1 mod 4, sign bits, Andres–Stanton
 - Lean: an inconsistency as a combination of the equations summing to 0 = 1 over `ZMod 2`, checked by `decide +kernel`.
 - Example: Golay's parity lemma and the Andres–Stanton search for Golay pairs (Borwein 2002, Computational Excursions in Analysis and Number Theory).
 - See also: T39, T1023, T1389
+
+### T1417 Power-spectral-density filter
+`find` `prove` · stage: search · signals: sequence, matrix, construction
+aka: PSD test, power spectral density, spectral filter, Parseval completeness, two-sided pair filter, four-file join, binned matching, Goethals–Seidel difference families, Williamson and Legendre pair searches, coset pieces, even/odd split
+- What: in a search for blocks whose autocorrelations sum to a constant, the PSD |χ(A)|² of one block at any frequency cannot exceed the total, so candidates are discarded before any matching; two-sided bounds from the opposite lists filter pairs before they are joined on their correlation vectors; with energies and row sums fixed, a family whose summed PSD is at most the target at every frequency meets it exactly (Parseval); floating-point PSD may only reject with a certified margin, acceptance needs exact arithmetic.
+- Fits when: Williamson, Goethals–Seidel, Legendre and periodic Golay searches; one {0, ±1} element split into coset pieces over a subgroup: each piece has |χ(D_i)|² ≤ n at nontrivial characters of the subgroup and the pieces sum to n there, so pieces are filtered and joined, each join followed by a full test.
+- Lean: a surviving object's correlations by `decide +kernel`; a rejection used as proof needs an exact or interval-certified PSD value.
+- Example: compression of periodic complementary sequences with the PSD test ([Đoković–Kotsireas 2015](https://doi.org/10.1007/s10623-013-9862-z)); Goethals–Seidel difference families with symmetric or skew blocks by filtered four-file matching ([Đoković–Kotsireas 2018](https://doi.org/10.1007/s11786-018-0381-1)).
+- See also: T39, T1130, T1397, T1399, T1400
+
+### T1418 Simultaneous decompression with fixed margins
+`find` · stage: search · signals: sequence, matrix, construction
+aka: simultaneous decompression, binary matrices with fixed marginals, BMFM, Gale–Ryser test, Ryser classes, CRT matrix form, two-dimensional DFT, coprime compressions, Legendre pairs
+- What: for a length v = δ₁δ₂ with coprime factors (or a group K₁ × K₂), a sequence is a δ₁ × δ₂ matrix whose row and column sums are its two compressions; every matrix with these margins already meets the spectral conditions at the characters trivial on one factor, leaving only the mixed characters (a 2D DFT); 0/1 matrices with given margins are enumerated row by row, pruned by the Gale–Ryser condition, with DFT partial sums updated in the recursion.
+- Fits when: lifting compressed sequences when both coprime compressions are known (Legendre pairs, periodic Golay pairs); for {0, ±1} entries write D = P − N with disjoint 0/1 matrices, enumerate margin pairs, and test the support as a third Gale–Ryser instance.
+- Lean: the lifted object by `decide +kernel`.
+- Example: a Legendre pair of length 77 ([Turner–Kotsireas–Bulutoglu 2021](https://doi.org/10.1007/s10623-021-00862-y)).
+- See also: T1397, T1417, T32

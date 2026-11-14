@@ -1,5 +1,5 @@
 # Designs, codes and finite geometry
-Constructions and nonexistence proofs for designs, difference sets, Hadamard matrices, projective planes and codes: cyclic developments, multipliers, quadratic-form obstructions, recursive constructions, code bounds, MacWilliams and invariant theory.
+Constructions and nonexistence proofs for designs, difference sets, Hadamard matrices, projective planes and codes: cyclic developments, multipliers, quadratic-form obstructions, recursive constructions, code bounds, MacWilliams and invariant theory, zero-diagonal orthogonal matrices, two-intersection sets.
 
 ### T437 Difference sets and cyclic constructions
 `find` · stage: construct · signals: group, set-family, construction
@@ -12,12 +12,12 @@ aka: difference sets, base blocks, developing a block through a group, Singer di
 
 ### T438 Multiplier theorems and character sums for nonexistence
 `prove` · stage: argue · signals: group, set-family, impossibility
-aka: Hall's multiplier theorem, McFarland's multiplier theorem, multiplier orbits, fixed translates, group-ring equations, characters of abelian groups, Fourier criterion, contraction to quotients, circulant Hadamard matrices, difference set nonexistence
+aka: Hall's multiplier theorem, McFarland's multiplier theorem, multiplier orbits, fixed translates, group-ring equations, characters of abelian groups, Fourier criterion, contraction to quotients, circulant Hadamard matrices, difference set nonexistence, Muzychuk's multiplier transfer, Newman–Turyn n = 2q^a, McFarland's N(n) theorem, normalized solutions, extraneous multipliers, Frobenius criterion D^p ≡ gD mod p, Ko's multiplier theorem, fixed subgroup of a multiplier, sub-difference set on the fixed points, orbit lengths of differences, Adin–Epstein–Strassler
 - What: group-ring and character arguments force multipliers and rule out parameters.
 - Fits when: deciding which difference sets or circulant matrices exist.
 - Lean: —
 - Example: Hall's multiplier theorem; nonexistence results for circulant Hadamard matrices ([Wikipedia: Difference set](https://en.wikipedia.org/wiki/Difference_set), [Wikipedia: Hadamard matrix](https://en.wikipedia.org/wiki/Hadamard_matrix)).
-- See also: T437, T439, T748, T1378, T1379, T1380, T1384
+- See also: T437, T439, T748, T1378, T1379, T1380, T1384, T1404, T1406, T1407
 
 ### T439 Number-theoretic obstruction via quadratic forms
 `prove` · stage: argue · signals: matrix, integers, impossibility
@@ -30,12 +30,12 @@ aka: Bruck–Ryser–Chowla theorem, Bose–Connor theorem, divisible designs, H
 
 ### T440 Recursive constructions
 `find` · stage: construct · signals: set-family, product-structure, construction
-aka: product constructions, products of relative and Hadamard difference sets, Turyn's composition, PBD closure, pairwise balanced designs, Wilson's fundamental construction, orthogonal Latin squares, Graeco-Latin squares, Euler's 36 officers
+aka: product constructions, products of relative and Hadamard difference sets, Turyn's composition, PBD closure, pairwise balanced designs, Wilson's fundamental construction, orthogonal Latin squares, Graeco-Latin squares, Euler's 36 officers, product with a filler, core products (Belevitch, Ehlich), cross-correlation products
 - What: combine small designs into large ones; Wilson's fundamental construction.
 - Fits when: existence for all large admissible parameters once enough small cases exist.
 - Lean: each small ingredient as a witness by `decide +kernel`; the recursion as a Lean construction.
 - Example: Bose–Shrikhande–Parker: orthogonal Latin squares exist for all orders except 2 and 6 ([Wikipedia: Graeco-Latin square](https://en.wikipedia.org/wiki/Graeco-Latin_square), [Wikipedia: Combinatorial design](https://en.wikipedia.org/wiki/Combinatorial_design)).
-- See also: T441, T360, T446, T1392, T1396
+- See also: T441, T360, T446, T1392, T1396, T1408
 
 ### T441 Hadamard matrix constructions
 `find` · stage: construct · signals: matrix, finite-field, construction
@@ -90,3 +90,21 @@ aka: resolvable designs, Kirkman triple systems, Kirkman's schoolgirl problem, R
 - Lean: an explicit resolution by `decide +kernel` at small size.
 - Example: Kirkman's schoolgirl problem and Ray-Chaudhuri–Wilson's general solution ([Wikipedia: Kirkman's schoolgirl problem](https://en.wikipedia.org/wiki/Kirkman's_schoolgirl_problem)).
 - See also: T440, T437
+
+### T1411 Zero-diagonal orthogonal matrices: symmetric or skew
+`prove` · stage: argue · signals: matrix, parity, impossibility
+aka: Delsarte–Goethals–Seidel normal form, conference matrices, symmetric or skew, zero-diagonal ±1 matrices, W(n, n − 1), one zero per row, Belevitch's sign product, k = v − 1, Arasu–Jungnickel–Ma–Pott classification, λ − μ = −1
+- What: a ±1 matrix with zero diagonal and MMᵀ = mI + (v − 1 − m)J (m ≠ v − 1) has an equivalent normal form B with constant row and column sums that is symmetric or skew: counting the four sign patterns of two rows outside their zeros gives 4n₁ = m − 1 − (b_ij − b_ji), so m is odd and b_ji = (−1)^((m−1)/2)b_ij; in the symmetric case the trace gives b + (a − c)√m = 0, so m is a square when b ≠ 0, and for a group-developed matrix the support of one sign is a PDS with λ − μ = −1.
+- Fits when: conference matrices and group-developed matrices with exactly one zero per row, any group; for {0, ±1} solutions with k = v − 1 the same count gives n odd, n ≡ 3 mod 4 forcing a skew element with λ = −1, n ≡ 1 mod 4 a symmetric one up to translation with n a square when λ ≠ −1, and the PDS classification then lists the abelian cases.
+- Lean: the four-pattern count proved once on ±1 vectors; each parameter consequence by `decide +kernel`.
+- Example: orthogonal matrices with zero diagonal ([Delsarte–Goethals–Seidel 1971](https://doi.org/10.4153/CJM-1971-091-X)); every abelian PDS with λ − μ = −1 has Paley parameters or (243, 22, 1, 2) up to complement ([Arasu–Jungnickel–Ma–Pott 1994](https://doi.org/10.1016/0097-3165(94)90007-8)).
+- See also: T1388, T401, T1387, T1389
+
+### T1412 Projective two-intersection sets
+`find` `prove` · stage: reformulate · signals: finite-field, geometry, set-family
+aka: projective two-intersection sets, two-weight codes, Calderbank–Kantor dictionary, Delsarte, point sets of PG(n − 1, q), hyperplane sums, cyclotomy of projective lines, uniform cyclotomy, F_q*-invariant sets, strongly regular Cayley graphs
+- What: a point set of PG(n − 1, q) meeting every hyperplane in one of two sizes is the same as a projective two-weight code and as a PDS in F_q^n invariant under F_q*; in cyclotomic terms the classes α^iF_q* of F_(q^n)* are the points, cyclotomic numbers of order (q^n − 1)/(q − 1) are 0 or 1 by collinearity, and a weighted point set has character values given by its hyperplane sums.
+- Fits when: strongly regular graphs, two-weight codes and cyclotomic constructions invariant under F_q*; a {0, ±1} weighting w of the points (and of 0) is flat iff its hyperplane sums take two values a, b with q(a − b) = 2√n, or one value; for q odd such elements are symmetric, which leaves only k ∈ {0, 1, v − 1, v}, so the reduction helps for q = 2^f, f ≥ 2.
+- Lean: the hyperplane sums of a given weighting by `decide +kernel`.
+- Example: the geometry of two-weight codes ([Calderbank–Kantor 1986](https://doi.org/10.1112/blms/18.2.97)); cyclotomic numbers of projective lines beyond uniform cyclotomy ([Huczynska–Johnson–Paterson 2025](https://doi.org/10.1016/j.ffa.2025.102604)).
+- See also: T444, T1383, T1388, T1391

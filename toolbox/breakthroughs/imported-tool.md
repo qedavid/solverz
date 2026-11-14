@@ -1,5 +1,5 @@
 # An imported tool
-A technique native to another field meets a problem whose specialists had never used it (S26–S43). Outsiders win by carrying a tool, not domain knowledge; Marcus "couldn't have told you what the problem was" in the field's language ([Quanta](https://www.quantamagazine.org/computer-scientists-solve-kadison-singer-problem-20151124/)). They enter through a reformulation in neutral language (vectors, graphs, SAT, entropy) that insiders wrote first.
+A technique native to another field meets a problem whose specialists had never used it (S26–S43; in difference sets S63, S69, S70). Outsiders win by carrying a tool, not domain knowledge; Marcus "couldn't have told you what the problem was" in the field's language ([Quanta](https://www.quantamagazine.org/computer-scientists-solve-kadison-singer-problem-20151124/)). They enter through a reformulation in neutral language (vectors, graphs, SAT, entropy) that insiders wrote first.
 Stuck within one field's methods: restate the problem in a neutral, checkable language, scan other fields' tools against it, and read the insiders' reductions first.
 
 ### S26 Poincaré conjecture
@@ -109,3 +109,21 @@ Stuck: 1983–1992 · `compute` · used: T802
 - Unlock: Zeilberger's proof (1992), then Kuperberg's short proof (1995) via the six-vertex model and the Yang–Baxter equation.
 - From: statistical mechanics, for the short proof.
 - Source: [Wikipedia: Alternating sign matrix](https://en.wikipedia.org/wiki/Alternating_sign_matrix), [arXiv:math/9407211](https://arxiv.org/abs/math/9407211), [arXiv:math/9712207](https://arxiv.org/abs/math/9712207)
+
+### S63 Cyclic Hadamard difference sets (Turyn)
+Stuck: open since 1963 (partial answer 1965) · `prove` · used: T1379, T1381, T438
+- Unlock: read the character values of a difference set as cyclotomic integers: when the primes of N are self-conjugate the values are divisible by N, and a size argument on a cyclic quotient then rules out circulant Hadamard matrices of order 4N² for N even and for N an odd prime power.
+- From: algebraic number theory (prime ideals in cyclotomic fields) in a matrix problem.
+- Source: [Turyn 1965](https://doi.org/10.2140/pjm.1965.15.319)
+
+### S69 Menon difference sets above the abelian exponent bound
+Stuck: to 1994 · `find` · used: T1392, T1381
+- Unlock: abelian Menon–Hadamard difference sets of order 2^(2d+2) need exponent at most 2^(d+2) (Turyn, Kraemer); Davis–Smith built sets in nonabelian 2-groups of exponent 2^(d+3) (d odd, d even claimed) by checking the difference-set equation in every irreducible representation, with pieces from building sets and a 2 × 2 matrix M with MM* = 8I for the degree-2 ones.
+- From: representation theory of nonabelian groups, where abelian character methods cannot reach.
+- Source: [Davis–Smith 1994](https://doi.org/10.1023/A:1022446822561)
+
+### S70 Negative Latin square type PDS outside elementary abelian 2-groups
+Stuck: to 2004 · `find` · used: T1405, T1403
+- Unlock: a bijection by Teichmüller digits from F₄^(2ℓ) to Z₄^(2k) × Z₂^(4ℓ−4k), not a homomorphism, keeps the order-2 character values of every set; for a quadric PDS the order-4 terms cancel in pairs and the rest reduces to a section of the quadric, so the image is again a negative Latin square type PDS, the first in non-elementary abelian 2-groups.
+- From: Galois rings over Z₄, as in Z₄-linear coding theory.
+- Source: [Davis–Xiang 2004](https://arxiv.org/abs/math/0407423)

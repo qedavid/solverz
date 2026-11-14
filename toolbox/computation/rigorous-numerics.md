@@ -3,7 +3,7 @@ Enclosures with proved error bounds: interval and ball arithmetic, Newton-type e
 
 ### T64 Ball and interval arithmetic
 `bound` `prove` `compute` · stage: enclose · signals: analytic, inequality, numeric-only
-aka: Arb, FLINT, mpmath, ball arithmetic, interval arithmetic, high-precision arithmetic, enclosures, special functions, zeta function, de Bruijn–Newman constant
+aka: Arb, FLINT, mpmath, ball arithmetic, interval arithmetic, high-precision arithmetic, enclosures, special functions, zeta function, de Bruijn–Newman constant, Bernstein expansion, de Casteljau subdivision, polynomial positivity on a box
 - What: each value is an enclosure [m ± r] that is guaranteed to contain the true result.
 - Fits when: rigorous evaluation of special functions and zeta.
 - Lean: for small instances, redo the computation with rational intervals in the kernel (T121).

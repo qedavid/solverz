@@ -1,5 +1,5 @@
 # A reformulation first
-Nearly every solution starts from an equivalent or stronger restatement in another language (S57–S62; also S17, S30, S45); the reformulation, often by someone else, is what made the problem attackable. Outsiders enter through it: the reduction is the door.
+Nearly every solution starts from an equivalent or stronger restatement in another language (S57–S62, S67, S68; also S17, S30, S45); the reformulation, often by someone else, is what made the problem attackable. Outsiders enter through it: the reduction is the door.
 Stuck on the problem as stated: restate it as a graph, matrix, incidence or stronger claim, and read the reductions others already made.
 
 ### S57 Fermat's Last Theorem
@@ -37,3 +37,15 @@ Stuck: late 1980s–2004 · `prove` · used: T304, T842
 - Unlock: Klazar (2000) showed that the Füredi–Hajnal conjecture on 0-1 matrices implies it; Marcus–Tardos then proved Füredi–Hajnal.
 - From: someone else's reduction to 0-1 matrices.
 - Source: [Wikipedia: Stanley–Wilf conjecture](https://en.wikipedia.org/wiki/Stanley%E2%80%93Wilf_conjecture)
+
+### S67 (16, 4, 16, 4) relative difference sets of order 64
+Stuck: to 2013 · `compute` · used: T1394, T30
+- Unlock: such a relative difference set is the same as a class-regular symmetric (4, 4)-net with a regular automorphism group containing the forbidden subgroup; the nets were already classified, so listing the regular subgroups of order 64 in each net's automorphism group decides every group: 6 of the 11 abelian and 195 of the 256 nonabelian groups carry one.
+- From: finite geometry (nets), then computational group theory.
+- Source: [Clark–Tonchev 2013](https://doi.org/10.37236/2776)
+
+### S68 Lin's conjecture
+Stuck: 1998–2014 · `prove` · used: T1400, T1383
+- Unlock: a second-order decimation-Hadamard transform writes the two-level autocorrelation of the ternary sequence as sums of products of Gauss sums; Stickelberger turns divisibility of every value by 3ⁿ into a base-3 digit-sum inequality, one more digit shows no value vanishes, and Parseval then forces every value to have modulus 3ⁿ; what remains is digit combinatorics.
+- From: Gauss sums and p-adic valuations inside sequence design.
+- Source: [Hu–Shao–Gong–Helleseth 2014](https://doi.org/10.1109/TIT.2014.2327625)

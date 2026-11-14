@@ -72,3 +72,12 @@ aka: BKZ, block reduction, Fincke–Pohst, lattice sieving, shortest vector prob
 - Lean: a found vector is checked exactly; no Lean route for minimality in the sources.
 - Example: BKZ, enumeration, sieving and Fincke–Pohst ([Wikipedia: Lattice problem](https://en.wikipedia.org/wiki/Lattice_problem)).
 - See also: T46
+
+### T1414 Exact Gauss sums
+`compute` · stage: algebra · signals: finite-field, integers
+aka: Gauss sum computation, H-polynomial, Baumert–McEliece polynomial, class-trace tables, root of unity ambiguity, Stickelberger ideal, shortest vector, Fincke–Pohst, Zumbroich basis
+- What: compute a Gauss sum exactly where no closed form exists: the H-polynomial built from indices and traces yields every Gauss sum of order N over F_q as an evaluation, and its class-trace counts give the character values of any union of classes directly; Stickelberger fixes the ideal the Gauss sum generates in a subfield, and since every conjugate has absolute value √q the generator is a shortest vector for the trace form (Fincke–Pohst), unique up to sign and a root of unity, which integrality and congruences then fix.
+- Fits when: testing unions or signed unions of cyclotomic classes over large q without working in F_q; listing the possible character values once the ideal of χ(D) is known (self-conjugacy, a multiplier).
+- Lean: a computed value checked by its norm and its defining identity in Z[ζ] by `decide +kernel`.
+- Example: fast computation of Gauss sums and resolution of the root of unity ambiguity ([Nguyen–Schmidt 2009](https://doi.org/10.4064/aa140-3-1)).
+- See also: T46, T47, T1383, T1391

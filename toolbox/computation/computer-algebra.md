@@ -12,11 +12,11 @@ aka: Gröbner basis, elimination, ideal membership, cofactors, mixed volume, BKK
 
 ### T60 Nullstellensatz certificates
 `prove` · stage: algebra · signals: polynomial, colouring, impossibility
-aka: Hilbert's Nullstellensatz, NulLA, 1 = Σ cᵢfᵢ, polynomial calculus, algebraic proof systems, non-3-colourability, matchings, infeasible polynomial systems
+aka: Hilbert's Nullstellensatz, NulLA, 1 = Σ cᵢfᵢ, polynomial calculus, algebraic proof systems, non-3-colourability, matchings, infeasible polynomial systems, Walsh–Fourier certificate, monomial linearisation, Nullstellensatz on the cube, Boolean ideal certificates
 - What: a polynomial system has no solution iff 1 = Σ cᵢfᵢ; the cᵢ are found by linear algebra in low degree.
 - Fits when: combinatorial non-existence encoded as polynomials (colourings, matchings).
 - Lean: `linear_combination` with the cofactors cᵢ; low degree keeps the certificate small.
-- Example: non-3-colourability of graphs with thousands of vertices ([De Loera et al.](https://arxiv.org/abs/0801.3788)).
+- Example: non-3-colourability of graphs with thousands of vertices ([De Loera et al.](https://arxiv.org/abs/0801.3788)); a monomial-linearisation certificate that recovers the order condition 4u² for circulant Hadamard matrices ([Matolcsi 2015](https://doi.org/10.1007/978-3-319-17729-8_16)).
 - See also: T48, T54, T59
 
 ### T61 Creative telescoping and WZ pairs
@@ -45,3 +45,12 @@ aka: Todd–Coxeter, finitely presented groups, presentations of the trivial gro
 - Lean: a closed coset table is a certificate; check that every relator fixes every coset with `decide` (small tables).
 - Example: Neumann's hard presentations of the trivial group turn out easy after experimentation ([Havas–Ramsay](https://www.cambridge.org/core/journals/bulletin-of-the-australian-mathematical-society/article/proving-a-group-trivial-made-easy-a-case-study-in-coset-enumeration/F3E807104814C7CB77A8F8339A6542C7)).
 - See also: T29, T105
+
+### T1415 Gauss-sum systems uniform in q
+`prove` · stage: algebra · signals: finite-field, polynomial, impossibility
+aka: Xia's method, normalized Gauss sums, level systems, Hasse–Davenport relation, Gröbner basis in g₀, compactness argument for finiteness in q, cyclotomic difference sets, all q at once
+- What: write a cyclotomic existence criterion in the normalized Gauss sums g_s = G(χ^s)/√q, which have modulus 1 and satisfy Hasse–Davenport relations, so that q enters only through g₀; split the system by a DFT and eliminate with a Gröbner basis down to one polynomial in g₀, whose real roots decide every q at once; if no solution has g₀ = 0, compactness leaves only finitely many q.
+- Fits when: deciding a cyclotomic family (unions of power classes, signed unions) for all q simultaneously instead of one field at a time.
+- Lean: the elimination cofactors by `linear_combination` (T59); the finitely many remaining q by `decide +kernel`.
+- Example: cyclotomic and modified cyclotomic difference sets decided for all q at once at every even index m ≤ 22 ([Xia 2018](https://doi.org/10.1090/mcom/3311)).
+- See also: T59, T1391, T1414

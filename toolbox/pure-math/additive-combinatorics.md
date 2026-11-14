@@ -1,5 +1,5 @@
 # Additive combinatorics
-Patterns in dense and sparse sets of integers and groups: density and energy increments, Gowers norms, transference, sumset calculus, Freiman and Bogolyubov, almost periodicity, sifting, entropic sumsets, sum-product, Behrend, growth in groups.
+Patterns in dense and sparse sets of integers and groups: density and energy increments, Gowers norms, transference, sumset calculus, Freiman and Bogolyubov, almost periodicity, sifting, entropic sumsets, sum-product, Behrend, growth in groups, unique differences.
 
 ### T412 Fourier density increment
 `prove` `bound` · stage: argue · signals: additive, dense
@@ -135,3 +135,12 @@ aka: Selmer ranks in families, 2-descent statistics, rank growth across twists, 
 - Lean: —
 - Example: Koymans–Pagano: Hilbert's tenth problem is undecidable over every infinite finitely generated ring ([arXiv:2412.01768](https://arxiv.org/abs/2412.01768)).
 - See also: T515, T771
+
+### T1419 Unique differences by minor bounds
+`prove` · stage: argue · signals: additive, finite-field, integers
+aka: unique differences, Feit's problem, Straus bound, Smith normal form lifting, Gram determinant bound, mod-p to Z lifting, small sets in F_p, rectification by minors
+- What: if a mod-p linear system has a solution of a given pattern that no integer solution can have (here: a set of integers always has a unique difference, largest minus smallest), then p divides every nonsingular maximal minor of the system over Q (lift a kernel vector through the Smith normal form); bounding those minors by Gram determinants bounds p, so a symmetric set A ⊆ F_p with |A \ {0}| ≤ 2 log₃ p has a unique difference, sharp by Straus.
+- Fits when: moving an integer combinatorial fact to F_p for sets small against log p; for {0, ±1} solutions a unique difference of the support makes that coefficient a single ±1, so it forces λ = ±1.
+- Lean: the minor bound for a given integer matrix by `decide +kernel`.
+- Example: unique differences in symmetric subsets of F_p ([Do Duc–Schmidt 2015](https://doi.org/10.1007/s00493-015-3282-9)).
+- See also: T417, T1386, T1384

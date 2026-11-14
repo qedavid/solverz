@@ -21,7 +21,8 @@ The order is typical, not required.
    pure-math/probabilistic-method, pure-math/discrete-geometry, algorithms/construction-heuristics.
 2. `encode`: computation/sat-solving, computation/constraint-solving,
    algorithms/reductions-and-hardness.
-3. `symmetry`: algorithms/symmetry-reduction, computation/symmetry-and-generation.
+3. `symmetry`: algorithms/symmetry-reduction, computation/symmetry-and-generation,
+   pure-math/difference-sets.
 4. `search`: computation/exhaustive-search, computation/sat-solving, algorithms/tree-search,
    algorithms/constraint-propagation, algorithms/meet-in-the-middle-and-tables.
 5. `local-search`, `program-search`: computation/local-search, computation/learned-search,

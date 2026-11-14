@@ -1,5 +1,5 @@
 # Finite reduction, then a certificate
-A theoretical reduction to finitely many cases, then exhaustive search or SAT, then a formal or checkable certificate (S19–S25). Referees of a huge computation may stay only "99% certain" until a formal check (S20).
+A theoretical reduction to finitely many cases, then exhaustive search or SAT, then a formal or checkable certificate (S19–S25, S65, S66). Referees of a huge computation may stay only "99% certain" until a formal check (S20).
 Stuck on a statement over infinitely many cases: push the analysis until the finite range fits the machine (S25), and make the check one that others can rerun.
 
 ### S19 Four colour theorem
@@ -43,3 +43,15 @@ Stuck: 1742–2013 · `prove` · used: T481, T324
 - Unlock: Helfgott pushed explicit circle-method bounds down until they met a computer verification (with Platt).
 - From: analytic number theory plus computation.
 - Source: [arXiv:1312.7748](https://arxiv.org/abs/1312.7748)
+
+### S65 Barker sequences and Wieferich pairs
+Stuck: open since 1961 (odd lengths settled 1961) · `prove` · used: T1382, T1381, T1379
+- Unlock: Schmidt's field descent forces F(u², u) = u² for an order 4u², which holds only when the primes of u are linked by Wieferich-type congruences; a search over the graph of such links lists every candidate u, Turyn-type tests remove most, and a Barker sequence longer than 13 must have length 3 979 201 339 721 749 133 016 171 583 224 100 or above 4·10³³.
+- From: computational number theory after an algebraic reduction.
+- Source: [Borwein–Mossinghoff 2014](https://doi.org/10.1112/S1461157013000223)
+
+### S66 All (96, 20, 4) difference sets
+Stuck: to 2018 · `compute` · used: T1397, T30, T1392
+- Unlock: list every admissible image of a difference set on a quotient (Peifer's difference sums), lift level by level through a chief series, and keep one representative per equivalence class at each level; for the groups of order 96 without a normal subgroup of order 3 the search starts from quotients of order 48 or 24. Result: 2627 sets in 94 groups, 583 designs, with a public GAP package to rerun it.
+- From: computational group theory.
+- Source: [AbuGhneim–Peifer–Smith 2018](https://arxiv.org/abs/1808.00576), [Peifer 2019](https://doi.org/10.2140/jsag.2019.9.35)

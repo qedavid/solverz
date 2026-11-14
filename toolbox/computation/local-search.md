@@ -108,3 +108,12 @@ aka: foam simulation, surface tension, soap films, minimal surfaces, Surface Evo
 - Lean: — for the simulation (floating point, mesh error); a record counts once its value is computed exactly or enclosed rigorously (T64), or an analytic comparison proves it.
 - Example: Weaire and Phelan ran Surface Evolver's minimization from a good initial configuration and beat Kelvin's foam by 0.3% in area ([Oudet](https://membres-ljk.imag.fr/Edouard.Oudet/research/Kelvin/kelvin_n.php), [Brakke](https://kenbrakke.com/kelvin/kelvin.html)); Kusner and Sullivan proved analytically that it beats any foam with Kelvin's topology ([Brakke](https://kenbrakke.com/kelvin/kelvin.html)), though its optimality is unproven ([Wikipedia: Weaire–Phelan structure](https://en.wikipedia.org/wiki/Weaire%E2%80%93Phelan_structure)); a relaxed density formulation recovers Weaire–Phelan with no initial guess ([Oudet](https://membres-ljk.imag.fr/Edouard.Oudet/research/Kelvin/kelvin_n.php)); the program ([Wikipedia: Surface Evolver](https://en.wikipedia.org/wiki/Surface_Evolver)).
 - See also: T98, T99, T1308, T64
+
+### T1416 Douglas–Rachford feasibility search
+`find` · stage: local-search · signals: sequence, matrix, construction
+aka: Douglas–Rachford, DRA, reflect-reflect-average, alternating projections, product-space formulation, Fourier-modulus projector, phase retrieval, nonconvex feasibility, circulant designs
+- What: look for a point in an intersection of nonconvex sets by iterating x ← x + P_B(2P_A(x) − x) − P_A(x) on a product space and testing the shadow P_A(x) for exact feasibility; for circulant designs the projectors are explicit: round each entry to the alphabet, shift to the row sum, and rescale each DFT frequency to the prescribed spectral modulus.
+- Fits when: circulant weighing and Hadamard matrices, difference sets and sequences with prescribed periodic autocorrelation; per-entry alphabets fix a known support; for {0, ±1} elements the alphabet is {0, ±1}, the modulus √n off the trivial frequency.
+- Lean: a found object's autocorrelation by `decide +kernel`; the method never proves nonexistence.
+- Example: a feasibility approach for constructing combinatorial designs of circulant type ([Aragón Artacho–Campoy–Kotsireas–Tam 2018](https://doi.org/10.1007/s10878-018-0250-5)).
+- See also: T90, T39, T1417

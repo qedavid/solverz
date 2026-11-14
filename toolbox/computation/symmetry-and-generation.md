@@ -57,7 +57,7 @@ aka: GAP, Schreier–Sims, permutation groups, automorphism groups, character ta
 
 ### T30 Isomorph-free generation
 `compute` `prove` · stage: generate · signals: graph, set-family, classification
-aka: nauty, Traces, canonical labelling, canonical augmentation, canonical construction path, orderly generation, graph enumeration, R(4,5)=25, Ramsey numbers
+aka: nauty, Traces, canonical labelling, canonical augmentation, canonical construction path, orderly generation, graph enumeration, R(4,5)=25, Ramsey numbers, charm bracelets, fixed-content necklaces, Sawada's generators, lex-min representatives, equivalence group of a difference set
 - What: one representative per isomorphism class via canonical labelling, orderly generation or canonical augmentation.
 - Fits when: graphs, designs and codes with up to about 12–20 vertices; Ramsey-type exhaustive proofs.
 - Lean: don't trust canonical forms; prove a cover lemma and check each case.

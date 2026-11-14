@@ -1,5 +1,5 @@
 # Algebraic number theory and Diophantine equations
-Local and global obstructions, descent, factorization in number rings, p-adic methods, rational points on curves, the modular method, effective bounds that end in a finite search, and multiplicative-function equations.
+Local and global obstructions, descent, factorization in number rings, p-adic methods, rational points on curves, the modular method, effective bounds that end in a finite search, multiplicative-function equations, and vanishing sums of roots of unity.
 
 ### T512 Local obstructions
 `prove` · stage: argue · signals: integers, congruence, impossibility
@@ -252,3 +252,12 @@ aka: Hilbert's irreducibility theorem, specialization, inverse Galois problem, p
 - Lean: —
 - Example: a group realized as a Galois group over ℚ(X_1..X_r) is realized over ℚ by specialization ([Wikipedia: Hilbert's irreducibility theorem](https://en.wikipedia.org/wiki/Hilbert's_irreducibility_theorem)).
 - See also: T580
+
+### T1413 Vanishing sums of roots of unity
+`prove` · stage: argue · signals: integers, finite-field, polynomial
+aka: vanishing sums of roots of unity, Rédei–de Bruijn–Schoenberg, Lam–Leung, Conway–Jones, minimal vanishing sums, rotated p-cycles, lifting from F_q to C, norm bounds, Schinzel's determinant bound, mask polynomials, derivative trick, Butson Hadamard existence, generalized bent functions
+- What: an integer relation Σc_jζ_N^j = 0 is a Z-combination of rotated p-cycles (Rédei–de Bruijn–Schoenberg); a vanishing sum of N m-th roots of unity exists iff N ∈ Np₁ + … + Np_r over the primes of m (Lam–Leung), and short minimal sums are classified (Conway–Jones); to move a relation between F_q and C, f(g^e) = 0 in F_q iff f(ζ_k) lies in a prime above p, and Parseval with AM–GM bounds |N(f(ζ_k))|, so for large p a relation holds in F_q only if it holds in C; differentiating X^N − 1 adds congruences for vanishing mask polynomials.
+- Fits when: existence filters for Butson Hadamard matrices, generalized bent functions and formal duality, bounds on cyclotomic numbers, deciding relations among cyclotomic classes for all large p at once; for {0, ±1} group-ring elements the tool acts on fibres, coset pieces or differences, since a flat element never vanishes at a nonprincipal character.
+- Lean: a vanishing relation as an integer-polynomial identity modulo the cyclotomic polynomial by `decide +kernel`; norm bounds by `norm_num`.
+- Example: which N admit a vanishing sum of N m-th roots of unity ([Lam–Leung 2000](https://doi.org/10.1006/jabr.1999.8089)); upper bounds for cyclotomic numbers through the F_q-to-C transfer ([Duc–Leung–Schmidt 2020](https://doi.org/10.5802/alco.86)).
+- See also: T517, T1378, T1382, T1387

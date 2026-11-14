@@ -21,11 +21,11 @@ aka: Poisson summation formula, dual lattice, theta functions, functional equati
 
 ### T629 Uncertainty principle
 `prove` `bound` · stage: argue · signals: analytic, inequality, impossibility
-aka: Heisenberg uncertainty, Hardy uncertainty principle, sign uncertainty, support size lower bounds, Donoho–Stark, localization in time and frequency
+aka: Heisenberg uncertainty, Hardy uncertainty principle, sign uncertainty, support size lower bounds, Donoho–Stark, localization in time and frequency, Chebotarëv's theorem on roots of unity, minors of the Fourier matrix, uncertainty principle on Z_p, |supp f| + |supp f̂| ≥ p + 1, cyclic p-roots
 - What: a function and its Fourier transform cannot both be concentrated.
 - Fits when: lower bounds on support sizes, sign uncertainty, localization.
 - Lean: — (no uncertainty principle found in Mathlib).
-- Example: Heisenberg and Hardy uncertainty principles ([Wikipedia: Uncertainty principle](https://en.wikipedia.org/wiki/Uncertainty_principle)).
+- Example: Heisenberg and Hardy uncertainty principles ([Wikipedia: Uncertainty principle](https://en.wikipedia.org/wiki/Uncertainty_principle)); on Z_p, |supp f| + |supp f̂| ≥ p + 1, from Chebotarëv's theorem on the minors of the Fourier matrix ([Tao 2005](https://doi.org/10.4310/mrl.2005.v12.n1.a11)).
 - See also: T644, T628
 
 ### T630 Positive-definite functions (Bochner)

@@ -1,5 +1,5 @@
 # Failure as information, and a changed angle
-A failure can say exactly what a working argument must do differently: the GPY level-of-distribution bottleneck (S16), Wiles's failed Kolyvagin–Flach step (S57), the parity problem and complexity barriers. Long attacks (in years: Huang ~7, S45; Marcus–Spielman–Srivastava 5, S30; Campos et al. 4, S17; Zhang 3, S16; Wiles 7, S57) ended with a changed angle, not more of the same (S16–S18).
+A failure can say exactly what a working argument must do differently: the GPY level-of-distribution bottleneck (S16), Wiles's failed Kolyvagin–Flach step (S57), the parity problem and complexity barriers. Long attacks (in years: Huang ~7, S45; Marcus–Spielman–Srivastava 5, S30; Campos et al. 4, S17; Zhang 3, S16; Wiles 7, S57) ended with a changed angle, not more of the same (S16–S18); when multipliers stalled on Hall's cyclic cases, decomposition fields closed them (S64).
 Stuck after the same ideas keep failing: name what the failure demands, then change the angle (a neighbouring problem, a weaker tool that fits, another field's methods).
 
 ### S16 Bounded prime gaps
@@ -19,3 +19,9 @@ Stuck: 1844–2002 · `prove` · used: T544, T324, T517
 - Unlock: Tijdeman (1976) bounded all cases via Baker's transcendence method; Mihăilescu finished with cyclotomic fields and Galois modules.
 - From: algebraic number theory after an analytic reduction.
 - Source: [Wikipedia: Catalan's conjecture](https://en.wikipedia.org/wiki/Catalan%27s_conjecture)
+
+### S64 Hall's undecided cyclic difference sets
+Stuck: 1956–1963 · `prove` · used: T1379, T1380, T1381
+- Unlock: Hall's 1956 table left 12 cyclic parameter sets with k ≤ 50 that multiplier theorems could not decide; Yamamoto took the decomposition fields of the primes of n: a real decomposition field makes the character values divisible by p^(e/2), his congruence criterion turns that into coset-sum differences divisible by p^(e/2), and a size bound kills all 12.
+- From: algebraic number theory (decomposition fields), after multipliers stalled.
+- Source: [Yamamoto 1963](https://doi.org/10.2140/pjm.1963.13.337)
