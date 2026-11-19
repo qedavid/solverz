@@ -1,0 +1,10 @@
+q=9 n=2 v=20: G-2R-N None (want None); G-R-2N (20, 11, 2) (want (20, 11, 2)); R-N (20, 11, 2) (want (20, 11, 2))
+q=9 n=8 v=80: G-2R-N (80, 72, 36) (want (80, 72, 36)); G-R-2N None (want None); R-N None (want None)
+q=16 n=3 v=51: G-2R-N None (want None); G-R-2N None (want None); R-N (51, 19, 3) (want (51, 19, 3))
+q=25 n=3 v=78: G-2R-N None (want None); G-R-2N (78, 53, 28) (want (78, 53, 28)); R-N None (want None)
+q=25 n=4 v=104: G-2R-N None (want None); G-R-2N None (want None); R-N (104, 29, 4) (want (104, 29, 4))
+q=25 n=12 v=312: G-2R-N (312, 300, 200) (want (312, 300, 200)); G-R-2N None (want None); R-N None (want None)
+q=49 n=4 v=200: G-2R-N None (want None); G-R-2N (200, 151, 102) (want (200, 151, 102)); R-N None (want None)
+q=49 n=6 v=300: G-2R-N None (want None); G-R-2N None (want None); R-N (300, 55, 6) (want (300, 55, 6))
+q=49 n=16 v=800: G-2R-N (800, 784, 588) (want (800, 784, 588)); G-R-2N None (want None); R-N None (want None)
+pairs checked up to q = 49 bad = 0

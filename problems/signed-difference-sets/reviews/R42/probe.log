@@ -1,0 +1,38 @@
+'SignedDifferenceSets.Ma.dvd_contract_quot' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SignedDifferenceSets.false_of_noVectorQ'' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SignedDifferenceSets.IsSDS.false_of_maDivided' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SignedDifferenceSets.MaDivCert.not_hasSDS' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SignedDifferenceSets.MaDividedRows.N38250.not_hasSDS' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SignedDifferenceSets.MaDividedRows.N11253.not_hasSDS' depends on axioms: [propext, Classical.choice, Quot.sound]
+@IsSDS.false_of_maDivided : ∀ {G K : Type} [inst : AddCommGroup G] [inst_1 : Fintype G] [inst_2 : AddCommGroup K]
+  [inst_3 : Fintype K] {p r i e b c k k' : ℕ} {lam Q t s' : ℤ} [inst_4 : Indexed (ZMod r × K)] [hp : Fact (Nat.Prime p)]
+  [inst_5 : NeZero (r * p)] [NeZero r] {φ : G →+ ZMod (r * p) × K},
+  Function.Surjective ⇑φ →
+    Fintype.card G = c * Fintype.card (ZMod (r * p) × K) →
+      0 < r →
+        0 < i →
+          (∀ (x : K), p ^ i • x = -x) →
+            ↑p ^ e ∣ ↑k - lam →
+              2 * b ≤ e →
+                0 < b →
+                  CycloFacts p r →
+                    p ≠ 2 →
+                      ↑p ^ 2 * Q = ↑k + lam * (↑(p * c) - 1) →
+                        ↑p * t = lam * ↑c →
+                          ↑p * s' * (↑p * s') = ↑k + lam * (↑(Fintype.card G) - 1) →
+                            k < p * (k' + 2) →
+                              (↑k - ↑k') % 2 = 0 →
+                                noVector (Indexed.size (ZMod r × K)) (Indexed.addIdx (ZMod r × K)) (↑c) Q t (↑k') s' =
+                                    true →
+                                  ∀ {D : G → SignType}, IsSDS k lam D → False
+@MaDivCert.not_hasSDS : ∀ {w : Row} {c : MaDivCert},
+  MaDivCert.Valid w c →
+    ∀ (hpos : ∀ m ∈ c.r :: c.ks, 0 < m) (inst : Fintype (Grp w.ms)),
+      noVector (Indexed.size (Grp (c.r :: c.ks))) (Indexed.addIdx (Grp (c.r :: c.ks)))
+            (↑(w.ms.prod / (c.r * c.p * c.ks.prod))) c.Q c.t (↑c.k') c.s' =
+          true →
+        ¬HasSDS (Grp w.ms) w.k w.lam
+
+real	0m38.870s
+user	0m0.061s
+sys	0m0.234s

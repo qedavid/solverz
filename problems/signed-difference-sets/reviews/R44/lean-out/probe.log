@@ -1,0 +1,51 @@
+SignedDifferenceSets.PairRows.N464.n464_not_hasSDS : ¬SignedDifferenceSets.HasSDS (ZMod 3 × ZMod 18) 46 10
+@SignedDifferenceSets.halves_of_isSDS : ∀ {K : Type} [inst : AddCommGroup K] [inst_1 : Fintype K] {i k k' k'' : ℕ}
+  {lam lam' : ℤ},
+  0 < i →
+    (∀ (x : K), 2 ^ i • x = -x) →
+      2 ^ 2 ∣ ↑k - lam →
+        4 * ↑k' = ↑k + lam →
+          2 * lam' = lam →
+            4 * ↑k'' = ↑k - lam →
+              ∀ {D : ZMod 2 × K → SignType},
+                SignedDifferenceSets.IsSDS k lam D →
+                  ∃ Z T,
+                    SignedDifferenceSets.IsSDS k' lam' Z ∧
+                      SignedDifferenceSets.IsSDS k'' 0 T ∧
+                        (∀ (y : K), Z y = 0 ∨ T y = 0) ∧
+                          ∀ (y : K), ↑(D (0, y)) = ↑(Z y) + ↑(T y) ∧ ↑(D (1, y)) = ↑(Z y) - ↑(T y)
+@SignedDifferenceSets.PairCheck.no_pair : ∀ {LY LT : List (List ℤ)} (groups : List (List (List ℤ))),
+  SignedDifferenceSets.LiftSearch.cover (SignedDifferenceSets.Indexed.size (ZMod 9))
+        (SignedDifferenceSets.Indexed.addIdx (ZMod 9)) (↑3) (↑14 + 5 * (↑3 - 1)) (5 * ↑3) (↑14) 12 LY =
+      true →
+    SignedDifferenceSets.LiftSearch.cover (SignedDifferenceSets.Indexed.size (ZMod 9))
+          (SignedDifferenceSets.Indexed.addIdx (ZMod 9)) (↑3) (↑9 + 0 * (↑3 - 1)) (0 * ↑3) (↑9) 3 LT =
+        true →
+      (∀ c ∈ SignedDifferenceSets.PairCheck.rots LY, ∃ grp ∈ groups, c ∈ grp) →
+        (∀ grp ∈ groups,
+            SignedDifferenceSets.PairCheck.zSearch 37 [1, 0] 13 9 (SignedDifferenceSets.PairCheck.rots LT) grp = true) →
+          ∀ {Z T : SignedDifferenceSets.PairCheck.K → SignType},
+            SignedDifferenceSets.IsSDS 14 5 Z →
+              SignedDifferenceSets.IsSDS 9 0 T → (∀ (y : SignedDifferenceSets.PairCheck.K), Z y = 0 ∨ T y = 0) → False
+def SignedDifferenceSets.PairRows.N464.split : ZMod 3 × ZMod 18 →+ ZMod 2 × SignedDifferenceSets.PairCheck.K :=
+((ZMod.castHom SignedDifferenceSets.PairRows.N464.split._proof_1 (ZMod 2)).toAddMonoidHom.comp
+      (AddMonoidHom.snd (ZMod 3) (ZMod 18))).prod
+  ((AddMonoidHom.id (ZMod 3)).prodMap
+    (ZMod.castHom SignedDifferenceSets.PairRows.N464.split._proof_2 (ZMod 9)).toAddMonoidHom)
+'SignedDifferenceSets.PairRows.N464.n464_not_hasSDS' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SignedDifferenceSets.halves_of_isSDS' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SignedDifferenceSets.PairCheck.no_pair' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SignedDifferenceSets.PairCheck.zSearch_sound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SignedDifferenceSets.PairCheck.tCheck_sound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SignedDifferenceSets.PairCheck.zSearch_of_slices' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SignedDifferenceSets.PairSearch.go_sound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SignedDifferenceSets.PairSearch.go_of_front' depends on axioms: [propext, Quot.sound]
+'SignedDifferenceSets.PairRows.N464.slices' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SignedDifferenceSets.PairRows.N464.split_bijective' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SignedDifferenceSets.PairRows.N464.groups_cover' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SignedDifferenceSets.Tests.PairSearch.n449_halves' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SignedDifferenceSets.Tests.PairSearch.n449_search_finds' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+real	4m22.572s
+user	0m0.280s
+sys	0m1.545s

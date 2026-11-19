@@ -1,0 +1,42 @@
+N1227 open stmt OK | KILL origin (40*1-13*10=-90, /27) | p=3 r=4 c=1 C=27 s=10 |V|=2 centred w0=1
+N1252 open stmt OK | KILL origin (13*10-4*19=54, /9) | p=3 r=3 c=3 C=27 s=19 |V|=2 centred w0=10
+N1253 open stmt OK | KILL origin (13*10-4*19=54, /9) | p=3 r=3 c=3 C=27 s=19 |V|=2 centred w0=10
+N1262 open stmt OK | KILL origin (40*11-13*29=63, /27) | p=3 r=4 c=1 C=27 s=29 |V|=2 centred w0=11
+N1272 open stmt OK | KILL origin (40*5-13*23=-99, /27) | p=3 r=4 c=1 C=27 s=23 |V|=2 centred w0=5
+N1307 open stmt OK | KILL origin (40*16-13*52=-36, /27) | p=3 r=4 c=1 C=27 s=52 |V|=2 centred w0=16
+N14590 open stmt OK | KILL origin (13*32-4*77=108, /9) | p=3 r=3 c=9 C=81 s=77 |V|=2 centred w0=32
+N14591 open stmt OK | KILL origin (13*32-4*77=108, /9) | p=3 r=3 c=9 C=81 s=77 |V|=2 centred w0=32
+N14593 open stmt OK | KILL origin (13*32-4*77=108, /9) | p=3 r=3 c=9 C=81 s=77 |V|=2 centred w0=32
+N14688 open stmt OK | KILL origin (13*16-4*25=108, /9) | p=3 r=3 c=9 C=81 s=25 |V|=2 centred w0=16
+N14689 open stmt OK | KILL origin (13*16-4*25=108, /9) | p=3 r=3 c=9 C=81 s=25 |V|=2 centred w0=16
+N14691 open stmt OK | KILL origin (13*16-4*25=108, /9) | p=3 r=3 c=9 C=81 s=25 |V|=2 centred w0=16
+N14807 open stmt OK | KILL origin (13*47-4*128=99, /9) | p=3 r=3 c=9 C=81 s=128 |V|=2 centred w0=47
+N14808 open stmt OK | KILL origin (13*47-4*128=99, /9) | p=3 r=3 c=9 C=81 s=128 |V|=2 centred w0=47
+N14810 open stmt OK | KILL origin (13*47-4*128=99, /9) | p=3 r=3 c=9 C=81 s=128 |V|=2 centred w0=47
+N15017 open stmt OK | KILL origin (13*55-4*145=135, /9) | p=3 r=3 c=9 C=81 s=145 |V|=2 centred w0=55
+N15018 open stmt OK | KILL origin (13*55-4*145=135, /9) | p=3 r=3 c=9 C=81 s=145 |V|=2 centred w0=55
+N15019 open stmt OK | KILL origin (13*55-4*145=135, /9) | p=3 r=3 c=9 C=81 s=145 |V|=2 centred w0=55
+N15020 open stmt OK | KILL origin (13*55-4*145=135, /9) | p=3 r=3 c=9 C=81 s=145 |V|=2 centred w0=55
+N15059 open stmt OK | KILL origin (13*50-4*131=126, /9) | p=3 r=3 c=9 C=81 s=131 |V|=2 centred w0=50
+N15060 open stmt OK | KILL origin (13*50-4*131=126, /9) | p=3 r=3 c=9 C=81 s=131 |V|=2 centred w0=50
+N15062 open stmt OK | KILL origin (13*50-4*131=126, /9) | p=3 r=3 c=9 C=81 s=131 |V|=2 centred w0=50
+N15122 open stmt OK | KILL origin (13*20-4*38=108, /9) | p=3 r=3 c=9 C=81 s=38 |V|=2 centred w0=20
+N15123 open stmt OK | KILL origin (13*20-4*38=108, /9) | p=3 r=3 c=9 C=81 s=38 |V|=2 centred w0=20
+N15124 open stmt OK | KILL origin (13*20-4*38=108, /9) | p=3 r=3 c=9 C=81 s=38 |V|=2 centred w0=20
+N15125 open stmt OK | KILL origin (13*20-4*38=108, /9) | p=3 r=3 c=9 C=81 s=38 |V|=2 centred w0=20
+N23597 open stmt OK | KILL search | p=3 r=3 c=11 C=99 s=35 |V|=2 centred choices=8192
+N23726 open stmt OK | KILL origin (13*35-4*80=135, /9) | p=3 r=3 c=11 C=99 s=80 |V|=2 centred w0=35
+N23765 open stmt OK | KILL origin (13*44-4*107=144, /9) | p=3 r=3 c=11 C=99 s=107 |V|=2 centred w0=44
+N23831 open stmt OK | KILL origin (13*77-4*212=153, /9) | p=3 r=3 c=11 C=99 s=212 |V|=2 centred w0=77
+N33408 open stmt OK | KILL origin (13*52-4*133=144, /9) | p=3 r=3 c=13 C=117 s=133 |V|=2 centred w0=52
+N33564 open stmt OK | KILL origin (13*70-4*196=126, /9) | p=3 r=3 c=13 C=117 s=196 |V|=2 centred w0=70
+N33687 open stmt OK | KILL origin (13*1-4*37=-135, /9) | p=3 r=3 c=13 C=117 s=37 |V|=2 centred w0=1
+N33717 open stmt OK | KILL origin (13*14-4*77=-126, /9) | p=3 r=3 c=13 C=117 s=77 |V|=2 centred w0=14
+N46206 open stmt OK | KILL origin (13*55-4*136=171, /9) | p=3 r=3 c=15 C=135 s=136 |V|=2 centred w0=55
+N46207 open stmt OK | KILL origin (13*55-4*136=171, /9) | p=3 r=3 c=15 C=135 s=136 |V|=2 centred w0=55
+N757 open stmt OK | TOO BIG | p=2 r=5 c=2 C=32 s=52 |V|=2 nc choices=67108864
+N758 open stmt OK | TOO BIG | p=2 r=5 c=2 C=32 s=52 |V|=2 nc choices=67108864
+N8508 open stmt OK | KILL origin (13*49-4*139=81, /9) | p=3 r=3 c=7 C=63 s=139 |V|=2 centred w0=49
+N8517 open stmt OK | KILL origin (13*28-4*64=108, /9) | p=3 r=3 c=7 C=63 s=64 |V|=2 centred w0=28
+N8532 open stmt OK | KILL origin (13*14-4*23=90, /9) | p=3 r=3 c=7 C=63 s=23 |V|=2 centred w0=14
+N8541 open stmt OK | KILL origin (13*7-4*43=-81, /9) | p=3 r=3 c=7 C=63 s=43 |V|=2 centred w0=7

@@ -1,0 +1,34 @@
+'SignedDifferenceSets.TomographyQuotRows.N15241.not_hasSDS' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SignedDifferenceSets.TomographyQuotRows.N15446.not_hasSDS' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SignedDifferenceSets.TomographyQuotRows.N15480.not_hasSDS' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SignedDifferenceSets.TomographyQuotRows.N15550.not_hasSDS' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SignedDifferenceSets.TomographyQuotRows.N31749.not_hasSDS' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SignedDifferenceSets.TomographyQuotRows.N31773.not_hasSDS' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SignedDifferenceSets.TomographyQuotRows.N31787.not_hasSDS' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SignedDifferenceSets.TomographyQuotRows.N31808.not_hasSDS' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SignedDifferenceSets.TomographyQuotRows.N31904.not_hasSDS' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SignedDifferenceSets.TomographyQuotRows.N31949.not_hasSDS' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SignedDifferenceSets.TomographyQuotRows.N31967.not_hasSDS' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SignedDifferenceSets.TomographyQuotRows.N32036.not_hasSDS' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SignedDifferenceSets.TomographyQuotRows.N32042.not_hasSDS' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SignedDifferenceSets.TomographyQuotRows.N32108.not_hasSDS' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SignedDifferenceSets.TomographyQuotRows.N32147.not_hasSDS' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SignedDifferenceSets.TomographyQuotRows.N32165.not_hasSDS' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SignedDifferenceSets.TomographyQuotRows.N3363.not_hasSDS' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SignedDifferenceSets.TomographyQuotRows.N38726.not_hasSDS' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SignedDifferenceSets.TomographyQuotRows.N5027.not_hasSDS' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SignedDifferenceSets.TomographyQuotRows.N5055.not_hasSDS' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SignedDifferenceSets.TomographyQuotRows.N5085.not_hasSDS' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SignedDifferenceSets.TomographyQuotRows.N54877.not_hasSDS' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SignedDifferenceSets.TomographyQuotRows.N7292.not_hasSDS' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SignedDifferenceSets.TomographyQuotRows.N9399.not_hasSDS' depends on axioms: [propext, Classical.choice, Quot.sound]
+R47/AxC41_2.lean:80:46: error: Type mismatch
+  TomographyQuotRows.N5027.not_hasSDS
+has type
+  ¬HasSDS (ZMod 7 × ZMod 21) 85 6
+but is expected to have type
+  ¬HasSDS (ZMod 7 × ZMod 21) 85 7
+
+real	0m39.483s
+user	0m0.109s
+sys	0m0.154s

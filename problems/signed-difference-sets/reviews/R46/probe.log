@@ -1,0 +1,13 @@
+checked 83 constants (17 core, 66 rows); non-standard: #[]
+SignedDifferenceSets.MaCountRows.N40375.not_hasSDS : ¬SignedDifferenceSets.HasSDS (ZMod 2 × ZMod 192) 162 18
+SignedDifferenceSets.MaDividedResRows.N61887.not_hasSDS : ¬SignedDifferenceSets.HasSDS (ZMod 468) 356 160
+'SignedDifferenceSets.MaCountRows.N5887.not_hasSDS' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SignedDifferenceSets.MaDividedResRows.N22390.not_hasSDS' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+real	0m43.508s
+user	0m0.123s
+sys	0m0.373s
+
+real	0m45.488s
+user	0m0.455s
+sys	0m0.841s

@@ -1,0 +1,5 @@
+  supports passing parity: 5720
+N449: 684 normalised Z (27,10,1) with Z(0)=-1, sum 6 [0.2s]
+  first pair: Z=[-1, 1, 0, 1, 1, 0, 1, 1, 0, -1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0]
+              T=[0, 0, -1, 0, 0, 0, 0, 0, -1, 0, -1, -1, 0, 0, -1, 0, 1, 0, 0, -1, 1, 0, 1, 0, 0, 0, 0]
+N449: pairs (Z normalised, T any) = 75168, Z with some T = 252, doubled D failing SDS(54,38,2) = 0 [7.3s]

@@ -1,0 +1,72 @@
+@IsSDS.totient_mul_le_of_chain : ∀ {G : Type u_1} [inst : AddCommGroup G] [inst_1 : Fintype G] {k : ℕ} {lam : ℤ}
+  {D : G → SignType},
+  IsSDS k lam D →
+    ∀ {m c : ℕ} [NeZero m],
+      1 < m →
+        ∀ (φ : G →+ ZMod m),
+          Function.Surjective ⇑φ →
+            Fintype.card G = c * m →
+              0 < ↑k - lam →
+                ∀ (ps : List ℕ),
+                  DescentChain m (↑k - lam).toNat m ps →
+                    ↑m.totient * (↑k - lam) ≤ ↑m * ↑(List.foldl (fun x1 x2 => x1 / x2) m ps) * ↑c ^ 2
+@FieldDescentChainCert.not_hasSDS : ∀ {w : Row} {c : FieldDescentChainCert},
+  FieldDescentChainCert.Kills w c → ∀ (inst : Fintype (Grp w.ms)), ¬HasSDS (Grp w.ms) w.k w.lam
+@fieldDescentChainRows_not_hasSDS : ∀ {x : Row × FieldDescentChainCert},
+  x ∈ fieldDescentChainRows → ∀ (inst : Fintype (Grp x.1.ms)), ¬HasSDS (Grp x.1.ms) x.1.k x.1.lam
+def SignedDifferenceSets.DescentStep : ℕ → ℕ → ℕ → ℕ → Prop :=
+fun m n d p =>
+  p * (d / p) = d ∧
+    p ∣ d / p ∧
+      (Odd p ∨ p = 2 ∧ 8 ∣ d) ∧
+        (∀ (r : ℕ), Nat.Prime r → r ∣ m → r ∣ d / p) ∧
+          ∀ (q : ℕ),
+            Nat.Prime q → q ∣ n → ∃ t a e, t.Coprime m ∧ t ≡ 1 + d / p [MOD d] ∧ q ^ a ∣ m ∧ t ≡ q ^ e [MOD m / q ^ a]
+def SignedDifferenceSets.DescentChain : ℕ → ℕ → ℕ → List ℕ → Prop :=
+fun m n x x_1 => List.brecOn (motive := fun x => ℕ → Prop) x_1 (DescentChain._f m n) x
+def SignedDifferenceSets.DescentStepCert.Ok : ℕ → ℕ → ℕ → DescentStepCert → Prop :=
+fun m n d s =>
+  IsPrimeTD s.p ∧
+    d % (s.p * s.p) = 0 ∧
+      (s.p % 2 = 1 ∨ s.p = 2 ∧ d % 8 = 0) ∧
+        (d / s.p) ^ m % m = 0 ∧
+          ∀ q ∈ List.range (n + 1),
+            2 ≤ q →
+              n % q = 0 →
+                (∀ r ∈ List.range q, 2 ≤ r → q % r ≠ 0) →
+                  ∃ w ∈ s.ws,
+                    w.q = q ∧
+                      w.t.gcd m = 1 ∧
+                        w.t % d = (1 + d / s.p) % d ∧ m % q ^ w.a = 0 ∧ w.t % (m / q ^ w.a) = q ^ w.e % (m / q ^ w.a)
+def SignedDifferenceSets.FieldDescentChainCert.Kills : Row → FieldDescentChainCert → Prop :=
+fun w c =>
+  (∀ x ∈ w.ms, 0 < x) ∧
+    1 < c.m ∧
+      c.m ∣ w.ms.prod ∧
+        MapOk w.ms [c.m] [c.A] ∧
+          SurjCert w.ms [c.m] [c.A] [c.P] ∧
+            0 < ↑w.k - w.lam ∧
+              StepsOk c.m (↑w.k - w.lam).toNat c.m c.steps ∧
+                c.m * List.foldl (fun x1 x2 => x1 / x2) c.m (List.map (fun x => x.p) c.steps) * (w.ms.prod / c.m) ^ 2 <
+                  c.m.totient * (↑w.k - w.lam).toNat
+'SignedDifferenceSets.FieldDescent.fixedMod_of_smul_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SignedDifferenceSets.FieldDescent.exists_fixedMod_step' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SignedDifferenceSets.FieldDescent.exists_fixedMod_next' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SignedDifferenceSets.FieldDescent.exists_fixedMod_chain' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SignedDifferenceSets.FieldDescent.totient_mul_le_of_chain_aux' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SignedDifferenceSets.IsSDS.totient_mul_le_of_chain' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SignedDifferenceSets.StepsOk.descentChain' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SignedDifferenceSets.FieldDescentChainCert.not_hasSDS' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SignedDifferenceSets.fieldDescentChainRows_kill' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SignedDifferenceSets.fieldDescentChainRows_not_hasSDS' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SignedDifferenceSets.fieldDescentChainKill_N1289' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SignedDifferenceSets.fieldDescentChainKill_N3804' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SignedDifferenceSets.fieldDescentChainKill_N56988' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SignedDifferenceSets.fieldDescentChainKill_N67174' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+real	24m0.807s
+user	0m4.093s
+sys	0m12.623s
+Tue Nov 10 00:43:12 WEST 2026

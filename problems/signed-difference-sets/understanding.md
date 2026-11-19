@@ -50,6 +50,27 @@ folder `scratch/ideator/2026-11-06-core-{none,exists}.md`):
 - the core K, about 3,100 rows: no usable multiplier (gcd(v, n) > 1, or tiny M), every
   congruence modulus below c, quotient vectors exist on every quotient E8 decides, and far
   below the random threshold. They are probably `none`, but no local view can show it.
+  No exponent bound helps there (D14x, 2026-11-09, `scratch/d14x/report.md`): the published
+  non-cyclic forms (Ma–Schmidt 1995 Lemma 3.2, the Hadamard descents) need D ≥ 0 or a ±1
+  array, and apply only at C21 margin ≥ ½, which no open K-arith row reaches (≤ 0.444); a
+  Ma lemma without the |S|/exp loss is false for SDS (it would kill 70 `exists` rows, e.g.
+  N2, N127, N658). Of the 2,070 open K-arith rows, 698 have no non-cyclic Sylow subgroup at
+  stake (227 with no p | gcd(v, n), b ≥ 1; 471 with cyclic ones).
+- The near-miss classes still give way to sharper local rules: Ma's lemma at its edge (C33, and its divided search
+  C34) and Schmidt's field descent (C32 one step, C35 chains) reach 257 open rows together (class C 142, D2 55, D3 36,
+  A 24; 2026-11-09/10), none in the core K.
+- Below a Ma quotient the coset sums are divisible by p (by p² two levels down), so W/p is a vector with much smaller
+  entries and moments; it dies where the plain vector lives. Searched (C34, C36), with Turyn's residue class (C38), or
+  without search when no value counts exist (C39), this reaches about 140 more rows, mostly p = 2 and class C/D2. Counting
+  the plain coset sums adds nothing (C7's LP already has it; `x_counts`, 0 kills on 3,428 rows).
+- All quotients at once can decide a group no single quotient can: on Z_p × Z_p the p + 1 line contractions determine D
+  (Σᵢ Yᵢ(πᵢx) = pD(x) + s), and integrality mod p kills all 52 open Z_p² rows (I23, exploration; C40 in Lean for nine so
+  far; pairs of quotients are provably too weak, D15x). It is the first global argument that reaches core rows, and it
+  carries over: on any Z_p² quotient (175 more rows, 160 through Z_7²), through hyperplanes of Z_p^r (48), on Z_p² × Z_m (69,
+  unchecked). It is strong where p is large (p(p − 1)/2 conditions mod p) and weak at p = 3, 5 alone; Z_{p^a} × Z_p gave
+  nothing. The cost moves to listing the line vectors (multipliers, lattices for p ≥ 11).
+- Open 2026-11-10: 6,044 rows; class C 2,095 (the arithmetic core), B1–B3 2,153 (cut orbit searches), D1–D3 1,340,
+  A 232, unclassified 224.
 
 **So a Solution must.** Per row: a set Lean checks, or a rule's Lean theorem plus its
 Lean check for that row; and, before it is proposed, a check against the known

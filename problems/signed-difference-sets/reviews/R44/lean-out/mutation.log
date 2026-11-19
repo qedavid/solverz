@@ -1,0 +1,10 @@
+R44/Mutation.lean:9:2: error: Tactic `decide` proved that the proposition
+  zSearch 33 [1, 2, 0] 9 9 (rots tList) [[-1, 1, 0, 2, 1, 0, 2, 1, 0]] = true
+is false
+R44/Mutation.lean:15:63: error: Tactic `decide` proved that the proposition
+  (zFront 37 [1, 0] 13 keys19 grp19).length ≤ 14
+is false
+
+real	0m59.434s
+user	0m0.046s
+sys	0m0.310s

@@ -1,0 +1,8 @@
+fail SDS(20,11,2,[20])
+fail SDS(35,21,10,[35])
+fail SDS(51,19,3,[51])
+fail SDS(61,49,36,[61])
+fail SDS(78,53,28,[78])
+fail SDS(104,29,4,[104])
+fail SDS(111,66,17,[111])
+55/62 Gordon sets (v<=120) pass both checks

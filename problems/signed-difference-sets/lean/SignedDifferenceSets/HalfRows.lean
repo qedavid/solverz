@@ -23,6 +23,7 @@ public import SignedDifferenceSets.HalfRows.Solo.N58765
 public import SignedDifferenceSets.HalfRows.Solo.N58804
 public import SignedDifferenceSets.HalfRows.Solo.N58834
 public import SignedDifferenceSets.HalfRows.Solo.N58879
+public import SignedDifferenceSets.HalfRows.OrbitCited
 
 /-!
 # Rows killed by C26 at `c = 1` through their halved row

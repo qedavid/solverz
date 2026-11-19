@@ -1,0 +1,52 @@
+row files: 49
+settle ids == row files: True
+N8944 SDS(192,150,6,[2,96])        st=open p=2 j=5 H'=[1, 8] ->Grp[8, 1] c=6 Q=18 t=9 s'=9 bounds=[37, 36] nodes=10570
+N8999 SDS(192,162,18,[2,96])       st=open p=2 j=5 H'=[1, 8] ->Grp[8, 1] c=6 Q=36 t=27 s'=15 bounds=[40, 39] nodes=13000
+N12314 SDS(224,164,20,[224])        st=none p=2 j=5 H'=[8] ->Grp[8, 1] c=7 Q=44 t=35 s'=17 bounds=[41, 40] nodes=14950
+N12363 SDS(224,188,44,[224])        st=none p=2 j=5 H'=[8] ->Grp[8, 1] c=7 Q=86 t=77 s'=25 bounds=[47, 46] nodes=20010
+N12426 SDS(224,212,68,[224])        st=none p=2 j=5 H'=[8] ->Grp[8, 1] c=7 Q=128 t=119 s'=31 bounds=[53, 52] nodes=22768
+N16779 SDS(256,66,2,[4,64])         st=open p=2 j=6 H'=[1, 16] ->Grp[16, 1] c=4 Q=6 t=2 s'=6 bounds=[16, 15] nodes=39646
+N16771 SDS(256,66,2,[2,2,64])       st=open p=2 j=6 H'=[1, 1, 16] ->Grp[16, 1] c=4 Q=6 t=2 s'=6 bounds=[16, 15] nodes=39646
+N16815 SDS(256,70,6,[2,2,64])       st=open p=2 j=6 H'=[1, 1, 16] ->Grp[16, 1] c=4 Q=10 t=6 s'=10 bounds=[17, 16] nodes=76568
+N16823 SDS(256,70,6,[4,64])         st=open p=2 j=6 H'=[1, 16] ->Grp[16, 1] c=4 Q=10 t=6 s'=10 bounds=[17, 16] nodes=76568
+N16925 SDS(256,94,30,[2,2,64])      st=open p=2 j=6 H'=[1, 1, 16] ->Grp[16, 1] c=4 Q=34 t=30 s'=22 bounds=[23, 22] nodes=81824
+N16933 SDS(256,94,30,[4,64])        st=open p=2 j=6 H'=[1, 16] ->Grp[16, 1] c=4 Q=34 t=30 s'=22 bounds=[23, 22] nodes=81824
+N16947 SDS(256,106,42,[2,2,64])     st=open p=2 j=6 H'=[1, 1, 16] ->Grp[16, 1] c=4 Q=46 t=42 s'=26 bounds=[26, 25] nodes=135858
+N16955 SDS(256,106,42,[4,64])       st=open p=2 j=6 H'=[1, 16] ->Grp[16, 1] c=4 Q=46 t=42 s'=26 bounds=[26, 25] nodes=135858
+N17211 SDS(256,154,90,[2,2,64])     st=open p=2 j=6 H'=[1, 1, 16] ->Grp[16, 1] c=4 Q=94 t=90 s'=38 bounds=[38, 37] nodes=124240
+N17219 SDS(256,154,90,[4,64])       st=open p=2 j=6 H'=[1, 16] ->Grp[16, 1] c=4 Q=94 t=90 s'=38 bounds=[38, 37] nodes=124240
+N17387 SDS(256,174,110,[2,2,64])    st=open p=2 j=6 H'=[1, 1, 16] ->Grp[16, 1] c=4 Q=114 t=110 s'=42 bounds=[43, 42] nodes=195542
+N17395 SDS(256,174,110,[4,64])      st=open p=2 j=6 H'=[1, 16] ->Grp[16, 1] c=4 Q=114 t=110 s'=42 bounds=[43, 42] nodes=195542
+N17827 SDS(256,246,182,[2,2,64])    st=open p=2 j=6 H'=[1, 1, 16] ->Grp[16, 1] c=4 Q=186 t=182 s'=54 bounds=[61, 60] nodes=167998
+N17835 SDS(256,246,182,[4,64])      st=open p=2 j=6 H'=[1, 16] ->Grp[16, 1] c=4 Q=186 t=182 s'=54 bounds=[61, 60] nodes=167998
+N27154 SDS(320,146,2,[2,160])       st=open p=2 j=5 H'=[1, 8] ->Grp[8, 1] c=10 Q=14 t=5 s'=7 bounds=[36, 35] nodes=9038
+N27176 SDS(320,158,14,[2,160])      st=open p=2 j=5 H'=[1, 8] ->Grp[8, 1] c=10 Q=44 t=35 s'=17 bounds=[39, 38] nodes=14950
+N27198 SDS(320,170,26,[2,160])      st=open p=2 j=5 H'=[1, 8] ->Grp[8, 1] c=10 Q=74 t=65 s'=23 bounds=[42, 41] nodes=17768
+N27319 SDS(320,198,54,[2,160])      st=open p=2 j=5 H'=[1, 8] ->Grp[8, 1] c=10 Q=144 t=135 s'=33 bounds=[49, 48] nodes=25230
+N27484 SDS(320,254,110,[2,160])     st=open p=2 j=5 H'=[1, 8] ->Grp[8, 1] c=10 Q=284 t=275 s'=47 bounds=[63, 62] nodes=32632
+N27693 SDS(320,306,162,[2,160])     st=open p=2 j=5 H'=[1, 8] ->Grp[8, 1] c=10 Q=414 t=405 s'=57 bounds=[76, 75] nodes=40766
+N40206 SDS(384,68,4,[2,2,96])       st=open p=2 j=5 H'=[1, 1, 24] ->Grp[8, 3] c=4 Q=8 t=4 s'=10 bounds=[17, 16] nodes=119214
+N40212 SDS(384,68,4,[4,96])         st=open p=2 j=5 H'=[1, 24] ->Grp[8, 3] c=4 Q=8 t=4 s'=10 bounds=[17, 16] nodes=119214
+N40221 SDS(384,72,8,[2,2,96])       st=open p=2 j=5 H'=[1, 1, 24] ->Grp[8, 3] c=4 Q=12 t=8 s'=14 bounds=[18, 17] nodes=166176
+N40227 SDS(384,72,8,[4,96])         st=open p=2 j=5 H'=[1, 24] ->Grp[8, 3] c=4 Q=12 t=8 s'=14 bounds=[18, 17] nodes=166176
+N40420 SDS(384,174,30,[2,192])      st=open p=2 j=6 H'=[1, 16] ->Grp[16, 1] c=6 Q=54 t=45 s'=27 bounds=[43, 42] nodes=3208226
+N41151 SDS(384,344,280,[2,2,96])    st=open p=2 j=5 H'=[1, 1, 24] ->Grp[8, 3] c=4 Q=284 t=280 s'=82 bounds=[86, 85] nodes=354184
+N41157 SDS(384,344,280,[4,96])      st=open p=2 j=5 H'=[1, 24] ->Grp[8, 3] c=4 Q=284 t=280 s'=82 bounds=[86, 85] nodes=354184
+N41271 SDS(384,372,308,[2,2,96])    st=open p=2 j=5 H'=[1, 1, 24] ->Grp[8, 3] c=4 Q=312 t=308 s'=86 bounds=[93, 92] nodes=493190
+N41277 SDS(384,372,308,[4,96])      st=open p=2 j=5 H'=[1, 24] ->Grp[8, 3] c=4 Q=312 t=308 s'=86 bounds=[93, 92] nodes=493190
+N56225 SDS(448,154,10,[2,224])      st=open p=2 j=5 H'=[1, 8] ->Grp[8, 1] c=14 Q=44 t=35 s'=17 bounds=[38, 37] nodes=14950
+N56247 SDS(448,166,22,[2,224])      st=open p=2 j=5 H'=[1, 8] ->Grp[8, 1] c=14 Q=86 t=77 s'=25 bounds=[41, 40] nodes=20018
+N56207 SDS(448,148,4,[448])         st=none p=2 j=6 H'=[16] ->Grp[16, 1] c=7 Q=16 t=7 s'=11 bounds=[37, 36] nodes=1986214
+N56291 SDS(448,178,34,[2,224])      st=open p=2 j=5 H'=[1, 8] ->Grp[8, 1] c=14 Q=128 t=119 s'=31 bounds=[44, 43] nodes=22784
+N56313 SDS(448,198,54,[2,224])      st=open p=2 j=5 H'=[1, 8] ->Grp[8, 1] c=14 Q=198 t=189 s'=39 bounds=[49, 48] nodes=27652
+N56753 SDS(448,334,190,[2,224])     st=open p=2 j=5 H'=[1, 8] ->Grp[8, 1] c=14 Q=674 t=665 s'=73 bounds=[83, 82] nodes=50906
+N56863 SDS(448,378,234,[2,224])     st=open p=2 j=5 H'=[1, 8] ->Grp[8, 1] c=14 Q=828 t=819 s'=81 bounds=[94, 93] nodes=55958
+N56940 SDS(448,402,2,[2,224])       st=open p=2 j=5 H'=[1, 8] ->Grp[8, 1] c=14 Q=32 t=7 s'=9 bounds=[100, 99] nodes=275092
+N57028 SDS(448,418,18,[2,224])      st=open p=2 j=5 H'=[1, 8] ->Grp[8, 1] c=14 Q=88 t=63 s'=23 bounds=[104, 103] nodes=404430
+N57127 SDS(448,438,38,[2,224])      st=open p=2 j=5 H'=[1, 8] ->Grp[8, 1] c=14 Q=158 t=133 s'=33 bounds=[109, 108] nodes=522718
+N64649 SDS(480,180,36,[480])        st=open p=2 j=5 H'=[8] ->Grp[8, 1] c=15 Q=144 t=135 s'=33 bounds=[45, 44] nodes=25238
+N64733 SDS(480,252,108,[480])       st=open p=2 j=5 H'=[8] ->Grp[8, 1] c=15 Q=414 t=405 s'=57 bounds=[63, 62] nodes=40786
+N64789 SDS(480,276,132,[480])       st=open p=2 j=5 H'=[8] ->Grp[8, 1] c=15 Q=504 t=495 s'=63 bounds=[69, 68] nodes=42264
+N65048 SDS(480,396,252,[480])       st=open p=2 j=5 H'=[8] ->Grp[8, 1] c=15 Q=954 t=945 s'=87 bounds=[99, 98] nodes=56612
+N65097 SDS(480,420,20,[480])        st=open p=2 j=5 H'=[8] ->Grp[8, 1] c=15 Q=100 t=75 s'=25 bounds=[105, 104] nodes=425862
+mismatches: 0

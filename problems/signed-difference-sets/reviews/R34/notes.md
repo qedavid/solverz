@@ -1,0 +1,13 @@
+# P4 notes (refuter, 2026-11-09)
+- check_objects.py: all 16 objects pass shifts + Fourier; flip/drop controls rejected; Lean masks decode to the object files; keys/groups/Gordon Open all match. (2026-11-09 20:30)
+- validate_checker.py: 55/62 of Gordon's stored sets (Yes/All, v<=120, first set) pass both checks; the 7 failures (20,11,2),(35,21,10),(51,19,3),(61,49,36),(78,53,28),(104,29,4),(111,66,17) cyclic "All/Orbit Exhaust" sets fail the definition also by direct python; R16 already found 3 of them (sds.json data issue), not our targets.
+- He–Wu arXiv:2608.22936v2 HTML opened: constructions only Thm 5.3 (PCP spread, C2^{2m}) and Thm 5.6 (125,28,3); no product/doubling; none of the 13 parameter triples.
+- HCG v1 local text (db-lags/papers/hcg.txt): Thm 4.1 is G0 x G1 x G1 elementary; proof uses only that x0 generates G/H (H = G1 x G2 index 3). O103 = that proof on non-split H = Omega_1(C3^3 x C9).
+- Gordon v1 local text: Props 2.1-2.3, Cor 3.1/Thm 3.2 (quartic), Thm 4.1 prime-pair, Thm 6.1 (18,13,4); nothing on doubling or 243/343.
+- Structure: O64 (243,121,40) = Q - B, Q = nonzero squares of GF(243) (skew Paley DS), B = <g^11> the BvLS PDS (243,22,1,2). General: skew DS Q minus a symmetric PDS B with lambda-mu=-1 is an SDS, n=(v+Delta)/4. (to verify numerically)
+- Search 1 ("signed difference sets" new constructions 2025 OR 2026 arXiv): only Gordon, HCG, He-Wu. Gordon's publications page: only 2023 SDS paper (2026 paper on cyclic RDS and CW).
+- AKKS 2010 (AJC 48:43-51, PDF opened via pdftotext, papers/akks2010.txt): Thm 4 A = (1-eps)B + (1+eps)C is W(G,4k) (B W(G,k), rho(C) W(G/<eps>,k), B,epsB,C,epsC disjoint), credited to ALMNR 2006 Thm 2.3 (DCC 41, not opened, paywalled); Thm 3 Arasu-Dillon CW(n,k) n odd -> CW(2^t n,4k); Thm 5/6 two disjoint CW/W -> CW(2n,4k)/W(2n,4k) [[A+B,A-B],[A-B,A+B]].
+- AACK 2017 (arXiv 1711.02502 HTML): Thm 4.2 two disjoint CW(n,k^2), n odd -> CW(2n,4k^2), 'consequence of ALMNR Thm 2.3'.
+- doubling.py: all 8 I21 objects = (1+u)Z + (1-u)T for exactly one involution u; Z halved SDS, |T| = n/4.
+- o103.py: O103 support in H u (x0+H), H = Omega_1, x0=(0,0,0,1), x0-part = x0 + {(0,b,c,0)}; H-part 73 = 9 + 64.
+- charvals.py: O64: -1/2 - r +- i sqrt(v)/2 with r in {4,-5}; O65: -4.5 +- i sqrt(243)/2 and 9; O66: -10.5 +- i sqrt(343)/2 and 14.

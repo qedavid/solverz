@@ -5,9 +5,9 @@
 | [C1](C1.md) | Square condition: k + λ(v − 1) = s², and the signs sum to ±s (every Instance) | — | verified | `IsSDS.sum_sq` | — |
 | [C2](C2.md) | Translation and negation keep an SDS an SDS (every Instance) | — | verified | `IsSDS.translate`, `IsSDS.neg` | — |
 | [C3](C3.md) | Contraction: coset sums along G → H have autocorrelation λ times the fibre size (every Instance) | — | verified | `IsSDS.contract_autocorr`, `abs_contract_le` | — |
-| [C4](C4.md) | Coset sums: Σ \|a\| ≤ k with the same parity; fibres of a surjection have \|G\|/\|H\| elements (every Instance) | C3 | open (Lean proof, refuter pending) | `IsSDS.sum_abs_contract_le`, `IsSDS.sum_abs_contract_parity`, `card_fibre_eq` | — |
+| [C4](C4.md) | Coset sums: Σ \|a\| ≤ k with the same parity; fibres of a surjection have \|G\|/\|H\| elements (every Instance) | C3 | verified ([R28](../reviews/R28.md)) | `IsSDS.sum_abs_contract_le`, `IsSDS.sum_abs_contract_parity`, `card_fibre_eq` | — |
 | [C5](C5.md) | Rule SC: self-conjugacy congruence on a quotient | C3 | verified | `not_hasSDS_of_selfConj` | — |
-| [C6](C6.md) | Rule SC++: residue class and moments | C1, C3, C5 | proved | — | — |
+| [C6](C6.md) | Rule SC++: residue class and moments | C1, C3, C5 | proved; superseded by C13, C14 | — | — |
 | [C7](C7.md) | Rule A2: marked counts per coset | C4, C6 | verified (LP form, 237 rows) | `not_hasSDS_of_marked` | — |
 | [C8](C8.md) | Rule A3: support parity | — | verified | `not_hasSDS_of_supportParity` | — |
 | [C9](C9.md) | Multiplier theorem with a fixed translate | C2 | verified | `IsSDS.exists_translate_fixed'` | — |
@@ -25,8 +25,26 @@
 | [C21](C21.md) | Ma's lemma on a mixed quotient C_{p^j} × K: p^⌊e/2⌋ > 2c ⇒ no SDS | C3, C5 | verified | `maRule` | — |
 | [C22](C22.md) | Sylow trace rule: p^min(t, ⌈e/2⌉) ∣ s on a p-group quotient (p = 2: equality) | C1, C3 | verified | `not_hasSDS_of_sylow`, `not_hasSDS_of_sylow_two` | — |
 | [C23](C23.md) | C5, C13, C14 with a composite modulus (CRT over self-conjugate primes) | C5, C13, C14 | verified | `not_hasSDS_of_compositeModulus` | — |
-| [C24](C24.md) | Mod-q vanishing: ψ(D)ψ(D^(−1)) = 0 in characteristic q ∣ n | — | proved | — | — |
+| [C24](C24.md) | Mod-q vanishing: ψ(D)ψ(D^(−1)) = 0 in characteristic q ∣ n | — | verified | `IsSDS.charSum_eq_zero_or` | — |
 | [C25](C25.md) | Self-conjugate primes enlarge the coset-sum multiplier group (N1a) | C5, C10 | verified | `IsSDS.exists_translate_fixed_contract_selfConj` | — |
 | [C26](C26.md) | Ma's lemma at the edge: 8 ∣ 2s′ − (k + λ(2c − 1)) on a quotient C_{2^j} × K | C1, C3, C21 | verified | `DescentCert.not_hasSDS`, `HalfCert.not_hasSDS` | — |
 | [C27](C27.md) | Field descent without ramification: φ(m) n ≤ m F c² on ZMod m, gcd(m, n) = 1 | C10 | verified | `IsSDS.totient_mul_le` | — |
 | [C28](C28.md) | The even contraction (C26 at any c): halved coset sums on Z_(2r) × K meet no demands | C3, C26 | verified | `not_hasSDS_of_evenContraction` | — |
+| [C29](C29.md) | Ma's lemma with an extra self-conjugate modulus: p^b·Q > 2c ⇒ no SDS (C21 × C5) | C21, C5 | verified | `maCombRule` | — |
+| [C30](C30.md) | Signed combinations of a relative difference set: R − N, G − R − N, G − 2R − N, G − R − 2N (I15) | — | proved | — | — |
+| [C32](C32.md) | Field descent, one step at an odd prime p (p² ∣ m, 1 + m/p ≡ q^e): φ(m) n ≤ m (m/p) c² (Schmidt; P18 M1) | C27 | verified | `IsSDS.totient_mul_le_of_descent` | — |
+| [C33](C33.md) | Ma's lemma at its edge: p ∣ λc on a C21 quotient with b ≥ 1 (cyclic Sylow p of order ≥ p², p² ∣ n ⇒ p ∣ λ) | C21, C3 | verified | `IsSDS.dvd_lam_mul_of_ma` | — |
+| [C34](C34.md) | The divided contraction below a Ma quotient: W/p meets demands with square sum (k + λ(pc − 1))/p² (p odd) | C33, C3 | verified | `IsSDS.false_of_maDivided` | — |
+| [C35](C35.md) | Field descent along a chain d₀ → … → F (odd p, and p = 2 with 8 ∣ d): φ(m) n ≤ m F c² (Schmidt; P18 M2) | C32 | verified | `IsSDS.totient_mul_le_of_chain` | — |
+| [C36](C36.md) | The divided contraction two levels below a Ma quotient: p² ∣ W, W/p² meets demands (any p, b ≥ 2) | C34, C21, C3 | verified | `IsSDS.false_of_maDivided2` | — |
+| [C37](C37.md) | The T-side of C26 at c = 1 (Z, T disjoint SDSs on K), and no SDS (54, 46, 10) in C₃ × C₁₈ (N464) | C26, C21 | verified | `n464_not_hasSDS` | — |
+| [C38](C38.md) | The divided contraction with Turyn's residue class: values of W/p congruent mod M (C34 × C5) | C34, C5 | verified | `IsSDS.false_of_maDividedRes` | — |
+| [C39](C39.md) | Value counts of the divided vector: no counts with |H′| verified | C33, C36, C3 | proved | `DividedDemands.false_of_anyCountsMag` | — |
+| [C40](C40.md) | Line tomography on Z_p × Z_p: the p + 1 line contractions sum to pD + s; no valid choice integral mod p | C3, C4, C2, C16 | verified | `Tomography.not_hasSDS`, `Tomography.not_hasSDS_prime` | — |
+| [C41](C41.md) | Line tomography on a Z_p × Z_p quotient (box c, multiplier t, with or without centring) | C40, C3, C2, C10 | verified | `TomographyQuot.not_hasSDS_grp`, `not_hasSDS_grp_nc` | — |
+| [C42](C42.md) | Tomography on a Z_2 × Z_2 × K quotient mod 4: z + d₁ + d₂ + d₃ ≡ 0, each twist d with autocorrelation nδ | C3 | verified | `not_hasSDS_of_kleinKills`, `KleinCert.not_hasSDS` | — |
+| [C43](C43.md) | Tomography through the hyperplanes of a Z_p^r quotient: flats' contractions sum to αs + (N − α)Z | C40, C41, C3, C2 | verified | `not_hasSDS_flat`, `not_hasSDS_flat_nc` | — |
+| [C44](C44.md) | Line tomography when n = p²: line contractions constant mod p, so p ∣ q + 1 is needed (s = pq) | C41, C3 | verified | `not_hasSDS_sq`, `not_hasSDS_grp_sq` | — |
+| [C45](C45.md) | The Z_2-twist of a self-conjugate quotient: N1575 (90, 18, 2) and N1593 (90, 72, 8) | C5, C3, C42 | verified | `not_hasSDS_90_18_2`, `not_hasSDS_90_72_8` | — |
+| [C46](C46.md) | Coset-type counts on a Ma quotient: per-coset defects sum to (p − 1)n; an LP Farkas certificate kills | C21, C3, C1 | proved | `IsSDS.false_of_cosetWeights`, `MaCosetCert.not_hasSDS` | — |
+| [C47](C47.md) | The mod-q split with exact relations: per branch, relations exact over ℤ force the orbit vector constant | C9, C24 | proved | `not_hasSDS_of_modQ` | — |

@@ -1,0 +1,40 @@
+'SignedDifferenceSets.Tomography.congr_of_autocorr_sq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SignedDifferenceSets.Tomography.congr_of_autocorr_sq_aux' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SignedDifferenceSets.Tomography.modEq_succ_of_const' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SignedDifferenceSets.Tomography.not_hasSDS_sq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SignedDifferenceSets.Tomography.not_hasSDS_grp_sq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SignedDifferenceSets.Tomography.goIn_of_goInL' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SignedDifferenceSets.Tomography.inPart_of_inPartL' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SignedDifferenceSets.Tomography.belowIn_of_belowInL' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SignedDifferenceSets.TwistBox.twist_facts' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SignedDifferenceSets.TwistBox.kill_mod_four' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SignedDifferenceSets.TwistBox.kill_mod_eight' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SignedDifferenceSets.TwistBox.not_hasSDS_90_18_2' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SignedDifferenceSets.TwistBox.not_hasSDS_90_72_8' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SignedDifferenceSets.TwistBox.not_hasSDS_grp_90_18_2' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SignedDifferenceSets.TwistBox.not_hasSDS_grp_90_72_8' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SignedDifferenceSets.TomographySquareRows.N14382.not_hasSDS' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SignedDifferenceSets.TomographySquareRows.N14408.not_hasSDS' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SignedDifferenceSets.TomographySquareRows.N1911.not_hasSDS' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SignedDifferenceSets.TomographySquareRows.N23258.not_hasSDS' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SignedDifferenceSets.TomographySquareRows.N31039.not_hasSDS' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SignedDifferenceSets.TomographySquareRows.N31071.not_hasSDS' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SignedDifferenceSets.TomographySquareRows.N36255.not_hasSDS' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SignedDifferenceSets.TomographySquareRows.N36275.not_hasSDS' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SignedDifferenceSets.TomographySquareRows.N5091.not_hasSDS' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SignedDifferenceSets.TomographySquareRows.N66084.not_hasSDS' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SignedDifferenceSets.TomographySquareRows.N66085.not_hasSDS' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SignedDifferenceSets.TomographySquareRows.N66132.not_hasSDS' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SignedDifferenceSets.TomographySquareRows.N66133.not_hasSDS' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SignedDifferenceSets.TomographySquareRows.N9406.not_hasSDS' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SignedDifferenceSets.TomographySquareRows.N9407.not_hasSDS' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SignedDifferenceSets.TwistSelfConjRows.N1575.not_hasSDS' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SignedDifferenceSets.TwistSelfConjRows.N1593.not_hasSDS' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SignedDifferenceSets.TomographyQuotRows.N15384.not_hasSDS' depends on axioms: [propext, Classical.choice, Quot.sound]
+TomographySquareRows.N14382.not_hasSDS : ¬HasSDS (ZMod 11 × ZMod 22) 205 84
+TwistSelfConjRows.N1575.not_hasSDS : ¬HasSDS (ZMod 3 × ZMod 30) 18 2
+TwistSelfConjRows.N1593.not_hasSDS : ¬HasSDS (ZMod 3 × ZMod 30) 72 8
+
+real	0m39.723s
+user	0m0.171s
+sys	0m0.140s

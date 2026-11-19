@@ -1,0 +1,7 @@
+N31745/6 (343, 82, 11) p 7 c 7 s 62 #V 56 #centred 8 residue-matched tuples 0 tuples passing |W|<=c 0 -> KILLED
+N32195/6 (343, 334, 291) p 7 c 7 s 316 #V 56 #centred 8 residue-matched tuples 0 tuples passing |W|<=c 0 -> KILLED
+N15414 (245, 121, 50) p 7 c 5 s 111 #V 56 #centred 8 residue-matched tuples 0 tuples passing |W|<=c 0 -> KILLED
+N15434 (245, 144, 73) p 7 c 5 s 134 #V 56 #centred 8 residue-matched tuples 0 tuples passing |W|<=c 0 -> KILLED
+N31778/9 (343, 130, 3) p 7 c 7 s 34 #V 56 #centred 8 residue-matched tuples 0 tuples passing |W|<=c 0 -> KILLED
+N5089 (147, 134, 7) p 7 c 3 s 34 #V 56 #centred 8 residue-matched tuples 0 tuples passing |W|<=c 0 -> KILLED
+C7^3(343,172,84) (343, 172, 84) p 7 c 7 s 170 #V 56 #centred 8 residue-matched tuples 7072 tuples passing |W|<=c 7040 -> FOUND

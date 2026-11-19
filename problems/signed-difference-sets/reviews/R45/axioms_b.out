@@ -1,0 +1,6 @@
+'SignedDifferenceSets.TomographyRows.N3074.not_hasSDS' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SignedDifferenceSets.TomographyRows.N3104.not_hasSDS' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+real	0m55.112s
+user	0m0.062s
+sys	0m0.247s

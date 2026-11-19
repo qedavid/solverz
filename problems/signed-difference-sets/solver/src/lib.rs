@@ -149,7 +149,8 @@ impl State<'_> {
         }
         let left = v - i;
         let need = (self.plus - used_plus) + (self.minus - used_minus);
-        let signs: &[Sign] = if i == 0 { &[1, -1] } else { &[0, 1, -1] };
+        // Element 0 is marked without loss of generality (translate), which needs k ≥ 1.
+        let signs: &[Sign] = if i == 0 && self.plus + self.minus > 0 { &[1, -1] } else { &[0, 1, -1] };
         for &s in signs {
             let (p, m) = match s {
                 1 => (used_plus + 1, used_minus),

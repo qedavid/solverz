@@ -1,0 +1,15 @@
+R41/ProbeC35b.lean:14:41: error: (kernel) application type mismatch
+  id (Eq.refl true)
+argument has type
+  true = true
+but function has type
+  decide (IsSDS 29 4 o98) = true → decide (IsSDS 29 4 o98) = true
+R41/ProbeC35b.lean:20:29: error: don't know how to synthesize placeholder for argument `h`
+context:
+⊢ 8 ∣ 103 + 1
+'o98_isSDS' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+
+real	1m57.845s
+user	0m0.342s
+sys	0m0.890s
+Tue Nov 10 00:45:36 WEST 2026

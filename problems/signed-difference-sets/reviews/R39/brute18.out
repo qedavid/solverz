@@ -1,0 +1,7 @@
+m=18 c=1: 4 (n, mu) classes; n values [1, 4]
+  VIOLATIONS []
+  controls (q-condition fails, bound exceeded): []
+
+real	7m38.465s
+user	0m0.015s
+sys	0m0.015s

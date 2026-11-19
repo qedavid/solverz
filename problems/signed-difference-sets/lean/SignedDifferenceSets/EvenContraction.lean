@@ -58,7 +58,7 @@ theorem VecDemands.translate (hb : VecDemands c Q t K b) (h₀ : H) :
 variable [Indexed H]
 
 /-- A vector meeting the demands, `Σ b = s` and `|b 0|` largest, contradicts `noVector`. -/
-theorem false_of_noVectorQ {s : ℤ}
+theorem false_of_noVectorQ_vec {s : ℤ}
     (hn : noVector (Indexed.size H) (Indexed.addIdx H) c Q t K s = true)
     (hb : VecDemands c Q t K b) (hmax : ∀ h, |b h| ≤ |b 0|) (hs : ∑ h, b h = s) : False := by
   set n := Indexed.size H
@@ -129,7 +129,7 @@ theorem false_of_noVectorQ_sum {s : ℤ}
     intro b' hb' hbs
     obtain ⟨h₀, -, hmax⟩ := Finset.exists_max_image Finset.univ (fun h => |b' h|)
       Finset.univ_nonempty
-    refine false_of_noVectorQ hn (hb'.translate h₀) (fun h => ?_) ?_
+    refine false_of_noVectorQ_vec hn (hb'.translate h₀) (fun h => ?_) ?_
     · simpa using hmax (h + h₀) (Finset.mem_univ _)
     · rw [← hbs]
       exact Fintype.sum_equiv (Equiv.addRight h₀) _ b' fun _ => rfl

@@ -37,3 +37,19 @@ The refuter's reports that statuses here rest on, oldest first.
 | [R31](R31.md) | I5, N363, N71 (Z15) | SURVIVES | 2026-11-07 |
 | [R32](R32.md) | I16, N70 (Z33) | SURVIVES | 2026-11-07 |
 | [R33](R33.md) | P1 | REFUTED (round 1); FLAWED (round 2); FLAWED, minor (round 3, fixed in 71368a3); SURVIVES, typesetting fixed (round 4, f6cfdf7) | 2026-11-07 |
+| [R34](R34.md) | N236, N1008, N11602, N14597, N14828, N31880, N31994, N14472 (I19, O61–O67, O103); N448, N463, N3539, N933, N934, N931, N449, N939 (I21, O79–O84, O101, O104) | FLAWED, credit only (I21's doubling is a published weighing-matrix construction); statements and sets SURVIVE | 2026-11-09 |
+| [R35](R35.md) | C29; N6822, N9200, N44532, N44533, N44562, N44563, N44662, N44663, N44752, N44753, N58644 | SURVIVES | 2026-11-09 |
+| [R36](R36.md) | C7 (integer form); N27692 | SURVIVES (the root import it asked for is done) | 2026-11-09 |
+| [R38](R38.md) | C30; E14 (P2: Prop rdscomb, rem:z17, rem:z18, rem:z25, the (27, 10, 1) and (25, 12, 1) remarks) | SURVIVES (credit gap in P2's rdscomb remark: N1216, N9807) | 2026-11-09 |
+| [R39](R39.md) | C32; FieldDescentRows (60 rows) | SURVIVES (wording in C32.md) | 2026-11-09 |
+| [R40](R40.md) | C33; MaEdgeRows (151 rows) | SURVIVES (two corrections to C33.md) | 2026-11-09 |
+| [R41](R41.md) | C35; FieldDescentChainRows (66 rows) | SURVIVES (wording in C35.md) | 2026-11-10 |
+| [R42](R42.md) | C34; MaDividedRows (27 rows) | SURVIVES (rows to rebuild; wording in C34.md) | 2026-11-10 |
+| [R43](R43.md) | C36; MaDivided2Rows (49 rows) | SURVIVES (rows not built; 24 more kills the exploration missed) | 2026-11-10 |
+| [R44](R44.md) | C37; N464 | SURVIVES (wording in C37.md) | 2026-11-10 |
+| [R45](R45.md) | C40; TomographyRows (9 rows) | SURVIVES (Uses: C16, not C10; the identity is folklore) | 2026-11-10 |
+| [R46](R46.md) | C38, C39; MaDividedResRows (14), MaCountRows (52) | SURVIVES (C38's p = 3 rows die without the residue too) | 2026-11-10 |
+| [R47](R47.md) | C41; TomographyQuotRows (141 rows, 85 built at review) | SURVIVES (Uses: C10; only built rows count) | 2026-11-10 |
+| [R48](R48.md) | C42; KleinTomographyRows (67 rows) | SURVIVES | 2026-11-10 |
+| [R49](R49.md) | C43; TomographyFlatRows (41 built); C41's 62 rows after R47 | SURVIVES (C43's wording: two errors) | 2026-11-10 |
+| [R50](R50.md) | C44, C45; TomographySquareRows (15), TwistSelfConjRows (2), TomographyLast rows (2 built) | SURVIVES | 2026-11-11 |

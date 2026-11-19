@@ -1,0 +1,152 @@
+"""Rows killed by C36 (the divided contraction two levels below a Ma quotient), written as Lean.
+
+`madivided2rows.py [ids...]`: reads the level-2 kills of `x_ma_iterated` (`scratch/x_ma_iterated.out`: `id key v KILL p j 2 H' nodes`)
+that the single level (`scratch/x_ma_divided.out`) does not reach, rebuilds each certificate (`MaDiv2Cert`: H = ZMod (p^j) × K with
+K the p'-parts of H', forms and preimages as `marows.py`, bounds covering the absolute sum), and writes, under
+`lean/SignedDifferenceSets/MaDivided2Rows/`, one search module `N<id>B<k'>.lean` per bound (split into part modules by
+`answer.write_search` when large) and the row module `N<id>.lean`; the settle list `scratch/maedge/settle-c36.tsv`. Mirrors
+`MaDiv2Cert.Valid`. Standard library only; nothing is written on import.
+"""
+import math
+import re
+import sys
+from pathlib import Path
+
+from answer import BATCH_NODES, LEAN_DIR, write_module, write_search
+from macombrows import ma_pairs
+from marows import conj_exp, crt, is_prime_td, lst, map_ok, surj_cert, vp
+
+ROOT = Path(__file__).resolve().parent.parent
+KILLS = ROOT / "scratch" / "x_ma_iterated.out"
+ONE = ROOT / "scratch" / "x_ma_divided.out"
+TSV = ROOT / "scratch" / "maedge" / "settle-c36.tsv"
+PREFIX = "SignedDifferenceSets.MaDivided2Rows"
+# two-level splits (answer.write_search_tree) where one join would cover too many prefixes (N40420: 4,185; N56207: 1,132)
+DEPTH = {"N40420": "7", "N56207": "6"}
+TOP_DEPTH = {"N40420": "4", "N56207": "3"}
+LINE = re.compile(r"(N\d+) SDS\((\d+),(\d+),(-?\d+),\[([\d,]+)\]\) \d+ KILL (\d+) (\d+) 2 \[([\d,]+)\] (\d+)$")
+
+
+def cert(ms, k, lam, p, j, e):
+    """`MaDiv2Cert` fields from the kill's p, j and H' = ∏ ZMod eₜ (one factor carries p^(j−2))."""
+    v, n = math.prod(ms), k - lam
+    d = [x // p ** vp(x, p) for x in e]
+    si = max(range(len(e)), key=lambda t: vp(e[t], p))
+    if vp(e[si], p) == 0:  # j = 2: the factor is the one ZMod (p^j) comes from
+        si = next(t for t, m in enumerate(ms) if vp(m, p) >= j and m // p ** vp(m, p) % d[t] == 0)
+    pj, r = p ** j, p ** (j - 2)
+    src = [t for t, x in enumerate(d) if x > 1]
+    ks = [d[t] for t in src] or [1]
+    srcs = src or [si]
+    A = [[0] * si + [1]] + [[0] * t + [1] for t in srcs]
+    P = [[0] * si + [crt(1, pj, 0, d[si])]]
+    for t, x in zip(srcs, ks):
+        P.append([0] * t + [crt(1, x, 0, pj) if t == si else 1 % x])
+    ee = vp(n, p)
+    c = v // (r * p * p * math.prod(ks))
+    s = math.isqrt(k + lam * (v - 1))
+    k0 = k // (p * p)
+    bounds = [k0, k0 - 1] if p == 2 else [k0 if (k0 - k) % 2 == 0 else k0 - 1]
+    bounds = [x for x in bounds if x >= 0]
+    return dict(p=p, r=r, i=conj_exp(p, math.lcm(*ks)), e=ee, b=ee // 2, ks=ks, A=A, P=P, bounds=bounds,
+                Q=(k + lam * (p * p * c - 1)) // p ** 4, t=lam * c // (p * p), s1=s // (p * p), c=c)
+
+
+def valid(ms, k, lam, x, pairs):
+    """Mirror of `MaDiv2Cert.Valid`."""
+    p, r, ks = x["p"], x["r"], x["ks"]
+    v, h = math.prod(ms), r * p * p * math.prod(ks)
+    if v % h:
+        return False
+    c = v // h
+    cover = all(any(a <= kk and (kk - a) % 2 == 0 for kk in x["bounds"])
+                for a in range(k + 1) if p * p * a <= k and (k - p * p * a) % 2 == 0)
+    return (is_prime_td(p) and r > 0 and x["i"] > 0 and ks != [] and all((p ** x["i"] + 1) % d == 0 for d in ks)
+            and map_ok(ms, [r * p * p] + ks, x["A"]) and surj_cert(ms, [r * p * p] + ks, x["A"], x["P"])
+            and (k - lam) % p ** x["e"] == 0 and 2 * x["b"] <= x["e"] and x["b"] >= 2
+            and p ** 4 * x["Q"] == k + lam * (p * p * c - 1) and p * p * x["t"] == lam * c
+            and (p * p * x["s1"]) ** 2 == k + lam * (v - 1) and cover
+            and (p, r * p) in pairs and (p, r) in pairs)
+
+
+def write_row(rid, ms, k, lam, x):
+    v = math.prod(ms)
+    group = " × ".join(f"ZMod {m}" for m in ms)
+    lam_l = f"({lam})" if lam < 0 else str(lam)
+    qf = [x["r"]] + x["ks"]
+    grp = f"Grp {lst(qf)}"
+    header = f"""/-- The factors of the divided quotient `{grp}` are positive. -/
+theorem hpos : ∀ m ∈ {lst(qf)}, 0 < m := by decide
+"""
+    size, add = f"@Indexed.size ({grp}) _ (Grp.indexed _ hpos)", f"@Indexed.addIdx ({grp}) _ (Grp.indexed _ hpos)"
+    names = []
+    for kk in x["bounds"]:
+        args = f"({x['c']} : ℕ) ({x['Q']} : ℤ) ({x['t']} : ℤ) ({kk} : ℕ) {x['s1']}"
+        name = f"N{rid}B{kk}"
+        names.append(name)
+        theorem = f"""/-- N{rid}: the divided search with absolute-sum bound {kk} finds no vector. -/
+theorem search :
+    noVector ({size})
+      ({add})
+      {args} = true :="""
+        write_search(name, PREFIX, ["SignedDifferenceSets.MaDivided2"],
+                     f"N{rid}: the C36 search with bound {kk}",
+                     f"C36 for N{rid} (`SDS({v},{k},{lam})` in `{group}`):\n"
+                     f"no vector `Z` on `{grp}` with `|Z| ≤ {x['c']}`, square sum {x['Q']}, autocorrelation {x['t']},\n"
+                     f"sum ±{x['s1']} and absolute sum at most {kk} (parity of {kk}).\n"
+                     f"Generated by `solver/madivided2rows.py`.",
+                     header, size, add, args, "the divided quotient and the subtree check",
+                     "bound's search arguments", math.prod(qf), x["c"], x["Q"], x["s1"], theorem,
+                     tool="solver/madivided2rows.py", split_nodes=BATCH_NODES, depth=DEPTH.get(f"N{rid}", ""),
+                     top_depth=TOP_DEPTH.get(f"N{rid}", ""))
+    certt = (f"⟨{x['p']}, {x['r']}, {x['i']}, {x['e']}, {x['b']}, {lst(x['ks'])},\n"
+             f"      {lst([lst(a) for a in x['A']])},\n"
+             f"      {lst([lst(a) for a in x['P']])},\n"
+             f"      {lst(x['bounds'])}, {x['Q']}, {x['t']}, {x['s1']}⟩")
+    cases = "rcases hk' with rfl | rfl" if len(names) == 2 else "subst hk'"
+    exacts = "\n".join(f"      · exact {PREFIX}.{nm}.search" for nm in names) if len(names) == 2 else \
+        f"      exact {PREFIX}.{names[0]}.search"
+    doc = (f"Open in Gordon's table (`SDS({v},{k},{lam},{lst(ms).replace(' ', '')})`, 2026-11-05).\n"
+           f"C36 on the Ma quotient `ZMod {x['r'] * x['p'] ** 2} × Grp {lst(x['ks'])}` (`p = {x['p']}`, `b = {x['b']}`):\n"
+           f"the coset sums two levels down, on `{grp}` (fibres {x['p'] ** 2 * x['c']}), are divisible by {x['p'] ** 2}, and\n"
+           f"no `Z = W/{x['p'] ** 2}` exists for any bound in {lst(x['bounds'])} (`{', '.join(names)}`).\n"
+           f"Generated by `solver/madivided2rows.py`.")
+    write_module(f"N{rid}", ["SignedDifferenceSets.MaDivided2"] + [f"{PREFIX}.{nm}" for nm in names],
+                 f"N{rid}: no ({v}, {k}, {lam}) SDS in {group} (C36)", doc,
+                 f"""{header}
+/-- N{rid}: no SDS ({v}, {k}, {lam}) in `{group}`. -/
+theorem not_hasSDS : ¬ HasSDS ({group}) {k} {lam_l} :=
+  MaDiv2Cert.not_hasSDS (w := ⟨{rid}, {lst(ms)}, {k}, {lam_l}⟩)
+    (c := {certt}) (by decide +kernel) hpos _
+    (fun k' hk' => by
+      simp only [List.mem_cons, List.not_mem_nil, or_false] at hk'
+      {cases}
+{exacts})""", ns=f"{PREFIX}.N{rid}", prefix=PREFIX)
+
+
+def main(wanted):
+    pairs = ma_pairs()
+    one = {line.split()[0] for line in ONE.read_text(encoding="utf-8").splitlines() if " KILL " in line}
+    rows = []
+    for line in KILLS.read_text(encoding="utf-8").splitlines():
+        m = LINE.match(line)
+        if not m:
+            continue
+        rid, v, k, lam, ms, p, j, e, _ = m.groups()
+        if rid in one or (wanted and rid not in wanted):
+            continue
+        ms, e = [int(t) for t in ms.split(",")], [int(t) for t in e.split(",")]
+        x = cert(ms, int(k), int(lam), int(p), int(j), e)
+        assert valid(ms, int(k), int(lam), x, pairs), (rid, x)
+        rows.append((rid, ms, int(k), int(lam), x))
+    (LEAN_DIR / PREFIX.replace(".", "/")).mkdir(parents=True, exist_ok=True)
+    for rid, ms, k, lam, x in rows:
+        write_row(rid[1:], ms, k, lam, x)
+    if not wanted:
+        TSV.write_text("".join(f"{rid}\tnone\tC36 (divided contraction two levels below a Ma quotient); MaDivided2Rows\t"
+                               f"{PREFIX}.{rid}.not_hasSDS\n" for rid, *_ in rows), encoding="utf-8", newline="\n")
+    print(len(rows), "rows:", " ".join(r[0] for r in rows))
+
+
+if __name__ == "__main__":
+    main(set(sys.argv[1:]))

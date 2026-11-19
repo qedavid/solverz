@@ -1,0 +1,12 @@
+p=7 k=25 lam=2 s=11 p|s=False n=23
+full: |V|=14 |W|=2 [(5, 0, 0, 2, 0, 2, 2), (5, 2, 2, 0, 2, 0, 0)]
+integral choices 0, SDS choices 0
+VERDICT: KILLED
+p=7 k=25 lam=3 s=13 p|s=False n=22
+full: |V|=28 |W|=4 [(-2, 2, 2, 3, 2, 3, 3), (-2, 3, 3, 2, 3, 2, 2), (4, 0, 0, 3, 0, 3, 3), (4, 3, 3, 0, 3, 0, 0)]
+integral choices 0, SDS choices 0
+VERDICT: KILLED
+p=7 k=33 lam=4 s=15 p|s=False n=29
+full: |V|=56 |W|=8 [(2, 0, 2, 3, 6, 0, 2), (2, 0, 3, 0, 2, 6, 2), (2, 2, 0, 6, 3, 2, 0), (2, 2, 6, 2, 0, 3, 0), (2, 3, 2, 2, 0, 0, 6), (2, 6, 0, 0, 2, 2, 3), (3, 0, 0, 4, 0, 4, 4), (3, 4, 4, 0, 4, 0, 0)]
+integral choices 0, SDS choices 0
+VERDICT: KILLED

@@ -1,0 +1,9 @@
+C6: SDS with D(0)=+1: 20, params {(4, 0): 8, (5, 4): 5, (6, 2): 6, (6, 6): 1}; with 4 | k-lam: 15, halving fails: 0
+C10: SDS with D(0)=+1: 36, params {(4, 0): 16, (9, 8): 9, (10, 6): 10, (10, 10): 1}; with 4 | k-lam: 27, halving fails: 0
+  C14 (control: 2 not self-conj mod 7): FAILS halving: k=4 lam=0 D=[1, 0, -1, 0, -1, 0, 0, 0, -1, 0, 0, 0, 0, 0]
+  C14 (control: 2 not self-conj mod 7): FAILS halving: k=4 lam=0 D=[1, 0, 0, 0, 1, 0, 1, 0, -1, 0, 0, 0, 0, 0]
+  C14 (control: 2 not self-conj mod 7): FAILS halving: k=4 lam=0 D=[1, 0, 1, 0, -1, 0, 0, 0, 0, 0, 1, 0, 0, 0]
+C14 (control: 2 not self-conj mod 7): SDS with D(0)=+1: 60, params {(4, 0): 32, (13, 12): 13, (14, 10): 14, (14, 14): 1}; with 4 | k-lam: 47, halving fails: 8
+C18: SDS with D(0)=+1: 68, params {(4, 0): 32, (17, 16): 17, (18, 14): 18, (18, 18): 1}; with 4 | k-lam: 51, halving fails: 0
+C2xC3xC3: SDS with D(0)=+1: 1940, params {(4, 0): 32, (9, 0): 1404, (13, 4): 468, (17, 16): 17, (18, 14): 18, (18, 18): 1}; with 4 | k-lam: 51, halving fails: 0
+C3xC6: SDS with D(0)=+1: 1940, params {(4, 0): 32, (9, 0): 1404, (13, 4): 468, (17, 16): 17, (18, 14): 18, (18, 18): 1}; with 4 | k-lam: 51, halving fails: 0

@@ -1,0 +1,42 @@
+'SignedDifferenceSets.Ma.dvd_contract_quot_sub' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SignedDifferenceSets.IsSDS.false_of_maDivided2' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SignedDifferenceSets.MaDiv2Cert.not_hasSDS' depends on axioms: [propext, Classical.choice, Quot.sound]
+@IsSDS.false_of_maDivided2 : ∀ {G K : Type} [inst : AddCommGroup G] [inst_1 : Fintype G] [inst_2 : AddCommGroup K]
+  [inst_3 : Fintype K] {p r i e b c k : ℕ} {lam Q t s' : ℤ} {bounds : List ℕ} [inst_4 : Indexed (ZMod r × K)]
+  [hp : Fact (Nat.Prime p)] [inst_5 : NeZero (r * p * p)] [NeZero (r * p)] [NeZero r] {φ : G →+ ZMod (r * p * p) × K},
+  Function.Surjective ⇑φ →
+    Fintype.card G = c * Fintype.card (ZMod (r * p * p) × K) →
+      0 < r →
+        0 < i →
+          (∀ (x : K), p ^ i • x = -x) →
+            ↑p ^ e ∣ ↑k - lam →
+              2 * b ≤ e →
+                2 ≤ b →
+                  CycloFacts p (r * p) →
+                    CycloFacts p r →
+                      ↑p ^ 4 * Q = ↑k + lam * (↑(p * p * c) - 1) →
+                        ↑p ^ 2 * t = lam * ↑c →
+                          ↑p ^ 2 * s' * (↑p ^ 2 * s') = ↑k + lam * (↑(Fintype.card G) - 1) →
+                            (∀ A ∈ List.range (k + 1),
+                                p * p * A ≤ k → (k - p * p * A) % 2 = 0 → ∃ k' ∈ bounds, A ≤ k' ∧ (k' - A) % 2 = 0) →
+                              (∀ k' ∈ bounds,
+                                  noVector (Indexed.size (ZMod r × K)) (Indexed.addIdx (ZMod r × K)) (↑c) Q t (↑k') s' =
+                                    true) →
+                                ∀ {D : G → SignType}, IsSDS k lam D → False
+@MaDiv2Cert.not_hasSDS : ∀ {w : Row} {c : MaDiv2Cert},
+  MaDiv2Cert.Valid w c →
+    ∀ (hpos : ∀ m ∈ c.r :: c.ks, 0 < m) (inst : Fintype (Grp w.ms)),
+      (∀ k' ∈ c.bounds,
+          noVector (Indexed.size (Grp (c.r :: c.ks))) (Indexed.addIdx (Grp (c.r :: c.ks)))
+              (↑(w.ms.prod / (c.r * c.p * c.p * c.ks.prod))) c.Q c.t (↑k') c.s' =
+            true) →
+        ¬HasSDS (Grp w.ms) w.k w.lam
+'n8944_plain' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+real	32m30.271s
+user	0m2.983s
+sys	0m12.875s
+
+real	32m34.623s
+user	0m3.469s
+sys	0m13.329s
